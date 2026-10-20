@@ -44,6 +44,8 @@
 		<hardware>硬件</hardware>
 		<charsystem>角色</charsystem>
 		<figurines>手办（需安装 Animatics 主题）</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
 		<iconsetposition>按钮位置</iconsetposition>
 		<skyblue>天蓝</skyblue>
 		<purple>紫色</purple>
@@ -214,5 +216,8 @@
 		<custorcolor>System image if available, otherwise colors</custorcolor>
 		<opt_zspinnav>系统 - Z-Spin view navigation</opt_zspinnav>
 		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>系统 - System info (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
 	</variables>
 </theme>

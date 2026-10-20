@@ -44,6 +44,8 @@
 		<hardware>Hardware</hardware>
 		<charsystem>Characters</charsystem>
 		<figurines>Figurines (Animatics theme must be installed)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
 		<iconsetposition>Button position</iconsetposition>
 		<skyblue>sky blue</skyblue>
 		<purple>purple</purple>
@@ -214,5 +216,8 @@
 		<custorcolor>System image if available, otherwise colors</custorcolor>
 		<opt_zspinnav>SYSTEMS - Z-Spin view navigation</opt_zspinnav>
 		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>SYSTEMS - System info (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
 	</variables>
 </theme>

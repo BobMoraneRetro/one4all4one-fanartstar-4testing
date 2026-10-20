@@ -44,6 +44,8 @@
 		<hardware>Caledwedd</hardware>
 		<charsystem>Cymeriadau</charsystem>
 		<figurines>Ffigurynnau (rhaid gosod thema Animatics)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
 		<iconsetposition>Safle'r botymau</iconsetposition>
 		<skyblue>glas yr awyr</skyblue>
 		<purple>fioled</purple>
@@ -214,5 +216,8 @@
 		<custorcolor>System image if available, otherwise colors</custorcolor>
 		<opt_zspinnav>SYSTEMAU - Z-Spin view navigation</opt_zspinnav>
 		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>SYSTEMAU - System info (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
 	</variables>
 </theme>

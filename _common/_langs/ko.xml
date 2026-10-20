@@ -44,6 +44,8 @@
 		<hardware>하드웨어</hardware>
 		<charsystem>캐릭터</charsystem>
 		<figurines>피규어 (Animatics 테마 설치 필요)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
 		<iconsetposition>버튼 위치</iconsetposition>
 		<skyblue>하늘색</skyblue>
 		<purple>보라</purple>
@@ -214,5 +216,8 @@
 		<custorcolor>System image if available, otherwise colors</custorcolor>
 		<opt_zspinnav>시스템 - Z-Spin view navigation</opt_zspinnav>
 		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>시스템 - System info (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
 	</variables>
 </theme>

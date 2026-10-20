@@ -5,7 +5,21 @@
 	${firstsnapouille} : Vue système classique, option Figurines : figurine Animatics, sinon personnage du système (définie dans theme.xml)
 	${firstsystemhardware} : Vue système classique, option Hardware : console, sinon personnage du système (définie dans theme.xml)
 	${manettechemin} : image de la manette du système : version de la région, sinon PNG, sinon SVG (_common/controllers) (définie dans ce fichier)
+	${manettehalopos} : position du halo sous la manette flottante (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Vidéo de gameplay sur la vue système »)
+	${manettehalotaille} : taille du halo sous la manette flottante (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Vidéo de gameplay sur la vue système »)
+	${manettehalovisible} : halo sous la manette flottante : seulement si l option est activée ET si le système a une image de manette (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Manette flottante (vue classique) »)
+	${manettepos} : position de la manette flottante (coin haut gauche si vidéo, place de la vidéo sinon) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Vidéo de gameplay sur la vue système »)
+	${manettetaille} : taille de la manette flottante (petite si vidéo, grande sinon) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Vidéo de gameplay sur la vue système »)
 	${manettevisible} : manette flottante affichée (option SYSTÈMES - Manette flottante) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Manette flottante (vue classique) »)
+	${metaanneepolice} : taille de l année et du fabricant, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
+	${metaanneepos} : position de l année, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
+	${metadescpolice} : taille de police de la description du système, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
+	${metadescpos} : position de la description du système, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
+	${metadescsize} : taille du bloc description du système, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
+	${metafabpos} : position du fabricant, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
+	${metastatscompacte} : opacité des statistiques sur 4 lignes (présentation compacte) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
+	${metastatsstandard} : opacité des statistiques sur 2 lignes (présentation standard) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
+	${metatitrepolice} : taille du titre du système (nom + nombre de jeux), vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
 	${path_common} : dossier _common du thème (définie dans theme.xml)
 	${path_syst_logo} : dossier des logos des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${jeux}
@@ -16,7 +30,35 @@
 	<variables>
 		<manettevisible ifSubset="manetteflottante:manetteoui">true</manettevisible>
 		<manettevisible ifSubset="manetteflottante:manettenon">false</manettevisible>
+		<manettehalovisible ifSubset="manetteflottante:manetteoui">exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettehalovisible>
+		<manettehalovisible ifSubset="manetteflottante:manettenon">false</manettehalovisible>
 		<manettechemin>firstfile("${themePath}/_common/controllers/${region}/" + {system:theme} + ".png", "${themePath}/_common/controllers/" + {system:theme} + ".png", "${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettechemin>
+		<manettepos ifSubset="video4starclassic:videoback">0.036 0.088</manettepos>
+		<manettepos ifSubset="video4starclassic:novideo">0.13 0.62</manettepos>
+		<manettetaille ifSubset="video4starclassic:videoback">0.067 0.08</manettetaille>
+		<manettetaille ifSubset="video4starclassic:novideo">0.17 0.17</manettetaille>
+		<manettehalopos ifSubset="video4starclassic:videoback">0.036 0.138</manettehalopos>
+		<manettehalopos ifSubset="video4starclassic:novideo">0.13 0.72</manettehalopos>
+		<manettehalotaille ifSubset="video4starclassic:videoback">0.058 0.014</manettehalotaille>
+		<manettehalotaille ifSubset="video4starclassic:novideo">0.14 0.03</manettehalotaille>
+		<metatitrepolice ifSubset="metasyst:metacompacte">0.019</metatitrepolice>
+		<metatitrepolice ifSubset="metasyst:metastandard">0.025</metatitrepolice>
+		<metaanneepolice ifSubset="metasyst:metacompacte">0.017</metaanneepolice>
+		<metaanneepolice ifSubset="metasyst:metastandard">0.025</metaanneepolice>
+		<metaanneepos ifSubset="metasyst:metacompacte">0.253 0.264</metaanneepos>
+		<metaanneepos ifSubset="metasyst:metastandard">0.253 0.28</metaanneepos>
+		<metafabpos ifSubset="metasyst:metacompacte">0.288 0.264</metafabpos>
+		<metafabpos ifSubset="metasyst:metastandard">0.3 0.28</metafabpos>
+		<metadescpos ifSubset="metasyst:metacompacte">0.0525 0.283</metadescpos>
+		<metadescpos ifSubset="metasyst:metastandard">0.0525 0.305</metadescpos>
+		<metadescsize ifSubset="metasyst:metacompacte">0.33 0.085</metadescsize>
+		<metadescsize ifSubset="metasyst:metastandard">0.4 0.1</metadescsize>
+		<metadescpolice ifSubset="metasyst:metacompacte">0.016</metadescpolice>
+		<metadescpolice ifSubset="metasyst:metastandard">0.022</metadescpolice>
+		<metastatsstandard ifSubset="metasyst:metacompacte">0</metastatsstandard>
+		<metastatsstandard ifSubset="metasyst:metastandard">1</metastatsstandard>
+		<metastatscompacte ifSubset="metasyst:metacompacte">1</metastatscompacte>
+		<metastatscompacte ifSubset="metasyst:metastandard">0</metastatscompacte>
 	</variables>
 	<view name="system">
 		<carousel name="systemcarousel">
@@ -37,7 +79,11 @@
 			<pos>-0.015 0.08</pos>
 			<pos ifHelpPrompts="true">-0.014 0.08</pos>
 			<size>1.375 1</size>
-			<logoScale>1.5</logoScale>
+			<logoScale ifSubset="systviewselec:charsystem">1.5</logoScale>
+			<logoScale ifSubset="systviewselec:figurines">1.5</logoScale>
+			<logoScale ifSubset="systviewselec:rondhursty">1.5</logoScale>
+			<logoScale ifSubset="systviewselec:logosseuls">1.3</logoScale>
+			<logoScale ifSubset="systviewselec:hardware">1.5</logoScale>
 			<logoSize>0.350 0.350</logoSize>
 			<color>00000000</color>
 			<logoAlignment>bottom</logoAlignment>
@@ -52,6 +98,11 @@
 			<itemTemplate>
 				<container>
 					<image name="shadohard">
+						<visible ifSubset="systviewselec:charsystem">true</visible>
+						<visible ifSubset="systviewselec:figurines">true</visible>
+						<visible ifSubset="systviewselec:rondhursty">false</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
+						<visible ifSubset="systviewselec:hardware">true</visible>
 						<pos>0.5 0.55</pos>
 						<origin>0.5 0.5</origin>
 						<maxSize>0.4 0.4</maxSize>
@@ -67,6 +118,11 @@
 						<color>000000</color>
 					</image>
 					<image name="hardware">
+						<visible ifSubset="systviewselec:charsystem">true</visible>
+						<visible ifSubset="systviewselec:figurines">true</visible>
+						<visible ifSubset="systviewselec:rondhursty">false</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
+						<visible ifSubset="systviewselec:hardware">true</visible>
 						<pos>0.5 0.55</pos>
 						<origin>0.5 0.5</origin>
 						<maxSize>0.4 0.4</maxSize>
@@ -79,7 +135,95 @@
 						<saturation>0.7</saturation>
 						<zIndex>5</zIndex>
 					</image>
+					<image name="rondombre">
+						<visible ifSubset="systviewselec:charsystem">false</visible>
+						<visible ifSubset="systviewselec:figurines">false</visible>
+						<visible ifSubset="systviewselec:rondhursty">true</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
+						<visible ifSubset="systviewselec:hardware">false</visible>
+						<path>firstfile("${path_syst_logo}/roundsilver/" + {system:theme} + ".png", "${path_syst_logo}/roundsilver/_defaut/defaut.png")</path>
+						<pos>0.5 0.74</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>0.6 0.6</maxSize>
+						<padding>3 3 -3 -3</padding>
+						<color>000000</color>
+						<zIndex>5</zIndex>
+						<storyboard event="activate">
+							<animation property="y" to="0.64" duration="250" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="y" to="0.74" duration="250" mode="easeOut"/>
+						</storyboard>
+					</image>
+					<image name="rond">
+						<visible ifSubset="systviewselec:charsystem">false</visible>
+						<visible ifSubset="systviewselec:figurines">false</visible>
+						<visible ifSubset="systviewselec:rondhursty">true</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
+						<visible ifSubset="systviewselec:hardware">false</visible>
+						<path>firstfile("${path_syst_logo}/roundsilver/" + {system:theme} + ".png", "${path_syst_logo}/roundsilver/_defaut/defaut.png")</path>
+						<pos>0.5 0.74</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>0.6 0.6</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<zIndex>5</zIndex>
+						<storyboard event="activate">
+							<animation property="y" to="0.64" duration="250" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="y" to="0.74" duration="250" mode="easeOut"/>
+						</storyboard>
+					</image>
+					<image name="rondconsole">
+						<visible ifSubset="systviewselec:charsystem">false</visible>
+						<visible ifSubset="systviewselec:figurines">false</visible>
+						<visible ifSubset="systviewselec:rondhursty">!exists("${path_syst_logo}/roundsilver/" + {system:theme} + ".png")</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
+						<visible ifSubset="systviewselec:hardware">false</visible>
+						<path>firstfile("${themePath}/_systemmedia/hardware/" + {system:theme} + ".png", "${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png")</path>
+						<pos>0.5 0.70</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>0.34 0.26</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<saturation>0.8</saturation>
+						<zIndex>5.5</zIndex>
+						<storyboard event="activate">
+							<animation property="y" to="0.6" duration="250" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="y" to="0.70" duration="250" mode="easeOut"/>
+						</storyboard>
+					</image>
+					<image name="rondnom">
+						<visible ifSubset="systviewselec:charsystem">false</visible>
+						<visible ifSubset="systviewselec:figurines">false</visible>
+						<visible ifSubset="systviewselec:rondhursty">!exists("${path_syst_logo}/roundsilver/" + {system:theme} + ".png")</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
+						<visible ifSubset="systviewselec:hardware">false</visible>
+						<path>firstfile("${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png", "${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png", "${path_syst_logo}/clearlogos/" + {system:theme} + ".png", "${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
+						<pos>0.5 0.86</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>0.40 0.11</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<zIndex>5.6</zIndex>
+						<storyboard event="activate">
+							<animation property="y" to="0.76" duration="250" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="y" to="0.86" duration="250" mode="easeOut"/>
+						</storyboard>
+					</image>
 					<image name="shadowlogo" pos="0.5 0.9" origin="0.5" maxSize="0.2" linearSmooth="true">
+						<pos ifSubset="systviewselec:charsystem">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:figurines">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:rondhursty">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:logosseuls">0.5 0.87</pos>
+						<pos ifSubset="systviewselec:hardware">0.5 0.9</pos>
+						<visible ifSubset="systviewselec:rondhursty">false</visible>
+						<visible ifSubset="systviewselec:charsystem">true</visible>
+						<visible ifSubset="systviewselec:figurines">true</visible>
+						<visible ifSubset="systviewselec:logosseuls">true</visible>
+						<visible ifSubset="systviewselec:hardware">true</visible>
 						<path>firstfile(
                     "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
@@ -92,6 +236,16 @@
 						<zIndex>6</zIndex>
 					</image>
 					<image name="logo" extra="true" pos="0.5 0.9" origin="0.5" maxSize="0.2" linearSmooth="true">
+						<pos ifSubset="systviewselec:charsystem">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:figurines">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:rondhursty">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:logosseuls">0.5 0.87</pos>
+						<pos ifSubset="systviewselec:hardware">0.5 0.9</pos>
+						<visible ifSubset="systviewselec:rondhursty">false</visible>
+						<visible ifSubset="systviewselec:charsystem">true</visible>
+						<visible ifSubset="systviewselec:figurines">true</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
+						<visible ifSubset="systviewselec:hardware">true</visible>
 						<path>firstfile(
                     "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
@@ -113,6 +267,42 @@
 							<animation property="color" to="858585ff" begin="" mode="Linear"/>
 						</storyboard>
 					</image>
+					<image name="logogris" extra="true" pos="0.5 0.9" origin="0.5" maxSize="0.2" linearSmooth="true">
+						<pos ifSubset="systviewselec:charsystem">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:figurines">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:rondhursty">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:logosseuls">0.5 0.87</pos>
+						<pos ifSubset="systviewselec:hardware">0.5 0.9</pos>
+						<visible ifSubset="systviewselec:rondhursty">false</visible>
+						<visible ifSubset="systviewselec:charsystem">false</visible>
+						<visible ifSubset="systviewselec:figurines">false</visible>
+						<visible ifSubset="systviewselec:logosseuls">true</visible>
+						<visible ifSubset="systviewselec:hardware">false</visible>
+						<path>firstfile(
+                    "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
+						<saturation>0</saturation>
+						<zIndex>7</zIndex>
+						<storyboard event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard event="activate">
+							<animation property="saturation" to="1" duration="150" mode="Linear"/>
+							<animation property="color" to="FFFFFFFF" begin="" duration="150" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="saturation" to="0" duration="250" mode="Linear"/>
+							<animation property="color" to="858585ff" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="saturation" to="0" duration="250" mode="Linear"/>
+							<animation property="color" to="858585ff" begin="" mode="Linear"/>
+						</storyboard>
+					</image>
 				</container>
 			</itemTemplate>
 		</carousel>
@@ -123,7 +313,23 @@
 			<origin>0.5 0.5</origin>
 			<zIndex>3</zIndex>
 		</image>
+		<image name="bandelogos" extra="true">
+			<visible ifSubset="systviewselec:charsystem">false</visible>
+			<visible ifSubset="systviewselec:figurines">false</visible>
+			<visible ifSubset="systviewselec:rondhursty">false</visible>
+			<visible ifSubset="systviewselec:logosseuls">true</visible>
+			<visible ifSubset="systviewselec:hardware">false</visible>
+			<path>${themePath}/_viewsyst/fanartstar/bande_logos.png</path>
+			<pos>0 0.865</pos>
+			<size>1 0.135</size>
+			<zIndex>3</zIndex>
+		</image>
 		<image name="whitedegrade" extra="true">
+			<visible ifSubset="systviewselec:charsystem">true</visible>
+			<visible ifSubset="systviewselec:figurines">true</visible>
+			<visible ifSubset="systviewselec:rondhursty">true</visible>
+			<visible ifSubset="systviewselec:logosseuls">false</visible>
+			<visible ifSubset="systviewselec:hardware">true</visible>
 			<path>${themePath}/_viewsyst/fanartstar/whitedegrade.png</path>
 			<maxSize>1 1</maxSize>
 			<pos>0.5 0.95</pos>
@@ -240,11 +446,11 @@
 		<text name="info1" extra="true">
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
 			<color>ffffffff</color>
-			<pos>0.0525 0.305</pos>
-			<size>0.4 0.1</size>
+			<pos>${metadescpos}</pos>
+			<size>${metadescsize}</size>
 			<alignment>left</alignment>
 			<verticalAlignment>top</verticalAlignment>
-			<fontSize>0.022</fontSize>
+			<fontSize>${metadescpolice}</fontSize>
 			<singleLineScroll>false</singleLineScroll>
 			<glowColor>00000040</glowColor>
 			<glowOffset>0.8</glowOffset>
@@ -260,7 +466,7 @@
 			<opacity>0.7</opacity>
 			<pos>0.253 0.238</pos>
 			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
-			<fontSize>0.025</fontSize>
+			<fontSize>${metatitrepolice}</fontSize>
 			<color>ffffffff</color>
 			<origin>0.5 0.5</origin>
 			<size>0.4 0.02</size>
@@ -271,9 +477,9 @@
 		</text>
 		<text name="info3" extra="true">
 			<opacity>0.7</opacity>
-			<pos>0.253 0.28</pos>
+			<pos>${metaanneepos}</pos>
 			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
-			<fontSize>0.025</fontSize>
+			<fontSize>${metaanneepolice}</fontSize>
 			<color>ffffffff</color>
 			<origin>0.5 0.5</origin>
 			<size>0.4 0.02</size>
@@ -284,9 +490,9 @@
 		</text>
 		<text name="info4" extra="true">
 			<opacity>0.7</opacity>
-			<pos>0.3 0.28</pos>
+			<pos>${metafabpos}</pos>
 			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
-			<fontSize>0.025</fontSize>
+			<fontSize>${metaanneepolice}</fontSize>
 			<color>ffffffff</color>
 			<origin>0.5 0.5</origin>
 			<size>0.4 0.02</size>
@@ -411,6 +617,138 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<alignment>left</alignment>
 			<fontSize>0.015</fontSize>
 			<zIndex>150</zIndex>
+			<opacity>${metastatsstandard}</opacity>
+			<singleLineScroll>false</singleLineScroll>
+			<glowColor>00000040</glowColor>
+			<glowOffset>0.8</glowOffset>
+			<glowSize>2</glowSize>
+			<lineSpacing>1.2</lineSpacing>
+		</text>
+		<text name="systemInfoExCompacte" extra="true">
+			<text>
+Favorites : {binding:favorites}
+Games played : {binding:gamesPlayed}
+Most played : {binding:mostPlayed}
+Last played : {binding:lastPlayedDate}</text>
+			<text lang="ar">
+المفضلة : {binding:favorites}
+تم لعب المباريات : {binding:gamesPlayed}
+الأكثر لعبا : {binding:mostPlayed}
+اخر لعبه : {binding:lastPlayedDate}</text>
+			<text region="br">
+Favoritos : {binding:favorites}
+Jogos Jogados : {binding:gamesPlayed}
+Mais jogados : {binding:mostPlayed}
+Última jogada : {binding:lastPlayedDate}</text>
+			<text lang="ca">
+Preferits : {binding:favorites}
+Jocs jugats : {binding:gamesPlayed}
+Més jugats : {binding:mostPlayed}
+Últim moviment : {binding:lastPlayedDate}</text>
+			<text lang="de">
+Favoriten : {binding:favorites}
+Spiele gespielt : {binding:gamesPlayed}
+Meist gespielt : {binding:mostPlayed}
+Letzter Zug : {binding:lastPlayedDate}</text>
+			<text lang="en">
+Favorites : {binding:favorites}
+Games played : {binding:gamesPlayed}
+Most played : {binding:mostPlayed}
+Last played : {binding:lastPlayedDate}</text>
+			<text lang="en_GB">
+Favorites : {binding:favorites}
+Games played : {binding:gamesPlayed}
+Most played : {binding:mostPlayed}
+Last played : {binding:lastPlayedDate}</text>
+			<text lang="es">
+Favoritos : {binding:favorites}
+Jugados : {binding:gamesPlayed}
+El más jugado : {binding:mostPlayed}
+Última partida : {binding:lastPlayedDate}</text>
+			<text lang="fr">
+Favoris : {binding:favorites}
+Jeux joués : {binding:gamesPlayed}
+Le plus joué : {binding:mostPlayed}
+Dernière partie : {binding:lastPlayedDate}</text>
+			<text lang="el">
+Αγαπημένα : {binding:favorites}
+Παιχνίδια που παίχτηκαν : {binding:gamesPlayed}
+Περισσότερα παίχτηκαν : {binding:mostPlayed}
+Τελευταία κίνηση : {binding:lastPlayedDate}</text>
+			<text lang="hu">
+Kedvencek : {binding:favorites}
+Játszottak : {binding:gamesPlayed}
+Gyakran játszott : {binding:mostPlayed}
+Utoljára játszott : {binding:lastPlayedDate}</text>
+			<text lang="it">
+Preferiti : {binding:favorites}
+Giochi giocati : {binding:gamesPlayed}
+Più giocati : {binding:mostPlayed}
+Ultimo giocato : {binding:lastPlayedDate}</text>
+			<text lang="jp">
+お気に入り : {binding:favorites}
+プレイしたゲーム : {binding:gamesPlayed}
+最もプレイされた : {binding:mostPlayed}
+最後の動き : {binding:lastPlayedDate}</text>
+			<text lang="ko">
+즐겨찾기 : {binding:favorites}
+플레이한 게임 : {binding:gamesPlayed}
+가장 많이 플레이한 것 : {binding:mostPlayed}
+마지막 플레이 : {binding:lastPlayedDate}</text>
+			<text lang="nl">
+Favorieten : {binding:favorites}
+Spellen gespeeld : {binding:gamesPlayed}
+Meest gespeeld : {binding:mostPlayed}
+Laatste zet : {binding:lastPlayedDate}</text>
+			<text lang="pl">
+Ulubione : {binding:favorites}
+Rozegrane gry : {binding:gamesPlayed}
+Najczęściej grane : {binding:mostPlayed}
+Ostatnio grane : {binding:lastPlayedDate}</text>
+			<text lang="pt">
+Favoritos : {binding:favorites}
+Jogos jogados : {binding:gamesPlayed}
+Mais jogados : {binding:mostPlayed}
+Recém jogado : {binding:lastPlayedDate}</text>
+			<text lang="pt_BR">
+Favoritos : {binding:favorites}
+Jogos Jogados : {binding:gamesPlayed}
+Mais jogados : {binding:mostPlayed}
+Última jogada : {binding:lastPlayedDate}</text>
+			<text lang="ptbr">
+Favoritos : {binding:favorites}
+Jogos Jogados : {binding:gamesPlayed}
+Mais jogados : {binding:mostPlayed}
+Última jogada : {binding:lastPlayedDate}</text>
+			<text lang="ro_RO">
+Favorite : {binding:favorites}
+Jocuri jucate : {binding:gamesPlayed}
+Cele mai jucate : {binding:mostPlayed}
+Ultima rulare : {binding:lastPlayedDate}</text>
+			<text lang="ru">
+Избранное : {binding:favorites}
+Игр сыграно : {binding:gamesPlayed}
+Часто запускаемое : {binding:mostPlayed}
+Последний запуск : {binding:lastPlayedDate}</text>
+			<text lang="uk">
+Вибране : {binding:favorites}
+Зіграні ігри : {binding:gamesPlayed}
+Більше грав : {binding:mostPlayed}
+Останній хід : {binding:lastPlayedDate}</text>
+			<text lang="zh">
+最爱的游戏 : {binding:favorites}
+玩过的游戏 : {binding:gamesPlayed}
+常玩的游戏 : {binding:mostPlayed}
+最后游玩 : {binding:lastPlayedDate}</text>
+			<verticalAlignment>top</verticalAlignment>
+			<pos>0.0525 0.372</pos>
+			<size>0.3 0.1</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<color>FFFFFF</color>
+			<alignment>left</alignment>
+			<fontSize>0.0135</fontSize>
+			<zIndex>150</zIndex>
+			<opacity>${metastatscompacte}</opacity>
 			<singleLineScroll>false</singleLineScroll>
 			<glowColor>00000040</glowColor>
 			<glowOffset>0.8</glowOffset>
@@ -552,12 +890,12 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<offsetY>-0.05</offsetY>
 		</control>
 		<image name="manetteombre" extra="true">
-			<visible>${manettevisible}</visible>
+			<visible>${manettehalovisible}</visible>
 			<path>${themePath}/_viewsyst/fanartstar/halo_manette.png</path>
-			<pos>0.036 0.138</pos>
+			<pos>${manettehalopos}</pos>
 			<origin>0.5 0.5</origin>
-			<size>0.058 0.014</size>
-			<zIndex>81</zIndex>
+			<size>${manettehalotaille}</size>
+			<zIndex>8.9</zIndex>
 			<storyboard>
 				<animation property="opacity" from="0" to="0.35" duration="400" mode="easeOut"/>
 				<animation property="scale" from="1" to="0.85" begin="400" duration="1600" mode="easeInOut" autoReverse="true" repeat="forever"/>
@@ -569,11 +907,11 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 		<image name="manette" extra="true">
 			<visible>${manettevisible}</visible>
 			<path>${manettechemin}</path>
-			<pos>0.036 0.088</pos>
+			<pos>${manettepos}</pos>
 			<origin>0.5 0.5</origin>
-			<maxSize>0.067 0.08</maxSize>
+			<maxSize>${manettetaille}</maxSize>
 			<linearSmooth>true</linearSmooth>
-			<zIndex>82</zIndex>
+			<zIndex>9</zIndex>
 			<storyboard>
 				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
 				<animation property="offsetY" from="0" to="-0.012" begin="400" duration="1600" mode="easeInOut" autoReverse="true" repeat="forever"/>

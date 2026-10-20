@@ -44,6 +44,8 @@
 		<hardware>Hardware</hardware>
 		<charsystem>Postavy</charsystem>
 		<figurines>Figurky (musí být nainstalován motiv Animatics)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
 		<iconsetposition>Umístění tlačítek</iconsetposition>
 		<skyblue>blankytně modrá</skyblue>
 		<purple>fialová</purple>
@@ -214,5 +216,8 @@
 		<custorcolor>System image if available, otherwise colors</custorcolor>
 		<opt_zspinnav>SYSTÉMY - Z-Spin view navigation</opt_zspinnav>
 		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>SYSTÉMY - System info (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
 	</variables>
 </theme>

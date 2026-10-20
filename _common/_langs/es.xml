@@ -44,6 +44,8 @@
 		<hardware>Hardware</hardware>
 		<charsystem>Personajes</charsystem>
 		<figurines>Figuras (el tema Animatics debe estar instalado)</figurines>
+		<rondhursty>Logos redondos (Z-Spin)</rondhursty>
+		<logosseuls>Solo logos sobre banda oscura</logosseuls>
 		<iconsetposition>Posición de los botones</iconsetposition>
 		<skyblue>azul cielo</skyblue>
 		<purple>violeta</purple>
@@ -214,5 +216,8 @@
 		<custorcolor>Imagen del sistema si existe, si no colores</custorcolor>
 		<opt_zspinnav>SISTEMAS - Navegación de la vista Z-Spin</opt_zspinnav>
 		<zspinnavarc>Arco de logos en la parte superior</zspinnavarc>
+		<opt_metasyst>SISTEMAS - Información del sistema (vista clásica)</opt_metasyst>
+		<metastandard>Estándar</metastandard>
+		<metacompacte>Compacta</metacompacte>
 	</variables>
 </theme>

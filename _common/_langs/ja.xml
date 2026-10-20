@@ -44,6 +44,8 @@
 		<hardware>ハードウェア</hardware>
 		<charsystem>キャラクター</charsystem>
 		<figurines>フィギュア（Animaticsテーマが必要）</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
 		<iconsetposition>ボタンの位置</iconsetposition>
 		<skyblue>スカイブルー</skyblue>
 		<purple>紫</purple>
@@ -214,5 +216,8 @@
 		<custorcolor>System image if available, otherwise colors</custorcolor>
 		<opt_zspinnav>システム - Z-Spin view navigation</opt_zspinnav>
 		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>システム - System info (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
 	</variables>
 </theme>

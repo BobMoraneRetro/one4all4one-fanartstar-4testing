@@ -44,6 +44,8 @@
 		<hardware>Sprzęt</hardware>
 		<charsystem>Postacie</charsystem>
 		<figurines>Figurki (wymagany motyw Animatics)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
 		<iconsetposition>Położenie przycisków</iconsetposition>
 		<skyblue>błękitny</skyblue>
 		<purple>fioletowy</purple>
@@ -214,5 +216,8 @@
 		<custorcolor>System image if available, otherwise colors</custorcolor>
 		<opt_zspinnav>SYSTEMY - Z-Spin view navigation</opt_zspinnav>
 		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>SYSTEMY - System info (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
 	</variables>
 </theme>

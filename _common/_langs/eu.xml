@@ -44,6 +44,8 @@
 		<hardware>Hardwarea</hardware>
 		<charsystem>Pertsonaiak</charsystem>
 		<figurines>Irudiak (Animatics gaia instalatuta egon behar da)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
 		<iconsetposition>Botoien kokapena</iconsetposition>
 		<skyblue>zeru urdina</skyblue>
 		<purple>bioleta</purple>
@@ -214,5 +216,8 @@
 		<custorcolor>System image if available, otherwise colors</custorcolor>
 		<opt_zspinnav>SISTEMAK - Z-Spin view navigation</opt_zspinnav>
 		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>SISTEMAK - System info (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
 	</variables>
 </theme>

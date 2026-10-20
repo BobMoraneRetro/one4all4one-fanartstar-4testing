@@ -84,6 +84,10 @@
 		<include name="manettenon" displayName="${desactive}"/>
 		<include name="manetteoui" displayName="${active}"/>
 	</subset>
+	<subset name="metasyst" ifSubset="systemview:fanartstarsyst" displayName="${opt_metasyst}">
+		<include name="metastandard" displayName="${metastandard}"/>
+		<include name="metacompacte" displayName="${metacompacte}"/>
+	</subset>
 	<subset name="choixbande" ifSubset="systemview:zspin" displayName="${opt_choixbande}">
 		<include name="custorcolor" displayName="${custorcolor}"/>
 		<include name="couleur" displayName="${couleur}"/>
@@ -109,6 +113,8 @@
 		<include name="hardware" displayName="${hardware}"/>
 		<include name="charsystem" displayName="${charsystem}"/>
 		<include name="figurines" displayName="${figurines}"/>
+		<include name="rondhursty" displayName="${rondhursty}"/>
+		<include name="logosseuls" displayName="${logosseuls}"/>
 	</subset>
 	<subset name="breadcrumbsonoff" ifSubset="systemview:fanartstarsyst" displayName="${opt_breadcrumbsonoff}">
 		<include name="active" displayName="${active}"/>

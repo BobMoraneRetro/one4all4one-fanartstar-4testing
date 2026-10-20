@@ -44,6 +44,8 @@
 		<hardware>Обладнання</hardware>
 		<charsystem>Персонажі</charsystem>
 		<figurines>Фігурки (потрібна тема Animatics)</figurines>
+		<rondhursty>Round logos (Z-Spin)</rondhursty>
+		<logosseuls>Logos only on a dark band</logosseuls>
 		<iconsetposition>Розташування кнопок</iconsetposition>
 		<skyblue>небесно-блакитний</skyblue>
 		<purple>фіолетовий</purple>
@@ -214,5 +216,8 @@
 		<custorcolor>System image if available, otherwise colors</custorcolor>
 		<opt_zspinnav>СИСТЕМИ - Z-Spin view navigation</opt_zspinnav>
 		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+		<opt_metasyst>СИСТЕМИ - System info (classic view)</opt_metasyst>
+		<metastandard>Standard</metastandard>
+		<metacompacte>Compact</metacompacte>
 	</variables>
 </theme>

@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${firstscharsystem} : Vue système classique, option Personnages : personnage du système, sinon figurine Animatics (définie dans theme.xml)
+	${firstsnapouille} : Vue système classique, option Figurines : figurine Animatics, sinon personnage du système (définie dans theme.xml)
+	${firstsystemhardware} : Vue système classique, option Hardware : console, sinon personnage du système (définie dans theme.xml)
+	${path_common} : dossier _common du thème (définie dans theme.xml)
+	${path_syst_logo} : dossier des logos des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${jeux}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<include>${themePath}/_systemmedia/description/${system.theme}.xml</include>
+	<view name="system">
+		<carousel name="systemcarousel">
+			<scrollSound ifSubset="gamewheelsound:bulle">${path_common}/scrollsound/bulle.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clic">${path_common}/scrollsound/clic.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clicgrave">${path_common}/scrollsound/clicgrave.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:frottement">${path_common}/scrollsound/frottement.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:poc">${path_common}/scrollsound/poc.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:wheelclic">${path_common}/scrollsound/wheelclic.wav</scrollSound>
+			<zIndex>10</zIndex>
+			<type>horizontal</type>
+			<pos>-0.015 0.08</pos>
+			<pos ifHelpPrompts="true">-0.014 0.08</pos>
+			<size>1.375 1</size>
+			<logoScale>1.5</logoScale>
+			<logoSize>0.350 0.350</logoSize>
+			<color>00000000</color>
+			<logoAlignment>bottom</logoAlignment>
+			<minLogoOpacity>1</minLogoOpacity>
+			<transitionSpeed>750</transitionSpeed>
+			<logoPos>0.15 0.5</logoPos>
+			<imageSource>thumbnail</imageSource>
+			<defaultTransition>instant</defaultTransition>
+			<logoRotation>1</logoRotation>
+			<logoRotationOrigin>0 1</logoRotationOrigin>
+			<maxLogoCount>11</maxLogoCount>
+			<itemTemplate>
+				<container>
+					<image name="shadohard">
+						<pos>0.5 0.55</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>0.4 0.4</maxSize>
+						<maxSize ifSubset="systviewselec:figurines">0.55 0.55</maxSize>
+						<maxSize ifSubset="systviewselec:charsystem">0.35 0.55</maxSize>
+						<maxSize ifSubset="systviewselec:hardware">0.35 0.35</maxSize>
+						<path ifSubset="systviewselec:charsystem">${firstscharsystem}</path>
+						<path ifSubset="systviewselec:figurines">${firstsnapouille}</path>
+						<path ifSubset="systviewselec:hardware">${firstsystemhardware}</path>
+						<saturation>1</saturation>
+						<zIndex>5</zIndex>
+						<padding>3 3 -3 -3</padding>
+						<color>000000</color>
+					</image>
+					<image name="hardware">
+						<pos>0.5 0.55</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>0.4 0.4</maxSize>
+						<maxSize ifSubset="systviewselec:figurines">0.55 0.55</maxSize>
+						<maxSize ifSubset="systviewselec:charsystem">0.35 0.55</maxSize>
+						<maxSize ifSubset="systviewselec:hardware">0.35 0.35</maxSize>
+						<path ifSubset="systviewselec:charsystem">${firstscharsystem}</path>
+						<path ifSubset="systviewselec:figurines">${firstsnapouille}</path>
+						<path ifSubset="systviewselec:hardware">${firstsystemhardware}</path>
+						<saturation>0.7</saturation>
+						<zIndex>5</zIndex>
+					</image>
+					<image name="shadowlogo" pos="0.5 0.9" origin="0.5" maxSize="0.2" linearSmooth="true">
+						<path>firstfile(
+                    "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
+						<padding>3 3 -3 -3</padding>
+						<color>000000</color>
+						<zIndex>6</zIndex>
+					</image>
+					<image name="logo" extra="true" pos="0.5 0.9" origin="0.5" maxSize="0.2" linearSmooth="true">
+						<path>firstfile(
+                    "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
+						<zIndex>7</zIndex>
+						<storyboard event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard event="activate">
+							<animation property="color" to="FFFFFFFF" begin="" duration="150" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="color" to="858585ff" begin="" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="color" to="858585ff" begin="" mode="Linear"/>
+						</storyboard>
+					</image>
+				</container>
+			</itemTemplate>
+		</carousel>
+		<image name="overlayarrete" extra="true">
+			<path>${themePath}/_viewgame/fanartstar/overlayarrete.png</path>
+			<size>1 1</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<zIndex>3</zIndex>
+		</image>
+		<image name="whitedegrade" extra="true">
+			<path>${themePath}/_viewsyst/fanartstar/whitedegrade.png</path>
+			<maxSize>1 1</maxSize>
+			<pos>0.5 0.95</pos>
+			<origin>0.5 1</origin>
+			<zIndex>3</zIndex>
+		</image>
+		<video name="gameplayvideostar" extra="true">
+			<visible ifSubset="video4starclassic:videoback,metadataonoff:deactivate">false</visible>
+			<visible ifSubset="video4starclassic:videoback,metadataonoff:active">true</visible>
+			<visible ifSubset="video4starclassic:novideo">false</visible>
+			<default>${themePath}/_systemmedia/defaut/scotty.mp4</default>
+			<path>{random}</path>
+			<pos>0.053 0.62</pos>
+			<origin>0 0.5</origin>
+			<maxSize>0.25 0.28</maxSize>
+			<effect>none</effect>
+			<zIndex>4</zIndex>
+			<opacity>1</opacity>
+			<delay>0.3</delay>
+		</video>
+		<video name="gameplayvideostarangled" ifSubset="metadataonoff:deactivate"  extra="true">
+			<visible ifSubset="metadataonoff:deactivate">true</visible>
+			<visible ifSubset="video4starclassic:videoback,metadataonoff:active">false</visible>
+			<visible ifSubset="video4starclassic:novideo">false</visible>
+			<path>{random}</path>
+			<delay>0.3</delay>
+			<pos>0.995 0.35</pos>
+			<size>0.38 0.47</size>
+			<origin>1 0.5</origin>
+			<effect>none</effect>
+			<zIndex>4</zIndex>
+			<offsetX>-0.6</offsetX>
+			<offsetY>0.1</offsetY>
+			<shader>
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>0</tiltAngle>
+				<tiltAngleX>-30</tiltAngleX>
+				<perspectiveDepth>0.8</perspectiveDepth>
+			</shader>
+		</video>
+		<image name="cadreclassic" ifSubset="metadataonoff:deactivate" extra="true">
+			<visible ifSubset="metadataonoff:deactivate">true</visible>
+			<visible ifSubset="video4starclassic:videoback,metadataonoff:active">false</visible>
+			<visible ifSubset="video4starclassic:novideo">false</visible>
+			<path>${themePath}/_viewgame/fanartstar/169alt1.png</path>
+			<pos>1 0.35</pos>
+			<size>0.39 0.505</size>
+			<origin>1 0.5</origin>
+			<effect>none</effect>
+			<zIndex>4</zIndex>
+			<autoFade>false</autoFade>
+			<offsetX>-0.6</offsetX>
+			<offsetY>0.1</offsetY>
+			<shader>
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>0</tiltAngle>
+				<tiltAngleX>-30</tiltAngleX>
+				<perspectiveDepth>0.8</perspectiveDepth>
+			</shader>
+		</image>
+		<image name="fondclassic" ifSubset="metadataonoff:deactivate" extra="true">
+			<visible ifSubset="metadataonoff:deactivate">true</visible>
+			<visible ifSubset="video4starclassic:videoback,metadataonoff:active">false</visible>
+			<visible ifSubset="video4starclassic:novideo">false</visible>
+			<path>${themePath}/_viewgame/fanartstar/fiber.png</path>
+			<pos>0.995 0.35</pos>
+			<size>0.38 0.472</size>
+			<origin>1 0.5</origin>
+			<effect>none</effect>
+			<zIndex>3</zIndex>
+			<autoFade>false</autoFade>
+						<offsetX>-0.6</offsetX>
+			<offsetY>0.1</offsetY>
+			<shader>
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>0</tiltAngle>
+				<tiltAngleX>-30</tiltAngleX>
+				<perspectiveDepth>0.8</perspectiveDepth>
+			</shader>
+		</image>
+		<image name="logosystemeshadow" extra="true">
+			<autoFade>false</autoFade>
+			<pos>0.2 0.2</pos>
+			<origin>0.5 1</origin>
+			<maxSize>0.25 0.18</maxSize>
+			<padding>3 3 -3 -3</padding>
+			<color>000000</color>
+			<path>firstfile(
+                    "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
+			<zIndex>80</zIndex>
+			<horizontalAlignment>left</horizontalAlignment>
+		</image>
+		<image name="logosysteme" extra="true">
+			<autoFade>false</autoFade>
+			<pos>0.2 0.2</pos>
+			<origin>0.5 1</origin>
+			<maxSize>0.25 0.18</maxSize>
+			<path>firstfile(
+                    "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>80</zIndex>
+			<horizontalAlignment>left</horizontalAlignment>
+		</image>
+		<text name="info1" extra="true">
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<color>ffffffff</color>
+			<pos>0.0525 0.305</pos>
+			<size>0.4 0.1</size>
+			<alignment>left</alignment>
+			<verticalAlignment>top</verticalAlignment>
+			<fontSize>0.022</fontSize>
+			<singleLineScroll>false</singleLineScroll>
+			<glowColor>00000040</glowColor>
+			<glowOffset>0.8</glowOffset>
+			<glowSize>2</glowSize>
+			<lineSpacing>1.2</lineSpacing>
+			<visible>true</visible>
+		</text>
+		<text name="info2" extra="true">
+			<visible>false</visible>
+		</text>
+		<text name="systfullname" extra="true">
+			<text>{system:fullName}        ({binding:total} ${jeux})</text>
+			<opacity>0.7</opacity>
+			<pos>0.253 0.238</pos>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.025</fontSize>
+			<color>ffffffff</color>
+			<origin>0.5 0.5</origin>
+			<size>0.4 0.02</size>
+			<alignment>left</alignment>
+			<glowColor>00000016</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>305</zIndex>
+		</text>
+		<text name="info3" extra="true">
+			<opacity>0.7</opacity>
+			<pos>0.253 0.28</pos>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.025</fontSize>
+			<color>ffffffff</color>
+			<origin>0.5 0.5</origin>
+			<size>0.4 0.02</size>
+			<alignment>left</alignment>
+			<glowColor>00000016</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>305</zIndex>
+		</text>
+		<text name="info4" extra="true">
+			<opacity>0.7</opacity>
+			<pos>0.3 0.28</pos>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.025</fontSize>
+			<color>ffffffff</color>
+			<origin>0.5 0.5</origin>
+			<size>0.4 0.02</size>
+			<alignment>left</alignment>
+			<glowColor>00000016</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>305</zIndex>
+		</text>
+		<text name="systemInfoEx" extra="true">
+			<text>
+Favorites : {binding:favorites} - Games played : {binding:gamesPlayed}
+Most played : {binding:mostPlayed} - Last played : {binding:lastPlayedDate}</text>
+			<text lang="ar">
+المفضلة : {binding:favorites}
+تم لعب المباريات : {binding:gamesPlayed}
+الأكثر لعبا : {binding:mostPlayed}
+اخر لعبه : {binding:lastPlayedDate}</text>
+			<text region="br">
+Favoritos : {binding:favorites}
+Jogos Jogados : {binding:gamesPlayed}
+Mais jogados : {binding:mostPlayed}
+Última jogada : {binding:lastPlayedDate}</text>
+			<text lang="ca">
+Preferits : {binding:favorites}
+Jocs jugats : {binding:gamesPlayed}
+Més jugats : {binding:mostPlayed}
+Últim moviment : {binding:lastPlayedDate}</text>
+			<text lang="de">
+Favoriten : {binding:favorites}
+Spiele gespielt : {binding:gamesPlayed}
+Meist gespielt : {binding:mostPlayed}
+Letzter Zug : {binding:lastPlayedDate}</text>
+			<text lang="en">
+Favorites : {binding:favorites} - Games played : {binding:gamesPlayed}
+Most played : {binding:mostPlayed} - Last played : {binding:lastPlayedDate}</text>
+			<text lang="en_GB">
+Favorites : {binding:favorites} - Games played : {binding:gamesPlayed}
+Most played : {binding:mostPlayed} - Last played : {binding:lastPlayedDate}</text>
+			<text lang="es">
+Favoritos : {binding:favorites}
+Jugados : {binding:gamesPlayed}
+El más jugado : {binding:mostPlayed}
+Última partida : {binding:lastPlayedDate}</text>
+			<text lang="fr">
+Favoris : {binding:favorites} - Jeux joués : {binding:gamesPlayed}
+Le plus joué : {binding:mostPlayed} - Dernière partie : {binding:lastPlayedDate}</text>
+			<text lang="el">
+Αγαπημένα : {binding:favorites}
+Παιχνίδια που παίχτηκαν : {binding:gamesPlayed}
+Περισσότερα παίχτηκαν : {binding:mostPlayed}
+Τελευταία κίνηση : {binding:lastPlayedDate}</text>
+			<text lang="hu">
+Kedvencek : {binding:favorites}
+Játszottak : {binding:gamesPlayed}
+Gyakran játszott : {binding:mostPlayed}
+Utoljára játszott : {binding:lastPlayedDate}</text>
+			<text lang="it">
+Preferiti : {binding:favorites}
+Giochi giocati : {binding:gamesPlayed}
+Più giocati : {binding:mostPlayed}
+Ultimo giocato : {binding:lastPlayedDate}</text>
+			<text lang="jp">
+お気に入り : {binding:favorites}
+プレイしたゲーム : {binding:gamesPlayed}
+最もプレイされた : {binding:mostPlayed}
+最後の動き : {binding:lastPlayedDate}</text>
+			<text lang="ko">
+즐겨찾기 : {binding:favorites}
+플레이한 게임 : {binding:gamesPlayed}
+가장 많이 플레이한 것 : {binding:mostPlayed}
+마지막 플레이 : {binding:lastPlayedDate}</text>
+			<text lang="nl">
+Favorieten : {binding:favorites}
+Spellen gespeeld : {binding:gamesPlayed}
+Meest gespeeld : {binding:mostPlayed}
+Laatste zet : {binding:lastPlayedDate}</text>
+			<text lang="pl">
+Ulubione : {binding:favorites}
+Rozegrane gry : {binding:gamesPlayed}
+Najczęściej grane : {binding:mostPlayed}
+Ostatnio grane : {binding:lastPlayedDate}</text>
+			<text lang="pt">
+Favoritos : {binding:favorites}
+Jogos jogados : {binding:gamesPlayed}
+Mais jogados : {binding:mostPlayed}
+Recém jogado : {binding:lastPlayedDate}</text>
+			<text lang="pt_BR">
+Favoritos : {binding:favorites}
+Jogos Jogados : {binding:gamesPlayed}
+Mais jogados : {binding:mostPlayed}
+Última jogada : {binding:lastPlayedDate}</text>
+			<text lang="ptbr">
+Favoritos : {binding:favorites}
+Jogos Jogados : {binding:gamesPlayed}
+Mais jogados : {binding:mostPlayed}
+Última jogada : {binding:lastPlayedDate}</text>
+			<text lang="ro_RO">
+Favorite : {binding:favorites}
+Jocuri jucate : {binding:gamesPlayed}
+Cele mai jucate : {binding:mostPlayed}
+Ultima rulare : {binding:lastPlayedDate}</text>
+			<text lang="ru">
+Избранное : {binding:favorites}
+Игр сыграно : {binding:gamesPlayed}
+Часто запускаемое : {binding:mostPlayed}
+Последний запуск : {binding:lastPlayedDate}</text>
+			<text lang="uk">
+Вибране : {binding:favorites}
+Зіграні ігри : {binding:gamesPlayed}
+Більше грав : {binding:mostPlayed}
+Останній хід : {binding:lastPlayedDate}</text>
+			<text lang="zh">
+最爱的游戏 : {binding:favorites}
+玩过的游戏 : {binding:gamesPlayed}
+常玩的游戏 : {binding:mostPlayed}
+最后游玩 : {binding:lastPlayedDate}</text>
+			<verticalAlignment>center</verticalAlignment>
+			<pos>0.0525 0.37</pos>
+			<size>0.3 0.14</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<color>FFFFFF</color>
+			<alignment>left</alignment>
+			<fontSize>0.015</fontSize>
+			<zIndex>150</zIndex>
+			<singleLineScroll>false</singleLineScroll>
+			<glowColor>00000040</glowColor>
+			<glowOffset>0.8</glowOffset>
+			<glowSize>2</glowSize>
+			<lineSpacing>1.2</lineSpacing>
+		</text>
+		<text name="systemInfo">
+			<visible>false</visible>
+			<alignment>right</alignment>
+			<pos>0.32 0.58</pos>
+			<size>0.68 0.05</size>
+			<backgroundColor>FFFFFF90</backgroundColor>
+			<zIndex>1</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="1" mode="easeOut"/>
+			</storyboard>
+		</text>
+		<control name="info1,info2,systfullname,info3,info4,systemInfoEx">
+			<visible ifSubset="metadataonoff:deactivate">false</visible>
+			<visible ifSubset="metadataonoff:active">true</visible>
+		</control>
+		<image name="arcade" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/arcade.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.2</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<saturation>0</saturation>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'arcade'">ffffff</color>
+		</image>
+		<image name="computer" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/ordi.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.242</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<saturation>0</saturation>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'computer'">ffffff</color>
+		</image>
+		<image name="console" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/console.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.284</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<saturation>0</saturation>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'console'">ffffff</color>
+		</image>
+		<image name="extension" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/extension.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.326</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<saturation>0</saturation>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'extension'">ffffff</color>
+		</image>
+		<image name="mess" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/mess.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.368</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'MESS'">ffffff</color>
+		</image>
+		<image name="pinball" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/pinball.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.41</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<saturation>0</saturation>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'pinball'">ffffff</color>
+		</image>
+		<image name="port" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/port.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.452</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'port'">ffffff</color>
+		</image>
+		<image name="portable" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/portable.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.494</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'portable'">ffffff</color>
+		</image>
+		<image name="system" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/system.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.536</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'system'">ffffff</color>
+		</image>
+		<image name="autocollection" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectionauto.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.578</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'auto collection'">ffffff</color>
+		</image>
+		<image name="customcollection" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectioncust.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.62</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'custom collection'">ffffff</color>
+		</image>
+		<image name="retrobat" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/option.png</path>
+			<origin>0 0</origin>
+			<pos>0.005 0.662</pos>
+			<maxSize>0.02 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == ''">ffffff</color>
+		</image>
+		<control name="arcade, computer, console, extension, mess, pinball, port, portable, system, autocollection, customcollection, retrobat">
+			<visible ifSubset="breadcrumbsonoff:deactivate">false</visible>
+			<visible ifSubset="breadcrumbsonoff:active">true</visible>
+			<offsetX>0.005</offsetX>
+			<offsetY>-0.05</offsetY>
+		</control>
+	</view>
+</theme>

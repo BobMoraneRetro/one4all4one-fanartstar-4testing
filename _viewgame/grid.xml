@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${intfanartfresh} : Fanart du système (dossier fresh) (définie dans theme.xml)
+	${media_fanart_missing} : vrai si le média « fanart » du jeu manque (définie dans _common/gamemedia/fanartinfanart.xml, _common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_fanart_orthumb} : média « fanart_orthumb » du jeu (gamelist ou média perso selon l option) (définie dans _common/gamemedia/fanartinfanart.xml, _common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_image} : capture du jeu (définie dans _common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video} : vidéo du jeu (définie dans _common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${path_common} : dossier _common du thème (définie dans theme.xml)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${retourdossier}, ${viewbasicgrid}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="grid" displayName="${viewbasicgrid}">
+		<imagegrid name="gamegrid">
+			<scrollSound ifSubset="gamewheelsound:bulle">${path_common}/scrollsound/bulle.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clic">${path_common}/scrollsound/clic.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clicgrave">${path_common}/scrollsound/clicgrave.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:frottement">${path_common}/scrollsound/frottement.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:poc">${path_common}/scrollsound/poc.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:wheelclic">${path_common}/scrollsound/wheelclic.wav</scrollSound>
+			<imageSource>image</imageSource>
+			<pos>0.06 0.4</pos>
+			<size>0.880 0.56</size>
+			<margin>0.005 0.006</margin>
+			<autoLayout>5 3</autoLayout>
+			<autoLayoutSelectedZoom>1.04</autoLayoutSelectedZoom>
+			<animateSelection>false</animateSelection>
+			<showVideoAtDelay>-1</showVideoAtDelay>
+			<zIndex>60</zIndex>
+			<padding>0.005 0.005</padding>
+		</imagegrid>
+		<gridtile name="default">
+			<backgroundCenterColor>40404080</backgroundCenterColor>
+			<backgroundEdgeColor>00000000</backgroundEdgeColor>
+			<padding>8</padding>
+			<imageSizeMode>minSize</imageSizeMode>
+			<backgroundCornerSize>0 0</backgroundCornerSize>
+			<backgroundColor>42424200</backgroundColor>
+			<imageColor>6d6d6dFF</imageColor>
+		</gridtile>
+		<gridtile name="selected">
+			<padding>8</padding>
+			<imageColor>ffffffff</imageColor>
+			<backgroundCornerSize>0</backgroundCornerSize>
+			<backgroundEdgeColor>909090</backgroundEdgeColor>
+			<backgroundCenterColor>0b0102</backgroundCenterColor>
+		</gridtile>
+		<image name="gridtile.favorite">
+			<path>${themePath}/_viewgameoption/gl-common/infoicone/yesfull.png</path>
+			<pos>0.855 0</pos>
+			<maxSize>0.25 0.25</maxSize>
+			<origin>0 0</origin>
+			<color>ffffff</color>
+		</image>
+		<image name="gridtile.favorite:selected">
+			<color>ffff00</color>
+		</image>
+		<image name="gridtile.image">
+			<roundCorners>0</roundCorners>
+		</image>
+		<image name="gridtile.marquee">
+			<color>dadadaff</color>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.60 0.60</size>
+		</image>
+		<image name="gridtile.marquee:selected">
+			<color>FFFFFFFF</color>
+			<size>0.90 0.90</size>
+		</image>
+		<video name="md_video">
+			<visible>false</visible>
+		</video>
+		<image name="grid_capture" extra="true">
+			<path>${media_image}</path>
+			<pos>0.5 0.2</pos>
+			<maxSize>0.4 0.4</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>3</zIndex>
+			<shader>
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
+				<cornerRadius>0.03</cornerRadius>
+				<borderSize>0.022</borderSize>
+				<borderColor>ffffff30</borderColor>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+			</shader>
+		</image>
+		<video name="grid_video" extra="true">
+			<path>${media_video}</path>
+			<pos>0.5 0.2</pos>
+			<maxSize>0.4 0.4</maxSize>
+			<origin>0.5 0.5</origin>
+			<delay>0.4</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<zIndex>3.1</zIndex>
+			<effect>none</effect>
+			<shader>
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
+				<cornerRadius>0.03</cornerRadius>
+				<borderSize>0.022</borderSize>
+				<borderColor>ffffff30</borderColor>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+			</shader>
+		</video>
+		<image name="fanart_extra" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<autoFade>false</autoFade>
+			<path>${media_fanart_orthumb}</path>
+			<pos>0.5 0.5</pos>
+			<size>0 1.07</size>
+			<origin>0.5 0.5</origin>
+			<color>F0F0F0DD</color>
+			<colorEnd>000000</colorEnd>
+			<gradientType>vertical</gradientType>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>1</zIndex>
+			<opacity>0.7</opacity>
+		</image>
+		<image name="defautfanartextra" extra="true">
+			<visible>(${media_fanart_missing}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${intfanartfresh}</path>
+			<autoFade>false</autoFade>
+			<pos>0.5 0.5</pos>
+			<size>0 1</size>
+			<opacity>0.2</opacity>
+			<saturation>0</saturation>
+			<origin>0.5 0.5</origin>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>2</zIndex>
+		</image>
+		<image name="base_retourfond" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<path>${themePath}/_viewgame/commun/retour/retour_fond.jpg</path>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<minSize>1 1</minSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>2.5</zIndex>
+		</image>
+		<text name="base_retourtexte" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<text>${retourdossier}</text>
+			<pos>0.5 0.36</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.6 0.05</size>
+			<fontPath>${themePath}/_common/fonts/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.032</fontSize>
+			<color>FFFFFF</color>
+			<alignment>center</alignment>
+			<glowColor>000000B0</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>50</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>

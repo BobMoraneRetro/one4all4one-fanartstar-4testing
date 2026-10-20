@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${media_marquee} : logo du jeu (marquee) (définie dans _common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee_missing} : vrai si le média « marquee » du jeu manque (définie dans _common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="gamecarousel">
+		<gamecarousel name="gamecarousel">
+			<itemTemplate>
+				<container>
+					<image name="logo">
+						<path>${media_marquee}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>1 1</maxSize>
+						<linearSmooth>true</linearSmooth>
+					</image>
+					<text name="nomjeu">
+						<visible>${media_marquee_missing}</visible>
+						<text>{game:name}</text>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>1 1</size>
+						<fontPath>${themePath}/_common/fonts/Cabin-Bold.ttf</fontPath>
+						<fontSize>0.035</fontSize>
+						<color>FFFFFF</color>
+						<alignment>center</alignment>
+						<glowColor>00000099</glowColor>
+						<glowSize>2</glowSize>
+					</text>
+				</container>
+			</itemTemplate>
+		</gamecarousel>
+	</view>
+</theme>

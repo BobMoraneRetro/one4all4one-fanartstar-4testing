@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${horlogecouleur} : couleur de l horloge quand la barre d aide est masquée (définie dans ce fichier ; valeur selon l option « GÉNÉRAL - Couleur de l’horloge »)
+	${horlogecouleuraide} : couleur de l horloge quand la barre d aide est affichée (définie dans ce fichier ; valeur selon l option « GÉNÉRAL - Couleur de l’horloge »)
+	${horlogetaille} : taille du texte de l horloge (définie dans ce fichier ; valeur selon l option « GÉNÉRAL - Taille de l’horloge »)
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<horlogecouleur ifSubset="horlogecouleur:blanc">FFFFFFFF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:lightgrey">D3D3D3FF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:grey">777777FF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:yellow">FFD24AFF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:orange">FF8C1AFF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:red">FF3B30FF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:green">3DDC84FF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:skyblue">4FC3F7FF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:pink">FF5FA2FF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:purple">C377E0FF</horlogecouleur>
+		<horlogecouleur ifSubset="horlogecouleur:default">777777FF</horlogecouleur>
+		<horlogecouleuraide ifSubset="horlogecouleur:blanc">FFFFFFFF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:lightgrey">D3D3D3FF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:grey">777777FF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:yellow">FFD24AFF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:orange">FF8C1AFF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:red">FF3B30FF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:green">3DDC84FF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:skyblue">4FC3F7FF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:pink">FF5FA2FF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:purple">C377E0FF</horlogecouleuraide>
+		<horlogecouleuraide ifSubset="horlogecouleur:default">FFFFFFFF</horlogecouleuraide>
+		<horlogetaille ifSubset="horlogetaille:petite">0.012</horlogetaille>
+		<horlogetaille ifSubset="horlogetaille:grande">0.019</horlogetaille>
+		<horlogetaille ifSubset="horlogetaille:tresgrande">0.024</horlogetaille>
+		<horlogetaille ifSubset="horlogetaille:normale">0.015</horlogetaille>
+	</variables>
+	<view name="screen">
+		<text name="clock" ifHelpPrompts="false">
+			<color>${horlogecouleur}</color>
+			<fontSize>${horlogetaille}</fontSize>
+			<pos>0.94 0.975</pos>
+			<alignment>right</alignment>
+			<verticalAlignment>center</verticalAlignment>
+			<fontPath>./_common/fonts/Digital-Serial-Bold-folder.ttf</fontPath>
+		</text>
+		<text name="clock" ifHelpPrompts="true">
+			<color>${horlogecouleuraide}</color>
+			<fontSize>${horlogetaille}</fontSize>
+			<pos>0.94 0.973</pos>
+			<alignment>right</alignment>
+			<verticalAlignment>center</verticalAlignment>
+			<fontPath>./_common/fonts/Digital-Serial-Bold-folder.ttf</fontPath>
+		</text>
+		<controllerActivity name="controllerActivity">
+			<pos>0.004 0.975</pos>
+			<size>0.065 0.016</size>
+			<itemSpacing>0.003</itemSpacing>
+			<color>FFFFFF90</color>
+			<imagePath>./_common/controlactivity/gamepad.svg</imagePath>
+			<gunPath>./_common/controlactivity/gun.svg</gunPath>
+			<wheelPath>./_common/controlactivity/wheel.svg</wheelPath>
+			<activityColor>A0A0FFC0</activityColor>
+			<hotkeyColor>FFA0A0C0</hotkeyColor>
+		</controllerActivity>
+		<batteryIndicator name="batteryIndicator">
+			<pos>0.01 0.01</pos>
+			<size>0.022 0.018</size>
+			<horizontalAlignment>right</horizontalAlignment>
+			<incharge>./_common/battery/incharge.svg</incharge>
+			<full>./_common/battery/full.svg</full>
+			<at75>./_common/battery/75.svg</at75>
+			<at50>./_common/battery/50.svg</at50>
+			<at25>./_common/battery/25.svg</at25>
+			<empty>./_common/battery/empty.svg</empty>
+			<color>FFFFFFFF</color>
+		</batteryIndicator>
+	</view>
+</theme>

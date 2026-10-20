@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${extglassnekhros} : Logo système verre Nekhros (définie dans theme.xml)
+	${exthmaxovalsilver} : Logo système ovale argent (définie dans theme.xml)
+	${exthmaxrectrefl} : Logo système rectangle reflet (définie dans theme.xml)
+	${extlogobd} : Logo système style comic (définie dans theme.xml)
+	${extlogohcarbon} : Logo système carbone (définie dans theme.xml)
+	${extlogohcarbonfresh} : Logo système carbone fresh (définie dans theme.xml)
+	${extlogohrect} : Logo système rectangle (définie dans theme.xml)
+	${extlogohrectfresh} : Logo système rectangle fresh (définie dans theme.xml)
+	${path_syst_logo} : dossier des logos des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="logo" ifSubset="systemlogocops1:logosimple">
+			<linearSmooth>true</linearSmooth>
+			<path>${path_syst_logo}/clearlogos/${system.theme}.png</path>
+			<path>${path_syst_logo}/clearlogos/region-${region}/${system.theme}-${region}.png</path>
+			<path>${path_syst_logo}/clearlogos/lang-${lang}/${system.theme}-${lang}.png</path>
+		</image>
+		<image name="logo" ifSubset="systemlogocops1:logobd|logoovalcarb|logoovalcarbfresh|hmaxovalsilver|logorect|logorectfresh|hmaxrectrefl|glassnekhros">
+			<linearSmooth>true</linearSmooth>
+			<path ifSubset="systemlogocops1:logobd">${extlogobd}</path>
+			<path ifSubset="systemlogocops1:logoovalcarb">${extlogohcarbon}</path>
+			<path ifSubset="systemlogocops1:hmaxovalsilver">${exthmaxovalsilver}</path>
+			<path ifSubset="systemlogocops1:logorect">${extlogohrect}</path>
+			<path ifSubset="systemlogocops1:logoovalcarbfresh">${extlogohcarbonfresh}</path>
+			<path ifSubset="systemlogocops1:logorectfresh">${extlogohrectfresh}</path>
+			<path ifSubset="systemlogocops1:hmaxrectrefl">${exthmaxrectrefl}</path>
+			<path ifSubset="systemlogocops1:glassnekhros">${extglassnekhros}</path>
+		</image>
+	</view>
+</theme>

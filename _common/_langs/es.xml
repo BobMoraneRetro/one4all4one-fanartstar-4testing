@@ -138,6 +138,12 @@
 		<clicgrave>Clic grave</clicgrave>
 		<frottement>Roce</frottement>
 		<poc>Poc</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
 		<opt_lismoi>GENERAL - Mensaje de bienvenida</opt_lismoi>
 		<opt_iconset>GENERAL - Apariencia de los iconos de ayuda</opt_iconset>
 		<opt_colorhelp>GENERAL - Colores del texto de ayuda</opt_colorhelp>
@@ -202,6 +208,7 @@
 		<opt_gridcolor>16/9 · 4/3 - Color de la cuadrícula</opt_gridcolor>
 		<opt_squarecadre>CUADRADO - Estilo de los cuadrados que representan los juegos</opt_squarecadre>
 		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>SISTEMAS - Mando flotante (vista clásica)</opt_manetteflottante>
 		<opt_choixbande>SISTEMAS - Banda de la vista Z-Spin</opt_choixbande>
 		<couleur>Colores cambiantes</couleur>
 		<custorcolor>Imagen del sistema si existe, si no colores</custorcolor>

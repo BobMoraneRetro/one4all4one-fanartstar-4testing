@@ -138,6 +138,12 @@
 		<clicgrave>Clic grave</clicgrave>
 		<frottement>Sfregamento</frottement>
 		<poc>Poc</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
 		<opt_lismoi>GENERALE - Messaggio di benvenuto</opt_lismoi>
 		<opt_iconset>GENERALE - Aspetto delle icone di aiuto</opt_iconset>
 		<opt_colorhelp>GENERALE - Colori del testo di aiuto</opt_colorhelp>
@@ -202,6 +208,7 @@
 		<opt_gridcolor>16/9 · 4/3 - Colore della griglia</opt_gridcolor>
 		<opt_squarecadre>QUADRATO - Aspetto dei quadrati che rappresentano i giochi</opt_squarecadre>
 		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>SISTEMI - Controller fluttuante (vista classica)</opt_manetteflottante>
 		<opt_choixbande>SISTEMI - Banda della vista Z-Spin</opt_choixbande>
 		<couleur>Colori cangianti</couleur>
 		<custorcolor>Immagine del sistema se presente, altrimenti colori</custorcolor>

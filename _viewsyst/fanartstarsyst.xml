@@ -4,6 +4,8 @@
 	${firstscharsystem} : Vue système classique, option Personnages : personnage du système, sinon figurine Animatics (définie dans theme.xml)
 	${firstsnapouille} : Vue système classique, option Figurines : figurine Animatics, sinon personnage du système (définie dans theme.xml)
 	${firstsystemhardware} : Vue système classique, option Hardware : console, sinon personnage du système (définie dans theme.xml)
+	${manettechemin} : image de la manette du système : version de la région, sinon PNG, sinon SVG (_common/controllers) (définie dans ce fichier)
+	${manettevisible} : manette flottante affichée (option SYSTÈMES - Manette flottante) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Manette flottante (vue classique) »)
 	${path_common} : dossier _common du thème (définie dans theme.xml)
 	${path_syst_logo} : dossier des logos des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${jeux}
@@ -11,6 +13,11 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<include>${themePath}/_systemmedia/description/${system.theme}.xml</include>
+	<variables>
+		<manettevisible ifSubset="manetteflottante:manetteoui">true</manettevisible>
+		<manettevisible ifSubset="manetteflottante:manettenon">false</manettevisible>
+		<manettechemin>firstfile("${themePath}/_common/controllers/${region}/" + {system:theme} + ".png", "${themePath}/_common/controllers/" + {system:theme} + ".png", "${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettechemin>
+	</variables>
 	<view name="system">
 		<carousel name="systemcarousel">
 			<scrollSound ifSubset="gamewheelsound:bulle">${path_common}/scrollsound/bulle.wav</scrollSound>
@@ -18,6 +25,12 @@
 			<scrollSound ifSubset="gamewheelsound:clicgrave">${path_common}/scrollsound/clicgrave.wav</scrollSound>
 			<scrollSound ifSubset="gamewheelsound:frottement">${path_common}/scrollsound/frottement.wav</scrollSound>
 			<scrollSound ifSubset="gamewheelsound:poc">${path_common}/scrollsound/poc.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360blade">${path_common}/scrollsound/xbox360-BladeSwitch_1.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360onglet">${path_common}/scrollsound/xbox360-tab_Switch.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360focus">${path_common}/scrollsound/xbox360-vk_Focus.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360touche">${path_common}/scrollsound/xbox360-vk_Select.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360retour">${path_common}/scrollsound/xbox360-btn_backG.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360selection">${path_common}/scrollsound/xbox360-snd_buttonselect.wav</scrollSound>
 			<scrollSound ifSubset="gamewheelsound:wheelclic">${path_common}/scrollsound/wheelclic.wav</scrollSound>
 			<zIndex>10</zIndex>
 			<type>horizontal</type>
@@ -538,5 +551,37 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<offsetX>0.005</offsetX>
 			<offsetY>-0.05</offsetY>
 		</control>
+		<image name="manetteombre" extra="true">
+			<visible>${manettevisible}</visible>
+			<path>${themePath}/_viewsyst/fanartstar/halo_manette.png</path>
+			<pos>0.036 0.138</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.058 0.014</size>
+			<zIndex>81</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="0.35" duration="400" mode="easeOut"/>
+				<animation property="scale" from="1" to="0.85" begin="400" duration="1600" mode="easeInOut" autoReverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="0"/>
+			</storyboard>
+		</image>
+		<image name="manette" extra="true">
+			<visible>${manettevisible}</visible>
+			<path>${manettechemin}</path>
+			<pos>0.036 0.088</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.067 0.08</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>82</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+				<animation property="offsetY" from="0" to="-0.012" begin="400" duration="1600" mode="easeInOut" autoReverse="true" repeat="forever"/>
+				<animation property="rotation" from="-1.5" to="1.5" begin="400" duration="2300" mode="easeInOut" autoReverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="0"/>
+			</storyboard>
+		</image>
 	</view>
 </theme>

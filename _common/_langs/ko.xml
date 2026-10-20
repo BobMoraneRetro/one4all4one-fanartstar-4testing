@@ -138,6 +138,12 @@
 		<clicgrave>낮은 클릭</clicgrave>
 		<frottement>마찰음</frottement>
 		<poc>퐁</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
 		<opt_lismoi>일반 - 환영 메시지</opt_lismoi>
 		<opt_iconset>일반 - 도움말 아이콘 모양</opt_iconset>
 		<opt_colorhelp>일반 - 도움말 텍스트 색상</opt_colorhelp>
@@ -202,6 +208,7 @@
 		<opt_gridcolor>16/9 · 4/3 - 그리드 색상</opt_gridcolor>
 		<opt_squarecadre>정사각형 - 게임을 나타내는 사각형 스타일</opt_squarecadre>
 		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>시스템 - Floating controller (classic view)</opt_manetteflottante>
 		<opt_choixbande>시스템 - Z-Spin view banner</opt_choixbande>
 		<couleur>Changing colors</couleur>
 		<custorcolor>System image if available, otherwise colors</custorcolor>

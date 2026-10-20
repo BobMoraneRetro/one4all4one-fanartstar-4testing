@@ -15,6 +15,12 @@
 			<scrollSound ifSubset="gamewheelsound:clicgrave">${path_common}/scrollsound/clicgrave.wav</scrollSound>
 			<scrollSound ifSubset="gamewheelsound:frottement">${path_common}/scrollsound/frottement.wav</scrollSound>
 			<scrollSound ifSubset="gamewheelsound:poc">${path_common}/scrollsound/poc.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360blade">${path_common}/scrollsound/xbox360-BladeSwitch_1.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360onglet">${path_common}/scrollsound/xbox360-tab_Switch.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360focus">${path_common}/scrollsound/xbox360-vk_Focus.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360touche">${path_common}/scrollsound/xbox360-vk_Select.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360retour">${path_common}/scrollsound/xbox360-btn_backG.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:xbox360selection">${path_common}/scrollsound/xbox360-snd_buttonselect.wav</scrollSound>
 			<scrollSound ifSubset="gamewheelsound:wheelclic">${path_common}/scrollsound/wheelclic.wav</scrollSound>
 			<pos>0 0.4</pos>
 			<size>1 0.51</size>

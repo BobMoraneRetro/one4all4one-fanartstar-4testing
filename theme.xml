@@ -5,7 +5,7 @@
 	${path_syst_bezel} : dossier des bezels des systèmes (définie dans ce fichier ; valeur selon l option « AVANCÉ - Emplacement des bezels des systèmes »)
 	${path_syst_fanart} : dossier des fanarts des systèmes (définie dans ce fichier ; valeur selon l option « AVANCÉ - Emplacement des fanarts des systèmes »)
 	${path_syst_logo} : dossier des logos des systèmes (définie dans ce fichier ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
-	Libellés traduits (_common/_langs/<langue>.xml) : ${active}, ${aqua}, ${bulle}, ${candy}, ${charsystem}, ${clic}, ${clicgrave}, ${couleur}, ${custorcolor}, ${default}, ${desactive}, ${extfolder}, ${fanartfreshone}, ${fanartmodern}, ${fanartmodern2}, ${fanartstarsyst}, ${fanartsystcustom}, ${figurines}, ${frottement}, ${green}, ${greenalt}, ${grey}, ${hardware}, ${horlogeblanc}, ${horlogegrande}, ${horlogenormale}, ${horlogepetite}, ${horlogetresgrande}, ${iconsetposition}, ${intheme}, ${lightgrey}, ${logosimple}, ${navy}, ${novideo}, ${opt_breadcrumbsonoff}, ${opt_choixbande}, ${opt_colorhelp}, ${opt_extfolderbezelsyst}, ${opt_extfolderfanart}, ${opt_extfolderlogosyst}, ${opt_extfoldermanufacturer}, ${opt_extfoldervideosyst}, ${opt_gamewheelsound}, ${opt_horlogecouleur}, ${opt_horlogetaille}, ${opt_iconset}, ${opt_imagefondcops1}, ${opt_lismoi}, ${opt_metadataonoff}, ${opt_systemview}, ${opt_systviewselec}, ${opt_video4starclassic}, ${opt_video4starmodern}, ${opt_zspinnav}, ${orange}, ${pink}, ${poc}, ${purple}, ${purplealt}, ${red}, ${redalt}, ${skyblue}, ${systviewzspin}, ${tumasbienlu}, ${videoangled}, ${videoback}, ${violet}, ${wheelclic}, ${yellow}, ${yellowalt}, ${zspinnavarc}
+	Libellés traduits (_common/_langs/<langue>.xml) : ${active}, ${aqua}, ${bulle}, ${candy}, ${charsystem}, ${clic}, ${clicgrave}, ${couleur}, ${custorcolor}, ${default}, ${desactive}, ${extfolder}, ${fanartfreshone}, ${fanartmodern}, ${fanartmodern2}, ${fanartstarsyst}, ${fanartsystcustom}, ${figurines}, ${frottement}, ${green}, ${greenalt}, ${grey}, ${hardware}, ${horlogeblanc}, ${horlogegrande}, ${horlogenormale}, ${horlogepetite}, ${horlogetresgrande}, ${iconsetposition}, ${intheme}, ${lightgrey}, ${logosimple}, ${navy}, ${novideo}, ${opt_breadcrumbsonoff}, ${opt_choixbande}, ${opt_colorhelp}, ${opt_extfolderbezelsyst}, ${opt_extfolderfanart}, ${opt_extfolderlogosyst}, ${opt_extfoldermanufacturer}, ${opt_extfoldervideosyst}, ${opt_gamewheelsound}, ${opt_horlogecouleur}, ${opt_horlogetaille}, ${opt_iconset}, ${opt_imagefondcops1}, ${opt_lismoi}, ${opt_manetteflottante}, ${opt_metadataonoff}, ${opt_systemview}, ${opt_systviewselec}, ${opt_video4starclassic}, ${opt_video4starmodern}, ${opt_zspinnav}, ${orange}, ${pink}, ${poc}, ${purple}, ${purplealt}, ${red}, ${redalt}, ${skyblue}, ${systviewzspin}, ${tumasbienlu}, ${videoangled}, ${videoback}, ${violet}, ${wheelclic}, ${yellow}, ${yellowalt}, ${zspinnavarc}
 -->
 <theme defaultView="presetstarbox">
 	<formatVersion>7</formatVersion>
@@ -66,6 +66,12 @@
 		<include name="clicgrave" displayName="${clicgrave}"/>
 		<include name="frottement" displayName="${frottement}"/>
 		<include name="poc" displayName="${poc}"/>
+		<include name="xbox360blade" displayName="${xbox360blade}"/>
+		<include name="xbox360onglet" displayName="${xbox360onglet}"/>
+		<include name="xbox360focus" displayName="${xbox360focus}"/>
+		<include name="xbox360touche" displayName="${xbox360touche}"/>
+		<include name="xbox360retour" displayName="${xbox360retour}"/>
+		<include name="xbox360selection" displayName="${xbox360selection}"/>
 		<include name="aucun" displayName="${desactive}"/>
 	</subset>
 	<subset name="systemview" displayName="${opt_systemview}">
@@ -73,6 +79,10 @@
 		<include name="fanartmodern" displayName="${fanartmodern}">${themePath}/_viewsyst/fanartmodern.xml</include>
 		<include name="fanartmodern2" displayName="${fanartmodern2}">${themePath}/_viewsyst/fanartmodern2.xml</include>
 		<include name="zspin" displayName="${systviewzspin}">${themePath}/_viewsyst/zspin.xml</include>
+	</subset>
+	<subset name="manetteflottante" ifSubset="systemview:fanartstarsyst" displayName="${opt_manetteflottante}">
+		<include name="manettenon" displayName="${desactive}"/>
+		<include name="manetteoui" displayName="${active}"/>
 	</subset>
 	<subset name="choixbande" ifSubset="systemview:zspin" displayName="${opt_choixbande}">
 		<include name="custorcolor" displayName="${custorcolor}"/>

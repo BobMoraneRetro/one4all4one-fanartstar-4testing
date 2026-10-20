@@ -138,6 +138,12 @@
 		<clicgrave>Klik sakona</clicgrave>
 		<frottement>Igurtzia</frottement>
 		<poc>Poc</poc>
+		<xbox360blade>Xbox 360 - Blade</xbox360blade>
+		<xbox360onglet>Xbox 360 - Tab</xbox360onglet>
+		<xbox360focus>Xbox 360 - Focus</xbox360focus>
+		<xbox360touche>Xbox 360 - Key</xbox360touche>
+		<xbox360retour>Xbox 360 - Back</xbox360retour>
+		<xbox360selection>Xbox 360 - Select</xbox360selection>
 		<opt_lismoi>OROKORRA - Ongietorri mezua</opt_lismoi>
 		<opt_iconset>OROKORRA - Laguntza ikonoen itxura</opt_iconset>
 		<opt_colorhelp>OROKORRA - Laguntza testuaren koloreak</opt_colorhelp>
@@ -202,6 +208,7 @@
 		<opt_gridcolor>16/9 · 4/3 - Saretaren kolorea</opt_gridcolor>
 		<opt_squarecadre>KARRATUA - Jokoak irudikatzen dituzten karratuen itxura</opt_squarecadre>
 		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_manetteflottante>SISTEMAK - Floating controller (classic view)</opt_manetteflottante>
 		<opt_choixbande>SISTEMAK - Z-Spin view banner</opt_choixbande>
 		<couleur>Changing colors</couleur>
 		<custorcolor>System image if available, otherwise colors</custorcolor>

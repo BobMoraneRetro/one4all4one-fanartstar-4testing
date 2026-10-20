@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="nn">
+		<desactive>Av</desactive>
+		<default>Standard</default>
+		<active>På</active>
+		<novideo>Deaktivert</novideo>
+		<videoback>Aktivert</videoback>
+		<intheme>Temamappe - Standard</intheme>
+		<extfolder>Ekstern mappe</extfolder>
+		<nodates>Ingen dato</nodates>
+		<playcountone>spela</playcountone>
+		<playcount>spela</playcount>
+		<noplaycount>Aldri starta</noplaycount>
+		<playerss>spelarar</playerss>
+		<player>spelar</player>
+		<nogametime>Aldri spela</nogametime>
+		<noplayerdata>Ukjend</noplayerdata>
+		<noratings>Inga vurdering</noratings>
+		<presgame1>Dette er eit spel av typen</presgame1>
+		<presgame2>utvikla av</presgame2>
+		<presgame3>spelbart på</presgame3>
+		<presgame4>- Tilgjengelege språk :</presgame4>
+		<nomjeulabel>Spelnamn :</nomjeulabel>
+		<genrelabel>Sjanger :</genrelabel>
+		<devlabel>Utviklar :</devlabel>
+		<langlabel>Språk :</langlabel>
+		<gametimelabel>Speletid :</gametimelabel>
+		<lastgamelabel>Sist spela:</lastgamelabel>
+		<logosimple>Enkel logo (Fullstendig + Region)</logosimple>
+		<viewbasicgrid>Basic: Enkel rutenettvising</viewbasicgrid>
+		<jeux>spel</jeux>
+		<longselect>Langt trykk på "select"</longselect>
+		<favuniquement>Berre favorittar</favuniquement>
+		<tslesjeux>Alle spel</tslesjeux>
+		<tumasbienlu>Velkomen og takk</tumasbienlu>
+		<fanartstarsyst>Klassisk</fanartstarsyst>
+		<fanartmodern>Moderne 1 (ikkje kompatibel med brødsmulesti)</fanartmodern>
+		<fanartmodern2>Moderne 2 (kompatibel med brødsmulesti)</fanartmodern2>
+		<fanartfreshone>Berre fanarts valde av FreshOne</fanartfreshone>
+		<fanartsystcustom>Fanarts frå custom-mappa, elles FreshOne</fanartsystcustom>
+		<videoangled>Aktivert (lita, skrå)</videoangled>
+		<hardware>Maskinvare</hardware>
+		<charsystem>Figurar</charsystem>
+		<figurines>Samlefigurar (temaet Animatics må vere installert)</figurines>
+		<iconsetposition>Plasseringa til knappane</iconsetposition>
+		<skyblue>himmelblå</skyblue>
+		<purple>fiolett</purple>
+		<red>raud</red>
+		<aqua>himmelblå</aqua>
+		<orange>oransje</orange>
+		<green>grøn</green>
+		<yellow>gul</yellow>
+		<pink>rosa</pink>
+		<grey>mørkegrå</grey>
+		<lightgrey>lysegrå</lightgrey>
+		<navy>blå alt</navy>
+		<violet>fiolett</violet>
+		<candy>candy</candy>
+		<redalt>raud alt</redalt>
+		<yellowalt>gul alt</yellowalt>
+		<greenalt>grøn alt</greenalt>
+		<purplealt>fiolett alt</purplealt>
+		<classiquesyst>Uttoning med utzooming</classiquesyst>
+		<no>Nei</no>
+		<yes>Ja</yes>
+		<thumb>Kalibrert for 2D-boks</thumb>
+		<boxart>Kalibrert for 3D-boks</boxart>
+		<starrotate>Ja</starrotate>
+		<nostarrotate>Nei</nostarrotate>
+		<deactive>Av</deactive>
+		<speedslow1>Sakte+</speedslow1>
+		<speedslow2>Sakte++</speedslow2>
+		<starvideoang>Skråstilt</starvideoang>
+		<starvideodef>Standard</starvideodef>
+		<starvideobig>Stor</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>Behageleg grå</griscl>
+		<noirombre>Svart ramme + skugge</noirombre>
+		<blancombre>Kvit ramme + skugge</blancombre>
+		<ombre>Berre skugge</ombre>
+		<rien>Ingen dekor</rien>
+		<presetshowbig>Enkel : RFE Show stor førehandsvising</presetshowbig>
+		<presetshowsmall>Enkel : RFE Show lita førehandsvising</presetshowsmall>
+		<presetspeedbull>Enkel : RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar kvadrat</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presettraviolta_alt>Enkel : RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>Under det store panelet (som Steam)</deckgauche>
+		<deckcentre>Midt i rada (zoom + glød)</deckcentre>
+		<decknormal>Normal</decknormal>
+		<spotvideodroite>Til høgre, over boksane</spotvideodroite>
+		<spotvideoaucune>Deaktivert</spotvideoaucune>
+		<spotvideogauche>Til venstre, med informasjonen</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>Behald logoen</decklogogarder>
+		<decklogobandeau>Infofelt (logo gøymd)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>Tilbake til førre mappe</retourdossier>
+		<noteetoile>Stjerne</noteetoile>
+		<notecoeur>Hjarte</notecoeur>
+		<notemanette>Handkontroll</notemanette>
+		<notepouce>Tommel opp</notepouce>
+		<notetrophee>Pokal</notetrophee>
+		<notefantome>Spøkjelse</notefantome>
+		<notecrane>Hovudskalle</notecrane>
+		<wheelclic>Klikk i Hyperspin-stil</wheelclic>
+		<bulle>Boble</bulle>
+		<clic>Enkelt klikk</clic>
+		<clicgrave>Djupt klikk</clicgrave>
+		<frottement>Gnissing</frottement>
+		<poc>Plopp</poc>
+		<opt_lismoi>GENERELT - Velkomstmelding</opt_lismoi>
+		<opt_iconset>GENERELT - Utsjånad på hjelpeikona</opt_iconset>
+		<opt_colorhelp>GENERELT - Fargar på hjelpeteksten</opt_colorhelp>
+		<opt_horlogecouleur>GENERELT - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>GENERELT - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>SYSTEM - Vising for systemlista</opt_systemview>
+		<opt_imagefondcops1>SYSTEM - Val av fanarts for systemet</opt_imagefondcops1>
+		<opt_video4starmodern>SYSTEM - Spelvideo i systemvisinga</opt_video4starmodern>
+		<opt_video4starclassic>SYSTEM - Spelvideo i systemvisinga</opt_video4starclassic>
+		<opt_systviewselec>SYSTEM - Systembilete i hjulet</opt_systviewselec>
+		<opt_breadcrumbsonoff>SYSTEM - Vertikal meny til venstre (klassisk systemvising)</opt_breadcrumbsonoff>
+		<opt_metadataonoff>SYSTEM - Systeminformasjon (klassisk systemvising)</opt_metadataonoff>
+		<opt_systannonce>SPEL - Vis gjeldande system ved opning</opt_systannonce>
+		<opt_infosmax>SPEL - Vise utvida infokonsoll?</opt_infosmax>
+		<opt_gamewheelsound>GENERELT - Lyd ved rulling</opt_gamewheelsound>
+		<opt_boxorthumb>SPEL - Spelboks som skal visast</opt_boxorthumb>
+		<opt_fanarttransition>SPEL - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>SPEL - Fanart blur</opt_fanartflou>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>SPEL - Box case type</opt_typeboite>
+		<opt_contourboite>SPEL - Box outline (case)</opt_contourboite>
+		<opt_deckespace>SPEL - Avstand mellom boksane</opt_deckespace>
+		<opt_iconenote>SPEL - Vurderingsikon</opt_iconenote>
+		<opt_custombuilds>AVANSERT - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>AVANSERT - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>AVANSERT - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>AVANSERT - Custom media folder</opt_extfoldergamemedia>
+		<opt_extfoldervideosyst>AVANSERT - Systemspesifikt tema</opt_extfoldervideosyst>
+		<opt_extfolderbezelsyst>AVANSERT - Bezels for systema</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>AVANSERT - Logoane til spelutgjevarane</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>AVANSERT - Fanart for systema</opt_extfolderfanart>
+		<opt_extfolderlogosyst>AVANSERT - Systemlogo</opt_extfolderlogosyst>
+		<opt_deckselection>BIG ART - Plassering av valt spel</opt_deckselection>
+		<opt_decklogovideo>BIG ART - Logo under video</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - Rotasjon av boksane SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
+		<opt_starboxang>BOXART - Vinkel på spelboksane</opt_starboxang>
+		<opt_boxstarspeed>BOXART - Fart på rulleanimasjonen</opt_boxstarspeed>
+		<opt_starvideo>BOXART - Storleik på førehandsvisingsvideoen</opt_starvideo>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_gridcolor>16/9 · 4/3 - Rutenettfarge</opt_gridcolor>
+		<opt_squarecadre>KVADRAT - Utsjånad på rutene som viser spela</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_choixbande>SYSTEM - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>SYSTEM - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+	</variables>
+</theme>

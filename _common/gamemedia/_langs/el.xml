@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="el">
+		<packcustombuildsno>Fanart με κατάληξη "-fanart" (προεπιλογή)</packcustombuildsno>
+		<packretrofreshbat>Fanart με κατάληξη "-image"</packretrofreshbat>
+		<scrapedboxart>Κουτί 3D με "-boxart" στο gamelist</scrapedboxart>
+		<scrapedthumbnail>Κουτί 3D με "-thumbnail" στο gamelist</scrapedthumbnail>
+		<gamemedianon>Όχι: μόνο μέσα της gamelist</gamemedianon>
+		<gamemediaoui>Ναι: πρώτα τα προσωπικά μέσα, αλλιώς η gamelist</gamemediaoui>
+		<gamemediaseul>Μόνο: μόνο προσωπικά μέσα (χωρίς εναλλακτική από το gamelist)</gamemediaseul>
+		<intheme>Φάκελος θέματος - Προεπιλογή</intheme>
+		<extfolder>Εξωτερικός φάκελος</extfolder>
+	</variables>
+</theme>

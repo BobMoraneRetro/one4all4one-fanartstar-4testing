@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="ro">
+		<packcustombuildsno>Fanart cu sufixul "-fanart" (implicit)</packcustombuildsno>
+		<packretrofreshbat>Fanart cu sufixul "-image"</packretrofreshbat>
+		<scrapedboxart>Cutie 3D cu "-boxart" în gamelist</scrapedboxart>
+		<scrapedthumbnail>Cutie 3D cu "-thumbnail" în gamelist</scrapedthumbnail>
+		<gamemedianon>Nu: doar media din gamelist</gamemedianon>
+		<gamemediaoui>Da: întâi media personalizate, altfel gamelist</gamemediaoui>
+		<gamemediaseul>Doar: doar media personalizate (fără rezervă din gamelist)</gamemediaseul>
+		<intheme>Folderul temei - Implicit</intheme>
+		<extfolder>Folder extern</extfolder>
+	</variables>
+</theme>

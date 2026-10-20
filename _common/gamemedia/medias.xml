@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${gm_cartridge} : chemin du média perso « cartridge » (_gamemedia/<système>/cartridge/<rom>) (définie dans _common/gamemedia/gamemedia.xml)
+	${gm_disc} : chemin du média perso « disc » (_gamemedia/<système>/disc/<rom>) (définie dans _common/gamemedia/gamemedia.xml)
+	${gm_image} : chemin du média perso « image » (_gamemedia/<système>/image/<rom>) (définie dans _common/gamemedia/gamemedia.xml)
+	${gm_marquee} : chemin du média perso « marquee » (_gamemedia/<système>/marquee/<rom>) (définie dans _common/gamemedia/gamemedia.xml)
+	${gm_video} : chemin du média perso « video » (_gamemedia/<système>/video/<rom>) (définie dans _common/gamemedia/gamemedia.xml)
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<media_marquee ifSubset="gamemedia:oui">firstfile(${gm_marquee},{game:marquee})</media_marquee>
+		<media_marquee ifSubset="gamemedia:seul">firstfile(${gm_marquee})</media_marquee>
+		<media_marquee ifSubset="gamemedia:non">{game:marquee}</media_marquee>
+		<media_marquee_missing ifSubset="gamemedia:oui">!exists(${gm_marquee}) &amp;&amp; !exists({game:marquee})</media_marquee_missing>
+		<media_marquee_missing ifSubset="gamemedia:seul">!exists(${gm_marquee})</media_marquee_missing>
+		<media_marquee_missing ifSubset="gamemedia:non">!exists({game:marquee})</media_marquee_missing>
+		<media_wheel ifSubset="gamemedia:oui">firstfile(${gm_marquee},{game:wheel})</media_wheel>
+		<media_wheel ifSubset="gamemedia:seul">firstfile(${gm_marquee})</media_wheel>
+		<media_wheel ifSubset="gamemedia:non">{game:wheel}</media_wheel>
+		<media_video ifSubset="gamemedia:oui">firstfile(${gm_video},{game:video})</media_video>
+		<media_video ifSubset="gamemedia:seul">firstfile(${gm_video})</media_video>
+		<media_video ifSubset="gamemedia:non">{game:video}</media_video>
+		<media_video_exists ifSubset="gamemedia:oui">exists(${gm_video}) || exists({game:video})</media_video_exists>
+		<media_video_exists ifSubset="gamemedia:seul">exists(${gm_video})</media_video_exists>
+		<media_video_exists ifSubset="gamemedia:non">exists({game:video})</media_video_exists>
+		<media_image ifSubset="gamemedia:oui">firstfile(${gm_image},{game:image})</media_image>
+		<media_image ifSubset="gamemedia:seul">firstfile(${gm_image})</media_image>
+		<media_image ifSubset="gamemedia:non">{game:image}</media_image>
+		<media_support ifSubset="gamemedia:oui">firstfile(${gm_cartridge},{game:cartridge})</media_support>
+		<media_support ifSubset="gamemedia:seul">firstfile(${gm_cartridge})</media_support>
+		<media_support ifSubset="gamemedia:non">{game:cartridge}</media_support>
+		<media_support if="{system.theme} == 'psx' || {system.theme} == 'ps2' || {system.theme} == 'ps3' || {system.theme} == 'saturn' || {system.theme} == 'megacd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'gc' || {system.theme} == 'wii' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'fmtowns'" ifSubset="gamemedia:oui">firstfile(${gm_disc},{game:cartridge})</media_support>
+		<media_support if="{system.theme} == 'psx' || {system.theme} == 'ps2' || {system.theme} == 'ps3' || {system.theme} == 'saturn' || {system.theme} == 'megacd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'gc' || {system.theme} == 'wii' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'fmtowns'" ifSubset="gamemedia:seul">firstfile(${gm_disc})</media_support>
+		<media_support if="{system.theme} == 'psx' || {system.theme} == 'ps2' || {system.theme} == 'ps3' || {system.theme} == 'saturn' || {system.theme} == 'megacd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'gc' || {system.theme} == 'wii' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'fmtowns'" ifSubset="gamemedia:non">{game:cartridge}</media_support>
+		<media_support_exists ifSubset="gamemedia:oui">exists(${gm_cartridge}) || exists({game:cartridge})</media_support_exists>
+		<media_support_exists ifSubset="gamemedia:seul">exists(${gm_cartridge})</media_support_exists>
+		<media_support_exists ifSubset="gamemedia:non">exists({game:cartridge})</media_support_exists>
+		<media_support_exists if="{system.theme} == 'psx' || {system.theme} == 'ps2' || {system.theme} == 'ps3' || {system.theme} == 'saturn' || {system.theme} == 'megacd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'gc' || {system.theme} == 'wii' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'fmtowns'" ifSubset="gamemedia:oui">exists(${gm_disc}) || exists({game:cartridge})</media_support_exists>
+		<media_support_exists if="{system.theme} == 'psx' || {system.theme} == 'ps2' || {system.theme} == 'ps3' || {system.theme} == 'saturn' || {system.theme} == 'megacd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'gc' || {system.theme} == 'wii' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'fmtowns'" ifSubset="gamemedia:seul">exists(${gm_disc})</media_support_exists>
+		<media_support_exists if="{system.theme} == 'psx' || {system.theme} == 'ps2' || {system.theme} == 'ps3' || {system.theme} == 'saturn' || {system.theme} == 'megacd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'gc' || {system.theme} == 'wii' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'fmtowns'" ifSubset="gamemedia:non">exists({game:cartridge})</media_support_exists>
+		<media_support_missing ifSubset="gamemedia:oui">!exists(${gm_cartridge}) &amp;&amp; !exists({game:cartridge})</media_support_missing>
+		<media_support_missing ifSubset="gamemedia:seul">!exists(${gm_cartridge})</media_support_missing>
+		<media_support_missing ifSubset="gamemedia:non">!exists({game:cartridge})</media_support_missing>
+		<media_support_missing if="{system.theme} == 'psx' || {system.theme} == 'ps2' || {system.theme} == 'ps3' || {system.theme} == 'saturn' || {system.theme} == 'megacd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'gc' || {system.theme} == 'wii' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'fmtowns'" ifSubset="gamemedia:oui">!exists(${gm_disc}) &amp;&amp; !exists({game:cartridge})</media_support_missing>
+		<media_support_missing if="{system.theme} == 'psx' || {system.theme} == 'ps2' || {system.theme} == 'ps3' || {system.theme} == 'saturn' || {system.theme} == 'megacd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'gc' || {system.theme} == 'wii' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'fmtowns'" ifSubset="gamemedia:seul">!exists(${gm_disc})</media_support_missing>
+		<media_support_missing if="{system.theme} == 'psx' || {system.theme} == 'ps2' || {system.theme} == 'ps3' || {system.theme} == 'saturn' || {system.theme} == 'megacd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'gc' || {system.theme} == 'wii' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'fmtowns'" ifSubset="gamemedia:non">!exists({game:cartridge})</media_support_missing>
+	</variables>
+</theme>

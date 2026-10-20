@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${gm_fanart} : chemin du média perso « fanart » (_gamemedia/<système>/fanart/<rom>) (définie dans _common/gamemedia/gamemedia.xml)
+	${path_syst_fanart} : dossier des fanarts des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des fanarts des systèmes »)
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<fanartaltpath>{game:image}</fanartaltpath>
+		<fanartsource>fanart</fanartsource>
+		<media_fanart ifSubset="gamemedia:oui">firstfile(${gm_fanart},{game:fanart})</media_fanart>
+		<media_fanart ifSubset="gamemedia:seul">firstfile(${gm_fanart})</media_fanart>
+		<media_fanart ifSubset="gamemedia:non">{game:fanart}</media_fanart>
+		<media_fanart_exists ifSubset="gamemedia:oui">exists(${gm_fanart}) || exists({game:fanart})</media_fanart_exists>
+		<media_fanart_exists ifSubset="gamemedia:seul">exists(${gm_fanart})</media_fanart_exists>
+		<media_fanart_exists ifSubset="gamemedia:non">exists({game:fanart})</media_fanart_exists>
+		<media_fanart_missing ifSubset="gamemedia:oui">!exists(${gm_fanart}) &amp;&amp; !exists({game:fanart})</media_fanart_missing>
+		<media_fanart_missing ifSubset="gamemedia:seul">!exists(${gm_fanart})</media_fanart_missing>
+		<media_fanart_missing ifSubset="gamemedia:non">!exists({game:fanart})</media_fanart_missing>
+		<media_fanart_orthumb ifSubset="gamemedia:oui">firstfile(${gm_fanart},exists({game:fanart}) ? {game:fanart} : {game:thumbnail})</media_fanart_orthumb>
+		<media_fanart_orthumb ifSubset="gamemedia:seul">firstfile(${gm_fanart})</media_fanart_orthumb>
+		<media_fanart_orthumb ifSubset="gamemedia:non">exists({game:fanart}) ? {game:fanart} : {game:thumbnail}</media_fanart_orthumb>
+		<media_fanart_orsyst ifSubset="gamemedia:oui">firstfile(${gm_fanart},{game:fanart},"${path_syst_fanart}/fresh/${system.theme}.jpg")</media_fanart_orsyst>
+		<media_fanart_orsyst ifSubset="gamemedia:seul">firstfile(${gm_fanart}, "${path_syst_fanart}/fresh/${system.theme}.jpg")</media_fanart_orsyst>
+		<media_fanart_orsyst ifSubset="gamemedia:non">firstfile({game:fanart},"${path_syst_fanart}/fresh/${system.theme}.jpg")</media_fanart_orsyst>
+		<media_fanart_chain ifSubset="gamemedia:oui">firstfile(${gm_fanart},{game:fanart},{game:screenshot},{game:image},{game:thumbnail},{game:boxart},"${path_syst_fanart}/fresh/${system.theme}.jpg")</media_fanart_chain>
+		<media_fanart_chain ifSubset="gamemedia:seul">firstfile(${gm_fanart}, "${path_syst_fanart}/fresh/${system.theme}.jpg")</media_fanart_chain>
+		<media_fanart_chain ifSubset="gamemedia:non">firstfile({game:fanart},{game:screenshot},{game:image},{game:thumbnail},{game:boxart},"${path_syst_fanart}/fresh/${system.theme}.jpg")</media_fanart_chain>
+	</variables>
+</theme>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+    <view name="detailed, grid, gamecarousel, system">
+		<helpsystem name="help">
+			<textColor ifSubset="colorhelp:skyblue">0099ff</textColor>
+			<textColor ifSubset="colorhelp:purple">c377e0</textColor>
+			<textColor ifSubset="colorhelp:red">FF0000</textColor>
+			<textColor ifSubset="colorhelp:aqua">00c6ff</textColor>
+			<textColor ifSubset="colorhelp:orange">ff6600</textColor>
+			<textColor ifSubset="colorhelp:green">00ff33</textColor>
+			<textColor ifSubset="colorhelp:yellow">ffff00</textColor>
+			<textColor ifSubset="colorhelp:pink">ff0099</textColor>
+			<textColor ifSubset="colorhelp:grey">333333</textColor>
+			<textColor ifSubset="colorhelp:lightgrey">D3D3D3</textColor>
+			<textColor ifSubset="colorhelp:navy">000080</textColor>
+			<textColor ifSubset="colorhelp:violet">330099</textColor>
+			<textColor ifSubset="colorhelp:candy">FF0040</textColor>
+			<textColor ifSubset="colorhelp:redalt">ff0000</textColor>
+			<textColor ifSubset="colorhelp:yellowalt">ffff00</textColor>
+			<textColor ifSubset="colorhelp:greenalt">2baf2b</textColor>
+			<textColor ifSubset="colorhelp:purplealt">554488</textColor>
+			<textColor ifSubset="colorhelp:default">FFFFFF</textColor>
+		</helpsystem>
+	</view>
+</theme>

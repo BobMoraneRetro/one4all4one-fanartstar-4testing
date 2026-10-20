@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="nl">
+		<packcustombuildsno>Fanart met achtervoegsel "-fanart" (standaard)</packcustombuildsno>
+		<packretrofreshbat>Fanart met achtervoegsel "-image"</packretrofreshbat>
+		<scrapedboxart>3D-doos met "-boxart" in de gamelist</scrapedboxart>
+		<scrapedthumbnail>3D-doos met "-thumbnail" in de gamelist</scrapedthumbnail>
+		<gamemedianon>Nee: alleen gamelist-media</gamemedianon>
+		<gamemediaoui>Ja: eerst eigen media, anders gamelist</gamemediaoui>
+		<gamemediaseul>Alleen: alleen eigen media (geen terugval op gamelist)</gamemediaseul>
+		<intheme>Themamap - Standaard</intheme>
+		<extfolder>Externe map</extfolder>
+	</variables>
+</theme>

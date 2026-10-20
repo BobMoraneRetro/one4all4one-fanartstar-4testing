@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="gl">
+		<packcustombuildsno>Fanart con sufixo "-fanart" (predeterminado)</packcustombuildsno>
+		<packretrofreshbat>Fanart con sufixo "-image"</packretrofreshbat>
+		<scrapedboxart>Caixa 3D con "-boxart" na gamelist</scrapedboxart>
+		<scrapedthumbnail>Caixa 3D con "-thumbnail" na gamelist</scrapedthumbnail>
+		<gamemedianon>Non: só medios da gamelist</gamemedianon>
+		<gamemediaoui>Si: primeiro medios persoais, se non a gamelist</gamemediaoui>
+		<gamemediaseul>Só: só medios persoais (sen recurso á gamelist)</gamemediaseul>
+		<intheme>Cartafol do tema - Predeterminado</intheme>
+		<extfolder>Cartafol externo</extfolder>
+	</variables>
+</theme>

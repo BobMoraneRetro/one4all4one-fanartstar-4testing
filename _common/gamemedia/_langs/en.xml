@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="en">
+		<packcustombuildsno>Fanart with "-fanart" suffix (default)</packcustombuildsno>
+		<packretrofreshbat>Fanart with "-image" suffix</packretrofreshbat>
+		<scrapedboxart>3D box with "-boxart" in the gamelist</scrapedboxart>
+		<scrapedthumbnail>3D box with "-thumbnail" in the gamelist</scrapedthumbnail>
+		<gamemedianon>No: gamelist media only</gamemedianon>
+		<gamemediaoui>Yes: custom media first, otherwise gamelist</gamemediaoui>
+		<gamemediaseul>Only: custom media only (no gamelist fallback)</gamemediaseul>
+		<intheme>Theme folder - Default</intheme>
+		<extfolder>External folder</extfolder>
+	</variables>
+</theme>

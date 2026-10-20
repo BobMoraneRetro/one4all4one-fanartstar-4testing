@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="fi">
+		<packcustombuildsno>Fanart päätteellä "-fanart" (oletus)</packcustombuildsno>
+		<packretrofreshbat>Fanart päätteellä "-image"</packretrofreshbat>
+		<scrapedboxart>3D-kotelo "-boxart" gamelistissä</scrapedboxart>
+		<scrapedthumbnail>3D-kotelo "-thumbnail" gamelistissä</scrapedthumbnail>
+		<gamemedianon>Ei: vain gamelistin mediat</gamemedianon>
+		<gamemediaoui>Kyllä: ensin omat mediat, muuten gamelist</gamemediaoui>
+		<gamemediaseul>Vain: vain omat mediat (ei varalle gamelistia)</gamemediaseul>
+		<intheme>Teeman kansio - Oletus</intheme>
+		<extfolder>Ulkoinen kansio</extfolder>
+	</variables>
+</theme>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="nl">
+		<desactive>Uitgeschakeld</desactive>
+		<default>Standaard</default>
+		<active>Ingeschakeld</active>
+		<novideo>Uitgeschakeld</novideo>
+		<videoback>Ingeschakeld</videoback>
+		<intheme>Themamap - Standaard</intheme>
+		<extfolder>Externe map</extfolder>
+		<nodates>Geen datum</nodates>
+		<playcountone>keer gespeeld</playcountone>
+		<playcount>keer gespeeld</playcount>
+		<noplaycount>Nooit gestart</noplaycount>
+		<playerss>spelers</playerss>
+		<player>speler</player>
+		<nogametime>Nooit gespeeld</nogametime>
+		<noplayerdata>Onbekend</noplayerdata>
+		<noratings>Geen beoordeling</noratings>
+		<presgame1>Dit is een spel van het type</presgame1>
+		<presgame2>ontwikkeld door</presgame2>
+		<presgame3>speelbaar op</presgame3>
+		<presgame4>- Beschikbare talen :</presgame4>
+		<nomjeulabel>Naam van het spel :</nomjeulabel>
+		<genrelabel>Genre :</genrelabel>
+		<devlabel>Ontwikkelaar :</devlabel>
+		<langlabel>Talen :</langlabel>
+		<gametimelabel>Speeltijd :</gametimelabel>
+		<lastgamelabel>Laatst gespeeld:</lastgamelabel>
+		<logosimple>Eenvoudig logo (Volledig + Regio)</logosimple>
+		<viewbasicgrid>Basic: Eenvoudige rasterweergave</viewbasicgrid>
+		<jeux>spellen</jeux>
+		<longselect>Lang drukken op "select"</longselect>
+		<favuniquement>Alleen favorieten</favuniquement>
+		<tslesjeux>Alle spellen</tslesjeux>
+		<tumasbienlu>Welkom en credits</tumasbienlu>
+		<fanartstarsyst>Klassiek</fanartstarsyst>
+		<fanartmodern>Modern 1 (niet compatibel met kruimelpad)</fanartmodern>
+		<fanartmodern2>Modern 2 (compatibel met kruimelpad)</fanartmodern2>
+		<fanartfreshone>Alleen door FreshOne geselecteerde fanarts</fanartfreshone>
+		<fanartsystcustom>Fanarts uit de map custom, anders FreshOne</fanartsystcustom>
+		<videoangled>Ingeschakeld (klein, schuin)</videoangled>
+		<hardware>Hardware</hardware>
+		<charsystem>Personages</charsystem>
+		<figurines>Figuren (thema Animatics moet geïnstalleerd zijn)</figurines>
+		<iconsetposition>Positie van de knoppen</iconsetposition>
+		<skyblue>hemelsblauw</skyblue>
+		<purple>paars</purple>
+		<red>rood</red>
+		<aqua>hemelsblauw</aqua>
+		<orange>oranje</orange>
+		<green>groen</green>
+		<yellow>geel</yellow>
+		<pink>roze</pink>
+		<grey>donkergrijs</grey>
+		<lightgrey>lichtgrijs</lightgrey>
+		<navy>blauw alt</navy>
+		<violet>paars</violet>
+		<candy>candy</candy>
+		<redalt>rood alt</redalt>
+		<yellowalt>geel alt</yellowalt>
+		<greenalt>groen alt</greenalt>
+		<purplealt>paars alt</purplealt>
+		<classiquesyst>Verdwijnen met uitzoomen</classiquesyst>
+		<no>Nee</no>
+		<yes>Ja</yes>
+		<thumb>Gekalibreerd voor 2D-doos</thumb>
+		<boxart>Gekalibreerd voor 3D-doos</boxart>
+		<starrotate>Ja</starrotate>
+		<nostarrotate>Nee</nostarrotate>
+		<deactive>Uitgeschakeld</deactive>
+		<speedslow1>Langzaam+</speedslow1>
+		<speedslow2>Langzaam++</speedslow2>
+		<starvideoang>Gekanteld</starvideoang>
+		<starvideodef>Standaard</starvideodef>
+		<starvideobig>Groot</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>Prettig grijs</griscl>
+		<noirombre>Zwart kader + schaduw</noirombre>
+		<blancombre>Wit kader + schaduw</blancombre>
+		<ombre>Alleen schaduw</ombre>
+		<rien>Geen versiering</rien>
+		<presetshowbig>Eenvoudig : RFE Show grote preview</presetshowbig>
+		<presetshowsmall>Eenvoudig : RFE Show kleine preview</presetshowsmall>
+		<presetspeedbull>Eenvoudig : RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar vierkant</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presettraviolta_alt>Eenvoudig : RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>Onder het grote paneel (zoals Steam)</deckgauche>
+		<deckcentre>Midden in de rij (zoom + gloed)</deckcentre>
+		<decknormal>Normaal</decknormal>
+		<spotvideodroite>Rechts, over de doosjes</spotvideodroite>
+		<spotvideoaucune>Uitgeschakeld</spotvideoaucune>
+		<spotvideogauche>Links, met de info</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>Logo behouden</decklogogarder>
+		<decklogobandeau>Infobalk (logo verborgen)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>Terug naar vorige map</retourdossier>
+		<noteetoile>Ster</noteetoile>
+		<notecoeur>Hart</notecoeur>
+		<notemanette>Controller</notemanette>
+		<notepouce>Duim omhoog</notepouce>
+		<notetrophee>Trofee</notetrophee>
+		<notefantome>Spook</notefantome>
+		<notecrane>Doodshoofd</notecrane>
+		<wheelclic>Klik in Hyperspin-stijl</wheelclic>
+		<bulle>Bel</bulle>
+		<clic>Eenvoudige klik</clic>
+		<clicgrave>Diepe klik</clicgrave>
+		<frottement>Wrijving</frottement>
+		<poc>Plop</poc>
+		<opt_lismoi>ALGEMEEN - Welkomstbericht</opt_lismoi>
+		<opt_iconset>ALGEMEEN - Uiterlijk van de helppictogrammen</opt_iconset>
+		<opt_colorhelp>ALGEMEEN - Kleuren van de helptekst</opt_colorhelp>
+		<opt_horlogecouleur>ALGEMEEN - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>ALGEMEEN - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>SYSTEMEN - Weergave van de systeemlijst</opt_systemview>
+		<opt_imagefondcops1>SYSTEMEN - Keuze van de systeemfanarts</opt_imagefondcops1>
+		<opt_video4starmodern>SYSTEMEN - Gameplayvideo in de systeemweergave</opt_video4starmodern>
+		<opt_video4starclassic>SYSTEMEN - Gameplayvideo in de systeemweergave</opt_video4starclassic>
+		<opt_systviewselec>SYSTEMEN - Systeemafbeelding in het wiel</opt_systviewselec>
+		<opt_breadcrumbsonoff>SYSTEMEN - Verticaal menu links (klassieke systeemweergave)</opt_breadcrumbsonoff>
+		<opt_metadataonoff>SYSTEMEN - Systeeminformatie (klassieke systeemweergave)</opt_metadataonoff>
+		<opt_systannonce>SPELLEN - Huidig systeem tonen bij openen</opt_systannonce>
+		<opt_infosmax>SPELLEN - Uitgebreide infoconsole tonen?</opt_infosmax>
+		<opt_gamewheelsound>ALGEMEEN - Geluid bij het scrollen</opt_gamewheelsound>
+		<opt_boxorthumb>SPELLEN - Weer te geven spelbox</opt_boxorthumb>
+		<opt_fanarttransition>SPELLEN - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>SPELLEN - Fanart blur</opt_fanartflou>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>SPELLEN - Box case type</opt_typeboite>
+		<opt_contourboite>SPELLEN - Box outline (case)</opt_contourboite>
+		<opt_deckespace>SPELLEN - Ruimte tussen de doosjes</opt_deckespace>
+		<opt_iconenote>SPELLEN - Beoordelingsicoon</opt_iconenote>
+		<opt_custombuilds>GEAVANCEERD - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>GEAVANCEERD - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>GEAVANCEERD - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>GEAVANCEERD - Custom media folder</opt_extfoldergamemedia>
+		<opt_extfoldervideosyst>GEAVANCEERD - Systeemspecifiek thema</opt_extfoldervideosyst>
+		<opt_extfolderbezelsyst>GEAVANCEERD - Systeembezels</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>GEAVANCEERD - Logo's van spieluitgevers</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>GEAVANCEERD - Systeemfanart</opt_extfolderfanart>
+		<opt_extfolderlogosyst>GEAVANCEERD - Systeemlogo</opt_extfolderlogosyst>
+		<opt_deckselection>BIG ART - Positie van het geselecteerde spel</opt_deckselection>
+		<opt_decklogovideo>BIG ART - Logo tijdens video</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - Rotatie van de boxen SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
+		<opt_starboxang>BOXART - Hoek van de spelboxen</opt_starboxang>
+		<opt_boxstarspeed>BOXART - Snelheid van de scrollanimatie</opt_boxstarspeed>
+		<opt_starvideo>BOXART - Grootte van de voorbeeldvideo</opt_starvideo>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_gridcolor>16/9 · 4/3 - Rasterkleur</opt_gridcolor>
+		<opt_squarecadre>VIERKANT - Uiterlijk van de vakjes die de spellen voorstellen</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_choixbande>SYSTEMEN - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>SYSTEMEN - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+	</variables>
+</theme>

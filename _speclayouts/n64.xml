@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	Libellés traduits (_common/_langs/<langue>.xml) : ${presetstarbox}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="presetstarbox" displayName="${presetstarbox}">
+		<gamecarousel name="gamecarousel">
+			<maxLogoCount ifSubset="deckespace:e20,fanartstarrotated:nostarrotate">9</maxLogoCount>
+		</gamecarousel>
+	</customView>
+</theme>

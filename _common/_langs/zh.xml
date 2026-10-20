@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="zh">
+		<desactive>已禁用</desactive>
+		<default>默认</default>
+		<active>已启用</active>
+		<novideo>关闭</novideo>
+		<videoback>开启</videoback>
+		<intheme>主题文件夹 - 默认</intheme>
+		<extfolder>外部文件夹</extfolder>
+		<nodates>无日期</nodates>
+		<playcountone>次游玩</playcountone>
+		<playcount>次游玩</playcount>
+		<noplaycount>从未启动</noplaycount>
+		<playerss>名玩家</playerss>
+		<player>名玩家</player>
+		<nogametime>从未玩过</nogametime>
+		<noplayerdata>未知</noplayerdata>
+		<noratings>无评分</noratings>
+		<presgame1>这是一款类型为</presgame1>
+		<presgame2>开发商：</presgame2>
+		<presgame3>可游玩平台：</presgame3>
+		<presgame4>- 可用语言 :</presgame4>
+		<nomjeulabel>游戏名称 :</nomjeulabel>
+		<genrelabel>类型 :</genrelabel>
+		<devlabel>开发商 :</devlabel>
+		<langlabel>语言 :</langlabel>
+		<gametimelabel>游戏时长 :</gametimelabel>
+		<lastgamelabel>上次游玩:</lastgamelabel>
+		<logosimple>简单标志(完整 + 地区)</logosimple>
+		<viewbasicgrid>Basic:基础网格视图</viewbasicgrid>
+		<jeux>款游戏</jeux>
+		<longselect>长按 "select"</longselect>
+		<favuniquement>仅收藏</favuniquement>
+		<tslesjeux>所有游戏</tslesjeux>
+		<tumasbienlu>欢迎与致谢</tumasbienlu>
+		<fanartstarsyst>经典</fanartstarsyst>
+		<fanartmodern>现代 1（不兼容导航路径）</fanartmodern>
+		<fanartmodern2>现代 2（兼容导航路径）</fanartmodern2>
+		<fanartfreshone>仅 FreshOne 精选的背景图</fanartfreshone>
+		<fanartsystcustom>custom 文件夹中的同人图，否则 FreshOne</fanartsystcustom>
+		<videoangled>开启（小，倾斜）</videoangled>
+		<hardware>硬件</hardware>
+		<charsystem>角色</charsystem>
+		<figurines>手办（需安装 Animatics 主题）</figurines>
+		<iconsetposition>按钮位置</iconsetposition>
+		<skyblue>天蓝</skyblue>
+		<purple>紫色</purple>
+		<red>红色</red>
+		<aqua>天蓝</aqua>
+		<orange>橙色</orange>
+		<green>绿色</green>
+		<yellow>黄色</yellow>
+		<pink>粉色</pink>
+		<grey>深灰</grey>
+		<lightgrey>浅灰</lightgrey>
+		<navy>蓝色 alt</navy>
+		<violet>紫色</violet>
+		<candy>candy</candy>
+		<redalt>红色 alt</redalt>
+		<yellowalt>黄色 alt</yellowalt>
+		<greenalt>绿色 alt</greenalt>
+		<purplealt>紫色 alt</purplealt>
+		<classiquesyst>缩小后消失</classiquesyst>
+		<no>否</no>
+		<yes>是</yes>
+		<thumb>针对 2D 盒子校准</thumb>
+		<boxart>针对 3D 盒子校准</boxart>
+		<starrotate>是</starrotate>
+		<nostarrotate>否</nostarrotate>
+		<deactive>已禁用</deactive>
+		<speedslow1>慢+</speedslow1>
+		<speedslow2>慢++</speedslow2>
+		<starvideoang>倾斜</starvideoang>
+		<starvideodef>标准</starvideodef>
+		<starvideobig>大</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>柔和灰</griscl>
+		<noirombre>黑框 + 阴影</noirombre>
+		<blancombre>白框 + 阴影</blancombre>
+		<ombre>仅阴影</ombre>
+		<rien>无装饰</rien>
+		<presetshowbig>简洁 : RFE Show 大预览</presetshowbig>
+		<presetshowsmall>简洁 : RFE Show 小预览</presetshowsmall>
+		<presetspeedbull>简洁 : RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar 方形</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presettraviolta_alt>简洁 : RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>大面板下方（类似 Steam）</deckgauche>
+		<deckcentre>行的中央（放大 + 光晕）</deckcentre>
+		<decknormal>正常</decknormal>
+		<spotvideodroite>右侧，盖在游戏盒上</spotvideodroite>
+		<spotvideoaucune>关闭</spotvideoaucune>
+		<spotvideogauche>左侧，带信息</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>保留徽标</decklogogarder>
+		<decklogobandeau>信息条（隐藏徽标）</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>返回上一个文件夹</retourdossier>
+		<noteetoile>星星</noteetoile>
+		<notecoeur>爱心</notecoeur>
+		<notemanette>手柄</notemanette>
+		<notepouce>点赞</notepouce>
+		<notetrophee>奖杯</notetrophee>
+		<notefantome>幽灵</notefantome>
+		<notecrane>骷髅</notecrane>
+		<wheelclic>Hyperspin 风格咔嗒声</wheelclic>
+		<bulle>气泡</bulle>
+		<clic>简单咔嗒声</clic>
+		<clicgrave>低沉咔嗒声</clicgrave>
+		<frottement>摩擦声</frottement>
+		<poc>啵</poc>
+		<opt_lismoi>通用 - 欢迎信息</opt_lismoi>
+		<opt_iconset>通用 - 帮助图标外观</opt_iconset>
+		<opt_colorhelp>通用 - 帮助文字颜色</opt_colorhelp>
+		<opt_horlogecouleur>通用 - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>通用 - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>系统 - 系统列表视图</opt_systemview>
+		<opt_imagefondcops1>系统 - 系统背景图选择</opt_imagefondcops1>
+		<opt_video4starmodern>系统 - 系统视图中的游戏视频</opt_video4starmodern>
+		<opt_video4starclassic>系统 - 系统视图中的游戏视频</opt_video4starclassic>
+		<opt_systviewselec>系统 - 轮盘中的系统图片</opt_systviewselec>
+		<opt_breadcrumbsonoff>系统 - 左侧竖向菜单（经典系统视图）</opt_breadcrumbsonoff>
+		<opt_metadataonoff>系统 - 系统信息（经典系统视图）</opt_metadataonoff>
+		<opt_systannonce>游戏 - 打开时显示当前系统</opt_systannonce>
+		<opt_infosmax>游戏 - 显示完整信息面板？</opt_infosmax>
+		<opt_gamewheelsound>通用 - 滚动音效</opt_gamewheelsound>
+		<opt_boxorthumb>游戏 - 要显示的游戏盒子</opt_boxorthumb>
+		<opt_fanarttransition>游戏 - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>游戏 - Fanart blur</opt_fanartflou>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>游戏 - Box case type</opt_typeboite>
+		<opt_contourboite>游戏 - Box outline (case)</opt_contourboite>
+		<opt_deckespace>游戏 - 盒子间距</opt_deckespace>
+		<opt_iconenote>游戏 - 评分图标</opt_iconenote>
+		<opt_custombuilds>高级 - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>高级 - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>高级 - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>高级 - Custom media folder</opt_extfoldergamemedia>
+		<opt_extfoldervideosyst>高级 - 系统专属主题</opt_extfoldervideosyst>
+		<opt_extfolderbezelsyst>高级 - 系统边框</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>高级 - 游戏发行商标志</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>高级 - 系统背景图</opt_extfolderfanart>
+		<opt_extfolderlogosyst>高级 - 系统标志</opt_extfolderlogosyst>
+		<opt_deckselection>BIG ART - 所选游戏的位置</opt_deckselection>
+		<opt_decklogovideo>BIG ART - 视频播放时的徽标</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - 视频</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - 旋转 SNES、N64、NGAGE、Solarus 盒子</opt_fanartstarrotated>
+		<opt_starboxang>BOXART - 游戏盒子角度</opt_starboxang>
+		<opt_boxstarspeed>BOXART - 滚动动画速度</opt_boxstarspeed>
+		<opt_starvideo>BOXART - 预览视频大小</opt_starvideo>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_gridcolor>16/9 · 4/3 - 网格颜色</opt_gridcolor>
+		<opt_squarecadre>方形 - 代表游戏的方块样式</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_choixbande>系统 - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>系统 - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+	</variables>
+</theme>

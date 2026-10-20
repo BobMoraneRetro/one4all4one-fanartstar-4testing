@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="tr">
+		<packcustombuildsno>Fanart "-fanart" sonekiyle (varsayılan)</packcustombuildsno>
+		<packretrofreshbat>Fanart "-image" sonekiyle</packretrofreshbat>
+		<scrapedboxart>gamelist'te "-boxart" ile 3D kutu</scrapedboxart>
+		<scrapedthumbnail>gamelist'te "-thumbnail" ile 3D kutu</scrapedthumbnail>
+		<gamemedianon>Hayır: yalnızca gamelist medyası</gamemedianon>
+		<gamemediaoui>Evet: önce özel medya, yoksa gamelist</gamemediaoui>
+		<gamemediaseul>Yalnız: yalnızca özel medya (gamelist yedeği yok)</gamemediaseul>
+		<intheme>Tema klasörü - Varsayılan</intheme>
+		<extfolder>Harici klasör</extfolder>
+	</variables>
+</theme>

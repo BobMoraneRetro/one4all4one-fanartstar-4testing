@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="el">
+		<desactive>Απενεργοποιημένο</desactive>
+		<default>Προεπιλογή</default>
+		<active>Ενεργοποιημένο</active>
+		<novideo>Απενεργοποιημένο</novideo>
+		<videoback>Ενεργοποιημένο</videoback>
+		<intheme>Φάκελος θέματος - Προεπιλογή</intheme>
+		<extfolder>Εξωτερικός φάκελος</extfolder>
+		<nodates>Χωρίς ημερομηνία</nodates>
+		<playcountone>παιχνίδι</playcountone>
+		<playcount>παιχνίδια</playcount>
+		<noplaycount>Δεν ξεκίνησε ποτέ</noplaycount>
+		<playerss>παίκτες</playerss>
+		<player>παίκτης</player>
+		<nogametime>Δεν παίχτηκε ποτέ</nogametime>
+		<noplayerdata>Άγνωστο</noplayerdata>
+		<noratings>Χωρίς βαθμολογία</noratings>
+		<presgame1>Αυτό είναι ένα παιχνίδι τύπου</presgame1>
+		<presgame2>αναπτύχθηκε από</presgame2>
+		<presgame3>παίζεται σε</presgame3>
+		<presgame4>- Διαθέσιμες γλώσσες :</presgame4>
+		<nomjeulabel>Όνομα παιχνιδιού :</nomjeulabel>
+		<genrelabel>Είδος :</genrelabel>
+		<devlabel>Προγραμματιστής :</devlabel>
+		<langlabel>Γλώσσες :</langlabel>
+		<gametimelabel>Χρόνος παιχνιδιού :</gametimelabel>
+		<lastgamelabel>Τελευταίο παιχνίδι:</lastgamelabel>
+		<logosimple>Απλό λογότυπο (Πλήρες + Περιοχή)</logosimple>
+		<viewbasicgrid>Basic: Βασική προβολή πλέγματος</viewbasicgrid>
+		<jeux>παιχνίδια</jeux>
+		<longselect>Παρατεταμένο πάτημα "select"</longselect>
+		<favuniquement>Μόνο αγαπημένα</favuniquement>
+		<tslesjeux>Όλα τα παιχνίδια</tslesjeux>
+		<tumasbienlu>Καλωσόρισμα και ευχαριστίες</tumasbienlu>
+		<fanartstarsyst>Κλασική</fanartstarsyst>
+		<fanartmodern>Μοντέρνα 1 (μη συμβατή με τη διαδρομή πλοήγησης)</fanartmodern>
+		<fanartmodern2>Μοντέρνα 2 (συμβατή με τη διαδρομή πλοήγησης)</fanartmodern2>
+		<fanartfreshone>Μόνο fanart επιλεγμένα από το FreshOne</fanartfreshone>
+		<fanartsystcustom>Fanart από τον φάκελο custom, αλλιώς FreshOne</fanartsystcustom>
+		<videoangled>Ενεργοποιημένο (μικρό, υπό γωνία)</videoangled>
+		<hardware>Υλικό</hardware>
+		<charsystem>Χαρακτήρες</charsystem>
+		<figurines>Φιγούρες (απαιτείται το θέμα Animatics)</figurines>
+		<iconsetposition>Θέση κουμπιών</iconsetposition>
+		<skyblue>γαλάζιο</skyblue>
+		<purple>βιολετί</purple>
+		<red>κόκκινο</red>
+		<aqua>γαλάζιο</aqua>
+		<orange>πορτοκαλί</orange>
+		<green>πράσινο</green>
+		<yellow>κίτρινο</yellow>
+		<pink>ροζ</pink>
+		<grey>σκούρο γκρι</grey>
+		<lightgrey>ανοιχτό γκρι</lightgrey>
+		<navy>μπλε alt</navy>
+		<violet>βιολετί</violet>
+		<candy>candy</candy>
+		<redalt>κόκκινο alt</redalt>
+		<yellowalt>κίτρινο alt</yellowalt>
+		<greenalt>πράσινο alt</greenalt>
+		<purplealt>βιολετί alt</purplealt>
+		<classiquesyst>Εξαφάνιση με σμίκρυνση</classiquesyst>
+		<no>Όχι</no>
+		<yes>Ναι</yes>
+		<thumb>Βαθμονομημένο για κουτί 2D</thumb>
+		<boxart>Βαθμονομημένο για κουτί 3D</boxart>
+		<starrotate>Ναι</starrotate>
+		<nostarrotate>Όχι</nostarrotate>
+		<deactive>Απενεργοποιημένο</deactive>
+		<speedslow1>Αργά+</speedslow1>
+		<speedslow2>Αργά++</speedslow2>
+		<starvideoang>Κεκλιμένο</starvideoang>
+		<starvideodef>Τυπικό</starvideodef>
+		<starvideobig>Μεγάλο</starvideobig>
+		<starvideofixe>Screenshot then video, in place</starvideofixe>
+		<starvideoglisse>Video slides over the fanart after 3 seconds</starvideoglisse>
+		<griscl>Ευχάριστο γκρι</griscl>
+		<noirombre>Μαύρο πλαίσιο + σκιά</noirombre>
+		<blancombre>Λευκό πλαίσιο + σκιά</blancombre>
+		<ombre>Μόνο σκιά</ombre>
+		<rien>Χωρίς διακόσμηση</rien>
+		<presetshowbig>Απλό : RFE Show μεγάλη προεπισκόπηση</presetshowbig>
+		<presetshowsmall>Απλό : RFE Show μικρή προεπισκόπηση</presetshowsmall>
+		<presetspeedbull>Απλό : RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar τετράγωνο</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presettraviolta_alt>Απλό : RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>Κάτω από το μεγάλο πλαίσιο (όπως το Steam)</deckgauche>
+		<deckcentre>Στο κέντρο της σειράς (μεγέθυνση + λάμψη)</deckcentre>
+		<decknormal>Κανονική</decknormal>
+		<spotvideodroite>Δεξιά, πάνω από τα κουτιά</spotvideodroite>
+		<spotvideoaucune>Απενεργοποιημένο</spotvideoaucune>
+		<spotvideogauche>Αριστερά, με τις πληροφορίες</spotvideogauche>
+		<spotvideogauchehaut>Left, title above</spotvideogauchehaut>
+		<decklogogarder>Διατήρηση λογότυπου</decklogogarder>
+		<decklogobandeau>Ζώνη πληροφοριών (κρυφό λογότυπο)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>Επιστροφή στον προηγούμενο φάκελο</retourdossier>
+		<noteetoile>Αστέρι</noteetoile>
+		<notecoeur>Καρδιά</notecoeur>
+		<notemanette>Χειριστήριο</notemanette>
+		<notepouce>Μπράβο</notepouce>
+		<notetrophee>Τρόπαιο</notetrophee>
+		<notefantome>Φάντασμα</notefantome>
+		<notecrane>Κρανίο</notecrane>
+		<wheelclic>Κλικ σε στυλ Hyperspin</wheelclic>
+		<bulle>Φούσκα</bulle>
+		<clic>Απλό κλικ</clic>
+		<clicgrave>Βαθύ κλικ</clicgrave>
+		<frottement>Τριβή</frottement>
+		<poc>Ποπ</poc>
+		<opt_lismoi>ΓΕΝΙΚΑ - Μήνυμα καλωσορίσματος</opt_lismoi>
+		<opt_iconset>ΓΕΝΙΚΑ - Εμφάνιση εικονιδίων βοήθειας</opt_iconset>
+		<opt_colorhelp>ΓΕΝΙΚΑ - Χρώματα κειμένου βοήθειας</opt_colorhelp>
+		<opt_horlogecouleur>ΓΕΝΙΚΑ - Clock color</opt_horlogecouleur>
+		<opt_horlogetaille>ΓΕΝΙΚΑ - Clock size</opt_horlogetaille>
+		<horlogeblanc>white</horlogeblanc>
+		<horlogenormale>normal</horlogenormale>
+		<horlogepetite>small</horlogepetite>
+		<horlogegrande>large</horlogegrande>
+		<horlogetresgrande>extra large</horlogetresgrande>
+		<opt_systemview>ΣΥΣΤΗΜΑΤΑ - Προβολή για τη λίστα συστημάτων</opt_systemview>
+		<opt_imagefondcops1>ΣΥΣΤΗΜΑΤΑ - Επιλογή fanart συστήματος</opt_imagefondcops1>
+		<opt_video4starmodern>ΣΥΣΤΗΜΑΤΑ - Βίντεο gameplay στην προβολή συστημάτων</opt_video4starmodern>
+		<opt_video4starclassic>ΣΥΣΤΗΜΑΤΑ - Βίντεο gameplay στην προβολή συστημάτων</opt_video4starclassic>
+		<opt_systviewselec>ΣΥΣΤΗΜΑΤΑ - Εικόνα συστήματος στον τροχό</opt_systviewselec>
+		<opt_breadcrumbsonoff>ΣΥΣΤΗΜΑΤΑ - Κάθετο μενού αριστερά (κλασική προβολή συστημάτων)</opt_breadcrumbsonoff>
+		<opt_metadataonoff>ΣΥΣΤΗΜΑΤΑ - Πληροφορίες συστήματος (κλασική προβολή συστημάτων)</opt_metadataonoff>
+		<opt_systannonce>ΠΑΙΧΝΙΔΙΑ - Εμφάνιση του τρέχοντος συστήματος στο άνοιγμα</opt_systannonce>
+		<opt_infosmax>ΠΑΙΧΝΙΔΙΑ - Εμφάνιση πλήρους κονσόλας πληροφοριών;</opt_infosmax>
+		<opt_gamewheelsound>ΓΕΝΙΚΑ - Ήχος κύλισης</opt_gamewheelsound>
+		<opt_boxorthumb>ΠΑΙΧΝΙΔΙΑ - Κουτί παιχνιδιού προς εμφάνιση</opt_boxorthumb>
+		<opt_fanarttransition>ΠΑΙΧΝΙΔΙΑ - Fanart transition</opt_fanarttransition>
+		<opt_fanartflou>ΠΑΙΧΝΙΔΙΑ - Fanart blur</opt_fanartflou>
+		<fanartflouleger>Light</fanartflouleger>
+		<fanartfloumoyen>Medium</fanartfloumoyen>
+		<fanartfloufort>Strong</fanartfloufort>
+		<fanartdefautvue>View default</fanartdefautvue>
+		<fanartaucune>None</fanartaucune>
+		<fanartfondu>Soft fade</fanartfondu>
+		<fanartfondudiscret>Very subtle fade</fanartfondudiscret>
+		<fanartfonduzoom>Fade + slight zoom</fanartfonduzoom>
+		<fanartstylespotlight>Slide + slow zoom (Spotlight style)</fanartstylespotlight>
+		<fanartstylebigart>Fade + zoom out (Big Art style)</fanartstylebigart>
+		<opt_typeboite>ΠΑΙΧΝΙΔΙΑ - Box case type</opt_typeboite>
+		<opt_contourboite>ΠΑΙΧΝΙΔΙΑ - Box outline (case)</opt_contourboite>
+		<opt_deckespace>ΠΑΙΧΝΙΔΙΑ - Απόσταση κουτιών</opt_deckespace>
+		<opt_iconenote>ΠΑΙΧΝΙΔΙΑ - Εικονίδιο βαθμολογίας</opt_iconenote>
+		<opt_custombuilds>ΠΡΟΧΩΡΗΜΕΝΑ - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>ΠΡΟΧΩΡΗΜΕΝΑ - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>ΠΡΟΧΩΡΗΜΕΝΑ - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>ΠΡΟΧΩΡΗΜΕΝΑ - Custom media folder</opt_extfoldergamemedia>
+		<opt_extfoldervideosyst>ΠΡΟΧΩΡΗΜΕΝΑ - Θέμα ειδικά για συστήματα</opt_extfoldervideosyst>
+		<opt_extfolderbezelsyst>ΠΡΟΧΩΡΗΜΕΝΑ - Bezel συστημάτων</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>ΠΡΟΧΩΡΗΜΕΝΑ - Λογότυπα εκδοτών παιχνιδιών</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>ΠΡΟΧΩΡΗΜΕΝΑ - Fanart συστημάτων</opt_extfolderfanart>
+		<opt_extfolderlogosyst>ΠΡΟΧΩΡΗΜΕΝΑ - Λογότυπο συστήματος</opt_extfolderlogosyst>
+		<opt_deckselection>BIG ART - Θέση επιλεγμένου παιχνιδιού</opt_deckselection>
+		<opt_decklogovideo>BIG ART - Λογότυπο κατά το βίντεο</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - Βίντεο</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - Περιστροφή κουτιών SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
+		<opt_starboxang>BOXART - Γωνία κουτιών παιχνιδιών</opt_starboxang>
+		<opt_boxstarspeed>BOXART - Ταχύτητα κίνησης κύλισης</opt_boxstarspeed>
+		<opt_starvideo>BOXART - Μέγεθος βίντεο προεπισκόπησης</opt_starvideo>
+		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>
+		<b3a0>Front (flat)</b3a0>
+		<b3ap15>Slightly turned</b3ap15>
+		<b3ap30>Turned</b3ap30>
+		<b3am15>Slightly turned (other way)</b3am15>
+		<b3am30>Turned (other way)</b3am30>
+		<opt_gridcolor>16/9 · 4/3 - Χρώμα πλέγματος</opt_gridcolor>
+		<opt_squarecadre>ΤΕΤΡΆΓΩΝΟ - Εμφάνιση των τετραγώνων των παιχνιδιών</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_choixbande>ΣΥΣΤΗΜΑΤΑ - Z-Spin view banner</opt_choixbande>
+		<couleur>Changing colors</couleur>
+		<custorcolor>System image if available, otherwise colors</custorcolor>
+		<opt_zspinnav>ΣΥΣΤΗΜΑΤΑ - Z-Spin view navigation</opt_zspinnav>
+		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
+	</variables>
+</theme>

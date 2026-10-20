@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	Libellés traduits (_common/_langs/<langue>.xml) : ${active}, ${aqua}, ${b3a0}, ${b3am15}, ${b3am30}, ${b3ap15}, ${b3ap30}, ${blancombre}, ${boxart}, ${candy}, ${classiquesyst}, ${deactive}, ${default}, ${desactive}, ${fanartaucune}, ${fanartdefautvue}, ${fanartfloufort}, ${fanartflouleger}, ${fanartfloumoyen}, ${fanartfondu}, ${fanartfondudiscret}, ${fanartfonduzoom}, ${fanartstylebigart}, ${fanartstylespotlight}, ${green}, ${greenalt}, ${grey}, ${griscl}, ${lightgrey}, ${navy}, ${no}, ${noirombre}, ${nostarrotate}, ${ombre}, ${opt_boite3d}, ${opt_boite3dangle}, ${opt_boxorthumb}, ${opt_boxstarspeed}, ${opt_fanartflou}, ${opt_fanartstarrotated}, ${opt_fanarttransition}, ${opt_gridcolor}, ${opt_infosmax}, ${opt_squarecadre}, ${opt_starboxang}, ${opt_starvideo}, ${opt_starvideoanim}, ${opt_systannonce}, ${orange}, ${pink}, ${purple}, ${purplealt}, ${red}, ${redalt}, ${rien}, ${skyblue}, ${speedslow1}, ${speedslow2}, ${starrotate}, ${starvideoang}, ${starvideobig}, ${starvideodef}, ${starvideofixe}, ${starvideoglisse}, ${thumb}, ${violet}, ${yellow}, ${yellowalt}, ${yes}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<subset name="systannonce" displayName="${opt_systannonce}">
+		<include name="classiquesyst" displayName="${classiquesyst}">${themePath}/_viewgame/commune/systeme/nomsystem.xml</include>
+		<include name="desactive" displayName="${desactive}"/>
+	</subset>
+	<subset name="infosmax" displayName="${opt_infosmax}">
+		<include name="non" displayName="${no}"/>
+		<include name="oui" displayName="${yes}">${themePath}/_viewgameoption/gl-common/infosmax.xml</include>
+	</subset>
+	<subset name="boxorthumb" displayName="${opt_boxorthumb}" appliesTo="presetstarbox,presetsquare,presetstar169,presetstar43,presetspeedbull,presetshowbig,presetshowsmall,presettraviolta_alt,presetdeck">
+		<include name="thumb" displayName="${thumb}">./_viewgameoption/gl-fanartstar/2dbox.xml</include>
+		<include name="boxart" displayName="${boxart}">./_viewgameoption/gl-fanartstar/3dbox.xml</include>
+	</subset>
+	<subset name="fanartstarrotated" displayName="${opt_fanartstarrotated}" appliesTo="presetstarbox">
+		<include name="starrotate" displayName="${starrotate}">./_viewgameoption/gl-fanartstar/rotatedon.xml</include>
+		<include name="nostarrotate" displayName="${nostarrotate}">./_viewgameoption/gl-fanartstar/rotatedoff.xml</include>
+	</subset>
+	<subset name="starboxang" displayName="${opt_starboxang}" appliesTo="presetstarbox">
+		<include name="active" displayName="${active}"/>
+		<include name="deactive" displayName="${deactive}"/>
+	</subset>
+	<subset name="boxstarspeed" displayName="${opt_boxstarspeed}" appliesTo="presetstarbox">
+		<include name="stardefault" displayName="${default}"/>
+		<include name="starslow1" displayName="${speedslow1}"/>
+		<include name="starslow2" displayName="${speedslow2}"/>
+	</subset>
+	<subset name="starvideo" displayName="${opt_starvideo}" appliesTo="presetstarbox">
+		<include name="starvideoang" displayName="${starvideoang}"/>
+		<include name="starvideodef" displayName="${starvideodef}"/>
+		<include name="starvideobig" displayName="${starvideobig}"/>
+	</subset>
+	<subset name="boite3d" displayName="${opt_boite3d}" appliesTo="presetshowbig,presetshowsmall">
+		<include name="boite3dactive" displayName="${active}"/>
+		<include name="boite3dinactive" displayName="${desactive}"/>
+	</subset>
+	<subset name="boite3dangle" displayName="${opt_boite3dangle}" appliesTo="presetshowbig,presetshowsmall">
+		<include name="b3a0" displayName="${b3a0}"/>
+		<include name="b3ap15" displayName="${b3ap15}"/>
+		<include name="b3ap30" displayName="${b3ap30}"/>
+		<include name="b3am15" displayName="${b3am15}"/>
+		<include name="b3am30" displayName="${b3am30}"/>
+	</subset>
+	<subset name="fanarttransition" displayName="${opt_fanarttransition}" appliesTo="presetstarbox,presetsquare,presetstar169,presetstar43,presettraviolta_alt,presetspotlight,presetdeck">
+		<include name="fanartdefautvue" displayName="${fanartdefautvue}"/>
+		<include name="fanartaucune" displayName="${fanartaucune}">./_viewgameoption/gl-fanartstar/fanartaucune.xml</include>
+		<include name="fanartfondu" displayName="${fanartfondu}">./_viewgameoption/gl-fanartstar/fanartfondu.xml</include>
+		<include name="fanartfondudiscret" displayName="${fanartfondudiscret}">./_viewgameoption/gl-fanartstar/fanartfondudiscret.xml</include>
+		<include name="fanartfonduzoom" displayName="${fanartfonduzoom}">./_viewgameoption/gl-fanartstar/fanartfonduzoom.xml</include>
+		<include name="fanartstylespotlight" displayName="${fanartstylespotlight}">./_viewgameoption/gl-fanartstar/fanartstylespotlight.xml</include>
+		<include name="fanartstylebigart" displayName="${fanartstylebigart}">./_viewgameoption/gl-fanartstar/fanartstylebigart.xml</include>
+	</subset>
+	<subset name="fanartflou" displayName="${opt_fanartflou}" appliesTo="presetstarbox,presetsquare,presetstar169,presetstar43,presettraviolta_alt,presetspotlight,presetdeck">
+		<include name="fanartflouaucun" displayName="${desactive}"/>
+		<include name="fanartflouleger" displayName="${fanartflouleger}">./_viewgameoption/gl-fanartstar/fanartflouleger.xml</include>
+		<include name="fanartfloumoyen" displayName="${fanartfloumoyen}">./_viewgameoption/gl-fanartstar/fanartfloumoyen.xml</include>
+		<include name="fanartfloufort" displayName="${fanartfloufort}">./_viewgameoption/gl-fanartstar/fanartfloufort.xml</include>
+	</subset>
+	<subset name="starvideoanim" displayName="${opt_starvideoanim}" appliesTo="presetstarbox">
+		<include name="starvideofixe" displayName="${starvideofixe}"/>
+		<include name="starvideoglisse" displayName="${starvideoglisse}">./_viewgameoption/gl-fanartstar/videoglisse.xml</include>
+	</subset>
+	<subset name="gridcolor" displayName="${opt_gridcolor}" appliesTo="presetstar169,presetstar43">
+		<include name="default" displayName="${default}"/>
+		<include name="griscl" displayName="${griscl}"/>
+		<include name="skyblue" displayName="${skyblue}"/>
+		<include name="purple" displayName="${purple}"/>
+		<include name="red" displayName="${red}"/>
+		<include name="aqua" displayName="${aqua}"/>
+		<include name="orange" displayName="${orange}"/>
+		<include name="green" displayName="${green}"/>
+		<include name="yellow" displayName="${yellow}"/>
+		<include name="pink" displayName="${pink}"/>
+		<include name="grey" displayName="${grey}"/>
+		<include name="lightgrey" displayName="${lightgrey}"/>
+		<include name="navy" displayName="${navy}"/>
+		<include name="violet" displayName="${violet}"/>
+		<include name="candy" displayName="${candy}"/>
+		<include name="redalt" displayName="${redalt}"/>
+		<include name="yellowalt" displayName="${yellowalt}"/>
+		<include name="greenalt" displayName="${greenalt}"/>
+		<include name="purplealt" displayName="${purplealt}"/>
+	</subset>
+	<subset name="squarecadre" displayName="${opt_squarecadre}" appliesTo="presetsquare">
+		<include name="noirombre" displayName="${noirombre}"/>
+		<include name="blancombre" displayName="${blancombre}"/>
+		<include name="ombre" displayName="${ombre}"/>
+		<include name="rien" displayName="${rien}"/>
+	</subset>
+</theme>

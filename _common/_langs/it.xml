@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="it">
+		<desactive>Disattivato</desactive>
+		<default>Predefinito</default>
+		<active>Attivato</active>
+		<novideo>Disattivato</novideo>
+		<videoback>Attivato</videoback>
+		<intheme>Cartella del tema - Predefinito</intheme>
+		<extfolder>Cartella esterna</extfolder>
+		<nodates>Nessuna data</nodates>
+		<playcountone>partita</playcountone>
+		<playcount>partite</playcount>
+		<noplaycount>Mai avviato</noplaycount>
+		<playerss>giocatori</playerss>
+		<player>giocatore</player>
+		<nogametime>Mai giocato</nogametime>
+		<noplayerdata>Sconosciuto</noplayerdata>
+		<noratings>Nessun voto</noratings>
+		<presgame1>Questo è un gioco di tipo</presgame1>
+		<presgame2>sviluppato da</presgame2>
+		<presgame3>giocabile su</presgame3>
+		<presgame4>- Lingue disponibili :</presgame4>
+		<nomjeulabel>Nome del gioco :</nomjeulabel>
+		<genrelabel>Genere :</genrelabel>
+		<devlabel>Sviluppatore :</devlabel>
+		<langlabel>Lingue :</langlabel>
+		<gametimelabel>Tempo di gioco :</gametimelabel>
+		<lastgamelabel>Ultima partita:</lastgamelabel>
+		<logosimple>Logo semplice (Completo + Regione)</logosimple>
+		<viewbasicgrid>Basic: Vista a griglia di base</viewbasicgrid>
+		<jeux>giochi</jeux>
+		<longselect>Pressione lunga su "select"</longselect>
+		<favuniquement>Solo preferiti</favuniquement>
+		<tslesjeux>Tutti i giochi</tslesjeux>
+		<tumasbienlu>Benvenuto e crediti</tumasbienlu>
+		<fanartstarsyst>Classica</fanartstarsyst>
+		<fanartmodern>Moderna 1 (non compatibile con il percorso di navigazione)</fanartmodern>
+		<fanartmodern2>Moderna 2 (compatibile con il percorso di navigazione)</fanartmodern2>
+		<fanartfreshone>Solo fanart selezionati da FreshOne</fanartfreshone>
+		<fanartsystcustom>Fanart della cartella custom, altrimenti FreshOne</fanartsystcustom>
+		<videoangled>Attivato (piccolo, inclinato)</videoangled>
+		<hardware>Hardware</hardware>
+		<charsystem>Personaggi</charsystem>
+		<figurines>Statuine (il tema Animatics deve essere installato)</figurines>
+		<iconsetposition>Posizione dei pulsanti</iconsetposition>
+		<skyblue>azzurro</skyblue>
+		<purple>viola</purple>
+		<red>rosso</red>
+		<aqua>azzurro</aqua>
+		<orange>arancione</orange>
+		<green>verde</green>
+		<yellow>giallo</yellow>
+		<pink>rosa</pink>
+		<grey>grigio scuro</grey>
+		<lightgrey>grigio chiaro</lightgrey>
+		<navy>blu alt</navy>
+		<violet>viola</violet>
+		<candy>candy</candy>
+		<redalt>rosso alt</redalt>
+		<yellowalt>giallo alt</yellowalt>
+		<greenalt>verde alt</greenalt>
+		<purplealt>viola alt</purplealt>
+		<classiquesyst>Scomparsa con zoom all'indietro</classiquesyst>
+		<no>No</no>
+		<yes>Sì</yes>
+		<thumb>Calibrato per scatola 2D</thumb>
+		<boxart>Calibrato per scatola 3D</boxart>
+		<starrotate>Sì</starrotate>
+		<nostarrotate>No</nostarrotate>
+		<deactive>Disattivato</deactive>
+		<speedslow1>Lento+</speedslow1>
+		<speedslow2>Lento++</speedslow2>
+		<starvideoang>Inclinato</starvideoang>
+		<starvideodef>Standard</starvideodef>
+		<starvideobig>Grande</starvideobig>
+		<starvideofixe>Screenshot poi video, sul posto</starvideofixe>
+		<starvideoglisse>Il video scorre sul fanart dopo 3 secondi</starvideoglisse>
+		<griscl>Grigio piacevole</griscl>
+		<noirombre>Cornice nera + ombra</noirombre>
+		<blancombre>Cornice bianca + ombra</blancombre>
+		<ombre>Solo ombra</ombre>
+		<rien>Nessuna decorazione</rien>
+		<presetshowbig>Semplice : RFE Show anteprima grande</presetshowbig>
+		<presetshowsmall>Semplice : RFE Show anteprima piccola</presetshowsmall>
+		<presetspeedbull>Semplice : RFE speedbull</presetspeedbull>
+		<presetsquare>FanartStar quadrato</presetsquare>
+		<presetstar169>FanartStar 16/9</presetstar169>
+		<presetstar43>FanartStar 4/3</presetstar43>
+		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presettraviolta_alt>Semplice : RFE traviolta</presettraviolta_alt>
+		<presetdeck>Fanartstar Big Art</presetdeck>
+		<presetspotlight>Fanartstar Spotlight</presetspotlight>
+		<deckgauche>Sotto il pannello grande (come Steam)</deckgauche>
+		<deckcentre>Al centro della fila (zoom + alone)</deckcentre>
+		<decknormal>Normale</decknormal>
+		<spotvideodroite>A destra, sulle scatole</spotvideodroite>
+		<spotvideoaucune>Disattivato</spotvideoaucune>
+		<spotvideogauche>A sinistra, con le informazioni</spotvideogauche>
+		<spotvideogauchehaut>A sinistra, titolo sopra</spotvideogauchehaut>
+		<decklogogarder>Mantieni il logo</decklogogarder>
+		<decklogobandeau>Banda informazioni (logo nascosto)</decklogobandeau>
+		<boxtypeauto>Automatic (per system)</boxtypeauto>
+		<boxtype0>DVD case</boxtype0>
+		<boxtype1>Slim (consoles)</boxtype1>
+		<boxtype2>Mega Drive / Master System with hook</boxtype2>
+		<boxtype3>Mega Drive without hook</boxtype3>
+		<boxtype4>Mega Drive with hook, glossy</boxtype4>
+		<boxtype5>CD jewel case (PS1)</boxtype5>
+		<boxtype6>Mega-CD (Europe)</boxtype6>
+		<boxtype7>No case (anti-aliasing)</boxtype7>
+		<boxtype8>SNES PAL cardboard box</boxtype8>
+		<boxtype9>Very worn cardboard box</boxtype9>
+		<boxtype10>Nintendo DS</boxtype10>
+		<boxtype11>Nintendo 3DS</boxtype11>
+		<boxtype12>PSP (UMD)</boxtype12>
+		<boxtype13>PS3 (Blu-ray)</boxtype13>
+		<boxtype14>Black PC DVD case</boxtype14>
+		<boxtype15>3DO</boxtype15>
+		<boxtype16>Clear case (FMV / PC)</boxtype16>
+		<boxtype17>Dreamcast</boxtype17>
+		<boxtype18>Audio cassette</boxtype18>
+		<boxtype19>Black cassette (Oric)</boxtype19>
+		<boxtype20>White chrome case</boxtype20>
+		<boxtype21>White chrome case, no reflection</boxtype21>
+		<retourdossier>Torna alla cartella precedente</retourdossier>
+		<noteetoile>Stella</noteetoile>
+		<notecoeur>Cuore</notecoeur>
+		<notemanette>Controller</notemanette>
+		<notepouce>Pollice in su</notepouce>
+		<notetrophee>Trofeo</notetrophee>
+		<notefantome>Fantasma</notefantome>
+		<notecrane>Teschio</notecrane>
+		<wheelclic>Clic stile Hyperspin</wheelclic>
+		<bulle>Bolla</bulle>
+		<clic>Clic semplice</clic>
+		<clicgrave>Clic grave</clicgrave>
+		<frottement>Sfregamento</frottement>
+		<poc>Poc</poc>
+		<opt_lismoi>GENERALE - Messaggio di benvenuto</opt_lismoi>
+		<opt_iconset>GENERALE - Aspetto delle icone di aiuto</opt_iconset>
+		<opt_colorhelp>GENERALE - Colori del testo di aiuto</opt_colorhelp>
+		<opt_horlogecouleur>GENERALE - Colore dell’orologio</opt_horlogecouleur>
+		<opt_horlogetaille>GENERALE - Dimensione dell’orologio</opt_horlogetaille>
+		<horlogeblanc>bianco</horlogeblanc>
+		<horlogenormale>normale</horlogenormale>
+		<horlogepetite>piccolo</horlogepetite>
+		<horlogegrande>grande</horlogegrande>
+		<horlogetresgrande>molto grande</horlogetresgrande>
+		<opt_systemview>SISTEMI - Vista per l'elenco dei sistemi</opt_systemview>
+		<opt_imagefondcops1>SISTEMI - Scelta dei fanart del sistema</opt_imagefondcops1>
+		<opt_video4starmodern>SISTEMI - Video di gameplay nella vista sistemi</opt_video4starmodern>
+		<opt_video4starclassic>SISTEMI - Video di gameplay nella vista sistemi</opt_video4starclassic>
+		<opt_systviewselec>SISTEMI - Immagine del sistema nella ruota</opt_systviewselec>
+		<opt_breadcrumbsonoff>SISTEMI - Menu verticale a sinistra (vista sistemi classica)</opt_breadcrumbsonoff>
+		<opt_metadataonoff>SISTEMI - Informazioni sul sistema (vista sistemi classica)</opt_metadataonoff>
+		<opt_systannonce>GIOCHI - Mostra il sistema corrente all'apertura</opt_systannonce>
+		<opt_infosmax>GIOCHI - Mostrare la console informazioni completa?</opt_infosmax>
+		<opt_gamewheelsound>GENERALE - Suono durante lo scorrimento</opt_gamewheelsound>
+		<opt_boxorthumb>GIOCHI - Scatola del gioco da mostrare</opt_boxorthumb>
+		<opt_fanarttransition>GIOCHI - Transizione dei fanart</opt_fanarttransition>
+		<opt_fanartflou>GIOCHI - Sfocatura dei fanart</opt_fanartflou>
+		<fanartflouleger>Leggera</fanartflouleger>
+		<fanartfloumoyen>Media</fanartfloumoyen>
+		<fanartfloufort>Forte</fanartfloufort>
+		<fanartdefautvue>Predefinito della vista</fanartdefautvue>
+		<fanartaucune>Nessuna</fanartaucune>
+		<fanartfondu>Dissolvenza morbida</fanartfondu>
+		<fanartfondudiscret>Dissolvenza molto discreta</fanartfondudiscret>
+		<fanartfonduzoom>Dissolvenza + leggero zoom</fanartfonduzoom>
+		<fanartstylespotlight>Scorrimento + zoom lento (stile Spotlight)</fanartstylespotlight>
+		<fanartstylebigart>Dissolvenza + zoom indietro (stile Big Art)</fanartstylebigart>
+		<opt_typeboite>GIOCHI - Box case type</opt_typeboite>
+		<opt_contourboite>GIOCHI - Box outline (case)</opt_contourboite>
+		<opt_deckespace>GIOCHI - Spaziatura delle scatole</opt_deckespace>
+		<opt_iconenote>GIOCHI - Icona del voto</opt_iconenote>
+		<opt_custombuilds>AVANZATE - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>AVANZATE - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>AVANZATE - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>AVANZATE - Custom media folder</opt_extfoldergamemedia>
+		<opt_extfoldervideosyst>AVANZATE - Tema specifico dei sistemi</opt_extfoldervideosyst>
+		<opt_extfolderbezelsyst>AVANZATE - Bezel dei sistemi</opt_extfolderbezelsyst>
+		<opt_extfoldermanufacturer>AVANZATE - Loghi degli editori di giochi</opt_extfoldermanufacturer>
+		<opt_extfolderfanart>AVANZATE - Fanart dei sistemi</opt_extfolderfanart>
+		<opt_extfolderlogosyst>AVANZATE - Logo del sistema</opt_extfolderlogosyst>
+		<opt_deckselection>BIG ART - Posizione del gioco selezionato</opt_deckselection>
+		<opt_decklogovideo>BIG ART - Logo durante il video</opt_decklogovideo>
+		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
+		<opt_fanartstarrotated>BOXART - Rotazione delle scatole SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
+		<opt_starboxang>BOXART - Angolo delle scatole di gioco</opt_starboxang>
+		<opt_boxstarspeed>BOXART - Velocità dell'animazione di scorrimento</opt_boxstarspeed>
+		<opt_starvideo>BOXART - Dimensione del video di anteprima</opt_starvideo>
+		<opt_starvideoanim>BOXART - Comparsa del video</opt_starvideoanim>
+		<opt_boite3d>SHOW BIG · SMALL - Scatola che si gira (retro)</opt_boite3d>
+		<opt_boite3dangle>SHOW BIG · SMALL - Angolo iniziale della scatola che si gira</opt_boite3dangle>
+		<b3a0>Di fronte (piatta)</b3a0>
+		<b3ap15>Leggermente girata</b3ap15>
+		<b3ap30>Girata</b3ap30>
+		<b3am15>Leggermente girata (altro verso)</b3am15>
+		<b3am30>Girata (altro verso)</b3am30>
+		<opt_gridcolor>16/9 · 4/3 - Colore della griglia</opt_gridcolor>
+		<opt_squarecadre>QUADRATO - Aspetto dei quadrati che rappresentano i giochi</opt_squarecadre>
+		<systviewzspin>Z-Spin</systviewzspin>
+		<opt_choixbande>SISTEMI - Banda della vista Z-Spin</opt_choixbande>
+		<couleur>Colori cangianti</couleur>
+		<custorcolor>Immagine del sistema se presente, altrimenti colori</custorcolor>
+		<opt_zspinnav>SISTEMI - Navigazione della vista Z-Spin</opt_zspinnav>
+		<zspinnavarc>Arco di loghi in alto</zspinnavarc>
+	</variables>
+</theme>

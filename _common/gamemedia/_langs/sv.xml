@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="sv">
+		<packcustombuildsno>Fanart med suffixet "-fanart" (standard)</packcustombuildsno>
+		<packretrofreshbat>Fanart med suffixet "-image"</packretrofreshbat>
+		<scrapedboxart>3D-box med "-boxart" i gamelist</scrapedboxart>
+		<scrapedthumbnail>3D-box med "-thumbnail" i gamelist</scrapedthumbnail>
+		<gamemedianon>Nej: endast medier från gamelist</gamemedianon>
+		<gamemediaoui>Ja: egna medier först, annars gamelist</gamemediaoui>
+		<gamemediaseul>Endast: endast egna medier (ingen reserv från gamelist)</gamemediaseul>
+		<intheme>Temamapp - Standard</intheme>
+		<extfolder>Extern mapp</extfolder>
+	</variables>
+</theme>

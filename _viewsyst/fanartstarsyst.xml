@@ -34,11 +34,11 @@
 		<manettehalovisible ifSubset="manetteflottante:manettenon">false</manettehalovisible>
 		<manettechemin>firstfile("${themePath}/_common/controllers/${region}/" + {system:theme} + ".png", "${themePath}/_common/controllers/" + {system:theme} + ".png", "${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettechemin>
 		<manettepos ifSubset="video4starclassic:videoback">0.036 0.088</manettepos>
-		<manettepos ifSubset="video4starclassic:novideo">0.13 0.62</manettepos>
+		<manettepos ifSubset="video4starclassic:novideo">0.13 0.58</manettepos>
 		<manettetaille ifSubset="video4starclassic:videoback">0.067 0.08</manettetaille>
 		<manettetaille ifSubset="video4starclassic:novideo">0.17 0.17</manettetaille>
 		<manettehalopos ifSubset="video4starclassic:videoback">0.036 0.138</manettehalopos>
-		<manettehalopos ifSubset="video4starclassic:novideo">0.13 0.72</manettehalopos>
+		<manettehalopos ifSubset="video4starclassic:novideo">0.13 0.68</manettehalopos>
 		<manettehalotaille ifSubset="video4starclassic:videoback">0.058 0.014</manettehalotaille>
 		<manettehalotaille ifSubset="video4starclassic:novideo">0.14 0.03</manettehalotaille>
 		<metatitrepolice ifSubset="metasyst:metacompacte">0.019</metatitrepolice>
@@ -915,7 +915,8 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<storyboard>
 				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
 				<animation property="offsetY" from="0" to="-0.012" begin="400" duration="1600" mode="easeInOut" autoReverse="true" repeat="forever"/>
-				<animation property="rotation" from="-1.5" to="1.5" begin="400" duration="2300" mode="easeInOut" autoReverse="true" repeat="forever"/>
+				<animation property="rotation" from="0" to="-1.5" duration="1150" mode="easeInOut"/>
+				<animation property="rotation" from="-1.5" to="1.5" begin="1150" duration="2300" mode="easeInOut" autoReverse="true" repeat="forever"/>
 			</storyboard>
 			<storyboard event="deactivate">
 				<animation property="opacity" to="0" duration="0"/>

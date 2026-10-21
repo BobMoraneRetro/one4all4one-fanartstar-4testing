@@ -206,6 +206,10 @@
 				<tiltAngleX>30</tiltAngleX>
 				<perspectiveDepth>0.8</perspectiveDepth>
 			</shader>
+			<storyboard>
+				<animation property="offsetX" from="0.488" to="0.488" duration="1000"/>
+				<animation property="offsetX" from="0.488" to="0.038" begin="1000" duration="700" mode="easeOut"/>
+			</storyboard>
 		</image>
 		<image name="randomgamefond" ifSubset="video4starmodern:videoangled"  extra="true">
 			<path>${themePath}/_viewgame/fanartstar/fiber.png</path>
@@ -221,10 +225,14 @@
 				<tiltAngleX>30</tiltAngleX>
 				<perspectiveDepth>0.8</perspectiveDepth>
 			</shader>
+			<storyboard>
+				<animation property="offsetX" from="0.488" to="0.488" duration="1000"/>
+				<animation property="offsetX" from="0.488" to="0.038" begin="1000" duration="700" mode="easeOut"/>
+			</storyboard>
 		</image>
 		<video name="randomvideo" ifSubset="video4starmodern:videoangled"  extra="true">
 			<path>{random}</path>
-			<delay>0.3</delay>
+			<delay>0</delay>
 			<pos>0.995 0.35</pos>
 			<size>0.38 0.47</size>
 			<origin>1 0.5</origin>
@@ -236,6 +244,10 @@
 				<tiltAngleX>30</tiltAngleX>
 				<perspectiveDepth>0.8</perspectiveDepth>
 			</shader>
+			<storyboard>
+				<animation property="offsetX" from="0.488" to="0.488" duration="1000"/>
+				<animation property="offsetX" from="0.488" to="0.038" begin="1000" duration="700" mode="easeOut"/>
+			</storyboard>
 		</video>
 		<control name="randomgamecadre,randomgamefond,randomvideo" ifSubset="video4starmodern:videoangled" >
 			<offsetX>0.038</offsetX>
@@ -422,8 +434,8 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 		<image name="iconselec" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/icon.png</path>
 			<origin>1 0</origin>
-			<pos>0.225 0</pos>
-			<size>0.18 0.061</size>
+			<pos>0.315 0</pos>
+			<size>0.27 0.061</size>
 			<zIndex>900</zIndex>
 			<saturation>0</saturation>
 		</image>
@@ -479,7 +491,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 		<image name="pinball" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/pinball.png</path>
 			<origin>0 0</origin>
-			<pos>0.005 0.4</pos>
+			<pos>0.005 0.41</pos>
 			<maxSize>0.02 0.07</maxSize>
 			<zIndex>900</zIndex>
 			<color>7d7d7d</color>
@@ -488,7 +500,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 		<image name="port" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/port.png</path>
 			<origin>0 0</origin>
-			<pos>0.005 0.442</pos>
+			<pos>0.005 0.452</pos>
 			<maxSize>0.02 0.07</maxSize>
 			<zIndex>900</zIndex>
 			<color>7d7d7d</color>
@@ -497,7 +509,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 		<image name="portable" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/portable.png</path>
 			<origin>0 0</origin>
-			<pos>0.005 0.484</pos>
+			<pos>0.005 0.494</pos>
 			<maxSize>0.02 0.07</maxSize>
 			<zIndex>900</zIndex>
 			<color>7d7d7d</color>
@@ -506,7 +518,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 		<image name="system" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/system.png</path>
 			<origin>0 0</origin>
-			<pos>0.005 0.526</pos>
+			<pos>0.005 0.536</pos>
 			<maxSize>0.02 0.07</maxSize>
 			<zIndex>900</zIndex>
 			<color>7d7d7d</color>
@@ -515,7 +527,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 		<image name="autocollection" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectionauto.png</path>
 			<origin>0 0</origin>
-			<pos>0.005 0.568</pos>
+			<pos>0.005 0.578</pos>
 			<maxSize>0.02 0.07</maxSize>
 			<zIndex>900</zIndex>
 			<color>7d7d7d</color>
@@ -524,7 +536,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 		<image name="customcollection" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectioncust.png</path>
 			<origin>0 0</origin>
-			<pos>0.005 0.6</pos>
+			<pos>0.005 0.62</pos>
 			<maxSize>0.02 0.07</maxSize>
 			<zIndex>900</zIndex>
 			<color>7d7d7d</color>
@@ -533,7 +545,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 		<image name="retrobat" ifSubset="menuofficiel:menuteta" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/option.png</path>
 			<origin>0 0</origin>
-			<pos>0.005 0.642</pos>
+			<pos>0.005 0.662</pos>
 			<maxSize>0.02 0.07</maxSize>
 			<zIndex>900</zIndex>
 			<color>7d7d7d</color>
@@ -541,7 +553,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 		</image>
 		<control name="arcade, computer, console, extension, mess, pinball, port, portable, system, autocollection, customcollection, retrobat">
 			<offsetX>0.005</offsetX>
-			<offsetY>-0.15</offsetY>
+			<offsetY>-0.139</offsetY>
 		</control>
 	</view>
 </theme>

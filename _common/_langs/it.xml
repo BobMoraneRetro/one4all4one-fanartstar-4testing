@@ -162,7 +162,7 @@
 		<opt_video4starclassic>SISTEMI - Video di gameplay nella vista sistemi</opt_video4starclassic>
 		<opt_systviewselec>SISTEMI - Immagine del sistema nella ruota</opt_systviewselec>
 		<opt_breadcrumbsonoff>SISTEMI - Menu verticale a sinistra (vista sistemi classica)</opt_breadcrumbsonoff>
-		<opt_metadataonoff>SISTEMI - Informazioni sul sistema (vista sistemi classica)</opt_metadataonoff>
+		<opt_metadataonoff>SISTEMI - Info sistema: visualizzate (vista classica)</opt_metadataonoff>
 		<opt_systannonce>GIOCHI - Mostra il sistema corrente all'apertura</opt_systannonce>
 		<opt_infosmax>GIOCHI - Mostrare la console informazioni completa?</opt_infosmax>
 		<opt_gamewheelsound>GENERALE - Suono durante lo scorrimento</opt_gamewheelsound>
@@ -216,8 +216,12 @@
 		<custorcolor>Immagine del sistema se presente, altrimenti colori</custorcolor>
 		<opt_zspinnav>SISTEMI - Navigazione della vista Z-Spin</opt_zspinnav>
 		<zspinnavarc>Arco di loghi in alto</zspinnavarc>
-		<opt_metasyst>SISTEMI - Info sistema (vista classica)</opt_metasyst>
+		<opt_metasyst>SISTEMI - Info sistema: presentazione (vista classica)</opt_metasyst>
 		<metastandard>Standard</metastandard>
 		<metacompacte>Compatta</metacompacte>
+		<opt_sonentree>GIOCHI - Suono all'ingresso in un sistema</opt_sonentree>
+		<sonentreecommun>Suono comune</sonentreecommun>
+		<sonentreesysteme>Suono del sistema (altrimenti comune)</sonentreesysteme>
+		<sonentreemusique>Suono del sistema, interrotto all'uscita (musiche del tema attive)</sonentreemusique>
 	</variables>
 </theme>

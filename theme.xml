@@ -5,7 +5,7 @@
 	${path_syst_bezel} : dossier des bezels des systèmes (définie dans ce fichier ; valeur selon l option « AVANCÉ - Emplacement des bezels des systèmes »)
 	${path_syst_fanart} : dossier des fanarts des systèmes (définie dans ce fichier ; valeur selon l option « AVANCÉ - Emplacement des fanarts des systèmes »)
 	${path_syst_logo} : dossier des logos des systèmes (définie dans ce fichier ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
-	Libellés traduits (_common/_langs/<langue>.xml) : ${active}, ${aqua}, ${bulle}, ${candy}, ${charsystem}, ${clic}, ${clicgrave}, ${couleur}, ${custorcolor}, ${default}, ${desactive}, ${extfolder}, ${fanartfreshone}, ${fanartmodern}, ${fanartmodern2}, ${fanartstarsyst}, ${fanartsystcustom}, ${figurines}, ${frottement}, ${green}, ${greenalt}, ${grey}, ${hardware}, ${horlogeblanc}, ${horlogegrande}, ${horlogenormale}, ${horlogepetite}, ${horlogetresgrande}, ${iconsetposition}, ${intheme}, ${lightgrey}, ${logosimple}, ${navy}, ${novideo}, ${opt_breadcrumbsonoff}, ${opt_choixbande}, ${opt_colorhelp}, ${opt_extfolderbezelsyst}, ${opt_extfolderfanart}, ${opt_extfolderlogosyst}, ${opt_extfoldermanufacturer}, ${opt_extfoldervideosyst}, ${opt_gamewheelsound}, ${opt_horlogecouleur}, ${opt_horlogetaille}, ${opt_iconset}, ${opt_imagefondcops1}, ${opt_lismoi}, ${opt_manetteflottante}, ${opt_metadataonoff}, ${opt_systemview}, ${opt_systviewselec}, ${opt_video4starclassic}, ${opt_video4starmodern}, ${opt_zspinnav}, ${orange}, ${pink}, ${poc}, ${purple}, ${purplealt}, ${red}, ${redalt}, ${skyblue}, ${systviewzspin}, ${tumasbienlu}, ${videoangled}, ${videoback}, ${violet}, ${wheelclic}, ${yellow}, ${yellowalt}, ${zspinnavarc}
+	Libellés traduits (_common/_langs/<langue>.xml) : ${active}, ${aqua}, ${bulle}, ${candy}, ${charsystem}, ${clic}, ${clicgrave}, ${couleur}, ${custorcolor}, ${default}, ${desactive}, ${extfolder}, ${fanartfreshone}, ${fanartmodern}, ${fanartmodern2}, ${fanartstarsyst}, ${fanartsystcustom}, ${figurines}, ${frottement}, ${green}, ${greenalt}, ${grey}, ${hardware}, ${horlogeblanc}, ${horlogegrande}, ${horlogenormale}, ${horlogepetite}, ${horlogetresgrande}, ${iconsetposition}, ${intheme}, ${lightgrey}, ${logosimple}, ${logosseuls}, ${metacompacte}, ${metastandard}, ${navy}, ${novideo}, ${opt_breadcrumbsonoff}, ${opt_choixbande}, ${opt_colorhelp}, ${opt_extfolderbezelsyst}, ${opt_extfolderfanart}, ${opt_extfolderlogosyst}, ${opt_extfoldermanufacturer}, ${opt_extfoldervideosyst}, ${opt_gamewheelsound}, ${opt_horlogecouleur}, ${opt_horlogetaille}, ${opt_iconset}, ${opt_imagefondcops1}, ${opt_lismoi}, ${opt_manetteflottante}, ${opt_metadataonoff}, ${opt_metasyst}, ${opt_systemview}, ${opt_systviewselec}, ${opt_video4starclassic}, ${opt_video4starmodern}, ${opt_zspinnav}, ${orange}, ${pink}, ${poc}, ${purple}, ${purplealt}, ${red}, ${redalt}, ${rondhursty}, ${skyblue}, ${systviewzspin}, ${tumasbienlu}, ${videoangled}, ${videoback}, ${violet}, ${wheelclic}, ${xbox360blade}, ${xbox360focus}, ${xbox360onglet}, ${xbox360retour}, ${xbox360selection}, ${xbox360touche}, ${yellow}, ${yellowalt}, ${zspinnavarc}
 -->
 <theme defaultView="presetstarbox">
 	<formatVersion>7</formatVersion>
@@ -74,81 +74,6 @@
 		<include name="xbox360selection" displayName="${xbox360selection}"/>
 		<include name="aucun" displayName="${desactive}"/>
 	</subset>
-	<subset name="systemview" displayName="${opt_systemview}">
-		<include name="fanartstarsyst" displayName="${fanartstarsyst}">${themePath}/_viewsyst/fanartstarsyst.xml</include>
-		<include name="fanartmodern" displayName="${fanartmodern}">${themePath}/_viewsyst/fanartmodern.xml</include>
-		<include name="fanartmodern2" displayName="${fanartmodern2}">${themePath}/_viewsyst/fanartmodern2.xml</include>
-		<include name="zspin" displayName="${systviewzspin}">${themePath}/_viewsyst/zspin.xml</include>
-	</subset>
-	<subset name="manetteflottante" ifSubset="systemview:fanartstarsyst" displayName="${opt_manetteflottante}">
-		<include name="manettenon" displayName="${desactive}"/>
-		<include name="manetteoui" displayName="${active}"/>
-	</subset>
-	<subset name="metasyst" ifSubset="systemview:fanartstarsyst" displayName="${opt_metasyst}">
-		<include name="metastandard" displayName="${metastandard}"/>
-		<include name="metacompacte" displayName="${metacompacte}"/>
-	</subset>
-	<subset name="choixbande" ifSubset="systemview:zspin" displayName="${opt_choixbande}">
-		<include name="custorcolor" displayName="${custorcolor}"/>
-		<include name="couleur" displayName="${couleur}"/>
-	</subset>
-	<subset name="zspinnav" ifSubset="systemview:zspin" displayName="${opt_zspinnav}">
-		<include name="desactive" displayName="${desactive}"/>
-		<include name="arc" displayName="${zspinnavarc}">${themePath}/_viewsyst/zspin/navigation_arc.xml</include>
-	</subset>
-	<subset name="imagefondcops1" displayName="${opt_imagefondcops1}">
-		<include name="fanartfreshone" displayName="${fanartfreshone}">${themePath}/_viewsystoption/sl-commun/fanartsyst.xml</include>
-		<include name="fanartcustom" displayName="${fanartsystcustom}">${themePath}/_viewsystoption/sl-commun/fanartsyst.xml</include>
-	</subset>
-	<subset name="video4starmodern" ifSubset="systemview:fanartmodern|fanartmodern2" displayName="${opt_video4starmodern}">
-		<include name="videoangled" displayName="${videoangled}"/>
-		<include name="novideo" displayName="${novideo}"/>
-		<include name="videoback" displayName="${videoback}">${themePath}/_viewsystoption/sl-fanartstar/videostar.xml</include>
-	</subset>
-	<subset name="video4starclassic" ifSubset="systemview:fanartstarsyst" displayName="${opt_video4starclassic}">
-		<include name="novideo" displayName="${novideo}"/>
-		<include name="videoback" displayName="${videoback}"/>
-	</subset>
-	<subset name="systviewselec" ifSubset="systemview:fanartstarsyst" displayName="${opt_systviewselec}">
-		<include name="hardware" displayName="${hardware}"/>
-		<include name="charsystem" displayName="${charsystem}"/>
-		<include name="figurines" displayName="${figurines}"/>
-		<include name="rondhursty" displayName="${rondhursty}"/>
-		<include name="logosseuls" displayName="${logosseuls}"/>
-	</subset>
-	<subset name="breadcrumbsonoff" ifSubset="systemview:fanartstarsyst" displayName="${opt_breadcrumbsonoff}">
-		<include name="active" displayName="${active}"/>
-		<include name="deactivate" displayName="${desactive}"/>
-	</subset>
-	<subset name="metadataonoff" ifSubset="systemview:fanartstarsyst" displayName="${opt_metadataonoff}">
-		<include name="active" displayName="${active}"/>
-		<include name="deactivate" displayName="${desactive}"/>
-	</subset>
-	<include>${themePath}/_common/gamemedia/gamemedia.xml</include>
-	<include>${themePath}/_viewgameoption/gl-common/options_boitier.xml</include>
-	<include>${themePath}/_viewgameoption/gl-common/boitiers_systemes.xml</include>
-	<include>${themePath}/_viewgameoption/gl-common/options_son.xml</include>
-	<include>${themePath}/_viewgameoption/gl-common/options_note.xml</include>
-	<subset name="extfoldervideosyst" displayName="${opt_extfoldervideosyst}">
-		<include name="intheme" displayName="${intheme}"/>
-		<include name="extfolder" displayName="${extfolder}"/>
-	</subset>
-	<subset name="extfolderbezelsyst" displayName="${opt_extfolderbezelsyst}">
-		<include name="intheme" displayName="${intheme}"/>
-		<include name="extfolder" displayName="${extfolder}"/>
-	</subset>
-	<subset name="extfoldermanufacturer" displayName="${opt_extfoldermanufacturer}">
-		<include name="intheme" displayName="${intheme}"/>
-		<include name="extfolder" displayName="${extfolder}"/>
-	</subset>
-	<subset name="extfolderfanart" displayName="${opt_extfolderfanart}">
-		<include name="intheme" displayName="${intheme}"/>
-		<include name="extfolder" displayName="${extfolder}"/>
-	</subset>
-	<subset name="extfolderlogosyst" displayName="${opt_extfolderlogosyst}">
-		<include name="intheme" displayName="${intheme}"/>
-		<include name="extfolder" displayName="${extfolder}"/>
-	</subset>
 	<subset name="iconset" displayName="${opt_iconset}">
 		<include name="Position seulement" displayName="${iconsetposition}">${themePath}/_common/help/_iconsets/buttons.xml</include>
 		<include name="Standard">${themePath}/_common/help/_iconsets/default.xml</include>
@@ -199,6 +124,81 @@
 		<include name="petite" displayName="${horlogepetite}"/>
 		<include name="grande" displayName="${horlogegrande}"/>
 		<include name="tresgrande" displayName="${horlogetresgrande}"/>
+	</subset>
+	<subset name="systemview" displayName="${opt_systemview}">
+		<include name="fanartstarsyst" displayName="${fanartstarsyst}">${themePath}/_viewsyst/fanartstarsyst.xml</include>
+		<include name="fanartmodern" displayName="${fanartmodern}">${themePath}/_viewsyst/fanartmodern.xml</include>
+		<include name="fanartmodern2" displayName="${fanartmodern2}">${themePath}/_viewsyst/fanartmodern2.xml</include>
+		<include name="zspin" displayName="${systviewzspin}">${themePath}/_viewsyst/zspin.xml</include>
+	</subset>
+	<subset name="imagefondcops1" displayName="${opt_imagefondcops1}">
+		<include name="fanartfreshone" displayName="${fanartfreshone}">${themePath}/_viewsystoption/sl-commun/fanartsyst.xml</include>
+		<include name="fanartcustom" displayName="${fanartsystcustom}">${themePath}/_viewsystoption/sl-commun/fanartsyst.xml</include>
+	</subset>
+	<subset name="video4starclassic" ifSubset="systemview:fanartstarsyst" displayName="${opt_video4starclassic}">
+		<include name="novideo" displayName="${novideo}"/>
+		<include name="videoback" displayName="${videoback}"/>
+	</subset>
+	<subset name="systviewselec" ifSubset="systemview:fanartstarsyst" displayName="${opt_systviewselec}">
+		<include name="hardware" displayName="${hardware}"/>
+		<include name="charsystem" displayName="${charsystem}"/>
+		<include name="figurines" displayName="${figurines}"/>
+		<include name="rondhursty" displayName="${rondhursty}"/>
+		<include name="logosseuls" displayName="${logosseuls}"/>
+	</subset>
+	<subset name="breadcrumbsonoff" ifSubset="systemview:fanartstarsyst" displayName="${opt_breadcrumbsonoff}">
+		<include name="active" displayName="${active}"/>
+		<include name="deactivate" displayName="${desactive}"/>
+	</subset>
+	<subset name="metadataonoff" ifSubset="systemview:fanartstarsyst" displayName="${opt_metadataonoff}">
+		<include name="active" displayName="${active}"/>
+		<include name="deactivate" displayName="${desactive}"/>
+	</subset>
+	<subset name="metasyst" ifSubset="systemview:fanartstarsyst" displayName="${opt_metasyst}">
+		<include name="metastandard" displayName="${metastandard}"/>
+		<include name="metacompacte" displayName="${metacompacte}"/>
+	</subset>
+	<subset name="manetteflottante" ifSubset="systemview:fanartstarsyst" displayName="${opt_manetteflottante}">
+		<include name="manettenon" displayName="${desactive}"/>
+		<include name="manetteoui" displayName="${active}"/>
+	</subset>
+	<subset name="video4starmodern" ifSubset="systemview:fanartmodern|fanartmodern2" displayName="${opt_video4starmodern}">
+		<include name="videoangled" displayName="${videoangled}"/>
+		<include name="novideo" displayName="${novideo}"/>
+		<include name="videoback" displayName="${videoback}">${themePath}/_viewsystoption/sl-fanartstar/videostar.xml</include>
+	</subset>
+	<subset name="choixbande" ifSubset="systemview:zspin" displayName="${opt_choixbande}">
+		<include name="custorcolor" displayName="${custorcolor}"/>
+		<include name="couleur" displayName="${couleur}"/>
+	</subset>
+	<subset name="zspinnav" ifSubset="systemview:zspin" displayName="${opt_zspinnav}">
+		<include name="desactive" displayName="${desactive}"/>
+		<include name="arc" displayName="${zspinnavarc}">${themePath}/_viewsyst/zspin/navigation_arc.xml</include>
+	</subset>
+	<include>${themePath}/_common/gamemedia/gamemedia.xml</include>
+	<include>${themePath}/_viewgameoption/gl-common/options_boitier.xml</include>
+	<include>${themePath}/_viewgameoption/gl-common/boitiers_systemes.xml</include>
+	<include>${themePath}/_viewgameoption/gl-common/options_son.xml</include>
+	<include>${themePath}/_viewgameoption/gl-common/options_note.xml</include>
+	<subset name="extfoldervideosyst" displayName="${opt_extfoldervideosyst}">
+		<include name="intheme" displayName="${intheme}"/>
+		<include name="extfolder" displayName="${extfolder}"/>
+	</subset>
+	<subset name="extfolderbezelsyst" displayName="${opt_extfolderbezelsyst}">
+		<include name="intheme" displayName="${intheme}"/>
+		<include name="extfolder" displayName="${extfolder}"/>
+	</subset>
+	<subset name="extfoldermanufacturer" displayName="${opt_extfoldermanufacturer}">
+		<include name="intheme" displayName="${intheme}"/>
+		<include name="extfolder" displayName="${extfolder}"/>
+	</subset>
+	<subset name="extfolderfanart" displayName="${opt_extfolderfanart}">
+		<include name="intheme" displayName="${intheme}"/>
+		<include name="extfolder" displayName="${extfolder}"/>
+	</subset>
+	<subset name="extfolderlogosyst" displayName="${opt_extfolderlogosyst}">
+		<include name="intheme" displayName="${intheme}"/>
+		<include name="extfolder" displayName="${extfolder}"/>
 	</subset>
 	<include name="logosimple" displayName="${logosimple}">${themePath}/_viewsystoption/sl-commun/wheellook.xml</include>
 	<include>${themePath}/deactivateview.xml</include>

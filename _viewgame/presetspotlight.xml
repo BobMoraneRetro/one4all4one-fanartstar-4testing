@@ -53,16 +53,10 @@
 	${sv_videogauche_size} : Spotlight : réglage « videogauche_size » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
 	${sv_videogauche_visible} : Spotlight : réglage « videogauche_visible » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
 	${sv_voilevideo_visible} : Spotlight : réglage « voilevideo_visible » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
-	Libellés traduits (_common/_langs/<langue>.xml) : ${gametimelabel}, ${lastgamelabel}, ${noplaycount}, ${opt_spotvideo}, ${playcount}, ${playcountone}, ${presetspotlight}, ${retourdossier}, ${spotvideoaucune}, ${spotvideodroite}, ${spotvideogauche}, ${spotvideogauchehaut}
+	Libellés traduits (_common/_langs/<langue>.xml) : ${gametimelabel}, ${lastgamelabel}, ${noplaycount}, ${playcount}, ${playcountone}, ${presetspotlight}, ${retourdossier}
 -->
 <theme>
 	<formatVersion>7</formatVersion>
-	<subset name="spotvideo" displayName="${opt_spotvideo}" appliesTo="presetspotlight">
-		<include name="gauchehaut" displayName="${spotvideogauchehaut}"/>
-		<include name="droite" displayName="${spotvideodroite}"/>
-		<include name="gauche" displayName="${spotvideogauche}"/>
-		<include name="aucune" displayName="${spotvideoaucune}"/>
-	</subset>
 	<variables>
 		<sv_degrade_size ifSubset="spotvideo:gauche">0.38 1</sv_degrade_size>
 		<sv_degrade_size ifSubset="spotvideo:aucune">0.6 1</sv_degrade_size>
@@ -214,6 +208,7 @@
 			<imageSource ifSubset="boxorthumb:boxart">boxart</imageSource>
 			<imageSource ifSubset="boxorthumb:thumb">thumbnail</imageSource>
 			<scrollDirection>horizontalCenter</scrollDirection>
+			<scrollLoop>true</scrollLoop>
 			<pos>${spotpos}</pos>
 			<size>${spottaille}</size>
 			<margin>${spotmarge}</margin>

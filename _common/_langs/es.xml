@@ -162,7 +162,7 @@
 		<opt_video4starclassic>SISTEMAS - Vídeo de gameplay en la vista de sistemas</opt_video4starclassic>
 		<opt_systviewselec>SISTEMAS - Imagen del sistema en la rueda</opt_systviewselec>
 		<opt_breadcrumbsonoff>SISTEMAS - Menú vertical a la izquierda (vista clásica del sistema)</opt_breadcrumbsonoff>
-		<opt_metadataonoff>SISTEMAS - Información del sistema (vista clásica del sistema)</opt_metadataonoff>
+		<opt_metadataonoff>SISTEMAS - Información del sistema: mostrada (vista clásica)</opt_metadataonoff>
 		<opt_systannonce>JUEGOS - Mostrar el sistema actual al iniciar</opt_systannonce>
 		<opt_infosmax>JUEGOS - ¿Mostrar consola de información máxima?</opt_infosmax>
 		<opt_gamewheelsound>GENERAL - Sonido al desplazarse</opt_gamewheelsound>
@@ -216,8 +216,12 @@
 		<custorcolor>Imagen del sistema si existe, si no colores</custorcolor>
 		<opt_zspinnav>SISTEMAS - Navegación de la vista Z-Spin</opt_zspinnav>
 		<zspinnavarc>Arco de logos en la parte superior</zspinnavarc>
-		<opt_metasyst>SISTEMAS - Información del sistema (vista clásica)</opt_metasyst>
+		<opt_metasyst>SISTEMAS - Información del sistema: presentación (vista clásica)</opt_metasyst>
 		<metastandard>Estándar</metastandard>
 		<metacompacte>Compacta</metacompacte>
+		<opt_sonentree>JUEGOS - Sonido al entrar en un sistema</opt_sonentree>
+		<sonentreecommun>Sonido común</sonentreecommun>
+		<sonentreesysteme>Sonido del sistema (si no, común)</sonentreesysteme>
+		<sonentreemusique>Sonido del sistema, cortado al salir (música del tema activada)</sonentreemusique>
 	</variables>
 </theme>

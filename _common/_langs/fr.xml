@@ -161,8 +161,8 @@
 		<opt_video4starmodern>SYSTÈMES - Vidéo de gameplay sur la vue système</opt_video4starmodern>
 		<opt_video4starclassic>SYSTÈMES - Vidéo de gameplay sur la vue système</opt_video4starclassic>
 		<opt_systviewselec>SYSTÈMES - Image du système dans la wheel</opt_systviewselec>
-		<opt_breadcrumbsonoff>SYSTÈMES - Menu vertical à gauche (classic systview)</opt_breadcrumbsonoff>
-		<opt_metadataonoff>SYSTÈMES - Info sur le système (classic systview)</opt_metadataonoff>
+		<opt_breadcrumbsonoff>SYSTÈMES - Menu vertical à gauche (vue classique)</opt_breadcrumbsonoff>
+		<opt_metadataonoff>SYSTÈMES - Infos du système : affichées (vue classique)</opt_metadataonoff>
 		<opt_systannonce>JEUX - Afficher le système en cours à l'ouverture</opt_systannonce>
 		<opt_infosmax>JEUX - Afficher la console d'information max</opt_infosmax>
 		<opt_gamewheelsound>GÉNÉRAL - Son du défilement</opt_gamewheelsound>
@@ -216,8 +216,12 @@
 		<custorcolor>Image du système si elle existe, sinon couleurs</custorcolor>
 		<opt_zspinnav>SYSTÈMES - Navigation de la vue Z-Spin</opt_zspinnav>
 		<zspinnavarc>Arc de logos en haut de l’écran</zspinnavarc>
-		<opt_metasyst>SYSTÈMES - Infos du système (vue classique)</opt_metasyst>
+		<opt_metasyst>SYSTÈMES - Infos du système : présentation (vue classique)</opt_metasyst>
 		<metastandard>Standard</metastandard>
 		<metacompacte>Compacte</metacompacte>
+		<opt_sonentree>JEUX - Son à l'entrée d'un système</opt_sonentree>
+		<sonentreecommun>Son commun</sonentreecommun>
+		<sonentreesysteme>Son du système (sinon son commun)</sonentreesysteme>
+		<sonentreemusique>Son du système, coupé à la sortie (musiques du thème activées)</sonentreemusique>
 	</variables>
 </theme>

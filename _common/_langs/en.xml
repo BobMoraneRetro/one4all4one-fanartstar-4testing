@@ -162,7 +162,7 @@
 		<opt_video4starclassic>SYSTEMS - Gameplay video on system view</opt_video4starclassic>
 		<opt_systviewselec>SYSTEMS - System image in the wheel</opt_systviewselec>
 		<opt_breadcrumbsonoff>SYSTEMS - Left vertical menu (classic system view)</opt_breadcrumbsonoff>
-		<opt_metadataonoff>SYSTEMS - System information (classic system view)</opt_metadataonoff>
+		<opt_metadataonoff>SYSTEMS - System info: shown (classic view)</opt_metadataonoff>
 		<opt_systannonce>GAMES - Show current system on startup</opt_systannonce>
 		<opt_infosmax>GAMES - Show max info console?</opt_infosmax>
 		<opt_gamewheelsound>GENERAL - Scrolling sound</opt_gamewheelsound>
@@ -216,8 +216,12 @@
 		<custorcolor>System image if available, otherwise colors</custorcolor>
 		<opt_zspinnav>SYSTEMS - Z-Spin view navigation</opt_zspinnav>
 		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
-		<opt_metasyst>SYSTEMS - System info (classic view)</opt_metasyst>
+		<opt_metasyst>SYSTEMS - System info: layout (classic view)</opt_metasyst>
 		<metastandard>Standard</metastandard>
 		<metacompacte>Compact</metacompacte>
+		<opt_sonentree>GAMES - Sound when entering a system</opt_sonentree>
+		<sonentreecommun>Common sound</sonentreecommun>
+		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
+		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
 	</variables>
 </theme>

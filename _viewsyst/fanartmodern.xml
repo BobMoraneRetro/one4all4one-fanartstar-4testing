@@ -363,8 +363,8 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 		<image name="iconselec" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/icon.png</path>
 			<origin>1 0</origin>
-			<pos>0.225 0</pos>
-			<size>0.18 0.061</size>
+			<pos>0.315 0</pos>
+			<size>0.27 0.061</size>
 			<zIndex>900</zIndex>
 			<saturation>0</saturation>
 		</image>

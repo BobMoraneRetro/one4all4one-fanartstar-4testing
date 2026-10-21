@@ -38,7 +38,7 @@
 	${media_video} : vidéo du jeu (définie dans _common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${noteicone} : icône de notation (étoile, cœur, manette...) (définie dans _viewgameoption/gl-common/options_note.xml ; valeur selon l option « JEUX - Icône de notation »)
-	Libellés traduits (_common/_langs/<langue>.xml) : ${deckcentre}, ${deckgauche}, ${decklogobandeau}, ${decklogogarder}, ${decknormal}, ${gametimelabel}, ${lastgamelabel}, ${noplaycount}, ${noplayerdata}, ${opt_deckespace}, ${opt_decklogovideo}, ${opt_deckselection}, ${presetdeck}, ${retourdossier}
+	Libellés traduits (_common/_langs/<langue>.xml) : ${decknormal}, ${gametimelabel}, ${lastgamelabel}, ${noplaycount}, ${noplayerdata}, ${opt_deckespace}, ${presetdeck}, ${retourdossier}
 -->
 <theme>
 	<formatVersion>7</formatVersion>
@@ -49,14 +49,6 @@
 		<decktailleinfo>0.0155</decktailleinfo>
 		<deckor>FFD24AFF</deckor>
 	</variables>
-	<subset name="deckselection" displayName="${opt_deckselection}" appliesTo="presetdeck">
-		<include name="centre" displayName="${deckcentre}"/>
-		<include name="gauche" displayName="${deckgauche}"/>
-	</subset>
-	<subset name="decklogovideo" displayName="${opt_decklogovideo}" appliesTo="presetdeck">
-		<include name="bandeau" displayName="${decklogobandeau}"/>
-		<include name="garder" displayName="${decklogogarder}"/>
-	</subset>
 	<subset name="deckespace" displayName="${opt_deckespace}" appliesTo="presetdeck, presetspotlight, presetstarbox">
 		<include name="e20" displayName="0 (${decknormal})">${themePath}/_viewgame/deck/espacement/e20.xml</include>
 		<include name="e-60" displayName="-20">${themePath}/_viewgame/deck/espacement/e-60.xml</include>

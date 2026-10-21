@@ -216,8 +216,12 @@
 		<custorcolor>System image if available, otherwise colors</custorcolor>
 		<opt_zspinnav>系统 - Z-Spin view navigation</opt_zspinnav>
 		<zspinnavarc>Arc of logos at the top of the screen</zspinnavarc>
-		<opt_metasyst>系统 - System info (classic view)</opt_metasyst>
+		<opt_metasyst>系统 - System info: layout (classic view)</opt_metasyst>
 		<metastandard>Standard</metastandard>
 		<metacompacte>Compact</metacompacte>
+		<opt_sonentree>游戏 - Sound when entering a system</opt_sonentree>
+		<sonentreecommun>Common sound</sonentreecommun>
+		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
+		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
 	</variables>
 </theme>

@@ -84,14 +84,14 @@
 		<blancombre>Moldura branca + sombra</blancombre>
 		<ombre>Somente sombra</ombre>
 		<rien>Sem decoração</rien>
-		<presetshowbig>Simples : RFE Show pré-visualização grande</presetshowbig>
-		<presetshowsmall>Simples : RFE Show pré-visualização pequena</presetshowsmall>
-		<presetspeedbull>Simples : RFE speedbull</presetspeedbull>
+		<presetshowbig>RFE Show pré-visualização grande</presetshowbig>
+		<presetshowsmall>RFE Show pré-visualização pequena</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
 		<presetsquare>FanartStar quadrado</presetsquare>
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presettraviolta_alt>Simples : RFE traviolta</presettraviolta_alt>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
 		<deckgauche>Sob o painel grande (como o Steam)</deckgauche>
@@ -223,5 +223,12 @@
 		<sonentreecommun>Som comum</sonentreecommun>
 		<sonentreesysteme>Som do sistema (senão comum)</sonentreesysteme>
 		<sonentreemusique>Som do sistema, cortado ao sair (músicas do tema ativas)</sonentreemusique>
+		<opt_starboxcases>BOXART - Caixas pretas (jogos, ano, jogadores, nota)</opt_starboxcases>
+		<casesaffichees>Exibidas</casesaffichees>
+		<casesmasquees>Ocultas (descrição mais acima)</casesmasquees>
+		<opt_starboxinfos>BOXART - Apresentação das informações do jogo</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Vídeo</opt_showvideo>
+		<showvideoplein>Ecrã inteiro com bezel</showvideoplein>
+		<showvideofenetre>Fanart em ecrã inteiro, vídeo no canto superior direito</showvideofenetre>
 	</variables>
 </theme>

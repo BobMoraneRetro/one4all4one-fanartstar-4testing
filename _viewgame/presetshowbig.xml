@@ -3,6 +3,7 @@
 	Variables utilisées dans ce fichier :
 	${boite3dangle} : boîte 3D qui se retourne : angle de départ en degrés (0 = de face, à plat) (définie dans ce fichier ; valeur selon l option « SHOW BIG · SMALL - Angle de départ de la boîte qui se retourne »)
 	${boite3dtaille} : boîte 3D qui se retourne : taille commune des éléments (face, dos, tranche, logo) selon le format de boîte du système (définie dans ce fichier)
+	${boite3dtaillejp} : boîte 3D qui se retourne : taille au format vertical des boîtes japonaises (N64 0,731, Super Famicom 0,553) pour snes/n64/sfc/satellaview (définie dans ce fichier)
 	${boite3dvisible} : boîte 3D qui se retourne affichée (boîte 2D choisie, option activée et dos scrapé présent) (définie dans ce fichier ; valeur selon l option « SHOW BIG · SMALL - Boîte qui se retourne (dos scrapé) », « JEUX - Boîte de jeu à afficher »)
 	${boitejeuvisible} : boîte habituelle affichée (boîte 3D choisie, option désactivée ou pas de dos scrapé) (définie dans ce fichier ; valeur selon l option « SHOW BIG · SMALL - Boîte qui se retourne (dos scrapé) », « JEUX - Boîte de jeu à afficher »)
 	${firstsystemhardware} : Vue système classique, option Hardware : console, sinon personnage du système (définie dans theme.xml)
@@ -28,6 +29,8 @@
 		<boite3dtaille if="{system.theme} == 'nds' || {system.theme} == '3ds'">0.35 0.6992</boite3dtaille>
 		<boite3dtaille if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'satellaview'">0.4167 0.5368</boite3dtaille>
 		<boite3dtaille if="{system.theme} == 'switch' || {system.theme} == 'windows'">0.35 1.0036</boite3dtaille>
+		<boite3dtaillejp>0.2725 0.8763</boite3dtaillejp>
+		<boite3dtaillejp if="{system.theme} == 'n64'">0.3603 0.8763</boite3dtaillejp>
 		<boite3dvisible ifSubset="boxorthumb:boxart,boite3d:boite3dactive">false</boite3dvisible>
 		<boite3dvisible ifSubset="boxorthumb:boxart,boite3d:boite3dinactive">false</boite3dvisible>
 		<boite3dvisible ifSubset="boxorthumb:thumb,boite3d:boite3dinactive">false</boite3dvisible>
@@ -349,6 +352,7 @@
 			<path ifSubset="boxorthumb:thumb">${media_box2d}</path>
 			<visible>${boitejeuvisible}</visible>
 			<pos>0.005 0.997</pos>
+			<pos ifHelpPrompts="true">0.005 0.955</pos>
 			<origin>0 1</origin>
 			<maxSize>0.21 0.65</maxSize>
 			<maxSize if="{system.theme} == 'n64'">0.25 0.65</maxSize>
@@ -358,6 +362,7 @@
 		</image>
 		<image name="boite3d_tranche" extra="true">
 			<visible>${boite3dvisible}</visible>
+			<visible if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'satellaview'">${boite3dvisible} &amp;&amp; !startswith({game:region}, &quot;jp&quot;)</visible>
 			<path>firstfile(${media_box2d}, {game:thumbnail})</path>
 			<pos>0.005 0.997</pos>
 			<pos ifHelpPrompts="true">0.005 0.955</pos>
@@ -390,8 +395,43 @@
 				<animation property="shader.u_phase" from="0.001" to="1" begin="1800" duration="14000" mode="linear" repeat="forever"/>
 			</storyboard>
 		</image>
+		<image name="boite3d_tranche_jp" if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'satellaview'" extra="true">
+			<visible>${boite3dvisible} &amp;&amp; startswith({game:region}, &quot;jp&quot;)</visible>
+			<path>firstfile(${media_box2d}, {game:thumbnail})</path>
+			<pos>0.005 0.997</pos>
+			<pos ifHelpPrompts="true">0.005 0.955</pos>
+			<origin>0.2 0.8</origin>
+			<size>${boite3dtaillejp}</size>
+			<zIndex>549</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<shader>
+				<path>${themePath}/_common/shaders/boite3d_retourne.glsl</path>
+				<u_mode>2.0</u_mode>
+				<u_thickness>0.14</u_thickness>
+				<u_pitch>-0.12</u_pitch>
+				<u_angle>${boite3dangle}</u_angle>
+				<u_phase>0</u_phase>
+				<u_shiny>0.35</u_shiny>
+			</shader>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="1300" duration="500" mode="Linear"/>
+				<animation property="shader.u_phase" from="0.001" to="1" begin="1800" duration="14000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="1300" duration="500" mode="Linear"/>
+				<animation property="shader.u_phase" from="0.001" to="1" begin="1800" duration="14000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="1300" duration="500" mode="Linear"/>
+				<animation property="shader.u_phase" from="0.001" to="1" begin="1800" duration="14000" mode="linear" repeat="forever"/>
+			</storyboard>
+		</image>
 		<image name="boite3d_logotranche" extra="true">
 			<visible>${boite3dvisible}</visible>
+			<visible if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'satellaview'">${boite3dvisible} &amp;&amp; !startswith({game:region}, &quot;jp&quot;)</visible>
 			<path>${media_marquee}</path>
 			<pos>0.005 0.997</pos>
 			<pos ifHelpPrompts="true">0.005 0.955</pos>
@@ -425,8 +465,44 @@
 				<animation property="shader.u_phase" from="0.001" to="1" begin="1800" duration="14000" mode="linear" repeat="forever"/>
 			</storyboard>
 		</image>
+		<image name="boite3d_logotranche_jp" if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'satellaview'" extra="true">
+			<visible>${boite3dvisible} &amp;&amp; startswith({game:region}, &quot;jp&quot;)</visible>
+			<path>${media_marquee}</path>
+			<pos>0.005 0.997</pos>
+			<pos ifHelpPrompts="true">0.005 0.955</pos>
+			<origin>0.2 0.8</origin>
+			<size>${boite3dtaillejp}</size>
+			<zIndex>549.5</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<shader>
+				<path>${themePath}/_common/shaders/boite3d_retourne.glsl</path>
+				<u_mode>3.2</u_mode>
+				<u_logo_scale>0.8</u_logo_scale>
+				<u_thickness>0.14</u_thickness>
+				<u_pitch>-0.12</u_pitch>
+				<u_angle>${boite3dangle}</u_angle>
+				<u_phase>0</u_phase>
+				<u_shiny>0.35</u_shiny>
+			</shader>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="1300" duration="500" mode="Linear"/>
+				<animation property="shader.u_phase" from="0.001" to="1" begin="1800" duration="14000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="1300" duration="500" mode="Linear"/>
+				<animation property="shader.u_phase" from="0.001" to="1" begin="1800" duration="14000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="1300" duration="500" mode="Linear"/>
+				<animation property="shader.u_phase" from="0.001" to="1" begin="1800" duration="14000" mode="linear" repeat="forever"/>
+			</storyboard>
+		</image>
 		<image name="boite3d_face" extra="true">
 			<visible>${boite3dvisible}</visible>
+			<visible if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'satellaview'">${boite3dvisible} &amp;&amp; !startswith({game:region}, &quot;jp&quot;)</visible>
 			<path>firstfile(${media_box2d}, {game:thumbnail})</path>
 			<pos>0.005 0.997</pos>
 			<pos ifHelpPrompts="true">0.005 0.955</pos>
@@ -459,13 +535,82 @@
 				<animation property="shader.u_phase" from="0.001" to="1" begin="1800" duration="14000" mode="linear" repeat="forever"/>
 			</storyboard>
 		</image>
+		<image name="boite3d_face_jp" if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'satellaview'" extra="true">
+			<visible>${boite3dvisible} &amp;&amp; startswith({game:region}, &quot;jp&quot;)</visible>
+			<path>firstfile(${media_box2d}, {game:thumbnail})</path>
+			<pos>0.005 0.997</pos>
+			<pos ifHelpPrompts="true">0.005 0.955</pos>
+			<origin>0.2 0.8</origin>
+			<size>${boite3dtaillejp}</size>
+			<zIndex>550</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<shader>
+				<path>${themePath}/_common/shaders/boite3d_retourne.glsl</path>
+				<u_mode>0.0</u_mode>
+				<u_thickness>0.14</u_thickness>
+				<u_pitch>-0.12</u_pitch>
+				<u_angle>${boite3dangle}</u_angle>
+				<u_phase>0</u_phase>
+				<u_shiny>0.35</u_shiny>
+			</shader>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="1300" duration="500" mode="Linear"/>
+				<animation property="shader.u_phase" from="0.001" to="1" begin="1800" duration="14000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="1300" duration="500" mode="Linear"/>
+				<animation property="shader.u_phase" from="0.001" to="1" begin="1800" duration="14000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="1300" duration="500" mode="Linear"/>
+				<animation property="shader.u_phase" from="0.001" to="1" begin="1800" duration="14000" mode="linear" repeat="forever"/>
+			</storyboard>
+		</image>
 		<image name="boite3d_dos" extra="true">
 			<visible>${boite3dvisible}</visible>
+			<visible if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'satellaview'">${boite3dvisible} &amp;&amp; !startswith({game:region}, &quot;jp&quot;)</visible>
 			<path>{game:boxback}</path>
 			<pos>0.005 0.997</pos>
 			<pos ifHelpPrompts="true">0.005 0.955</pos>
 			<origin>0.2 0.8</origin>
 			<size>${boite3dtaille}</size>
+			<zIndex>550</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<shader>
+				<path>${themePath}/_common/shaders/boite3d_retourne.glsl</path>
+				<u_mode>1.0</u_mode>
+				<u_thickness>0.14</u_thickness>
+				<u_pitch>-0.12</u_pitch>
+				<u_angle>${boite3dangle}</u_angle>
+				<u_phase>0</u_phase>
+				<u_shiny>0.35</u_shiny>
+			</shader>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="1300" duration="500" mode="Linear"/>
+				<animation property="shader.u_phase" from="0.001" to="1" begin="1800" duration="14000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="1300" duration="500" mode="Linear"/>
+				<animation property="shader.u_phase" from="0.001" to="1" begin="1800" duration="14000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" duration="0"/>
+				<animation property="opacity" from="0" to="1" begin="1300" duration="500" mode="Linear"/>
+				<animation property="shader.u_phase" from="0.001" to="1" begin="1800" duration="14000" mode="linear" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="boite3d_dos_jp" if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'satellaview'" extra="true">
+			<visible>${boite3dvisible} &amp;&amp; startswith({game:region}, &quot;jp&quot;)</visible>
+			<path>{game:boxback}</path>
+			<pos>0.005 0.997</pos>
+			<pos ifHelpPrompts="true">0.005 0.955</pos>
+			<origin>0.2 0.8</origin>
+			<size>${boite3dtaillejp}</size>
 			<zIndex>550</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<shader>

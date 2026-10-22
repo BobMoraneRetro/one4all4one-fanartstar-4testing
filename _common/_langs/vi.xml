@@ -84,14 +84,14 @@
 		<blancombre>Khung trắng + bóng</blancombre>
 		<ombre>Chỉ bóng</ombre>
 		<rien>Không trang trí</rien>
-		<presetshowbig>Đơn giản : RFE Show xem trước lớn</presetshowbig>
-		<presetshowsmall>Đơn giản : RFE Show xem trước nhỏ</presetshowsmall>
-		<presetspeedbull>Đơn giản : RFE speedbull</presetspeedbull>
+		<presetshowbig>RFE Show xem trước lớn</presetshowbig>
+		<presetshowsmall>RFE Show xem trước nhỏ</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
 		<presetsquare>FanartStar vuông</presetsquare>
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presettraviolta_alt>Đơn giản : RFE traviolta</presettraviolta_alt>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
 		<deckgauche>Dưới khung lớn (như Steam)</deckgauche>
@@ -223,5 +223,12 @@
 		<sonentreecommun>Common sound</sonentreecommun>
 		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
 		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
 	</variables>
 </theme>

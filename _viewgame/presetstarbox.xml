@@ -671,21 +671,59 @@
 			<path>./_viewgameoption/gl-common/infoicone/pulse.png</path>
 			<zIndex>998</zIndex>
 		</image>
-		<image name="md_hiddenextra" extra="true">
+		<image name="controle_pistolet" extra="true">
+			<visible>({game:gunGame}) &amp;&amp; {game:rom} != '..'</visible>
 			<origin>0.5 0.5</origin>
-			<pos>0.025 0.44</pos>
-			<path>./_viewgameoption/gl-common/infoicone/hidden.png</path>
+			<pos>0.0245 0.439</pos>
+			<path>./_viewgameoption/gl-common/infoicone/pistolet.png</path>
 			<maxSize>0.02 0.024</maxSize>
-			<color>999999</color>
-			<zIndex>998</zIndex>
-		</image>
-		<image name="md_hidden">
-			<origin>0.5 0.5</origin>
-			<pos>0.025 0.44</pos>
-			<path>./_viewgameoption/gl-common/infoicone/hidden.png</path>
-			<maxSize>0.02 0.024</maxSize>
+			<linearSmooth>true</linearSmooth>
 			<color>ffffff</color>
 			<zIndex>999</zIndex>
+		</image>
+		<image name="controle_volant" extra="true">
+			<visible>(!{game:gunGame} &amp;&amp; {game:wheelGame}) &amp;&amp; {game:rom} != '..'</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.0245 0.439</pos>
+			<path>./_viewgameoption/gl-common/infoicone/wheel.png</path>
+			<maxSize>0.02 0.024</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>ffffff</color>
+			<zIndex>999</zIndex>
+		</image>
+		<image name="controle_trackball" extra="true">
+			<visible>(!{game:gunGame} &amp;&amp; !{game:wheelGame} &amp;&amp; {game:trackballGame}) &amp;&amp; {game:rom} != '..'</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.0245 0.439</pos>
+			<path>./_viewgameoption/gl-common/infoicone/trackball.png</path>
+			<maxSize>0.02 0.024</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>ffffff</color>
+			<zIndex>999</zIndex>
+		</image>
+		<image name="controle_spinner" extra="true">
+			<visible>(!{game:gunGame} &amp;&amp; !{game:wheelGame} &amp;&amp; !{game:trackballGame} &amp;&amp; {game:spinnerGame}) &amp;&amp; {game:rom} != '..'</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.0245 0.439</pos>
+			<path>./_viewgameoption/gl-common/infoicone/spinner.png</path>
+			<maxSize>0.02 0.024</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>ffffff</color>
+			<zIndex>999</zIndex>
+		</image>
+		<image name="controle_defaut" extra="true">
+			<visible>(!{game:gunGame} &amp;&amp; !{game:wheelGame} &amp;&amp; !{game:trackballGame} &amp;&amp; !{game:spinnerGame}) &amp;&amp; {game:rom} != '..'</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.0245 0.439</pos>
+			<path>./_viewgameoption/gl-common/infoicone/manette.png</path>
+			<path if="{system.hardwareType} == 'arcade'">./_viewgameoption/gl-common/infoicone/stick.png</path>
+			<maxSize>0.02 0.024</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>ffffff</color>
+			<zIndex>999</zIndex>
+		</image>
+		<image name="md_hidden">
+			<visible>false</visible>
 		</image>
 		<image name="pulse5" extra="true">
 			<origin>0.5 0.5</origin>

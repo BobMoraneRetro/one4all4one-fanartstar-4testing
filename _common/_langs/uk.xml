@@ -84,14 +84,14 @@
 		<blancombre>Біла рамка + тінь</blancombre>
 		<ombre>Лише тінь</ombre>
 		<rien>Без оформлення</rien>
-		<presetshowbig>Простий : RFE Show великий перегляд</presetshowbig>
-		<presetshowsmall>Простий : RFE Show малий перегляд</presetshowsmall>
-		<presetspeedbull>Простий : RFE speedbull</presetspeedbull>
+		<presetshowbig>RFE Show великий перегляд</presetshowbig>
+		<presetshowsmall>RFE Show малий перегляд</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
 		<presetsquare>FanartStar квадрат</presetsquare>
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presettraviolta_alt>Простий : RFE traviolta</presettraviolta_alt>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
 		<deckgauche>Під великою панеллю (як у Steam)</deckgauche>
@@ -223,5 +223,12 @@
 		<sonentreecommun>Common sound</sonentreecommun>
 		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
 		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
 	</variables>
 </theme>

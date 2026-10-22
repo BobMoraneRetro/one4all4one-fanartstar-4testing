@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
 	Variables utilisées dans ce fichier :
-	Libellés traduits (_common/_langs/<langue>.xml) : ${active}, ${aqua}, ${b3a0}, ${b3am15}, ${b3am30}, ${b3ap15}, ${b3ap30}, ${blancombre}, ${boxart}, ${candy}, ${classiquesyst}, ${deactive}, ${deckcentre}, ${deckgauche}, ${decklogobandeau}, ${decklogogarder}, ${default}, ${desactive}, ${fanartaucune}, ${fanartdefautvue}, ${fanartfloufort}, ${fanartflouleger}, ${fanartfloumoyen}, ${fanartfondu}, ${fanartfondudiscret}, ${fanartfonduzoom}, ${fanartstylebigart}, ${fanartstylespotlight}, ${green}, ${greenalt}, ${grey}, ${griscl}, ${lightgrey}, ${navy}, ${no}, ${noirombre}, ${nostarrotate}, ${ombre}, ${opt_boite3d}, ${opt_boite3dangle}, ${opt_boxorthumb}, ${opt_boxstarspeed}, ${opt_decklogovideo}, ${opt_deckselection}, ${opt_fanartflou}, ${opt_fanartstarrotated}, ${opt_fanarttransition}, ${opt_gridcolor}, ${opt_infosmax}, ${opt_sonentree}, ${opt_spotvideo}, ${opt_squarecadre}, ${opt_starboxang}, ${opt_starvideo}, ${opt_starvideoanim}, ${opt_systannonce}, ${orange}, ${pink}, ${purple}, ${purplealt}, ${red}, ${redalt}, ${rien}, ${skyblue}, ${sonentreecommun}, ${sonentreemusique}, ${sonentreesysteme}, ${speedslow1}, ${speedslow2}, ${spotvideoaucune}, ${spotvideodroite}, ${spotvideogauche}, ${spotvideogauchehaut}, ${starrotate}, ${starvideoang}, ${starvideobig}, ${starvideodef}, ${starvideofixe}, ${starvideoglisse}, ${thumb}, ${violet}, ${yellow}, ${yellowalt}, ${yes}
+	Libellés traduits (_common/_langs/<langue>.xml) : ${active}, ${aqua}, ${b3a0}, ${b3am15}, ${b3am30}, ${b3ap15}, ${b3ap30}, ${blancombre}, ${boxart}, ${candy}, ${casesaffichees}, ${casesmasquees}, ${classiquesyst}, ${deactive}, ${deckcentre}, ${deckgauche}, ${decklogobandeau}, ${decklogogarder}, ${default}, ${desactive}, ${fanartaucune}, ${fanartdefautvue}, ${fanartfloufort}, ${fanartflouleger}, ${fanartfloumoyen}, ${fanartfondu}, ${fanartfondudiscret}, ${fanartfonduzoom}, ${fanartstylebigart}, ${fanartstylespotlight}, ${green}, ${greenalt}, ${grey}, ${griscl}, ${lightgrey}, ${metacompacte}, ${metastandard}, ${navy}, ${no}, ${noirombre}, ${nostarrotate}, ${ombre}, ${opt_boite3d}, ${opt_boite3dangle}, ${opt_boxorthumb}, ${opt_boxstarspeed}, ${opt_decklogovideo}, ${opt_deckselection}, ${opt_fanartflou}, ${opt_fanartstarrotated}, ${opt_fanarttransition}, ${opt_gridcolor}, ${opt_infosmax}, ${opt_showvideo}, ${opt_sonentree}, ${opt_spotvideo}, ${opt_squarecadre}, ${opt_starboxang}, ${opt_starboxcases}, ${opt_starboxinfos}, ${opt_starvideo}, ${opt_starvideoanim}, ${opt_systannonce}, ${orange}, ${pink}, ${purple}, ${purplealt}, ${red}, ${redalt}, ${rien}, ${showvideofenetre}, ${showvideoplein}, ${skyblue}, ${sonentreecommun}, ${sonentreemusique}, ${sonentreesysteme}, ${speedslow1}, ${speedslow2}, ${spotvideoaucune}, ${spotvideodroite}, ${spotvideogauche}, ${spotvideogauchehaut}, ${starrotate}, ${starvideoang}, ${starvideobig}, ${starvideodef}, ${starvideofixe}, ${starvideoglisse}, ${thumb}, ${violet}, ${yellow}, ${yellowalt}, ${yes}
 -->
 <theme>
 	<formatVersion>7</formatVersion>
@@ -23,7 +23,7 @@
 		<include name="thumb" displayName="${thumb}">./_viewgameoption/gl-fanartstar/2dbox.xml</include>
 		<include name="boxart" displayName="${boxart}">./_viewgameoption/gl-fanartstar/3dbox.xml</include>
 	</subset>
-	<subset name="fanarttransition" displayName="${opt_fanarttransition}" appliesTo="presetstarbox,presetsquare,presetstar169,presetstar43,presettraviolta_alt,presetspotlight,presetdeck">
+	<subset name="fanarttransition" displayName="${opt_fanarttransition}" appliesTo="presetstarbox,presetsquare,presetstar169,presetstar43,presettraviolta_alt,presetspotlight,presetdeck,presetshowbig,presetshowsmall">
 		<include name="fanartdefautvue" displayName="${fanartdefautvue}"/>
 		<include name="fanartaucune" displayName="${fanartaucune}">./_viewgameoption/gl-fanartstar/fanartaucune.xml</include>
 		<include name="fanartfondu" displayName="${fanartfondu}">./_viewgameoption/gl-fanartstar/fanartfondu.xml</include>
@@ -60,6 +60,14 @@
 		<include name="starvideofixe" displayName="${starvideofixe}"/>
 		<include name="starvideoglisse" displayName="${starvideoglisse}">./_viewgameoption/gl-fanartstar/videoglisse.xml</include>
 	</subset>
+	<subset name="starboxcases" displayName="${opt_starboxcases}" appliesTo="presetstarbox">
+		<include name="casesaffichees" displayName="${casesaffichees}"/>
+		<include name="casesmasquees" displayName="${casesmasquees}">./_viewgameoption/gl-fanartstar/casesmasquees.xml</include>
+	</subset>
+	<subset name="starboxinfos" displayName="${opt_starboxinfos}" appliesTo="presetstarbox">
+		<include name="infosstandard" displayName="${metastandard}"/>
+		<include name="infoscompactes" displayName="${metacompacte}">./_viewgameoption/gl-fanartstar/infoscompactes.xml</include>
+	</subset>
 	<subset name="deckselection" displayName="${opt_deckselection}" appliesTo="presetdeck">
 		<include name="centre" displayName="${deckcentre}"/>
 		<include name="gauche" displayName="${deckgauche}"/>
@@ -84,6 +92,10 @@
 		<include name="b3ap30" displayName="${b3ap30}"/>
 		<include name="b3am15" displayName="${b3am15}"/>
 		<include name="b3am30" displayName="${b3am30}"/>
+	</subset>
+	<subset name="showvideo" displayName="${opt_showvideo}" appliesTo="presetshowbig,presetshowsmall">
+		<include name="showvideoplein" displayName="${showvideoplein}"/>
+		<include name="showvideofenetre" displayName="${showvideofenetre}">./_viewgameoption/gl-fanartstar/showfanartvideo.xml</include>
 	</subset>
 	<subset name="gridcolor" displayName="${opt_gridcolor}" appliesTo="presetstar169,presetstar43">
 		<include name="default" displayName="${default}"/>

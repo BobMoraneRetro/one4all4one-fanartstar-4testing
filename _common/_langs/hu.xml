@@ -84,14 +84,14 @@
 		<blancombre>Fehér keret + árnyék</blancombre>
 		<ombre>Csak árnyék</ombre>
 		<rien>Díszítés nélkül</rien>
-		<presetshowbig>Egyszerű : RFE Show nagy előnézet</presetshowbig>
-		<presetshowsmall>Egyszerű : RFE Show kis előnézet</presetshowsmall>
-		<presetspeedbull>Egyszerű : RFE speedbull</presetspeedbull>
+		<presetshowbig>RFE Show nagy előnézet</presetshowbig>
+		<presetshowsmall>RFE Show kis előnézet</presetshowsmall>
+		<presetspeedbull>RFE speedbull</presetspeedbull>
 		<presetsquare>FanartStar négyzet</presetsquare>
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presettraviolta_alt>Egyszerű : RFE traviolta</presettraviolta_alt>
+		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
 		<deckgauche>A nagy panel alatt (mint a Steam)</deckgauche>
@@ -223,5 +223,12 @@
 		<sonentreecommun>Common sound</sonentreecommun>
 		<sonentreesysteme>System sound (else common sound)</sonentreesysteme>
 		<sonentreemusique>System sound, stopped on exit (theme music enabled)</sonentreemusique>
+		<opt_starboxcases>BOXART - Black boxes (plays, year, players, rating)</opt_starboxcases>
+		<casesaffichees>Shown</casesaffichees>
+		<casesmasquees>Hidden (description moved up)</casesmasquees>
+		<opt_starboxinfos>BOXART - Game info layout</opt_starboxinfos>
+		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
+		<showvideoplein>Full screen with bezel</showvideoplein>
+		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
 	</variables>
 </theme>

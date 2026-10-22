@@ -2,8 +2,8 @@
 <!--
 	Variables utilisées dans ce fichier :
 	${intfanartfresh} : Fanart du système (dossier fresh) (définie dans theme.xml)
-	${media_fanart_exists} : vrai si le média « fanart » du jeu existe (définie dans _common/gamemedia/fanartinfanart.xml, _common/gamemedia/fanartinimage.xml)
-	Libellés traduits (_common/_langs/<langue>.xml) : ${presetdeck}, ${presetspotlight}, ${presetsquare}, ${presetstar169}, ${presetstar43}, ${presetstarbox}, ${presettraviolta_alt}
+	${media_fanart_exists} : vrai si le média « fanart » du jeu existe (définie dans _common/gamemedia/fanartinfanart.xml, _common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${presetdeck}, ${presetshowbig}, ${presetshowsmall}, ${presetspotlight}, ${presetsquare}, ${presetstar169}, ${presetstar43}, ${presetstarbox}, ${presettraviolta_alt}
 -->
 <theme>
 	<formatVersion>7</formatVersion>
@@ -369,6 +369,80 @@
 				<animation property="scale" from="1.06" to="1" duration="550" mode="easeOut"/>
 			</storyboard>
 			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="450" mode="easeOut"/>
+				<animation property="scale" from="1.06" to="1" duration="550" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" from="1" to="0" duration="400" mode="easeIn"/>
+				<animation property="scale" from="1" to="1.15" duration="400" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" from="1" to="0" duration="400" mode="easeIn"/>
+				<animation property="scale" from="1" to="1.15" duration="400" mode="easeIn"/>
+			</storyboard>
+		</image>
+	</customView>
+	<customView name="presetshowbig" displayName="${presetshowbig}" inherits="gamecarousel">
+		<image name="fanartshow_soustransition" ifSubset="showvideo:showvideofenetre" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<shared>false</shared>
+			<path>${intfanartfresh}</path>
+			<autoFade>false</autoFade>
+			<linearSmooth>true</linearSmooth>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>2 1</maxSize>
+			<color>8C8C8CFF</color>
+			<zIndex>1.9</zIndex>
+		</image>
+		<image name="fanartpresetshow" ifSubset="showvideo:showvideofenetre" extra="true">
+			<scaleOrigin>0 0</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="450" mode="easeOut"/>
+				<animation property="scale" from="1.06" to="1" duration="550" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="450" mode="easeOut"/>
+				<animation property="scale" from="1.06" to="1" duration="550" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="450" mode="easeOut"/>
+				<animation property="scale" from="1.06" to="1" duration="550" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" from="1" to="0" duration="400" mode="easeIn"/>
+				<animation property="scale" from="1" to="1.15" duration="400" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" from="1" to="0" duration="400" mode="easeIn"/>
+				<animation property="scale" from="1" to="1.15" duration="400" mode="easeIn"/>
+			</storyboard>
+		</image>
+	</customView>
+	<customView name="presetshowsmall" displayName="${presetshowsmall}" inherits="gamecarousel">
+		<image name="fanartshow_soustransition" ifSubset="showvideo:showvideofenetre" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<shared>false</shared>
+			<path>${intfanartfresh}</path>
+			<autoFade>false</autoFade>
+			<linearSmooth>true</linearSmooth>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>2 1</maxSize>
+			<color>8C8C8CFF</color>
+			<zIndex>0.9</zIndex>
+		</image>
+		<image name="fanartpresetshow" ifSubset="showvideo:showvideofenetre" extra="true">
+			<scaleOrigin>0 0</scaleOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="450" mode="easeOut"/>
+				<animation property="scale" from="1.06" to="1" duration="550" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="450" mode="easeOut"/>
+				<animation property="scale" from="1.06" to="1" duration="550" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
 				<animation property="opacity" from="0" to="1" duration="450" mode="easeOut"/>
 				<animation property="scale" from="1.06" to="1" duration="550" mode="easeOut"/>
 			</storyboard>

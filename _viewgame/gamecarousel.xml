@@ -2,9 +2,9 @@
 <!--
 	Variables utilisées dans ce fichier :
 	${firstsystemhardware} : Vue système classique, option Hardware : console, sinon personnage du système (définie dans theme.xml)
-	${media_fanart_orthumb} : média « fanart_orthumb » du jeu (gamelist ou média perso selon l option) (définie dans _common/gamemedia/fanartinfanart.xml, _common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
-	${media_image} : capture du jeu (définie dans _common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
-	${media_video} : vidéo du jeu (définie dans _common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_fanart_orthumb} : média « fanart_orthumb » du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_image} : capture du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${path_common} : dossier _common du thème (définie dans theme.xml)
 -->
 <theme>

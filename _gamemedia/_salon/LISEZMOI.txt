@@ -1,0 +1,20 @@
+Vue « Salon » : un décor par système
+====================================
+
+Pour chaque système :
+  <système>.png  : décor 1920x1080, écran de la TV TRANSPARENT (la vidéo passe dessous)
+  <système>.xml  : réglages (facultatif, sinon valeurs par défaut de la vue = celles de wii)
+  _default.png   : décor utilisé si le système n a pas le sien
+
+Réglages de <système>.xml (coordonnées en fraction d écran, 0 0 = haut gauche, 1 1 = bas droite) :
+  salon_video_pos      centre de l écran de la TV                    ex. 0.5 0.2625
+  salon_video_taille   largeur hauteur de l écran de la TV           ex. 0.3906 0.388
+  Disque (coordonnées DANS la case de la boîte du carrousel : 0.5 = centre de la boîte) :
+  salon_disque_depart  x du disque caché derrière la boîte           ex. 0.5
+  salon_disque_x       x du disque une fois sorti (bord droit 0.69)  ex. 0.69
+  salon_disque_y       hauteur du centre du disque                   ex. 0.65
+  salon_disque_taille  taille maximale du disque (= largeur boîte) ex. 0.38 0.675
+
+Mesurer l écran : x du centre = (gauche + droite) / 2 / 1920, y = (haut + bas) / 2 / 1080,
+largeur = (droite - gauche) / 1920, hauteur = (bas - haut) / 1080.
+Copier wii.xml sous le nom du système et changer les valeurs.

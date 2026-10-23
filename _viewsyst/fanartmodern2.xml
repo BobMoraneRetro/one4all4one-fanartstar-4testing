@@ -284,10 +284,11 @@
 			<color>ffffffff</color>
 			<pos>0.0525 0.24</pos>
 			<size>0.43 0.15</size>
+			<size if="${screen.ratio} == '4/3'">0.573 0.06</size>
+			<autoScroll if="${screen.ratio} == '4/3'">vertical</autoScroll>
 			<alignment>left</alignment>
 			<verticalAlignment>top</verticalAlignment>
 			<fontSize>0.018</fontSize>
-			<singleLineScroll>false</singleLineScroll>
 			<glowColor>00000040</glowColor>
 			<glowOffset>0.8</glowOffset>
 			<glowSize>2</glowSize>
@@ -405,6 +406,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 			<verticalAlignment>center</verticalAlignment>
 			<pos>0.0525 0.28</pos>
 			<size>0.3 0.14</size>
+			<size if="${screen.ratio} == '4/3'">0.4 0.14</size>
 			<fontPath>${themePath}/_viewsyst/fanartstar/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>left</alignment>
@@ -554,6 +556,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 		<control name="arcade, computer, console, extension, mess, pinball, port, portable, system, autocollection, customcollection, retrobat">
 			<offsetX>0.005</offsetX>
 			<offsetY>-0.139</offsetY>
+			<maxSize if="${screen.ratio} == '4/3'">0.0267 0.07</maxSize>
 		</control>
 	</view>
 </theme>

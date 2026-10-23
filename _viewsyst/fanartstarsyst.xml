@@ -49,10 +49,14 @@
 		<metaanneepos ifSubset="metasyst:metastandard">0.253 0.28</metaanneepos>
 		<metafabpos ifSubset="metasyst:metacompacte">0.288 0.264</metafabpos>
 		<metafabpos ifSubset="metasyst:metastandard">0.3 0.28</metafabpos>
+		<metafabpos ifSubset="metasyst:metacompacte" if="${screen.ratio} == '4/3'">0.293 0.264</metafabpos>
+		<metafabpos ifSubset="metasyst:metastandard" if="${screen.ratio} == '4/3'">0.315 0.28</metafabpos>
 		<metadescpos ifSubset="metasyst:metacompacte">0.0525 0.283</metadescpos>
 		<metadescpos ifSubset="metasyst:metastandard">0.0525 0.305</metadescpos>
 		<metadescsize ifSubset="metasyst:metacompacte">0.33 0.085</metadescsize>
 		<metadescsize ifSubset="metasyst:metastandard">0.4 0.1</metadescsize>
+		<metadescsize ifSubset="metasyst:metacompacte" if="${screen.ratio} == '4/3'">0.44 0.085</metadescsize>
+		<metadescsize ifSubset="metasyst:metastandard" if="${screen.ratio} == '4/3'">0.533 0.1</metadescsize>
 		<metadescpolice ifSubset="metasyst:metacompacte">0.016</metadescpolice>
 		<metadescpolice ifSubset="metasyst:metastandard">0.022</metadescpolice>
 		<metastatsstandard ifSubset="metasyst:metacompacte">0</metastatsstandard>
@@ -448,10 +452,10 @@
 			<color>ffffffff</color>
 			<pos>${metadescpos}</pos>
 			<size>${metadescsize}</size>
+			<autoScroll if="${screen.ratio} == '4/3'">vertical</autoScroll>
 			<alignment>left</alignment>
 			<verticalAlignment>top</verticalAlignment>
 			<fontSize>${metadescpolice}</fontSize>
-			<singleLineScroll>false</singleLineScroll>
 			<glowColor>00000040</glowColor>
 			<glowOffset>0.8</glowOffset>
 			<glowSize>2</glowSize>
@@ -465,11 +469,13 @@
 			<text>{system:fullName}        ({binding:total} ${jeux})</text>
 			<opacity>0.7</opacity>
 			<pos>0.253 0.238</pos>
+			<pos if="${screen.ratio} == '4/3'">0.3197 0.238</pos>
 			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
 			<fontSize>${metatitrepolice}</fontSize>
 			<color>ffffffff</color>
 			<origin>0.5 0.5</origin>
 			<size>0.4 0.02</size>
+			<size if="${screen.ratio} == '4/3'">0.533 0.02</size>
 			<alignment>left</alignment>
 			<glowColor>00000016</glowColor>
 			<glowSize>3</glowSize>
@@ -612,6 +618,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<verticalAlignment>center</verticalAlignment>
 			<pos>0.0525 0.37</pos>
 			<size>0.3 0.14</size>
+			<size if="${screen.ratio} == '4/3'">0.4 0.14</size>
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>left</alignment>
@@ -743,6 +750,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<verticalAlignment>top</verticalAlignment>
 			<pos>0.0525 0.372</pos>
 			<size>0.3 0.1</size>
+			<size if="${screen.ratio} == '4/3'">0.4 0.1</size>
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
 			<color>FFFFFF</color>
 			<alignment>left</alignment>
@@ -766,7 +774,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 				<animation property="opacity" from="0" to="1" mode="easeOut"/>
 			</storyboard>
 		</text>
-		<control name="info1,info2,systfullname,info3,info4,systemInfoEx">
+		<control name="info1,systfullname,info3,info4,systemInfoEx">
 			<visible ifSubset="metadataonoff:deactivate">false</visible>
 			<visible ifSubset="metadataonoff:active">true</visible>
 		</control>
@@ -888,6 +896,7 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<visible ifSubset="breadcrumbsonoff:active">true</visible>
 			<offsetX>0.005</offsetX>
 			<offsetY>-0.05</offsetY>
+			<maxSize if="${screen.ratio} == '4/3'">0.0267 0.07</maxSize>
 		</control>
 		<image name="manetteombre" extra="true">
 			<visible>${manettehalovisible}</visible>

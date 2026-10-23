@@ -6,8 +6,8 @@
 -->
 <theme>
 	<formatVersion>7</formatVersion>
-	<include>${themePath}/_common/gamemedia/_langs/fr.xml</include>
-	<include>${themePath}/_common/gamemedia/_langs/${lang}.xml</include>
+	<include>${themePath}/_viewgameoption/gl-common/gamemedia/_langs/fr.xml</include>
+	<include>${themePath}/_viewgameoption/gl-common/gamemedia/_langs/${lang}.xml</include>
 	<variables>
 		<path_game_media ifSubset="extfoldergamemedia:extfolder">${themePath}/../_bobmedia/_gamemedia/</path_game_media>
 		<path_game_media ifSubset="extfoldergamemedia:intheme">${themePath}/_gamemedia/</path_game_media>
@@ -21,12 +21,12 @@
 		<gm_cartridge>("${path_game_media}" + ({game:system:theme}) + "/cartridge/" + stem({game:rom}) + ".png")</gm_cartridge>
 	</variables>
 	<subset name="custombuilds" displayName="${opt_custombuilds}">
-		<include name="standardbuilds" displayName="${packcustombuildsno}">${themePath}/_common/gamemedia/fanartinfanart.xml</include>
-		<include name="retrofreshbat" displayName="${packretrofreshbat}">${themePath}/_common/gamemedia/fanartinimage.xml</include>
+		<include name="standardbuilds" displayName="${packcustombuildsno}">${themePath}/_viewgameoption/gl-common/gamemedia/fanartinfanart.xml</include>
+		<include name="retrofreshbat" displayName="${packretrofreshbat}">${themePath}/_viewgameoption/gl-common/gamemedia/fanartinimage.xml</include>
 	</subset>
 	<subset name="scrap3dbox" displayName="${opt_scrap3dbox}">
-		<include name="scrapedboxart" displayName="${scrapedboxart}">${themePath}/_common/gamemedia/3dinboxart.xml</include>
-		<include name="scrapedthumbnail" displayName="${scrapedthumbnail}">${themePath}/_common/gamemedia/3dinthumbnail.xml</include>
+		<include name="scrapedboxart" displayName="${scrapedboxart}">${themePath}/_viewgameoption/gl-common/gamemedia/3dinboxart.xml</include>
+		<include name="scrapedthumbnail" displayName="${scrapedthumbnail}">${themePath}/_viewgameoption/gl-common/gamemedia/3dinthumbnail.xml</include>
 	</subset>
 	<subset name="gamemedia" displayName="${opt_gamemedia}">
 		<include name="non" displayName="${gamemedianon}"/>
@@ -37,5 +37,5 @@
 		<include name="intheme" displayName="${intheme}"/>
 		<include name="extfolder" displayName="${extfolder}"/>
 	</subset>
-	<include>${themePath}/_common/gamemedia/medias.xml</include>
+	<include>${themePath}/_viewgameoption/gl-common/gamemedia/medias.xml</include>
 </theme>

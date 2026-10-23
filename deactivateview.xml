@@ -10,6 +10,7 @@
 	<include>${themePath}/_viewgame/presetstarbox.xml</include>
 	<include>${themePath}/_viewgame/presetdeck.xml</include>
 	<include>${themePath}/_viewgame/presetspotlight.xml</include>
+	<include>${themePath}/_viewgame/presetsalon.xml</include>
 	<include>${themePath}/_viewgame/presetshowbig.xml</include>
 	<include>${themePath}/_viewgame/presetshowsmall.xml</include>
 	<include>${themePath}/_viewgame/presetspeedbull.xml</include>

@@ -3,7 +3,7 @@ MODULE GAMEMEDIA - médias des jeux (gamelist ou médias perso)
 
 BRANCHEMENT DANS UN THÈME
   Dans theme.xml, AVANT l'inclusion des vues, une seule ligne :
-      <include>${themePath}/_common/gamemedia/gamemedia.xml</include>
+      <include>${themePath}/_viewgameoption/gl-common/gamemedia/gamemedia.xml</include>
   Le module apporte lui-même ses options, ses variables et ses libellés (32 langues).
   Variables du thème nécessaires : ${path_syst_fanart} (fanart du système, pour les chaînes de secours).
 

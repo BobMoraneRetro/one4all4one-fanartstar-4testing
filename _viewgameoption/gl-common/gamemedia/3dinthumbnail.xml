@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 	Variables utilisées dans ce fichier :
-	${gm_box2d} : chemin du média perso « box2d » (_gamemedia/<système>/box2d/<rom>) (définie dans _common/gamemedia/gamemedia.xml)
-	${gm_box3d} : chemin du média perso « box3d » (_gamemedia/<système>/box3d/<rom>) (définie dans _common/gamemedia/gamemedia.xml)
+	${gm_box2d} : chemin du média perso « box2d » (_gamemedia/<système>/box2d/<rom>) (définie dans _viewgameoption/gl-common/gamemedia/gamemedia.xml)
+	${gm_box3d} : chemin du média perso « box3d » (_gamemedia/<système>/box3d/<rom>) (définie dans _viewgameoption/gl-common/gamemedia/gamemedia.xml)
 -->
 <theme>
 	<formatVersion>7</formatVersion>

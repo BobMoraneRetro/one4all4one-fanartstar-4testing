@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 	Variables utilisées dans ce fichier :
-	${gm_cartridge} : chemin du média perso « cartridge » (_gamemedia/<système>/cartridge/<rom>) (définie dans _common/gamemedia/gamemedia.xml)
-	${gm_disc} : chemin du média perso « disc » (_gamemedia/<système>/disc/<rom>) (définie dans _common/gamemedia/gamemedia.xml)
-	${gm_image} : chemin du média perso « image » (_gamemedia/<système>/image/<rom>) (définie dans _common/gamemedia/gamemedia.xml)
-	${gm_marquee} : chemin du média perso « marquee » (_gamemedia/<système>/marquee/<rom>) (définie dans _common/gamemedia/gamemedia.xml)
-	${gm_video} : chemin du média perso « video » (_gamemedia/<système>/video/<rom>) (définie dans _common/gamemedia/gamemedia.xml)
+	${gm_cartridge} : chemin du média perso « cartridge » (_gamemedia/<système>/cartridge/<rom>) (définie dans _viewgameoption/gl-common/gamemedia/gamemedia.xml)
+	${gm_disc} : chemin du média perso « disc » (_gamemedia/<système>/disc/<rom>) (définie dans _viewgameoption/gl-common/gamemedia/gamemedia.xml)
+	${gm_image} : chemin du média perso « image » (_gamemedia/<système>/image/<rom>) (définie dans _viewgameoption/gl-common/gamemedia/gamemedia.xml)
+	${gm_marquee} : chemin du média perso « marquee » (_gamemedia/<système>/marquee/<rom>) (définie dans _viewgameoption/gl-common/gamemedia/gamemedia.xml)
+	${gm_video} : chemin du média perso « video » (_gamemedia/<système>/video/<rom>) (définie dans _viewgameoption/gl-common/gamemedia/gamemedia.xml)
 -->
 <theme>
 	<formatVersion>7</formatVersion>

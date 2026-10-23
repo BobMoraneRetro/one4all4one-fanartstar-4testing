@@ -18,6 +18,9 @@
 			<size>1.03 1.02</size>
 			<size ifSubset="systemview:fanartstarsyst">0 0.9</size>
 			<origin ifSubset="systemview:fanartstarsyst">0.5 0</origin>
+			<pos ifSubset="systemview:fanartmodern|fanartmodern2" if="${screen.ratio} == '4/3'">0.5 0</pos>
+			<size ifSubset="systemview:fanartmodern|fanartmodern2" if="${screen.ratio} == '4/3'">0 1.02</size>
+			<origin ifSubset="systemview:fanartmodern|fanartmodern2" if="${screen.ratio} == '4/3'">0.5 0</origin>
 			<zIndex>0</zIndex>
 			<linearSmooth>true</linearSmooth>
 		</image>

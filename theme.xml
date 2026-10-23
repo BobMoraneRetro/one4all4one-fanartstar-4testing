@@ -5,7 +5,6 @@
 	${path_syst_bezel} : dossier des bezels des systèmes (définie dans ce fichier ; valeur selon l option « AVANCÉ - Emplacement des bezels des systèmes »)
 	${path_syst_fanart} : dossier des fanarts des systèmes (définie dans ce fichier ; valeur selon l option « AVANCÉ - Emplacement des fanarts des systèmes »)
 	${path_syst_logo} : dossier des logos des systèmes (définie dans ce fichier ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
-	Libellés traduits (_common/_langs/<langue>.xml) : ${active}, ${aqua}, ${bulle}, ${candy}, ${charsystem}, ${clic}, ${clicgrave}, ${couleur}, ${custorcolor}, ${default}, ${desactive}, ${extfolder}, ${fanartfreshone}, ${fanartmodern}, ${fanartmodern2}, ${fanartstarsyst}, ${fanartsystcustom}, ${figurines}, ${frottement}, ${green}, ${greenalt}, ${grey}, ${hardware}, ${horlogeblanc}, ${horlogegrande}, ${horlogenormale}, ${horlogepetite}, ${horlogetresgrande}, ${iconsetposition}, ${intheme}, ${lightgrey}, ${logosimple}, ${logosseuls}, ${metacompacte}, ${metastandard}, ${navy}, ${novideo}, ${opt_breadcrumbsonoff}, ${opt_choixbande}, ${opt_colorhelp}, ${opt_extfolderbezelsyst}, ${opt_extfolderfanart}, ${opt_extfolderlogosyst}, ${opt_extfoldermanufacturer}, ${opt_extfoldervideosyst}, ${opt_gamewheelsound}, ${opt_horlogecouleur}, ${opt_horlogetaille}, ${opt_iconset}, ${opt_imagefondcops1}, ${opt_lismoi}, ${opt_manetteflottante}, ${opt_metadataonoff}, ${opt_metasyst}, ${opt_systemview}, ${opt_systviewselec}, ${opt_video4starclassic}, ${opt_video4starmodern}, ${opt_zspinnav}, ${orange}, ${pink}, ${poc}, ${purple}, ${purplealt}, ${red}, ${redalt}, ${rondhursty}, ${skyblue}, ${systviewzspin}, ${tumasbienlu}, ${videoangled}, ${videoback}, ${violet}, ${wheelclic}, ${xbox360blade}, ${xbox360focus}, ${xbox360onglet}, ${xbox360retour}, ${xbox360selection}, ${xbox360touche}, ${yellow}, ${yellowalt}, ${zspinnavarc}
 -->
 <theme defaultView="presetstarbox">
 	<formatVersion>7</formatVersion>
@@ -175,7 +174,7 @@
 		<include name="desactive" displayName="${desactive}"/>
 		<include name="arc" displayName="${zspinnavarc}">${themePath}/_viewsyst/zspin/navigation_arc.xml</include>
 	</subset>
-	<include>${themePath}/_common/gamemedia/gamemedia.xml</include>
+	<include>${themePath}/_viewgameoption/gl-common/gamemedia/gamemedia.xml</include>
 	<include>${themePath}/_viewgameoption/gl-common/options_boitier.xml</include>
 	<include>${themePath}/_viewgameoption/gl-common/boitiers_systemes.xml</include>
 	<include>${themePath}/_viewgameoption/gl-common/options_son.xml</include>

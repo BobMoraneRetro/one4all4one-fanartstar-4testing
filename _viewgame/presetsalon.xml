@@ -15,8 +15,10 @@
 	${media_support_exists} : vrai si le média « support » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${salon_defaut} : vue Salon : décor et réglages par défaut, _default (systèmes 4:3) ou _default16 (systèmes 16:9 listés) (définie dans ce fichier)
 	${salon_disque_depart} : vue Salon : x du disque caché derrière la boîte sélectionnée (définie dans ce fichier)
 	${salon_disque_taille} : vue Salon : taille maximale du disque (définie dans ce fichier)
+	${salon_disque_tourne} : vue Salon : true = le disque tourne (systèmes CD/DVD par défaut), false = il sort sans tourner ; réglable par <système>.xml (définie dans ce fichier)
 	${salon_disque_x} : vue Salon : x du disque une fois sorti de la boîte (définie dans ce fichier)
 	${salon_disque_y} : vue Salon : hauteur du centre du disque (définie dans ce fichier)
 	${salon_video_pos} : vue Salon : centre de l écran de la TV (vidéo sous le décor) (définie dans ce fichier)
@@ -35,8 +37,16 @@
 		<salon_disque_depart>0.5</salon_disque_depart>
 		<salon_disque_x>0.69</salon_disque_x>
 		<salon_disque_y>0.65</salon_disque_y>
-		<salon_disque_taille>0.38 0.675</salon_disque_taille>
+		<salon_disque_taille>0.36 0.64</salon_disque_taille>
+		<salon_disque_tourne>false</salon_disque_tourne>
+		<salon_disque_tourne if="{system.theme} == 'psx' || {system.theme} == 'ps2' || {system.theme} == 'ps3' || {system.theme} == 'saturn' ||
+					{system.theme} == 'megacd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' ||
+					{system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pcenginecd' || {system.theme} == 'pcfx' || {system.theme} == 'jaguarcd' ||
+					{system.theme} == 'gamecube' || {system.theme} == 'wii' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'fmtowns'">true</salon_disque_tourne>
+		<salon_defaut>_default</salon_defaut>
+		<salon_defaut if="{system.theme} == 'ps3' || {system.theme} == 'ps4' || {system.theme} == 'ps5' || {system.theme} == 'xbox360' || {system.theme} == 'xboxone' || {system.theme} == 'xboxseries' || {system.theme} == 'wiiu' || {system.theme} == 'switch' || {system.theme} == 'psvita' || {system.theme} == 'windows' || {system.theme} == 'steam'">_default16</salon_defaut>
 	</variables>
+	<include>${themePath}/_gamemedia/_salon/${salon_defaut}.xml</include>
 	<include>${themePath}/_gamemedia/_salon/${system.theme}.xml</include>
 	<customView name="presetsalon" displayName="${presetsalon}" inherits="gamecarousel">
 		<control name="fanart_extra,screenshot_extra,video_extra">
@@ -49,7 +59,7 @@
 			<linearSmooth>true</linearSmooth>
 		</image>
 		<image name="salonfond" extra="true">
-			<path>firstfile("${themePath}/_gamemedia/_salon/" + {system:theme} + ".png", "${themePath}/_gamemedia/_salon/_default.png")</path>
+			<path>firstfile("${themePath}/_gamemedia/_salon/" + {system:theme} + ".png", "${themePath}/_gamemedia/_salon/${salon_defaut}.png")</path>
 			<pos>0 0</pos>
 			<size>1 1</size>
 			<linearSmooth>true</linearSmooth>
@@ -105,10 +115,7 @@
 			<scaledLogoSpacing ifSubset="boxorthumb:thumb">${starespace2d}</scaledLogoSpacing>
 			<itemTemplate>
 				<container>
-					<image name="salondisque" if="{system.theme} == 'psx' || {system.theme} == 'ps2' || {system.theme} == 'ps3' || {system.theme} == 'saturn' || 
-					{system.theme} == 'megacd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' || 
-					{system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pcenginecd' || {system.theme} == 'pcfx' || {system.theme} == 'jaguarcd' || 
-					{system.theme} == 'gamecube' || {system.theme} == 'wii' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'fmtowns'">
+					<image name="salondisque" if="${salon_disque_tourne}">
 						<visible>${media_support_exists}</visible>
 						<path>${media_support}</path>
 						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
@@ -128,10 +135,7 @@
 							<animation property="rotation" to="0" duration="0"/>
 						</storyboard>
 					</image>
-					<image name="saloncartouche" if="{system.theme} != 'psx' &amp;&amp; {system.theme} != 'ps2' &amp;&amp; {system.theme} != 'ps3' &amp;&amp; {system.theme} != 'saturn' &amp;&amp; 
-					{system.theme} != 'megacd' &amp;&amp; {system.theme} != 'dreamcast' &amp;&amp; {system.theme} != '3do' &amp;&amp; {system.theme} != 'cdi' &amp;&amp; {system.theme} != 'amigacd32' &amp;&amp; 
-					{system.theme} != 'amigacdtv' &amp;&amp; {system.theme} != 'neogeocd' &amp;&amp; {system.theme} != 'pcenginecd' &amp;&amp; {system.theme} != 'pcfx' &amp;&amp; {system.theme} != 'jaguarcd' &amp;&amp; 
-					{system.theme} != 'gamecube' &amp;&amp; {system.theme} != 'wii' &amp;&amp; {system.theme} != 'xbox' &amp;&amp; {system.theme} != 'xbox360' &amp;&amp; {system.theme} != 'fmtowns'">
+					<image name="saloncartouche" if="!${salon_disque_tourne}">
 						<visible>${media_support_exists}</visible>
 						<path>${media_support}</path>
 						<pos>${salon_disque_depart} ${salon_disque_y}</pos>

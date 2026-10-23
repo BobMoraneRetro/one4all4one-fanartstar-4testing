@@ -2,11 +2,8 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<variables>
-		<salon_video_pos>0.505 0.31</salon_video_pos>
-		<salon_video_taille>0.3 0.5</salon_video_taille>
-		<salon_disque_depart>0.5</salon_disque_depart>
-		<salon_disque_x>0.69</salon_disque_x>
-		<salon_disque_y>0.65</salon_disque_y>
-		<salon_disque_taille>0.36 0.64</salon_disque_taille>
+		<salon_video_pos>0.5044 0.3106</salon_video_pos>
+		<salon_video_taille>0.3026 0.3061</salon_video_taille>
+		<salon_disque_tourne>false</salon_disque_tourne>
 	</variables>
 </theme>

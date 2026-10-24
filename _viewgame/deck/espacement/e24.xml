@@ -99,9 +99,10 @@
 		<spotcolonnes if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do'">9 1</spotcolonnes>
 		<spotcolonnes if="{system.theme} == '3ds' || {system.theme} == 'nds'">9 1</spotcolonnes>
 		<spotcolonnes if="{system.theme} == 'snes' || {system.theme} == 'n64'">7 1</spotcolonnes>
-		<starlogos2d>10</starlogos2d>
-		<starespace2d>0.04</starespace2d>
-		<starlogos3d>16</starlogos3d>
-		<starespace3d>0.30</starespace3d>
+		<starlogos2d>10.5</starlogos2d>
+		<starespace2d>0.16</starespace2d>
+		<starlogos3d>20</starlogos3d>
+		<starespace3d>1.20</starespace3d>
+		<starlogos2dlarge>8.4</starlogos2dlarge>
 	</variables>
 </theme>

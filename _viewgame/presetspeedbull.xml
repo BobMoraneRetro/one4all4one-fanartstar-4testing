@@ -433,6 +433,52 @@
 			<storyboard event="deactivatePrev">
 				<animation property="scale" from="1" to="0.1" begin="0" duration="250"/>
 			</storyboard>
+			<shader if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360'">
+				<path>${themePath}/_common/shaders/support_tourne.glsl</path>
+				<u_rond>0</u_rond>
+			</shader>
+		</image>
+		<image name="disccartdefautrond" extra="true" if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360'">
+			<origin>0.5 0.5</origin>
+			<pos>0.85 0.51</pos>
+			<maxSize>0.2 0.4</maxSize>
+			<path>${media_support}</path>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0</opacity>
+			<zIndex>1</zIndex>
+			<shader>
+				<path>${themePath}/_common/shaders/support_tourne.glsl</path>
+				<u_rond>1</u_rond>
+			</shader>
+			<storyboard event="open">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="4000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="7000" duration="8000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="4000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="7000" duration="8000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" to="1" begin="1000"/>
+				<animation property="zIndex" from="1" to="10" begin="1000" duration="500"/>
+				<animation property="scale" from="0.1" to="1" begin="1200" duration="800"/>
+				<animation property="rotation" from="0" to="90" begin="3000" duration="4000" mode="EaseIn"/>
+				<animation property="rotation" from="-270" to="90" begin="7000" duration="8000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" from="0" to="0" duration="" mode="linear"/>
+				<animation property="scale" from="1" to="0.1" begin="0" duration="250"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" from="0" to="0" duration="" mode="linear"/>
+				<animation property="scale" from="1" to="0.1" begin="0" duration="250"/>
+			</storyboard>
 		</image>
 		<control name="disccartdefaut" if="{system.theme} == 'psx'
 		|| {system.theme} == 'ps2'
@@ -451,7 +497,6 @@
 		|| {system.theme} == 'gc'
 		|| {system.theme} == 'wii'
 		|| {system.theme} == 'xbox'
-		|| {system.theme} == 'xbox360'
 		|| {system.theme} == 'fmtowns'">
 			<storyboard event="open">
 				<animation property="opacity" to="1" begin="1000"/>

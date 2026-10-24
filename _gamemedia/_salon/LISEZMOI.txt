@@ -6,8 +6,8 @@ Pour chaque système :
   <système>.xml  : réglages du système (facultatif)
   _default.png   : décor par défaut des systèmes 4:3 (si le système n a pas le sien)
   _default.xml   : réglages de _default.png
-  _default16.png : décor par défaut des systèmes 16:9 : ps3, ps4, ps5, xbox360, xboxone,
-                   xboxseries, wiiu, switch, psvita, windows, steam
+  _default16.png : décor par défaut des systèmes 16:9 : ps3, ps4, xbox360,
+                   wiiu, switch, psvita, windows, steam
                    (liste dans _viewgame/presetsalon.xml, variable salon_defaut)
   _default16.xml : réglages de _default16.png
 
@@ -20,12 +20,19 @@ Un fichier peut ne contenir qu une seule ligne (ex. wiiu.xml : rotation du disqu
 Réglages de <système>.xml (coordonnées en fraction d écran, 0 0 = haut gauche, 1 1 = bas droite) :
   salon_video_pos      centre de l écran de la TV                    ex. 0.5 0.2625
   salon_video_taille   largeur hauteur de l écran de la TV           ex. 0.3906 0.388
+  salon_video_etiree   false = la vidéo garde ses proportions (maxSize, bandes noires possibles)
+                       true  = la vidéo est étirée pour remplir tout l écran de la TV (size)
   Disque (coordonnées DANS la case de la boîte du carrousel : 0.5 = centre de la boîte) :
   salon_disque_depart  x du disque caché derrière la boîte           ex. 0.5
   salon_disque_x       x du disque une fois sorti (bord droit 0.69)  ex. 0.69
   salon_disque_y       hauteur du centre du disque                   ex. 0.65
   salon_disque_taille  taille maximale du disque (= largeur boîte) ex. 0.38 0.675
-  salon_disque_tourne  true = le disque tourne, false = il sort sans tourner
+  salon_disque_tourne  true = le disque tourne, false = le support sort sans tourner
+                       (par défaut true pour les systèmes à CD/DVD, false pour les cartouches)
+  salon_support_mixte  true = système mélangeant disques et cartes/cartouches : la forme de l image décide
+                       (image ronde, 4 coins transparents = disque qui tourne ; sinon support fixe).
+                       Par défaut true pour wiiu, xbox360 (noms de THÈME des es_systems : gc, pce-cd, atarijaguarcd...). Prioritaire sur salon_disque_tourne.
+                       Utilise un shader de détection : à réserver aux systèmes qui en ont besoin.
                        (par défaut true pour les systèmes à CD/DVD, false pour les cartouches ;
                         ne pas le mettre dans _default.xml sauf pour l imposer à tous)
 

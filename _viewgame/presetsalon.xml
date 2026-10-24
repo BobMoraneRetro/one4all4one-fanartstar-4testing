@@ -21,11 +21,14 @@
 	${salon_disque_tourne} : vue Salon : true = le disque tourne (systèmes CD/DVD par défaut), false = il sort sans tourner ; réglable par <système>.xml (définie dans ce fichier)
 	${salon_disque_x} : vue Salon : x du disque une fois sorti de la boîte (définie dans ce fichier)
 	${salon_disque_y} : vue Salon : hauteur du centre du disque (définie dans ce fichier)
+	${salon_support_mixte} : vue Salon : true = disques et cartes mélangés, la forme de l image (ronde ou non) décide de la rotation (shader support_tourne) ; défaut wiiu, switch, xbox360 (définie dans ce fichier)
+	${salon_video_etiree} : vue Salon : true = vidéo étirée à la taille de l écran de la TV (size), false = proportions gardées (maxSize) ; réglable par <système>.xml (définie dans ce fichier)
 	${salon_video_pos} : vue Salon : centre de l écran de la TV (vidéo sous le décor) (définie dans ce fichier)
 	${salon_video_taille} : vue Salon : largeur hauteur de l écran de la TV (définie dans ce fichier)
 	${starespace2d} : Boxart : écart entre les boîtes 2d du carrousel (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
 	${starespace3d} : Boxart : écart entre les boîtes 3d du carrousel (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
 	${starlogos2d} : Boxart (presetstarbox, carrousel) : nombre de boîtes affichées et écart, boîtes 2D puis 3D (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${starlogos2dlarge} : vue Salon : nombre de boîtes 2D horizontales (snes, n64...) selon le cran d espacement (= starlogos2d x 0.8) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
 	${starlogos3d} : Boxart : nombre de boîtes 3d affichées (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${presetsalon}
 -->
@@ -38,13 +41,16 @@
 		<salon_disque_x>0.69</salon_disque_x>
 		<salon_disque_y>0.65</salon_disque_y>
 		<salon_disque_taille>0.36 0.64</salon_disque_taille>
+		<salon_video_etiree>false</salon_video_etiree>
 		<salon_disque_tourne>false</salon_disque_tourne>
 		<salon_disque_tourne if="{system.theme} == 'psx' || {system.theme} == 'ps2' || {system.theme} == 'ps3' || {system.theme} == 'saturn' ||
 					{system.theme} == 'megacd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' ||
-					{system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pcenginecd' || {system.theme} == 'pcfx' || {system.theme} == 'jaguarcd' ||
-					{system.theme} == 'gamecube' || {system.theme} == 'wii' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'fmtowns'">true</salon_disque_tourne>
+					{system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' ||
+					{system.theme} == 'gc' || {system.theme} == 'wii' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'fmtowns' || {system.theme} == 'wiiu' || {system.theme} == 'ps4'">true</salon_disque_tourne>
+		<salon_support_mixte>false</salon_support_mixte>
+		<salon_support_mixte if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360'">true</salon_support_mixte>
 		<salon_defaut>_default</salon_defaut>
-		<salon_defaut if="{system.theme} == 'ps3' || {system.theme} == 'ps4' || {system.theme} == 'ps5' || {system.theme} == 'xbox360' || {system.theme} == 'xboxone' || {system.theme} == 'xboxseries' || {system.theme} == 'wiiu' || {system.theme} == 'switch' || {system.theme} == 'psvita' || {system.theme} == 'windows' || {system.theme} == 'steam'">_default16</salon_defaut>
+		<salon_defaut if="{system.theme} == 'ps3' || {system.theme} == 'ps4' || {system.theme} == 'xbox360' || {system.theme} == 'wiiu' || {system.theme} == 'switch' || {system.theme} == 'psvita' || {system.theme} == 'windows' || {system.theme} == 'steam'">_default16</salon_defaut>
 	</variables>
 	<include>${themePath}/_gamemedia/_salon/${salon_defaut}.xml</include>
 	<include>${themePath}/_gamemedia/_salon/${system.theme}.xml</include>
@@ -73,7 +79,7 @@
 			<size>${salon_video_taille}</size>
 			<zIndex>2.5</zIndex>
 		</image>
-		<image name="salonimage" extra="true">
+		<image name="salonimage" if="!${salon_video_etiree}" extra="true">
 			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
 			<path>${media_image}</path>
 			<pos>${salon_video_pos}</pos>
@@ -82,13 +88,32 @@
 			<linearSmooth>true</linearSmooth>
 			<zIndex>2.8</zIndex>
 		</image>
-		<video name="salonvideo" extra="true">
+		<image name="salonimageetiree" if="${salon_video_etiree}" extra="true">
+			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_video_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>2.8</zIndex>
+		</image>
+		<video name="salonvideo" if="!${salon_video_etiree}" extra="true">
 			<visible>{game:rom} != '..'</visible>
 			<path>${media_video}</path>
 			<delay>0</delay>
 			<pos>${salon_video_pos}</pos>
 			<origin>0.5 0.5</origin>
 			<maxSize>${salon_video_taille}</maxSize>
+			<effect>none</effect>
+			<zIndex>3</zIndex>
+		</video>
+		<video name="salonvideoetiree" if="${salon_video_etiree}" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_video}</path>
+			<delay>0</delay>
+			<pos>${salon_video_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video_taille}</size>
 			<effect>none</effect>
 			<zIndex>3</zIndex>
 		</video>
@@ -111,11 +136,36 @@
 			<defaultTransition>instant</defaultTransition>
 			<maxLogoCount ifSubset="boxorthumb:boxart">${starlogos3d}</maxLogoCount>
 			<maxLogoCount ifSubset="boxorthumb:thumb">${starlogos2d}</maxLogoCount>
+			<maxLogoCount ifSubset="boxorthumb:thumb" if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch' || {system.theme} == 'solarus' || {system.theme} == 'ngage'">${starlogos2dlarge}</maxLogoCount>
 			<scaledLogoSpacing ifSubset="boxorthumb:boxart">${starespace3d}</scaledLogoSpacing>
 			<scaledLogoSpacing ifSubset="boxorthumb:thumb">${starespace2d}</scaledLogoSpacing>
 			<itemTemplate>
 				<container>
-					<image name="salondisque" if="${salon_disque_tourne}">
+					<image name="salondisque" if="${salon_support_mixte}">
+						<visible>${media_support_exists}</visible>
+						<path>${media_support}</path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/support_tourne.glsl</path>
+							<u_rond>1</u_rond>
+						</shader>
+						<opacity>0</opacity>
+						<storyboard event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="rotation" from="0" to="90" begin="600" duration="4000" mode="EaseIn"/>
+							<animation property="rotation" from="-270" to="90" begin="4600" duration="8000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+							<animation property="rotation" to="0" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="salondisqueplein" if="${salon_disque_tourne} &amp;&amp; !${salon_support_mixte}">
 						<visible>${media_support_exists}</visible>
 						<path>${media_support}</path>
 						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
@@ -135,7 +185,28 @@
 							<animation property="rotation" to="0" duration="0"/>
 						</storyboard>
 					</image>
-					<image name="saloncartouche" if="!${salon_disque_tourne}">
+					<image name="salondisquefixe" if="${salon_support_mixte}">
+						<visible>${media_support_exists}</visible>
+						<path>${media_support}</path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/support_tourne.glsl</path>
+							<u_rond>0</u_rond>
+						</shader>
+						<opacity>0</opacity>
+						<storyboard event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="saloncartouche" if="!${salon_disque_tourne} &amp;&amp; !${salon_support_mixte}">
 						<visible>${media_support_exists}</visible>
 						<path>${media_support}</path>
 						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
@@ -215,69 +286,10 @@
 						</shader>
 					</image>
 					<image name="thumbnailstd" if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch' || {system.theme} == 'solarus' || {system.theme} == 'ngage'">
-						<visible if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch'|| {system.theme} == 'solarus' || {system.theme} == 'ngage'">{game:region} != 'jp'</visible>
-						<pos>0.5 0.6</pos>
-						<origin>0.5</origin>
-						<rotation>90</rotation>
-						<maxSize>0.55 1</maxSize>
-						<path>${media_box2d}</path>
-						<path ifSubset="boxorthumb:boxart">${media_box3d}</path>
-						<path ifSubset="boxorthumb:thumb">${media_box2d}</path>
-						<storyboard event="open">
-							<animation property="rotation" to="87" begin="" duration="350" mode="Linear"/>
-						</storyboard>
-						<storyboard event="activate">
-							<animation property="rotation" to="-5" begin="250" duration="250" mode="easeOut"/>
-							<animation property="y" to="0.68" begin="" duration="350" mode="bump"/>
-						</storyboard>
-						<storyboard event="deactivate">
-							<animation property="rotation" to="90" begin="" duration="150" mode="Linear"/>
-							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
-						</storyboard>
-						<storyboard event="scroll">
-							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
-						</storyboard>
-						<shader>
-							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
-							<caseType>${boitiertype}</caseType>
-							<borderColor>${boitiercouleur}</borderColor>
-							<borderSize>0</borderSize>
-							<cornerRadius>0</cornerRadius>
-							<innerShadowSize>0</innerShadowSize>
-							<outerShadowSize>0.02</outerShadowSize>
-							<saturation>1</saturation>
-							<enabled ifSubset="contourboite:non">false</enabled>
-							<caseType ifSubset="typeboite:t0">0</caseType>
-							<caseType ifSubset="typeboite:t1">1</caseType>
-							<caseType ifSubset="typeboite:t2">2</caseType>
-							<caseType ifSubset="typeboite:t3">3</caseType>
-							<caseType ifSubset="typeboite:t4">4</caseType>
-							<caseType ifSubset="typeboite:t5">5</caseType>
-							<caseType ifSubset="typeboite:t6">6</caseType>
-							<caseType ifSubset="typeboite:t7">7</caseType>
-							<caseType ifSubset="typeboite:t8">8</caseType>
-							<caseType ifSubset="typeboite:t9">9</caseType>
-							<caseType ifSubset="typeboite:t10">10</caseType>
-							<caseType ifSubset="typeboite:t11">11</caseType>
-							<caseType ifSubset="typeboite:t12">12</caseType>
-							<caseType ifSubset="typeboite:t13">13</caseType>
-							<caseType ifSubset="typeboite:t14">14</caseType>
-							<caseType ifSubset="typeboite:t15">15</caseType>
-							<caseType ifSubset="typeboite:t16">16</caseType>
-							<caseType ifSubset="typeboite:t17">17</caseType>
-							<caseType ifSubset="typeboite:t18">18</caseType>
-							<caseType ifSubset="typeboite:t19">19</caseType>
-							<caseType ifSubset="typeboite:t20">20</caseType>
-							<caseType ifSubset="typeboite:t21">21</caseType>
-						</shader>
-					</image>
-					<image name="thumbnail" if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch' || {system.theme} == 'solarus' || {system.theme} == 'ngage'">
-						<visible>false</visible>
-						<visible if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch'|| {system.theme} == 'solarus' || {system.theme} == 'ngage'">{game:region} == 'jp'</visible>
 						<pos>0.5 0.6</pos>
 						<origin>0.5</origin>
 						<rotation>0</rotation>
-						<maxSize>0.38 1</maxSize>
+						<maxSize>0.475 1</maxSize>
 						<path>${media_box2d}</path>
 						<path ifSubset="boxorthumb:boxart">${media_box3d}</path>
 						<path ifSubset="boxorthumb:thumb">${media_box2d}</path>

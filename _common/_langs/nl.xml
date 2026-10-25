@@ -183,15 +183,14 @@
 		<opt_contourboite>SPELLEN - Box outline (case)</opt_contourboite>
 		<opt_deckespace>SPELLEN - Ruimte tussen de doosjes</opt_deckespace>
 		<opt_iconenote>SPELLEN - Beoordelingsicoon</opt_iconenote>
-		<opt_custombuilds>GEAVANCEERD - Gamelist field used for fanart</opt_custombuilds>
-		<opt_scrap3dbox>GEAVANCEERD - Gamelist field used for the 3D box</opt_scrap3dbox>
-		<opt_gamemedia>GEAVANCEERD - Custom game media</opt_gamemedia>
-		<opt_extfoldergamemedia>GEAVANCEERD - Custom media folder</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>GEAVANCEERD - Systeemspecifiek thema</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>GEAVANCEERD - Systeembezels</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>GEAVANCEERD - Logo's van spieluitgevers</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>GEAVANCEERD - Systeemfanart</opt_extfolderfanart>
 		<opt_extfolderlogosyst>GEAVANCEERD - Systeemlogo</opt_extfolderlogosyst>
+		<opt_extfoldersalon>GEAVANCEERD - Locatie van de achtergronden van de weergave RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - Tv-scherm</opt_salonecran>
+		<salonvideoseule>Alleen video</salonvideoseule>
+		<saloncapturevideo>Screenshot, dan video</saloncapturevideo>
 		<opt_deckselection>BIG ART - Positie van het geselecteerde spel</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo tijdens video</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

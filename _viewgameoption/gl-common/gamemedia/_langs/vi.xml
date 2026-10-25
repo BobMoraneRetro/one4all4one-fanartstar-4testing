@@ -11,5 +11,9 @@
 		<gamemediaseul>Chỉ: chỉ media riêng (không dùng gamelist thay thế)</gamemediaseul>
 		<intheme>Thư mục theme - Mặc định</intheme>
 		<extfolder>Thư mục bên ngoài</extfolder>
+		<opt_custombuilds>NÂNG CAO - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>NÂNG CAO - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>NÂNG CAO - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>NÂNG CAO - Custom media folder</opt_extfoldergamemedia>
 	</variables>
 </theme>

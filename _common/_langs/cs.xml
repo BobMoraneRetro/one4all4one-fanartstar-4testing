@@ -183,15 +183,14 @@
 		<opt_contourboite>HRY - Box outline (case)</opt_contourboite>
 		<opt_deckespace>HRY - Rozestup krabic</opt_deckespace>
 		<opt_iconenote>HRY - Ikona hodnocení</opt_iconenote>
-		<opt_custombuilds>POKROČILÉ - Gamelist field used for fanart</opt_custombuilds>
-		<opt_scrap3dbox>POKROČILÉ - Gamelist field used for the 3D box</opt_scrap3dbox>
-		<opt_gamemedia>POKROČILÉ - Custom game media</opt_gamemedia>
-		<opt_extfoldergamemedia>POKROČILÉ - Custom media folder</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>POKROČILÉ - Motiv pro konkrétní systémy</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>POKROČILÉ - Rámečky (bezel) systémů</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>POKROČILÉ - Loga vydavatelů her</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>POKROČILÉ - Fanart systémů</opt_extfolderfanart>
 		<opt_extfolderlogosyst>POKROČILÉ - Logo systému</opt_extfolderlogosyst>
+		<opt_extfoldersalon>POKROČILÉ - Umístění pozadí zobrazení RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - Obrazovka TV</opt_salonecran>
+		<salonvideoseule>Pouze video</salonvideoseule>
+		<saloncapturevideo>Snímek, poté video</saloncapturevideo>
 		<opt_deckselection>BIG ART - Pozice vybrané hry</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo během videa</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

@@ -183,15 +183,14 @@
 		<opt_contourboite>GEMAU - Box outline (case)</opt_contourboite>
 		<opt_deckespace>GEMAU - Bylchau rhwng bocsys</opt_deckespace>
 		<opt_iconenote>GEMAU - Eicon sgôr</opt_iconenote>
-		<opt_custombuilds>UWCH - Gamelist field used for fanart</opt_custombuilds>
-		<opt_scrap3dbox>UWCH - Gamelist field used for the 3D box</opt_scrap3dbox>
-		<opt_gamemedia>UWCH - Custom game media</opt_gamemedia>
-		<opt_extfoldergamemedia>UWCH - Custom media folder</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>UWCH - Thema benodol i systemau</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>UWCH - Bezels y systemau</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>UWCH - Logos cyhoeddwyr gemau</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>UWCH - Fanart y systemau</opt_extfolderfanart>
 		<opt_extfolderlogosyst>UWCH - Logo'r system</opt_extfolderlogosyst>
+		<opt_extfoldersalon>UWCH - Lleoliad cefndiroedd golwg RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - Sgrin y teledu</opt_salonecran>
+		<salonvideoseule>Fideo yn unig</salonvideoseule>
+		<saloncapturevideo>Sgrinlun yna fideo</saloncapturevideo>
 		<opt_deckselection>BIG ART - Safle'r gêm a ddewiswyd</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo yn ystod y fideo</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Fideo</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

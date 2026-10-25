@@ -5,17 +5,18 @@
 	${path_syst_bezel} : dossier des bezels des systèmes (définie dans ce fichier ; valeur selon l option « AVANCÉ - Emplacement des bezels des systèmes »)
 	${path_syst_fanart} : dossier des fanarts des systèmes (définie dans ce fichier ; valeur selon l option « AVANCÉ - Emplacement des fanarts des systèmes »)
 	${path_syst_logo} : dossier des logos des systèmes (définie dans ce fichier ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${active}, ${aqua}, ${bulle}, ${candy}, ${charsystem}, ${clic}, ${clicgrave}, ${couleur}, ${custorcolor}, ${default}, ${desactive}, ${extfolder}, ${fanartfreshone}, ${fanartmodern}, ${fanartmodern2}, ${fanartstarsyst}, ${fanartsystcustom}, ${figurines}, ${frottement}, ${green}, ${greenalt}, ${grey}, ${hardware}, ${horlogeblanc}, ${horlogegrande}, ${horlogenormale}, ${horlogepetite}, ${horlogetresgrande}, ${iconsetposition}, ${intheme}, ${lightgrey}, ${logosimple}, ${logosseuls}, ${metacompacte}, ${metastandard}, ${navy}, ${novideo}, ${opt_breadcrumbsonoff}, ${opt_choixbande}, ${opt_colorhelp}, ${opt_extfolderbezelsyst}, ${opt_extfolderfanart}, ${opt_extfolderlogosyst}, ${opt_extfoldermanufacturer}, ${opt_extfoldersalon}, ${opt_gamewheelsound}, ${opt_horlogecouleur}, ${opt_horlogetaille}, ${opt_iconset}, ${opt_imagefondcops1}, ${opt_lismoi}, ${opt_manetteflottante}, ${opt_metadataonoff}, ${opt_metasyst}, ${opt_systemview}, ${opt_systviewselec}, ${opt_video4starclassic}, ${opt_video4starmodern}, ${opt_zspinnav}, ${orange}, ${pink}, ${poc}, ${purple}, ${purplealt}, ${red}, ${redalt}, ${rondhursty}, ${skyblue}, ${systviewzspin}, ${tumasbienlu}, ${videoangled}, ${videoback}, ${violet}, ${wheelclic}, ${xbox360blade}, ${xbox360focus}, ${xbox360onglet}, ${xbox360retour}, ${xbox360selection}, ${xbox360touche}, ${yellow}, ${yellowalt}, ${zspinnavarc}
 -->
 <theme defaultView="presetstarbox">
 	<formatVersion>7</formatVersion>
 	<variables>
 		<path_common>${themePath}/_common</path_common>
-		<path_syst_theme ifSubset="extfoldervideosyst:extfolder">${themePath}/../_bobmedia/_systemmedia/videosyst</path_syst_theme>
-		<path_syst_theme ifSubset="extfoldervideosyst:intheme">${themePath}/_systemmedia/videosyst</path_syst_theme>
 		<path_game_manuf ifSubset="extfoldermanufacturer:extfolder">${themePath}/../_bobmedia/_gamemedia/_manufacturer</path_game_manuf>
 		<path_game_manuf ifSubset="extfoldermanufacturer:intheme">${themePath}/_gamemedia/_manufacturer</path_game_manuf>
 		<path_syst_logo ifSubset="extfolderlogosyst:extfolder">${themePath}/../_bobmedia/_systemmedia/_logosyst</path_syst_logo>
 		<path_syst_logo ifSubset="extfolderlogosyst:intheme">${themePath}/_systemmedia/_logosyst</path_syst_logo>
+		<path_salon ifSubset="extfoldersalon:extfolder">${themePath}/../_bobmedia/_gamemedia/_salon</path_salon>
+		<path_salon ifSubset="extfoldersalon:intheme">${themePath}/_gamemedia/_salon</path_salon>
 		<path_syst_fanart ifSubset="extfolderfanart:extfolder">${themePath}/../_bobmedia/_systemmedia/_fanartsysteme</path_syst_fanart>
 		<path_syst_fanart ifSubset="extfolderfanart:intheme">${themePath}/_systemmedia/_fanartsysteme</path_syst_fanart>
 		<path_syst_bezel ifSubset="extfolderbezelsyst:extfolder">${themePath}/../_bobmedia/_systemmedia/bezelsyst</path_syst_bezel>
@@ -37,7 +38,7 @@
 		<intfanartcustom>${path_syst_fanart}/custom/${system.theme}.jpg</intfanartcustom>
 		<firstscharsystem>		firstfile("${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png","${themePath}/../es-theme-Animatics-DX/art/figurines/" + {system:theme} + ".png")</firstscharsystem>
 		<firstsnapouille>		firstfile("${themePath}/../es-theme-Animatics-DX/art/figurines/" + {system:theme} + ".png","${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png")</firstsnapouille>
-		<firstsystemhardware>	firstfile("${themePath}/_systemmedia/hardware/" + {system:theme} + ".png","${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png")</firstsystemhardware>
+		<firstsystemhardware>	firstfile("${themePath}/_systemmedia/hardware/${region}/" + {system:theme} + ".png", "${themePath}/_systemmedia/hardware/" + {system:theme} + ".png","${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png")</firstsystemhardware>
 		<firstsystemimagedef>firstfile("${path_syst_fanart}/custom/" + {system:theme} + ".jpg","${path_syst_fanart}/fresh/" + {system:theme} + ".jpg","${path_syst_fanart}/default.png")</firstsystemimagedef>
 		<intbezelsyst>("${path_syst_bezel}/" + ({system:theme}) + ".png")</intbezelsyst>
 		<intbezelgame>("${path_syst_bezel}/" + ({game:system:theme}) + ".png")</intbezelgame>
@@ -139,11 +140,11 @@
 		<include name="videoback" displayName="${videoback}"/>
 	</subset>
 	<subset name="systviewselec" ifSubset="systemview:fanartstarsyst" displayName="${opt_systviewselec}">
+		<include name="logosseuls" displayName="${logosseuls}"/>
 		<include name="hardware" displayName="${hardware}"/>
 		<include name="charsystem" displayName="${charsystem}"/>
 		<include name="figurines" displayName="${figurines}"/>
 		<include name="rondhursty" displayName="${rondhursty}"/>
-		<include name="logosseuls" displayName="${logosseuls}"/>
 	</subset>
 	<subset name="breadcrumbsonoff" ifSubset="systemview:fanartstarsyst" displayName="${opt_breadcrumbsonoff}">
 		<include name="active" displayName="${active}"/>
@@ -154,12 +155,12 @@
 		<include name="deactivate" displayName="${desactive}"/>
 	</subset>
 	<subset name="metasyst" ifSubset="systemview:fanartstarsyst" displayName="${opt_metasyst}">
-		<include name="metastandard" displayName="${metastandard}"/>
 		<include name="metacompacte" displayName="${metacompacte}"/>
+		<include name="metastandard" displayName="${metastandard}"/>
 	</subset>
 	<subset name="manetteflottante" ifSubset="systemview:fanartstarsyst" displayName="${opt_manetteflottante}">
-		<include name="manettenon" displayName="${desactive}"/>
 		<include name="manetteoui" displayName="${active}"/>
+		<include name="manettenon" displayName="${desactive}"/>
 	</subset>
 	<subset name="video4starmodern" ifSubset="systemview:fanartmodern|fanartmodern2" displayName="${opt_video4starmodern}">
 		<include name="videoangled" displayName="${videoangled}"/>
@@ -179,10 +180,6 @@
 	<include>${themePath}/_viewgameoption/gl-common/boitiers_systemes.xml</include>
 	<include>${themePath}/_viewgameoption/gl-common/options_son.xml</include>
 	<include>${themePath}/_viewgameoption/gl-common/options_note.xml</include>
-	<subset name="extfoldervideosyst" displayName="${opt_extfoldervideosyst}">
-		<include name="intheme" displayName="${intheme}"/>
-		<include name="extfolder" displayName="${extfolder}"/>
-	</subset>
 	<subset name="extfolderbezelsyst" displayName="${opt_extfolderbezelsyst}">
 		<include name="intheme" displayName="${intheme}"/>
 		<include name="extfolder" displayName="${extfolder}"/>
@@ -196,6 +193,10 @@
 		<include name="extfolder" displayName="${extfolder}"/>
 	</subset>
 	<subset name="extfolderlogosyst" displayName="${opt_extfolderlogosyst}">
+		<include name="intheme" displayName="${intheme}"/>
+		<include name="extfolder" displayName="${extfolder}"/>
+	</subset>
+	<subset name="extfoldersalon" displayName="${opt_extfoldersalon}">
 		<include name="intheme" displayName="${intheme}"/>
 		<include name="extfolder" displayName="${extfolder}"/>
 	</subset>

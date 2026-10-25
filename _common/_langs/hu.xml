@@ -183,15 +183,14 @@
 		<opt_contourboite>JÁTÉKOK - Box outline (case)</opt_contourboite>
 		<opt_deckespace>JÁTÉKOK - Dobozok távolsága</opt_deckespace>
 		<opt_iconenote>JÁTÉKOK - Értékelés ikonja</opt_iconenote>
-		<opt_custombuilds>HALADÓ - Gamelist field used for fanart</opt_custombuilds>
-		<opt_scrap3dbox>HALADÓ - Gamelist field used for the 3D box</opt_scrap3dbox>
-		<opt_gamemedia>HALADÓ - Custom game media</opt_gamemedia>
-		<opt_extfoldergamemedia>HALADÓ - Custom media folder</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>HALADÓ - Rendszerspecifikus téma</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>HALADÓ - Rendszer bezelek</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>HALADÓ - Játékkiadók logói</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>HALADÓ - Rendszer fanart</opt_extfolderfanart>
 		<opt_extfolderlogosyst>HALADÓ - Rendszerlogó</opt_extfolderlogosyst>
+		<opt_extfoldersalon>HALADÓ - Az RFE Retrofist Nostalgia nézet háttereinek helye</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - TV-képernyő</opt_salonecran>
+		<salonvideoseule>Csak videó</salonvideoseule>
+		<saloncapturevideo>Képernyőkép, majd videó</saloncapturevideo>
 		<opt_deckselection>BIG ART - A kiválasztott játék helye</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logó a videó alatt</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Videó</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

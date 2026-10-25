@@ -183,15 +183,14 @@
 		<opt_contourboite>게임 - Box outline (case)</opt_contourboite>
 		<opt_deckespace>게임 - 박스 간격</opt_deckespace>
 		<opt_iconenote>게임 - 평가 아이콘</opt_iconenote>
-		<opt_custombuilds>고급 - Gamelist field used for fanart</opt_custombuilds>
-		<opt_scrap3dbox>고급 - Gamelist field used for the 3D box</opt_scrap3dbox>
-		<opt_gamemedia>고급 - Custom game media</opt_gamemedia>
-		<opt_extfoldergamemedia>고급 - Custom media folder</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>고급 - 시스템별 테마</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>고급 - 시스템 베젤</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>고급 - 게임 퍼블리셔 로고</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>고급 - 시스템 팬아트</opt_extfolderfanart>
 		<opt_extfolderlogosyst>고급 - 시스템 로고</opt_extfolderlogosyst>
+		<opt_extfoldersalon>고급 - RFE Retrofist Nostalgia 보기 배경 위치</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - TV 화면</opt_salonecran>
+		<salonvideoseule>동영상만</salonvideoseule>
+		<saloncapturevideo>스크린샷 후 동영상</saloncapturevideo>
 		<opt_deckselection>BIG ART - 선택한 게임의 위치</opt_deckselection>
 		<opt_decklogovideo>BIG ART - 동영상 중 로고</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - 동영상</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

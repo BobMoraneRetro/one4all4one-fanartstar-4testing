@@ -11,5 +11,9 @@
 		<gamemediaseul>Hanya: hanya media kustom (tanpa cadangan gamelist)</gamemediaseul>
 		<intheme>Folder tema - Bawaan</intheme>
 		<extfolder>Folder eksternal</extfolder>
+		<opt_custombuilds>LANJUTAN - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>LANJUTAN - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>LANJUTAN - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>LANJUTAN - Custom media folder</opt_extfoldergamemedia>
 	</variables>
 </theme>

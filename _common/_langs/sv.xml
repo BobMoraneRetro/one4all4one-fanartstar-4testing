@@ -183,15 +183,14 @@
 		<opt_contourboite>SPEL - Box outline (case)</opt_contourboite>
 		<opt_deckespace>SPEL - Avstånd mellan boxarna</opt_deckespace>
 		<opt_iconenote>SPEL - Betygsikon</opt_iconenote>
-		<opt_custombuilds>AVANCERAT - Gamelist field used for fanart</opt_custombuilds>
-		<opt_scrap3dbox>AVANCERAT - Gamelist field used for the 3D box</opt_scrap3dbox>
-		<opt_gamemedia>AVANCERAT - Custom game media</opt_gamemedia>
-		<opt_extfoldergamemedia>AVANCERAT - Custom media folder</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>AVANCERAT - Systemspecifikt tema</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>AVANCERAT - Systemens bezels</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>AVANCERAT - Spelutgivarnas logotyper</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>AVANCERAT - Systemens fanart</opt_extfolderfanart>
 		<opt_extfolderlogosyst>AVANCERAT - Systemlogotyp</opt_extfolderlogosyst>
+		<opt_extfoldersalon>AVANCERAT - Plats för bakgrunderna i vyn RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - TV-skärm</opt_salonecran>
+		<salonvideoseule>Endast video</salonvideoseule>
+		<saloncapturevideo>Skärmbild, sedan video</saloncapturevideo>
 		<opt_deckselection>BIG ART - Placering av valt spel</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logotyp under video</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

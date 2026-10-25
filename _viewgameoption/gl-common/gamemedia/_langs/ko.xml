@@ -11,5 +11,9 @@
 		<gamemediaseul>전용: 사용자 미디어만 (gamelist 대체 없음)</gamemediaseul>
 		<intheme>테마 폴더 - 기본값</intheme>
 		<extfolder>외부 폴더</extfolder>
+		<opt_custombuilds>고급 - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>고급 - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>고급 - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>고급 - Custom media folder</opt_extfoldergamemedia>
 	</variables>
 </theme>

@@ -183,15 +183,14 @@
 		<opt_contourboite>JOKOAK - Box outline (case)</opt_contourboite>
 		<opt_deckespace>JOKOAK - Kutxen arteko tartea</opt_deckespace>
 		<opt_iconenote>JOKOAK - Balorazio ikonoa</opt_iconenote>
-		<opt_custombuilds>AURRERATUA - Gamelist field used for fanart</opt_custombuilds>
-		<opt_scrap3dbox>AURRERATUA - Gamelist field used for the 3D box</opt_scrap3dbox>
-		<opt_gamemedia>AURRERATUA - Custom game media</opt_gamemedia>
-		<opt_extfoldergamemedia>AURRERATUA - Custom media folder</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>AURRERATUA - Sistemen gai espezifikoa</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>AURRERATUA - Sistemen bezelak</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>AURRERATUA - Joko argitaratzaileen logoak</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>AURRERATUA - Sistemen fanarta</opt_extfolderfanart>
 		<opt_extfolderlogosyst>AURRERATUA - Sistemaren logoa</opt_extfolderlogosyst>
+		<opt_extfoldersalon>AURRERATUA - RFE Retrofist Nostalgia ikuspegiaren hondoen kokapena</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - Telebista-pantaila</opt_salonecran>
+		<salonvideoseule>Bideoa soilik</salonvideoseule>
+		<saloncapturevideo>Pantaila-argazkia eta gero bideoa</saloncapturevideo>
 		<opt_deckselection>BIG ART - Hautatutako jokoaren kokapena</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logoa bideoan zehar</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Bideoa</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

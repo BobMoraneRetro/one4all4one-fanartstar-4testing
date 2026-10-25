@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 	Variables utilisées dans ce fichier :
+	${bigart_colonnes_centre_2d} : Big Art (presetdeck) : colonnes, puis marge / position X / largeur de la grille, par mode (c / g) et 2D / 3D (suffixe 3) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_colonnes_centre_3d} : valeur : 13 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_colonnes_gauche_2d} : valeur : 15 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_colonnes_gauche_3d} : valeur : 19 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_ecart_centre_2d} : valeur : -0.02079 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_ecart_centre_3d} : valeur : -0.06151 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_ecart_gauche_2d} : valeur : -0.01347 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_ecart_gauche_3d} : valeur : -0.05420 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_position_centre_2d} : valeur : -0.05727 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_position_centre_3d} : valeur : 0.08525 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_position_gauche_2d} : valeur : -0.55370 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_position_gauche_3d} : valeur : -0.39623 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_taille_centre_2d} : valeur : 1.42804 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_taille_centre_3d} : valeur : 0.93940 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_taille_gauche_2d} : valeur : 1.73442 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${bigart_taille_gauche_3d} : valeur : 1.46020 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
 	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
 	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
-	${deckcolc} : Big Art (presetdeck) : colonnes, puis marge / position X / largeur de la grille, par mode (c / g) et 2D / 3D (suffixe 3) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${deckcolc3} : Big Art : nombre de colonnes de la grille (c = centré, g = à gauche, 3 = boîtes 3D) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${deckcolg} : Big Art : nombre de colonnes de la grille (c = centré, g = à gauche, 3 = boîtes 3D) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${deckcolg3} : Big Art : nombre de colonnes de la grille (c = centré, g = à gauche, 3 = boîtes 3D) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
 	${deckgrisinfo} : Big Art : couleur grise des infos (définie dans ce fichier)
-	${deckmargec} : Big Art : écart entre les boîtes (c = centré, g = à gauche, 3 = boîtes 3D) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${deckmargec3} : Big Art : écart entre les boîtes (c = centré, g = à gauche, 3 = boîtes 3D) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${deckmargeg} : Big Art : écart entre les boîtes (c = centré, g = à gauche, 3 = boîtes 3D) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${deckmargeg3} : Big Art : écart entre les boîtes (c = centré, g = à gauche, 3 = boîtes 3D) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
 	${deckor} : Big Art : couleur dorée (note, favori) (définie dans ce fichier)
 	${deckpolice} : Big Art : police des textes (définie dans ce fichier)
 	${deckpolicejoueurs} : Big Art : police des icônes de joueurs (définie dans ce fichier)
-	${deckposc} : Big Art : position de la grille (c = centré, g = à gauche, 3 = boîtes 3D) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${deckposc3} : Big Art : position de la grille (c = centré, g = à gauche, 3 = boîtes 3D) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${deckposg} : Big Art : position de la grille (c = centré, g = à gauche, 3 = boîtes 3D) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${deckposg3} : Big Art : position de la grille (c = centré, g = à gauche, 3 = boîtes 3D) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${decktaillec} : Big Art : taille de la grille (c = centré, g = à gauche, 3 = boîtes 3D) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${decktaillec3} : Big Art : taille de la grille (c = centré, g = à gauche, 3 = boîtes 3D) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${decktailleg} : Big Art : taille de la grille (c = centré, g = à gauche, 3 = boîtes 3D) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${decktailleg3} : Big Art : taille de la grille (c = centré, g = à gauche, 3 = boîtes 3D) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
 	${decktailleinfo} : Big Art : taille du texte des infos (définie dans ce fichier)
 	${firstsystemhardware} : Vue système classique, option Hardware : console, sinon personnage du système (définie dans theme.xml)
 	${intfanartfresh} : Fanart du système (dossier fresh) (définie dans theme.xml)
@@ -77,33 +77,43 @@
 		<include name="e32" displayName="+3">${themePath}/_viewgame/deck/espacement/e32.xml</include>
 		<include name="e36" displayName="+4">${themePath}/_viewgame/deck/espacement/e36.xml</include>
 		<include name="e40" displayName="+5">${themePath}/_viewgame/deck/espacement/e40.xml</include>
+		<include name="e44" displayName="+6">${themePath}/_viewgame/deck/espacement/e44.xml</include>
+		<include name="e48" displayName="+7">${themePath}/_viewgame/deck/espacement/e48.xml</include>
+		<include name="e52" displayName="+8">${themePath}/_viewgame/deck/espacement/e52.xml</include>
+		<include name="e56" displayName="+9">${themePath}/_viewgame/deck/espacement/e56.xml</include>
+		<include name="e60" displayName="+10">${themePath}/_viewgame/deck/espacement/e60.xml</include>
+		<include name="e64" displayName="+11">${themePath}/_viewgame/deck/espacement/e64.xml</include>
+		<include name="e68" displayName="+12">${themePath}/_viewgame/deck/espacement/e68.xml</include>
+		<include name="e72" displayName="+13">${themePath}/_viewgame/deck/espacement/e72.xml</include>
+		<include name="e76" displayName="+14">${themePath}/_viewgame/deck/espacement/e76.xml</include>
+		<include name="e80" displayName="+15">${themePath}/_viewgame/deck/espacement/e80.xml</include>
 	</subset>
 	<customView name="presetdeck" displayName="${presetdeck}" inherits="grid">
 		<imagegrid name="gamegrid">
 			<imageSource ifSubset="boxorthumb:boxart">boxart</imageSource>
 			<imageSource ifSubset="boxorthumb:thumb">thumbnail</imageSource>
 			<scrollDirection>horizontalCenter</scrollDirection>
-			<autoLayout ifSubset="deckselection:gauche,boxorthumb:boxart">${deckcolg3} 1</autoLayout>
-			<autoLayout ifSubset="deckselection:gauche,boxorthumb:thumb">${deckcolg} 1</autoLayout>
+			<autoLayout ifSubset="deckselection:gauche,boxorthumb:boxart">${bigart_colonnes_gauche_3d} 1</autoLayout>
+			<autoLayout ifSubset="deckselection:gauche,boxorthumb:thumb">${bigart_colonnes_gauche_2d} 1</autoLayout>
 			<animateSelection ifSubset="deckselection:gauche">false</animateSelection>
-			<autoLayout ifSubset="deckselection:centre,boxorthumb:boxart">${deckcolc3} 1</autoLayout>
-			<autoLayout ifSubset="deckselection:centre,boxorthumb:thumb">${deckcolc} 1</autoLayout>
+			<autoLayout ifSubset="deckselection:centre,boxorthumb:boxart">${bigart_colonnes_centre_3d} 1</autoLayout>
+			<autoLayout ifSubset="deckselection:centre,boxorthumb:thumb">${bigart_colonnes_centre_2d} 1</autoLayout>
 			<animateSelection ifSubset="deckselection:centre">true</animateSelection>
 			<showVideoAtDelay>-1</showVideoAtDelay>
 			<zIndex>60</zIndex>
 			<padding>0 0.035 0 0.035</padding>
-			<margin ifSubset="deckselection:gauche,boxorthumb:boxart">${deckmargeg3} 0</margin>
-			<pos ifSubset="deckselection:gauche,boxorthumb:boxart">${deckposg3} 0.54450</pos>
-			<size ifSubset="deckselection:gauche,boxorthumb:boxart">${decktailleg3} 0.39100</size>
-			<margin ifSubset="deckselection:gauche,boxorthumb:thumb">${deckmargeg} 0</margin>
-			<pos ifSubset="deckselection:gauche,boxorthumb:thumb">${deckposg} 0.54450</pos>
-			<size ifSubset="deckselection:gauche,boxorthumb:thumb">${decktailleg} 0.39100</size>
-			<margin ifSubset="deckselection:centre,boxorthumb:boxart">${deckmargec3} 0</margin>
-			<pos ifSubset="deckselection:centre,boxorthumb:boxart">${deckposc3} 0.54347</pos>
-			<size ifSubset="deckselection:centre,boxorthumb:boxart">${decktaillec3} 0.39307</size>
-			<margin ifSubset="deckselection:centre,boxorthumb:thumb">${deckmargec} 0</margin>
-			<pos ifSubset="deckselection:centre,boxorthumb:thumb">${deckposc} 0.54347</pos>
-			<size ifSubset="deckselection:centre,boxorthumb:thumb">${decktaillec} 0.39307</size>
+			<margin ifSubset="deckselection:gauche,boxorthumb:boxart">${bigart_ecart_gauche_3d} 0</margin>
+			<pos ifSubset="deckselection:gauche,boxorthumb:boxart">${bigart_position_gauche_3d} 0.54450</pos>
+			<size ifSubset="deckselection:gauche,boxorthumb:boxart">${bigart_taille_gauche_3d} 0.39100</size>
+			<margin ifSubset="deckselection:gauche,boxorthumb:thumb">${bigart_ecart_gauche_2d} 0</margin>
+			<pos ifSubset="deckselection:gauche,boxorthumb:thumb">${bigart_position_gauche_2d} 0.54450</pos>
+			<size ifSubset="deckselection:gauche,boxorthumb:thumb">${bigart_taille_gauche_2d} 0.39100</size>
+			<margin ifSubset="deckselection:centre,boxorthumb:boxart">${bigart_ecart_centre_3d} 0</margin>
+			<pos ifSubset="deckselection:centre,boxorthumb:boxart">${bigart_position_centre_3d} 0.54347</pos>
+			<size ifSubset="deckselection:centre,boxorthumb:boxart">${bigart_taille_centre_3d} 0.39307</size>
+			<margin ifSubset="deckselection:centre,boxorthumb:thumb">${bigart_ecart_centre_2d} 0</margin>
+			<pos ifSubset="deckselection:centre,boxorthumb:thumb">${bigart_position_centre_2d} 0.54347</pos>
+			<size ifSubset="deckselection:centre,boxorthumb:thumb">${bigart_taille_centre_2d} 0.39307</size>
 			<autoLayoutSelectedZoom ifSubset="deckselection:gauche">1</autoLayoutSelectedZoom>
 			<autoLayoutSelectedZoom ifSubset="deckselection:centre">1</autoLayoutSelectedZoom>
 			<itemTemplate>

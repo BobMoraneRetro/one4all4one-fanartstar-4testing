@@ -28,11 +28,13 @@
 	<formatVersion>7</formatVersion>
 	<include>${themePath}/_systemmedia/description/${system.theme}.xml</include>
 	<variables>
-		<manettevisible ifSubset="manetteflottante:manetteoui">true</manettevisible>
 		<manettevisible ifSubset="manetteflottante:manettenon">false</manettevisible>
-		<manettehalovisible ifSubset="manetteflottante:manetteoui">exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettehalovisible>
+		<manettevisible ifSubset="manetteflottante:manetteoui">true</manettevisible>
 		<manettehalovisible ifSubset="manetteflottante:manettenon">false</manettehalovisible>
-		<manettechemin>firstfile("${themePath}/_common/controllers/${region}/" + {system:theme} + ".png", "${themePath}/_common/controllers/" + {system:theme} + ".png", "${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettechemin>
+		<manettehalovisible ifSubset="manetteflottante:manetteoui">exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".svg") || exists("${themePath}/_common/controllers/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettehalovisible>
+		<manettehalovisible ifSubset="manetteflottante:manetteoui" if="{system.hardwareType} == 'arcade'">exists("${themePath}/_systemmedia/hardware/${region}/" + {system:theme} + ".png") || exists("${themePath}/_systemmedia/hardware/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".svg") || exists("${themePath}/_common/controllers/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettehalovisible>
+		<manettechemin>firstfile("${themePath}/_common/controllers/${region}/" + {system:theme} + ".png", "${themePath}/_common/controllers/${region}/" + {system:theme} + ".svg", "${themePath}/_common/controllers/" + {system:theme} + ".png", "${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettechemin>
+		<manettechemin if="{system.hardwareType} == 'arcade'">firstfile("${themePath}/_systemmedia/hardware/${region}/" + {system:theme} + ".png", "${themePath}/_systemmedia/hardware/" + {system:theme} + ".png", "${themePath}/_common/controllers/${region}/" + {system:theme} + ".png", "${themePath}/_common/controllers/${region}/" + {system:theme} + ".svg", "${themePath}/_common/controllers/" + {system:theme} + ".png", "${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettechemin>
 		<manettepos ifSubset="video4starclassic:videoback">0.036 0.088</manettepos>
 		<manettepos ifSubset="video4starclassic:novideo">0.13 0.58</manettepos>
 		<manettetaille ifSubset="video4starclassic:videoback">0.067 0.08</manettetaille>
@@ -41,28 +43,28 @@
 		<manettehalopos ifSubset="video4starclassic:novideo">0.13 0.68</manettehalopos>
 		<manettehalotaille ifSubset="video4starclassic:videoback">0.058 0.014</manettehalotaille>
 		<manettehalotaille ifSubset="video4starclassic:novideo">0.14 0.03</manettehalotaille>
-		<metatitrepolice ifSubset="metasyst:metacompacte">0.019</metatitrepolice>
 		<metatitrepolice ifSubset="metasyst:metastandard">0.025</metatitrepolice>
-		<metaanneepolice ifSubset="metasyst:metacompacte">0.017</metaanneepolice>
+		<metatitrepolice ifSubset="metasyst:metacompacte">0.019</metatitrepolice>
 		<metaanneepolice ifSubset="metasyst:metastandard">0.025</metaanneepolice>
-		<metaanneepos ifSubset="metasyst:metacompacte">0.253 0.264</metaanneepos>
+		<metaanneepolice ifSubset="metasyst:metacompacte">0.017</metaanneepolice>
 		<metaanneepos ifSubset="metasyst:metastandard">0.253 0.28</metaanneepos>
-		<metafabpos ifSubset="metasyst:metacompacte">0.288 0.264</metafabpos>
+		<metaanneepos ifSubset="metasyst:metacompacte">0.253 0.264</metaanneepos>
 		<metafabpos ifSubset="metasyst:metastandard">0.3 0.28</metafabpos>
-		<metafabpos ifSubset="metasyst:metacompacte" if="${screen.ratio} == '4/3'">0.293 0.264</metafabpos>
+		<metafabpos ifSubset="metasyst:metacompacte">0.288 0.264</metafabpos>
 		<metafabpos ifSubset="metasyst:metastandard" if="${screen.ratio} == '4/3'">0.315 0.28</metafabpos>
-		<metadescpos ifSubset="metasyst:metacompacte">0.0525 0.283</metadescpos>
+		<metafabpos ifSubset="metasyst:metacompacte" if="${screen.ratio} == '4/3'">0.293 0.264</metafabpos>
 		<metadescpos ifSubset="metasyst:metastandard">0.0525 0.305</metadescpos>
-		<metadescsize ifSubset="metasyst:metacompacte">0.33 0.085</metadescsize>
+		<metadescpos ifSubset="metasyst:metacompacte">0.0525 0.283</metadescpos>
 		<metadescsize ifSubset="metasyst:metastandard">0.4 0.1</metadescsize>
-		<metadescsize ifSubset="metasyst:metacompacte" if="${screen.ratio} == '4/3'">0.44 0.085</metadescsize>
+		<metadescsize ifSubset="metasyst:metacompacte">0.33 0.085</metadescsize>
 		<metadescsize ifSubset="metasyst:metastandard" if="${screen.ratio} == '4/3'">0.533 0.1</metadescsize>
-		<metadescpolice ifSubset="metasyst:metacompacte">0.016</metadescpolice>
+		<metadescsize ifSubset="metasyst:metacompacte" if="${screen.ratio} == '4/3'">0.44 0.085</metadescsize>
 		<metadescpolice ifSubset="metasyst:metastandard">0.022</metadescpolice>
-		<metastatsstandard ifSubset="metasyst:metacompacte">0</metastatsstandard>
+		<metadescpolice ifSubset="metasyst:metacompacte">0.016</metadescpolice>
 		<metastatsstandard ifSubset="metasyst:metastandard">1</metastatsstandard>
-		<metastatscompacte ifSubset="metasyst:metacompacte">1</metastatscompacte>
+		<metastatsstandard ifSubset="metasyst:metacompacte">0</metastatsstandard>
 		<metastatscompacte ifSubset="metasyst:metastandard">0</metastatscompacte>
+		<metastatscompacte ifSubset="metasyst:metacompacte">1</metastatscompacte>
 	</variables>
 	<view name="system">
 		<carousel name="systemcarousel">
@@ -86,8 +88,8 @@
 			<logoScale ifSubset="systviewselec:charsystem">1.5</logoScale>
 			<logoScale ifSubset="systviewselec:figurines">1.5</logoScale>
 			<logoScale ifSubset="systviewselec:rondhursty">1.5</logoScale>
-			<logoScale ifSubset="systviewselec:logosseuls">1.3</logoScale>
 			<logoScale ifSubset="systviewselec:hardware">1.5</logoScale>
+			<logoScale ifSubset="systviewselec:logosseuls">1.3</logoScale>
 			<logoSize>0.350 0.350</logoSize>
 			<color>00000000</color>
 			<logoAlignment>bottom</logoAlignment>
@@ -105,8 +107,8 @@
 						<visible ifSubset="systviewselec:charsystem">true</visible>
 						<visible ifSubset="systviewselec:figurines">true</visible>
 						<visible ifSubset="systviewselec:rondhursty">false</visible>
-						<visible ifSubset="systviewselec:logosseuls">false</visible>
 						<visible ifSubset="systviewselec:hardware">true</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
 						<pos>0.5 0.55</pos>
 						<origin>0.5 0.5</origin>
 						<maxSize>0.4 0.4</maxSize>
@@ -125,8 +127,8 @@
 						<visible ifSubset="systviewselec:charsystem">true</visible>
 						<visible ifSubset="systviewselec:figurines">true</visible>
 						<visible ifSubset="systviewselec:rondhursty">false</visible>
-						<visible ifSubset="systviewselec:logosseuls">false</visible>
 						<visible ifSubset="systviewselec:hardware">true</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
 						<pos>0.5 0.55</pos>
 						<origin>0.5 0.5</origin>
 						<maxSize>0.4 0.4</maxSize>
@@ -143,8 +145,8 @@
 						<visible ifSubset="systviewselec:charsystem">false</visible>
 						<visible ifSubset="systviewselec:figurines">false</visible>
 						<visible ifSubset="systviewselec:rondhursty">true</visible>
-						<visible ifSubset="systviewselec:logosseuls">false</visible>
 						<visible ifSubset="systviewselec:hardware">false</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
 						<path>firstfile("${path_syst_logo}/roundsilver/" + {system:theme} + ".png", "${path_syst_logo}/roundsilver/_defaut/defaut.png")</path>
 						<pos>0.5 0.74</pos>
 						<origin>0.5 0.5</origin>
@@ -163,8 +165,8 @@
 						<visible ifSubset="systviewselec:charsystem">false</visible>
 						<visible ifSubset="systviewselec:figurines">false</visible>
 						<visible ifSubset="systviewselec:rondhursty">true</visible>
-						<visible ifSubset="systviewselec:logosseuls">false</visible>
 						<visible ifSubset="systviewselec:hardware">false</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
 						<path>firstfile("${path_syst_logo}/roundsilver/" + {system:theme} + ".png", "${path_syst_logo}/roundsilver/_defaut/defaut.png")</path>
 						<pos>0.5 0.74</pos>
 						<origin>0.5 0.5</origin>
@@ -182,9 +184,9 @@
 						<visible ifSubset="systviewselec:charsystem">false</visible>
 						<visible ifSubset="systviewselec:figurines">false</visible>
 						<visible ifSubset="systviewselec:rondhursty">!exists("${path_syst_logo}/roundsilver/" + {system:theme} + ".png")</visible>
-						<visible ifSubset="systviewselec:logosseuls">false</visible>
 						<visible ifSubset="systviewselec:hardware">false</visible>
-						<path>firstfile("${themePath}/_systemmedia/hardware/" + {system:theme} + ".png", "${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png")</path>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
+						<path>firstfile("${themePath}/_systemmedia/hardware/${region}/" + {system:theme} + ".png", "${themePath}/_systemmedia/hardware/" + {system:theme} + ".png", "${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png")</path>
 						<pos>0.5 0.70</pos>
 						<origin>0.5 0.5</origin>
 						<maxSize>0.34 0.26</maxSize>
@@ -202,8 +204,8 @@
 						<visible ifSubset="systviewselec:charsystem">false</visible>
 						<visible ifSubset="systviewselec:figurines">false</visible>
 						<visible ifSubset="systviewselec:rondhursty">!exists("${path_syst_logo}/roundsilver/" + {system:theme} + ".png")</visible>
-						<visible ifSubset="systviewselec:logosseuls">false</visible>
 						<visible ifSubset="systviewselec:hardware">false</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
 						<path>firstfile("${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png", "${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png", "${path_syst_logo}/clearlogos/" + {system:theme} + ".png", "${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
 						<pos>0.5 0.86</pos>
 						<origin>0.5 0.5</origin>
@@ -221,13 +223,13 @@
 						<pos ifSubset="systviewselec:charsystem">0.5 0.9</pos>
 						<pos ifSubset="systviewselec:figurines">0.5 0.9</pos>
 						<pos ifSubset="systviewselec:rondhursty">0.5 0.9</pos>
-						<pos ifSubset="systviewselec:logosseuls">0.5 0.87</pos>
 						<pos ifSubset="systviewselec:hardware">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:logosseuls">0.5 0.87</pos>
 						<visible ifSubset="systviewselec:rondhursty">false</visible>
 						<visible ifSubset="systviewselec:charsystem">true</visible>
 						<visible ifSubset="systviewselec:figurines">true</visible>
-						<visible ifSubset="systviewselec:logosseuls">true</visible>
 						<visible ifSubset="systviewselec:hardware">true</visible>
+						<visible ifSubset="systviewselec:logosseuls">true</visible>
 						<path>firstfile(
                     "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
@@ -243,13 +245,13 @@
 						<pos ifSubset="systviewselec:charsystem">0.5 0.9</pos>
 						<pos ifSubset="systviewselec:figurines">0.5 0.9</pos>
 						<pos ifSubset="systviewselec:rondhursty">0.5 0.9</pos>
-						<pos ifSubset="systviewselec:logosseuls">0.5 0.87</pos>
 						<pos ifSubset="systviewselec:hardware">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:logosseuls">0.5 0.87</pos>
 						<visible ifSubset="systviewselec:rondhursty">false</visible>
 						<visible ifSubset="systviewselec:charsystem">true</visible>
 						<visible ifSubset="systviewselec:figurines">true</visible>
-						<visible ifSubset="systviewselec:logosseuls">false</visible>
 						<visible ifSubset="systviewselec:hardware">true</visible>
+						<visible ifSubset="systviewselec:logosseuls">false</visible>
 						<path>firstfile(
                     "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
@@ -275,13 +277,13 @@
 						<pos ifSubset="systviewselec:charsystem">0.5 0.9</pos>
 						<pos ifSubset="systviewselec:figurines">0.5 0.9</pos>
 						<pos ifSubset="systviewselec:rondhursty">0.5 0.9</pos>
-						<pos ifSubset="systviewselec:logosseuls">0.5 0.87</pos>
 						<pos ifSubset="systviewselec:hardware">0.5 0.9</pos>
+						<pos ifSubset="systviewselec:logosseuls">0.5 0.87</pos>
 						<visible ifSubset="systviewselec:rondhursty">false</visible>
 						<visible ifSubset="systviewselec:charsystem">false</visible>
 						<visible ifSubset="systviewselec:figurines">false</visible>
-						<visible ifSubset="systviewselec:logosseuls">true</visible>
 						<visible ifSubset="systviewselec:hardware">false</visible>
+						<visible ifSubset="systviewselec:logosseuls">true</visible>
 						<path>firstfile(
                     "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
@@ -321,8 +323,8 @@
 			<visible ifSubset="systviewselec:charsystem">false</visible>
 			<visible ifSubset="systviewselec:figurines">false</visible>
 			<visible ifSubset="systviewselec:rondhursty">false</visible>
-			<visible ifSubset="systviewselec:logosseuls">true</visible>
 			<visible ifSubset="systviewselec:hardware">false</visible>
+			<visible ifSubset="systviewselec:logosseuls">true</visible>
 			<path>${themePath}/_viewsyst/fanartstar/bande_logos.png</path>
 			<pos>0 0.865</pos>
 			<size>1 0.135</size>
@@ -332,8 +334,8 @@
 			<visible ifSubset="systviewselec:charsystem">true</visible>
 			<visible ifSubset="systviewselec:figurines">true</visible>
 			<visible ifSubset="systviewselec:rondhursty">true</visible>
-			<visible ifSubset="systviewselec:logosseuls">false</visible>
 			<visible ifSubset="systviewselec:hardware">true</visible>
+			<visible ifSubset="systviewselec:logosseuls">false</visible>
 			<path>${themePath}/_viewsyst/fanartstar/whitedegrade.png</path>
 			<maxSize>1 1</maxSize>
 			<pos>0.5 0.95</pos>

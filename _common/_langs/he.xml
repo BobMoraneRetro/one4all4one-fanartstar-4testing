@@ -183,15 +183,14 @@
 		<opt_contourboite>משחקים - Box outline (case)</opt_contourboite>
 		<opt_deckespace>משחקים - מרווח בין הקופסאות</opt_deckespace>
 		<opt_iconenote>משחקים - סמל דירוג</opt_iconenote>
-		<opt_custombuilds>מתקדם - Gamelist field used for fanart</opt_custombuilds>
-		<opt_scrap3dbox>מתקדם - Gamelist field used for the 3D box</opt_scrap3dbox>
-		<opt_gamemedia>מתקדם - Custom game media</opt_gamemedia>
-		<opt_extfoldergamemedia>מתקדם - Custom media folder</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>מתקדם - ערכת נושא ייעודית למערכות</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>מתקדם - מסגרות (bezel) של המערכות</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>מתקדם - לוגו של מפיצי משחקים</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>מתקדם - פאנארט של המערכות</opt_extfolderfanart>
 		<opt_extfolderlogosyst>מתקדם - לוגו המערכת</opt_extfolderlogosyst>
+		<opt_extfoldersalon>מתקדם - מיקום הרקעים של תצוגת RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - מסך הטלוויזיה</opt_salonecran>
+		<salonvideoseule>וידאו בלבד</salonvideoseule>
+		<saloncapturevideo>צילום מסך ואז וידאו</saloncapturevideo>
 		<opt_deckselection>BIG ART - מיקום המשחק הנבחר</opt_deckselection>
 		<opt_decklogovideo>BIG ART - לוגו בזמן הווידאו</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - וידאו</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

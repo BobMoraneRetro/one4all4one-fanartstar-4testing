@@ -183,15 +183,14 @@
 		<opt_contourboite>JOCURI - Box outline (case)</opt_contourboite>
 		<opt_deckespace>JOCURI - Spațierea cutiilor</opt_deckespace>
 		<opt_iconenote>JOCURI - Pictogramă notă</opt_iconenote>
-		<opt_custombuilds>AVANSAT - Gamelist field used for fanart</opt_custombuilds>
-		<opt_scrap3dbox>AVANSAT - Gamelist field used for the 3D box</opt_scrap3dbox>
-		<opt_gamemedia>AVANSAT - Custom game media</opt_gamemedia>
-		<opt_extfoldergamemedia>AVANSAT - Custom media folder</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>AVANSAT - Temă specifică sistemelor</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>AVANSAT - Bezel-uri ale sistemelor</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>AVANSAT - Logo-urile editorilor de jocuri</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>AVANSAT - Fanart al sistemelor</opt_extfolderfanart>
 		<opt_extfolderlogosyst>AVANSAT - Logo sistem</opt_extfolderlogosyst>
+		<opt_extfoldersalon>AVANSAT - Locația fundalurilor vizualizării RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - Ecranul TV</opt_salonecran>
+		<salonvideoseule>Doar video</salonvideoseule>
+		<saloncapturevideo>Captură, apoi video</saloncapturevideo>
 		<opt_deckselection>BIG ART - Poziția jocului selectat</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo în timpul videoclipului</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Videoclip</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

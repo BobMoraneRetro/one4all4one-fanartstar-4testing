@@ -183,15 +183,14 @@
 		<opt_contourboite>الألعاب - Box outline (case)</opt_contourboite>
 		<opt_deckespace>الألعاب - تباعد العلب</opt_deckespace>
 		<opt_iconenote>الألعاب - أيقونة التقييم</opt_iconenote>
-		<opt_custombuilds>متقدم - Gamelist field used for fanart</opt_custombuilds>
-		<opt_scrap3dbox>متقدم - Gamelist field used for the 3D box</opt_scrap3dbox>
-		<opt_gamemedia>متقدم - Custom game media</opt_gamemedia>
-		<opt_extfoldergamemedia>متقدم - Custom media folder</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>متقدم - سمة خاصة بالأنظمة</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>متقدم - إطارات (bezel) الأنظمة</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>متقدم - شعارات ناشري الألعاب</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>متقدم - فان آرت الأنظمة</opt_extfolderfanart>
 		<opt_extfolderlogosyst>متقدم - شعار النظام</opt_extfolderlogosyst>
+		<opt_extfoldersalon>متقدم - موقع خلفيات عرض RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - شاشة التلفاز</opt_salonecran>
+		<salonvideoseule>فيديو فقط</salonvideoseule>
+		<saloncapturevideo>لقطة شاشة ثم فيديو</saloncapturevideo>
 		<opt_deckselection>BIG ART - موضع اللعبة المحددة</opt_deckselection>
 		<opt_decklogovideo>BIG ART - الشعار أثناء الفيديو</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - الفيديو</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

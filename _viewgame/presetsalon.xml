@@ -3,6 +3,11 @@
 	Variables utilisées dans ce fichier :
 	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
 	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boxart_ecart_selection_2d} : valeur : 2.20 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${boxart_ecart_selection_3d} : valeur : 3.80 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${boxart_nb_boites_2d} : Boxart (presetstarbox, carrousel) : nombre de boîtes affichées et écart, boîtes 2D puis 3D (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${boxart_nb_boites_2d_horizontales} : vue Salon : nombre de boîtes 2D horizontales (snes, n64...) selon le cran d espacement (= starlogos2d x 0.8) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${boxart_nb_boites_3d} : valeur : 29 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
 	${intfanartfresh} : Fanart du système (dossier fresh) (définie dans theme.xml)
 	${media_box2d} : boîte 2D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_box2d_missing} : vrai si le média « box2d » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
@@ -15,21 +20,22 @@
 	${media_support_exists} : vrai si le média « support » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
-	${salon_defaut} : vue Salon : décor et réglages par défaut, _default (systèmes 4:3) ou _default16 (systèmes 16:9 listés) (définie dans ce fichier)
+	${path_salon} : vue RFE Retrofist Nostalgia : dossier _salon (décors et réglages par système), dans le thème ou dans _bobmedia/_gamemedia (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des décors de la vue RFE Retrofist Nostalgia »)
+	${salon_capture_pos} : vue Salon : centre de la capture d écran du jeu ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_capture_taille} : vue Salon : largeur hauteur de la capture d écran du jeu ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_defaut} : vue Salon : décor et réglages par défaut, _default (systèmes 4:3), _default16 (systèmes 16:9 listés), ou selon le type du système : arcade, computers (computer), extension, pinball, port, portable, auto-collection, custom-collection, retrobat (type vide : retrobat, kodi, screenshots) (définie dans ce fichier)
 	${salon_disque_depart} : vue Salon : x du disque caché derrière la boîte sélectionnée (définie dans ce fichier)
 	${salon_disque_taille} : vue Salon : taille maximale du disque (définie dans ce fichier)
 	${salon_disque_tourne} : vue Salon : true = le disque tourne (systèmes CD/DVD par défaut), false = il sort sans tourner ; réglable par <système>.xml (définie dans ce fichier)
 	${salon_disque_x} : vue Salon : x du disque une fois sorti de la boîte (définie dans ce fichier)
 	${salon_disque_y} : vue Salon : hauteur du centre du disque (définie dans ce fichier)
+	${salon_calque} : vue Salon : image posée sur l écran (vitre, quadrillage LCD...), vide = aucune ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_couleur} : vue Salon : couleur multipliée sur la vidéo et la capture (FFFFFFFF = aucune ; ex. 8BAC0F pour la Game Boy) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_saturation} : vue Salon : saturation de la vidéo et de la capture (1 = normale, 0 = noir et blanc, à combiner avec salon_couleur) ; réglable par <système>.xml (définie dans ce fichier)
 	${salon_support_mixte} : vue Salon : true = disques et cartes mélangés, la forme de l image (ronde ou non) décide de la rotation (shader support_tourne) ; défaut wiiu, switch, xbox360 (définie dans ce fichier)
 	${salon_video_etiree} : vue Salon : true = vidéo étirée à la taille de l écran de la TV (size), false = proportions gardées (maxSize) ; réglable par <système>.xml (définie dans ce fichier)
 	${salon_video_pos} : vue Salon : centre de l écran de la TV (vidéo sous le décor) (définie dans ce fichier)
 	${salon_video_taille} : vue Salon : largeur hauteur de l écran de la TV (définie dans ce fichier)
-	${starespace2d} : Boxart : écart entre les boîtes 2d du carrousel (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${starespace3d} : Boxart : écart entre les boîtes 3d du carrousel (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${starlogos2d} : Boxart (presetstarbox, carrousel) : nombre de boîtes affichées et écart, boîtes 2D puis 3D (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${starlogos2dlarge} : vue Salon : nombre de boîtes 2D horizontales (snes, n64...) selon le cran d espacement (= starlogos2d x 0.8) (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${starlogos3d} : Boxart : nombre de boîtes 3d affichées (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${presetsalon}
 -->
 <theme>
@@ -37,6 +43,8 @@
 	<variables>
 		<salon_video_pos>0.5 0.2625</salon_video_pos>
 		<salon_video_taille>0.3906 0.388</salon_video_taille>
+		<salon_capture_pos>0.5 0.2625</salon_capture_pos>
+		<salon_capture_taille>0.3906 0.388</salon_capture_taille>
 		<salon_disque_depart>0.5</salon_disque_depart>
 		<salon_disque_x>0.69</salon_disque_x>
 		<salon_disque_y>0.65</salon_disque_y>
@@ -47,13 +55,25 @@
 					{system.theme} == 'megacd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' ||
 					{system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' ||
 					{system.theme} == 'gc' || {system.theme} == 'wii' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'fmtowns' || {system.theme} == 'wiiu' || {system.theme} == 'ps4'">true</salon_disque_tourne>
+		<salon_couleur>FFFFFFFF</salon_couleur>
+		<salon_saturation>1</salon_saturation>
+		<salon_calque></salon_calque>
 		<salon_support_mixte>false</salon_support_mixte>
 		<salon_support_mixte if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360'">true</salon_support_mixte>
 		<salon_defaut>_default</salon_defaut>
 		<salon_defaut if="{system.theme} == 'ps3' || {system.theme} == 'ps4' || {system.theme} == 'xbox360' || {system.theme} == 'wiiu' || {system.theme} == 'switch' || {system.theme} == 'psvita' || {system.theme} == 'windows' || {system.theme} == 'steam'">_default16</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == 'arcade'">arcade</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == 'computer'">computers</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == 'extension'">extension</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == 'pinball'">pinball</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == 'port'">port</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == 'portable'">portable</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == 'auto collection'">auto-collection</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == 'custom collection'">custom-collection</salon_defaut>
+		<salon_defaut if="{system.hardwareType} == ''">retrobat</salon_defaut>
 	</variables>
-	<include>${themePath}/_gamemedia/_salon/${salon_defaut}.xml</include>
-	<include>${themePath}/_gamemedia/_salon/${system.theme}.xml</include>
+	<include>${path_salon}/${salon_defaut}.xml</include>
+	<include>${path_salon}/${system.theme}.xml</include>
 	<customView name="presetsalon" displayName="${presetsalon}" inherits="gamecarousel">
 		<control name="fanart_extra,screenshot_extra,video_extra">
 			<visible>false</visible>
@@ -65,7 +85,7 @@
 			<linearSmooth>true</linearSmooth>
 		</image>
 		<image name="salonfond" extra="true">
-			<path>firstfile("${themePath}/_gamemedia/_salon/" + {system:theme} + ".png", "${themePath}/_gamemedia/_salon/${salon_defaut}.png")</path>
+			<path>firstfile("${path_salon}/" + {system:theme} + ".png", "${path_salon}/${salon_defaut}.png")</path>
 			<pos>0 0</pos>
 			<size>1 1</size>
 			<linearSmooth>true</linearSmooth>
@@ -82,41 +102,108 @@
 		<image name="salonimage" if="!${salon_video_etiree}" extra="true">
 			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
 			<path>${media_image}</path>
-			<pos>${salon_video_pos}</pos>
+			<pos>${salon_capture_pos}</pos>
 			<origin>0.5 0.5</origin>
-			<maxSize>${salon_video_taille}</maxSize>
+			<maxSize>${salon_capture_taille}</maxSize>
 			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
 			<zIndex>2.8</zIndex>
+		</image>
+		<image name="salonimagecapture" if="!${salon_video_etiree}" extra="true">
+			<visible ifSubset="salonecran:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="salonecran:videoseule">false</visible>
+			<path>${media_image}</path>
+			<pos>${salon_capture_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>${salon_capture_taille}</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
 		</image>
 		<image name="salonimageetiree" if="${salon_video_etiree}" extra="true">
 			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
 			<path>${media_image}</path>
-			<pos>${salon_video_pos}</pos>
+			<pos>${salon_capture_pos}</pos>
 			<origin>0.5 0.5</origin>
-			<size>${salon_video_taille}</size>
+			<size>${salon_capture_taille}</size>
 			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
 			<zIndex>2.8</zIndex>
+		</image>
+		<image name="salonimagecaptureetiree" if="${salon_video_etiree}" extra="true">
+			<visible ifSubset="salonecran:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="salonecran:videoseule">false</visible>
+			<path>${media_image}</path>
+			<pos>${salon_capture_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_capture_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
 		</image>
 		<video name="salonvideo" if="!${salon_video_etiree}" extra="true">
 			<visible>{game:rom} != '..'</visible>
 			<path>${media_video}</path>
-			<delay>0</delay>
+			<delay ifSubset="salonecran:capturevideo">0.3</delay>
+			<delay ifSubset="salonecran:videoseule">0</delay>
 			<pos>${salon_video_pos}</pos>
 			<origin>0.5 0.5</origin>
 			<maxSize>${salon_video_taille}</maxSize>
 			<effect>none</effect>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
 			<zIndex>3</zIndex>
 		</video>
 		<video name="salonvideoetiree" if="${salon_video_etiree}" extra="true">
 			<visible>{game:rom} != '..'</visible>
 			<path>${media_video}</path>
-			<delay>0</delay>
+			<delay ifSubset="salonecran:capturevideo">0.3</delay>
+			<delay ifSubset="salonecran:videoseule">0</delay>
 			<pos>${salon_video_pos}</pos>
 			<origin>0.5 0.5</origin>
 			<size>${salon_video_taille}</size>
 			<effect>none</effect>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
 			<zIndex>3</zIndex>
 		</video>
+		<image name="saloncalque" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${salon_calque}</path>
+			<pos>${salon_video_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>4</zIndex>
+		</image>
 		<gamecarousel name="gamecarousel">
 			<zIndex>10</zIndex>
 			<type>horizontal</type>
@@ -134,11 +221,11 @@
 			<logoPos>0.15 0.5</logoPos>
 			<imageSource>thumbnail</imageSource>
 			<defaultTransition>instant</defaultTransition>
-			<maxLogoCount ifSubset="boxorthumb:boxart">${starlogos3d}</maxLogoCount>
-			<maxLogoCount ifSubset="boxorthumb:thumb">${starlogos2d}</maxLogoCount>
-			<maxLogoCount ifSubset="boxorthumb:thumb" if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch' || {system.theme} == 'solarus' || {system.theme} == 'ngage'">${starlogos2dlarge}</maxLogoCount>
-			<scaledLogoSpacing ifSubset="boxorthumb:boxart">${starespace3d}</scaledLogoSpacing>
-			<scaledLogoSpacing ifSubset="boxorthumb:thumb">${starespace2d}</scaledLogoSpacing>
+			<maxLogoCount ifSubset="boxorthumb:boxart">${boxart_nb_boites_3d}</maxLogoCount>
+			<maxLogoCount ifSubset="boxorthumb:thumb">${boxart_nb_boites_2d}</maxLogoCount>
+			<maxLogoCount ifSubset="boxorthumb:thumb" if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch' || {system.theme} == 'solarus' || {system.theme} == 'ngage'">${boxart_nb_boites_2d_horizontales}</maxLogoCount>
+			<scaledLogoSpacing ifSubset="boxorthumb:boxart">${boxart_ecart_selection_3d}</scaledLogoSpacing>
+			<scaledLogoSpacing ifSubset="boxorthumb:thumb">${boxart_ecart_selection_2d}</scaledLogoSpacing>
 			<itemTemplate>
 				<container>
 					<image name="salondisque" if="${salon_support_mixte}">

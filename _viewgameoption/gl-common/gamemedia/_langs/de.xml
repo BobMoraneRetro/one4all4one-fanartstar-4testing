@@ -11,5 +11,9 @@
 		<gamemediaseul>Nur: nur eigene Medien (ohne Gamelist-Ersatz)</gamemediaseul>
 		<intheme>Theme-Ordner - Standard</intheme>
 		<extfolder>Externer Ordner</extfolder>
+		<opt_custombuilds>ERWEITERT - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>ERWEITERT - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>ERWEITERT - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>ERWEITERT - Custom media folder</opt_extfoldergamemedia>
 	</variables>
 </theme>

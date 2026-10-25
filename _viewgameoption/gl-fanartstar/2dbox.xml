@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 	Variables utilisées dans ce fichier :
-	${starespace2d} : Boxart : écart entre les boîtes 2d du carrousel (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${starlogos2d} : Boxart (presetstarbox, carrousel) : nombre de boîtes affichées et écart, boîtes 2D puis 3D (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${boxart_ecart_selection_2d} : valeur : 2.20 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${boxart_nb_boites_2d} : Boxart (presetstarbox, carrousel) : nombre de boîtes affichées et écart, boîtes 2D puis 3D (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${presetstarbox}
 -->
 <theme>
 	<formatVersion>7</formatVersion>
 	<customView name="presetstarbox" displayName="${presetstarbox}" inherits="gamecarousel">
 		<gamecarousel name="gamecarousel">
-			<maxLogoCount>${starlogos2d}</maxLogoCount>
-			<scaledLogoSpacing>${starespace2d}</scaledLogoSpacing>
+			<maxLogoCount>${boxart_nb_boites_2d}</maxLogoCount>
+			<scaledLogoSpacing>${boxart_ecart_selection_2d}</scaledLogoSpacing>
 		</gamecarousel>
 	</customView>
 </theme>

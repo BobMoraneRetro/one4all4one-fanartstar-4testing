@@ -11,5 +11,9 @@
 		<gamemediaseul>Лише: лише власні медіа (без заміни з gamelist)</gamemediaseul>
 		<intheme>Тека теми - Типово</intheme>
 		<extfolder>Зовнішня тека</extfolder>
+		<opt_custombuilds>ДОДАТКОВО - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>ДОДАТКОВО - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>ДОДАТКОВО - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>ДОДАТКОВО - Custom media folder</opt_extfoldergamemedia>
 	</variables>
 </theme>

@@ -183,15 +183,14 @@
 		<opt_contourboite>ИГРЫ - Box outline (case)</opt_contourboite>
 		<opt_deckespace>ИГРЫ - Расстояние между коробками</opt_deckespace>
 		<opt_iconenote>ИГРЫ - Значок оценки</opt_iconenote>
-		<opt_custombuilds>ДОПОЛНИТЕЛЬНО - Gamelist field used for fanart</opt_custombuilds>
-		<opt_scrap3dbox>ДОПОЛНИТЕЛЬНО - Gamelist field used for the 3D box</opt_scrap3dbox>
-		<opt_gamemedia>ДОПОЛНИТЕЛЬНО - Custom game media</opt_gamemedia>
-		<opt_extfoldergamemedia>ДОПОЛНИТЕЛЬНО - Custom media folder</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>ДОПОЛНИТЕЛЬНО - Темы для отдельных систем</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>ДОПОЛНИТЕЛЬНО - Рамки (bezel) систем</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>ДОПОЛНИТЕЛЬНО - Логотипы издателей игр</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>ДОПОЛНИТЕЛЬНО - Фанарт систем</opt_extfolderfanart>
 		<opt_extfolderlogosyst>ДОПОЛНИТЕЛЬНО - Логотип системы</opt_extfolderlogosyst>
+		<opt_extfoldersalon>ДОПОЛНИТЕЛЬНО - Расположение фонов вида RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - Экран ТВ</opt_salonecran>
+		<salonvideoseule>Только видео</salonvideoseule>
+		<saloncapturevideo>Скриншот, затем видео</saloncapturevideo>
 		<opt_deckselection>BIG ART - Положение выбранной игры</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Логотип во время видео</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Видео</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

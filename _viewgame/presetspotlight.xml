@@ -18,11 +18,11 @@
 	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${noteicone} : icône de notation (étoile, cœur, manette...) (définie dans _viewgameoption/gl-common/options_note.xml ; valeur selon l option « JEUX - Icône de notation »)
-	${spotcolonnes} : Spotlight : colonnes de la grille (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${spotmarge} : Spotlight : marge de la grille (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${spotpadding} : Spotlight : padding de la grille (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${spotpos} : Spotlight : position de la grille (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
-	${spottaille} : Spotlight : taille de la grille (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${spotlight_colonnes} : valeur : 9 1 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${spotlight_ecart} : valeur : -0.01430 0 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${spotlight_marges} : valeur : 0 0.0597 0 0.0597 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${spotlight_position} : Spotlight (presetspotlight) : position « x y », taille « largeur hauteur », marge, marge haut / bas, colonnes (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
+	${spotlight_taille} : valeur : 1.17233 0.47740 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
 	${sv_anneeediteur_pos} : Spotlight : réglage « anneeediteur_pos » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
 	${sv_anneeediteur_size} : Spotlight : réglage « anneeediteur_size » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
 	${sv_capturegauche_visible} : Spotlight : réglage « capturegauche_visible » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
@@ -209,11 +209,11 @@
 			<imageSource ifSubset="boxorthumb:thumb">thumbnail</imageSource>
 			<scrollDirection>horizontalCenter</scrollDirection>
 			<scrollLoop>true</scrollLoop>
-			<pos>${spotpos}</pos>
-			<size>${spottaille}</size>
-			<margin>${spotmarge}</margin>
-			<padding>${spotpadding}</padding>
-			<autoLayout>${spotcolonnes}</autoLayout>
+			<pos>${spotlight_position}</pos>
+			<size>${spotlight_taille}</size>
+			<margin>${spotlight_ecart}</margin>
+			<padding>${spotlight_marges}</padding>
+			<autoLayout>${spotlight_colonnes}</autoLayout>
 			<autoLayoutSelectedZoom>1</autoLayoutSelectedZoom>
 			<animateSelection>true</animateSelection>
 			<showVideoAtDelay>-1</showVideoAtDelay>

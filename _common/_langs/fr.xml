@@ -183,15 +183,14 @@
 		<opt_contourboite>JEUX - Contour des boîtes</opt_contourboite>
 		<opt_deckespace>JEUX - Espacement des boîtes</opt_deckespace>
 		<opt_iconenote>JEUX - Icône de notation</opt_iconenote>
-		<opt_custombuilds>AVANCÉ - Champ du gamelist utilisé pour le fanart</opt_custombuilds>
-		<opt_scrap3dbox>AVANCÉ - Champ du gamelist utilisé pour la boîte 3D</opt_scrap3dbox>
-		<opt_gamemedia>AVANCÉ - Médias perso des jeux</opt_gamemedia>
-		<opt_extfoldergamemedia>AVANCÉ - Emplacement des médias perso</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>AVANCÉ - Emplacement des thèmes spécifiques des systèmes</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>AVANCÉ - Emplacement des bezels des systèmes</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>AVANCÉ - Emplacement des logos des éditeurs</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>AVANCÉ - Emplacement des fanarts des systèmes</opt_extfolderfanart>
 		<opt_extfolderlogosyst>AVANCÉ - Emplacement des logos des systèmes</opt_extfolderlogosyst>
+		<opt_extfoldersalon>AVANCÉ - Emplacement des décors de la vue RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - Écran de la TV</opt_salonecran>
+		<salonvideoseule>Vidéo seule</salonvideoseule>
+		<saloncapturevideo>Capture puis vidéo</saloncapturevideo>
 		<opt_deckselection>BIG ART - Position du jeu sélectionné</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo pendant la vidéo</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Vidéo</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Vidéo</opt_showvideo>
 		<showvideoplein>Plein écran avec bezel</showvideoplein>
 		<showvideofenetre>Fanart plein écran, vidéo en haut à droite</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

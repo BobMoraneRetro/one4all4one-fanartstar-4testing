@@ -183,15 +183,14 @@
 		<opt_contourboite>ゲーム - Box outline (case)</opt_contourboite>
 		<opt_deckespace>ゲーム - ボックスの間隔</opt_deckespace>
 		<opt_iconenote>ゲーム - 評価アイコン</opt_iconenote>
-		<opt_custombuilds>詳細設定 - Gamelist field used for fanart</opt_custombuilds>
-		<opt_scrap3dbox>詳細設定 - Gamelist field used for the 3D box</opt_scrap3dbox>
-		<opt_gamemedia>詳細設定 - Custom game media</opt_gamemedia>
-		<opt_extfoldergamemedia>詳細設定 - Custom media folder</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>詳細設定 - システム別テーマ</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>詳細設定 - システムのベゼル</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>詳細設定 - ゲームパブリッシャーのロゴ</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>詳細設定 - システムのファンアート</opt_extfolderfanart>
 		<opt_extfolderlogosyst>詳細設定 - システムロゴ</opt_extfolderlogosyst>
+		<opt_extfoldersalon>詳細設定 - RFE Retrofist Nostalgia ビューの背景の場所</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - テレビ画面</opt_salonecran>
+		<salonvideoseule>動画のみ</salonvideoseule>
+		<saloncapturevideo>スクリーンショットの後に動画</saloncapturevideo>
 		<opt_deckselection>BIG ART - 選択したゲームの位置</opt_deckselection>
 		<opt_decklogovideo>BIG ART - 動画中のロゴ</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - 動画</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

@@ -183,15 +183,14 @@
 		<opt_contourboite>ΠΑΙΧΝΙΔΙΑ - Box outline (case)</opt_contourboite>
 		<opt_deckespace>ΠΑΙΧΝΙΔΙΑ - Απόσταση κουτιών</opt_deckespace>
 		<opt_iconenote>ΠΑΙΧΝΙΔΙΑ - Εικονίδιο βαθμολογίας</opt_iconenote>
-		<opt_custombuilds>ΠΡΟΧΩΡΗΜΕΝΑ - Gamelist field used for fanart</opt_custombuilds>
-		<opt_scrap3dbox>ΠΡΟΧΩΡΗΜΕΝΑ - Gamelist field used for the 3D box</opt_scrap3dbox>
-		<opt_gamemedia>ΠΡΟΧΩΡΗΜΕΝΑ - Custom game media</opt_gamemedia>
-		<opt_extfoldergamemedia>ΠΡΟΧΩΡΗΜΕΝΑ - Custom media folder</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>ΠΡΟΧΩΡΗΜΕΝΑ - Θέμα ειδικά για συστήματα</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>ΠΡΟΧΩΡΗΜΕΝΑ - Bezel συστημάτων</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>ΠΡΟΧΩΡΗΜΕΝΑ - Λογότυπα εκδοτών παιχνιδιών</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>ΠΡΟΧΩΡΗΜΕΝΑ - Fanart συστημάτων</opt_extfolderfanart>
 		<opt_extfolderlogosyst>ΠΡΟΧΩΡΗΜΕΝΑ - Λογότυπο συστήματος</opt_extfolderlogosyst>
+		<opt_extfoldersalon>ΠΡΟΧΩΡΗΜΕΝΑ - Τοποθεσία φόντων της προβολής RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - Οθόνη TV</opt_salonecran>
+		<salonvideoseule>Μόνο βίντεο</salonvideoseule>
+		<saloncapturevideo>Στιγμιότυπο, μετά βίντεο</saloncapturevideo>
 		<opt_deckselection>BIG ART - Θέση επιλεγμένου παιχνιδιού</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Λογότυπο κατά το βίντεο</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Βίντεο</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

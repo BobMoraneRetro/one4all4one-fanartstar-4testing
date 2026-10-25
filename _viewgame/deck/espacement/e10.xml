@@ -4,100 +4,100 @@
 	<!-- FICHIER GÉNÉRÉ par A:\@@ Claude DEV\Big Art espacement\generer_espacement.py (ne pas modifier à la main) : cran -2.5 (écart 10 px en 1080p) ; une variable par réglage, défaut puis variantes « if » par groupe de systèmes -->
 	<variables>
 		<!-- Big Art (presetdeck) : colonnes, puis marge / position X / largeur de la grille, par mode (c / g) et 2D / 3D (suffixe 3) -->
-		<deckcolc>13</deckcolc>
-		<deckmargec>-0.00933</deckmargec>
-		<deckmargec if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">-0.03827</deckmargec>
-		<deckmargec if="{system.theme} == '3do'">-0.00933</deckmargec>
-		<deckmargec if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.02969</deckmargec>
-		<deckmargec if="{system.theme} == 'saturn'">-0.02166</deckmargec>
-		<deckposc>-0.10311</deckposc>
-		<deckposc if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">-0.49244</deckposc>
-		<deckposc if="{system.theme} == '3do'">-0.62267</deckposc>
-		<deckposc if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.53105</deckposc>
-		<deckposc if="{system.theme} == 'saturn'">-0.05995</deckposc>
-		<decktaillec>1.56556</decktaillec>
-		<decktaillec if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">2.25789</decktaillec>
-		<decktaillec if="{system.theme} == '3do'">2.60517</decktaillec>
-		<decktaillec if="{system.theme} == '3ds' || {system.theme} == 'nds'">2.36085</decktaillec>
-		<decktaillec if="{system.theme} == 'saturn'">1.41760</decktaillec>
-		<deckcolc3>13</deckcolc3>
-		<deckmargec3>-0.05006</deckmargec3>
-		<deckmargec3 if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">-0.08382</deckmargec3>
-		<deckmargec3 if="{system.theme} == '3do'">-0.09078</deckmargec3>
-		<deckmargec3 if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.08274</deckmargec3>
-		<deckmargec3 if="{system.theme} == 'saturn'">-0.05006</deckmargec3>
-		<deckposc3>0.03945</deckposc3>
-		<deckposc3 if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">-0.28746</deckposc3>
-		<deckposc3 if="{system.theme} == '3do'">-0.25614</deckposc3>
-		<deckposc3 if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.29233</deckposc3>
-		<deckposc3 if="{system.theme} == 'saturn'">0.03945</deckposc3>
-		<decktaillec3>1.07680</decktaillec3>
-		<decktaillec3 if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">1.71129</decktaillec3>
-		<decktaillec3 if="{system.theme} == '3do'">1.62777</decktaillec3>
-		<decktaillec3 if="{system.theme} == '3ds' || {system.theme} == 'nds'">1.72425</decktaillec3>
-		<decktaillec3 if="{system.theme} == 'saturn'">1.07680</decktaillec3>
-		<deckcolg>13</deckcolg>
-		<deckmargeg>-0.00201</deckmargeg>
-		<deckmargeg if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">-0.03095</deckmargeg>
-		<deckmargeg if="{system.theme} == '3do'">-0.00201</deckmargeg>
-		<deckmargeg if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.02238</deckmargeg>
-		<deckmargeg if="{system.theme} == 'saturn'">-0.01434</deckmargeg>
-		<deckposg>-0.50773</deckposg>
-		<deckposg if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">-0.87577</deckposg>
-		<deckposg if="{system.theme} == '3do'">-1.06388</deckposg>
-		<deckposg if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.93148</deckposg>
-		<deckposg if="{system.theme} == 'saturn'">-0.42759</deckposg>
-		<decktailleg>1.64248</decktailleg>
-		<decktailleg if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">2.32805</decktailleg>
-		<decktailleg if="{system.theme} == '3do'">2.67533</decktailleg>
-		<decktailleg if="{system.theme} == '3ds' || {system.theme} == 'nds'">2.43089</decktailleg>
-		<decktailleg if="{system.theme} == 'saturn'">1.49452</decktailleg>
-		<deckcolg3>17</deckcolg3>
-		<deckmargeg3>-0.04274</deckmargeg3>
-		<deckmargeg3 if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">-0.07650</deckmargeg3>
-		<deckmargeg3 if="{system.theme} == '3do'">-0.08346</deckmargeg3>
-		<deckmargeg3 if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.07543</deckmargeg3>
-		<deckmargeg3 if="{system.theme} == 'saturn'">-0.04274</deckmargeg3>
-		<deckposg3>-0.41391</deckposg3>
-		<deckposg3 if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">-0.84200</deckposg3>
-		<deckposg3 if="{system.theme} == '3do'">-0.78283</deckposg3>
-		<deckposg3 if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.85109</deckposg3>
-		<deckposg3 if="{system.theme} == 'saturn'">-0.41391</deckposg3>
-		<decktailleg3>1.49556</decktailleg3>
-		<decktailleg3 if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">2.30605</decktailleg3>
-		<decktailleg3 if="{system.theme} == '3do'">2.19469</decktailleg3>
-		<decktailleg3 if="{system.theme} == '3ds' || {system.theme} == 'nds'">2.32317</decktailleg3>
-		<decktailleg3 if="{system.theme} == 'saturn'">1.49556</decktailleg3>
+		<bigart_colonnes_centre_2d>13</bigart_colonnes_centre_2d>
+		<bigart_ecart_centre_2d>-0.00933</bigart_ecart_centre_2d>
+		<bigart_ecart_centre_2d if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">-0.03827</bigart_ecart_centre_2d>
+		<bigart_ecart_centre_2d if="{system.theme} == '3do'">-0.00933</bigart_ecart_centre_2d>
+		<bigart_ecart_centre_2d if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.02969</bigart_ecart_centre_2d>
+		<bigart_ecart_centre_2d if="{system.theme} == 'saturn'">-0.02166</bigart_ecart_centre_2d>
+		<bigart_position_centre_2d>-0.10311</bigart_position_centre_2d>
+		<bigart_position_centre_2d if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">-0.49244</bigart_position_centre_2d>
+		<bigart_position_centre_2d if="{system.theme} == '3do'">-0.62267</bigart_position_centre_2d>
+		<bigart_position_centre_2d if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.53105</bigart_position_centre_2d>
+		<bigart_position_centre_2d if="{system.theme} == 'saturn'">-0.05995</bigart_position_centre_2d>
+		<bigart_taille_centre_2d>1.56556</bigart_taille_centre_2d>
+		<bigart_taille_centre_2d if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">2.25789</bigart_taille_centre_2d>
+		<bigart_taille_centre_2d if="{system.theme} == '3do'">2.60517</bigart_taille_centre_2d>
+		<bigart_taille_centre_2d if="{system.theme} == '3ds' || {system.theme} == 'nds'">2.36085</bigart_taille_centre_2d>
+		<bigart_taille_centre_2d if="{system.theme} == 'saturn'">1.41760</bigart_taille_centre_2d>
+		<bigart_colonnes_centre_3d>13</bigart_colonnes_centre_3d>
+		<bigart_ecart_centre_3d>-0.05006</bigart_ecart_centre_3d>
+		<bigart_ecart_centre_3d if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">-0.08382</bigart_ecart_centre_3d>
+		<bigart_ecart_centre_3d if="{system.theme} == '3do'">-0.09078</bigart_ecart_centre_3d>
+		<bigart_ecart_centre_3d if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.08274</bigart_ecart_centre_3d>
+		<bigart_ecart_centre_3d if="{system.theme} == 'saturn'">-0.05006</bigart_ecart_centre_3d>
+		<bigart_position_centre_3d>0.03945</bigart_position_centre_3d>
+		<bigart_position_centre_3d if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">-0.28746</bigart_position_centre_3d>
+		<bigart_position_centre_3d if="{system.theme} == '3do'">-0.25614</bigart_position_centre_3d>
+		<bigart_position_centre_3d if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.29233</bigart_position_centre_3d>
+		<bigart_position_centre_3d if="{system.theme} == 'saturn'">0.03945</bigart_position_centre_3d>
+		<bigart_taille_centre_3d>1.07680</bigart_taille_centre_3d>
+		<bigart_taille_centre_3d if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">1.71129</bigart_taille_centre_3d>
+		<bigart_taille_centre_3d if="{system.theme} == '3do'">1.62777</bigart_taille_centre_3d>
+		<bigart_taille_centre_3d if="{system.theme} == '3ds' || {system.theme} == 'nds'">1.72425</bigart_taille_centre_3d>
+		<bigart_taille_centre_3d if="{system.theme} == 'saturn'">1.07680</bigart_taille_centre_3d>
+		<bigart_colonnes_gauche_2d>13</bigart_colonnes_gauche_2d>
+		<bigart_ecart_gauche_2d>-0.00201</bigart_ecart_gauche_2d>
+		<bigart_ecart_gauche_2d if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">-0.03095</bigart_ecart_gauche_2d>
+		<bigart_ecart_gauche_2d if="{system.theme} == '3do'">-0.00201</bigart_ecart_gauche_2d>
+		<bigart_ecart_gauche_2d if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.02238</bigart_ecart_gauche_2d>
+		<bigart_ecart_gauche_2d if="{system.theme} == 'saturn'">-0.01434</bigart_ecart_gauche_2d>
+		<bigart_position_gauche_2d>-0.50773</bigart_position_gauche_2d>
+		<bigart_position_gauche_2d if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">-0.87577</bigart_position_gauche_2d>
+		<bigart_position_gauche_2d if="{system.theme} == '3do'">-1.06388</bigart_position_gauche_2d>
+		<bigart_position_gauche_2d if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.93148</bigart_position_gauche_2d>
+		<bigart_position_gauche_2d if="{system.theme} == 'saturn'">-0.42759</bigart_position_gauche_2d>
+		<bigart_taille_gauche_2d>1.64248</bigart_taille_gauche_2d>
+		<bigart_taille_gauche_2d if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">2.32805</bigart_taille_gauche_2d>
+		<bigart_taille_gauche_2d if="{system.theme} == '3do'">2.67533</bigart_taille_gauche_2d>
+		<bigart_taille_gauche_2d if="{system.theme} == '3ds' || {system.theme} == 'nds'">2.43089</bigart_taille_gauche_2d>
+		<bigart_taille_gauche_2d if="{system.theme} == 'saturn'">1.49452</bigart_taille_gauche_2d>
+		<bigart_colonnes_gauche_3d>17</bigart_colonnes_gauche_3d>
+		<bigart_ecart_gauche_3d>-0.04274</bigart_ecart_gauche_3d>
+		<bigart_ecart_gauche_3d if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">-0.07650</bigart_ecart_gauche_3d>
+		<bigart_ecart_gauche_3d if="{system.theme} == '3do'">-0.08346</bigart_ecart_gauche_3d>
+		<bigart_ecart_gauche_3d if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.07543</bigart_ecart_gauche_3d>
+		<bigart_ecart_gauche_3d if="{system.theme} == 'saturn'">-0.04274</bigart_ecart_gauche_3d>
+		<bigart_position_gauche_3d>-0.41391</bigart_position_gauche_3d>
+		<bigart_position_gauche_3d if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">-0.84200</bigart_position_gauche_3d>
+		<bigart_position_gauche_3d if="{system.theme} == '3do'">-0.78283</bigart_position_gauche_3d>
+		<bigart_position_gauche_3d if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.85109</bigart_position_gauche_3d>
+		<bigart_position_gauche_3d if="{system.theme} == 'saturn'">-0.41391</bigart_position_gauche_3d>
+		<bigart_taille_gauche_3d>1.49556</bigart_taille_gauche_3d>
+		<bigart_taille_gauche_3d if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do' || {system.theme} == 'snes' || {system.theme} == 'n64'">2.30605</bigart_taille_gauche_3d>
+		<bigart_taille_gauche_3d if="{system.theme} == '3do'">2.19469</bigart_taille_gauche_3d>
+		<bigart_taille_gauche_3d if="{system.theme} == '3ds' || {system.theme} == 'nds'">2.32317</bigart_taille_gauche_3d>
+		<bigart_taille_gauche_3d if="{system.theme} == 'saturn'">1.49556</bigart_taille_gauche_3d>
 		<!-- Spotlight (presetspotlight) : position « x y », taille « largeur hauteur », marge, marge haut / bas, colonnes -->
-		<spotpos>-0.13201 0.49130</spotpos>
-		<spotpos if="{system.theme} == 'windows' || {system.theme} == 'switch'">-0.13196 0.47859</spotpos>
-		<spotpos if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do'">-0.38087 0.49887</spotpos>
-		<spotpos if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.36993 0.50966</spotpos>
-		<spotpos if="{system.theme} == 'snes' || {system.theme} == 'n64'">-0.17708 0.56980</spotpos>
-		<spottaille>1.26401 0.47740</spottaille>
-		<spottaille if="{system.theme} == 'windows' || {system.theme} == 'switch'">1.26391 0.50282</spottaille>
-		<spottaille if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do'">1.76173 0.46226</spottaille>
-		<spottaille if="{system.theme} == '3ds' || {system.theme} == 'nds'">1.73986 0.44067</spottaille>
-		<spottaille if="{system.theme} == 'snes' || {system.theme} == 'n64'">1.35416 0.32030</spottaille>
-		<spotmarge>-0.00284 0</spotmarge>
-		<spotmarge if="{system.theme} == 'windows' || {system.theme} == 'switch'">-0.00328 0</spotmarge>
-		<spotmarge if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do'">-0.03184 0</spotmarge>
-		<spotmarge if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.00997 0</spotmarge>
-		<spotmarge if="{system.theme} == 'snes' || {system.theme} == 'n64'">0.00496 0</spotmarge>
-		<spotpadding>0 0.0597 0 0.0597</spotpadding>
-		<spotpadding if="{system.theme} == 'windows' || {system.theme} == 'switch'">0 0.0626 0 0.0626</spotpadding>
-		<spotpadding if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do'">0 0.0580 0 0.0580</spotpadding>
-		<spotpadding if="{system.theme} == '3ds' || {system.theme} == 'nds'">0 0.0555 0 0.0555</spotpadding>
-		<spotpadding if="{system.theme} == 'snes' || {system.theme} == 'n64'">0 0.0400 0 0.0400</spotpadding>
-		<spotcolonnes>9 1</spotcolonnes>
-		<spotcolonnes if="{system.theme} == 'windows' || {system.theme} == 'switch'">9 1</spotcolonnes>
-		<spotcolonnes if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do'">9 1</spotcolonnes>
-		<spotcolonnes if="{system.theme} == '3ds' || {system.theme} == 'nds'">9 1</spotcolonnes>
-		<spotcolonnes if="{system.theme} == 'snes' || {system.theme} == 'n64'">7 1</spotcolonnes>
+		<spotlight_position>-0.13201 0.49130</spotlight_position>
+		<spotlight_position if="{system.theme} == 'windows' || {system.theme} == 'switch'">-0.13196 0.47859</spotlight_position>
+		<spotlight_position if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do'">-0.38087 0.49887</spotlight_position>
+		<spotlight_position if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.36993 0.50966</spotlight_position>
+		<spotlight_position if="{system.theme} == 'snes' || {system.theme} == 'n64'">-0.17708 0.56980</spotlight_position>
+		<spotlight_taille>1.26401 0.47740</spotlight_taille>
+		<spotlight_taille if="{system.theme} == 'windows' || {system.theme} == 'switch'">1.26391 0.50282</spotlight_taille>
+		<spotlight_taille if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do'">1.76173 0.46226</spotlight_taille>
+		<spotlight_taille if="{system.theme} == '3ds' || {system.theme} == 'nds'">1.73986 0.44067</spotlight_taille>
+		<spotlight_taille if="{system.theme} == 'snes' || {system.theme} == 'n64'">1.35416 0.32030</spotlight_taille>
+		<spotlight_ecart>-0.00284 0</spotlight_ecart>
+		<spotlight_ecart if="{system.theme} == 'windows' || {system.theme} == 'switch'">-0.00328 0</spotlight_ecart>
+		<spotlight_ecart if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do'">-0.03184 0</spotlight_ecart>
+		<spotlight_ecart if="{system.theme} == '3ds' || {system.theme} == 'nds'">-0.00997 0</spotlight_ecart>
+		<spotlight_ecart if="{system.theme} == 'snes' || {system.theme} == 'n64'">0.00496 0</spotlight_ecart>
+		<spotlight_marges>0 0.0597 0 0.0597</spotlight_marges>
+		<spotlight_marges if="{system.theme} == 'windows' || {system.theme} == 'switch'">0 0.0626 0 0.0626</spotlight_marges>
+		<spotlight_marges if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do'">0 0.0580 0 0.0580</spotlight_marges>
+		<spotlight_marges if="{system.theme} == '3ds' || {system.theme} == 'nds'">0 0.0555 0 0.0555</spotlight_marges>
+		<spotlight_marges if="{system.theme} == 'snes' || {system.theme} == 'n64'">0 0.0400 0 0.0400</spotlight_marges>
+		<spotlight_colonnes>9 1</spotlight_colonnes>
+		<spotlight_colonnes if="{system.theme} == 'windows' || {system.theme} == 'switch'">9 1</spotlight_colonnes>
+		<spotlight_colonnes if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == '3ds' || {system.theme} == 'nds' || {system.theme} == '3do'">9 1</spotlight_colonnes>
+		<spotlight_colonnes if="{system.theme} == '3ds' || {system.theme} == 'nds'">9 1</spotlight_colonnes>
+		<spotlight_colonnes if="{system.theme} == 'snes' || {system.theme} == 'n64'">7 1</spotlight_colonnes>
 		<!-- Boxart (presetstarbox, carrousel) : nombre de boîtes affichées et écart, boîtes 2D puis 3D -->
-		<starlogos2d>11</starlogos2d>
-		<starespace2d>1.00</starespace2d>
-		<starlogos3d>21</starlogos3d>
-		<starespace3d>1.75</starespace3d>
+		<boxart_nb_boites_2d>11</boxart_nb_boites_2d>
+		<boxart_ecart_selection_2d>1.00</boxart_ecart_selection_2d>
+		<boxart_nb_boites_3d>21</boxart_nb_boites_3d>
+		<boxart_ecart_selection_3d>1.75</boxart_ecart_selection_3d>
 	</variables>
 </theme>

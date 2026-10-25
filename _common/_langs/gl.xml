@@ -183,15 +183,14 @@
 		<opt_contourboite>XOGOS - Box outline (case)</opt_contourboite>
 		<opt_deckespace>XOGOS - Espazado das caixas</opt_deckespace>
 		<opt_iconenote>XOGOS - Icona de puntuación</opt_iconenote>
-		<opt_custombuilds>AVANZADO - Gamelist field used for fanart</opt_custombuilds>
-		<opt_scrap3dbox>AVANZADO - Gamelist field used for the 3D box</opt_scrap3dbox>
-		<opt_gamemedia>AVANZADO - Custom game media</opt_gamemedia>
-		<opt_extfoldergamemedia>AVANZADO - Custom media folder</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>AVANZADO - Tema específico dos sistemas</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>AVANZADO - Bezels dos sistemas</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>AVANZADO - Logos dos editores de xogos</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>AVANZADO - Fanart dos sistemas</opt_extfolderfanart>
 		<opt_extfolderlogosyst>AVANZADO - Logo do sistema</opt_extfolderlogosyst>
+		<opt_extfoldersalon>AVANZADO - Localización dos fondos da vista RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - Pantalla da TV</opt_salonecran>
+		<salonvideoseule>Só vídeo</salonvideoseule>
+		<saloncapturevideo>Captura e despois vídeo</saloncapturevideo>
 		<opt_deckselection>BIG ART - Posición do xogo seleccionado</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo durante o vídeo</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Vídeo</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

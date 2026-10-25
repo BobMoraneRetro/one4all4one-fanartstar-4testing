@@ -11,5 +11,9 @@
 		<gamemediaseul>Endast: endast egna medier (ingen reserv från gamelist)</gamemediaseul>
 		<intheme>Temamapp - Standard</intheme>
 		<extfolder>Extern mapp</extfolder>
+		<opt_custombuilds>AVANCERAT - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>AVANCERAT - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>AVANCERAT - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>AVANCERAT - Custom media folder</opt_extfoldergamemedia>
 	</variables>
 </theme>

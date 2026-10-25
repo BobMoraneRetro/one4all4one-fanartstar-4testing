@@ -183,15 +183,14 @@
 		<opt_contourboite>OYUNLAR - Box outline (case)</opt_contourboite>
 		<opt_deckespace>OYUNLAR - Kutular arası boşluk</opt_deckespace>
 		<opt_iconenote>OYUNLAR - Puan simgesi</opt_iconenote>
-		<opt_custombuilds>GELİŞMİŞ - Gamelist field used for fanart</opt_custombuilds>
-		<opt_scrap3dbox>GELİŞMİŞ - Gamelist field used for the 3D box</opt_scrap3dbox>
-		<opt_gamemedia>GELİŞMİŞ - Custom game media</opt_gamemedia>
-		<opt_extfoldergamemedia>GELİŞMİŞ - Custom media folder</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>GELİŞMİŞ - Sisteme özel tema</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>GELİŞMİŞ - Sistem bezelleri</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>GELİŞMİŞ - Oyun yayıncısı logoları</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>GELİŞMİŞ - Sistem fanartı</opt_extfolderfanart>
 		<opt_extfolderlogosyst>GELİŞMİŞ - Sistem logosu</opt_extfolderlogosyst>
+		<opt_extfoldersalon>GELİŞMİŞ - RFE Retrofist Nostalgia görünümü arka planlarının konumu</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - TV ekranı</opt_salonecran>
+		<salonvideoseule>Yalnızca video</salonvideoseule>
+		<saloncapturevideo>Önce ekran görüntüsü, sonra video</saloncapturevideo>
 		<opt_deckselection>BIG ART - Seçili oyunun konumu</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Video sırasında logo</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

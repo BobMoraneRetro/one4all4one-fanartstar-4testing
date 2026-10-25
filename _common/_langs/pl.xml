@@ -183,15 +183,14 @@
 		<opt_contourboite>GRY - Box outline (case)</opt_contourboite>
 		<opt_deckespace>GRY - Odstęp między pudełkami</opt_deckespace>
 		<opt_iconenote>GRY - Ikona oceny</opt_iconenote>
-		<opt_custombuilds>ZAAWANSOWANE - Gamelist field used for fanart</opt_custombuilds>
-		<opt_scrap3dbox>ZAAWANSOWANE - Gamelist field used for the 3D box</opt_scrap3dbox>
-		<opt_gamemedia>ZAAWANSOWANE - Custom game media</opt_gamemedia>
-		<opt_extfoldergamemedia>ZAAWANSOWANE - Custom media folder</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>ZAAWANSOWANE - Motyw dla konkretnych systemów</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>ZAAWANSOWANE - Ramki (bezel) systemów</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>ZAAWANSOWANE - Logo wydawców gier</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>ZAAWANSOWANE - Fanart systemów</opt_extfolderfanart>
 		<opt_extfolderlogosyst>ZAAWANSOWANE - Logo systemu</opt_extfolderlogosyst>
+		<opt_extfoldersalon>ZAAWANSOWANE - Lokalizacja teł widoku RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - Ekran TV</opt_salonecran>
+		<salonvideoseule>Tylko wideo</salonvideoseule>
+		<saloncapturevideo>Zrzut ekranu, potem wideo</saloncapturevideo>
 		<opt_deckselection>BIG ART - Pozycja wybranej gry</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo podczas wideo</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Wideo</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

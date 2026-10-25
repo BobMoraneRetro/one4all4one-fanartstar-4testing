@@ -11,5 +11,9 @@
 		<gamemediaseul>仅：仅自定义媒体（不回退到 gamelist）</gamemediaseul>
 		<intheme>主题文件夹 - 默认</intheme>
 		<extfolder>外部文件夹</extfolder>
+		<opt_custombuilds>高级 - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>高级 - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>高级 - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>高级 - Custom media folder</opt_extfoldergamemedia>
 	</variables>
 </theme>

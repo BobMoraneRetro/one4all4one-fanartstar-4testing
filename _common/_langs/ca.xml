@@ -183,15 +183,14 @@
 		<opt_contourboite>JOCS - Box outline (case)</opt_contourboite>
 		<opt_deckespace>JOCS - Espaiat de les capses</opt_deckespace>
 		<opt_iconenote>JOCS - Icona de puntuació</opt_iconenote>
-		<opt_custombuilds>AVANÇAT - Gamelist field used for fanart</opt_custombuilds>
-		<opt_scrap3dbox>AVANÇAT - Gamelist field used for the 3D box</opt_scrap3dbox>
-		<opt_gamemedia>AVANÇAT - Custom game media</opt_gamemedia>
-		<opt_extfoldergamemedia>AVANÇAT - Custom media folder</opt_extfoldergamemedia>
-		<opt_extfoldervideosyst>AVANÇAT - Tema específic dels sistemes</opt_extfoldervideosyst>
 		<opt_extfolderbezelsyst>AVANÇAT - Bezels dels sistemes</opt_extfolderbezelsyst>
 		<opt_extfoldermanufacturer>AVANÇAT - Logos dels editors de jocs</opt_extfoldermanufacturer>
 		<opt_extfolderfanart>AVANÇAT - Fanart dels sistemes</opt_extfolderfanart>
 		<opt_extfolderlogosyst>AVANÇAT - Logo del sistema</opt_extfolderlogosyst>
+		<opt_extfoldersalon>AVANÇAT - Ubicació dels decorats de la vista RFE Retrofist Nostalgia</opt_extfoldersalon>
+		<opt_salonecran>RFE Retrofist Nostalgia - Pantalla de la TV</opt_salonecran>
+		<salonvideoseule>Només vídeo</salonvideoseule>
+		<saloncapturevideo>Captura i després vídeo</saloncapturevideo>
 		<opt_deckselection>BIG ART - Posició del joc seleccionat</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo durant el vídeo</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Vídeo</opt_spotvideo>
@@ -230,6 +229,6 @@
 		<opt_showvideo>SHOW BIG · SMALL - Video</opt_showvideo>
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
-		<presetsalon>Fanartstar Salon (test)</presetsalon>
+		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
 	</variables>
 </theme>

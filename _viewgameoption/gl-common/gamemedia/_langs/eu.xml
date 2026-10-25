@@ -11,5 +11,9 @@
 		<gamemediaseul>Soilik: multimedia pertsonalizatua soilik (gamelist-era jo gabe)</gamemediaseul>
 		<intheme>Gaiaren karpeta - Lehenetsia</intheme>
 		<extfolder>Kanpoko karpeta</extfolder>
+		<opt_custombuilds>AURRERATUA - Gamelist field used for fanart</opt_custombuilds>
+		<opt_scrap3dbox>AURRERATUA - Gamelist field used for the 3D box</opt_scrap3dbox>
+		<opt_gamemedia>AURRERATUA - Custom game media</opt_gamemedia>
+		<opt_extfoldergamemedia>AURRERATUA - Custom media folder</opt_extfoldergamemedia>
 	</variables>
 </theme>

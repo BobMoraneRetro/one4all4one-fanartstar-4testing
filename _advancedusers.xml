@@ -51,6 +51,10 @@
 		<include name="starslow1" displayName="${speedslow1}"/>
 		<include name="starslow2" displayName="${speedslow2}"/>
 	</subset>
+	<subset name="salonecran" displayName="${opt_salonecran}" appliesTo="presetsalon">
+		<include name="videoseule" displayName="${salonvideoseule}"/>
+		<include name="capturevideo" displayName="${saloncapturevideo}"/>
+	</subset>
 	<subset name="starvideo" displayName="${opt_starvideo}" appliesTo="presetstarbox">
 		<include name="starvideoang" displayName="${starvideoang}"/>
 		<include name="starvideodef" displayName="${starvideodef}"/>

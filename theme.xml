@@ -200,6 +200,10 @@
 		<include name="intheme" displayName="${intheme}"/>
 		<include name="extfolder" displayName="${extfolder}"/>
 	</subset>
+	<subset name="perfmachine" displayName="${opt_perfmachine}">
+		<include name="perfnormal" displayName="${desactive}"/>
+		<include name="perflow" displayName="${active}"/>
+	</subset>
 	<include name="logosimple" displayName="${logosimple}">${themePath}/_viewsystoption/sl-commun/wheellook.xml</include>
 	<include>${themePath}/deactivateview.xml</include>
 	<include>${themePath}/_advancedusers.xml</include>

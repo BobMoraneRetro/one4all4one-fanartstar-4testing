@@ -169,6 +169,15 @@
 		<opt_boxorthumb>GEMAU - Bocs gêm i'w ddangos</opt_boxorthumb>
 		<opt_fanarttransition>GEMAU - Fanart transition</opt_fanarttransition>
 		<opt_fanartflou>GEMAU - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>GEMAU - Cylchdroi’r disg</opt_cdvitesse>
+		<cdnormale>Arferol</cdnormale>
+		<cdlente>Araf</cdlente>
+		<cdrapide>Cyflym</cdrapide>
+		<cdtresrapide>Cyflym iawn</cdtresrapide>
+		<cdimmobile>Llonydd</cdimmobile>
+		<opt_selectionvaleur>GEMAU - Amlygu’r gêm a ddewiswyd</opt_selectionvaleur>
+		<selegere>Ysgafn</selegere>
+		<selmarquee>Cryf</selmarquee>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -188,7 +197,8 @@
 		<opt_extfolderfanart>UWCH - Fanart y systemau</opt_extfolderfanart>
 		<opt_extfolderlogosyst>UWCH - Logo'r system</opt_extfolderlogosyst>
 		<opt_extfoldersalon>UWCH - Lleoliad cefndiroedd golwg RFE Retrofist Nostalgia</opt_extfoldersalon>
-		<opt_salonecran>RFE Retrofist Nostalgia - Sgrin y teledu</opt_salonecran>
+		<opt_perfmachine>UWCH - Modd peiriant gwan</opt_perfmachine>
+		<opt_salonecran>RETROFIST - Sgrin y teledu</opt_salonecran>
 		<salonvideoseule>Fideo yn unig</salonvideoseule>
 		<saloncapturevideo>Sgrinlun yna fideo</saloncapturevideo>
 		<opt_deckselection>BIG ART - Safle'r gêm a ddewiswyd</opt_deckselection>
@@ -196,6 +206,7 @@
 		<opt_spotvideo>SPOTLIGHT - Fideo</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Cylchdroi bocsys SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
 		<opt_starboxang>BOXART - Ongl y bocsys gemau</opt_starboxang>
+		<opt_starsupport>BOXART - Cyfrwng y gêm (disg, cetrisen)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Cyflymder yr animeiddiad sgrolio</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Maint y fideo rhagolwg</opt_starvideo>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>

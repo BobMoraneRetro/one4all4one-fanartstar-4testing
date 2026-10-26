@@ -78,7 +78,7 @@
 			<zIndex>100</zIndex>
 			<scaleOrigin>0.15 0.15</scaleOrigin>
 			<autoFade>false</autoFade>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>0.03</cornerRadius>
 				<borderSize>0.022</borderSize>
@@ -114,7 +114,7 @@
 			<origin>0.5 0.5</origin>
 			<zIndex>101</zIndex>
 			<effect>none</effect>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>0.03</cornerRadius>
 				<borderSize>0.022</borderSize>

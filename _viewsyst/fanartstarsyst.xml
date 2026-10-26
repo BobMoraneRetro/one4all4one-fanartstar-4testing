@@ -11,15 +11,15 @@
 	${manettepos} : position de la manette flottante (coin haut gauche si vidéo, place de la vidéo sinon) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Vidéo de gameplay sur la vue système »)
 	${manettetaille} : taille de la manette flottante (petite si vidéo, grande sinon) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Vidéo de gameplay sur la vue système »)
 	${manettevisible} : manette flottante affichée (option SYSTÈMES - Manette flottante) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Manette flottante (vue classique) »)
-	${metaanneepolice} : taille de l année et du fabricant, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
-	${metaanneepos} : position de l année, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
-	${metadescpolice} : taille de police de la description du système, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
-	${metadescpos} : position de la description du système, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
-	${metadescsize} : taille du bloc description du système, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
-	${metafabpos} : position du fabricant, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
-	${metastatscompacte} : opacité des statistiques sur 4 lignes (présentation compacte) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
-	${metastatsstandard} : opacité des statistiques sur 2 lignes (présentation standard) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
-	${metatitrepolice} : taille du titre du système (nom + nombre de jeux), vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système (vue classique) »)
+	${metaanneepolice} : taille de l année et du fabricant, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : présentation (vue classique) »)
+	${metaanneepos} : position de l année, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : présentation (vue classique) »)
+	${metadescpolice} : taille de police de la description du système, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : présentation (vue classique) »)
+	${metadescpos} : position de la description du système, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : présentation (vue classique) »)
+	${metadescsize} : taille du bloc description du système, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : présentation (vue classique) »)
+	${metafabpos} : position du fabricant, vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : présentation (vue classique) »)
+	${metastatscompacte} : opacité des statistiques sur 4 lignes (présentation compacte) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : affichées (vue classique) », « SYSTÈMES - Infos du système : présentation (vue classique) »)
+	${metastatsstandard} : opacité des statistiques sur 2 lignes (présentation standard) (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : affichées (vue classique) », « SYSTÈMES - Infos du système : présentation (vue classique) »)
+	${metatitrepolice} : taille du titre du système (nom + nombre de jeux), vue classique (définie dans ce fichier ; valeur selon l option « SYSTÈMES - Infos du système : présentation (vue classique) »)
 	${path_common} : dossier _common du thème (définie dans theme.xml)
 	${path_syst_logo} : dossier des logos des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${jeux}
@@ -65,6 +65,8 @@
 		<metastatsstandard ifSubset="metasyst:metacompacte">0</metastatsstandard>
 		<metastatscompacte ifSubset="metasyst:metastandard">0</metastatscompacte>
 		<metastatscompacte ifSubset="metasyst:metacompacte">1</metastatscompacte>
+		<metastatsstandard ifSubset="metadataonoff:deactivate">0</metastatsstandard>
+		<metastatscompacte ifSubset="metadataonoff:deactivate">0</metastatscompacte>
 	</variables>
 	<view name="system">
 		<carousel name="systemcarousel">
@@ -369,7 +371,7 @@
 			<zIndex>4</zIndex>
 			<offsetX>-0.6</offsetX>
 			<offsetY>0.1</offsetY>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
 				<tiltAngle>0</tiltAngle>
 				<tiltAngleX>-30</tiltAngleX>
@@ -389,7 +391,7 @@
 			<autoFade>false</autoFade>
 			<offsetX>-0.6</offsetX>
 			<offsetY>0.1</offsetY>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
 				<tiltAngle>0</tiltAngle>
 				<tiltAngleX>-30</tiltAngleX>
@@ -409,7 +411,7 @@
 			<autoFade>false</autoFade>
 						<offsetX>-0.6</offsetX>
 			<offsetY>0.1</offsetY>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
 				<tiltAngle>0</tiltAngle>
 				<tiltAngleX>-30</tiltAngleX>
@@ -907,9 +909,12 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<origin>0.5 0.5</origin>
 			<size>${manettehalotaille}</size>
 			<zIndex>8.9</zIndex>
-			<storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal">
 				<animation property="opacity" from="0" to="0.35" duration="400" mode="easeOut"/>
 				<animation property="scale" from="1" to="0.85" begin="400" duration="1600" mode="easeInOut" autoReverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow">
+				<animation property="opacity" from="0" to="0.35" duration="400" mode="easeOut"/>
 			</storyboard>
 			<storyboard event="deactivate">
 				<animation property="opacity" to="0" duration="0"/>
@@ -923,11 +928,14 @@ Ultima rulare : {binding:lastPlayedDate}</text>
 			<maxSize>${manettetaille}</maxSize>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>9</zIndex>
-			<storyboard>
+			<storyboard ifSubset="perfmachine:perfnormal">
 				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
 				<animation property="offsetY" from="0" to="-0.012" begin="400" duration="1600" mode="easeInOut" autoReverse="true" repeat="forever"/>
 				<animation property="rotation" from="0" to="-1.5" duration="1150" mode="easeInOut"/>
 				<animation property="rotation" from="-1.5" to="1.5" begin="1150" duration="2300" mode="easeInOut" autoReverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard ifSubset="perfmachine:perflow">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
 			</storyboard>
 			<storyboard event="deactivate">
 				<animation property="opacity" to="0" duration="0"/>

@@ -169,6 +169,15 @@
 		<opt_boxorthumb>SPELLEN - Weer te geven spelbox</opt_boxorthumb>
 		<opt_fanarttransition>SPELLEN - Fanart transition</opt_fanarttransition>
 		<opt_fanartflou>SPELLEN - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>SPELLEN - Schijfrotatie</opt_cdvitesse>
+		<cdnormale>Normaal</cdnormale>
+		<cdlente>Langzaam</cdlente>
+		<cdrapide>Snel</cdrapide>
+		<cdtresrapide>Zeer snel</cdtresrapide>
+		<cdimmobile>Stilstaand</cdimmobile>
+		<opt_selectionvaleur>SPELLEN - Geselecteerd spel benadrukken</opt_selectionvaleur>
+		<selegere>Licht</selegere>
+		<selmarquee>Sterk</selmarquee>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -188,7 +197,8 @@
 		<opt_extfolderfanart>GEAVANCEERD - Systeemfanart</opt_extfolderfanart>
 		<opt_extfolderlogosyst>GEAVANCEERD - Systeemlogo</opt_extfolderlogosyst>
 		<opt_extfoldersalon>GEAVANCEERD - Locatie van de achtergronden van de weergave RFE Retrofist Nostalgia</opt_extfoldersalon>
-		<opt_salonecran>RFE Retrofist Nostalgia - Tv-scherm</opt_salonecran>
+		<opt_perfmachine>GEAVANCEERD - Modus voor zwakke machines</opt_perfmachine>
+		<opt_salonecran>RETROFIST - Tv-scherm</opt_salonecran>
 		<salonvideoseule>Alleen video</salonvideoseule>
 		<saloncapturevideo>Screenshot, dan video</saloncapturevideo>
 		<opt_deckselection>BIG ART - Positie van het geselecteerde spel</opt_deckselection>
@@ -196,6 +206,7 @@
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Rotatie van de boxen SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
 		<opt_starboxang>BOXART - Hoek van de spelboxen</opt_starboxang>
+		<opt_starsupport>BOXART - Spelmedium (disc, cartridge)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Snelheid van de scrollanimatie</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Grootte van de voorbeeldvideo</opt_starvideo>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>

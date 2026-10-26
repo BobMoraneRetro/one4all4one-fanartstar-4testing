@@ -38,9 +38,25 @@
 		<include name="fanartfloumoyen" displayName="${fanartfloumoyen}">./_viewgameoption/gl-fanartstar/fanartfloumoyen.xml</include>
 		<include name="fanartfloufort" displayName="${fanartfloufort}">./_viewgameoption/gl-fanartstar/fanartfloufort.xml</include>
 	</subset>
+	<subset name="cdvitesse" displayName="${opt_cdvitesse}" appliesTo="presetstarbox,presetsalon,presetshowbig,presetshowsmall,presetspeedbull,presettraviolta_alt">
+		<include name="normale" displayName="${cdnormale}"/>
+		<include name="lente" displayName="${cdlente}"/>
+		<include name="rapide" displayName="${cdrapide}"/>
+		<include name="tresrapide" displayName="${cdtresrapide}"/>
+		<include name="immobile" displayName="${cdimmobile}"/>
+	</subset>
+	<subset name="selectionvaleur" displayName="${opt_selectionvaleur}" appliesTo="presetstarbox,presetsalon,presetdeck,presetspotlight,presetsquare,presetstar169,presetstar43,presetshowbig,presetshowsmall,presetspeedbull,presettraviolta_alt">
+		<include name="aucune" displayName="${desactive}"/>
+		<include name="legere" displayName="${selegere}"/>
+		<include name="marquee" displayName="${selmarquee}"/>
+	</subset>
 	<subset name="fanartstarrotated" displayName="${opt_fanartstarrotated}" appliesTo="presetstarbox">
 		<include name="starrotate" displayName="${starrotate}">./_viewgameoption/gl-fanartstar/rotatedon.xml</include>
 		<include name="nostarrotate" displayName="${nostarrotate}">./_viewgameoption/gl-fanartstar/rotatedoff.xml</include>
+	</subset>
+	<subset name="starsupport" displayName="${opt_starsupport}" appliesTo="presetstarbox">
+		<include name="supportoui" displayName="${active}"/>
+		<include name="supportnon" displayName="${desactive}"/>
 	</subset>
 	<subset name="starboxang" displayName="${opt_starboxang}" appliesTo="presetstarbox,presetsalon">
 		<include name="active" displayName="${active}"/>
@@ -50,10 +66,6 @@
 		<include name="stardefault" displayName="${default}"/>
 		<include name="starslow1" displayName="${speedslow1}"/>
 		<include name="starslow2" displayName="${speedslow2}"/>
-	</subset>
-	<subset name="salonecran" displayName="${opt_salonecran}" appliesTo="presetsalon">
-		<include name="videoseule" displayName="${salonvideoseule}"/>
-		<include name="capturevideo" displayName="${saloncapturevideo}"/>
 	</subset>
 	<subset name="starvideo" displayName="${opt_starvideo}" appliesTo="presetstarbox">
 		<include name="starvideoang" displayName="${starvideoang}"/>
@@ -85,6 +97,10 @@
 		<include name="droite" displayName="${spotvideodroite}"/>
 		<include name="gauche" displayName="${spotvideogauche}"/>
 		<include name="aucune" displayName="${spotvideoaucune}"/>
+	</subset>
+	<subset name="salonecran" displayName="${opt_salonecran}" appliesTo="presetsalon">
+		<include name="videoseule" displayName="${salonvideoseule}"/>
+		<include name="capturevideo" displayName="${saloncapturevideo}"/>
 	</subset>
 	<subset name="boite3d" displayName="${opt_boite3d}" appliesTo="presetshowbig,presetshowsmall">
 		<include name="boite3dactive" displayName="${active}"/>

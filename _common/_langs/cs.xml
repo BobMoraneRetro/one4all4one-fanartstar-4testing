@@ -169,6 +169,15 @@
 		<opt_boxorthumb>HRY - Krabice hry k zobrazení</opt_boxorthumb>
 		<opt_fanarttransition>HRY - Fanart transition</opt_fanarttransition>
 		<opt_fanartflou>HRY - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>HRY - Otáčení disku</opt_cdvitesse>
+		<cdnormale>Normální</cdnormale>
+		<cdlente>Pomalé</cdlente>
+		<cdrapide>Rychlé</cdrapide>
+		<cdtresrapide>Velmi rychlé</cdtresrapide>
+		<cdimmobile>Nehybný</cdimmobile>
+		<opt_selectionvaleur>HRY - Zvýraznit vybranou hru</opt_selectionvaleur>
+		<selegere>Lehké</selegere>
+		<selmarquee>Výrazné</selmarquee>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -188,7 +197,8 @@
 		<opt_extfolderfanart>POKROČILÉ - Fanart systémů</opt_extfolderfanart>
 		<opt_extfolderlogosyst>POKROČILÉ - Logo systému</opt_extfolderlogosyst>
 		<opt_extfoldersalon>POKROČILÉ - Umístění pozadí zobrazení RFE Retrofist Nostalgia</opt_extfoldersalon>
-		<opt_salonecran>RFE Retrofist Nostalgia - Obrazovka TV</opt_salonecran>
+		<opt_perfmachine>POKROČILÉ - Režim pro slabé stroje</opt_perfmachine>
+		<opt_salonecran>RETROFIST - Obrazovka TV</opt_salonecran>
 		<salonvideoseule>Pouze video</salonvideoseule>
 		<saloncapturevideo>Snímek, poté video</saloncapturevideo>
 		<opt_deckselection>BIG ART - Pozice vybrané hry</opt_deckselection>
@@ -196,6 +206,7 @@
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Otočení krabic SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
 		<opt_starboxang>BOXART - Úhel krabic her</opt_starboxang>
+		<opt_starsupport>BOXART - Nosič hry (disk, cartridge)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Rychlost animace posouvání</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Velikost náhledového videa</opt_starvideo>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>

@@ -169,6 +169,15 @@
 		<opt_boxorthumb>SPEL - Spelbox att visa</opt_boxorthumb>
 		<opt_fanarttransition>SPEL - Fanart transition</opt_fanarttransition>
 		<opt_fanartflou>SPEL - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>SPEL - Skivans rotation</opt_cdvitesse>
+		<cdnormale>Normal</cdnormale>
+		<cdlente>Långsam</cdlente>
+		<cdrapide>Snabb</cdrapide>
+		<cdtresrapide>Mycket snabb</cdtresrapide>
+		<cdimmobile>Stilla</cdimmobile>
+		<opt_selectionvaleur>SPEL - Framhäv valt spel</opt_selectionvaleur>
+		<selegere>Lätt</selegere>
+		<selmarquee>Tydlig</selmarquee>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -188,7 +197,8 @@
 		<opt_extfolderfanart>AVANCERAT - Systemens fanart</opt_extfolderfanart>
 		<opt_extfolderlogosyst>AVANCERAT - Systemlogotyp</opt_extfolderlogosyst>
 		<opt_extfoldersalon>AVANCERAT - Plats för bakgrunderna i vyn RFE Retrofist Nostalgia</opt_extfoldersalon>
-		<opt_salonecran>RFE Retrofist Nostalgia - TV-skärm</opt_salonecran>
+		<opt_perfmachine>AVANCERAT - Läge för svaga datorer</opt_perfmachine>
+		<opt_salonecran>RETROFIST - TV-skärm</opt_salonecran>
 		<salonvideoseule>Endast video</salonvideoseule>
 		<saloncapturevideo>Skärmbild, sedan video</saloncapturevideo>
 		<opt_deckselection>BIG ART - Placering av valt spel</opt_deckselection>
@@ -196,6 +206,7 @@
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Rotation av boxarna SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
 		<opt_starboxang>BOXART - Vinkel på spelboxarna</opt_starboxang>
+		<opt_starsupport>BOXART - Spelmedium (skiva, kassett)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Rullningsanimationens hastighet</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Förhandsvideons storlek</opt_starvideo>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>

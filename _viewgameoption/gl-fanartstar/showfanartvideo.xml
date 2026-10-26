@@ -22,7 +22,7 @@
 			<pos>0.98 0.04</pos>
 			<maxSize>0.34 0.34</maxSize>
 			<zIndex>11</zIndex>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>1</cornerRadius>
 				<borderSize>0.01</borderSize>
@@ -54,7 +54,7 @@
 			<pos>0.98 0.04</pos>
 			<maxSize>0.34 0.34</maxSize>
 			<zIndex>11</zIndex>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>1</cornerRadius>
 				<borderSize>0.01</borderSize>

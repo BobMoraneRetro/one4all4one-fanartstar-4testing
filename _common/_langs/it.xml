@@ -169,6 +169,15 @@
 		<opt_boxorthumb>GIOCHI - Scatola del gioco da mostrare</opt_boxorthumb>
 		<opt_fanarttransition>GIOCHI - Transizione dei fanart</opt_fanarttransition>
 		<opt_fanartflou>GIOCHI - Sfocatura dei fanart</opt_fanartflou>
+		<opt_cdvitesse>GIOCHI - Rotazione del disco</opt_cdvitesse>
+		<cdnormale>Normale</cdnormale>
+		<cdlente>Lenta</cdlente>
+		<cdrapide>Veloce</cdrapide>
+		<cdtresrapide>Molto veloce</cdtresrapide>
+		<cdimmobile>Immobile</cdimmobile>
+		<opt_selectionvaleur>GIOCHI - Evidenzia il gioco selezionato</opt_selectionvaleur>
+		<selegere>Leggera</selegere>
+		<selmarquee>Marcata</selmarquee>
 		<fanartflouleger>Leggera</fanartflouleger>
 		<fanartfloumoyen>Media</fanartfloumoyen>
 		<fanartfloufort>Forte</fanartfloufort>
@@ -188,7 +197,8 @@
 		<opt_extfolderfanart>AVANZATE - Fanart dei sistemi</opt_extfolderfanart>
 		<opt_extfolderlogosyst>AVANZATE - Logo del sistema</opt_extfolderlogosyst>
 		<opt_extfoldersalon>AVANZATE - Posizione degli sfondi della vista RFE Retrofist Nostalgia</opt_extfoldersalon>
-		<opt_salonecran>RFE Retrofist Nostalgia - Schermo della TV</opt_salonecran>
+		<opt_perfmachine>AVANZATE - Modalità macchina poco potente</opt_perfmachine>
+		<opt_salonecran>RETROFIST - Schermo della TV</opt_salonecran>
 		<salonvideoseule>Solo video</salonvideoseule>
 		<saloncapturevideo>Screenshot poi video</saloncapturevideo>
 		<opt_deckselection>BIG ART - Posizione del gioco selezionato</opt_deckselection>
@@ -196,6 +206,7 @@
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Rotazione delle scatole SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
 		<opt_starboxang>BOXART - Angolo delle scatole di gioco</opt_starboxang>
+		<opt_starsupport>BOXART - Supporto del gioco (disco, cartuccia)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Velocità dell'animazione di scorrimento</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Dimensione del video di anteprima</opt_starvideo>
 		<opt_starvideoanim>BOXART - Comparsa del video</opt_starvideoanim>

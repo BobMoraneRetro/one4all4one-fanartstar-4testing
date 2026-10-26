@@ -169,6 +169,15 @@
 		<opt_boxorthumb>OYUNLAR - Gösterilecek oyun kutusu</opt_boxorthumb>
 		<opt_fanarttransition>OYUNLAR - Fanart transition</opt_fanarttransition>
 		<opt_fanartflou>OYUNLAR - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>OYUNLAR - Disk dönüşü</opt_cdvitesse>
+		<cdnormale>Normal</cdnormale>
+		<cdlente>Yavaş</cdlente>
+		<cdrapide>Hızlı</cdrapide>
+		<cdtresrapide>Çok hızlı</cdtresrapide>
+		<cdimmobile>Sabit</cdimmobile>
+		<opt_selectionvaleur>OYUNLAR - Seçili oyunu öne çıkar</opt_selectionvaleur>
+		<selegere>Hafif</selegere>
+		<selmarquee>Belirgin</selmarquee>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -188,7 +197,8 @@
 		<opt_extfolderfanart>GELİŞMİŞ - Sistem fanartı</opt_extfolderfanart>
 		<opt_extfolderlogosyst>GELİŞMİŞ - Sistem logosu</opt_extfolderlogosyst>
 		<opt_extfoldersalon>GELİŞMİŞ - RFE Retrofist Nostalgia görünümü arka planlarının konumu</opt_extfoldersalon>
-		<opt_salonecran>RFE Retrofist Nostalgia - TV ekranı</opt_salonecran>
+		<opt_perfmachine>GELİŞMİŞ - Düşük güçlü makine modu</opt_perfmachine>
+		<opt_salonecran>RETROFIST - TV ekranı</opt_salonecran>
 		<salonvideoseule>Yalnızca video</salonvideoseule>
 		<saloncapturevideo>Önce ekran görüntüsü, sonra video</saloncapturevideo>
 		<opt_deckselection>BIG ART - Seçili oyunun konumu</opt_deckselection>
@@ -196,6 +206,7 @@
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - SNES, N64, NGAGE, Solarus kutularının döndürülmesi</opt_fanartstarrotated>
 		<opt_starboxang>BOXART - Oyun kutularının açısı</opt_starboxang>
+		<opt_starsupport>BOXART - Oyun ortamı (disk, kartuş)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Kaydırma animasyonu hızı</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Önizleme videosu boyutu</opt_starvideo>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>

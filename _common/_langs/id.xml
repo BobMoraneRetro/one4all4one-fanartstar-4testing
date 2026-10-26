@@ -169,6 +169,15 @@
 		<opt_boxorthumb>GAME - Kotak game yang ditampilkan</opt_boxorthumb>
 		<opt_fanarttransition>GAME - Fanart transition</opt_fanarttransition>
 		<opt_fanartflou>GAME - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>GAME - Putaran cakram</opt_cdvitesse>
+		<cdnormale>Normal</cdnormale>
+		<cdlente>Lambat</cdlente>
+		<cdrapide>Cepat</cdrapide>
+		<cdtresrapide>Sangat cepat</cdtresrapide>
+		<cdimmobile>Diam</cdimmobile>
+		<opt_selectionvaleur>GAME - Sorot game yang dipilih</opt_selectionvaleur>
+		<selegere>Ringan</selegere>
+		<selmarquee>Kuat</selmarquee>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -188,7 +197,8 @@
 		<opt_extfolderfanart>LANJUTAN - Fanart sistem</opt_extfolderfanart>
 		<opt_extfolderlogosyst>LANJUTAN - Logo sistem</opt_extfolderlogosyst>
 		<opt_extfoldersalon>LANJUTAN - Lokasi latar tampilan RFE Retrofist Nostalgia</opt_extfoldersalon>
-		<opt_salonecran>RFE Retrofist Nostalgia - Layar TV</opt_salonecran>
+		<opt_perfmachine>LANJUTAN - Mode mesin berdaya rendah</opt_perfmachine>
+		<opt_salonecran>RETROFIST - Layar TV</opt_salonecran>
 		<salonvideoseule>Hanya video</salonvideoseule>
 		<saloncapturevideo>Tangkapan layar lalu video</saloncapturevideo>
 		<opt_deckselection>BIG ART - Posisi game yang dipilih</opt_deckselection>
@@ -196,6 +206,7 @@
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Rotasi kotak SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
 		<opt_starboxang>BOXART - Sudut kotak game</opt_starboxang>
+		<opt_starsupport>BOXART - Media game (cakram, kartrid)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Kecepatan animasi gulir</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Ukuran video pratinjau</opt_starvideo>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>

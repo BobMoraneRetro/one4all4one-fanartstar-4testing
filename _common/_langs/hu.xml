@@ -169,6 +169,15 @@
 		<opt_boxorthumb>JÁTÉKOK - Megjelenítendő játékdoboz</opt_boxorthumb>
 		<opt_fanarttransition>JÁTÉKOK - Fanart transition</opt_fanarttransition>
 		<opt_fanartflou>JÁTÉKOK - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>JÁTÉKOK - Lemez forgása</opt_cdvitesse>
+		<cdnormale>Normál</cdnormale>
+		<cdlente>Lassú</cdlente>
+		<cdrapide>Gyors</cdrapide>
+		<cdtresrapide>Nagyon gyors</cdtresrapide>
+		<cdimmobile>Álló</cdimmobile>
+		<opt_selectionvaleur>JÁTÉKOK - Kiválasztott játék kiemelése</opt_selectionvaleur>
+		<selegere>Enyhe</selegere>
+		<selmarquee>Erős</selmarquee>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -188,7 +197,8 @@
 		<opt_extfolderfanart>HALADÓ - Rendszer fanart</opt_extfolderfanart>
 		<opt_extfolderlogosyst>HALADÓ - Rendszerlogó</opt_extfolderlogosyst>
 		<opt_extfoldersalon>HALADÓ - Az RFE Retrofist Nostalgia nézet háttereinek helye</opt_extfoldersalon>
-		<opt_salonecran>RFE Retrofist Nostalgia - TV-képernyő</opt_salonecran>
+		<opt_perfmachine>HALADÓ - Gyenge gép mód</opt_perfmachine>
+		<opt_salonecran>RETROFIST - TV-képernyő</opt_salonecran>
 		<salonvideoseule>Csak videó</salonvideoseule>
 		<saloncapturevideo>Képernyőkép, majd videó</saloncapturevideo>
 		<opt_deckselection>BIG ART - A kiválasztott játék helye</opt_deckselection>
@@ -196,6 +206,7 @@
 		<opt_spotvideo>SPOTLIGHT - Videó</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - SNES, N64, NGAGE, Solarus dobozok elforgatása</opt_fanartstarrotated>
 		<opt_starboxang>BOXART - A játékdobozok szöge</opt_starboxang>
+		<opt_starsupport>BOXART - Játékhordozó (lemez, kazetta)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - A görgetési animáció sebessége</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Előnézeti videó mérete</opt_starvideo>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>

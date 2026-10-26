@@ -169,6 +169,15 @@
 		<opt_boxorthumb>TRÒ CHƠI - Hộp trò chơi hiển thị</opt_boxorthumb>
 		<opt_fanarttransition>TRÒ CHƠI - Fanart transition</opt_fanarttransition>
 		<opt_fanartflou>TRÒ CHƠI - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>TRÒ CHƠI - Xoay đĩa</opt_cdvitesse>
+		<cdnormale>Bình thường</cdnormale>
+		<cdlente>Chậm</cdlente>
+		<cdrapide>Nhanh</cdrapide>
+		<cdtresrapide>Rất nhanh</cdtresrapide>
+		<cdimmobile>Đứng yên</cdimmobile>
+		<opt_selectionvaleur>TRÒ CHƠI - Làm nổi bật game được chọn</opt_selectionvaleur>
+		<selegere>Nhẹ</selegere>
+		<selmarquee>Rõ</selmarquee>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -188,7 +197,8 @@
 		<opt_extfolderfanart>NÂNG CAO - Fanart hệ máy</opt_extfolderfanart>
 		<opt_extfolderlogosyst>NÂNG CAO - Logo hệ máy</opt_extfolderlogosyst>
 		<opt_extfoldersalon>NÂNG CAO - Vị trí hình nền của chế độ xem RFE Retrofist Nostalgia</opt_extfoldersalon>
-		<opt_salonecran>RFE Retrofist Nostalgia - Màn hình TV</opt_salonecran>
+		<opt_perfmachine>NÂNG CAO - Chế độ máy yếu</opt_perfmachine>
+		<opt_salonecran>RETROFIST - Màn hình TV</opt_salonecran>
 		<salonvideoseule>Chỉ video</salonvideoseule>
 		<saloncapturevideo>Ảnh chụp rồi video</saloncapturevideo>
 		<opt_deckselection>BIG ART - Vị trí trò chơi được chọn</opt_deckselection>
@@ -196,6 +206,7 @@
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Xoay hộp SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
 		<opt_starboxang>BOXART - Góc của hộp trò chơi</opt_starboxang>
+		<opt_starsupport>BOXART - Phương tiện game (đĩa, băng)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Tốc độ hiệu ứng cuộn</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Kích thước video xem trước</opt_starvideo>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>

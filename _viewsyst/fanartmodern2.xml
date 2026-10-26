@@ -56,7 +56,7 @@
 						<minSize>1.15 1.39</minSize>
 						<path>${firstsystemimagedef}</path>
 						<zIndex>5</zIndex>
-						<shader>
+						<shader ifSubset="perfmachine:perfnormal">
 							<path>:/shaders/blur.glsl</path>
 							<pos>0 0</pos>
 							<blur>10</blur>
@@ -92,9 +92,12 @@
 						<storyboard event="open">
 							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
 						</storyboard>
-						<storyboard event="activate">
+						<storyboard ifSubset="perfmachine:perfnormal" event="activate">
 							<animation property="scale" to="1.2" begin="" duration="350" mode="easeOut"/>
 							<animation property="color" from="858585ff" to="FFFFFFFF" begin="10" duration="150" mode="Linear" autoReverse="true" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perflow" event="activate">
+							<animation property="scale" to="1.2" begin="" duration="350" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="deactivate">
 							<animation property="scale" to="1" begin="" duration="350" mode="easeOut"/>
@@ -116,10 +119,13 @@
 						<storyboard event="open">
 							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
 						</storyboard>
-						<storyboard event="activate">
+						<storyboard ifSubset="perfmachine:perfnormal" event="activate">
 							<animation property="color" to="FFFFFFFF" begin="" duration="150" mode="Linear"/>
 							<animation property="scale" to="1.2" begin="" duration="350" mode="easeOut"/>
 							<animation property="color" from="858585ff" to="FFFFFFFF" begin="10" duration="150" mode="Linear" autoReverse="true" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perflow" event="activate">
+							<animation property="scale" to="1.2" begin="" duration="350" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="deactivate">
 							<animation property="scale" to="1" begin="" duration="350" mode="easeOut"/>
@@ -200,7 +206,7 @@
 			<effect>none</effect>
 			<zIndex>89</zIndex>
 			<autoFade>false</autoFade>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
 				<tiltAngle>0</tiltAngle>
 				<tiltAngleX>30</tiltAngleX>
@@ -219,7 +225,7 @@
 			<effect>none</effect>
 			<zIndex>55</zIndex>
 			<autoFade>false</autoFade>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
 				<tiltAngle>0</tiltAngle>
 				<tiltAngleX>30</tiltAngleX>
@@ -238,7 +244,7 @@
 			<origin>1 0.5</origin>
 			<effect>none</effect>
 			<zIndex>80</zIndex>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
 				<tiltAngle>0</tiltAngle>
 				<tiltAngleX>30</tiltAngleX>

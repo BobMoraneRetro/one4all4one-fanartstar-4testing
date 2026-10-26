@@ -169,6 +169,15 @@
 		<opt_boxorthumb>ІГРИ - Коробка гри для відображення</opt_boxorthumb>
 		<opt_fanarttransition>ІГРИ - Fanart transition</opt_fanarttransition>
 		<opt_fanartflou>ІГРИ - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>ІГРИ - Обертання диска</opt_cdvitesse>
+		<cdnormale>Звичайне</cdnormale>
+		<cdlente>Повільне</cdlente>
+		<cdrapide>Швидке</cdrapide>
+		<cdtresrapide>Дуже швидке</cdtresrapide>
+		<cdimmobile>Нерухомий</cdimmobile>
+		<opt_selectionvaleur>ІГРИ - Виділяти вибрану гру</opt_selectionvaleur>
+		<selegere>Слабко</selegere>
+		<selmarquee>Сильно</selmarquee>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -188,7 +197,8 @@
 		<opt_extfolderfanart>ДОДАТКОВО - Фанарт систем</opt_extfolderfanart>
 		<opt_extfolderlogosyst>ДОДАТКОВО - Логотип системи</opt_extfolderlogosyst>
 		<opt_extfoldersalon>ДОДАТКОВО - Розташування фонів виду RFE Retrofist Nostalgia</opt_extfoldersalon>
-		<opt_salonecran>RFE Retrofist Nostalgia - Екран ТБ</opt_salonecran>
+		<opt_perfmachine>ДОДАТКОВО - Режим для слабких машин</opt_perfmachine>
+		<opt_salonecran>RETROFIST - Екран ТБ</opt_salonecran>
 		<salonvideoseule>Лише відео</salonvideoseule>
 		<saloncapturevideo>Знімок, потім відео</saloncapturevideo>
 		<opt_deckselection>BIG ART - Положення вибраної гри</opt_deckselection>
@@ -196,6 +206,7 @@
 		<opt_spotvideo>SPOTLIGHT - Відео</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Поворот коробок SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
 		<opt_starboxang>BOXART - Кут коробок ігор</opt_starboxang>
+		<opt_starsupport>BOXART - Носій гри (диск, картридж)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Швидкість анімації прокручування</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Розмір відео попереднього перегляду</opt_starvideo>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>

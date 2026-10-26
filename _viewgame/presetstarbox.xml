@@ -44,11 +44,14 @@
 			<path>${media_fanart}</path>
 			<autoFade>false</autoFade>
 			<pos>0 0</pos>
+			<pos ifSubset="perfmachine:perflow">0.5 0.5</pos>
 			<size>1 1</size>
+			<size ifSubset="perfmachine:perflow">0 1</size>
 			<origin>0 0</origin>
+			<origin ifSubset="perfmachine:perflow">0.5 0.5</origin>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>2</zIndex>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/fanart_bord_repete.glsl</path>
 				<hauteur>0.8</hauteur>
 				<decalageHaut>0</decalageHaut>
@@ -107,7 +110,7 @@
 			<zIndex>79</zIndex>
 			<scaleOrigin>0.15 0.15</scaleOrigin>
 			<autoFade>false</autoFade>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>0</cornerRadius>
 				<borderSize>0.01</borderSize>
@@ -144,7 +147,7 @@
 			<origin>1 0.5</origin>
 			<effect>none</effect>
 			<zIndex>80</zIndex>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>0</cornerRadius>
 				<borderSize>0.01</borderSize>
@@ -163,7 +166,7 @@
 			<zIndex>79</zIndex>
 			<scaleOrigin>0.15 0.15</scaleOrigin>
 			<autoFade>false</autoFade>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
 				<tiltAngle>0</tiltAngle>
 				<tiltAngleX>30</tiltAngleX>
@@ -197,7 +200,7 @@
 			<scaleOrigin>0.15 0.15</scaleOrigin>
 			<linearSmooth>true</linearSmooth>
 			<autoFade>false</autoFade>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
 				<tiltAngle>0</tiltAngle>
 				<tiltAngleX>30</tiltAngleX>
@@ -214,7 +217,7 @@
 			<scaleOrigin>0.15 0.15</scaleOrigin>
 			<linearSmooth>true</linearSmooth>
 			<autoFade>false</autoFade>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
 				<tiltAngle>0</tiltAngle>
 				<tiltAngleX>30</tiltAngleX>
@@ -229,7 +232,7 @@
 			<origin>1 0.5</origin>
 			<effect>none</effect>
 			<zIndex>80</zIndex>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
 				<tiltAngle>0</tiltAngle>
 				<tiltAngleX>30</tiltAngleX>

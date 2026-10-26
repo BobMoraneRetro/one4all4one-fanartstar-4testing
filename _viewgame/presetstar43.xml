@@ -72,6 +72,8 @@
 			<selectionMode>image</selectionMode>
 			<imageSizeMode>minSize</imageSizeMode>
 			<imageColor>858585ff</imageColor>
+			<imageColor ifSubset="selectionvaleur:legere">858585B3</imageColor>
+			<imageColor ifSubset="selectionvaleur:marquee">85858573</imageColor>
 		</gridtile>
 		<gridtile name="selected">
 			<padding>6 6</padding>

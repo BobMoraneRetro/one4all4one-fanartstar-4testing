@@ -169,6 +169,15 @@
 		<opt_boxorthumb>游戏 - 要显示的游戏盒子</opt_boxorthumb>
 		<opt_fanarttransition>游戏 - Fanart transition</opt_fanarttransition>
 		<opt_fanartflou>游戏 - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>游戏 - 光盘旋转</opt_cdvitesse>
+		<cdnormale>正常</cdnormale>
+		<cdlente>慢速</cdlente>
+		<cdrapide>快速</cdrapide>
+		<cdtresrapide>极快</cdtresrapide>
+		<cdimmobile>静止</cdimmobile>
+		<opt_selectionvaleur>游戏 - 突出显示所选游戏</opt_selectionvaleur>
+		<selegere>轻微</selegere>
+		<selmarquee>明显</selmarquee>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -188,7 +197,8 @@
 		<opt_extfolderfanart>高级 - 系统背景图</opt_extfolderfanart>
 		<opt_extfolderlogosyst>高级 - 系统标志</opt_extfolderlogosyst>
 		<opt_extfoldersalon>高级 - RFE Retrofist Nostalgia 视图背景位置</opt_extfoldersalon>
-		<opt_salonecran>RFE Retrofist Nostalgia - 电视屏幕</opt_salonecran>
+		<opt_perfmachine>高级 - 低性能设备模式</opt_perfmachine>
+		<opt_salonecran>RETROFIST - 电视屏幕</opt_salonecran>
 		<salonvideoseule>仅视频</salonvideoseule>
 		<saloncapturevideo>先截图后视频</saloncapturevideo>
 		<opt_deckselection>BIG ART - 所选游戏的位置</opt_deckselection>
@@ -196,6 +206,7 @@
 		<opt_spotvideo>SPOTLIGHT - 视频</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - 旋转 SNES、N64、NGAGE、Solarus 盒子</opt_fanartstarrotated>
 		<opt_starboxang>BOXART - 游戏盒子角度</opt_starboxang>
+		<opt_starsupport>BOXART - 游戏介质（光盘、卡带）</opt_starsupport>
 		<opt_boxstarspeed>BOXART - 滚动动画速度</opt_boxstarspeed>
 		<opt_starvideo>BOXART - 预览视频大小</opt_starvideo>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>

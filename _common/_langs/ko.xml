@@ -169,6 +169,15 @@
 		<opt_boxorthumb>게임 - 표시할 게임 박스</opt_boxorthumb>
 		<opt_fanarttransition>게임 - Fanart transition</opt_fanarttransition>
 		<opt_fanartflou>게임 - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>게임 - 디스크 회전</opt_cdvitesse>
+		<cdnormale>보통</cdnormale>
+		<cdlente>느리게</cdlente>
+		<cdrapide>빠르게</cdrapide>
+		<cdtresrapide>매우 빠르게</cdtresrapide>
+		<cdimmobile>정지</cdimmobile>
+		<opt_selectionvaleur>게임 - 선택한 게임 강조</opt_selectionvaleur>
+		<selegere>약하게</selegere>
+		<selmarquee>강하게</selmarquee>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -188,7 +197,8 @@
 		<opt_extfolderfanart>고급 - 시스템 팬아트</opt_extfolderfanart>
 		<opt_extfolderlogosyst>고급 - 시스템 로고</opt_extfolderlogosyst>
 		<opt_extfoldersalon>고급 - RFE Retrofist Nostalgia 보기 배경 위치</opt_extfoldersalon>
-		<opt_salonecran>RFE Retrofist Nostalgia - TV 화면</opt_salonecran>
+		<opt_perfmachine>고급 - 저사양 기기 모드</opt_perfmachine>
+		<opt_salonecran>RETROFIST - TV 화면</opt_salonecran>
 		<salonvideoseule>동영상만</salonvideoseule>
 		<saloncapturevideo>스크린샷 후 동영상</saloncapturevideo>
 		<opt_deckselection>BIG ART - 선택한 게임의 위치</opt_deckselection>
@@ -196,6 +206,7 @@
 		<opt_spotvideo>SPOTLIGHT - 동영상</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - SNES, N64, NGAGE, Solarus 박스 회전</opt_fanartstarrotated>
 		<opt_starboxang>BOXART - 게임 박스 각도</opt_starboxang>
+		<opt_starsupport>BOXART - 게임 매체 (디스크, 카트리지)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - 스크롤 애니메이션 속도</opt_boxstarspeed>
 		<opt_starvideo>BOXART - 미리보기 영상 크기</opt_starvideo>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>

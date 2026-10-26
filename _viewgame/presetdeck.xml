@@ -38,11 +38,15 @@
 	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${noteicone} : icône de notation (étoile, cœur, manette...) (définie dans _viewgameoption/gl-common/options_note.xml ; valeur selon l option « JEUX - Icône de notation »)
+	${selopacite} : opacité des jeux non sélectionnés dans les grilles (1, 0.7 ou 0.45) (définie dans ce fichier ; valeur selon l option « JEUX - Mise en valeur du jeu sélectionné »)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${decknormal}, ${gametimelabel}, ${lastgamelabel}, ${noplaycount}, ${noplayerdata}, ${opt_deckespace}, ${presetdeck}, ${retourdossier}
 -->
 <theme>
 	<formatVersion>7</formatVersion>
 	<variables>
+		<selopacite ifSubset="selectionvaleur:legere">0.7</selopacite>
+		<selopacite ifSubset="selectionvaleur:marquee">0.45</selopacite>
+		<selopacite ifSubset="selectionvaleur:aucune">1</selopacite>
 		<deckpolice>${themePath}/_common/fonts/Cabin-Bold.ttf</deckpolice>
 		<deckpolicejoueurs>${themePath}/_common/fonts/players.ttf</deckpolicejoueurs>
 		<deckgrisinfo>C0C5CA</deckgrisinfo>
@@ -119,6 +123,7 @@
 			<itemTemplate>
 				<container>
 					<image name="sansboite">
+						<opacity>${selopacite}</opacity>
 						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing} &amp;&amp; {game:rom} != '..'</visible>
 						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing} &amp;&amp; {game:rom} != '..'</visible>
 						<path>${intfanartfresh}</path>
@@ -127,7 +132,7 @@
 						<minSize>1 1</minSize>
 						<saturation>0.7</saturation>
 						<linearSmooth>true</linearSmooth>
-						<shader>
+						<shader ifSubset="perfmachine:perfnormal">
 							<path>${themePath}/_common/shaders/border_dvd_case_deck.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
@@ -172,14 +177,17 @@
 							<animation property="shader.haloEteint" from="1" to="0" begin="200" duration="450" mode="easeOut"/>
 							<animation property="shader.refletPhase" from="0" to="1" begin="350" duration="1200" mode="easeInOut"/>
 							<animation property="shader.refletPhase" from="-3" to="1" begin="1550" duration="8000" mode="linear" repeat="forever"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="deactivate" ifSubset="deckselection:centre">
 							<animation property="scale" from="1.08" to="1" duration="150" mode="easeOut"/>
 							<animation property="shader.haloEteint" from="1" to="1" duration="0"/>
 							<animation property="shader.refletPhase" from="0" to="0" duration="0"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
 						</storyboard>
 					</image>
 					<image name="sansboitelogo">
+						<opacity>${selopacite}</opacity>
 						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing} &amp;&amp; {game:rom} != '..'</visible>
 						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing} &amp;&amp; {game:rom} != '..'</visible>
 						<path>${media_marquee}</path>
@@ -190,14 +198,23 @@
 						<scaleOrigin>0 0</scaleOrigin>
 						<storyboard event="activate" ifSubset="deckselection:centre">
 							<animation property="scale" from="1" to="1.08" duration="150" mode="easeOut"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="deactivate" ifSubset="deckselection:centre">
 							<animation property="scale" from="1.08" to="1" duration="150" mode="easeOut"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
 						</storyboard>
 					</image>
 					<text name="sansboitenom">
+						<opacity>${selopacite}</opacity>
 						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing} &amp;&amp; ${media_marquee_missing} &amp;&amp; {game:rom} != '..'</visible>
 						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing} &amp;&amp; ${media_marquee_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<storyboard event="activate">
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
 						<text>{game:name}</text>
 						<pos>0.5 0.5</pos>
 						<origin>0.5 0.5</origin>
@@ -218,6 +235,7 @@
 						</storyboard>
 					</text>
 					<image name="retourfond">
+						<opacity>${selopacite}</opacity>
 						<visible>{game:rom} == '..'</visible>
 						<path>${intfanartfresh}</path>
 						<pos>0.5 0.5</pos>
@@ -226,7 +244,7 @@
 						<saturation>0.4</saturation>
 						<color>5A5A5AFF</color>
 						<linearSmooth>true</linearSmooth>
-						<shader>
+						<shader ifSubset="perfmachine:perfnormal">
 							<path>${themePath}/_common/shaders/border_dvd_case_deck.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
@@ -271,14 +289,17 @@
 							<animation property="shader.haloEteint" from="1" to="0" begin="200" duration="450" mode="easeOut"/>
 							<animation property="shader.refletPhase" from="0" to="1" begin="350" duration="1200" mode="easeInOut"/>
 							<animation property="shader.refletPhase" from="-3" to="1" begin="1550" duration="8000" mode="linear" repeat="forever"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="deactivate" ifSubset="deckselection:centre">
 							<animation property="scale" from="1.08" to="1" duration="150" mode="easeOut"/>
 							<animation property="shader.haloEteint" from="1" to="1" duration="0"/>
 							<animation property="shader.refletPhase" from="0" to="0" duration="0"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
 						</storyboard>
 					</image>
 					<image name="retourfleche">
+						<opacity>${selopacite}</opacity>
 						<visible>{game:rom} == '..'</visible>
 						<path>${themePath}/_viewgame/commun/retour/retour.png</path>
 						<pos>0.5 0.42</pos>
@@ -288,12 +309,15 @@
 						<scaleOrigin>0 0</scaleOrigin>
 						<storyboard event="activate" ifSubset="deckselection:centre">
 							<animation property="scale" from="1" to="1.08" duration="150" mode="easeOut"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="deactivate" ifSubset="deckselection:centre">
 							<animation property="scale" from="1.08" to="1" duration="150" mode="easeOut"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
 						</storyboard>
 					</image>
 					<image name="retourlogo">
+						<opacity>${selopacite}</opacity>
 						<visible>{game:rom} == '..'</visible>
 						<path>${media_marquee}</path>
 						<pos>0.5 0.72</pos>
@@ -303,12 +327,15 @@
 						<scaleOrigin>0 0</scaleOrigin>
 						<storyboard event="activate" ifSubset="deckselection:centre">
 							<animation property="scale" from="1" to="1.08" duration="150" mode="easeOut"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="deactivate" ifSubset="deckselection:centre">
 							<animation property="scale" from="1.08" to="1" duration="150" mode="easeOut"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
 						</storyboard>
 					</image>
 					<image name="boite">
+						<opacity>${selopacite}</opacity>
 						<path ifSubset="boxorthumb:boxart">${media_box3d}</path>
 						<path ifSubset="boxorthumb:thumb">${media_box2d}</path>
 						<pos>0.5 0.5</pos>
@@ -316,7 +343,7 @@
 						<maxSize>1 1</maxSize>
 						<maxSize if="{system.theme} == 'snes' || {system.theme} == 'n64'">0.88 1</maxSize>
 						<linearSmooth>true</linearSmooth>
-						<shader>
+						<shader ifSubset="perfmachine:perfnormal">
 							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
@@ -355,7 +382,7 @@
 							<animation property="opacity" from="1" to="0" duration="0"/>
 						</storyboard>
 						<storyboard event="deactivate" ifSubset="deckselection:centre">
-							<animation property="opacity" from="0" to="1" duration="0"/>
+							<animation property="opacity" from="0" to="${selopacite}" duration="0"/>
 						</storyboard>
 					</image>
 					<image name="boitesel" ifSubset="deckselection:centre">
@@ -367,7 +394,7 @@
 						<linearSmooth>true</linearSmooth>
 						<opacity>0</opacity>
 						<scaleOrigin>0 0</scaleOrigin>
-						<shader>
+						<shader ifSubset="perfmachine:perfnormal">
 							<path>${themePath}/_common/shaders/border_dvd_case_deck.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
@@ -404,7 +431,7 @@
 							<refletPilote>1</refletPilote>
 							<refletPhase>0</refletPhase>
 						</shader>
-						<storyboard event="activate">
+						<storyboard ifSubset="perfmachine:perfnormal" event="activate">
 							<animation property="opacity" from="0" to="1" duration="0"/>
 							<animation property="scale" from="1" to="1.08" duration="150" mode="easeOut"/>
 							<animation property="shader.haloEteint" from="1" to="1" duration="0"/>
@@ -412,18 +439,31 @@
 							<animation property="shader.refletPhase" from="0" to="1" begin="350" duration="1200" mode="easeInOut"/>
 							<animation property="shader.refletPhase" from="-3" to="1" begin="1550" duration="8000" mode="linear" repeat="forever"/>
 						</storyboard>
+						<storyboard ifSubset="perfmachine:perflow" event="activate">
+							<animation property="opacity" from="0" to="1" duration="0"/>
+							<animation property="scale" from="1" to="1.08" duration="150" mode="easeOut"/>
+							<animation property="shader.haloEteint" from="1" to="1" duration="0"/>
+							<animation property="shader.haloEteint" from="1" to="0" begin="200" duration="450" mode="easeOut"/>
+						</storyboard>
 						<storyboard event="deactivate">
 							<animation property="opacity" from="1" to="0" duration="0"/>
 							<animation property="scale" from="1.08" to="1" duration="0"/>
 						</storyboard>
 					</image>
 					<image name="favori">
+						<opacity>${selopacite}</opacity>
 						<visible>false</visible>
 						<path>${themePath}/_viewgameoption/gl-common/infoicone/yesfull.png</path>
 						<pos>0.92 0.06</pos>
 						<origin>0.5 0.5</origin>
 						<maxSize>0.16 0.12</maxSize>
 						<color>${deckor}</color>
+						<storyboard event="activate">
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
 					</image>
 				</container>
 			</itemTemplate>
@@ -673,11 +713,11 @@
 			<clipRect>0.019 0.5795 0.357 0.321</clipRect>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>75.5</zIndex>
-			<storyboard event="open">
+			<storyboard ifSubset="perfmachine:perfnormal" event="open">
 				<animation property="x" from="-0.21" to="0.40" begin="300" duration="1600" mode="easeInOut"/>
 				<animation property="x" from="-2.0" to="0.40" begin="1900" duration="9000" mode="linear" repeat="forever"/>
 			</storyboard>
-			<storyboard event="activate">
+			<storyboard ifSubset="perfmachine:perfnormal" event="activate">
 				<animation property="x" from="-0.21" to="0.40" begin="300" duration="1600" mode="easeInOut"/>
 				<animation property="x" from="-2.0" to="0.40" begin="1900" duration="9000" mode="linear" repeat="forever"/>
 			</storyboard>

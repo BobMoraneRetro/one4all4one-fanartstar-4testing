@@ -91,7 +91,7 @@
 			<maxSize>0.39 0.51</maxSize>
 			<zIndex>4</zIndex>
 			<effect>fade</effect>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/border_cadre_ombre.glsl</path>
 				<cornerRadius>0.012</cornerRadius>
 				<borderSize>0.0045</borderSize>

@@ -169,6 +169,15 @@
 		<opt_boxorthumb>SPEL - Spelboks som skal visast</opt_boxorthumb>
 		<opt_fanarttransition>SPEL - Fanart transition</opt_fanarttransition>
 		<opt_fanartflou>SPEL - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>SPEL - Platerotasjon</opt_cdvitesse>
+		<cdnormale>Normal</cdnormale>
+		<cdlente>Sakte</cdlente>
+		<cdrapide>Rask</cdrapide>
+		<cdtresrapide>Svært rask</cdtresrapide>
+		<cdimmobile>Ståande</cdimmobile>
+		<opt_selectionvaleur>SPEL - Framhev valt spel</opt_selectionvaleur>
+		<selegere>Lett</selegere>
+		<selmarquee>Tydeleg</selmarquee>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -188,7 +197,8 @@
 		<opt_extfolderfanart>AVANSERT - Fanart for systema</opt_extfolderfanart>
 		<opt_extfolderlogosyst>AVANSERT - Systemlogo</opt_extfolderlogosyst>
 		<opt_extfoldersalon>AVANSERT - Plassering av bakgrunnar for visinga RFE Retrofist Nostalgia</opt_extfoldersalon>
-		<opt_salonecran>RFE Retrofist Nostalgia - TV-skjerm</opt_salonecran>
+		<opt_perfmachine>AVANSERT - Modus for svake maskiner</opt_perfmachine>
+		<opt_salonecran>RETROFIST - TV-skjerm</opt_salonecran>
 		<salonvideoseule>Berre video</salonvideoseule>
 		<saloncapturevideo>Skjermbilete, deretter video</saloncapturevideo>
 		<opt_deckselection>BIG ART - Plassering av valt spel</opt_deckselection>
@@ -196,6 +206,7 @@
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Rotasjon av boksane SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
 		<opt_starboxang>BOXART - Vinkel på spelboksane</opt_starboxang>
+		<opt_starsupport>BOXART - Spelmedium (plate, kassett)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Fart på rulleanimasjonen</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Storleik på førehandsvisingsvideoen</opt_starvideo>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>

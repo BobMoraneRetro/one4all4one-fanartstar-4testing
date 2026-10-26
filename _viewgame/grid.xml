@@ -84,7 +84,7 @@
 			<maxSize>0.4 0.4</maxSize>
 			<origin>0.5 0.5</origin>
 			<zIndex>3</zIndex>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>0.03</cornerRadius>
 				<borderSize>0.022</borderSize>
@@ -105,7 +105,7 @@
 			<showSnapshotDelay>false</showSnapshotDelay>
 			<zIndex>3.1</zIndex>
 			<effect>none</effect>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>0.03</cornerRadius>
 				<borderSize>0.022</borderSize>

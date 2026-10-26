@@ -19,10 +19,16 @@
 	${media_wheel} : logo « wheel » du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${noteicone} : icône de notation (étoile, cœur, manette...) (définie dans _viewgameoption/gl-common/options_note.xml ; valeur selon l option « JEUX - Icône de notation »)
 	${path_syst_logo} : dossier des logos des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
+	${selopacite} : opacité des jeux non sélectionnés dans les grilles (1, 0.7 ou 0.45) (définie dans ce fichier ; valeur selon l option « JEUX - Mise en valeur du jeu sélectionné »)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${nodates}, ${nogametime}, ${noplayerdata}, ${noratings}, ${playcount}, ${playcountone}, ${player}, ${playerss}, ${presetsquare}, ${presgame1}, ${presgame2}, ${presgame3}, ${presgame4}, ${retourdossier}
 -->
 <theme>
 	<formatVersion>7</formatVersion>
+	<variables>
+		<selopacite ifSubset="selectionvaleur:legere">0.7</selopacite>
+		<selopacite ifSubset="selectionvaleur:marquee">0.45</selopacite>
+		<selopacite ifSubset="selectionvaleur:aucune">1</selopacite>
+	</variables>
 	<customView name="presetsquare" displayName="${presetsquare}" inherits="grid">
 		<control name="fanart_extra, defautfanartextra">
 			<visible>false</visible>
@@ -72,6 +78,7 @@
 						</storyboard>
 					</image>
 					<image name="nofanart">
+						<opacity>${selopacite}</opacity>
 						<visible>${media_fanart_missing}</visible>
 						<path>${intfanartfresh}</path>
 						<saturation>0</saturation>
@@ -82,15 +89,18 @@
 						<zIndex>3</zIndex>
 						<storyboard event="activate">
 							<animation property="color" to="FFFFFFFF" begin="" duration="150" mode="Linear"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="deactivate">
 							<animation property="color" to="858585ff" begin="" duration="250" mode="Linear"/>
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="scroll">
 							<animation property="color" to="858585ff" begin="" duration="250" mode="Linear"/>
 						</storyboard>
 					</image>
 					<image name="cadre">
+						<opacity>${selopacite}</opacity>
 						<path ifSubset="squarecadre:ombre">${themePath}/_viewgame/fanartstar/cadresquareombre.png</path>
 						<path ifSubset="squarecadre:blancombre">${themePath}/_viewgame/fanartstar/cadresquareblanc.png</path>
 						<path ifSubset="squarecadre:noirombre">${themePath}/_viewgame/fanartstar/cadresquarenoir.png</path>
@@ -103,13 +113,33 @@
 						<size ifSubset="squarecadre:noirombre">0.98 0.985</size>
 						<zIndex ifSubset="squarecadre:ombre">1</zIndex>
 						<zIndex ifSubset="squarecadre:noirombre|blancombre">999</zIndex>
+						<storyboard event="activate">
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
 					</image>
 					<image name="logo" extra="true" pos="0.5" origin="0.55" maxSize="0.85" linearSmooth="true">
+						<opacity>${selopacite}</opacity>
 						<path>${media_marquee}</path>
 						<zIndex>6</zIndex>
+						<storyboard event="activate">
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
 					</image>
 					<text name="ifnologojeux">
+						<opacity>${selopacite}</opacity>
 						<visible>${media_marquee_missing}</visible>
+						<storyboard event="activate">
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
+						</storyboard>
 						<text>{game:name}</text>
 						<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
 						<color>ffffff</color>
@@ -129,15 +159,19 @@
 						<pos>0.705 0</pos>
 						<zIndex>999</zIndex>
 						<maxSize>0.2 0.2</maxSize>
-						<opacity>1</opacity>
+						<opacity>${selopacite}</opacity>
 						<storyboard event="open">
 							<animation property="color" to="ffffff" begin="0" duration="35" mode="Linear"/>
 						</storyboard>
 						<storyboard event="activate">
 							<animation property="color" to="ebe134" begin="0" duration="250" mode="Linear"/>
+							<animation property="opacity" to="1" duration="200" mode="easeOut"/>
 						</storyboard>
 						<storyboard event="scroll">
 							<animation property="color" to="ffffff" begin="0" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
 						</storyboard>
 					</image>
 				</container>
@@ -233,7 +267,7 @@
 			<minSize>0.2625 0.35</minSize>
 			<origin>0 0.5</origin>
 			<zIndex>3.05</zIndex>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>0.03</cornerRadius>
 				<borderSize>0.022</borderSize>
@@ -264,7 +298,7 @@
 			<showSnapshotDelay>false</showSnapshotDelay>
 			<zIndex>3.1</zIndex>
 			<effect>none</effect>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>0.03</cornerRadius>
 				<borderSize>0.022</borderSize>

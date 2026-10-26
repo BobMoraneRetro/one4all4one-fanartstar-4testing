@@ -169,6 +169,15 @@
 		<opt_boxorthumb>JOCURI - Cutia jocului de afișat</opt_boxorthumb>
 		<opt_fanarttransition>JOCURI - Fanart transition</opt_fanarttransition>
 		<opt_fanartflou>JOCURI - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>JOCURI - Rotirea discului</opt_cdvitesse>
+		<cdnormale>Normală</cdnormale>
+		<cdlente>Lentă</cdlente>
+		<cdrapide>Rapidă</cdrapide>
+		<cdtresrapide>Foarte rapidă</cdtresrapide>
+		<cdimmobile>Nemișcat</cdimmobile>
+		<opt_selectionvaleur>JOCURI - Evidențiază jocul selectat</opt_selectionvaleur>
+		<selegere>Ușoară</selegere>
+		<selmarquee>Puternică</selmarquee>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -188,7 +197,8 @@
 		<opt_extfolderfanart>AVANSAT - Fanart al sistemelor</opt_extfolderfanart>
 		<opt_extfolderlogosyst>AVANSAT - Logo sistem</opt_extfolderlogosyst>
 		<opt_extfoldersalon>AVANSAT - Locația fundalurilor vizualizării RFE Retrofist Nostalgia</opt_extfoldersalon>
-		<opt_salonecran>RFE Retrofist Nostalgia - Ecranul TV</opt_salonecran>
+		<opt_perfmachine>AVANSAT - Mod mașină slabă</opt_perfmachine>
+		<opt_salonecran>RETROFIST - Ecranul TV</opt_salonecran>
 		<salonvideoseule>Doar video</salonvideoseule>
 		<saloncapturevideo>Captură, apoi video</saloncapturevideo>
 		<opt_deckselection>BIG ART - Poziția jocului selectat</opt_deckselection>
@@ -196,6 +206,7 @@
 		<opt_spotvideo>SPOTLIGHT - Videoclip</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Rotirea cutiilor SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
 		<opt_starboxang>BOXART - Unghiul cutiilor de joc</opt_starboxang>
+		<opt_starsupport>BOXART - Suportul jocului (disc, cartuș)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Viteza animației de derulare</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Dimensiunea videoclipului de previzualizare</opt_starvideo>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>

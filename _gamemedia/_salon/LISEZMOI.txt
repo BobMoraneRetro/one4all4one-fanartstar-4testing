@@ -109,3 +109,7 @@ Exemple : décor PS1 (psx.png, 1920x1080)
   Astuce : arrondir la taille légèrement vers le haut pour éviter un liseré entre la vidéo et le cadre de la TV.
   La vidéo garde ses proportions : si l écran du décor n a pas le même format, un fond noir comble les côtés.
 
+Taille du support (disque / cartouche) par système : salon_disque_taille et salon_disque_x sont CALCULÉS
+(une valeur par mode « Boîte de jeu » : boîte 2D = thumb, boîte 3D = boxart) à l échelle réelle de la boîte affichée,
+plafonnés à 85 % de la boîte, par A:\-- @@ Claude DEV\Travail fanartstar\tailles_supports.py
+(mesures en lecture seule des boîtes de I:\roms : mesure_supports.py). Utilisés aussi par la vue Boxart.

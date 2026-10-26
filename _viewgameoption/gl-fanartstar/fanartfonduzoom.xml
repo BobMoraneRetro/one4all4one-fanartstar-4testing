@@ -12,12 +12,15 @@
 			<visible>${media_fanart_exists}</visible>
 			<path>${intfanartfresh}</path>
 			<pos>0 0</pos>
+			<pos ifSubset="perfmachine:perflow">0.5 0.5</pos>
 			<size>1 1</size>
+			<size ifSubset="perfmachine:perflow">0 1</size>
 			<origin>0 0</origin>
+			<origin ifSubset="perfmachine:perflow">0.5 0.5</origin>
 			<color>8C8C8CFF</color>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>1.9</zIndex>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/fanart_bord_repete.glsl</path>
 				<hauteur>0.8</hauteur>
 				<decalageHaut>0</decalageHaut>
@@ -260,7 +263,7 @@
 			<maxSize>2 1</maxSize>
 			<maxSize if="{system.theme} == 'windows'
 			|| {system.theme} == 'switch'">1 1</maxSize>
-			<shader if="{system.theme} == 'windows'
+			<shader ifSubset="perfmachine:perfnormal" if="{system.theme} == 'windows'
 			|| {system.theme} == 'switch'">
 				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>1</cornerRadius>

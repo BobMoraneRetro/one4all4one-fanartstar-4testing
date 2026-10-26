@@ -190,7 +190,7 @@
 			<colorEnd>000000</colorEnd>
 			<gradientType>vertical</gradientType>
 			<zIndex>2</zIndex>
-			<shader if="{system.theme} == 'windows'
+			<shader ifSubset="perfmachine:perfnormal" if="{system.theme} == 'windows'
 			|| {system.theme} == 'switch'">
 				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>1</cornerRadius>
@@ -249,7 +249,7 @@
 			<maxSize>0.4 0.35</maxSize>
 			<zIndex>10</zIndex>
 			<effect>none</effect>
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
 				<cornerRadius>0.03</cornerRadius>
 				<borderSize>0.022</borderSize>

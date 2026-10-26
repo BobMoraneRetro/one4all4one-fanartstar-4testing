@@ -6,7 +6,7 @@
 	<formatVersion>7</formatVersion>
 	<customView name="presetstarbox" displayName="${presetstarbox}" inherits="gamecarousel">
 		<image name="fanart" extra="true">
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/fanart_bord_repete.glsl</path>
 				<hauteur>0.8</hauteur>
 				<decalageHaut>0</decalageHaut>
@@ -21,7 +21,7 @@
 			</shader>
 		</image>
 		<image name="defautfanart" extra="true">
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/flou_image.glsl</path>
 				<flou>14</flou>
 			</shader>
@@ -29,7 +29,7 @@
 	</customView>
 	<customView name="presetspotlight" displayName="${presetspotlight}" inherits="grid">
 		<image name="spot_fond" extra="true">
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/flou_image.glsl</path>
 				<flou>14</flou>
 			</shader>
@@ -37,13 +37,13 @@
 	</customView>
 	<customView name="presetsquare" displayName="${presetsquare}" inherits="grid">
 		<image name="fanart" extra="true">
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/flou_image.glsl</path>
 				<flou>32</flou>
 			</shader>
 		</image>
 		<image name="defautfanart" extra="true">
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/flou_image.glsl</path>
 				<flou>32</flou>
 			</shader>
@@ -51,13 +51,13 @@
 	</customView>
 	<customView name="presetstar169" displayName="${presetstar169}" inherits="grid">
 		<image name="fanart" extra="true">
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/flou_image.glsl</path>
 				<flou>32</flou>
 			</shader>
 		</image>
 		<image name="defautfanart" extra="true">
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/flou_image.glsl</path>
 				<flou>32</flou>
 			</shader>
@@ -65,13 +65,13 @@
 	</customView>
 	<customView name="presetstar43" displayName="${presetstar43}" inherits="grid">
 		<image name="fanart" extra="true">
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/flou_image.glsl</path>
 				<flou>32</flou>
 			</shader>
 		</image>
 		<image name="defautfanart" extra="true">
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/flou_image.glsl</path>
 				<flou>32</flou>
 			</shader>
@@ -79,13 +79,13 @@
 	</customView>
 	<customView name="presetdeck" displayName="${presetdeck}" inherits="grid">
 		<image name="deck_fond" extra="true">
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/flou_image.glsl</path>
 				<flou>32</flou>
 			</shader>
 		</image>
 		<image name="deck_masque_fond" extra="true">
-			<shader>
+			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/flou_image.glsl</path>
 				<flou>32</flou>
 			</shader>
@@ -93,7 +93,7 @@
 	</customView>
 	<customView name="presettraviolta_alt" displayName="${presettraviolta_alt}" inherits="gamecarousel">
 		<image name="fanartpreset" extra="true">
-			<shader if="{system.theme} != 'windows' &amp;&amp; {system.theme} != 'switch'">
+			<shader ifSubset="perfmachine:perfnormal" if="{system.theme} != 'windows' &amp;&amp; {system.theme} != 'switch'">
 				<path>${themePath}/_common/shaders/flou_image.glsl</path>
 				<flou>32</flou>
 			</shader>

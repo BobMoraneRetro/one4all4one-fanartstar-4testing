@@ -169,6 +169,15 @@
 		<opt_boxorthumb>الألعاب - علبة اللعبة المعروضة</opt_boxorthumb>
 		<opt_fanarttransition>الألعاب - Fanart transition</opt_fanarttransition>
 		<opt_fanartflou>الألعاب - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>الألعاب - دوران القرص</opt_cdvitesse>
+		<cdnormale>عادي</cdnormale>
+		<cdlente>بطيء</cdlente>
+		<cdrapide>سريع</cdrapide>
+		<cdtresrapide>سريع جدًا</cdtresrapide>
+		<cdimmobile>ثابت</cdimmobile>
+		<opt_selectionvaleur>الألعاب - إبراز اللعبة المحددة</opt_selectionvaleur>
+		<selegere>خفيف</selegere>
+		<selmarquee>واضح</selmarquee>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -188,7 +197,8 @@
 		<opt_extfolderfanart>متقدم - فان آرت الأنظمة</opt_extfolderfanart>
 		<opt_extfolderlogosyst>متقدم - شعار النظام</opt_extfolderlogosyst>
 		<opt_extfoldersalon>متقدم - موقع خلفيات عرض RFE Retrofist Nostalgia</opt_extfoldersalon>
-		<opt_salonecran>RFE Retrofist Nostalgia - شاشة التلفاز</opt_salonecran>
+		<opt_perfmachine>متقدم - وضع الأجهزة الضعيفة</opt_perfmachine>
+		<opt_salonecran>RETROFIST - شاشة التلفاز</opt_salonecran>
 		<salonvideoseule>فيديو فقط</salonvideoseule>
 		<saloncapturevideo>لقطة شاشة ثم فيديو</saloncapturevideo>
 		<opt_deckselection>BIG ART - موضع اللعبة المحددة</opt_deckselection>
@@ -196,6 +206,7 @@
 		<opt_spotvideo>SPOTLIGHT - الفيديو</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - تدوير علب SNES وN64 وNGAGE وSolarus</opt_fanartstarrotated>
 		<opt_starboxang>BOXART - زاوية علب الألعاب</opt_starboxang>
+		<opt_starsupport>BOXART - وسيط اللعبة (قرص، خرطوشة)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - سرعة حركة التمرير</opt_boxstarspeed>
 		<opt_starvideo>BOXART - حجم فيديو المعاينة</opt_starvideo>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>

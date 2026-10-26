@@ -169,6 +169,15 @@
 		<opt_boxorthumb>JOGOS - Caixa de jogo a mostrar</opt_boxorthumb>
 		<opt_fanarttransition>JOGOS - Transição dos fanarts</opt_fanarttransition>
 		<opt_fanartflou>JOGOS - Desfocagem dos fanarts</opt_fanartflou>
+		<opt_cdvitesse>JOGOS - Rotação do disco</opt_cdvitesse>
+		<cdnormale>Normal</cdnormale>
+		<cdlente>Lenta</cdlente>
+		<cdrapide>Rápida</cdrapide>
+		<cdtresrapide>Muito rápida</cdtresrapide>
+		<cdimmobile>Imóvel</cdimmobile>
+		<opt_selectionvaleur>JOGOS - Destacar o jogo selecionado</opt_selectionvaleur>
+		<selegere>Leve</selegere>
+		<selmarquee>Forte</selmarquee>
 		<fanartflouleger>Ligeira</fanartflouleger>
 		<fanartfloumoyen>Média</fanartfloumoyen>
 		<fanartfloufort>Forte</fanartfloufort>
@@ -188,7 +197,8 @@
 		<opt_extfolderfanart>AVANÇADO - Fanart dos sistemas</opt_extfolderfanart>
 		<opt_extfolderlogosyst>AVANÇADO - Logo do sistema</opt_extfolderlogosyst>
 		<opt_extfoldersalon>AVANÇADO - Localização dos fundos da vista RFE Retrofist Nostalgia</opt_extfoldersalon>
-		<opt_salonecran>RFE Retrofist Nostalgia - Tela da TV</opt_salonecran>
+		<opt_perfmachine>AVANÇADO - Modo máquina pouco potente</opt_perfmachine>
+		<opt_salonecran>RETROFIST - Tela da TV</opt_salonecran>
 		<salonvideoseule>Só vídeo</salonvideoseule>
 		<saloncapturevideo>Captura e depois vídeo</saloncapturevideo>
 		<opt_deckselection>BIG ART - Posição do jogo selecionado</opt_deckselection>
@@ -196,6 +206,7 @@
 		<opt_spotvideo>SPOTLIGHT - Vídeo</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Rotação das caixas SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
 		<opt_starboxang>BOXART - Ângulo das caixas de jogo</opt_starboxang>
+		<opt_starsupport>BOXART - Mídia do jogo (disco, cartucho)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Velocidade da animação de rolagem</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Tamanho do vídeo de pré-visualização</opt_starvideo>
 		<opt_starvideoanim>BOXART - Aparecimento do vídeo</opt_starvideoanim>

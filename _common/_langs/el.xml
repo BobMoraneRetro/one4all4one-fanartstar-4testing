@@ -169,6 +169,15 @@
 		<opt_boxorthumb>ΠΑΙΧΝΙΔΙΑ - Κουτί παιχνιδιού προς εμφάνιση</opt_boxorthumb>
 		<opt_fanarttransition>ΠΑΙΧΝΙΔΙΑ - Fanart transition</opt_fanarttransition>
 		<opt_fanartflou>ΠΑΙΧΝΙΔΙΑ - Fanart blur</opt_fanartflou>
+		<opt_cdvitesse>ΠΑΙΧΝΙΔΙΑ - Περιστροφή δίσκου</opt_cdvitesse>
+		<cdnormale>Κανονική</cdnormale>
+		<cdlente>Αργή</cdlente>
+		<cdrapide>Γρήγορη</cdrapide>
+		<cdtresrapide>Πολύ γρήγορη</cdtresrapide>
+		<cdimmobile>Ακίνητος</cdimmobile>
+		<opt_selectionvaleur>ΠΑΙΧΝΙΔΙΑ - Ανάδειξη επιλεγμένου παιχνιδιού</opt_selectionvaleur>
+		<selegere>Ελαφριά</selegere>
+		<selmarquee>Έντονη</selmarquee>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -188,7 +197,8 @@
 		<opt_extfolderfanart>ΠΡΟΧΩΡΗΜΕΝΑ - Fanart συστημάτων</opt_extfolderfanart>
 		<opt_extfolderlogosyst>ΠΡΟΧΩΡΗΜΕΝΑ - Λογότυπο συστήματος</opt_extfolderlogosyst>
 		<opt_extfoldersalon>ΠΡΟΧΩΡΗΜΕΝΑ - Τοποθεσία φόντων της προβολής RFE Retrofist Nostalgia</opt_extfoldersalon>
-		<opt_salonecran>RFE Retrofist Nostalgia - Οθόνη TV</opt_salonecran>
+		<opt_perfmachine>ΠΡΟΧΩΡΗΜΕΝΑ - Λειτουργία αδύναμου μηχανήματος</opt_perfmachine>
+		<opt_salonecran>RETROFIST - Οθόνη TV</opt_salonecran>
 		<salonvideoseule>Μόνο βίντεο</salonvideoseule>
 		<saloncapturevideo>Στιγμιότυπο, μετά βίντεο</saloncapturevideo>
 		<opt_deckselection>BIG ART - Θέση επιλεγμένου παιχνιδιού</opt_deckselection>
@@ -196,6 +206,7 @@
 		<opt_spotvideo>SPOTLIGHT - Βίντεο</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Περιστροφή κουτιών SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
 		<opt_starboxang>BOXART - Γωνία κουτιών παιχνιδιών</opt_starboxang>
+		<opt_starsupport>BOXART - Μέσο παιχνιδιού (δίσκος, κασέτα)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Ταχύτητα κίνησης κύλισης</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Μέγεθος βίντεο προεπισκόπησης</opt_starvideo>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>

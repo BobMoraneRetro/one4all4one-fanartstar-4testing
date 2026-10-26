@@ -399,12 +399,12 @@
 			<storyboard event="deactivatePrev">
 				<animation property="opacity" from="0" to="0" duration="" mode="linear"/>
 			</storyboard>
-			<shader ifSubset="perfmachine:perfnormal" if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360'">
+			<shader ifSubset="perfmachine:perfnormal" if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360' || {system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">
 				<path>${themePath}/_common/shaders/support_tourne.glsl</path>
 				<u_rond>0</u_rond>
 			</shader>
 		</image>
-		<image name="cartridgerond" extra="true" if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360'">
+		<image name="cartridgerond" extra="true" if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360' || {system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">
 			<path>${media_support}</path>
 			<visible>${media_support_exists}</visible>
 			<visible ifSubset="perfmachine:perflow">false</visible>

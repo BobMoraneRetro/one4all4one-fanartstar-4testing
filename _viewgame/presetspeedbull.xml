@@ -477,12 +477,12 @@
 			<storyboard event="deactivatePrev">
 				<animation property="scale" from="1" to="0.1" begin="0" duration="250"/>
 			</storyboard>
-			<shader ifSubset="perfmachine:perfnormal" if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360'">
+			<shader ifSubset="perfmachine:perfnormal" if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360' || {system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">
 				<path>${themePath}/_common/shaders/support_tourne.glsl</path>
 				<u_rond>0</u_rond>
 			</shader>
 		</image>
-		<image name="disccartdefautrond" extra="true" if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360'">
+		<image name="disccartdefautrond" extra="true" if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360' || {system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">
 			<visible ifSubset="perfmachine:perflow">false</visible>
 			<origin>0.5 0.5</origin>
 			<pos>0.85 0.51</pos>

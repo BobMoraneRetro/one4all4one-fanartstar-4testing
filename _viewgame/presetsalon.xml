@@ -64,6 +64,7 @@
 		<salon_calque></salon_calque>
 		<salon_support_mixte>false</salon_support_mixte>
 		<salon_support_mixte if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360'">true</salon_support_mixte>
+		<salon_support_mixte if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">true</salon_support_mixte>
 		<salon_defaut>_default</salon_defaut>
 		<salon_defaut if="{system.theme} == 'ps3' || {system.theme} == 'ps4' || {system.theme} == 'xbox360' || {system.theme} == 'wiiu' || {system.theme} == 'switch' || {system.theme} == 'psvita' || {system.theme} == 'windows' || {system.theme} == 'steam'">_default16</salon_defaut>
 		<salon_defaut if="{system.hardwareType} == 'arcade'">arcade</salon_defaut>

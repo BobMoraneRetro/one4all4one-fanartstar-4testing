@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>JÒCS - Metre en valor lo jòc seleccionat</opt_selectionvaleur>
 		<selegere>Leugièra</selegere>
 		<selmarquee>Marcada</selmarquee>
+		<opt_videojeu>JÒCS - Vidèo del jòc</opt_videojeu>
+		<vjcapture>Captura puèi vidèo</vjcapture>
+		<vjseule>Vidèo sonque</vjseule>
+		<vjfondu>Vidèo en fondut</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>AVANÇAT - Lògo sistèma</opt_extfolderlogosyst>
 		<opt_extfoldersalon>AVANÇAT - Emplaçament dels decòrs de la vista RFE Retrofist Nostalgia</opt_extfoldersalon>
 		<opt_perfmachine>AVANÇAT - Mòde maquina pauc potenta</opt_perfmachine>
-		<opt_salonecran>RETROFIST - Ecran de la TV</opt_salonecran>
-		<salonvideoseule>Vidèo sonque</salonvideoseule>
-		<saloncapturevideo>Captura puèi vidèo</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Vinhetatge del decòr</opt_salonvignette>
+		<vignleger>Leugièr</vignleger>
+		<vignfort>Fòrt</vignfort>
 		<opt_deckselection>BIG ART - Posicion del jòc seleccionat</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Lògo pendent la vidèo</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Vidèo</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Supòrt del jòc (disc, cartocha)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Velocitat de l'animacion de desfilament</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Talha de la vidèo d'apercebut</opt_starvideo>
+		<opt_starvideocadre>BOXART - Quadre de la vidèo d apercebut</opt_starvideocadre>
+		<vcadreactuel>Quadre actual</vcadreactuel>
+		<vcadreombre>Ombra sola</vcadreombre>
+		<vcadreecranfin>Bordura fina</vcadreecranfin>
+		<vcadrebois>Fusta</vcadrebois>
+		<vcadremetal>Metal raspalhat</vcadremetal>
+		<vcadrelumineux>Ecran luminós</vcadrelumineux>
+		<vcadretv>Televisor CRT</vcadretv>
+		<vcadregalerie>Galariá</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Ologramma</vcadrehologramme>
+		<vcadreverre>Veire esmerilat</vcadreverre>
+		<vcadrecarbone>Carbòni LED</vcadrecarbone>
+		<vcadreneondouble>Neon doble</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Pincelada</vcadrepinceau>
+		<vcadretechnodore>Tecno daurat</vcadretechnodore>
+		<vcadretechnoargent>Tecno argentat</vcadretechnoargent>
+		<vcadreneonelec>Neon electric</vcadreneonelec>
+		<vcadrevitre>Veire</vcadrevitre>
+		<vcadreflammes>Flamas</vcadreflammes>
+		<vcadreencre>Tinta</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

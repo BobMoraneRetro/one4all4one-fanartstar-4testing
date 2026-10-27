@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>GEMAU - Amlygu’r gêm a ddewiswyd</opt_selectionvaleur>
 		<selegere>Ysgafn</selegere>
 		<selmarquee>Cryf</selmarquee>
+		<opt_videojeu>GEMAU - Fideo’r gêm</opt_videojeu>
+		<vjcapture>Sgrinlun yna fideo</vjcapture>
+		<vjseule>Fideo yn unig</vjseule>
+		<vjfondu>Fideo gyda phylu</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>UWCH - Logo'r system</opt_extfolderlogosyst>
 		<opt_extfoldersalon>UWCH - Lleoliad cefndiroedd golwg RFE Retrofist Nostalgia</opt_extfoldersalon>
 		<opt_perfmachine>UWCH - Modd peiriant gwan</opt_perfmachine>
-		<opt_salonecran>RETROFIST - Sgrin y teledu</opt_salonecran>
-		<salonvideoseule>Fideo yn unig</salonvideoseule>
-		<saloncapturevideo>Sgrinlun yna fideo</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Fignetio’r cefndir</opt_salonvignette>
+		<vignleger>Ysgafn</vignleger>
+		<vignfort>Cryf</vignfort>
 		<opt_deckselection>BIG ART - Safle'r gêm a ddewiswyd</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo yn ystod y fideo</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Fideo</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Cyfrwng y gêm (disg, cetrisen)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Cyflymder yr animeiddiad sgrolio</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Maint y fideo rhagolwg</opt_starvideo>
+		<opt_starvideocadre>BOXART - Ffrâm y fideo rhagolwg</opt_starvideocadre>
+		<vcadreactuel>Ffrâm bresennol</vcadreactuel>
+		<vcadreombre>Cysgod yn unig</vcadreombre>
+		<vcadreecranfin>Ymyl denau</vcadreecranfin>
+		<vcadrebois>Pren</vcadrebois>
+		<vcadremetal>Metel wedi’i frwsio</vcadremetal>
+		<vcadrelumineux>Sgrin oleuol</vcadrelumineux>
+		<vcadretv>Teledu CRT</vcadretv>
+		<vcadregalerie>Oriel</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologram</vcadrehologramme>
+		<vcadreverre>Gwydr barugog</vcadreverre>
+		<vcadrecarbone>Carbon LED</vcadrecarbone>
+		<vcadreneondouble>Neon dwbl</vcadreneondouble>
+		<vcadregaming>Gemau</vcadregaming>
+		<vcadrepinceau>Strociau brwsh</vcadrepinceau>
+		<vcadretechnodore>Tech aur</vcadretechnodore>
+		<vcadretechnoargent>Tech arian</vcadretechnoargent>
+		<vcadreneonelec>Neon trydanol</vcadreneonelec>
+		<vcadrevitre>Gwydr</vcadrevitre>
+		<vcadreflammes>Fflamau</vcadreflammes>
+		<vcadreencre>Inc</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

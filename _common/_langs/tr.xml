@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>OYUNLAR - Seçili oyunu öne çıkar</opt_selectionvaleur>
 		<selegere>Hafif</selegere>
 		<selmarquee>Belirgin</selmarquee>
+		<opt_videojeu>OYUNLAR - Oyun videosu</opt_videojeu>
+		<vjcapture>Önce ekran görüntüsü, sonra video</vjcapture>
+		<vjseule>Yalnızca video</vjseule>
+		<vjfondu>Yumuşak geçişli video</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>GELİŞMİŞ - Sistem logosu</opt_extfolderlogosyst>
 		<opt_extfoldersalon>GELİŞMİŞ - RFE Retrofist Nostalgia görünümü arka planlarının konumu</opt_extfoldersalon>
 		<opt_perfmachine>GELİŞMİŞ - Düşük güçlü makine modu</opt_perfmachine>
-		<opt_salonecran>RETROFIST - TV ekranı</opt_salonecran>
-		<salonvideoseule>Yalnızca video</salonvideoseule>
-		<saloncapturevideo>Önce ekran görüntüsü, sonra video</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Arka plan vinyeti</opt_salonvignette>
+		<vignleger>Hafif</vignleger>
+		<vignfort>Güçlü</vignfort>
 		<opt_deckselection>BIG ART - Seçili oyunun konumu</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Video sırasında logo</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Oyun ortamı (disk, kartuş)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Kaydırma animasyonu hızı</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Önizleme videosu boyutu</opt_starvideo>
+		<opt_starvideocadre>BOXART - Önizleme videosu çerçevesi</opt_starvideocadre>
+		<vcadreactuel>Mevcut çerçeve</vcadreactuel>
+		<vcadreombre>Yalnızca gölge</vcadreombre>
+		<vcadreecranfin>İnce çerçeve</vcadreecranfin>
+		<vcadrebois>Ahşap</vcadrebois>
+		<vcadremetal>Fırçalanmış metal</vcadremetal>
+		<vcadrelumineux>Parlayan ekran</vcadrelumineux>
+		<vcadretv>Tüplü TV</vcadretv>
+		<vcadregalerie>Galeri</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologram</vcadrehologramme>
+		<vcadreverre>Buzlu cam</vcadreverre>
+		<vcadrecarbone>Karbon LED</vcadrecarbone>
+		<vcadreneondouble>Çift neon</vcadreneondouble>
+		<vcadregaming>Oyuncu</vcadregaming>
+		<vcadrepinceau>Fırça darbeleri</vcadrepinceau>
+		<vcadretechnodore>Altın tekno</vcadretechnodore>
+		<vcadretechnoargent>Gümüş tekno</vcadretechnoargent>
+		<vcadreneonelec>Elektrikli neon</vcadreneonelec>
+		<vcadrevitre>Cam</vcadrevitre>
+		<vcadreflammes>Alevler</vcadreflammes>
+		<vcadreencre>Mürekkep</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

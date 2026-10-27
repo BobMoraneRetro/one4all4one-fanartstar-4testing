@@ -50,6 +50,11 @@
 		<include name="legere" displayName="${selegere}"/>
 		<include name="marquee" displayName="${selmarquee}"/>
 	</subset>
+	<subset name="videojeu" displayName="${opt_videojeu}" appliesTo="presetstarbox,presetsalon,presetdeck,presetspotlight,presetsquare,presetshowbig,presetshowsmall,presetspeedbull,presettraviolta_alt">
+		<include name="capturevideo" displayName="${vjcapture}"/>
+		<include name="videoseule" displayName="${vjseule}">./_viewgameoption/gl-fanartstar/videojeu_seule.xml</include>
+		<include name="videofondu" displayName="${vjfondu}">./_viewgameoption/gl-fanartstar/videojeu_fondu.xml</include>
+	</subset>
 	<subset name="fanartstarrotated" displayName="${opt_fanartstarrotated}" appliesTo="presetstarbox">
 		<include name="starrotate" displayName="${starrotate}">./_viewgameoption/gl-fanartstar/rotatedon.xml</include>
 		<include name="nostarrotate" displayName="${nostarrotate}">./_viewgameoption/gl-fanartstar/rotatedoff.xml</include>
@@ -76,6 +81,30 @@
 		<include name="starvideofixe" displayName="${starvideofixe}"/>
 		<include name="starvideoglisse" displayName="${starvideoglisse}">./_viewgameoption/gl-fanartstar/videoglisse.xml</include>
 	</subset>
+	<subset name="starvideocadre" displayName="${opt_starvideocadre}" appliesTo="presetstarbox">
+		<include name="actuel" displayName="${vcadreactuel}"/>
+		<include name="ombre" displayName="${vcadreombre}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="ecranfin" displayName="${vcadreecranfin}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="bois" displayName="${vcadrebois}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="metal" displayName="${vcadremetal}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="lumineux" displayName="${vcadrelumineux}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="tv" displayName="${vcadretv}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="galerie" displayName="${vcadregalerie}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="polaroid" displayName="${vcadrepolaroid}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="neon" displayName="${vcadreneon}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="hologramme" displayName="${vcadrehologramme}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="verre" displayName="${vcadreverre}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="carbone" displayName="${vcadrecarbone}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="neondouble" displayName="${vcadreneondouble}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="gaming" displayName="${vcadregaming}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="pinceau" displayName="${vcadrepinceau}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="technodore" displayName="${vcadretechnodore}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="technoargent" displayName="${vcadretechnoargent}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="neonelec" displayName="${vcadreneonelec}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="vitre" displayName="${vcadrevitre}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="flammes" displayName="${vcadreflammes}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+		<include name="encre" displayName="${vcadreencre}">./_viewgameoption/gl-fanartstar/videocadre.xml</include>
+	</subset>
 	<subset name="starboxcases" displayName="${opt_starboxcases}" appliesTo="presetstarbox">
 		<include name="casesaffichees" displayName="${casesaffichees}"/>
 		<include name="casesmasquees" displayName="${casesmasquees}">./_viewgameoption/gl-fanartstar/casesmasquees.xml</include>
@@ -98,9 +127,10 @@
 		<include name="gauche" displayName="${spotvideogauche}"/>
 		<include name="aucune" displayName="${spotvideoaucune}"/>
 	</subset>
-	<subset name="salonecran" displayName="${opt_salonecran}" appliesTo="presetsalon">
-		<include name="videoseule" displayName="${salonvideoseule}"/>
-		<include name="capturevideo" displayName="${saloncapturevideo}"/>
+	<subset name="salonvignette" displayName="${opt_salonvignette}" appliesTo="presetsalon">
+		<include name="aucun" displayName="${desactive}"/>
+		<include name="leger" displayName="${vignleger}"/>
+		<include name="fort" displayName="${vignfort}"/>
 	</subset>
 	<subset name="boite3d" displayName="${opt_boite3d}" appliesTo="presetshowbig,presetshowsmall">
 		<include name="boite3dactive" displayName="${active}"/>

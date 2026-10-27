@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>JÁTÉKOK - Kiválasztott játék kiemelése</opt_selectionvaleur>
 		<selegere>Enyhe</selegere>
 		<selmarquee>Erős</selmarquee>
+		<opt_videojeu>JÁTÉKOK - Játékvideó</opt_videojeu>
+		<vjcapture>Képernyőkép, majd videó</vjcapture>
+		<vjseule>Csak videó</vjseule>
+		<vjfondu>Videó áttűnéssel</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>HALADÓ - Rendszerlogó</opt_extfolderlogosyst>
 		<opt_extfoldersalon>HALADÓ - Az RFE Retrofist Nostalgia nézet háttereinek helye</opt_extfoldersalon>
 		<opt_perfmachine>HALADÓ - Gyenge gép mód</opt_perfmachine>
-		<opt_salonecran>RETROFIST - TV-képernyő</opt_salonecran>
-		<salonvideoseule>Csak videó</salonvideoseule>
-		<saloncapturevideo>Képernyőkép, majd videó</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Háttér vignettálása</opt_salonvignette>
+		<vignleger>Enyhe</vignleger>
+		<vignfort>Erős</vignfort>
 		<opt_deckselection>BIG ART - A kiválasztott játék helye</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logó a videó alatt</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Videó</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Játékhordozó (lemez, kazetta)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - A görgetési animáció sebessége</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Előnézeti videó mérete</opt_starvideo>
+		<opt_starvideocadre>BOXART - Előnézeti videó kerete</opt_starvideocadre>
+		<vcadreactuel>Jelenlegi keret</vcadreactuel>
+		<vcadreombre>Csak árnyék</vcadreombre>
+		<vcadreecranfin>Vékony keret</vcadreecranfin>
+		<vcadrebois>Fa</vcadrebois>
+		<vcadremetal>Szálcsiszolt fém</vcadremetal>
+		<vcadrelumineux>Világító képernyő</vcadrelumineux>
+		<vcadretv>Képcsöves TV</vcadretv>
+		<vcadregalerie>Galéria</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologram</vcadrehologramme>
+		<vcadreverre>Tejüveg</vcadreverre>
+		<vcadrecarbone>Karbon LED</vcadrecarbone>
+		<vcadreneondouble>Dupla neon</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Ecsetvonások</vcadrepinceau>
+		<vcadretechnodore>Arany techno</vcadretechnodore>
+		<vcadretechnoargent>Ezüst techno</vcadretechnoargent>
+		<vcadreneonelec>Elektromos neon</vcadreneonelec>
+		<vcadrevitre>Üveglap</vcadrevitre>
+		<vcadreflammes>Lángok</vcadreflammes>
+		<vcadreencre>Tinta</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

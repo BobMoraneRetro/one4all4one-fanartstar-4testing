@@ -16,6 +16,7 @@
 		<gm_fanart>("${path_game_media}" + ({game:system:theme}) + "/fanart/" + stem({game:rom}) + ".jpg")</gm_fanart>
 		<gm_marquee>("${path_game_media}" + ({game:system:theme}) + "/logo/" + stem({game:rom}) + ".png")</gm_marquee>
 		<gm_video>("${path_game_media}" + ({game:system:theme}) + "/video/" + stem({game:rom}) + ".mp4")</gm_video>
+		<gm_video_avi>("${path_game_media}" + ({game:system:theme}) + "/video/" + stem({game:rom}) + ".avi")</gm_video_avi>
 		<gm_image>("${path_game_media}" + ({game:system:theme}) + "/screenshot/" + stem({game:rom}) + ".png")</gm_image>
 		<gm_disc>("${path_game_media}" + ({game:system:theme}) + "/disc/" + stem({game:rom}) + ".png")</gm_disc>
 		<gm_cartridge>("${path_game_media}" + ({game:system:theme}) + "/cartridge/" + stem({game:rom}) + ".png")</gm_cartridge>

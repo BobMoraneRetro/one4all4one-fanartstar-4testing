@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>JOCS - Destacar el joc seleccionat</opt_selectionvaleur>
 		<selegere>Lleugera</selegere>
 		<selmarquee>Marcada</selmarquee>
+		<opt_videojeu>JOCS - Vídeo del joc</opt_videojeu>
+		<vjcapture>Captura i després vídeo</vjcapture>
+		<vjseule>Només vídeo</vjseule>
+		<vjfondu>Vídeo amb fosa</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>AVANÇAT - Logo del sistema</opt_extfolderlogosyst>
 		<opt_extfoldersalon>AVANÇAT - Ubicació dels decorats de la vista RFE Retrofist Nostalgia</opt_extfoldersalon>
 		<opt_perfmachine>AVANÇAT - Mode màquina poc potent</opt_perfmachine>
-		<opt_salonecran>RETROFIST - Pantalla de la TV</opt_salonecran>
-		<salonvideoseule>Només vídeo</salonvideoseule>
-		<saloncapturevideo>Captura i després vídeo</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Vinyetatge del decorat</opt_salonvignette>
+		<vignleger>Lleuger</vignleger>
+		<vignfort>Fort</vignfort>
 		<opt_deckselection>BIG ART - Posició del joc seleccionat</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo durant el vídeo</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Vídeo</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Suport del joc (disc, cartutx)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Velocitat de l'animació de desplaçament</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Mida del vídeo de previsualització</opt_starvideo>
+		<opt_starvideocadre>BOXART - Marc del vídeo de previsualització</opt_starvideocadre>
+		<vcadreactuel>Marc actual</vcadreactuel>
+		<vcadreombre>Només ombra</vcadreombre>
+		<vcadreecranfin>Bisell fi</vcadreecranfin>
+		<vcadrebois>Fusta</vcadrebois>
+		<vcadremetal>Metall raspallat</vcadremetal>
+		<vcadrelumineux>Pantalla lluminosa</vcadrelumineux>
+		<vcadretv>Televisor CRT</vcadretv>
+		<vcadregalerie>Galeria</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neó</vcadreneon>
+		<vcadrehologramme>Holograma</vcadrehologramme>
+		<vcadreverre>Vidre esmerilat</vcadreverre>
+		<vcadrecarbone>Carboni LED</vcadrecarbone>
+		<vcadreneondouble>Neó doble</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Pinzellades</vcadrepinceau>
+		<vcadretechnodore>Tecno daurat</vcadretechnodore>
+		<vcadretechnoargent>Tecno platejat</vcadretechnoargent>
+		<vcadreneonelec>Neó elèctric</vcadreneonelec>
+		<vcadrevitre>Vidre</vcadrevitre>
+		<vcadreflammes>Flames</vcadreflammes>
+		<vcadreencre>Tinta</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

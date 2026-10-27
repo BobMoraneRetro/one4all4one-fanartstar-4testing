@@ -2,8 +2,8 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<variables>
-		<salon_disque_taille ifSubset="boxorthumb:boxart">0.0670 0.1709</salon_disque_taille>
-		<salon_disque_taille ifSubset="boxorthumb:thumb">0.0728 0.1858</salon_disque_taille>
+		<salon_disque_taille ifSubset="boxorthumb:boxart">0.1542 0.3936</salon_disque_taille>
+		<salon_disque_taille ifSubset="boxorthumb:thumb">0.1677 0.4279</salon_disque_taille>
 		<salon_disque_x ifSubset="boxorthumb:boxart">0.6736</salon_disque_x>
 		<salon_disque_x ifSubset="boxorthumb:thumb">0.6736</salon_disque_x>
 	</variables>

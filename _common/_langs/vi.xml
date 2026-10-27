@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>TRÒ CHƠI - Làm nổi bật game được chọn</opt_selectionvaleur>
 		<selegere>Nhẹ</selegere>
 		<selmarquee>Rõ</selmarquee>
+		<opt_videojeu>TRÒ CHƠI - Video game</opt_videojeu>
+		<vjcapture>Ảnh chụp rồi video</vjcapture>
+		<vjseule>Chỉ video</vjseule>
+		<vjfondu>Video hiện dần</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>NÂNG CAO - Logo hệ máy</opt_extfolderlogosyst>
 		<opt_extfoldersalon>NÂNG CAO - Vị trí hình nền của chế độ xem RFE Retrofist Nostalgia</opt_extfoldersalon>
 		<opt_perfmachine>NÂNG CAO - Chế độ máy yếu</opt_perfmachine>
-		<opt_salonecran>RETROFIST - Màn hình TV</opt_salonecran>
-		<salonvideoseule>Chỉ video</salonvideoseule>
-		<saloncapturevideo>Ảnh chụp rồi video</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Làm tối viền nền</opt_salonvignette>
+		<vignleger>Nhẹ</vignleger>
+		<vignfort>Mạnh</vignfort>
 		<opt_deckselection>BIG ART - Vị trí trò chơi được chọn</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo khi phát video</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Phương tiện game (đĩa, băng)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Tốc độ hiệu ứng cuộn</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Kích thước video xem trước</opt_starvideo>
+		<opt_starvideocadre>BOXART - Khung video xem trước</opt_starvideocadre>
+		<vcadreactuel>Khung hiện tại</vcadreactuel>
+		<vcadreombre>Chỉ bóng đổ</vcadreombre>
+		<vcadreecranfin>Viền mỏng</vcadreecranfin>
+		<vcadrebois>Gỗ</vcadrebois>
+		<vcadremetal>Kim loại chải xước</vcadremetal>
+		<vcadrelumineux>Màn hình phát sáng</vcadrelumineux>
+		<vcadretv>TV CRT</vcadretv>
+		<vcadregalerie>Phòng tranh</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Ảnh ba chiều</vcadrehologramme>
+		<vcadreverre>Kính mờ</vcadreverre>
+		<vcadrecarbone>Carbon LED</vcadrecarbone>
+		<vcadreneondouble>Neon đôi</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Nét cọ</vcadrepinceau>
+		<vcadretechnodore>Công nghệ vàng</vcadretechnodore>
+		<vcadretechnoargent>Công nghệ bạc</vcadretechnoargent>
+		<vcadreneonelec>Neon điện</vcadreneonelec>
+		<vcadrevitre>Kính</vcadrevitre>
+		<vcadreflammes>Lửa</vcadreflammes>
+		<vcadreencre>Mực</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

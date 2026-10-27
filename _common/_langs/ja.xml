@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>ゲーム - 選択中のゲームを強調</opt_selectionvaleur>
 		<selegere>弱</selegere>
 		<selmarquee>強</selmarquee>
+		<opt_videojeu>ゲーム - ゲーム動画</opt_videojeu>
+		<vjcapture>スクリーンショットの後に動画</vjcapture>
+		<vjseule>動画のみ</vjseule>
+		<vjfondu>フェード付き動画</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>詳細設定 - システムロゴ</opt_extfolderlogosyst>
 		<opt_extfoldersalon>詳細設定 - RFE Retrofist Nostalgia ビューの背景の場所</opt_extfoldersalon>
 		<opt_perfmachine>詳細設定 - 低性能マシンモード</opt_perfmachine>
-		<opt_salonecran>RETROFIST - テレビ画面</opt_salonecran>
-		<salonvideoseule>動画のみ</salonvideoseule>
-		<saloncapturevideo>スクリーンショットの後に動画</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - 背景のビネット</opt_salonvignette>
+		<vignleger>弱</vignleger>
+		<vignfort>強</vignfort>
 		<opt_deckselection>BIG ART - 選択したゲームの位置</opt_deckselection>
 		<opt_decklogovideo>BIG ART - 動画中のロゴ</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - 動画</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - ゲームメディア（ディスク、カートリッジ）</opt_starsupport>
 		<opt_boxstarspeed>BOXART - スクロールアニメーションの速度</opt_boxstarspeed>
 		<opt_starvideo>BOXART - プレビュー動画のサイズ</opt_starvideo>
+		<opt_starvideocadre>BOXART - プレビュー動画の枠</opt_starvideocadre>
+		<vcadreactuel>現在の枠</vcadreactuel>
+		<vcadreombre>影のみ</vcadreombre>
+		<vcadreecranfin>細いベゼル</vcadreecranfin>
+		<vcadrebois>木製</vcadrebois>
+		<vcadremetal>ヘアライン金属</vcadremetal>
+		<vcadrelumineux>発光スクリーン</vcadrelumineux>
+		<vcadretv>ブラウン管テレビ</vcadretv>
+		<vcadregalerie>ギャラリー</vcadregalerie>
+		<vcadrepolaroid>ポラロイド</vcadrepolaroid>
+		<vcadreneon>ネオン</vcadreneon>
+		<vcadrehologramme>ホログラム</vcadrehologramme>
+		<vcadreverre>すりガラス</vcadreverre>
+		<vcadrecarbone>カーボンLED</vcadrecarbone>
+		<vcadreneondouble>ダブルネオン</vcadreneondouble>
+		<vcadregaming>ゲーミング</vcadregaming>
+		<vcadrepinceau>筆跡</vcadrepinceau>
+		<vcadretechnodore>ゴールドテック</vcadretechnodore>
+		<vcadretechnoargent>シルバーテック</vcadretechnoargent>
+		<vcadreneonelec>電撃ネオン</vcadreneonelec>
+		<vcadrevitre>ガラス</vcadrevitre>
+		<vcadreflammes>炎</vcadreflammes>
+		<vcadreencre>インク</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

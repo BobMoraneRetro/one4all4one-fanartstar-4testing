@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>JOGOS - Destacar o jogo selecionado</opt_selectionvaleur>
 		<selegere>Leve</selegere>
 		<selmarquee>Forte</selmarquee>
+		<opt_videojeu>JOGOS - Vídeo do jogo</opt_videojeu>
+		<vjcapture>Captura e depois vídeo</vjcapture>
+		<vjseule>Só vídeo</vjseule>
+		<vjfondu>Vídeo com transição suave</vjfondu>
 		<fanartflouleger>Ligeira</fanartflouleger>
 		<fanartfloumoyen>Média</fanartfloumoyen>
 		<fanartfloufort>Forte</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>AVANÇADO - Logo do sistema</opt_extfolderlogosyst>
 		<opt_extfoldersalon>AVANÇADO - Localização dos fundos da vista RFE Retrofist Nostalgia</opt_extfoldersalon>
 		<opt_perfmachine>AVANÇADO - Modo máquina pouco potente</opt_perfmachine>
-		<opt_salonecran>RETROFIST - Tela da TV</opt_salonecran>
-		<salonvideoseule>Só vídeo</salonvideoseule>
-		<saloncapturevideo>Captura e depois vídeo</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Vinheta do cenário</opt_salonvignette>
+		<vignleger>Leve</vignleger>
+		<vignfort>Forte</vignfort>
 		<opt_deckselection>BIG ART - Posição do jogo selecionado</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logótipo durante o vídeo</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Vídeo</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Mídia do jogo (disco, cartucho)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Velocidade da animação de rolagem</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Tamanho do vídeo de pré-visualização</opt_starvideo>
+		<opt_starvideocadre>BOXART - Moldura do vídeo de pré-visualização</opt_starvideocadre>
+		<vcadreactuel>Moldura atual</vcadreactuel>
+		<vcadreombre>Só sombra</vcadreombre>
+		<vcadreecranfin>Moldura fina</vcadreecranfin>
+		<vcadrebois>Madeira</vcadrebois>
+		<vcadremetal>Metal escovado</vcadremetal>
+		<vcadrelumineux>Ecrã luminoso</vcadrelumineux>
+		<vcadretv>Televisor CRT</vcadretv>
+		<vcadregalerie>Galeria</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Néon</vcadreneon>
+		<vcadrehologramme>Holograma</vcadrehologramme>
+		<vcadreverre>Vidro fosco</vcadreverre>
+		<vcadrecarbone>Carbono LED</vcadrecarbone>
+		<vcadreneondouble>Néon duplo</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Pinceladas</vcadrepinceau>
+		<vcadretechnodore>Tecno dourado</vcadretechnodore>
+		<vcadretechnoargent>Tecno prateado</vcadretechnoargent>
+		<vcadreneonelec>Néon elétrico</vcadreneonelec>
+		<vcadrevitre>Vidro</vcadrevitre>
+		<vcadreflammes>Chamas</vcadreflammes>
+		<vcadreencre>Tinta</vcadreencre>
 		<opt_starvideoanim>BOXART - Aparecimento do vídeo</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Caixa que vira (contracapa)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Ângulo inicial da caixa que vira</opt_boite3dangle>

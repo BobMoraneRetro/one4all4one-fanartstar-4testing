@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>游戏 - 突出显示所选游戏</opt_selectionvaleur>
 		<selegere>轻微</selegere>
 		<selmarquee>明显</selmarquee>
+		<opt_videojeu>游戏 - 游戏视频</opt_videojeu>
+		<vjcapture>先截图后视频</vjcapture>
+		<vjseule>仅视频</vjseule>
+		<vjfondu>淡入视频</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>高级 - 系统标志</opt_extfolderlogosyst>
 		<opt_extfoldersalon>高级 - RFE Retrofist Nostalgia 视图背景位置</opt_extfoldersalon>
 		<opt_perfmachine>高级 - 低性能设备模式</opt_perfmachine>
-		<opt_salonecran>RETROFIST - 电视屏幕</opt_salonecran>
-		<salonvideoseule>仅视频</salonvideoseule>
-		<saloncapturevideo>先截图后视频</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - 背景暗角</opt_salonvignette>
+		<vignleger>轻微</vignleger>
+		<vignfort>强烈</vignfort>
 		<opt_deckselection>BIG ART - 所选游戏的位置</opt_deckselection>
 		<opt_decklogovideo>BIG ART - 视频播放时的徽标</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - 视频</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - 游戏介质（光盘、卡带）</opt_starsupport>
 		<opt_boxstarspeed>BOXART - 滚动动画速度</opt_boxstarspeed>
 		<opt_starvideo>BOXART - 预览视频大小</opt_starvideo>
+		<opt_starvideocadre>BOXART - 预览视频边框</opt_starvideocadre>
+		<vcadreactuel>当前边框</vcadreactuel>
+		<vcadreombre>仅阴影</vcadreombre>
+		<vcadreecranfin>细边框</vcadreecranfin>
+		<vcadrebois>木质</vcadrebois>
+		<vcadremetal>拉丝金属</vcadremetal>
+		<vcadrelumineux>发光屏幕</vcadrelumineux>
+		<vcadretv>CRT 电视</vcadretv>
+		<vcadregalerie>画廊</vcadregalerie>
+		<vcadrepolaroid>拍立得</vcadrepolaroid>
+		<vcadreneon>霓虹</vcadreneon>
+		<vcadrehologramme>全息</vcadrehologramme>
+		<vcadreverre>磨砂玻璃</vcadreverre>
+		<vcadrecarbone>碳纤维 LED</vcadrecarbone>
+		<vcadreneondouble>双色霓虹</vcadreneondouble>
+		<vcadregaming>电竞</vcadregaming>
+		<vcadrepinceau>笔刷</vcadrepinceau>
+		<vcadretechnodore>金色科技</vcadretechnodore>
+		<vcadretechnoargent>银色科技</vcadretechnoargent>
+		<vcadreneonelec>电光霓虹</vcadreneonelec>
+		<vcadrevitre>玻璃</vcadrevitre>
+		<vcadreflammes>火焰</vcadreflammes>
+		<vcadreencre>墨迹</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

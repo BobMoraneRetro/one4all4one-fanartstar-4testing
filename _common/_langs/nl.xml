@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>SPELLEN - Geselecteerd spel benadrukken</opt_selectionvaleur>
 		<selegere>Licht</selegere>
 		<selmarquee>Sterk</selmarquee>
+		<opt_videojeu>SPELLEN - Gamevideo</opt_videojeu>
+		<vjcapture>Screenshot, dan video</vjcapture>
+		<vjseule>Alleen video</vjseule>
+		<vjfondu>Video met infaden</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>GEAVANCEERD - Systeemlogo</opt_extfolderlogosyst>
 		<opt_extfoldersalon>GEAVANCEERD - Locatie van de achtergronden van de weergave RFE Retrofist Nostalgia</opt_extfoldersalon>
 		<opt_perfmachine>GEAVANCEERD - Modus voor zwakke machines</opt_perfmachine>
-		<opt_salonecran>RETROFIST - Tv-scherm</opt_salonecran>
-		<salonvideoseule>Alleen video</salonvideoseule>
-		<saloncapturevideo>Screenshot, dan video</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Vignettering van de achtergrond</opt_salonvignette>
+		<vignleger>Licht</vignleger>
+		<vignfort>Sterk</vignfort>
 		<opt_deckselection>BIG ART - Positie van het geselecteerde spel</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo tijdens video</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Spelmedium (disc, cartridge)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Snelheid van de scrollanimatie</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Grootte van de voorbeeldvideo</opt_starvideo>
+		<opt_starvideocadre>BOXART - Kader van de voorbeeldvideo</opt_starvideocadre>
+		<vcadreactuel>Huidig kader</vcadreactuel>
+		<vcadreombre>Alleen schaduw</vcadreombre>
+		<vcadreecranfin>Smalle rand</vcadreecranfin>
+		<vcadrebois>Hout</vcadrebois>
+		<vcadremetal>Geborsteld metaal</vcadremetal>
+		<vcadrelumineux>Lichtgevend scherm</vcadrelumineux>
+		<vcadretv>Beeldbuis-tv</vcadretv>
+		<vcadregalerie>Galerij</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologram</vcadrehologramme>
+		<vcadreverre>Matglas</vcadreverre>
+		<vcadrecarbone>Carbon-led</vcadrecarbone>
+		<vcadreneondouble>Dubbele neon</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Penseelstreken</vcadrepinceau>
+		<vcadretechnodore>Goud-tech</vcadretechnodore>
+		<vcadretechnoargent>Zilver-tech</vcadretechnoargent>
+		<vcadreneonelec>Elektrische neon</vcadreneonelec>
+		<vcadrevitre>Glasplaat</vcadrevitre>
+		<vcadreflammes>Vlammen</vcadreflammes>
+		<vcadreencre>Inkt</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

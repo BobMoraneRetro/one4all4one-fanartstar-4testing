@@ -13,11 +13,11 @@
 	${media_support} : support physique du jeu (cartouche, ou disque pour les systèmes à disque) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_support_exists} : vrai si le média « support » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${salon_disque_depart} : vue Salon : x du disque caché derrière la boîte sélectionnée (définie dans _gamemedia/_salon/ (13 fichiers))
-	${salon_disque_taille} : vue Salon : taille maximale du disque (définie dans _gamemedia/_salon/ (14 fichiers))
+	${salon_disque_taille} : vue Salon : taille maximale du disque (définie dans _gamemedia/_salon/ (96 fichiers) ; valeur selon l option « JEUX - Boîte de jeu à afficher »)
 	${salon_disque_tourne} : vue Salon : true = le disque tourne (systèmes CD/DVD par défaut), false = il sort sans tourner ; réglable par <système>.xml (définie dans _gamemedia/_salon/ps2.xml, _viewgame/presetsalon.xml)
-	${salon_disque_x} : vue Salon : x du disque une fois sorti de la boîte (définie dans _gamemedia/_salon/ (13 fichiers))
+	${salon_disque_x} : vue Salon : x du disque une fois sorti de la boîte (définie dans _gamemedia/_salon/ (96 fichiers) ; valeur selon l option « JEUX - Boîte de jeu à afficher »)
 	${salon_disque_y} : vue Salon : hauteur du centre du disque (définie dans _gamemedia/_salon/ (13 fichiers))
-	${salon_support_mixte} : vue Salon : true = disques et cartes mélangés, la forme de l image (ronde ou non) décide de la rotation (shader support_tourne) ; défaut wiiu, switch, xbox360 (définie dans _gamemedia/_salon/ (7 fichiers))
+	${salon_support_mixte} : vue Salon : true = disques et cartes mélangés, la forme de l image (ronde ou non) décide de la rotation (shader support_tourne) ; défaut wiiu, xbox360, openbor, mugen, ikemen, windows et les collections (définie dans _gamemedia/_salon/ (9 fichiers))
 	Libellés traduits (_common/_langs/<langue>.xml) : ${presetstarbox}
 -->
 <theme>

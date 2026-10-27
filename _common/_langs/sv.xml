@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>SPEL - Framhäv valt spel</opt_selectionvaleur>
 		<selegere>Lätt</selegere>
 		<selmarquee>Tydlig</selmarquee>
+		<opt_videojeu>SPEL - Spelvideo</opt_videojeu>
+		<vjcapture>Skärmbild, sedan video</vjcapture>
+		<vjseule>Endast video</vjseule>
+		<vjfondu>Video med intoning</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>AVANCERAT - Systemlogotyp</opt_extfolderlogosyst>
 		<opt_extfoldersalon>AVANCERAT - Plats för bakgrunderna i vyn RFE Retrofist Nostalgia</opt_extfoldersalon>
 		<opt_perfmachine>AVANCERAT - Läge för svaga datorer</opt_perfmachine>
-		<opt_salonecran>RETROFIST - TV-skärm</opt_salonecran>
-		<salonvideoseule>Endast video</salonvideoseule>
-		<saloncapturevideo>Skärmbild, sedan video</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Vinjettering av bakgrunden</opt_salonvignette>
+		<vignleger>Lätt</vignleger>
+		<vignfort>Stark</vignfort>
 		<opt_deckselection>BIG ART - Placering av valt spel</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logotyp under video</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Spelmedium (skiva, kassett)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Rullningsanimationens hastighet</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Förhandsvideons storlek</opt_starvideo>
+		<opt_starvideocadre>BOXART - Ram för förhandsvideo</opt_starvideocadre>
+		<vcadreactuel>Nuvarande ram</vcadreactuel>
+		<vcadreombre>Endast skugga</vcadreombre>
+		<vcadreecranfin>Tunn kant</vcadreecranfin>
+		<vcadrebois>Trä</vcadrebois>
+		<vcadremetal>Borstad metall</vcadremetal>
+		<vcadrelumineux>Lysande skärm</vcadrelumineux>
+		<vcadretv>Tjock-tv</vcadretv>
+		<vcadregalerie>Galleri</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologram</vcadrehologramme>
+		<vcadreverre>Frostat glas</vcadreverre>
+		<vcadrecarbone>Kolfiber-LED</vcadrecarbone>
+		<vcadreneondouble>Dubbel neon</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Penseldrag</vcadrepinceau>
+		<vcadretechnodore>Guld-tech</vcadretechnodore>
+		<vcadretechnoargent>Silver-tech</vcadretechnoargent>
+		<vcadreneonelec>Elektrisk neon</vcadreneonelec>
+		<vcadrevitre>Glasruta</vcadrevitre>
+		<vcadreflammes>Lågor</vcadreflammes>
+		<vcadreencre>Bläck</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

@@ -40,11 +40,22 @@ Pour chaque système :
   3do.xml        : réglages de 3do.png
   gc.png         : décor du système GameCube (nom de thème gc : chambre de fan 2002, trophées façon Melee, écran 4:3)
   gc.xml         : réglages de gc.png
+  windows.png    : décor du système Windows (setup PC gamer moderne, écran 16:9 ; remplace _default16 pour ce système)
+  windows.xml    : réglages de windows.png (non étirée : vieux jeux PC en 4:3)
   gb.png         : décor du système Game Boy (la console posée de face sur une étagère 1990, son écran LCD = écran de la vidéo)
   gb.xml         : réglages de gb.png (salon_couleur A9840C + salon_saturation 0 + calque gb_ecran.png = écran olive façon DMG)
   gb_ecran.png   : calque écran LCD Game Boy (voile vert + grille claire de 3 px, fait par calque_lcd.py), posé sur la vidéo
+  megaduck.png   : décor du système Mega Duck (la console de face sur une étagère 1993, boîte Creatronic, son écran LCD = écran de la vidéo)
+  megaduck.xml   : réglages de megaduck.png (même écran olive que gb : salon_couleur A9840C + salon_saturation 0)
+  megaduck_ecran.png : calque écran LCD de megaduck.png (calque_lcd.py, 262x245 px)
+  gbc.png        : décor du système Game Boy Color (GBC Atomic Purple en gros plan, chambre de soirée vers 2000 dans les tons sombres bleu/violet, Game Boy Camera/Printer, Pocket Pikachu, figurines, lampe à lave ; son écran LCD = écran de la vidéo)
+  gbc.xml        : réglages de gbc.png (écran 10:9 étiré, couleurs d origine) + taille/position de la cartouche dans le carrousel
+  gbc2players.png : décor du système Game Boy Color 2 joueurs (2 GBC violette et turquoise reliées par câble link, chambre de nuit vers 2000, 2 écrans)
+  gbc2players.xml : réglages de gbc2players.png (2 écrans : salon_ecran2 true + salon_video2_pos/taille) + taille/position de la cartouche
   burnout.png    : décor de la collection Burnout (Burnout.xcc : voiture qui traverse le mur du salon)
   burnout.xml    : réglages de burnout.png (formats mélangés 4:3/16:9 : non étirée ; disques et cartouches : support mixte)
+  auto-racedriving.png : décor de la collection automatique Course (genre « Race, Driving » de resources/genres.xml => thème auto-racedriving) : garage de stand, télé dans un mur de pneus, F1 qui sort du mur
+  auto-racedriving.xml : réglages de auto-racedriving.png (écran 16:9, non étirée, supports mixtes)
   Dragon Ball Z.png : décor de la collection Dragon Ball Z (Dragon Ball Z.xcc : salon Capsule Corp, Shenron)
   Dragon Ball Z.xml : réglages de Dragon Ball Z.png (non étirée, support mixte)
   castlevania.png : décor de la collection Castlevania (Castlevania.xcc : salon gothique du château de Dracula)
@@ -53,6 +64,9 @@ Pour chaque système :
   onimusha.xml   : réglages de onimusha.png (non étirée, support mixte)
   streets of rage.png : décor de la collection streets of rage (bar au néon après la bagarre, écran à droite)
   streets of rage.xml : réglages de streets of rage.png (non étirée, support mixte)
+  auto-lightgun.png : décor de la collection automatique Lightgun (stand de tir forain, collection de pistolets)
+  auto-lightgun.xml : réglages de auto-lightgun.png (non étirée, support mixte)
+  Collections automatiques : nom de thème auto-<nom> (auto-favorites, auto-lastplayed, auto-allgames, auto-lightgun, auto-wheel...)
   Collections perso : le fichier porte le nom exact de la collection (espaces compris), liste des noms reconnus : collections.info du thème
   Ne pas mettre salon_disque_tourne dans ces fichiers par défaut : ils sont lus après la vue et écraseraient la rotation des systèmes à CD.
 
@@ -89,6 +103,9 @@ Réglages de <système>.xml (coordonnées en fraction d écran, 0 0 = haut gauch
   salon_saturation     1 = normale (défaut), 0 = noir et blanc ; avec salon_couleur 8BAC0F = écran vert Game Boy
   salon_calque         image posée par-dessus l écran (vitre, quadrillage LCD), vide = aucune (défaut)
                        ex. gb.xml : <salon_calque>${path_salon}/gb_ecran.png</salon_calque>
+  salon_ecran2         true = 2e écran (2 consoles reliées par câble link) : même vidéo, capture, couleur et calque que le 1er.
+                       false par défaut. Avec : salon_video2_pos (centre du 2e écran) et salon_video2_taille
+                       (largeur hauteur). Le 1er écran garde salon_video_pos/taille. Ex. gbc2players.xml.
 
 Mesurer l écran : x du centre = (gauche + droite) / 2 / 1920, y = (haut + bas) / 2 / 1080,
 largeur = (droite - gauche) / 1920, hauteur = (bas - haut) / 1080.

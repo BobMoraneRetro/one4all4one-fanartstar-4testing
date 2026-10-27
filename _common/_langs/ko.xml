@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>게임 - 선택한 게임 강조</opt_selectionvaleur>
 		<selegere>약하게</selegere>
 		<selmarquee>강하게</selmarquee>
+		<opt_videojeu>게임 - 게임 동영상</opt_videojeu>
+		<vjcapture>스크린샷 후 동영상</vjcapture>
+		<vjseule>동영상만</vjseule>
+		<vjfondu>페이드 동영상</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>고급 - 시스템 로고</opt_extfolderlogosyst>
 		<opt_extfoldersalon>고급 - RFE Retrofist Nostalgia 보기 배경 위치</opt_extfoldersalon>
 		<opt_perfmachine>고급 - 저사양 기기 모드</opt_perfmachine>
-		<opt_salonecran>RETROFIST - TV 화면</opt_salonecran>
-		<salonvideoseule>동영상만</salonvideoseule>
-		<saloncapturevideo>스크린샷 후 동영상</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - 배경 비네팅</opt_salonvignette>
+		<vignleger>약하게</vignleger>
+		<vignfort>강하게</vignfort>
 		<opt_deckselection>BIG ART - 선택한 게임의 위치</opt_deckselection>
 		<opt_decklogovideo>BIG ART - 동영상 중 로고</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - 동영상</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - 게임 매체 (디스크, 카트리지)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - 스크롤 애니메이션 속도</opt_boxstarspeed>
 		<opt_starvideo>BOXART - 미리보기 영상 크기</opt_starvideo>
+		<opt_starvideocadre>BOXART - 미리보기 동영상 프레임</opt_starvideocadre>
+		<vcadreactuel>현재 프레임</vcadreactuel>
+		<vcadreombre>그림자만</vcadreombre>
+		<vcadreecranfin>얇은 베젤</vcadreecranfin>
+		<vcadrebois>나무</vcadrebois>
+		<vcadremetal>브러시드 메탈</vcadremetal>
+		<vcadrelumineux>빛나는 화면</vcadrelumineux>
+		<vcadretv>CRT TV</vcadretv>
+		<vcadregalerie>갤러리</vcadregalerie>
+		<vcadrepolaroid>폴라로이드</vcadrepolaroid>
+		<vcadreneon>네온</vcadreneon>
+		<vcadrehologramme>홀로그램</vcadrehologramme>
+		<vcadreverre>젖빛 유리</vcadreverre>
+		<vcadrecarbone>카본 LED</vcadrecarbone>
+		<vcadreneondouble>더블 네온</vcadreneondouble>
+		<vcadregaming>게이밍</vcadregaming>
+		<vcadrepinceau>붓 터치</vcadrepinceau>
+		<vcadretechnodore>골드 테크</vcadretechnodore>
+		<vcadretechnoargent>실버 테크</vcadretechnoargent>
+		<vcadreneonelec>전기 네온</vcadreneonelec>
+		<vcadrevitre>유리</vcadrevitre>
+		<vcadreflammes>불꽃</vcadreflammes>
+		<vcadreencre>잉크</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

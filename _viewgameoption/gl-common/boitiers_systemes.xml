@@ -31,7 +31,7 @@
 		<boitiertype if="{system.theme} == 'atari2600' || {system.theme} == 'colecovision' || {system.theme} == 'intellivision'">9</boitiertype>
 		<boitiercouleur>00000000</boitiercouleur>
 		<boitiercouleur if="{system.theme} == 'xbox'">68A82CFF</boitiercouleur>
-		<boitiercouleur if="{system.theme} == 'xbox360'">7AB92980</boitiercouleur>
+		<boitiercouleur if="{system.theme} == 'xbox360'">7AB929CC</boitiercouleur>
 		<boitiercouleur if="{system.theme} == 'xboxone'">107C10FF</boitiercouleur>
 		<boitiercouleur if="{system.theme} == 'wii'">F0F0F0FF</boitiercouleur>
 		<boitiercouleur if="{system.theme} == 'switch'">E60012FF</boitiercouleur>

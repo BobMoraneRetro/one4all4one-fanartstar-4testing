@@ -6,6 +6,7 @@
 	${gm_image} : chemin du média perso « image » (_gamemedia/<système>/image/<rom>) (définie dans _viewgameoption/gl-common/gamemedia/gamemedia.xml)
 	${gm_marquee} : chemin du média perso « marquee » (_gamemedia/<système>/marquee/<rom>) (définie dans _viewgameoption/gl-common/gamemedia/gamemedia.xml)
 	${gm_video} : chemin du média perso « video » (_gamemedia/<système>/video/<rom>) (définie dans _viewgameoption/gl-common/gamemedia/gamemedia.xml)
+	${gm_video_avi} : chemin du média perso « video_avi » (_gamemedia/<système>/video_avi/<rom>) (définie dans _viewgameoption/gl-common/gamemedia/gamemedia.xml)
 -->
 <theme>
 	<formatVersion>7</formatVersion>
@@ -19,11 +20,11 @@
 		<media_wheel ifSubset="gamemedia:oui">firstfile(${gm_marquee},{game:wheel})</media_wheel>
 		<media_wheel ifSubset="gamemedia:seul">firstfile(${gm_marquee})</media_wheel>
 		<media_wheel ifSubset="gamemedia:non">{game:wheel}</media_wheel>
-		<media_video ifSubset="gamemedia:oui">firstfile(${gm_video},{game:video})</media_video>
-		<media_video ifSubset="gamemedia:seul">firstfile(${gm_video})</media_video>
+		<media_video ifSubset="gamemedia:oui">firstfile(${gm_video},${gm_video_avi},{game:video})</media_video>
+		<media_video ifSubset="gamemedia:seul">firstfile(${gm_video},${gm_video_avi})</media_video>
 		<media_video ifSubset="gamemedia:non">{game:video}</media_video>
-		<media_video_exists ifSubset="gamemedia:oui">exists(${gm_video}) || exists({game:video})</media_video_exists>
-		<media_video_exists ifSubset="gamemedia:seul">exists(${gm_video})</media_video_exists>
+		<media_video_exists ifSubset="gamemedia:oui">exists(${gm_video}) || exists(${gm_video_avi}) || exists({game:video})</media_video_exists>
+		<media_video_exists ifSubset="gamemedia:seul">exists(${gm_video}) || exists(${gm_video_avi})</media_video_exists>
 		<media_video_exists ifSubset="gamemedia:non">exists({game:video})</media_video_exists>
 		<media_image ifSubset="gamemedia:oui">firstfile(${gm_image},{game:image})</media_image>
 		<media_image ifSubset="gamemedia:seul">firstfile(${gm_image})</media_image>

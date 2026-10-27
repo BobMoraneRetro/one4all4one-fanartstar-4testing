@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>ИГРЫ - Выделять выбранную игру</opt_selectionvaleur>
 		<selegere>Слабо</selegere>
 		<selmarquee>Сильно</selmarquee>
+		<opt_videojeu>ИГРЫ - Видео игры</opt_videojeu>
+		<vjcapture>Скриншот, затем видео</vjcapture>
+		<vjseule>Только видео</vjseule>
+		<vjfondu>Видео с плавным появлением</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>ДОПОЛНИТЕЛЬНО - Логотип системы</opt_extfolderlogosyst>
 		<opt_extfoldersalon>ДОПОЛНИТЕЛЬНО - Расположение фонов вида RFE Retrofist Nostalgia</opt_extfoldersalon>
 		<opt_perfmachine>ДОПОЛНИТЕЛЬНО - Режим для слабых машин</opt_perfmachine>
-		<opt_salonecran>RETROFIST - Экран ТВ</opt_salonecran>
-		<salonvideoseule>Только видео</salonvideoseule>
-		<saloncapturevideo>Скриншот, затем видео</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Виньетирование фона</opt_salonvignette>
+		<vignleger>Слабое</vignleger>
+		<vignfort>Сильное</vignfort>
 		<opt_deckselection>BIG ART - Положение выбранной игры</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Логотип во время видео</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Видео</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Носитель игры (диск, картридж)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Скорость анимации прокрутки</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Размер видео предпросмотра</opt_starvideo>
+		<opt_starvideocadre>BOXART - Рамка видео предпросмотра</opt_starvideocadre>
+		<vcadreactuel>Текущая рамка</vcadreactuel>
+		<vcadreombre>Только тень</vcadreombre>
+		<vcadreecranfin>Тонкая рамка</vcadreecranfin>
+		<vcadrebois>Дерево</vcadrebois>
+		<vcadremetal>Шлифованный металл</vcadremetal>
+		<vcadrelumineux>Светящийся экран</vcadrelumineux>
+		<vcadretv>ЭЛТ-телевизор</vcadretv>
+		<vcadregalerie>Галерея</vcadregalerie>
+		<vcadrepolaroid>Полароид</vcadrepolaroid>
+		<vcadreneon>Неон</vcadreneon>
+		<vcadrehologramme>Голограмма</vcadrehologramme>
+		<vcadreverre>Матовое стекло</vcadreverre>
+		<vcadrecarbone>Карбон LED</vcadrecarbone>
+		<vcadreneondouble>Двойной неон</vcadreneondouble>
+		<vcadregaming>Игровая</vcadregaming>
+		<vcadrepinceau>Мазки кисти</vcadrepinceau>
+		<vcadretechnodore>Золотое техно</vcadretechnodore>
+		<vcadretechnoargent>Серебряное техно</vcadretechnoargent>
+		<vcadreneonelec>Электрический неон</vcadreneonelec>
+		<vcadrevitre>Стекло</vcadrevitre>
+		<vcadreflammes>Пламя</vcadreflammes>
+		<vcadreencre>Чернила</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

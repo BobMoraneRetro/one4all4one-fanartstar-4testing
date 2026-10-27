@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>משחקים - הדגשת המשחק הנבחר</opt_selectionvaleur>
 		<selegere>קלה</selegere>
 		<selmarquee>חזקה</selmarquee>
+		<opt_videojeu>משחקים - סרטון המשחק</opt_videojeu>
+		<vjcapture>צילום מסך ואז וידאו</vjcapture>
+		<vjseule>וידאו בלבד</vjseule>
+		<vjfondu>וידאו עם הופעה הדרגתית</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>מתקדם - לוגו המערכת</opt_extfolderlogosyst>
 		<opt_extfoldersalon>מתקדם - מיקום הרקעים של תצוגת RFE Retrofist Nostalgia</opt_extfoldersalon>
 		<opt_perfmachine>מתקדם - מצב למחשב חלש</opt_perfmachine>
-		<opt_salonecran>RETROFIST - מסך הטלוויזיה</opt_salonecran>
-		<salonvideoseule>וידאו בלבד</salonvideoseule>
-		<saloncapturevideo>צילום מסך ואז וידאו</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - הצללת שולי הרקע</opt_salonvignette>
+		<vignleger>קלה</vignleger>
+		<vignfort>חזקה</vignfort>
 		<opt_deckselection>BIG ART - מיקום המשחק הנבחר</opt_deckselection>
 		<opt_decklogovideo>BIG ART - לוגו בזמן הווידאו</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - וידאו</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - מדיית המשחק (דיסק, מחסנית)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - מהירות הנפשת הגלילה</opt_boxstarspeed>
 		<opt_starvideo>BOXART - גודל סרטון התצוגה המקדימה</opt_starvideo>
+		<opt_starvideocadre>BOXART - מסגרת וידאו התצוגה המקדימה</opt_starvideocadre>
+		<vcadreactuel>המסגרת הנוכחית</vcadreactuel>
+		<vcadreombre>צל בלבד</vcadreombre>
+		<vcadreecranfin>מסגרת דקה</vcadreecranfin>
+		<vcadrebois>עץ</vcadrebois>
+		<vcadremetal>מתכת מוברשת</vcadremetal>
+		<vcadrelumineux>מסך זוהר</vcadrelumineux>
+		<vcadretv>טלוויזיית CRT</vcadretv>
+		<vcadregalerie>גלריה</vcadregalerie>
+		<vcadrepolaroid>פולארויד</vcadrepolaroid>
+		<vcadreneon>ניאון</vcadreneon>
+		<vcadrehologramme>הולוגרמה</vcadrehologramme>
+		<vcadreverre>זכוכית חלבית</vcadreverre>
+		<vcadrecarbone>קרבון LED</vcadrecarbone>
+		<vcadreneondouble>ניאון כפול</vcadreneondouble>
+		<vcadregaming>גיימינג</vcadregaming>
+		<vcadrepinceau>משיכות מכחול</vcadrepinceau>
+		<vcadretechnodore>טכנו זהב</vcadretechnodore>
+		<vcadretechnoargent>טכנו כסף</vcadretechnoargent>
+		<vcadreneonelec>ניאון חשמלי</vcadreneonelec>
+		<vcadrevitre>זכוכית</vcadrevitre>
+		<vcadreflammes>להבות</vcadreflammes>
+		<vcadreencre>דיו</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

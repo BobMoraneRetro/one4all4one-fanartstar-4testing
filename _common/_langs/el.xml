@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>ΠΑΙΧΝΙΔΙΑ - Ανάδειξη επιλεγμένου παιχνιδιού</opt_selectionvaleur>
 		<selegere>Ελαφριά</selegere>
 		<selmarquee>Έντονη</selmarquee>
+		<opt_videojeu>ΠΑΙΧΝΙΔΙΑ - Βίντεο παιχνιδιού</opt_videojeu>
+		<vjcapture>Στιγμιότυπο, μετά βίντεο</vjcapture>
+		<vjseule>Μόνο βίντεο</vjseule>
+		<vjfondu>Βίντεο με σταδιακή εμφάνιση</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>ΠΡΟΧΩΡΗΜΕΝΑ - Λογότυπο συστήματος</opt_extfolderlogosyst>
 		<opt_extfoldersalon>ΠΡΟΧΩΡΗΜΕΝΑ - Τοποθεσία φόντων της προβολής RFE Retrofist Nostalgia</opt_extfoldersalon>
 		<opt_perfmachine>ΠΡΟΧΩΡΗΜΕΝΑ - Λειτουργία αδύναμου μηχανήματος</opt_perfmachine>
-		<opt_salonecran>RETROFIST - Οθόνη TV</opt_salonecran>
-		<salonvideoseule>Μόνο βίντεο</salonvideoseule>
-		<saloncapturevideo>Στιγμιότυπο, μετά βίντεο</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Βινιετάρισμα φόντου</opt_salonvignette>
+		<vignleger>Ελαφρύ</vignleger>
+		<vignfort>Έντονο</vignfort>
 		<opt_deckselection>BIG ART - Θέση επιλεγμένου παιχνιδιού</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Λογότυπο κατά το βίντεο</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Βίντεο</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Μέσο παιχνιδιού (δίσκος, κασέτα)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Ταχύτητα κίνησης κύλισης</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Μέγεθος βίντεο προεπισκόπησης</opt_starvideo>
+		<opt_starvideocadre>BOXART - Πλαίσιο βίντεο προεπισκόπησης</opt_starvideocadre>
+		<vcadreactuel>Τρέχον πλαίσιο</vcadreactuel>
+		<vcadreombre>Μόνο σκιά</vcadreombre>
+		<vcadreecranfin>Λεπτό πλαίσιο</vcadreecranfin>
+		<vcadrebois>Ξύλο</vcadrebois>
+		<vcadremetal>Βουρτσισμένο μέταλλο</vcadremetal>
+		<vcadrelumineux>Φωτεινή οθόνη</vcadrelumineux>
+		<vcadretv>Τηλεόραση CRT</vcadretv>
+		<vcadregalerie>Γκαλερί</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Νέον</vcadreneon>
+		<vcadrehologramme>Ολόγραμμα</vcadrehologramme>
+		<vcadreverre>Θαμπό γυαλί</vcadreverre>
+		<vcadrecarbone>Άνθρακας LED</vcadrecarbone>
+		<vcadreneondouble>Διπλό νέον</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Πινελιές</vcadrepinceau>
+		<vcadretechnodore>Χρυσό techno</vcadretechnodore>
+		<vcadretechnoargent>Ασημί techno</vcadretechnoargent>
+		<vcadreneonelec>Ηλεκτρικό νέον</vcadreneonelec>
+		<vcadrevitre>Τζάμι</vcadrevitre>
+		<vcadreflammes>Φλόγες</vcadreflammes>
+		<vcadreencre>Μελάνι</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

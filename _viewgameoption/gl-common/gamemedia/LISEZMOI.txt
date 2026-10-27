@@ -19,7 +19,7 @@ ARBORESCENCE DES MÉDIAS PERSO (sans suffixe : le fichier porte le nom de la rom
                                            /fanart/<rom>.jpg      fanart              -> ${media_fanart}
                                            /logo/<rom>.png        logo / marquee      -> ${media_marquee}
   ${media_wheel}      : logo perso (dossier logo), sinon le champ wheel du gamelist (remplace md_wheel)
-                                           /video/<rom>.mp4       vidéo               -> ${media_video}
+                                           /video/<rom>.mp4 (ou .avi) vidéo               -> ${media_video}
                                            /screenshot/<rom>.png  capture             -> ${media_image}
                                            /disc/<rom>.png        disque (systèmes CD)-> ${media_disc}
                                            /cartridge/<rom>.png   cartouche           -> ${media_cartridge}

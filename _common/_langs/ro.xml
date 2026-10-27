@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>JOCURI - Evidențiază jocul selectat</opt_selectionvaleur>
 		<selegere>Ușoară</selegere>
 		<selmarquee>Puternică</selmarquee>
+		<opt_videojeu>JOCURI - Videoclipul jocului</opt_videojeu>
+		<vjcapture>Captură, apoi video</vjcapture>
+		<vjseule>Doar video</vjseule>
+		<vjfondu>Video cu tranziție</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>AVANSAT - Logo sistem</opt_extfolderlogosyst>
 		<opt_extfoldersalon>AVANSAT - Locația fundalurilor vizualizării RFE Retrofist Nostalgia</opt_extfoldersalon>
 		<opt_perfmachine>AVANSAT - Mod mașină slabă</opt_perfmachine>
-		<opt_salonecran>RETROFIST - Ecranul TV</opt_salonecran>
-		<salonvideoseule>Doar video</salonvideoseule>
-		<saloncapturevideo>Captură, apoi video</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Vignetare fundal</opt_salonvignette>
+		<vignleger>Ușoară</vignleger>
+		<vignfort>Puternică</vignfort>
 		<opt_deckselection>BIG ART - Poziția jocului selectat</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo în timpul videoclipului</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Videoclip</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Suportul jocului (disc, cartuș)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Viteza animației de derulare</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Dimensiunea videoclipului de previzualizare</opt_starvideo>
+		<opt_starvideocadre>BOXART - Cadrul videoclipului de previzualizare</opt_starvideocadre>
+		<vcadreactuel>Cadrul actual</vcadreactuel>
+		<vcadreombre>Doar umbră</vcadreombre>
+		<vcadreecranfin>Ramă subțire</vcadreecranfin>
+		<vcadrebois>Lemn</vcadrebois>
+		<vcadremetal>Metal periat</vcadremetal>
+		<vcadrelumineux>Ecran luminos</vcadrelumineux>
+		<vcadretv>Televizor CRT</vcadretv>
+		<vcadregalerie>Galerie</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologramă</vcadrehologramme>
+		<vcadreverre>Sticlă mată</vcadreverre>
+		<vcadrecarbone>Carbon LED</vcadrecarbone>
+		<vcadreneondouble>Neon dublu</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Tușe de pensulă</vcadrepinceau>
+		<vcadretechnodore>Tehno auriu</vcadretechnodore>
+		<vcadretechnoargent>Tehno argintiu</vcadretechnoargent>
+		<vcadreneonelec>Neon electric</vcadreneonelec>
+		<vcadrevitre>Geam</vcadrevitre>
+		<vcadreflammes>Flăcări</vcadreflammes>
+		<vcadreencre>Cerneală</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

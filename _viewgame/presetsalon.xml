@@ -31,9 +31,12 @@
 	${salon_disque_tourne} : vue Salon : true = le disque tourne (systèmes CD/DVD par défaut), false = il sort sans tourner ; réglable par <système>.xml (définie dans ce fichier)
 	${salon_disque_x} : vue Salon : x du disque une fois sorti de la boîte (définie dans ce fichier ; valeur selon l option « JEUX - Boîte de jeu à afficher »)
 	${salon_disque_y} : vue Salon : hauteur du centre du disque (définie dans ce fichier)
+	${salon_ecran2} : vue Salon : true = 2e écran (2 consoles reliées, ex. gbc2players), même vidéo, capture, couleur et calque que le 1er ; réglable par <système>.xml (définie dans ce fichier)
 	${salon_saturation} : vue Salon : saturation de la vidéo et de la capture (1 = normale, 0 = noir et blanc, à combiner avec salon_couleur) ; réglable par <système>.xml (définie dans ce fichier)
-	${salon_support_mixte} : vue Salon : true = disques et cartes mélangés, la forme de l image (ronde ou non) décide de la rotation (shader support_tourne) ; défaut wiiu, switch, xbox360 (définie dans ce fichier)
+	${salon_support_mixte} : vue Salon : true = disques et cartes mélangés, la forme de l image (ronde ou non) décide de la rotation (shader support_tourne) ; défaut wiiu, xbox360, openbor, mugen, ikemen, windows et les collections (définie dans ce fichier)
 	${salon_video_etiree} : vue Salon : true = vidéo étirée à la taille de l écran de la TV (size), false = proportions gardées (maxSize) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_video2_pos} : vue Salon : centre du 2e écran (si salon_ecran2) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_video2_taille} : vue Salon : largeur hauteur du 2e écran (si salon_ecran2) ; réglable par <système>.xml (définie dans ce fichier)
 	${salon_video_pos} : vue Salon : centre de l écran de la TV (vidéo sous le décor) (définie dans ce fichier)
 	${salon_video_taille} : vue Salon : largeur hauteur de l écran de la TV (définie dans ce fichier)
 	${selopacite} : opacité des jeux non sélectionnés dans les grilles (1, 0.7 ou 0.45) (définie dans ce fichier ; valeur selon l option « JEUX - Mise en valeur du jeu sélectionné »)
@@ -58,12 +61,15 @@
 		<salon_disque_tourne if="{system.theme} == 'psx' || {system.theme} == 'ps2' || {system.theme} == 'ps3' || {system.theme} == 'saturn' ||
 					{system.theme} == 'megacd' || {system.theme} == 'dreamcast' || {system.theme} == '3do' || {system.theme} == 'cdi' || {system.theme} == 'amigacd32' ||
 					{system.theme} == 'amigacdtv' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' ||
-					{system.theme} == 'gc' || {system.theme} == 'wii' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'fmtowns' || {system.theme} == 'wiiu' || {system.theme} == 'ps4'">true</salon_disque_tourne>
+					{system.theme} == 'gc' || {system.theme} == 'wii' || {system.theme} == 'xbox' || {system.theme} == 'xbox360' || {system.theme} == 'fmtowns' || {system.theme} == 'wiiu' || {system.theme} == 'ps4' || {system.theme} == 'ps5' || {system.theme} == 'snes-msu1'">true</salon_disque_tourne>
 		<salon_couleur>FFFFFFFF</salon_couleur>
 		<salon_saturation>1</salon_saturation>
 		<salon_calque></salon_calque>
+		<salon_ecran2>false</salon_ecran2>
+		<salon_video2_pos>0.5 0.5</salon_video2_pos>
+		<salon_video2_taille>0 0</salon_video2_taille>
 		<salon_support_mixte>false</salon_support_mixte>
-		<salon_support_mixte if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360'">true</salon_support_mixte>
+		<salon_support_mixte if="{system.theme} == 'wiiu' || {system.theme} == 'xbox360' || {system.theme} == 'openbor' || {system.theme} == 'mugen' || {system.theme} == 'ikemen' || {system.theme} == 'windows'">true</salon_support_mixte>
 		<salon_support_mixte if="{system.hardwareType} == 'auto collection' || {system.hardwareType} == 'custom collection'">true</salon_support_mixte>
 		<salon_defaut>_default</salon_defaut>
 		<salon_defaut if="{system.theme} == 'ps3' || {system.theme} == 'ps4' || {system.theme} == 'xbox360' || {system.theme} == 'wiiu' || {system.theme} == 'switch' || {system.theme} == 'psvita' || {system.theme} == 'windows' || {system.theme} == 'steam'">_default16</salon_defaut>
@@ -96,6 +102,18 @@
 			<linearSmooth>true</linearSmooth>
 			<zIndex>5</zIndex>
 		</image>
+		<image name="salonvignettage" extra="true">
+			<visible ifSubset="salonvignette:leger">true</visible>
+			<visible ifSubset="salonvignette:fort">true</visible>
+			<visible ifSubset="salonvignette:aucun">false</visible>
+			<path>${themePath}/_viewgame/fanartstar/overlay.png</path>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<color>000000</color>
+			<opacity ifSubset="salonvignette:leger">0.6</opacity>
+			<opacity ifSubset="salonvignette:fort">1</opacity>
+			<zIndex>6</zIndex>
+		</image>
 		<image name="salonnoir" extra="true">
 			<visible>{game:rom} != '..'</visible>
 			<path>${themePath}/_viewgame/salon/noir.png</path>
@@ -116,8 +134,9 @@
 			<zIndex>2.8</zIndex>
 		</image>
 		<image name="salonimagecapture" if="!${salon_video_etiree}" extra="true">
-			<visible ifSubset="salonecran:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
-			<visible ifSubset="salonecran:videoseule">false</visible>
+			<visible ifSubset="videojeu:videoseule">false</visible>
+			<visible ifSubset="videojeu:videofondu">false</visible>
+			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
 			<path>${media_image}</path>
 			<pos>${salon_capture_pos}</pos>
 			<origin>0.5 0.5</origin>
@@ -151,8 +170,9 @@
 			<zIndex>2.8</zIndex>
 		</image>
 		<image name="salonimagecaptureetiree" if="${salon_video_etiree}" extra="true">
-			<visible ifSubset="salonecran:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
-			<visible ifSubset="salonecran:videoseule">false</visible>
+			<visible ifSubset="videojeu:videoseule">false</visible>
+			<visible ifSubset="videojeu:videofondu">false</visible>
+			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
 			<path>${media_image}</path>
 			<pos>${salon_capture_pos}</pos>
 			<origin>0.5 0.5</origin>
@@ -177,8 +197,9 @@
 		<video name="salonvideo" if="!${salon_video_etiree}" extra="true">
 			<visible>{game:rom} != '..'</visible>
 			<path>${media_video}</path>
-			<delay ifSubset="salonecran:capturevideo">0.3</delay>
-			<delay ifSubset="salonecran:videoseule">0</delay>
+			<delay ifSubset="videojeu:videoseule">0</delay>
+			<delay ifSubset="videojeu:videofondu">0</delay>
+			<delay ifSubset="videojeu:capturevideo">0.3</delay>
 			<pos>${salon_video_pos}</pos>
 			<origin>0.5 0.5</origin>
 			<maxSize>${salon_video_taille}</maxSize>
@@ -190,8 +211,9 @@
 		<video name="salonvideoetiree" if="${salon_video_etiree}" extra="true">
 			<visible>{game:rom} != '..'</visible>
 			<path>${media_video}</path>
-			<delay ifSubset="salonecran:capturevideo">0.3</delay>
-			<delay ifSubset="salonecran:videoseule">0</delay>
+			<delay ifSubset="videojeu:videoseule">0</delay>
+			<delay ifSubset="videojeu:videofondu">0</delay>
+			<delay ifSubset="videojeu:capturevideo">0.3</delay>
 			<pos>${salon_video_pos}</pos>
 			<origin>0.5 0.5</origin>
 			<size>${salon_video_taille}</size>
@@ -206,6 +228,123 @@
 			<pos>${salon_video_pos}</pos>
 			<origin>0.5 0.5</origin>
 			<size>${salon_video_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>4</zIndex>
+		</image>
+		<image name="salonnoir2" if="${salon_ecran2}" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/salon/noir.png</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video2_taille}</size>
+			<zIndex>2.5</zIndex>
+		</image>
+		<image name="salonimage2" if="${salon_ecran2} &amp;&amp; !${salon_video_etiree}" extra="true">
+			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>${salon_video2_taille}</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+		</image>
+		<image name="salonimagecapture2" if="${salon_ecran2} &amp;&amp; !${salon_video_etiree}" extra="true">
+			<visible ifSubset="videojeu:videoseule">false</visible>
+			<visible ifSubset="videojeu:videofondu">false</visible>
+			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>${salon_video2_taille}</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<image name="salonimageetiree2" if="${salon_ecran2} &amp;&amp; ${salon_video_etiree}" extra="true">
+			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video2_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+		</image>
+		<image name="salonimagecaptureetiree2" if="${salon_ecran2} &amp;&amp; ${salon_video_etiree}" extra="true">
+			<visible ifSubset="videojeu:videoseule">false</visible>
+			<visible ifSubset="videojeu:videofondu">false</visible>
+			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video2_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>2.8</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<video name="salonvideo2" if="${salon_ecran2} &amp;&amp; !${salon_video_etiree}" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_video}</path>
+			<delay ifSubset="videojeu:videoseule">0</delay>
+			<delay ifSubset="videojeu:videofondu">0</delay>
+			<delay ifSubset="videojeu:capturevideo">0.3</delay>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>${salon_video2_taille}</maxSize>
+			<effect>none</effect>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>3</zIndex>
+		</video>
+		<video name="salonvideoetiree2" if="${salon_ecran2} &amp;&amp; ${salon_video_etiree}" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_video}</path>
+			<delay ifSubset="videojeu:videoseule">0</delay>
+			<delay ifSubset="videojeu:videofondu">0</delay>
+			<delay ifSubset="videojeu:capturevideo">0.3</delay>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video2_taille}</size>
+			<effect>none</effect>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<zIndex>3</zIndex>
+		</video>
+		<image name="saloncalque2" if="${salon_ecran2}" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${salon_calque}</path>
+			<pos>${salon_video2_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video2_taille}</size>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>4</zIndex>
 		</image>

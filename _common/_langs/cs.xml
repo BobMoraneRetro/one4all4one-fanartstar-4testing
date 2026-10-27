@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>HRY - Zvýraznit vybranou hru</opt_selectionvaleur>
 		<selegere>Lehké</selegere>
 		<selmarquee>Výrazné</selmarquee>
+		<opt_videojeu>HRY - Video hry</opt_videojeu>
+		<vjcapture>Snímek, poté video</vjcapture>
+		<vjseule>Pouze video</vjseule>
+		<vjfondu>Video s prolnutím</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>POKROČILÉ - Logo systému</opt_extfolderlogosyst>
 		<opt_extfoldersalon>POKROČILÉ - Umístění pozadí zobrazení RFE Retrofist Nostalgia</opt_extfoldersalon>
 		<opt_perfmachine>POKROČILÉ - Režim pro slabé stroje</opt_perfmachine>
-		<opt_salonecran>RETROFIST - Obrazovka TV</opt_salonecran>
-		<salonvideoseule>Pouze video</salonvideoseule>
-		<saloncapturevideo>Snímek, poté video</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Vinětace pozadí</opt_salonvignette>
+		<vignleger>Lehká</vignleger>
+		<vignfort>Silná</vignfort>
 		<opt_deckselection>BIG ART - Pozice vybrané hry</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo během videa</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Nosič hry (disk, cartridge)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Rychlost animace posouvání</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Velikost náhledového videa</opt_starvideo>
+		<opt_starvideocadre>BOXART - Rámeček náhledového videa</opt_starvideocadre>
+		<vcadreactuel>Současný rámeček</vcadreactuel>
+		<vcadreombre>Pouze stín</vcadreombre>
+		<vcadreecranfin>Tenký rámeček</vcadreecranfin>
+		<vcadrebois>Dřevo</vcadrebois>
+		<vcadremetal>Kartáčovaný kov</vcadremetal>
+		<vcadrelumineux>Zářící obrazovka</vcadrelumineux>
+		<vcadretv>CRT televizor</vcadretv>
+		<vcadregalerie>Galerie</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologram</vcadrehologramme>
+		<vcadreverre>Matné sklo</vcadreverre>
+		<vcadrecarbone>Karbon LED</vcadrecarbone>
+		<vcadreneondouble>Dvojitý neon</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Tahy štětcem</vcadrepinceau>
+		<vcadretechnodore>Zlaté techno</vcadretechnodore>
+		<vcadretechnoargent>Stříbrné techno</vcadretechnoargent>
+		<vcadreneonelec>Elektrický neon</vcadreneonelec>
+		<vcadrevitre>Sklo</vcadrevitre>
+		<vcadreflammes>Plameny</vcadreflammes>
+		<vcadreencre>Inkoust</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

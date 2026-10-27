@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>GAME - Sorot game yang dipilih</opt_selectionvaleur>
 		<selegere>Ringan</selegere>
 		<selmarquee>Kuat</selmarquee>
+		<opt_videojeu>GAME - Video game</opt_videojeu>
+		<vjcapture>Tangkapan layar lalu video</vjcapture>
+		<vjseule>Hanya video</vjseule>
+		<vjfondu>Video dengan efek muncul perlahan</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>LANJUTAN - Logo sistem</opt_extfolderlogosyst>
 		<opt_extfoldersalon>LANJUTAN - Lokasi latar tampilan RFE Retrofist Nostalgia</opt_extfoldersalon>
 		<opt_perfmachine>LANJUTAN - Mode mesin berdaya rendah</opt_perfmachine>
-		<opt_salonecran>RETROFIST - Layar TV</opt_salonecran>
-		<salonvideoseule>Hanya video</salonvideoseule>
-		<saloncapturevideo>Tangkapan layar lalu video</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Vinyet latar</opt_salonvignette>
+		<vignleger>Ringan</vignleger>
+		<vignfort>Kuat</vignfort>
 		<opt_deckselection>BIG ART - Posisi game yang dipilih</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo saat video</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Media game (cakram, kartrid)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Kecepatan animasi gulir</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Ukuran video pratinjau</opt_starvideo>
+		<opt_starvideocadre>BOXART - Bingkai video pratinjau</opt_starvideocadre>
+		<vcadreactuel>Bingkai saat ini</vcadreactuel>
+		<vcadreombre>Hanya bayangan</vcadreombre>
+		<vcadreecranfin>Bingkai tipis</vcadreecranfin>
+		<vcadrebois>Kayu</vcadrebois>
+		<vcadremetal>Logam brushed</vcadremetal>
+		<vcadrelumineux>Layar bercahaya</vcadrelumineux>
+		<vcadretv>TV CRT</vcadretv>
+		<vcadregalerie>Galeri</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologram</vcadrehologramme>
+		<vcadreverre>Kaca buram</vcadreverre>
+		<vcadrecarbone>Karbon LED</vcadrecarbone>
+		<vcadreneondouble>Neon ganda</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Sapuan kuas</vcadrepinceau>
+		<vcadretechnodore>Tekno emas</vcadretechnodore>
+		<vcadretechnoargent>Tekno perak</vcadretechnoargent>
+		<vcadreneonelec>Neon listrik</vcadreneonelec>
+		<vcadrevitre>Kaca</vcadrevitre>
+		<vcadreflammes>Api</vcadreflammes>
+		<vcadreencre>Tinta</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

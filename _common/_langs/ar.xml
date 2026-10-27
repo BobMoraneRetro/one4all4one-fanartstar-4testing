@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>الألعاب - إبراز اللعبة المحددة</opt_selectionvaleur>
 		<selegere>خفيف</selegere>
 		<selmarquee>واضح</selmarquee>
+		<opt_videojeu>الألعاب - فيديو اللعبة</opt_videojeu>
+		<vjcapture>لقطة شاشة ثم فيديو</vjcapture>
+		<vjseule>فيديو فقط</vjseule>
+		<vjfondu>فيديو مع ظهور تدريجي</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>متقدم - شعار النظام</opt_extfolderlogosyst>
 		<opt_extfoldersalon>متقدم - موقع خلفيات عرض RFE Retrofist Nostalgia</opt_extfoldersalon>
 		<opt_perfmachine>متقدم - وضع الأجهزة الضعيفة</opt_perfmachine>
-		<opt_salonecran>RETROFIST - شاشة التلفاز</opt_salonecran>
-		<salonvideoseule>فيديو فقط</salonvideoseule>
-		<saloncapturevideo>لقطة شاشة ثم فيديو</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - تظليل حواف الخلفية</opt_salonvignette>
+		<vignleger>خفيف</vignleger>
+		<vignfort>قوي</vignfort>
 		<opt_deckselection>BIG ART - موضع اللعبة المحددة</opt_deckselection>
 		<opt_decklogovideo>BIG ART - الشعار أثناء الفيديو</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - الفيديو</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - وسيط اللعبة (قرص، خرطوشة)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - سرعة حركة التمرير</opt_boxstarspeed>
 		<opt_starvideo>BOXART - حجم فيديو المعاينة</opt_starvideo>
+		<opt_starvideocadre>BOXART - إطار فيديو المعاينة</opt_starvideocadre>
+		<vcadreactuel>الإطار الحالي</vcadreactuel>
+		<vcadreombre>ظل فقط</vcadreombre>
+		<vcadreecranfin>حافة رفيعة</vcadreecranfin>
+		<vcadrebois>خشب</vcadrebois>
+		<vcadremetal>معدن مصقول</vcadremetal>
+		<vcadrelumineux>شاشة مضيئة</vcadrelumineux>
+		<vcadretv>تلفاز CRT</vcadretv>
+		<vcadregalerie>معرض</vcadregalerie>
+		<vcadrepolaroid>بولارويد</vcadrepolaroid>
+		<vcadreneon>نيون</vcadreneon>
+		<vcadrehologramme>هولوغرام</vcadrehologramme>
+		<vcadreverre>زجاج مصنفر</vcadreverre>
+		<vcadrecarbone>كربون LED</vcadrecarbone>
+		<vcadreneondouble>نيون مزدوج</vcadreneondouble>
+		<vcadregaming>ألعاب</vcadregaming>
+		<vcadrepinceau>ضربات فرشاة</vcadrepinceau>
+		<vcadretechnodore>تقني ذهبي</vcadretechnodore>
+		<vcadretechnoargent>تقني فضي</vcadretechnoargent>
+		<vcadreneonelec>نيون كهربائي</vcadreneonelec>
+		<vcadrevitre>زجاج</vcadrevitre>
+		<vcadreflammes>لهب</vcadreflammes>
+		<vcadreencre>حبر</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

@@ -204,6 +204,32 @@ vec2 rrNormal(vec2 p, vec2 c, vec2 halfSize, float r) {
     return n * vec2(d.x < 0.0 ? -1.0 : 1.0, d.y < 0.0 ? -1.0 : 1.0);
 }
 
+// Image détourée (boîtier déjà dessiné dans l'image) : affichée sans bordure dans le rectangle [m, 1 - m],
+// avec l'anti-aliasing du type 7 : bord du rectangle adouci sur ~1,5 pixel (boîte inclinée) et moyenne
+// de 5 échantillons quand l'image est très réduite (contour alpha, coins arrondis)
+vec4 detoureAA(vec2 m)
+{
+    vec2  size = abs(outputSize);
+    vec2  lp   = v_pos - outputOffset;
+    vec2  uv   = (v_tex - m) / max(vec2(1.0) - 2.0 * m, vec2(0.02));
+    // dérivées calculées avant toute sortie anticipée (flux uniforme)
+    float px   = max(length(fwidth(lp)) * 0.7071, 0.5);
+    vec2  fp   = fwidth(uv);
+    float d    = sdRoundRect(lp, size * 0.5, size * (vec2(0.5) - m), 0.0);
+    if (d > 0.0)
+        return vec4(0.0);
+    float cov = 1.0 - smoothstep(-1.5 * px, 0.0, d);
+    vec4  col = sampleTexture(u_tex, uv);
+    if (max(fp.x * textureSize.x, fp.y * textureSize.y) > 1.5) {
+        vec2 o = 0.35 * fp;
+        col = (col * 2.0
+             + sampleTexture(u_tex, uv + vec2( o.x,  o.y)) + sampleTexture(u_tex, uv + vec2(-o.x,  o.y))
+             + sampleTexture(u_tex, uv + vec2( o.x, -o.y)) + sampleTexture(u_tex, uv + vec2(-o.x, -o.y))) / 6.0;
+    }
+    col *= v_col;
+    return vec4(col.rgb, col.a * cov);
+}
+
 // Fente de la patte d'accroche : rectangle arrondi + bosse en demi-cercle vers le haut
 float sdTabHole(vec2 p, vec2 c, vec2 hf, float bumpR) {
     return min(sdRoundRect(p, c, hf, hf.y),
@@ -297,12 +323,7 @@ void caseMain(void)
     if (cutD && (caseType == 8 || caseType == 9)) {
         vec2 mD = vec2(getComputedValue(outerShadowSize, 0.0)) / max(abs(outputSize), vec2(1.0));
         gCutM = mD;
-        vec2 uvD = (v_tex - mD) / max(vec2(1.0) - 2.0 * mD, vec2(0.02));
-        if (uvD.x < 0.0 || uvD.x > 1.0 || uvD.y < 0.0 || uvD.y > 1.0) {
-            FragColor = vec4(0.0);
-            return;
-        }
-        FragColor = sampleTexture(u_tex, uvD) * v_col;
+        FragColor = detoureAA(mD);
         return;
     }
 
@@ -616,12 +637,7 @@ void caseMain(void)
     if (cutD) {
         vec2 mD = vec2(os + sideIn, os + vIn) / vec2(max(W, 1.0), max(H, 1.0));
         gCutM = mD;
-        vec2 uvD = (v_tex - mD) / max(vec2(1.0) - 2.0 * mD, vec2(0.02));
-        if (uvD.x < 0.0 || uvD.x > 1.0 || uvD.y < 0.0 || uvD.y > 1.0) {
-            FragColor = vec4(0.0);
-            return;
-        }
-        FragColor = sampleTexture(u_tex, uvD) * v_col;
+        FragColor = detoureAA(mD);
         return;
     }
 

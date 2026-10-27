@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>SPIELE - Ausgewähltes Spiel hervorheben</opt_selectionvaleur>
 		<selegere>Leicht</selegere>
 		<selmarquee>Deutlich</selmarquee>
+		<opt_videojeu>SPIELE - Spielvideo</opt_videojeu>
+		<vjcapture>Screenshot, dann Video</vjcapture>
+		<vjseule>Nur Video</vjseule>
+		<vjfondu>Video mit Einblendung</vjfondu>
 		<fanartflouleger>Leicht</fanartflouleger>
 		<fanartfloumoyen>Mittel</fanartfloumoyen>
 		<fanartfloufort>Stark</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>ERWEITERT - Systemlogo</opt_extfolderlogosyst>
 		<opt_extfoldersalon>ERWEITERT - Speicherort der Hintergründe der Ansicht RFE Retrofist Nostalgia</opt_extfoldersalon>
 		<opt_perfmachine>ERWEITERT - Modus für leistungsschwache Geräte</opt_perfmachine>
-		<opt_salonecran>RETROFIST - TV-Bildschirm</opt_salonecran>
-		<salonvideoseule>Nur Video</salonvideoseule>
-		<saloncapturevideo>Screenshot, dann Video</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Vignettierung des Hintergrunds</opt_salonvignette>
+		<vignleger>Leicht</vignleger>
+		<vignfort>Stark</vignfort>
 		<opt_deckselection>BIG ART - Position des ausgewählten Spiels</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo während des Videos</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Spielträger (Disc, Modul)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Geschwindigkeit der Scroll-Animation</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Größe des Vorschauvideos</opt_starvideo>
+		<opt_starvideocadre>BOXART - Rahmen des Vorschauvideos</opt_starvideocadre>
+		<vcadreactuel>Aktueller Rahmen</vcadreactuel>
+		<vcadreombre>Nur Schatten</vcadreombre>
+		<vcadreecranfin>Schmaler Rand</vcadreecranfin>
+		<vcadrebois>Holz</vcadrebois>
+		<vcadremetal>Gebürstetes Metall</vcadremetal>
+		<vcadrelumineux>Leuchtender Bildschirm</vcadrelumineux>
+		<vcadretv>Röhrenfernseher</vcadretv>
+		<vcadregalerie>Galerie</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologramm</vcadrehologramme>
+		<vcadreverre>Milchglas</vcadreverre>
+		<vcadrecarbone>Carbon-LED</vcadrecarbone>
+		<vcadreneondouble>Doppel-Neon</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Pinselstriche</vcadrepinceau>
+		<vcadretechnodore>Gold-Tech</vcadretechnodore>
+		<vcadretechnoargent>Silber-Tech</vcadretechnoargent>
+		<vcadreneonelec>Elektro-Neon</vcadreneonelec>
+		<vcadrevitre>Glasscheibe</vcadrevitre>
+		<vcadreflammes>Flammen</vcadreflammes>
+		<vcadreencre>Tinte</vcadreencre>
 		<opt_starvideoanim>BOXART - Erscheinen des Videos</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box dreht sich zur Rückseite (gescrapte Rückseite)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Startwinkel der drehenden Box</opt_boite3dangle>

@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>GAMES - Highlight the selected game</opt_selectionvaleur>
 		<selegere>Light</selegere>
 		<selmarquee>Strong</selmarquee>
+		<opt_videojeu>GAMES - Game video</opt_videojeu>
+		<vjcapture>Screenshot then video</vjcapture>
+		<vjseule>Video only</vjseule>
+		<vjfondu>Video with fade-in</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>ADVANCED - Location of system logos</opt_extfolderlogosyst>
 		<opt_extfoldersalon>ADVANCED - Location of RFE Retrofist Nostalgia view backgrounds</opt_extfoldersalon>
 		<opt_perfmachine>ADVANCED - Low-end machine mode</opt_perfmachine>
-		<opt_salonecran>RETROFIST - TV screen</opt_salonecran>
-		<salonvideoseule>Video only</salonvideoseule>
-		<saloncapturevideo>Screenshot then video</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Background vignette</opt_salonvignette>
+		<vignleger>Light</vignleger>
+		<vignfort>Strong</vignfort>
 		<opt_deckselection>BIG ART - Selected game position</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo during video</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Game medium (disc, cartridge)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Scroll animation speed</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Preview video size</opt_starvideo>
+		<opt_starvideocadre>BOXART - Preview video frame</opt_starvideocadre>
+		<vcadreactuel>Current frame</vcadreactuel>
+		<vcadreombre>Shadow only</vcadreombre>
+		<vcadreecranfin>Thin bezel</vcadreecranfin>
+		<vcadrebois>Wood</vcadrebois>
+		<vcadremetal>Brushed metal</vcadremetal>
+		<vcadrelumineux>Glowing screen</vcadrelumineux>
+		<vcadretv>CRT TV</vcadretv>
+		<vcadregalerie>Gallery</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologram</vcadrehologramme>
+		<vcadreverre>Frosted glass</vcadreverre>
+		<vcadrecarbone>Carbon LED</vcadrecarbone>
+		<vcadreneondouble>Double neon</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Brush strokes</vcadrepinceau>
+		<vcadretechnodore>Gold tech</vcadretechnodore>
+		<vcadretechnoargent>Silver tech</vcadretechnoargent>
+		<vcadreneonelec>Electric neon</vcadreneonelec>
+		<vcadrevitre>Glass pane</vcadrevitre>
+		<vcadreflammes>Flames</vcadreflammes>
+		<vcadreencre>Ink</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

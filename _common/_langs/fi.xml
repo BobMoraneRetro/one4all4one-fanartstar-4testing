@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>PELIT - Korosta valittu peli</opt_selectionvaleur>
 		<selegere>Kevyt</selegere>
 		<selmarquee>Voimakas</selmarquee>
+		<opt_videojeu>PELIT - Pelivideo</opt_videojeu>
+		<vjcapture>Kuvakaappaus, sitten video</vjcapture>
+		<vjseule>Vain video</vjseule>
+		<vjfondu>Video häivytyksellä</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>LISÄASETUKSET - Järjestelmän logo</opt_extfolderlogosyst>
 		<opt_extfoldersalon>LISÄASETUKSET - RFE Retrofist Nostalgia -näkymän taustojen sijainti</opt_extfoldersalon>
 		<opt_perfmachine>LISÄASETUKSET - Heikon koneen tila</opt_perfmachine>
-		<opt_salonecran>RETROFIST - TV-ruutu</opt_salonecran>
-		<salonvideoseule>Vain video</salonvideoseule>
-		<saloncapturevideo>Kuvakaappaus, sitten video</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Taustan vinjetointi</opt_salonvignette>
+		<vignleger>Kevyt</vignleger>
+		<vignfort>Voimakas</vignfort>
 		<opt_deckselection>BIG ART - Valitun pelin sijainti</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo videon aikana</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Pelin tallennusväline (levy, kasetti)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Vieritysanimaation nopeus</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Esikatseluvideon koko</opt_starvideo>
+		<opt_starvideocadre>BOXART - Esikatseluvideon kehys</opt_starvideocadre>
+		<vcadreactuel>Nykyinen kehys</vcadreactuel>
+		<vcadreombre>Vain varjo</vcadreombre>
+		<vcadreecranfin>Ohut reunus</vcadreecranfin>
+		<vcadrebois>Puu</vcadrebois>
+		<vcadremetal>Harjattu metalli</vcadremetal>
+		<vcadrelumineux>Hehkuva näyttö</vcadrelumineux>
+		<vcadretv>Kuvaputki-TV</vcadretv>
+		<vcadregalerie>Galleria</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologrammi</vcadrehologramme>
+		<vcadreverre>Huurrettu lasi</vcadreverre>
+		<vcadrecarbone>Hiilikuitu-LED</vcadrecarbone>
+		<vcadreneondouble>Kaksoisneon</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Siveltimenvedot</vcadrepinceau>
+		<vcadretechnodore>Kultatekno</vcadretechnodore>
+		<vcadretechnoargent>Hopeatekno</vcadretechnoargent>
+		<vcadreneonelec>Sähköneon</vcadreneonelec>
+		<vcadrevitre>Lasi</vcadrevitre>
+		<vcadreflammes>Liekit</vcadreflammes>
+		<vcadreencre>Muste</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

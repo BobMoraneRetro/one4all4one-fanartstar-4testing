@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>SPILL - Fremhev valgt spill</opt_selectionvaleur>
 		<selegere>Lett</selegere>
 		<selmarquee>Tydelig</selmarquee>
+		<opt_videojeu>SPILL - Spillvideo</opt_videojeu>
+		<vjcapture>Skjermbilde, deretter video</vjcapture>
+		<vjseule>Kun video</vjseule>
+		<vjfondu>Video med inntoning</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>AVANSERT - Systemlogo</opt_extfolderlogosyst>
 		<opt_extfoldersalon>AVANSERT - Plassering av bakgrunner for visningen RFE Retrofist Nostalgia</opt_extfoldersalon>
 		<opt_perfmachine>AVANSERT - Modus for svake maskiner</opt_perfmachine>
-		<opt_salonecran>RETROFIST - TV-skjerm</opt_salonecran>
-		<salonvideoseule>Kun video</salonvideoseule>
-		<saloncapturevideo>Skjermbilde, deretter video</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Vignettering av bakgrunnen</opt_salonvignette>
+		<vignleger>Lett</vignleger>
+		<vignfort>Sterk</vignfort>
 		<opt_deckselection>BIG ART - Plassering av valgt spill</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logo under video</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Spillmedium (plate, kassett)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Hastighet på rulleanimasjonen</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Størrelse på forhåndsvisningsvideoen</opt_starvideo>
+		<opt_starvideocadre>BOXART - Ramme for forhåndsvisningsvideo</opt_starvideocadre>
+		<vcadreactuel>Nåværende ramme</vcadreactuel>
+		<vcadreombre>Kun skygge</vcadreombre>
+		<vcadreecranfin>Tynn kant</vcadreecranfin>
+		<vcadrebois>Tre</vcadrebois>
+		<vcadremetal>Børstet metall</vcadremetal>
+		<vcadrelumineux>Lysende skjerm</vcadrelumineux>
+		<vcadretv>Billedrør-TV</vcadretv>
+		<vcadregalerie>Galleri</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neon</vcadreneon>
+		<vcadrehologramme>Hologram</vcadrehologramme>
+		<vcadreverre>Frostet glass</vcadreverre>
+		<vcadrecarbone>Karbon-LED</vcadrecarbone>
+		<vcadreneondouble>Dobbel neon</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Penselstrøk</vcadrepinceau>
+		<vcadretechnodore>Gull-tech</vcadretechnodore>
+		<vcadretechnoargent>Sølv-tech</vcadretechnoargent>
+		<vcadreneonelec>Elektrisk neon</vcadreneonelec>
+		<vcadrevitre>Glassrute</vcadrevitre>
+		<vcadreflammes>Flammer</vcadreflammes>
+		<vcadreencre>Blekk</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

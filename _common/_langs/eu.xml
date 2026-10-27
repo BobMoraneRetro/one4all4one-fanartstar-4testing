@@ -178,6 +178,10 @@
 		<opt_selectionvaleur>JOKOAK - Hautatutako jokoa nabarmendu</opt_selectionvaleur>
 		<selegere>Arina</selegere>
 		<selmarquee>Nabaria</selmarquee>
+		<opt_videojeu>JOKOAK - Jokoaren bideoa</opt_videojeu>
+		<vjcapture>Pantaila-argazkia eta gero bideoa</vjcapture>
+		<vjseule>Bideoa soilik</vjseule>
+		<vjfondu>Bideoa pixkanaka agertuz</vjfondu>
 		<fanartflouleger>Light</fanartflouleger>
 		<fanartfloumoyen>Medium</fanartfloumoyen>
 		<fanartfloufort>Strong</fanartfloufort>
@@ -198,9 +202,9 @@
 		<opt_extfolderlogosyst>AURRERATUA - Sistemaren logoa</opt_extfolderlogosyst>
 		<opt_extfoldersalon>AURRERATUA - RFE Retrofist Nostalgia ikuspegiaren hondoen kokapena</opt_extfoldersalon>
 		<opt_perfmachine>AURRERATUA - Makina ahulerako modua</opt_perfmachine>
-		<opt_salonecran>RETROFIST - Telebista-pantaila</opt_salonecran>
-		<salonvideoseule>Bideoa soilik</salonvideoseule>
-		<saloncapturevideo>Pantaila-argazkia eta gero bideoa</saloncapturevideo>
+		<opt_salonvignette>RETROFIST - Hondoaren bineteatua</opt_salonvignette>
+		<vignleger>Arina</vignleger>
+		<vignfort>Indartsua</vignfort>
 		<opt_deckselection>BIG ART - Hautatutako jokoaren kokapena</opt_deckselection>
 		<opt_decklogovideo>BIG ART - Logoa bideoan zehar</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Bideoa</opt_spotvideo>
@@ -209,6 +213,29 @@
 		<opt_starsupport>BOXART - Jokoaren euskarria (diskoa, kartutxoa)</opt_starsupport>
 		<opt_boxstarspeed>BOXART - Korritze animazioaren abiadura</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Aurrebista bideoaren tamaina</opt_starvideo>
+		<opt_starvideocadre>BOXART - Aurrebistako bideoaren markoa</opt_starvideocadre>
+		<vcadreactuel>Uneko markoa</vcadreactuel>
+		<vcadreombre>Itzala soilik</vcadreombre>
+		<vcadreecranfin>Ertz mehea</vcadreecranfin>
+		<vcadrebois>Egurra</vcadrebois>
+		<vcadremetal>Metal eskuilatua</vcadremetal>
+		<vcadrelumineux>Pantaila argitsua</vcadrelumineux>
+		<vcadretv>CRT telebista</vcadretv>
+		<vcadregalerie>Galeria</vcadregalerie>
+		<vcadrepolaroid>Polaroid</vcadrepolaroid>
+		<vcadreneon>Neoia</vcadreneon>
+		<vcadrehologramme>Holograma</vcadrehologramme>
+		<vcadreverre>Beira lausotua</vcadreverre>
+		<vcadrecarbone>Karbono LED</vcadrecarbone>
+		<vcadreneondouble>Neoi bikoitza</vcadreneondouble>
+		<vcadregaming>Gaming</vcadregaming>
+		<vcadrepinceau>Pintzelkadak</vcadrepinceau>
+		<vcadretechnodore>Tekno urrea</vcadretechnodore>
+		<vcadretechnoargent>Tekno zilarra</vcadretechnoargent>
+		<vcadreneonelec>Neoi elektrikoa</vcadreneonelec>
+		<vcadrevitre>Beira</vcadrevitre>
+		<vcadreflammes>Garrak</vcadreflammes>
+		<vcadreencre>Tinta</vcadreencre>
 		<opt_starvideoanim>BOXART - Video appearance</opt_starvideoanim>
 		<opt_boite3d>SHOW BIG · SMALL - Box flipping to its back (scraped boxback)</opt_boite3d>
 		<opt_boite3dangle>SHOW BIG · SMALL - Starting angle of the flipping box</opt_boite3dangle>

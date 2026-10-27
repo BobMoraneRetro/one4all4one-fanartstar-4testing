@@ -175,6 +175,7 @@
 		<cdrapide>Nopea</cdrapide>
 		<cdtresrapide>Erittäin nopea</cdtresrapide>
 		<cdimmobile>Paikallaan</cdimmobile>
+		<opt_umdrotation>PELIT - UMD-levyjen pyöriminen (PSP)</opt_umdrotation>
 		<opt_selectionvaleur>PELIT - Korosta valittu peli</opt_selectionvaleur>
 		<selegere>Kevyt</selegere>
 		<selmarquee>Voimakas</selmarquee>

@@ -45,6 +45,10 @@
 		<include name="tresrapide" displayName="${cdtresrapide}"/>
 		<include name="immobile" displayName="${cdimmobile}"/>
 	</subset>
+	<subset name="umdrotation" displayName="${opt_umdrotation}" appliesTo="presetstarbox,presetsalon">
+		<include name="umdoui" displayName="${active}"/>
+		<include name="umdnon" displayName="${desactive}"/>
+	</subset>
 	<subset name="selectionvaleur" displayName="${opt_selectionvaleur}" appliesTo="presetstarbox,presetsalon,presetdeck,presetspotlight,presetsquare,presetstar169,presetstar43,presetshowbig,presetshowsmall,presetspeedbull,presettraviolta_alt">
 		<include name="aucune" displayName="${desactive}"/>
 		<include name="legere" displayName="${selegere}"/>

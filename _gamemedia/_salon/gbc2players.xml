@@ -10,8 +10,8 @@
 		<salon_video2_pos>0.6534 0.3194</salon_video2_pos>
 		<salon_video2_taille>0.1104 0.1843</salon_video2_taille>
 		<salon_video_etiree>true</salon_video_etiree>
-		<salon_disque_taille ifSubset="boxorthumb:boxart">0.1542 0.3103</salon_disque_taille>
-		<salon_disque_taille ifSubset="boxorthumb:thumb">0.1676 0.3373</salon_disque_taille>
+		<salon_disque_taille ifSubset="boxorthumb:boxart">0.1752 0.3526</salon_disque_taille>
+		<salon_disque_taille ifSubset="boxorthumb:thumb">0.1905 0.3833</salon_disque_taille>
 		<salon_disque_x ifSubset="boxorthumb:boxart">0.6857</salon_disque_x>
 		<salon_disque_x ifSubset="boxorthumb:thumb">0.6857</salon_disque_x>
 	</variables>

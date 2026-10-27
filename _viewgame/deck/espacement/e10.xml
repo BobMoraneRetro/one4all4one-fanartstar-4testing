@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
-	<!-- FICHIER GÉNÉRÉ par A:\@@ Claude DEV\Big Art espacement\generer_espacement.py (ne pas modifier à la main) : cran -2.5 (écart 10 px en 1080p) ; une variable par réglage, défaut puis variantes « if » par groupe de systèmes -->
+	<!-- FICHIER GÉNÉRÉ (ne pas modifier à la main) : cran -2.5 (écart 10 px en 1080p) ; une variable par réglage, défaut puis variantes « if » par groupe de systèmes -->
 	<variables>
 		<!-- Big Art (presetdeck) : colonnes, puis marge / position X / largeur de la grille, par mode (c / g) et 2D / 3D (suffixe 3) -->
 		<bigart_colonnes_centre_2d>13</bigart_colonnes_centre_2d>

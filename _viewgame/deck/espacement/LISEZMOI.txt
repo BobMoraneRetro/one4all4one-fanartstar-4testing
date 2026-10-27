@@ -2,8 +2,7 @@ Espacement des boîtes (option « Espacement des boîtes »)
 =========================================================
 
 Ces fichiers e<écart>.xml sont GÉNÉRÉS : ne pas les modifier à la main.
-Outil : A:\-- @@ Claude DEV\Big Art espacement\generer_espacement.py (relancer après toute modification).
-Il écrit les 37 fichiers ici ; recopier ensuite le dossier dans Hyperbat (_viewgame/deck/espacement), qui utilise les mêmes.
+Ils sont produits par un outil de génération (37 fichiers) ; recopier ensuite le dossier dans Hyperbat (_viewgame/deck/espacement), qui utilise les mêmes.
 
 Un fichier par cran. Le nom donne l écart entre les boîtes en pixels (1080p) :
   e20.xml = cran 0 (normal) ; 1 cran = 4 px ; e-60.xml = cran -20 (boîtes très serrées) ; e80.xml = cran +15 (très espacées, ajouté le 25/10/2026) ; e6.xml = cran -3,5 (boîtes Boxart qui se touchent).
@@ -31,4 +30,4 @@ Variables (une valeur par défaut, puis des variantes « if » par groupe de sys
   RFE Retrofist Nostalgia (vue presetsalon)
     boxart_nb_boites_2d_horizontales   nombre de boîtes pour les boîtes horizontales non pivotées (snes, n64...) = 0,8 x boxart_nb_boites_2d
 
-Changer la progression des crans : tableau STAR (Boxart) et constantes Big Art / Spotlight en tête de generer_espacement.py.
+La progression des crans se change dans l outil de génération, puis on régénère les fichiers.

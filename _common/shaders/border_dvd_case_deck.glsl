@@ -1,6 +1,6 @@
 // ============================================================================================
 // FICHIER GÉNÉRÉ - NE PAS MODIFIER À LA MAIN
-// Généré depuis border_dvd_case.glsl par : A:\-- @@ Claude DEV\Shader boitiers\generer_shader_deck.py
+// Généré depuis border_dvd_case.glsl.
 // Utilisé par la vue FanartStar Deck (presetdeck), boîte sélectionnée en mode « au centre ».
 // Pour ajouter / modifier un type de boîte : modifier border_dvd_case.glsl puis relancer le script.
 // ============================================================================================

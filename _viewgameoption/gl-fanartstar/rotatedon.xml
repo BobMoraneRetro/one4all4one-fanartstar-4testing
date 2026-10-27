@@ -13,11 +13,16 @@
 	${media_support} : support physique du jeu (cartouche, ou disque pour les systèmes à disque) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_support_exists} : vrai si le média « support » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${salon_disque_depart} : vue Salon : x du disque caché derrière la boîte sélectionnée (définie dans _gamemedia/_salon/ (13 fichiers))
-	${salon_disque_taille} : vue Salon : taille maximale du disque (définie dans _gamemedia/_salon/ (96 fichiers) ; valeur selon l option « JEUX - Boîte de jeu à afficher »)
+	${salon_disque_taille} : vue Salon : taille maximale du disque (définie dans _gamemedia/_salon/ (97 fichiers) ; valeur selon l option « JEUX - Boîte de jeu à afficher »)
 	${salon_disque_tourne} : vue Salon : true = le disque tourne (systèmes CD/DVD par défaut), false = il sort sans tourner ; réglable par <système>.xml (définie dans _gamemedia/_salon/ps2.xml, _viewgame/presetsalon.xml)
-	${salon_disque_x} : vue Salon : x du disque une fois sorti de la boîte (définie dans _gamemedia/_salon/ (96 fichiers) ; valeur selon l option « JEUX - Boîte de jeu à afficher »)
-	${salon_disque_y} : vue Salon : hauteur du centre du disque (définie dans _gamemedia/_salon/ (13 fichiers))
+	${salon_disque_x} : vue Salon : x du disque une fois sorti de la boîte (définie dans _gamemedia/_salon/ (97 fichiers) ; valeur selon l option « JEUX - Boîte de jeu à afficher »)
+	${salon_disque_y} : vue Salon : hauteur du centre du disque (définie dans _gamemedia/_salon/ (16 fichiers) ; valeur selon l option « JEUX - Boîte de jeu à afficher »)
 	${salon_support_mixte} : vue Salon : true = disques et cartes mélangés, la forme de l image (ronde ou non) décide de la rotation (shader support_tourne) ; défaut wiiu, xbox360, openbor, mugen, ikemen, windows et les collections (définie dans _gamemedia/_salon/ (9 fichiers))
+	${salon_support_umd} : vue Salon : true = support UMD (psp) : seul le disque intérieur tourne (shader support_umd), la coque reste fixe (définie dans _viewgame/presetsalon.xml ; valeur selon l option « JEUX - Rotation des UMD (PSP) »)
+	${salon_umd_cx} : vue Salon : UMD : centre horizontal du disque dans l image du support (fraction de la largeur) ; réglable par <système>.xml (définie dans _viewgame/presetsalon.xml)
+	${salon_umd_cy} : vue Salon : UMD : centre vertical du disque dans l image du support (fraction de la hauteur) ; réglable par <système>.xml (définie dans _viewgame/presetsalon.xml)
+	${salon_umd_rayon} : vue Salon : UMD : rayon du disque qui tourne (fraction de la largeur de l image) ; réglable par <système>.xml (définie dans _viewgame/presetsalon.xml)
+	${salon_umd_rayon_centre} : vue Salon : UMD : rayon du centre fixe (moyeu « UMD ») qui ne tourne pas (fraction de la largeur de l image) ; réglable par <système>.xml (définie dans _viewgame/presetsalon.xml)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${presetstarbox}
 -->
 <theme>
@@ -171,7 +176,7 @@
 							<animation property="x" to="${salon_disque_depart}" duration="0"/>
 						</storyboard>
 					</image>
-					<image name="boxartcartouche" if="!${salon_disque_tourne} &amp;&amp; !${salon_support_mixte}">
+					<image name="boxartcartouche" if="!${salon_disque_tourne} &amp;&amp; !${salon_support_mixte} &amp;&amp; !${salon_support_umd}">
 						<visible ifSubset="starsupport:supportnon">false</visible>
 						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
 						<visible ifSubset="perfmachine:perflow">false</visible>
@@ -191,6 +196,64 @@
 							<animation property="opacity" to="0" duration="0"/>
 							<animation property="x" to="${salon_disque_depart}" duration="0"/>
 							<animation property="rotation" to="0" duration="0"/>
+						</storyboard>
+					</image>
+					<image name="boxartumd" if="${salon_support_umd} &amp;&amp; !${salon_support_mixte}">
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
+						<visible ifSubset="perfmachine:perflow">false</visible>
+						<path ifSubset="starsupport:supportnon"></path>
+						<path ifSubset="starsupport:supportoui">${media_support}</path>
+						<path ifSubset="perfmachine:perflow"></path>
+						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
+						<origin>0.5 0.5</origin>
+						<maxSize>${salon_disque_taille}</maxSize>
+						<linearSmooth>true</linearSmooth>
+						<shader ifSubset="perfmachine:perfnormal">
+							<path>${themePath}/_common/shaders/support_umd.glsl</path>
+							<u_angle>0</u_angle>
+							<u_centreX>${salon_umd_cx}</u_centreX>
+							<u_centreY>${salon_umd_cy}</u_centreY>
+							<u_rayon>${salon_umd_rayon}</u_rayon>
+							<u_rayonCentre>${salon_umd_rayon_centre}</u_rayonCentre>
+						</shader>
+						<opacity>0</opacity>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:lente" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="shader.u_angle" from="0" to="90" begin="600" duration="7000" mode="EaseIn"/>
+							<animation property="shader.u_angle" from="-270" to="90" begin="7600" duration="14000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:rapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="shader.u_angle" from="0" to="90" begin="600" duration="2000" mode="EaseIn"/>
+							<animation property="shader.u_angle" from="-270" to="90" begin="2600" duration="4000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:immobile" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:tresrapide" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="shader.u_angle" from="0" to="90" begin="600" duration="1000" mode="EaseIn"/>
+							<animation property="shader.u_angle" from="-270" to="90" begin="1600" duration="2000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perfnormal,cdvitesse:normale" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+							<animation property="shader.u_angle" from="0" to="90" begin="600" duration="4000" mode="EaseIn"/>
+							<animation property="shader.u_angle" from="-270" to="90" begin="4600" duration="8000" mode="linear" repeat="forever"/>
+						</storyboard>
+						<storyboard ifSubset="perfmachine:perflow" event="activate">
+							<animation property="opacity" from="0" to="1" begin="350" duration="250" mode="linear"/>
+							<animation property="x" from="${salon_disque_depart}" to="${salon_disque_x}" begin="350" duration="550" mode="easeOut"/>
+						</storyboard>
+						<storyboard event="deactivate">
+							<animation property="opacity" to="0" duration="0"/>
+							<animation property="x" to="${salon_disque_depart}" duration="0"/>
+							<animation property="shader.u_angle" to="0" duration="0"/>
 						</storyboard>
 					</image>
 					<image name="thumbnailjp" if="{system.theme} != 'snes' &amp;&amp; {system.theme} != 'n64' &amp;&amp; {system.theme} != 'gameandwatch' &amp;&amp; {system.theme} != 'solarus' &amp;&amp; {system.theme} != 'ngage'">

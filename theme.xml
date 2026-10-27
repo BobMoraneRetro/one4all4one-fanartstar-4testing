@@ -159,7 +159,8 @@
 		<include name="metastandard" displayName="${metastandard}"/>
 	</subset>
 	<subset name="manetteflottante" ifSubset="systemview:fanartstarsyst" displayName="${opt_manetteflottante}">
-		<include name="manetteoui" displayName="${active}"/>
+		<include name="manetteoui" displayName="${notemanette}"/>
+		<include name="hardwareoui" displayName="${hardware}"/>
 		<include name="manettenon" displayName="${desactive}"/>
 	</subset>
 	<subset name="video4starmodern" ifSubset="systemview:fanartmodern|fanartmodern2" displayName="${opt_video4starmodern}">

@@ -1,5 +1,5 @@
 // Shader boîtier de référence (toutes les vues). Variante GÉNÉRÉE depuis ce fichier : border_dvd_case_deck.glsl (vue FanartStar Deck).
-// Après tout ajout / modification de type de boîte ici, relancer : A:\-- @@ Claude DEV\Shader boitiers\generer_shader_deck.py
+// Après tout ajout / modification de type de boîte ici, régénérer border_dvd_case_deck.glsl.
 #if defined(VERTEX)
 
 #if __VERSION__ >= 130

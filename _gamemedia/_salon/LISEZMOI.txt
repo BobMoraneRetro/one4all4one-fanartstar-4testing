@@ -44,10 +44,10 @@ Pour chaque système :
   windows.xml    : réglages de windows.png (non étirée : vieux jeux PC en 4:3)
   gb.png         : décor du système Game Boy (la console posée de face sur une étagère 1990, son écran LCD = écran de la vidéo)
   gb.xml         : réglages de gb.png (salon_couleur A9840C + salon_saturation 0 + calque gb_ecran.png = écran olive façon DMG)
-  gb_ecran.png   : calque écran LCD Game Boy (voile vert + grille claire de 3 px, fait par calque_lcd.py), posé sur la vidéo
+  gb_ecran.png   : calque écran LCD Game Boy (voile vert + grille claire de 3 px), posé sur la vidéo
   megaduck.png   : décor du système Mega Duck (la console de face sur une étagère 1993, boîte Creatronic, son écran LCD = écran de la vidéo)
   megaduck.xml   : réglages de megaduck.png (même écran olive que gb : salon_couleur A9840C + salon_saturation 0)
-  megaduck_ecran.png : calque écran LCD de megaduck.png (calque_lcd.py, 262x245 px)
+  megaduck_ecran.png : calque écran LCD de megaduck.png (262x245 px)
   gbc.png        : décor du système Game Boy Color (GBC Atomic Purple en gros plan, chambre de soirée vers 2000 dans les tons sombres bleu/violet, Game Boy Camera/Printer, Pocket Pikachu, figurines, lampe à lave ; son écran LCD = écran de la vidéo)
   gbc.xml        : réglages de gbc.png (écran 10:9 étiré, couleurs d origine) + taille/position de la cartouche dans le carrousel
   gbc2players.png : décor du système Game Boy Color 2 joueurs (2 GBC violette et turquoise reliées par câble link, chambre de nuit vers 2000, 2 écrans)
@@ -128,5 +128,4 @@ Exemple : décor PS1 (psx.png, 1920x1080)
 
 Taille du support (disque / cartouche) par système : salon_disque_taille et salon_disque_x sont CALCULÉS
 (une valeur par mode « Boîte de jeu » : boîte 2D = thumb, boîte 3D = boxart) à l échelle réelle de la boîte affichée,
-plafonnés à 85 % de la boîte, par A:\-- @@ Claude DEV\Travail fanartstar\tailles_supports.py
-(mesures en lecture seule des boîtes de I:\roms : mesure_supports.py). Utilisés aussi par la vue Boxart.
+plafonnés à 85 % de la boîte. Utilisés aussi par la vue Boxart.

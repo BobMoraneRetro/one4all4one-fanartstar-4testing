@@ -30,11 +30,14 @@
 	<variables>
 		<manettevisible ifSubset="manetteflottante:manettenon">false</manettevisible>
 		<manettevisible ifSubset="manetteflottante:manetteoui">true</manettevisible>
+		<manettevisible ifSubset="manetteflottante:hardwareoui">true</manettevisible>
 		<manettehalovisible ifSubset="manetteflottante:manettenon">false</manettehalovisible>
 		<manettehalovisible ifSubset="manetteflottante:manetteoui">exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".svg") || exists("${themePath}/_common/controllers/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettehalovisible>
 		<manettehalovisible ifSubset="manetteflottante:manetteoui" if="{system.hardwareType} == 'arcade'">exists("${themePath}/_systemmedia/hardware/${region}/" + {system:theme} + ".png") || exists("${themePath}/_systemmedia/hardware/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".svg") || exists("${themePath}/_common/controllers/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettehalovisible>
+		<manettehalovisible ifSubset="manetteflottante:hardwareoui">exists("${themePath}/_systemmedia/hardware/${region}/" + {system:theme} + ".png") || exists("${themePath}/_systemmedia/hardware/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/${region}/" + {system:theme} + ".svg") || exists("${themePath}/_common/controllers/" + {system:theme} + ".png") || exists("${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettehalovisible>
 		<manettechemin>firstfile("${themePath}/_common/controllers/${region}/" + {system:theme} + ".png", "${themePath}/_common/controllers/${region}/" + {system:theme} + ".svg", "${themePath}/_common/controllers/" + {system:theme} + ".png", "${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettechemin>
 		<manettechemin if="{system.hardwareType} == 'arcade'">firstfile("${themePath}/_systemmedia/hardware/${region}/" + {system:theme} + ".png", "${themePath}/_systemmedia/hardware/" + {system:theme} + ".png", "${themePath}/_common/controllers/${region}/" + {system:theme} + ".png", "${themePath}/_common/controllers/${region}/" + {system:theme} + ".svg", "${themePath}/_common/controllers/" + {system:theme} + ".png", "${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettechemin>
+		<manettechemin ifSubset="manetteflottante:hardwareoui">firstfile("${themePath}/_systemmedia/hardware/${region}/" + {system:theme} + ".png", "${themePath}/_systemmedia/hardware/" + {system:theme} + ".png", "${themePath}/_common/controllers/${region}/" + {system:theme} + ".png", "${themePath}/_common/controllers/${region}/" + {system:theme} + ".svg", "${themePath}/_common/controllers/" + {system:theme} + ".png", "${themePath}/_common/controllers/" + {system:theme} + ".svg")</manettechemin>
 		<manettepos ifSubset="video4starclassic:videoback">0.036 0.088</manettepos>
 		<manettepos ifSubset="video4starclassic:novideo">0.13 0.58</manettepos>
 		<manettetaille ifSubset="video4starclassic:videoback">0.067 0.08</manettetaille>
@@ -357,6 +360,14 @@
 			<zIndex>4</zIndex>
 			<opacity>1</opacity>
 			<delay>0.3</delay>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_video_frame.glsl</path>
+				<frameType>1</frameType>
+				<glassAmount>0.35</glassAmount>
+				<outerShadowColor>00000090</outerShadowColor>
+				<borderColor>FFFFFFFF</borderColor>
+				<borderSize>0.008</borderSize>
+			</shader>
 		</video>
 		<video name="gameplayvideostarangled" ifSubset="metadataonoff:deactivate"  extra="true">
 			<visible ifSubset="metadataonoff:deactivate">true</visible>

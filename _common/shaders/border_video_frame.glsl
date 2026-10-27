@@ -249,9 +249,28 @@ vec2 rrNormal(vec2 p, vec2 c, vec2 halfSize, float r) {
     return n * vec2(d.x < 0.0 ? -1.0 : 1.0, d.y < 0.0 ? -1.0 : 1.0);
 }
 
+// Partie visible de l image (coordonnées de texture), renseignée au début de main ; image entière par défaut
+vec2 g_artA = vec2(0.0);
+vec2 g_artB = vec2(1.0);
+
+// 1er point opaque en partant d un bord, le long de la ligne centrale (axeX) ou de la colonne centrale (recherche dichotomique)
+float bordOpaque(bool axeX, bool depuisDebut)
+{
+    float lo = depuisDebut ? 0.0 : 0.5;
+    float hi = depuisDebut ? 0.5 : 1.0;
+    for (int i = 0; i < 10; i++) {
+        float mid = 0.5 * (lo + hi);
+        float o = sampleTexture(u_tex, axeX ? vec2(mid, 0.5) : vec2(0.5, mid)).a;
+        if (depuisDebut) { if (o > 0.5) hi = mid; else lo = mid; }
+        else             { if (o > 0.5) lo = mid; else hi = mid; }
+    }
+    return depuisDebut ? hi : lo;
+}
+
 // Échantillonnage de la vidéo (bilinéaire optionnel + saturation), sans v_col
 vec4 sampleArt(vec2 uv)
 {
+    uv = g_artA + uv * (g_artB - g_artA);
     vec4 c = sampleTexture(u_tex, uv);
 
     if (bilinearFiltering)
@@ -1083,9 +1102,23 @@ vec2 perspectiveUV(vec2 vt, float kY, float kX, float depth)
 void main(void)
 {
     // Si on sort prématurément, il faut quand même appliquer v_col
-    if (sampleTexture(u_tex, vec2(1.0)).a < 0.3 || sampleTexture(u_tex, vec2(0.0)).a < 0.3) {
+    // Image déjà détourée (forme ronde : les 4 coins ET le milieu des 4 bords transparents) : affichée sans cadre.
+    // Une capture avec des bandes transparentes (ex. 640x480 avec 25 px vides en haut et en bas) garde son cadre.
+    float bordsT = max(max(max(sampleTexture(u_tex, vec2(0.0, 0.0)).a, sampleTexture(u_tex, vec2(1.0, 0.0)).a),
+                           max(sampleTexture(u_tex, vec2(0.0, 1.0)).a, sampleTexture(u_tex, vec2(1.0, 1.0)).a)),
+                       max(max(sampleTexture(u_tex, vec2(0.5, 0.0)).a, sampleTexture(u_tex, vec2(0.5, 1.0)).a),
+                           max(sampleTexture(u_tex, vec2(0.0, 0.5)).a, sampleTexture(u_tex, vec2(1.0, 0.5)).a)));
+    if (bordsT < 0.3) {                      // les 8 points transparents
         FragColor = sampleTexture(u_tex, v_tex) * v_col;
         return;
+    }
+    // Bandes transparentes (capture 640x480 avec l écran du jeu au milieu) : l image est étirée pour que sa partie
+    // visible remplisse la fenêtre du cadre. Vidéos et images pleines : bords opaques, rien ne change.
+    if (sampleTexture(u_tex, vec2(0.0, 0.5)).a < 0.5 || sampleTexture(u_tex, vec2(1.0, 0.5)).a < 0.5
+     || sampleTexture(u_tex, vec2(0.5, 0.0)).a < 0.5 || sampleTexture(u_tex, vec2(0.5, 1.0)).a < 0.5) {
+        vec2 A = vec2(bordOpaque(true, true), bordOpaque(false, true));
+        vec2 B = vec2(bordOpaque(true, false), bordOpaque(false, false));
+        if (B.x - A.x > 0.2 && B.y - A.y > 0.2) { g_artA = A; g_artB = B; }
     }
 
     vec2 size = abs(outputSize);

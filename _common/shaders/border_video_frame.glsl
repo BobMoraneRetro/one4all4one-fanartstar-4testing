@@ -142,6 +142,9 @@ uniform float perspectiveDepth;     // 0 = automatique : le cadre entier reste v
 //  20 = éclaboussures d'encre : bord noir irrégulier, taches (borderColor : couleur de l'encre)
 // Pour désactiver l'ombre, mettre outerShadowSize à une valeur minuscule (0.001).
 uniform int   frameType;
+// 1 sur une image (capture) avec perspective : son axe vertical de texture est inversé par rapport à une vidéo
+uniform float flipY;
+bool g_flip = false;
 
 // Taille d'un pixel d'écran en pixels « à plat » : 1 sans perspective, > 1 là où la perspective comprime l'image.
 // Les largeurs de bord et de trait s'y adaptent pour rester nettes sans escalier.
@@ -270,6 +273,7 @@ float bordOpaque(bool axeX, bool depuisDebut)
 // Échantillonnage de la vidéo (bilinéaire optionnel + saturation), sans v_col
 vec4 sampleArt(vec2 uv)
 {
+    if (g_flip) uv.y = 1.0 - uv.y;
     uv = g_artA + uv * (g_artB - g_artA);
     vec4 c = sampleTexture(u_tex, uv);
 
@@ -388,6 +392,7 @@ vec3 glowNode(float a, float edge) {
             else if (edge < 1.5) q = vec2(1.0 - dp, al);
             else if (edge < 2.5) q = vec2(al, dp);
             else                 q = vec2(al, 1.0 - dp);
+            if (g_flip) q.y = 1.0 - q.y;
             c += sampleTexture(u_tex, q).rgb;
         }
     }
@@ -1144,9 +1149,11 @@ void main(void)
     float kY = 0.5 * tan(radians(tiltAngle));
     float kX = 0.5 * tan(radians(tiltAngleX));
     float depth = (perspectiveDepth != 0.0) ? perspectiveDepth : max(1.0 - 0.5 * max(abs(kY), abs(kX)), 0.2);
+    g_flip = flipY > 0.5;
+    vec2 vtx = g_flip ? vec2(v_tex.x, 1.0 - v_tex.y) : v_tex;
 
     // taille d'un pixel d'écran, exprimée en pixels « à plat », au centre du pixel (pour la couverture du bord)
-    vec2  u0  = perspectiveUV(v_tex, kY, kX, depth);
+    vec2  u0  = perspectiveUV(vtx, kY, kX, depth);
     vec2  d0v = min(u0, vec2(1.0) - u0) * size;
     float d0  = min(d0v.x, d0v.y);
     float gl  = max(length(vec2(dFdx(d0), dFdy(d0))), 1e-3);
@@ -1159,7 +1166,7 @@ void main(void)
         else if (i == 1) off = vec2( 0.375, -0.125);
         else if (i == 2) off = vec2( 0.125,  0.375);
         else             off = vec2(-0.375,  0.125);
-        vec2  vt = v_tex + off.x * dtx + off.y * dty;
+        vec2  vt = vtx + (off.x * dtx + off.y * dty) * vec2(1.0, g_flip ? -1.0 : 1.0);
         vec2  uq = perspectiveUV(vt, kY, kX, depth);
         vec2  dv = min(uq, vec2(1.0) - uq) * size;
         float cov = clamp(min(dv.x, dv.y) / gl + 0.5, 0.0, 1.0);   // couverture du bord de la zone, sur 1 pixel d'écran

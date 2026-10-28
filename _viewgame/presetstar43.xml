@@ -74,6 +74,7 @@
 			<imageColor>858585ff</imageColor>
 			<imageColor ifSubset="selectionvaleur:legere">858585B3</imageColor>
 			<imageColor ifSubset="selectionvaleur:marquee">85858573</imageColor>
+			<imageColor ifSubset="selectionvaleur:aucune">858585ff</imageColor>
 		</gridtile>
 		<gridtile name="selected">
 			<padding>6 6</padding>

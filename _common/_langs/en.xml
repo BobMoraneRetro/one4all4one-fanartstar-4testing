@@ -269,5 +269,26 @@
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
 		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - Welcome and credits</planche00>
+		<planche01>01 - The system views</planche01>
+		<planche02>02 - Classic view: the system image</planche02>
+		<planche03>03 - Classic view: the details</planche03>
+		<planche04>04 - System fanarts, Modern and Z-Spin</planche04>
+		<planche05>05 - The 11 game views</planche05>
+		<planche06>06 - FanartStar Boxart: boxes and info</planche06>
+		<planche07>07 - FanartStar Boxart: the video</planche07>
+		<planche08>08 - Boxes and media</planche08>
+		<planche09>09 - The 22 cases</planche09>
+		<planche10>10 - The medium: per-system settings</planche10>
+		<planche11>11 - Game fanarts and selection</planche11>
+		<planche12>12 - Big Art, Spotlight, Square, 16/9 and 4/3</planche12>
+		<planche13>13 - The RFE views</planche13>
+		<planche14>14 - RFE Retrofist: the TV screen</planche14>
+		<planche15>15 - Show Big &amp; Small: the flipping box</planche15>
+		<planche16>16 - Common options of the game views</planche16>
+		<planche17>17 - General: sounds, help, clock</planche17>
+		<planche18>18 - Customize with your folders</planche18>
+		<planche19>19 - Custom game media</planche19>
+		<planche20>20 - Low-end machine and links</planche20>
 	</variables>
 </theme>

@@ -264,7 +264,7 @@
 		<image name="grid_capture" extra="true">
 			<path>${media_image}</path>
 			<pos>0.049 0.44</pos>
-			<minSize>0.2625 0.35</minSize>
+			<maxSize>0.40 0.33</maxSize>
 			<origin>0 0.5</origin>
 			<zIndex>3.05</zIndex>
 			<shader ifSubset="perfmachine:perfnormal">
@@ -291,7 +291,7 @@
 		<video name="grid_video" extra="true">
 			<path>${media_video}</path>
 			<pos>0.049 0.44</pos>
-			<minSize>0.2625 0.35</minSize>
+			<maxSize>0.40 0.33</maxSize>
 			<origin>0 0.5</origin>
 			<delay>0.4</delay>
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>

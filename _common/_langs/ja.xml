@@ -269,5 +269,26 @@
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
 		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - ようこそ・クレジット</planche00>
+		<planche01>01 - システムビュー</planche01>
+		<planche02>02 - クラシックビュー：システム画像</planche02>
+		<planche03>03 - クラシックビュー：詳細</planche03>
+		<planche04>04 - システムのファンアート、Modern と Z-Spin</planche04>
+		<planche05>05 - 11 のゲームビュー</planche05>
+		<planche06>06 - FanartStar Boxart：ボックスと情報</planche06>
+		<planche07>07 - FanartStar Boxart：動画</planche07>
+		<planche08>08 - ボックスとメディア</planche08>
+		<planche09>09 - 22 種類のケース</planche09>
+		<planche10>10 - メディア：システムごとの設定</planche10>
+		<planche11>11 - ゲームのファンアートと選択</planche11>
+		<planche12>12 - Big Art、Spotlight、スクエア、16/9 と 4/3</planche12>
+		<planche13>13 - RFE ビュー</planche13>
+		<planche14>14 - RFE Retrofist：テレビ画面</planche14>
+		<planche15>15 - Show Big &amp; Small：裏返るボックス</planche15>
+		<planche16>16 - ゲームビュー共通オプション</planche16>
+		<planche17>17 - 全般：サウンド、ヘルプ、時計</planche17>
+		<planche18>18 - 自分のフォルダーでカスタマイズ</planche18>
+		<planche19>19 - ゲームのカスタムメディア</planche19>
+		<planche20>20 - 低スペック機とリンク</planche20>
 	</variables>
 </theme>

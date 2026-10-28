@@ -50,9 +50,30 @@
 	<include>${themePath}/screen.xml</include>
 	<include>${themePath}/help.xml</include>
 	<include>${themePath}/_common/_menu/menu.xml</include>
-	<subset name="lismoi" displayName="${opt_lismoi}">
-	<include name="tumasbienlu" displayName="${tumasbienlu}">${themePath}/_viewsystoption/sl-commun/splashounet.xml</include>
-	<include name="desactive" displayName="${desactive}"/>
+	<!-- ancien message d accueil (subset lismoi) : <include name="tumasbienlu" displayName="${tumasbienlu}">${themePath}/_viewsystoption/sl-commun/splashounet.xml</include> -->
+	<subset name="lismoiv2" displayName="${opt_lismoi}">
+		<include name="planche00" displayName="${planche00}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche01" displayName="${planche01}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche02" displayName="${planche02}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche03" displayName="${planche03}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche04" displayName="${planche04}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche05" displayName="${planche05}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche06" displayName="${planche06}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche07" displayName="${planche07}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche08" displayName="${planche08}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche09" displayName="${planche09}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche10" displayName="${planche10}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche11" displayName="${planche11}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche12" displayName="${planche12}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche13" displayName="${planche13}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche14" displayName="${planche14}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche15" displayName="${planche15}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche16" displayName="${planche16}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche17" displayName="${planche17}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche18" displayName="${planche18}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche19" displayName="${planche19}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche20" displayName="${planche20}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="desactive" displayName="${desactive}"/>
 	</subset>
 	<region region="fr">Region fr</region>
 	<region region="us">region us</region>

@@ -34,6 +34,7 @@
 			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/border_video_frame.glsl</path>
 				<frameType>${vidcadre_type}</frameType>
+				<flipY>1</flipY>
 				<time>0</time>
 				<cornerRadius>0</cornerRadius>
 				<borderSize>0</borderSize>
@@ -50,6 +51,7 @@
 				<path>${themePath}/_common/shaders/border_video_frame.glsl</path>
 				<perspectiveDepth>0</perspectiveDepth>
 				<frameType>${vidcadre_type}</frameType>
+				<flipY>1</flipY>
 				<time>0</time>
 				<cornerRadius>0</cornerRadius>
 				<borderSize>0</borderSize>

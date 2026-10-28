@@ -269,5 +269,26 @@
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
 		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - Velkomen og takk</planche00>
+		<planche01>01 - Systemvisingane</planche01>
+		<planche02>02 - Klassisk vising: systembiletet</planche02>
+		<planche03>03 - Klassisk vising: detaljane</planche03>
+		<planche04>04 - Systemfanarts, Modern og Z-Spin</planche04>
+		<planche05>05 - Dei 11 spelvisingane</planche05>
+		<planche06>06 - FanartStar Boxart: esker og info</planche06>
+		<planche07>07 - FanartStar Boxart: videoen</planche07>
+		<planche08>08 - Esker og medium</planche08>
+		<planche09>09 - Dei 22 covera</planche09>
+		<planche10>10 - Mediet: innstillingar per system</planche10>
+		<planche11>11 - Spelfanarts og val</planche11>
+		<planche12>12 - Big Art, Spotlight, Kvadrat, 16/9 og 4/3</planche12>
+		<planche13>13 - RFE-visingane</planche13>
+		<planche14>14 - RFE Retrofist: TV-skjermen</planche14>
+		<planche15>15 - Show Big &amp; Small: eska som snur seg</planche15>
+		<planche16>16 - Felles val for spelvisingane</planche16>
+		<planche17>17 - Generelt: lydar, hjelp, klokke</planche17>
+		<planche18>18 - Tilpass med dine mapper</planche18>
+		<planche19>19 - Eigne spelmedium</planche19>
+		<planche20>20 - Svak maskin og lenkjer</planche20>
 	</variables>
 </theme>

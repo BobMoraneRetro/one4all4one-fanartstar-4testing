@@ -269,5 +269,26 @@
 		<showvideoplein>Full screen with bezel</showvideoplein>
 		<showvideofenetre>Full-screen fanart, video top right</showvideofenetre>
 		<presetsalon>RFE Retrofist Nostalgia</presetsalon>
+		<planche00>00 - Üdvözlet és köszönet</planche00>
+		<planche01>01 - A rendszernézetek</planche01>
+		<planche02>02 - Klasszikus nézet: a rendszer képe</planche02>
+		<planche03>03 - Klasszikus nézet: a részletek</planche03>
+		<planche04>04 - Rendszer-fanartok, Modern és Z-Spin</planche04>
+		<planche05>05 - A 11 játéknézet</planche05>
+		<planche06>06 - FanartStar Boxart: dobozok és infók</planche06>
+		<planche07>07 - FanartStar Boxart: a videó</planche07>
+		<planche08>08 - Dobozok és adathordozók</planche08>
+		<planche09>09 - A 22 tok</planche09>
+		<planche10>10 - Az adathordozó: rendszerenkénti beállítások</planche10>
+		<planche11>11 - Játék-fanartok és kiválasztás</planche11>
+		<planche12>12 - Big Art, Spotlight, Négyzet, 16/9 és 4/3</planche12>
+		<planche13>13 - Az RFE nézetek</planche13>
+		<planche14>14 - RFE Retrofist: a tévé képernyője</planche14>
+		<planche15>15 - Show Big &amp; Small: a megforduló doboz</planche15>
+		<planche16>16 - A játéknézetek közös beállításai</planche16>
+		<planche17>17 - Általános: hangok, súgó, óra</planche17>
+		<planche18>18 - Testreszabás saját mappákkal</planche18>
+		<planche19>19 - Saját játékmédiák</planche19>
+		<planche20>20 - Gyenge gép és linkek</planche20>
 	</variables>
 </theme>

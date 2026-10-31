@@ -19,7 +19,7 @@
 	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${noteicone} : icône de notation (étoile, cœur, manette...) (définie dans _viewgameoption/gl-common/options_note.xml ; valeur selon l option « JEUX - Icône de notation »)
 	${path_syst_logo} : dossier des logos des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
-	Libellés traduits (_common/_langs/<langue>.xml) : ${noplaycount}, ${noplayerdata}, ${playcount}, ${playcountone}, ${player}, ${playerss}, ${presettraviolta_alt}, ${retourdossier}
+	Libellés traduits (_common/_langs/<langue>.xml) : ${lastgamelabel}, ${noplaycount}, ${noplayerdata}, ${playcount}, ${playcountone}, ${player}, ${playerss}, ${presettraviolta_alt}, ${retourdossier}
 -->
 <theme>
 	<formatVersion>7</formatVersion>
@@ -962,7 +962,7 @@
 		</text>
 		<text name="gamelastplayed" extra="true">
 			<visible>({game:lastplayed} &gt; 1 ? 1 : 0) &amp;&amp; {game:rom} != '..'</visible>
-			<text>Dernière partie : {game:lastplayed}</text>
+			<text>"${lastgamelabel} " + elapsed({game:lastplayed})</text>
 			<pos>0.01 0.553</pos>
 			<size>0.284 0.02</size>
 			<fontSize>0.020</fontSize>

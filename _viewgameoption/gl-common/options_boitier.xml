@@ -5,11 +5,11 @@
 -->
 <theme>
 	<formatVersion>7</formatVersion>
-	<subset name="contourboite" displayName="${opt_contourboite}" appliesTo="presetstarbox,presetdeck,presetsalon">
+	<subset name="contourboite" displayName="${opt_contourboite}" appliesTo="presetstarbox,presetdeck,presetsalon,presetshowsmall,presetshowbig">
 		<include name="oui" displayName="${yes}"/>
 		<include name="non" displayName="${no}"/>
 	</subset>
-	<subset name="typeboite" displayName="${opt_typeboite}" appliesTo="presetstarbox,presetdeck,presetsalon">
+	<subset name="typeboite" displayName="${opt_typeboite}" appliesTo="presetstarbox,presetdeck,presetsalon,presetshowsmall,presetshowbig">
 		<include name="auto" displayName="${boxtypeauto}"/>
 		<include name="t0" displayName="${boxtype0}"/>
 		<include name="t1" displayName="${boxtype1}"/>

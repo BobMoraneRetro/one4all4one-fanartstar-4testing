@@ -7,6 +7,23 @@ BRANCHEMENT DANS UN THÈME
   Le module apporte lui-même ses options, ses variables et ses libellés (32 langues).
   Variables du thème nécessaires : ${path_syst_fanart} (fanart du système, pour les chaînes de secours).
 
+DOSSIERS (dossiers ordinaires : _Euro, _USA... ; systèmes groupés : dossier au nom du sous-système)
+  Pour un dossier, après le gamelist (et le média perso selon l option), le thème cherche, dans cet ordre :
+  <thème ou _bobmedia>/_gamemedia/_dossiers/logo/<dossier>.png         logo        -> ${media_marquee}, ${media_wheel}
+                                          /fanart/<dossier>.jpg (.png)   fanart      -> ${media_fanart}...
+                                          /3dbox/<dossier>.png           boîte 3D    -> ${media_box3d}
+                                          /2dbox/<dossier>.png           boîte 2D    -> ${media_box2d}
+                                          /screenshot/<dossier>.png (.jpg) capture   -> ${media_image}
+                                          /video/<dossier>.mp4 (.avi)    vidéo       -> ${media_video}
+  puis les médias système portant le nom du dossier (cas des systèmes groupés) :
+    logo   : _systemmedia/_logosyst/folderlogos/<dossier>.png, puis clearlogos (langue, région, neutre)
+    fanart : _systemmedia/_fanartsysteme/custom/<dossier>.jpg, puis fresh/<dossier>.jpg
+    capture / vidéo : _systemmedia/videosyst/subsystem/<dossier> puis /<système>.png .jpg .mp4 (thème ou _bobmedia)
+  <dossier> = nom exact du dossier (ex. _Euro). Ces chemins sont ajoutés à la fin des chaînes (après le gamelist et les
+  médias perso) : un jeu n est concerné que s il n a pas le média et qu un fichier porte exactement son nom.
+  Pas de condition « ? : » dans ces variables : le moteur ne la lit pas à l intérieur d un firstfile(...).
+  Variable du thème nécessaire en plus : ${path_syst_logo}.
+
 OPTIONS AJOUTÉES (Options du thème, section Scrap)
   custombuilds        SCRAP - Structure fanart : fanart dans -fanart ou dans -image du gamelist
   scrap3dbox          Où est scrappée la boîte 3D : dans -boxart ou dans -thumbnail

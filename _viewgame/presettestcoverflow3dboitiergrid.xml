@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${cfb_angle} : vue de test Coverflow 3D boîtiers : angle des boîtes de côté, en degrés (shader boite3d_case_coverflow) (définie dans ce fichier)
+	${cfb_ecart} : vue de test Coverflow 3D boîtiers : décalage minimal des boîtes de côté vers l extérieur, en largeur de boîte (définie dans ce fichier)
+	${cfb_taille} : vue de test Coverflow 3D boîtiers : taille des éléments de la boîte 3D dans leur case du carrousel ou de la grille, selon le format de boîte du système (la boîte occupe 60 % de l élément) (définie dans ce fichier)
+	${cfb_taillehalo} : vue de test Coverflow 3D boîtiers : taille de l élément du halo de la sélection (taille de la boîte x 1.6, pour laisser la lueur s estomper) (définie dans ce fichier)
+	${intfanartfresh} : Fanart du système (dossier fresh) (définie dans theme.xml)
+	${intlogoclearpng} : Logo clair du système (définie dans theme.xml)
+	${media_box2d} : boîte 2D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_box2d_missing} : vrai si le média « box2d » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee} : logo du jeu (marquee) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee_missing} : vrai si le média « marquee » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${jeux}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables>
+		<cfb_taille>3.418 0.9953</cfb_taille>
+		<cfb_taille if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcenginecd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == 'segacd' || {system.theme} == 'megacd'">3.418 0.7064</cfb_taille>
+		<cfb_taille if="{system.theme} == 'nds' || {system.theme} == '3ds'">3.418 0.7942</cfb_taille>
+		<cfb_taille if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'satellaview'">4.061 0.6096</cfb_taille>
+		<cfb_taille if="{system.theme} == 'switch' || {system.theme} == 'windows'">3.418 1.1391</cfb_taille>
+		<cfb_taillehalo>5.469 1.5922</cfb_taillehalo>
+		<cfb_taillehalo if="{system.theme} == 'dreamcast' || {system.theme} == 'amigacd32' || {system.theme} == 'amigacdtv' || {system.theme} == 'psx' || {system.theme} == 'cdi' || {system.theme} == 'neogeocd' || {system.theme} == 'pce-cd' || {system.theme} == 'pcenginecd' || {system.theme} == 'pcfx' || {system.theme} == 'atarijaguarcd' || {system.theme} == 'fmtowns' || {system.theme} == 'segacd' || {system.theme} == 'megacd'">5.469 1.1302</cfb_taillehalo>
+		<cfb_taillehalo if="{system.theme} == 'nds' || {system.theme} == '3ds'">5.469 1.2708</cfb_taillehalo>
+		<cfb_taillehalo if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'sfc' || {system.theme} == 'satellaview'">6.498 0.9755</cfb_taillehalo>
+		<cfb_taillehalo if="{system.theme} == 'switch' || {system.theme} == 'windows'">5.469 1.8225</cfb_taillehalo>
+		<cfb_angle>55</cfb_angle>
+		<cfb_ecart>0.25</cfb_ecart>
+	</variables>
+	<customView name="presettestcoverflow3dboitiergrid" displayName="TEST - Coverflow 3D boîtiers (grille)" inherits="grid">
+		<image name="fanart_extra, defautfanartextra" extra="true">
+			<pos>0.5 0.5</pos>
+			<size>0 0</size>
+			<minSize>1 1</minSize>
+			<color>606060FF</color>
+			<colorEnd>606060FF</colorEnd>
+			<zIndex>4</zIndex>
+		</image>
+		<image name="screenshot_extra" extra="true">
+			<visible>false</visible>
+		</image>
+		<video name="video_extra" extra="true">
+			<visible>false</visible>
+		</video>
+		<image name="cf_degrade" extra="true">
+			<path>${themePath}/_viewgame/fanartstar/overlaydown.png</path>
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<size>1 0.5</size>
+			<color>FFFFFFA0</color>
+			<zIndex>5</zIndex>
+		</image>
+		<imagegrid name="gamegrid">
+			<imageSource>thumbnail</imageSource>
+			<scrollDirection>horizontalCenter</scrollDirection>
+			<scrollLoop>true</scrollLoop>
+			<pos>0 0.19</pos>
+			<size>1 0.66</size>
+			<margin>0 0</margin>
+			<padding>0 0</padding>
+			<autoLayout>13 1</autoLayout>
+			<autoLayoutSelectedZoom>1.35</autoLayoutSelectedZoom>
+			<animateSelection>true</animateSelection>
+			<showVideoAtDelay>-1</showVideoAtDelay>
+			<zIndex>10</zIndex>
+			<itemTemplate>
+				<container>
+					<image name="halo">
+						<path>${media_box2d}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>${cfb_taillehalo}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite3d_case_coverflow.glsl</path>
+							<u_mode>5</u_mode>
+							<u_thickness>0.14</u_thickness>
+							<u_pitch>-0.12</u_pitch>
+							<u_angle>${cfb_angle}</u_angle>
+							<u_phase>0</u_phase>
+							<u_shiny>0.35</u_shiny>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<caseType ifSubset="typeboite:t0">0</caseType>
+							<caseType ifSubset="typeboite:t1">1</caseType>
+							<caseType ifSubset="typeboite:t2">2</caseType>
+							<caseType ifSubset="typeboite:t3">3</caseType>
+							<caseType ifSubset="typeboite:t4">4</caseType>
+							<caseType ifSubset="typeboite:t5">5</caseType>
+							<caseType ifSubset="typeboite:t6">6</caseType>
+							<caseType ifSubset="typeboite:t7">7</caseType>
+							<caseType ifSubset="typeboite:t8">8</caseType>
+							<caseType ifSubset="typeboite:t9">9</caseType>
+							<caseType ifSubset="typeboite:t10">10</caseType>
+							<caseType ifSubset="typeboite:t11">11</caseType>
+							<caseType ifSubset="typeboite:t12">12</caseType>
+							<caseType ifSubset="typeboite:t13">13</caseType>
+							<caseType ifSubset="typeboite:t14">14</caseType>
+							<caseType ifSubset="typeboite:t15">15</caseType>
+							<caseType ifSubset="typeboite:t16">16</caseType>
+							<caseType ifSubset="typeboite:t17">17</caseType>
+							<caseType ifSubset="typeboite:t18">18</caseType>
+							<caseType ifSubset="typeboite:t19">19</caseType>
+							<caseType ifSubset="typeboite:t20">20</caseType>
+							<caseType ifSubset="typeboite:t21">21</caseType>
+							<caseType ifSubset="contourboite:non">7</caseType>
+							<saturation>1</saturation>
+							<ecart>${cfb_ecart}</ecart>
+							<sens>-1</sens>
+							<pas>0.07692</pas>
+							<zoomSelection>1.35</zoomSelection>
+							<formatImage>1</formatImage>
+							<haloColor>00000080</haloColor>
+							<marge>1.6</marge>
+							<masqueX>0.5</masqueX>
+							<fonduX>0.12</fonduX>
+							<assombrir>0.3</assombrir>
+						</shader>
+					</image>
+					<image name="halofond">
+						<path>${intfanartfresh}</path>
+						<visible>${media_box2d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>${cfb_taillehalo}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite3d_case_coverflow.glsl</path>
+							<u_mode>5</u_mode>
+							<u_thickness>0.14</u_thickness>
+							<u_pitch>-0.12</u_pitch>
+							<u_angle>${cfb_angle}</u_angle>
+							<u_phase>0</u_phase>
+							<u_shiny>0.35</u_shiny>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<caseType ifSubset="typeboite:t0">0</caseType>
+							<caseType ifSubset="typeboite:t1">1</caseType>
+							<caseType ifSubset="typeboite:t2">2</caseType>
+							<caseType ifSubset="typeboite:t3">3</caseType>
+							<caseType ifSubset="typeboite:t4">4</caseType>
+							<caseType ifSubset="typeboite:t5">5</caseType>
+							<caseType ifSubset="typeboite:t6">6</caseType>
+							<caseType ifSubset="typeboite:t7">7</caseType>
+							<caseType ifSubset="typeboite:t8">8</caseType>
+							<caseType ifSubset="typeboite:t9">9</caseType>
+							<caseType ifSubset="typeboite:t10">10</caseType>
+							<caseType ifSubset="typeboite:t11">11</caseType>
+							<caseType ifSubset="typeboite:t12">12</caseType>
+							<caseType ifSubset="typeboite:t13">13</caseType>
+							<caseType ifSubset="typeboite:t14">14</caseType>
+							<caseType ifSubset="typeboite:t15">15</caseType>
+							<caseType ifSubset="typeboite:t16">16</caseType>
+							<caseType ifSubset="typeboite:t17">17</caseType>
+							<caseType ifSubset="typeboite:t18">18</caseType>
+							<caseType ifSubset="typeboite:t19">19</caseType>
+							<caseType ifSubset="typeboite:t20">20</caseType>
+							<caseType ifSubset="typeboite:t21">21</caseType>
+							<caseType ifSubset="contourboite:non">7</caseType>
+							<saturation>0.7</saturation>
+							<ecart>${cfb_ecart}</ecart>
+							<sens>-1</sens>
+							<pas>0.07692</pas>
+							<zoomSelection>1.35</zoomSelection>
+							<recadre>1</recadre>
+							<haloColor>00000080</haloColor>
+							<marge>1.6</marge>
+							<masqueX>0.5</masqueX>
+							<fonduX>0.12</fonduX>
+							<assombrir>0.3</assombrir>
+						</shader>
+					</image>
+					<image name="refletface">
+						<path>${media_box2d}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>${cfb_taille}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite3d_case_coverflow.glsl</path>
+							<u_mode>0.0</u_mode>
+							<u_thickness>0.14</u_thickness>
+							<u_pitch>-0.12</u_pitch>
+							<u_angle>${cfb_angle}</u_angle>
+							<u_phase>0</u_phase>
+							<u_shiny>0.35</u_shiny>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<caseType ifSubset="typeboite:t0">0</caseType>
+							<caseType ifSubset="typeboite:t1">1</caseType>
+							<caseType ifSubset="typeboite:t2">2</caseType>
+							<caseType ifSubset="typeboite:t3">3</caseType>
+							<caseType ifSubset="typeboite:t4">4</caseType>
+							<caseType ifSubset="typeboite:t5">5</caseType>
+							<caseType ifSubset="typeboite:t6">6</caseType>
+							<caseType ifSubset="typeboite:t7">7</caseType>
+							<caseType ifSubset="typeboite:t8">8</caseType>
+							<caseType ifSubset="typeboite:t9">9</caseType>
+							<caseType ifSubset="typeboite:t10">10</caseType>
+							<caseType ifSubset="typeboite:t11">11</caseType>
+							<caseType ifSubset="typeboite:t12">12</caseType>
+							<caseType ifSubset="typeboite:t13">13</caseType>
+							<caseType ifSubset="typeboite:t14">14</caseType>
+							<caseType ifSubset="typeboite:t15">15</caseType>
+							<caseType ifSubset="typeboite:t16">16</caseType>
+							<caseType ifSubset="typeboite:t17">17</caseType>
+							<caseType ifSubset="typeboite:t18">18</caseType>
+							<caseType ifSubset="typeboite:t19">19</caseType>
+							<caseType ifSubset="typeboite:t20">20</caseType>
+							<caseType ifSubset="typeboite:t21">21</caseType>
+							<caseType ifSubset="contourboite:non">7</caseType>
+							<saturation>1</saturation>
+							<ecart>${cfb_ecart}</ecart>
+							<sens>-1</sens>
+							<pas>0.07692</pas>
+							<zoomSelection>1.35</zoomSelection>
+							<formatImage>1</formatImage>
+							<reflet>0.35</reflet>
+							<masqueX>0.5</masqueX>
+							<fonduX>0.12</fonduX>
+							<assombrir>0.3</assombrir>
+						</shader>
+					</image>
+					<image name="refletfond">
+						<path>${intfanartfresh}</path>
+						<visible>${media_box2d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>${cfb_taille}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite3d_case_coverflow.glsl</path>
+							<u_mode>0.0</u_mode>
+							<u_thickness>0.14</u_thickness>
+							<u_pitch>-0.12</u_pitch>
+							<u_angle>${cfb_angle}</u_angle>
+							<u_phase>0</u_phase>
+							<u_shiny>0.35</u_shiny>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<caseType ifSubset="typeboite:t0">0</caseType>
+							<caseType ifSubset="typeboite:t1">1</caseType>
+							<caseType ifSubset="typeboite:t2">2</caseType>
+							<caseType ifSubset="typeboite:t3">3</caseType>
+							<caseType ifSubset="typeboite:t4">4</caseType>
+							<caseType ifSubset="typeboite:t5">5</caseType>
+							<caseType ifSubset="typeboite:t6">6</caseType>
+							<caseType ifSubset="typeboite:t7">7</caseType>
+							<caseType ifSubset="typeboite:t8">8</caseType>
+							<caseType ifSubset="typeboite:t9">9</caseType>
+							<caseType ifSubset="typeboite:t10">10</caseType>
+							<caseType ifSubset="typeboite:t11">11</caseType>
+							<caseType ifSubset="typeboite:t12">12</caseType>
+							<caseType ifSubset="typeboite:t13">13</caseType>
+							<caseType ifSubset="typeboite:t14">14</caseType>
+							<caseType ifSubset="typeboite:t15">15</caseType>
+							<caseType ifSubset="typeboite:t16">16</caseType>
+							<caseType ifSubset="typeboite:t17">17</caseType>
+							<caseType ifSubset="typeboite:t18">18</caseType>
+							<caseType ifSubset="typeboite:t19">19</caseType>
+							<caseType ifSubset="typeboite:t20">20</caseType>
+							<caseType ifSubset="typeboite:t21">21</caseType>
+							<caseType ifSubset="contourboite:non">7</caseType>
+							<saturation>0.7</saturation>
+							<ecart>${cfb_ecart}</ecart>
+							<sens>-1</sens>
+							<pas>0.07692</pas>
+							<zoomSelection>1.35</zoomSelection>
+							<recadre>1</recadre>
+							<reflet>0.35</reflet>
+							<masqueX>0.5</masqueX>
+							<fonduX>0.12</fonduX>
+							<assombrir>0.3</assombrir>
+						</shader>
+					</image>
+					<image name="dos">
+						<path>{game:boxback}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>${cfb_taille}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite3d_case_coverflow.glsl</path>
+							<u_mode>1.0</u_mode>
+							<u_thickness>0.14</u_thickness>
+							<u_pitch>-0.12</u_pitch>
+							<u_angle>${cfb_angle}</u_angle>
+							<u_phase>0</u_phase>
+							<u_shiny>0.35</u_shiny>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<caseType ifSubset="typeboite:t0">0</caseType>
+							<caseType ifSubset="typeboite:t1">1</caseType>
+							<caseType ifSubset="typeboite:t2">2</caseType>
+							<caseType ifSubset="typeboite:t3">3</caseType>
+							<caseType ifSubset="typeboite:t4">4</caseType>
+							<caseType ifSubset="typeboite:t5">5</caseType>
+							<caseType ifSubset="typeboite:t6">6</caseType>
+							<caseType ifSubset="typeboite:t7">7</caseType>
+							<caseType ifSubset="typeboite:t8">8</caseType>
+							<caseType ifSubset="typeboite:t9">9</caseType>
+							<caseType ifSubset="typeboite:t10">10</caseType>
+							<caseType ifSubset="typeboite:t11">11</caseType>
+							<caseType ifSubset="typeboite:t12">12</caseType>
+							<caseType ifSubset="typeboite:t13">13</caseType>
+							<caseType ifSubset="typeboite:t14">14</caseType>
+							<caseType ifSubset="typeboite:t15">15</caseType>
+							<caseType ifSubset="typeboite:t16">16</caseType>
+							<caseType ifSubset="typeboite:t17">17</caseType>
+							<caseType ifSubset="typeboite:t18">18</caseType>
+							<caseType ifSubset="typeboite:t19">19</caseType>
+							<caseType ifSubset="typeboite:t20">20</caseType>
+							<caseType ifSubset="typeboite:t21">21</caseType>
+							<caseType ifSubset="contourboite:non">7</caseType>
+							<saturation>1</saturation>
+							<ecart>${cfb_ecart}</ecart>
+							<sens>-1</sens>
+							<pas>0.07692</pas>
+							<zoomSelection>1.35</zoomSelection>
+							<formatImage>1</formatImage>
+							<masqueX>0.5</masqueX>
+							<fonduX>0.12</fonduX>
+							<assombrir>0.3</assombrir>
+						</shader>
+					</image>
+					<image name="face">
+						<path>${media_box2d}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>${cfb_taille}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite3d_case_coverflow.glsl</path>
+							<u_mode>0.0</u_mode>
+							<u_thickness>0.14</u_thickness>
+							<u_pitch>-0.12</u_pitch>
+							<u_angle>${cfb_angle}</u_angle>
+							<u_phase>0</u_phase>
+							<u_shiny>0.35</u_shiny>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<caseType ifSubset="typeboite:t0">0</caseType>
+							<caseType ifSubset="typeboite:t1">1</caseType>
+							<caseType ifSubset="typeboite:t2">2</caseType>
+							<caseType ifSubset="typeboite:t3">3</caseType>
+							<caseType ifSubset="typeboite:t4">4</caseType>
+							<caseType ifSubset="typeboite:t5">5</caseType>
+							<caseType ifSubset="typeboite:t6">6</caseType>
+							<caseType ifSubset="typeboite:t7">7</caseType>
+							<caseType ifSubset="typeboite:t8">8</caseType>
+							<caseType ifSubset="typeboite:t9">9</caseType>
+							<caseType ifSubset="typeboite:t10">10</caseType>
+							<caseType ifSubset="typeboite:t11">11</caseType>
+							<caseType ifSubset="typeboite:t12">12</caseType>
+							<caseType ifSubset="typeboite:t13">13</caseType>
+							<caseType ifSubset="typeboite:t14">14</caseType>
+							<caseType ifSubset="typeboite:t15">15</caseType>
+							<caseType ifSubset="typeboite:t16">16</caseType>
+							<caseType ifSubset="typeboite:t17">17</caseType>
+							<caseType ifSubset="typeboite:t18">18</caseType>
+							<caseType ifSubset="typeboite:t19">19</caseType>
+							<caseType ifSubset="typeboite:t20">20</caseType>
+							<caseType ifSubset="typeboite:t21">21</caseType>
+							<caseType ifSubset="contourboite:non">7</caseType>
+							<saturation>1</saturation>
+							<ecart>${cfb_ecart}</ecart>
+							<sens>-1</sens>
+							<pas>0.07692</pas>
+							<zoomSelection>1.35</zoomSelection>
+							<formatImage>1</formatImage>
+							<masqueX>0.5</masqueX>
+							<fonduX>0.12</fonduX>
+							<assombrir>0.3</assombrir>
+						</shader>
+					</image>
+					<image name="facefond">
+						<path>${intfanartfresh}</path>
+						<visible>${media_box2d_missing} &amp;&amp; {game:rom} != '..'</visible>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>${cfb_taille}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite3d_case_coverflow.glsl</path>
+							<u_mode>0.0</u_mode>
+							<u_thickness>0.14</u_thickness>
+							<u_pitch>-0.12</u_pitch>
+							<u_angle>${cfb_angle}</u_angle>
+							<u_phase>0</u_phase>
+							<u_shiny>0.35</u_shiny>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<caseType ifSubset="typeboite:t0">0</caseType>
+							<caseType ifSubset="typeboite:t1">1</caseType>
+							<caseType ifSubset="typeboite:t2">2</caseType>
+							<caseType ifSubset="typeboite:t3">3</caseType>
+							<caseType ifSubset="typeboite:t4">4</caseType>
+							<caseType ifSubset="typeboite:t5">5</caseType>
+							<caseType ifSubset="typeboite:t6">6</caseType>
+							<caseType ifSubset="typeboite:t7">7</caseType>
+							<caseType ifSubset="typeboite:t8">8</caseType>
+							<caseType ifSubset="typeboite:t9">9</caseType>
+							<caseType ifSubset="typeboite:t10">10</caseType>
+							<caseType ifSubset="typeboite:t11">11</caseType>
+							<caseType ifSubset="typeboite:t12">12</caseType>
+							<caseType ifSubset="typeboite:t13">13</caseType>
+							<caseType ifSubset="typeboite:t14">14</caseType>
+							<caseType ifSubset="typeboite:t15">15</caseType>
+							<caseType ifSubset="typeboite:t16">16</caseType>
+							<caseType ifSubset="typeboite:t17">17</caseType>
+							<caseType ifSubset="typeboite:t18">18</caseType>
+							<caseType ifSubset="typeboite:t19">19</caseType>
+							<caseType ifSubset="typeboite:t20">20</caseType>
+							<caseType ifSubset="typeboite:t21">21</caseType>
+							<caseType ifSubset="contourboite:non">7</caseType>
+							<saturation>0.7</saturation>
+							<ecart>${cfb_ecart}</ecart>
+							<sens>-1</sens>
+							<pas>0.07692</pas>
+							<zoomSelection>1.35</zoomSelection>
+							<recadre>1</recadre>
+							<masqueX>0.5</masqueX>
+							<fonduX>0.12</fonduX>
+							<assombrir>0.3</assombrir>
+						</shader>
+					</image>
+					<image name="facelogo">
+						<path>${media_marquee}</path>
+						<visible>${media_box2d_missing} &amp;&amp; !(${media_marquee_missing})</visible>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>${cfb_taille}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite3d_case_coverflow.glsl</path>
+							<u_mode>4</u_mode>
+							<u_thickness>0.14</u_thickness>
+							<u_pitch>-0.12</u_pitch>
+							<u_angle>${cfb_angle}</u_angle>
+							<u_phase>0</u_phase>
+							<u_shiny>0.35</u_shiny>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<caseType ifSubset="typeboite:t0">0</caseType>
+							<caseType ifSubset="typeboite:t1">1</caseType>
+							<caseType ifSubset="typeboite:t2">2</caseType>
+							<caseType ifSubset="typeboite:t3">3</caseType>
+							<caseType ifSubset="typeboite:t4">4</caseType>
+							<caseType ifSubset="typeboite:t5">5</caseType>
+							<caseType ifSubset="typeboite:t6">6</caseType>
+							<caseType ifSubset="typeboite:t7">7</caseType>
+							<caseType ifSubset="typeboite:t8">8</caseType>
+							<caseType ifSubset="typeboite:t9">9</caseType>
+							<caseType ifSubset="typeboite:t10">10</caseType>
+							<caseType ifSubset="typeboite:t11">11</caseType>
+							<caseType ifSubset="typeboite:t12">12</caseType>
+							<caseType ifSubset="typeboite:t13">13</caseType>
+							<caseType ifSubset="typeboite:t14">14</caseType>
+							<caseType ifSubset="typeboite:t15">15</caseType>
+							<caseType ifSubset="typeboite:t16">16</caseType>
+							<caseType ifSubset="typeboite:t17">17</caseType>
+							<caseType ifSubset="typeboite:t18">18</caseType>
+							<caseType ifSubset="typeboite:t19">19</caseType>
+							<caseType ifSubset="typeboite:t20">20</caseType>
+							<caseType ifSubset="typeboite:t21">21</caseType>
+							<caseType ifSubset="contourboite:non">7</caseType>
+							<saturation>1</saturation>
+							<ecart>${cfb_ecart}</ecart>
+							<sens>-1</sens>
+							<pas>0.07692</pas>
+							<zoomSelection>1.35</zoomSelection>
+							<contenu>0.8</contenu>
+							<masqueX>0.5</masqueX>
+							<fonduX>0.12</fonduX>
+							<assombrir>0.3</assombrir>
+						</shader>
+					</image>
+					<image name="logotranche">
+						<path>${media_marquee}</path>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>${cfb_taille}</size>
+						<linearSmooth>true</linearSmooth>
+						<shader>
+							<path>${themePath}/_common/shaders/boite3d_case_coverflow.glsl</path>
+							<u_mode>3.2</u_mode>
+							<u_logo_scale>0.8</u_logo_scale>
+							<u_thickness>0.14</u_thickness>
+							<u_pitch>-0.12</u_pitch>
+							<u_angle>${cfb_angle}</u_angle>
+							<u_phase>0</u_phase>
+							<u_shiny>0.35</u_shiny>
+							<caseType>${boitiertype}</caseType>
+							<borderColor>${boitiercouleur}</borderColor>
+							<caseType ifSubset="typeboite:t0">0</caseType>
+							<caseType ifSubset="typeboite:t1">1</caseType>
+							<caseType ifSubset="typeboite:t2">2</caseType>
+							<caseType ifSubset="typeboite:t3">3</caseType>
+							<caseType ifSubset="typeboite:t4">4</caseType>
+							<caseType ifSubset="typeboite:t5">5</caseType>
+							<caseType ifSubset="typeboite:t6">6</caseType>
+							<caseType ifSubset="typeboite:t7">7</caseType>
+							<caseType ifSubset="typeboite:t8">8</caseType>
+							<caseType ifSubset="typeboite:t9">9</caseType>
+							<caseType ifSubset="typeboite:t10">10</caseType>
+							<caseType ifSubset="typeboite:t11">11</caseType>
+							<caseType ifSubset="typeboite:t12">12</caseType>
+							<caseType ifSubset="typeboite:t13">13</caseType>
+							<caseType ifSubset="typeboite:t14">14</caseType>
+							<caseType ifSubset="typeboite:t15">15</caseType>
+							<caseType ifSubset="typeboite:t16">16</caseType>
+							<caseType ifSubset="typeboite:t17">17</caseType>
+							<caseType ifSubset="typeboite:t18">18</caseType>
+							<caseType ifSubset="typeboite:t19">19</caseType>
+							<caseType ifSubset="typeboite:t20">20</caseType>
+							<caseType ifSubset="typeboite:t21">21</caseType>
+							<caseType ifSubset="contourboite:non">7</caseType>
+							<saturation>1</saturation>
+							<ecart>${cfb_ecart}</ecart>
+							<sens>-1</sens>
+							<pas>0.07692</pas>
+							<zoomSelection>1.35</zoomSelection>
+							<masqueX>0.5</masqueX>
+							<fonduX>0.12</fonduX>
+							<assombrir>0.3</assombrir>
+						</shader>
+					</image>
+					<text name="nomjeu">
+						<visible>${media_box2d_missing} &amp;&amp; ${media_marquee_missing}</visible>
+						<text>{game:name}</text>
+						<pos>0.5 0.5</pos>
+						<origin>0.5 0.5</origin>
+						<size>1 0.3818</size>
+						<fontPath>${themePath}/_common/fonts/Cabin-Bold.ttf</fontPath>
+						<fontSize>0.022</fontSize>
+						<lineSpacing>1.05</lineSpacing>
+						<color>FFFFFF</color>
+						<alignment>center</alignment>
+						<verticalAlignment>center</verticalAlignment>
+						<glowColor>000000DD</glowColor>
+						<glowSize>3</glowSize>
+					</text>
+				</container>
+			</itemTemplate>
+		</imagegrid>
+		<gridtile name="default">
+			<padding>0</padding>
+			<backgroundColor>00000000</backgroundColor>
+			<backgroundCenterColor>00000000</backgroundCenterColor>
+			<backgroundEdgeColor>00000000</backgroundEdgeColor>
+		</gridtile>
+		<gridtile name="selected">
+			<padding>0</padding>
+			<backgroundColor>00000000</backgroundColor>
+			<backgroundCenterColor>00000000</backgroundCenterColor>
+			<backgroundEdgeColor>00000000</backgroundEdgeColor>
+		</gridtile>
+		<image name="gridtile.marquee, gridtile.marquee:selected, gridtile.favorite, gridtile.favorite:selected, gridtile.image">
+			<visible>false</visible>
+		</image>
+		<image name="grid_capture, BandeauBas" extra="true">
+			<visible>false</visible>
+		</image>
+		<video name="md_video, grid_video">
+			<visible>false</visible>
+		</video>
+		<text name="md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate, md_lbl_rating, md_lbl_genre, md_developer, md_publisher, md_name, md_description, md_genre, md_players, md_playcount">
+			<visible>false</visible>
+		</text>
+		<datetime name="md_lastplayed, md_releasedate">
+			<visible>false</visible>
+		</datetime>
+		<rating name="md_rating">
+			<visible>false</visible>
+		</rating>
+		<image name="md_image, md_flag">
+			<visible>false</visible>
+		</image>
+		<text name="cf_titre" extra="true">
+			<text>{game:name}</text>
+			<pos>0.5 0.86</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.8 0.05</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.04</fontSize>
+			<color>FFFFFF</color>
+			<alignment>center</alignment>
+			<glowColor>000000AA</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>20</zIndex>
+		</text>
+		<text name="cf_infos" extra="true">
+			<visible>({game:releaseyear} &gt; 0 ? 1 : 0) &amp;&amp; {game:rom} != '..'</visible>
+			<text>{game:releaseyear}  •  {game:genre}  •  {game:publisher}</text>
+			<pos>0.5 0.905</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.8 0.03</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontSize>0.022</fontSize>
+			<color>DDDDDD</color>
+			<alignment>center</alignment>
+			<zIndex>20</zIndex>
+		</text>
+		<text name="cf_infossansannee" extra="true">
+			<visible>({game:releaseyear} &gt; 0 ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
+			<text>{game:genre}  •  {game:publisher}</text>
+			<pos>0.5 0.905</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.8 0.03</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontSize>0.022</fontSize>
+			<color>DDDDDD</color>
+			<alignment>center</alignment>
+			<zIndex>20</zIndex>
+		</text>
+		<image name="cf_logosysteme" extra="true">
+			<path>${intlogoclearpng}</path>
+			<pos>0.025 0.045</pos>
+			<origin>0 0</origin>
+			<maxSize>0.15 0.075</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>20</zIndex>
+		</image>
+		<text name="cf_total" extra="true">
+			<text>{system:total} ${jeux}</text>
+			<pos>0.025 0.13</pos>
+			<origin>0 0.5</origin>
+			<size>0.2 0.03</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<color>CCCCCC</color>
+			<alignment>left</alignment>
+			<glowColor>00000088</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>20</zIndex>
+		</text>
+		<image name="cf_favori" extra="true">
+			<visible>{game:favorite} &amp;&amp; {game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/deck/etoile.png</path>
+			<pos>0.885 0.06</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.022 0.039</maxSize>
+			<color>FFD040FF</color>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>20</zIndex>
+		</image>
+		<image name="cf_joueursicone" extra="true">
+			<visible>!empty({game:players}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${themePath}/_viewgameoption/gl-common/infoicone/manette.png</path>
+			<pos>0.92 0.06</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.022 0.039</maxSize>
+			<color>DDDDDDFF</color>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>20</zIndex>
+		</image>
+		<text name="cf_joueurs" extra="true">
+			<visible>!empty({game:players}) &amp;&amp; {game:rom} != '..'</visible>
+			<text>{game:players}</text>
+			<pos>0.935 0.06</pos>
+			<origin>0 0.5</origin>
+			<size>0.05 0.04</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontSize>0.026</fontSize>
+			<color>DDDDDD</color>
+			<alignment>left</alignment>
+			<glowColor>00000088</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>20</zIndex>
+		</text>
+	</customView>
+</theme>

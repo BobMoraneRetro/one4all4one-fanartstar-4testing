@@ -15,4 +15,7 @@
 	<include>${themePath}/_viewgame/presetshowsmall.xml</include>
 	<include>${themePath}/_viewgame/presetspeedbull.xml</include>
 	<include>${themePath}/_viewgame/presettraviolta_alt.xml</include>
+	<include>${themePath}/_viewgame/presettestcoverflowboitiergrid.xml</include>
+	<include>${themePath}/_viewgame/presettestcoverflow3dboitiergrid.xml</include>
+	<include>${themePath}/_viewgame/presettestcoverflowsalongrid.xml</include>
 </theme>

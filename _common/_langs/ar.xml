@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - الشعار أثناء الفيديو</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - الفيديو</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - تدوير علب SNES وN64 وNGAGE وSolarus</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - زاوية علب الألعاب</opt_starboxang>
-		<opt_starsupport>BOXART - وسيط اللعبة (قرص، خرطوشة)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - سرعة حركة التمرير</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - زاوية علب الألعاب</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - وسيط اللعبة (قرص، خرطوشة)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - سرعة حركة التمرير</opt_boxstarspeed>
 		<opt_starvideo>BOXART - حجم فيديو المعاينة</opt_starvideo>
 		<opt_starvideocadre>BOXART - إطار فيديو المعاينة</opt_starvideocadre>
 		<vcadreactuel>الإطار الحالي</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - عام: الأصوات، المساعدة، الساعة</planche17>
 		<planche18>18 - التخصيص بمجلداتك</planche18>
 		<planche19>19 - وسائط الألعاب الخاصة</planche19>
-		<planche20>20 - جهاز ضعيف وروابط</planche20>
+		<planche20>20 - تزيين مجلد</planche20>
+		<planche21>21 - أي صورة تفوز؟</planche21>
+		<planche22>22 - الأنظمة المجمّعة</planche22>
+		<planche23>23 - جهاز ضعيف وروابط</planche23>
 	</variables>
 </theme>

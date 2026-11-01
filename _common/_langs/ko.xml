@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - 동영상 중 로고</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - 동영상</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - SNES, N64, NGAGE, Solarus 박스 회전</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - 게임 박스 각도</opt_starboxang>
-		<opt_starsupport>BOXART - 게임 매체 (디스크, 카트리지)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - 스크롤 애니메이션 속도</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - 게임 박스 각도</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - 게임 매체 (디스크, 카트리지)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - 스크롤 애니메이션 속도</opt_boxstarspeed>
 		<opt_starvideo>BOXART - 미리보기 영상 크기</opt_starvideo>
 		<opt_starvideocadre>BOXART - 미리보기 동영상 프레임</opt_starvideocadre>
 		<vcadreactuel>현재 프레임</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - 일반: 사운드, 도움말, 시계</planche17>
 		<planche18>18 - 나만의 폴더로 사용자 지정</planche18>
 		<planche19>19 - 게임 사용자 미디어</planche19>
-		<planche20>20 - 저사양 기기와 링크</planche20>
+		<planche20>20 - 폴더 꾸미기</planche20>
+		<planche21>21 - 어떤 이미지가 이길까?</planche21>
+		<planche22>22 - 그룹화된 시스템</planche22>
+		<planche23>23 - 저사양 기기와 링크</planche23>
 	</variables>
 </theme>

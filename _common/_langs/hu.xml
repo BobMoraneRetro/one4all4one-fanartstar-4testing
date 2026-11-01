@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - Logó a videó alatt</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Videó</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - SNES, N64, NGAGE, Solarus dobozok elforgatása</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - A játékdobozok szöge</opt_starboxang>
-		<opt_starsupport>BOXART - Játékhordozó (lemez, kazetta)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - A görgetési animáció sebessége</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - A játékdobozok szöge</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Játékhordozó (lemez, kazetta)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - A görgetési animáció sebessége</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Előnézeti videó mérete</opt_starvideo>
 		<opt_starvideocadre>BOXART - Előnézeti videó kerete</opt_starvideocadre>
 		<vcadreactuel>Jelenlegi keret</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - Általános: hangok, súgó, óra</planche17>
 		<planche18>18 - Testreszabás saját mappákkal</planche18>
 		<planche19>19 - Saját játékmédiák</planche19>
-		<planche20>20 - Gyenge gép és linkek</planche20>
+		<planche20>20 - Mappa öltöztetése</planche20>
+		<planche21>21 - Melyik kép nyer?</planche21>
+		<planche22>22 - Csoportosított rendszerek</planche22>
+		<planche23>23 - Gyenge gép és linkek</planche23>
 	</variables>
 </theme>

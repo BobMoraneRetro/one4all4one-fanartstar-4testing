@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - Lògo pendent la vidèo</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Vidèo</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Rotacion de las bóstias SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - Angle suls bóstias de jòc</opt_starboxang>
-		<opt_starsupport>BOXART - Supòrt del jòc (disc, cartocha)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - Velocitat de l'animacion de desfilament</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - Angle suls bóstias de jòc</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Supòrt del jòc (disc, cartocha)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Velocitat de l'animacion de desfilament</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Talha de la vidèo d'apercebut</opt_starvideo>
 		<opt_starvideocadre>BOXART - Quadre de la vidèo d apercebut</opt_starvideocadre>
 		<vcadreactuel>Quadre actual</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - General: sons, ajuda, relòtge</planche17>
 		<planche18>18 - Personalizar amb tos dorsièrs</planche18>
 		<planche19>19 - Mèdias personals dels jòcs</planche19>
-		<planche20>20 - Maquina pauc potenta e ligams</planche20>
+		<planche20>20 - Abilhar un dorsièr</planche20>
+		<planche21>21 - Quin imatge ganha?</planche21>
+		<planche22>22 - Los sistèmas agropats</planche22>
+		<planche23>23 - Maquina pauc potenta e ligams</planche23>
 	</variables>
 </theme>

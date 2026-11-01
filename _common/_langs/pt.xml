@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - Logótipo durante o vídeo</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Vídeo</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Rotação das caixas SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - Ângulo das caixas de jogo</opt_starboxang>
-		<opt_starsupport>BOXART - Mídia do jogo (disco, cartucho)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - Velocidade da animação de rolagem</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - Ângulo das caixas de jogo</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Mídia do jogo (disco, cartucho)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Velocidade da animação de rolagem</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Tamanho do vídeo de pré-visualização</opt_starvideo>
 		<opt_starvideocadre>BOXART - Moldura do vídeo de pré-visualização</opt_starvideocadre>
 		<vcadreactuel>Moldura atual</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - Geral: sons, ajuda, relógio</planche17>
 		<planche18>18 - Personalizar com as tuas pastas</planche18>
 		<planche19>19 - Media personalizados dos jogos</planche19>
-		<planche20>20 - Máquina pouco potente e ligações</planche20>
+		<planche20>20 - Vestir uma pasta</planche20>
+		<planche21>21 - Que imagem ganha?</planche21>
+		<planche22>22 - Os sistemas agrupados</planche22>
+		<planche23>23 - Máquina pouco potente e ligações</planche23>
 	</variables>
 </theme>

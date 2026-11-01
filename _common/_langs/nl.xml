@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - Logo tijdens video</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Rotatie van de boxen SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - Hoek van de spelboxen</opt_starboxang>
-		<opt_starsupport>BOXART - Spelmedium (disc, cartridge)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - Snelheid van de scrollanimatie</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - Hoek van de spelboxen</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Spelmedium (disc, cartridge)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Snelheid van de scrollanimatie</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Grootte van de voorbeeldvideo</opt_starvideo>
 		<opt_starvideocadre>BOXART - Kader van de voorbeeldvideo</opt_starvideocadre>
 		<vcadreactuel>Huidig kader</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - Algemeen: geluiden, hulp, klok</planche17>
 		<planche18>18 - Aanpassen met je eigen mappen</planche18>
 		<planche19>19 - Eigen spelmedia</planche19>
-		<planche20>20 - Zwakke machine en links</planche20>
+		<planche20>20 - Een map aankleden</planche20>
+		<planche21>21 - Welke afbeelding wint?</planche21>
+		<planche22>22 - Gegroepeerde systemen</planche22>
+		<planche23>23 - Zwakke machine en links</planche23>
 	</variables>
 </theme>

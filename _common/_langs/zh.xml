@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - 视频播放时的徽标</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - 视频</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - 旋转 SNES、N64、NGAGE、Solarus 盒子</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - 游戏盒子角度</opt_starboxang>
-		<opt_starsupport>BOXART - 游戏介质（光盘、卡带）</opt_starsupport>
-		<opt_boxstarspeed>BOXART - 滚动动画速度</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - 游戏盒子角度</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - 游戏介质（光盘、卡带）</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - 滚动动画速度</opt_boxstarspeed>
 		<opt_starvideo>BOXART - 预览视频大小</opt_starvideo>
 		<opt_starvideocadre>BOXART - 预览视频边框</opt_starvideocadre>
 		<vcadreactuel>当前边框</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - 常规：声音、帮助、时钟</planche17>
 		<planche18>18 - 用自己的文件夹自定义</planche18>
 		<planche19>19 - 游戏自定义媒体</planche19>
-		<planche20>20 - 低配机器与链接</planche20>
+		<planche20>20 - 装饰文件夹</planche20>
+		<planche21>21 - 哪张图片优先？</planche21>
+		<planche22>22 - 分组的系统</planche22>
+		<planche23>23 - 低配机器与链接</planche23>
 	</variables>
 </theme>

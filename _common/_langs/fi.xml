@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - Logo videon aikana</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - SNES-, N64-, NGAGE-, Solarus-koteloiden kierto</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - Pelikoteloiden kulma</opt_starboxang>
-		<opt_starsupport>BOXART - Pelin tallennusväline (levy, kasetti)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - Vieritysanimaation nopeus</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - Pelikoteloiden kulma</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Pelin tallennusväline (levy, kasetti)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Vieritysanimaation nopeus</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Esikatseluvideon koko</opt_starvideo>
 		<opt_starvideocadre>BOXART - Esikatseluvideon kehys</opt_starvideocadre>
 		<vcadreactuel>Nykyinen kehys</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - Yleiset: äänet, ohje, kello</planche17>
 		<planche18>18 - Mukauta omilla kansioillasi</planche18>
 		<planche19>19 - Omat pelimediat</planche19>
-		<planche20>20 - Heikko kone ja linkit</planche20>
+		<planche20>20 - Kansion pukeminen</planche20>
+		<planche21>21 - Mikä kuva voittaa?</planche21>
+		<planche22>22 - Ryhmitellyt järjestelmät</planche22>
+		<planche23>23 - Heikko kone ja linkit</planche23>
 	</variables>
 </theme>

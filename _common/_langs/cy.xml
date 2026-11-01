@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - Logo yn ystod y fideo</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Fideo</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Cylchdroi bocsys SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - Ongl y bocsys gemau</opt_starboxang>
-		<opt_starsupport>BOXART - Cyfrwng y gêm (disg, cetrisen)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - Cyflymder yr animeiddiad sgrolio</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - Ongl y bocsys gemau</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Cyfrwng y gêm (disg, cetrisen)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Cyflymder yr animeiddiad sgrolio</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Maint y fideo rhagolwg</opt_starvideo>
 		<opt_starvideocadre>BOXART - Ffrâm y fideo rhagolwg</opt_starvideocadre>
 		<vcadreactuel>Ffrâm bresennol</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - Cyffredinol: synau, cymorth, cloc</planche17>
 		<planche18>18 - Addasu gyda'th ffolderi</planche18>
 		<planche19>19 - Cyfryngau gemau personol</planche19>
-		<planche20>20 - Peiriant gwan a dolenni</planche20>
+		<planche20>20 - Gwisgo ffolder</planche20>
+		<planche21>21 - Pa ddelwedd sy'n ennill?</planche21>
+		<planche22>22 - Systemau wedi'u grwpio</planche22>
+		<planche23>23 - Peiriant gwan a dolenni</planche23>
 	</variables>
 </theme>

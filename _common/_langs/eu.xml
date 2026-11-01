@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - Logoa bideoan zehar</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Bideoa</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - SNES, N64, NGAGE, Solarus kutxen biraketa</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - Joko kutxen angelua</opt_starboxang>
-		<opt_starsupport>BOXART - Jokoaren euskarria (diskoa, kartutxoa)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - Korritze animazioaren abiadura</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - Joko kutxen angelua</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Jokoaren euskarria (diskoa, kartutxoa)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Korritze animazioaren abiadura</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Aurrebista bideoaren tamaina</opt_starvideo>
 		<opt_starvideocadre>BOXART - Aurrebistako bideoaren markoa</opt_starvideocadre>
 		<vcadreactuel>Uneko markoa</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - Orokorra: soinuak, laguntza, erlojua</planche17>
 		<planche18>18 - Pertsonalizatu zure karpetekin</planche18>
 		<planche19>19 - Jokoen multimedia propioa</planche19>
-		<planche20>20 - Makina ahula eta estekak</planche20>
+		<planche20>20 - Karpeta bat jantzi</planche20>
+		<planche21>21 - Zein irudik irabazten du?</planche21>
+		<planche22>22 - Taldekatutako sistemak</planche22>
+		<planche23>23 - Makina ahula eta estekak</planche23>
 	</variables>
 </theme>

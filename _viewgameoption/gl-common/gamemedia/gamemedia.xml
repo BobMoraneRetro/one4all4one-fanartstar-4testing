@@ -18,6 +18,7 @@
 		<gm_video>("${path_game_media}" + ({game:system:theme}) + "/video/" + stem({game:rom}) + ".mp4")</gm_video>
 		<gm_video_avi>("${path_game_media}" + ({game:system:theme}) + "/video/" + stem({game:rom}) + ".avi")</gm_video_avi>
 		<gm_image>("${path_game_media}" + ({game:system:theme}) + "/screenshot/" + stem({game:rom}) + ".png")</gm_image>
+		<gm_image_jpg>("${path_game_media}" + ({game:system:theme}) + "/screenshot/" + stem({game:rom}) + ".jpg")</gm_image_jpg>
 		<gm_disc>("${path_game_media}" + ({game:system:theme}) + "/disc/" + stem({game:rom}) + ".png")</gm_disc>
 		<gm_cartridge>("${path_game_media}" + ({game:system:theme}) + "/cartridge/" + stem({game:rom}) + ".png")</gm_cartridge>
 	</variables>

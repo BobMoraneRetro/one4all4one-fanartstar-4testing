@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - לוגו בזמן הווידאו</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - וידאו</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - סיבוב קופסאות SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - זווית קופסאות המשחקים</opt_starboxang>
-		<opt_starsupport>BOXART - מדיית המשחק (דיסק, מחסנית)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - מהירות הנפשת הגלילה</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - זווית קופסאות המשחקים</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - מדיית המשחק (דיסק, מחסנית)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - מהירות הנפשת הגלילה</opt_boxstarspeed>
 		<opt_starvideo>BOXART - גודל סרטון התצוגה המקדימה</opt_starvideo>
 		<opt_starvideocadre>BOXART - מסגרת וידאו התצוגה המקדימה</opt_starvideocadre>
 		<vcadreactuel>המסגרת הנוכחית</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - כללי: צלילים, עזרה, שעון</planche17>
 		<planche18>18 - התאמה אישית עם התיקיות שלך</planche18>
 		<planche19>19 - מדיה אישית למשחקים</planche19>
-		<planche20>20 - מחשב חלש וקישורים</planche20>
+		<planche20>20 - עיצוב תיקייה</planche20>
+		<planche21>21 - איזו תמונה מנצחת?</planche21>
+		<planche22>22 - מערכות מקובצות</planche22>
+		<planche23>23 - מחשב חלש וקישורים</planche23>
 	</variables>
 </theme>

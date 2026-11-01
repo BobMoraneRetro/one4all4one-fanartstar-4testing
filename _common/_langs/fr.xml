@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - Logo pendant la vidéo</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Vidéo</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Rotation des boites SNES,N64,NGAGE,Solarus</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - Angle sur les boite de jeu</opt_starboxang>
-		<opt_starsupport>BOXART - Support du jeu (disque, cartouche)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - Vitesse de l'animation de défilement</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - Angle sur les boite de jeu</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Support du jeu (disque, cartouche)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Vitesse de l'animation de défilement</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Taille de la vidéo preview</opt_starvideo>
 		<opt_starvideocadre>BOXART - Cadre de la vidéo preview</opt_starvideocadre>
 		<vcadreactuel>Cadre actuel</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - Général : sons, aide, horloge</planche17>
 		<planche18>18 - Personnaliser avec tes dossiers</planche18>
 		<planche19>19 - Médias perso des jeux</planche19>
-		<planche20>20 - Machine peu puissante et liens</planche20>
+		<planche20>20 - Habiller un dossier</planche20>
+		<planche21>21 - Quelle image gagne ?</planche21>
+		<planche22>22 - Les systèmes groupés</planche22>
+		<planche23>23 - Machine peu puissante et liens</planche23>
 	</variables>
 </theme>

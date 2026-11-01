@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - Logo under video</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Rotasjon av boksane SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - Vinkel på spelboksane</opt_starboxang>
-		<opt_starsupport>BOXART - Spelmedium (plate, kassett)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - Fart på rulleanimasjonen</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - Vinkel på spelboksane</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Spelmedium (plate, kassett)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Fart på rulleanimasjonen</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Storleik på førehandsvisingsvideoen</opt_starvideo>
 		<opt_starvideocadre>BOXART - Ramme for førehandsvideo</opt_starvideocadre>
 		<vcadreactuel>Noverande ramme</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - Generelt: lydar, hjelp, klokke</planche17>
 		<planche18>18 - Tilpass med dine mapper</planche18>
 		<planche19>19 - Eigne spelmedium</planche19>
-		<planche20>20 - Svak maskin og lenkjer</planche20>
+		<planche20>20 - Kle ei mappe</planche20>
+		<planche21>21 - Kva bilete vinn?</planche21>
+		<planche22>22 - Grupperte system</planche22>
+		<planche23>23 - Svak maskin og lenkjer</planche23>
 	</variables>
 </theme>

@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - Логотип во время видео</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Видео</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Поворот коробок SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - Угол коробок игр</opt_starboxang>
-		<opt_starsupport>BOXART - Носитель игры (диск, картридж)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - Скорость анимации прокрутки</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - Угол коробок игр</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Носитель игры (диск, картридж)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Скорость анимации прокрутки</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Размер видео предпросмотра</opt_starvideo>
 		<opt_starvideocadre>BOXART - Рамка видео предпросмотра</opt_starvideocadre>
 		<vcadreactuel>Текущая рамка</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - Общие: звуки, справка, часы</planche17>
 		<planche18>18 - Настройка своими папками</planche18>
 		<planche19>19 - Свои медиафайлы игр</planche19>
-		<planche20>20 - Слабый компьютер и ссылки</planche20>
+		<planche20>20 - Оформление папки</planche20>
+		<planche21>21 - Какое изображение победит?</planche21>
+		<planche22>22 - Сгруппированные системы</planche22>
+		<planche23>23 - Слабый компьютер и ссылки</planche23>
 	</variables>
 </theme>

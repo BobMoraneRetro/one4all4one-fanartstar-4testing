@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - Logo během videa</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Otočení krabic SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - Úhel krabic her</opt_starboxang>
-		<opt_starsupport>BOXART - Nosič hry (disk, cartridge)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - Rychlost animace posouvání</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - Úhel krabic her</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Nosič hry (disk, cartridge)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Rychlost animace posouvání</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Velikost náhledového videa</opt_starvideo>
 		<opt_starvideocadre>BOXART - Rámeček náhledového videa</opt_starvideocadre>
 		<vcadreactuel>Současný rámeček</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - Obecné: zvuky, nápověda, hodiny</planche17>
 		<planche18>18 - Přizpůsobení vlastními složkami</planche18>
 		<planche19>19 - Vlastní média her</planche19>
-		<planche20>20 - Slabý počítač a odkazy</planche20>
+		<planche20>20 - Oblékání složky</planche20>
+		<planche21>21 - Který obrázek vyhraje?</planche21>
+		<planche22>22 - Seskupené systémy</planche22>
+		<planche23>23 - Slabý počítač a odkazy</planche23>
 	</variables>
 </theme>

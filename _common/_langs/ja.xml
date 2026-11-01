@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - 動画中のロゴ</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - 動画</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - SNES、N64、NGAGE、Solarusのボックスを回転</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - ゲームボックスの角度</opt_starboxang>
-		<opt_starsupport>BOXART - ゲームメディア（ディスク、カートリッジ）</opt_starsupport>
-		<opt_boxstarspeed>BOXART - スクロールアニメーションの速度</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - ゲームボックスの角度</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - ゲームメディア（ディスク、カートリッジ）</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - スクロールアニメーションの速度</opt_boxstarspeed>
 		<opt_starvideo>BOXART - プレビュー動画のサイズ</opt_starvideo>
 		<opt_starvideocadre>BOXART - プレビュー動画の枠</opt_starvideocadre>
 		<vcadreactuel>現在の枠</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - 全般：サウンド、ヘルプ、時計</planche17>
 		<planche18>18 - 自分のフォルダーでカスタマイズ</planche18>
 		<planche19>19 - ゲームのカスタムメディア</planche19>
-		<planche20>20 - 低スペック機とリンク</planche20>
+		<planche20>20 - フォルダーを飾る</planche20>
+		<planche21>21 - どの画像が優先？</planche21>
+		<planche22>22 - グループ化されたシステム</planche22>
+		<planche23>23 - 低スペック機とリンク</planche23>
 	</variables>
 </theme>

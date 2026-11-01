@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - Logo saat video</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Rotasi kotak SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - Sudut kotak game</opt_starboxang>
-		<opt_starsupport>BOXART - Media game (cakram, kartrid)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - Kecepatan animasi gulir</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - Sudut kotak game</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Media game (cakram, kartrid)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Kecepatan animasi gulir</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Ukuran video pratinjau</opt_starvideo>
 		<opt_starvideocadre>BOXART - Bingkai video pratinjau</opt_starvideocadre>
 		<vcadreactuel>Bingkai saat ini</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - Umum: suara, bantuan, jam</planche17>
 		<planche18>18 - Kustomisasi dengan foldermu</planche18>
 		<planche19>19 - Media game pribadi</planche19>
-		<planche20>20 - Mesin lemah dan tautan</planche20>
+		<planche20>20 - Menghias folder</planche20>
+		<planche21>21 - Gambar mana yang menang?</planche21>
+		<planche22>22 - Sistem yang dikelompokkan</planche22>
+		<planche23>23 - Mesin lemah dan tautan</planche23>
 	</variables>
 </theme>

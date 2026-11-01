@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - Logo în timpul videoclipului</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Videoclip</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Rotirea cutiilor SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - Unghiul cutiilor de joc</opt_starboxang>
-		<opt_starsupport>BOXART - Suportul jocului (disc, cartuș)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - Viteza animației de derulare</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - Unghiul cutiilor de joc</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Suportul jocului (disc, cartuș)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Viteza animației de derulare</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Dimensiunea videoclipului de previzualizare</opt_starvideo>
 		<opt_starvideocadre>BOXART - Cadrul videoclipului de previzualizare</opt_starvideocadre>
 		<vcadreactuel>Cadrul actual</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - General: sunete, ajutor, ceas</planche17>
 		<planche18>18 - Personalizează cu dosarele tale</planche18>
 		<planche19>19 - Media proprii ale jocurilor</planche19>
-		<planche20>20 - Calculator slab și linkuri</planche20>
+		<planche20>20 - Îmbrăcarea unui dosar</planche20>
+		<planche21>21 - Ce imagine câștigă?</planche21>
+		<planche22>22 - Sistemele grupate</planche22>
+		<planche23>23 - Calculator slab și linkuri</planche23>
 	</variables>
 </theme>

@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - Logo durante o vídeo</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Vídeo</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Rotación das caixas SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - Ángulo das caixas de xogo</opt_starboxang>
-		<opt_starsupport>BOXART - Soporte do xogo (disco, cartucho)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - Velocidade da animación de desprazamento</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - Ángulo das caixas de xogo</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Soporte do xogo (disco, cartucho)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Velocidade da animación de desprazamento</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Tamaño do vídeo de vista previa</opt_starvideo>
 		<opt_starvideocadre>BOXART - Marco do vídeo de vista previa</opt_starvideocadre>
 		<vcadreactuel>Marco actual</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - Xeral: sons, axuda, reloxo</planche17>
 		<planche18>18 - Personalizar cos teus cartafoles</planche18>
 		<planche19>19 - Medios propios dos xogos</planche19>
-		<planche20>20 - Máquina pouco potente e ligazóns</planche20>
+		<planche20>20 - Vestir un cartafol</planche20>
+		<planche21>21 - Que imaxe gaña?</planche21>
+		<planche22>22 - Os sistemas agrupados</planche22>
+		<planche23>23 - Máquina pouco potente e ligazóns</planche23>
 	</variables>
 </theme>

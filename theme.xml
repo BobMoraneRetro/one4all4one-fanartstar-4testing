@@ -51,7 +51,7 @@
 	<include>${themePath}/help.xml</include>
 	<include>${themePath}/_common/_menu/menu.xml</include>
 	<!-- ancien message d accueil (subset lismoi) : <include name="tumasbienlu" displayName="${tumasbienlu}">${themePath}/_viewsystoption/sl-commun/splashounet.xml</include> -->
-	<subset name="lismoiv2" displayName="${opt_lismoi}">
+	<subset name="lismoiv3" displayName="${opt_lismoi}">
 		<include name="planche00" displayName="${planche00}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
 		<include name="planche01" displayName="${planche01}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
 		<include name="planche02" displayName="${planche02}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
@@ -73,6 +73,9 @@
 		<include name="planche18" displayName="${planche18}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
 		<include name="planche19" displayName="${planche19}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
 		<include name="planche20" displayName="${planche20}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche21" displayName="${planche21}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche22" displayName="${planche22}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche23" displayName="${planche23}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
 		<include name="desactive" displayName="${desactive}"/>
 	</subset>
 	<region region="fr">Region fr</region>

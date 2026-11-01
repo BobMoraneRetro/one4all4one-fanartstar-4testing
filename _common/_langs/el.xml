@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - Λογότυπο κατά το βίντεο</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Βίντεο</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Περιστροφή κουτιών SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - Γωνία κουτιών παιχνιδιών</opt_starboxang>
-		<opt_starsupport>BOXART - Μέσο παιχνιδιού (δίσκος, κασέτα)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - Ταχύτητα κίνησης κύλισης</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - Γωνία κουτιών παιχνιδιών</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Μέσο παιχνιδιού (δίσκος, κασέτα)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Ταχύτητα κίνησης κύλισης</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Μέγεθος βίντεο προεπισκόπησης</opt_starvideo>
 		<opt_starvideocadre>BOXART - Πλαίσιο βίντεο προεπισκόπησης</opt_starvideocadre>
 		<vcadreactuel>Τρέχον πλαίσιο</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - Γενικά: ήχοι, βοήθεια, ρολόι</planche17>
 		<planche18>18 - Προσαρμογή με τους φακέλους σου</planche18>
 		<planche19>19 - Προσωπικά μέσα παιχνιδιών</planche19>
-		<planche20>20 - Αδύναμο μηχάνημα και σύνδεσμοι</planche20>
+		<planche20>20 - Ντύσιμο φακέλου</planche20>
+		<planche21>21 - Ποια εικόνα κερδίζει;</planche21>
+		<planche22>22 - Ομαδοποιημένα συστήματα</planche22>
+		<planche23>23 - Αδύναμο μηχάνημα και σύνδεσμοι</planche23>
 	</variables>
 </theme>

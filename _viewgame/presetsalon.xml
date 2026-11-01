@@ -24,6 +24,11 @@
 	${salon_calque} : vue Salon : image posée sur l écran (vitre, quadrillage LCD...), vide = aucune ; réglable par <système>.xml (définie dans ce fichier)
 	${salon_capture_pos} : vue Salon : centre de la capture d écran du jeu ; réglable par <système>.xml (définie dans ce fichier)
 	${salon_capture_taille} : vue Salon : largeur hauteur de la capture d écran du jeu ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_coin_bd} : vue Salon : perspective 4 coins, coin bas-droit de l écran du décor (x y en pixels du PNG 1920x1080) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_coin_bg} : vue Salon : perspective 4 coins, coin bas-gauche de l écran du décor (x y en pixels du PNG 1920x1080) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_coin_hd} : vue Salon : perspective 4 coins, coin haut-droit de l écran du décor (x y en pixels du PNG 1920x1080) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_coin_hg} : vue Salon : perspective 4 coins, coin haut-gauche de l écran du décor (x y en pixels du PNG 1920x1080) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_coins_proportions} : vue Salon : perspective 4 coins, 0 = l image remplit l écran, 1 = proportions gardées (bandes noires) ; réglable par <système>.xml (définie dans ce fichier)
 	${salon_couleur} : vue Salon : couleur multipliée sur la vidéo et la capture (FFFFFFFF = aucune ; ex. 8BAC0F pour la Game Boy) ; réglable par <système>.xml (définie dans ce fichier)
 	${salon_defaut} : vue Salon : décor et réglages par défaut, _default (systèmes 4:3), _default16 (systèmes 16:9 listés), ou selon le type du système : arcade, computers (computer), extension, pinball, port, portable, auto-collection, custom-collection, retrobat (type vide : retrobat, kodi, screenshots) (définie dans ce fichier)
 	${salon_disque_depart} : vue Salon : x du disque caché derrière la boîte sélectionnée (définie dans ce fichier)
@@ -32,6 +37,10 @@
 	${salon_disque_x} : vue Salon : x du disque une fois sorti de la boîte (définie dans ce fichier ; valeur selon l option « JEUX - Boîte de jeu à afficher »)
 	${salon_disque_y} : vue Salon : hauteur du centre du disque (définie dans ce fichier ; valeur selon l option « JEUX - Boîte de jeu à afficher »)
 	${salon_ecran2} : vue Salon : true = 2e écran (2 consoles reliées, ex. gbc2players), même vidéo, capture, couleur et calque que le 1er ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_persp_angle_x} : vue Salon : perspective par angles, rotation autour de l axe vertical en degrés (shader Angled_border_gradient, tiltAngleX) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_persp_angle_y} : vue Salon : perspective par angles, rotation autour de l axe horizontal en degrés (tiltAngle) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_persp_profondeur} : vue Salon : perspective par angles, profondeur (1 = normale, plus petit = plus marquée) ; réglable par <système>.xml (définie dans ce fichier)
+	${salon_perspective} : vue Salon : perspective de l écran du décor (0 = aucune, 1 = angles, 2 = 4 coins) ; réglable par <système>.xml (définie dans ce fichier)
 	${salon_saturation} : vue Salon : saturation de la vidéo et de la capture (1 = normale, 0 = noir et blanc, à combiner avec salon_couleur) ; réglable par <système>.xml (définie dans ce fichier)
 	${salon_support_mixte} : vue Salon : true = disques et cartes mélangés, la forme de l image (ronde ou non) décide de la rotation (shader support_tourne) ; défaut wiiu, xbox360, openbor, mugen, ikemen, windows et les collections (définie dans ce fichier)
 	${salon_support_umd} : vue Salon : true = support UMD (psp) : seul le disque intérieur tourne (shader support_umd), la coque reste fixe (définie dans ce fichier ; valeur selon l option « JEUX - Rotation des UMD (PSP) »)
@@ -84,6 +93,15 @@
 		<salon_umd_cy>0.49</salon_umd_cy>
 		<salon_umd_rayon>0.45</salon_umd_rayon>
 		<salon_umd_rayon_centre>0.23</salon_umd_rayon_centre>
+		<salon_perspective>0</salon_perspective>
+		<salon_persp_angle_x>0</salon_persp_angle_x>
+		<salon_persp_angle_y>0</salon_persp_angle_y>
+		<salon_persp_profondeur>1</salon_persp_profondeur>
+		<salon_coin_hg>0 0</salon_coin_hg>
+		<salon_coin_hd>1920 0</salon_coin_hd>
+		<salon_coin_bd>1920 1080</salon_coin_bd>
+		<salon_coin_bg>0 1080</salon_coin_bg>
+		<salon_coins_proportions>0</salon_coins_proportions>
 		<salon_defaut>_default</salon_defaut>
 		<salon_defaut if="{system.theme} == 'ps3' || {system.theme} == 'ps4' || {system.theme} == 'xbox360' || {system.theme} == 'wiiu' || {system.theme} == 'switch' || {system.theme} == 'psvita' || {system.theme} == 'windows' || {system.theme} == 'steam'">_default16</salon_defaut>
 		<salon_defaut if="{system.hardwareType} == 'arcade'">arcade</salon_defaut>
@@ -127,7 +145,7 @@
 			<opacity ifSubset="salonvignette:fort">1</opacity>
 			<zIndex>6</zIndex>
 		</image>
-		<image name="salonnoir" extra="true">
+		<image name="salonnoir" if="${salon_perspective} == 0" extra="true">
 			<visible>{game:rom} != '..'</visible>
 			<path>${themePath}/_viewgame/salon/noir.png</path>
 			<pos>${salon_video_pos}</pos>
@@ -135,7 +153,7 @@
 			<size>${salon_video_taille}</size>
 			<zIndex>2.5</zIndex>
 		</image>
-		<image name="salonimage" if="!${salon_video_etiree}" extra="true">
+		<image name="salonimage" if="!${salon_video_etiree} &amp;&amp; ${salon_perspective} == 0" extra="true">
 			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
 			<path>${media_image}</path>
 			<pos>${salon_capture_pos}</pos>
@@ -146,7 +164,7 @@
 			<saturation>${salon_saturation}</saturation>
 			<zIndex>2.8</zIndex>
 		</image>
-		<image name="salonimagecapture" if="!${salon_video_etiree}" extra="true">
+		<image name="salonimagecapture" if="!${salon_video_etiree} &amp;&amp; ${salon_perspective} == 0" extra="true">
 			<visible ifSubset="videojeu:videoseule">false</visible>
 			<visible ifSubset="videojeu:videofondu">false</visible>
 			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
@@ -171,7 +189,7 @@
 				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
 			</storyboard>
 		</image>
-		<image name="salonimageetiree" if="${salon_video_etiree}" extra="true">
+		<image name="salonimageetiree" if="${salon_video_etiree} &amp;&amp; ${salon_perspective} == 0" extra="true">
 			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
 			<path>${media_image}</path>
 			<pos>${salon_capture_pos}</pos>
@@ -182,7 +200,7 @@
 			<saturation>${salon_saturation}</saturation>
 			<zIndex>2.8</zIndex>
 		</image>
-		<image name="salonimagecaptureetiree" if="${salon_video_etiree}" extra="true">
+		<image name="salonimagecaptureetiree" if="${salon_video_etiree} &amp;&amp; ${salon_perspective} == 0" extra="true">
 			<visible ifSubset="videojeu:videoseule">false</visible>
 			<visible ifSubset="videojeu:videofondu">false</visible>
 			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
@@ -207,7 +225,7 @@
 				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
 			</storyboard>
 		</image>
-		<video name="salonvideo" if="!${salon_video_etiree}" extra="true">
+		<video name="salonvideo" if="!${salon_video_etiree} &amp;&amp; ${salon_perspective} == 0" extra="true">
 			<visible>{game:rom} != '..'</visible>
 			<path>${media_video}</path>
 			<delay ifSubset="videojeu:videoseule">0</delay>
@@ -221,7 +239,7 @@
 			<saturation>${salon_saturation}</saturation>
 			<zIndex>3</zIndex>
 		</video>
-		<video name="salonvideoetiree" if="${salon_video_etiree}" extra="true">
+		<video name="salonvideoetiree" if="${salon_video_etiree} &amp;&amp; ${salon_perspective} == 0" extra="true">
 			<visible>{game:rom} != '..'</visible>
 			<path>${media_video}</path>
 			<delay ifSubset="videojeu:videoseule">0</delay>
@@ -235,13 +253,227 @@
 			<saturation>${salon_saturation}</saturation>
 			<zIndex>3</zIndex>
 		</video>
-		<image name="saloncalque" extra="true">
+		<image name="saloncalque" if="${salon_perspective} == 0" extra="true">
 			<visible>{game:rom} != '..'</visible>
 			<path>${salon_calque}</path>
 			<pos>${salon_video_pos}</pos>
 			<origin>0.5 0.5</origin>
 			<size>${salon_video_taille}</size>
 			<linearSmooth>true</linearSmooth>
+			<zIndex>4</zIndex>
+		</image>
+		<image name="salonnoirangles" if="${salon_perspective} == 1" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/salon/noir.png</path>
+			<pos>${salon_video_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video_taille}</size>
+			<shader>
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>${salon_persp_angle_y}</tiltAngle>
+				<tiltAngleX>${salon_persp_angle_x}</tiltAngleX>
+				<perspectiveDepth>${salon_persp_profondeur}</perspectiveDepth>
+				<borderSize>0</borderSize>
+			</shader>
+			<zIndex>2.5</zIndex>
+		</image>
+		<image name="salonimageangles" if="${salon_perspective} == 1" extra="true">
+			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_capture_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_capture_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<shader>
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>${salon_persp_angle_y}</tiltAngle>
+				<tiltAngleX>${salon_persp_angle_x}</tiltAngleX>
+				<perspectiveDepth>${salon_persp_profondeur}</perspectiveDepth>
+				<borderSize>0</borderSize>
+			</shader>
+			<zIndex>2.8</zIndex>
+		</image>
+		<image name="salonimagecaptureangles" if="${salon_perspective} == 1" extra="true">
+			<visible ifSubset="videojeu:videoseule">false</visible>
+			<visible ifSubset="videojeu:videofondu">false</visible>
+			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>${salon_capture_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_capture_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<shader>
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>${salon_persp_angle_y}</tiltAngle>
+				<tiltAngleX>${salon_persp_angle_x}</tiltAngleX>
+				<perspectiveDepth>${salon_persp_profondeur}</perspectiveDepth>
+				<borderSize>0</borderSize>
+			</shader>
+			<zIndex>2.8</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<video name="salonvideoangles" if="${salon_perspective} == 1" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_video}</path>
+			<delay ifSubset="videojeu:videoseule">0</delay>
+			<delay ifSubset="videojeu:videofondu">0</delay>
+			<delay ifSubset="videojeu:capturevideo">0.3</delay>
+			<pos>${salon_video_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video_taille}</size>
+			<effect>none</effect>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<shader>
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>${salon_persp_angle_y}</tiltAngle>
+				<tiltAngleX>${salon_persp_angle_x}</tiltAngleX>
+				<perspectiveDepth>${salon_persp_profondeur}</perspectiveDepth>
+				<borderSize>0</borderSize>
+			</shader>
+			<zIndex>3</zIndex>
+		</video>
+		<image name="saloncalqueangles" if="${salon_perspective} == 1" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${salon_calque}</path>
+			<pos>${salon_video_pos}</pos>
+			<origin>0.5 0.5</origin>
+			<size>${salon_video_taille}</size>
+			<linearSmooth>true</linearSmooth>
+			<shader>
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>${salon_persp_angle_y}</tiltAngle>
+				<tiltAngleX>${salon_persp_angle_x}</tiltAngleX>
+				<perspectiveDepth>${salon_persp_profondeur}</perspectiveDepth>
+				<borderSize>0</borderSize>
+			</shader>
+			<zIndex>4</zIndex>
+		</image>
+		<image name="salonnoircoins" if="${salon_perspective} == 2" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${themePath}/_viewgame/salon/noir.png</path>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<shader>
+				<path>${themePath}/_common/shaders/ecran_4coins.glsl</path>
+				<coinHG>${salon_coin_hg}</coinHG>
+				<coinHD>${salon_coin_hd}</coinHD>
+				<coinBD>${salon_coin_bd}</coinBD>
+				<coinBG>${salon_coin_bg}</coinBG>
+				<proportions>${salon_coins_proportions}</proportions>
+				<saturationEcran>1</saturationEcran>
+			</shader>
+			<zIndex>2.5</zIndex>
+		</image>
+		<image name="salonimagecoins" if="${salon_perspective} == 2" extra="true">
+			<visible>!(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<shader>
+				<path>${themePath}/_common/shaders/ecran_4coins.glsl</path>
+				<coinHG>${salon_coin_hg}</coinHG>
+				<coinHD>${salon_coin_hd}</coinHD>
+				<coinBD>${salon_coin_bd}</coinBD>
+				<coinBG>${salon_coin_bg}</coinBG>
+				<proportions>${salon_coins_proportions}</proportions>
+				<saturationEcran>${salon_saturation}</saturationEcran>
+			</shader>
+			<zIndex>2.8</zIndex>
+		</image>
+		<image name="salonimagecapturecoins" if="${salon_perspective} == 2" extra="true">
+			<visible ifSubset="videojeu:videoseule">false</visible>
+			<visible ifSubset="videojeu:videofondu">false</visible>
+			<visible ifSubset="videojeu:capturevideo">${media_video_exists} &amp;&amp; {game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<linearSmooth>true</linearSmooth>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<shader>
+				<path>${themePath}/_common/shaders/ecran_4coins.glsl</path>
+				<coinHG>${salon_coin_hg}</coinHG>
+				<coinHD>${salon_coin_hd}</coinHD>
+				<coinBD>${salon_coin_bd}</coinBD>
+				<coinBG>${salon_coin_bg}</coinBG>
+				<proportions>${salon_coins_proportions}</proportions>
+				<saturationEcran>${salon_saturation}</saturationEcran>
+			</shader>
+			<zIndex>2.8</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<video name="salonvideocoins" if="${salon_perspective} == 2" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_video}</path>
+			<delay ifSubset="videojeu:videoseule">0</delay>
+			<delay ifSubset="videojeu:videofondu">0</delay>
+			<delay ifSubset="videojeu:capturevideo">0.3</delay>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<effect>none</effect>
+			<color>${salon_couleur}</color>
+			<saturation>${salon_saturation}</saturation>
+			<shader>
+				<path>${themePath}/_common/shaders/ecran_4coins.glsl</path>
+				<coinHG>${salon_coin_hg}</coinHG>
+				<coinHD>${salon_coin_hd}</coinHD>
+				<coinBD>${salon_coin_bd}</coinBD>
+				<coinBG>${salon_coin_bg}</coinBG>
+				<proportions>${salon_coins_proportions}</proportions>
+				<saturationEcran>${salon_saturation}</saturationEcran>
+			</shader>
+			<zIndex>3</zIndex>
+		</video>
+		<image name="saloncalquecoins" if="${salon_perspective} == 2" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${salon_calque}</path>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<linearSmooth>true</linearSmooth>
+			<shader>
+				<path>${themePath}/_common/shaders/ecran_4coins.glsl</path>
+				<coinHG>${salon_coin_hg}</coinHG>
+				<coinHD>${salon_coin_hd}</coinHD>
+				<coinBD>${salon_coin_bd}</coinBD>
+				<coinBG>${salon_coin_bg}</coinBG>
+				<proportions>${salon_coins_proportions}</proportions>
+				<saturationEcran>1</saturationEcran>
+			</shader>
 			<zIndex>4</zIndex>
 		</image>
 		<image name="salonnoir2" if="${salon_ecran2}" extra="true">
@@ -387,6 +619,8 @@
 				<container>
 					<image name="salondisque" if="${salon_support_mixte}">
 						<visible>${media_support_exists}</visible>
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
 						<visible ifSubset="perfmachine:perflow">false</visible>
 						<path>${media_support}</path>
 						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
@@ -439,6 +673,8 @@
 					</image>
 					<image name="salondisqueplein" if="${salon_disque_tourne} &amp;&amp; !${salon_support_mixte}">
 						<visible>${media_support_exists}</visible>
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
 						<visible ifSubset="perfmachine:perflow">false</visible>
 						<path>${media_support}</path>
 						<path ifSubset="perfmachine:perflow"></path>
@@ -487,6 +723,8 @@
 					</image>
 					<image name="salondisquefixe" if="${salon_support_mixte}">
 						<visible>${media_support_exists}</visible>
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
 						<visible ifSubset="perfmachine:perflow">false</visible>
 						<path>${media_support}</path>
 						<pos>${salon_disque_depart} ${salon_disque_y}</pos>
@@ -510,6 +748,8 @@
 					</image>
 					<image name="saloncartouche" if="!${salon_disque_tourne} &amp;&amp; !${salon_support_mixte} &amp;&amp; !${salon_support_umd}">
 						<visible>${media_support_exists}</visible>
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
 						<visible ifSubset="perfmachine:perflow">false</visible>
 						<path>${media_support}</path>
 						<path ifSubset="perfmachine:perflow"></path>
@@ -530,6 +770,8 @@
 					</image>
 					<image name="salonumd" if="${salon_support_umd} &amp;&amp; !${salon_support_mixte}">
 						<visible>${media_support_exists}</visible>
+						<visible ifSubset="starsupport:supportnon">false</visible>
+						<visible ifSubset="starsupport:supportoui">${media_support_exists}</visible>
 						<visible ifSubset="perfmachine:perflow">false</visible>
 						<path>${media_support}</path>
 						<path ifSubset="perfmachine:perflow"></path>

@@ -8,5 +8,11 @@
 		<salon_capture_taille>0.2073 0.3093</salon_capture_taille>
 		<salon_video_etiree>false</salon_video_etiree>
 		<salon_support_mixte>true</salon_support_mixte>
+		<salon_perspective>2</salon_perspective>
+		<salon_coin_hg>1256 303</salon_coin_hg>
+		<salon_coin_hd>1644 288</salon_coin_hd>
+		<salon_coin_bd>1644 617</salon_coin_bd>
+		<salon_coin_bg>1254 610</salon_coin_bg>
+		<salon_coins_proportions>0</salon_coins_proportions>
 	</variables>
 </theme>

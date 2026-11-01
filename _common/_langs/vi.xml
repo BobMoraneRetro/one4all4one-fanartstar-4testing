@@ -210,9 +210,9 @@
 		<opt_decklogovideo>BIG ART - Logo khi phát video</opt_decklogovideo>
 		<opt_spotvideo>SPOTLIGHT - Video</opt_spotvideo>
 		<opt_fanartstarrotated>BOXART - Xoay hộp SNES, N64, NGAGE, Solarus</opt_fanartstarrotated>
-		<opt_starboxang>BOXART - Góc của hộp trò chơi</opt_starboxang>
-		<opt_starsupport>BOXART - Phương tiện game (đĩa, băng)</opt_starsupport>
-		<opt_boxstarspeed>BOXART - Tốc độ hiệu ứng cuộn</opt_boxstarspeed>
+		<opt_starboxang>BOXART · RETROFIST - Góc của hộp trò chơi</opt_starboxang>
+		<opt_starsupport>BOXART · RETROFIST - Phương tiện game (đĩa, băng)</opt_starsupport>
+		<opt_boxstarspeed>BOXART · RETROFIST - Tốc độ hiệu ứng cuộn</opt_boxstarspeed>
 		<opt_starvideo>BOXART - Kích thước video xem trước</opt_starvideo>
 		<opt_starvideocadre>BOXART - Khung video xem trước</opt_starvideocadre>
 		<vcadreactuel>Khung hiện tại</vcadreactuel>
@@ -289,6 +289,9 @@
 		<planche17>17 - Chung: âm thanh, trợ giúp, đồng hồ</planche17>
 		<planche18>18 - Tùy biến bằng thư mục của bạn</planche18>
 		<planche19>19 - Phương tiện riêng của trò chơi</planche19>
-		<planche20>20 - Máy yếu và liên kết</planche20>
+		<planche20>20 - Trang trí thư mục</planche20>
+		<planche21>21 - Ảnh nào được ưu tiên?</planche21>
+		<planche22>22 - Các hệ máy được nhóm</planche22>
+		<planche23>23 - Máy yếu và liên kết</planche23>
 	</variables>
 </theme>

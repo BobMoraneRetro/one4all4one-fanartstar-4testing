@@ -128,6 +128,9 @@
                     "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
 					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg",
 					"${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".png",
 					"${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".svg")</path>
 						<padding>3 3 -3 -3</padding>
@@ -150,6 +153,9 @@
                     "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
 					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg",
 					"${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".png",
 					"${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".svg")</path>
 						<zIndex>7</zIndex>
@@ -179,6 +185,9 @@
                     "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
 					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg",
 					"${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".png",
 					"${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".svg")</path>
 			<zIndex>80</zIndex>
@@ -193,6 +202,9 @@
                     "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
 					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg",
 					"${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".png",
 					"${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".svg")</path>
 			<linearSmooth>true</linearSmooth>

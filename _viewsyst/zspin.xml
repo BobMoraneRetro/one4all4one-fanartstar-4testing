@@ -137,7 +137,10 @@
 		<image name="marqueedefault" extra="true">
 			<path>firstfile("${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 				"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
-				"${path_syst_logo}/clearlogos/" + {system:theme} + ".png")</path>
+				"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+				"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+				"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+				"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
 		</image>
 		<image name="marqueedefault" extra="true">
 			<visible>!exists(${zspinlogorond})</visible>

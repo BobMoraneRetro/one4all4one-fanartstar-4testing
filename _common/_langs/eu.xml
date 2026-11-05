@@ -162,6 +162,13 @@
 		<opt_video4starclassic>SISTEMAK - Joko-bideoa sistemen ikuspegian</opt_video4starclassic>
 		<opt_systviewselec>SISTEMAK - Sistemaren irudia gurpilean</opt_systviewselec>
 		<opt_breadcrumbsonoff>SISTEMAK - Ezkerreko menu bertikala (sistema ikuspegi klasikoa)</opt_breadcrumbsonoff>
+		<arianeauto>Automatikoa (sistemen ordenaren arabera)</arianeauto>
+		<arianecategories>Kategoriak (hardware motaren arabera)</arianecategories>
+		<arianealpha>A-tik Z-ra letrak (ordena alfabetikoa)</arianealpha>
+		<arianealphavoisines>Letra eta bere auzokoak (ordena alfabetikoa)</arianealphavoisines>
+		<arianeconstructeur>Fabrikatzaileak (fabrikatzailearen arabera)</arianeconstructeur>
+		<arianedecennie>Hamarkadak (argitaratze urtearen arabera)</arianedecennie>
+		<arianeautres>BESTEAK</arianeautres>
 		<opt_metadataonoff>SISTEMAK - Sistemari buruzko informazioa (sistema ikuspegi klasikoa)</opt_metadataonoff>
 		<opt_systannonce>JOKOAK - Uneko sistema erakutsi irekitzean</opt_systannonce>
 		<opt_infosmax>JOKOAK - Informazio-kontsola osoa erakutsi?</opt_infosmax>

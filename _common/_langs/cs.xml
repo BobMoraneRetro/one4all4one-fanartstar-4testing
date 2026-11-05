@@ -162,6 +162,13 @@
 		<opt_video4starclassic>SYSTÉMY - Video z hraní v zobrazení systémů</opt_video4starclassic>
 		<opt_systviewselec>SYSTÉMY - Obrázek systému v kole</opt_systviewselec>
 		<opt_breadcrumbsonoff>SYSTÉMY - Svislé menu vlevo (klasické zobrazení systémů)</opt_breadcrumbsonoff>
+		<arianeauto>Automaticky (podle řazení systémů)</arianeauto>
+		<arianecategories>Kategorie (řazení podle typu hardwaru)</arianecategories>
+		<arianealpha>Písmena A až Z (abecední řazení)</arianealpha>
+		<arianealphavoisines>Písmeno a sousední (abecední řazení)</arianealphavoisines>
+		<arianeconstructeur>Výrobci (řazení podle výrobce)</arianeconstructeur>
+		<arianedecennie>Desetiletí (řazení podle roku vydání)</arianedecennie>
+		<arianeautres>OSTATNÍ</arianeautres>
 		<opt_metadataonoff>SYSTÉMY - Informace o systému (klasické zobrazení systémů)</opt_metadataonoff>
 		<opt_systannonce>HRY - Zobrazit aktuální systém při otevření</opt_systannonce>
 		<opt_infosmax>HRY - Zobrazit rozšířenou informační konzoli?</opt_infosmax>

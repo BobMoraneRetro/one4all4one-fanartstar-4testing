@@ -162,6 +162,13 @@
 		<opt_video4starclassic>SISTEME - Video de gameplay în vizualizarea sistemelor</opt_video4starclassic>
 		<opt_systviewselec>SISTEME - Imaginea sistemului în roată</opt_systviewselec>
 		<opt_breadcrumbsonoff>SISTEME - Meniu vertical în stânga (vizualizare clasică a sistemelor)</opt_breadcrumbsonoff>
+		<arianeauto>Automat (după sortarea sistemelor)</arianeauto>
+		<arianecategories>Categorii (sortare după tipul de hardware)</arianecategories>
+		<arianealpha>Litere de la A la Z (sortare alfabetică)</arianealpha>
+		<arianealphavoisines>Litera și vecinele ei (sortare alfabetică)</arianealphavoisines>
+		<arianeconstructeur>Producători (sortare după producător)</arianeconstructeur>
+		<arianedecennie>Decenii (sortare după anul lansării)</arianedecennie>
+		<arianeautres>ALTELE</arianeautres>
 		<opt_metadataonoff>SISTEME - Informații despre sistem (vizualizare clasică a sistemelor)</opt_metadataonoff>
 		<opt_systannonce>JOCURI - Afișează sistemul curent la deschidere</opt_systannonce>
 		<opt_infosmax>JOCURI - Afișați consola de informații extinsă?</opt_infosmax>

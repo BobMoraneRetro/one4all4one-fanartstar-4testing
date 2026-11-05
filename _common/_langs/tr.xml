@@ -162,6 +162,13 @@
 		<opt_video4starclassic>SİSTEMLER - Sistem görünümünde oynanış videosu</opt_video4starclassic>
 		<opt_systviewselec>SİSTEMLER - Çarktaki sistem görseli</opt_systviewselec>
 		<opt_breadcrumbsonoff>SİSTEMLER - Solda dikey menü (klasik sistem görünümü)</opt_breadcrumbsonoff>
+		<arianeauto>Otomatik (sistem sıralamasına göre)</arianeauto>
+		<arianecategories>Kategoriler (donanım türüne göre sıralama)</arianecategories>
+		<arianealpha>A'dan Z'ye harfler (alfabetik sıralama)</arianealpha>
+		<arianealphavoisines>Harf ve komşuları (alfabetik sıralama)</arianealphavoisines>
+		<arianeconstructeur>Üreticiler (üreticiye göre sıralama)</arianeconstructeur>
+		<arianedecennie>On yıllar (çıkış yılına göre sıralama)</arianedecennie>
+		<arianeautres>DİĞER</arianeautres>
 		<opt_metadataonoff>SİSTEMLER - Sistem bilgisi (klasik sistem görünümü)</opt_metadataonoff>
 		<opt_systannonce>OYUNLAR - Açılışta geçerli sistemi göster</opt_systannonce>
 		<opt_infosmax>OYUNLAR - Genişletilmiş bilgi konsolu gösterilsin mi?</opt_infosmax>

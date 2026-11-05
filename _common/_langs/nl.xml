@@ -162,6 +162,13 @@
 		<opt_video4starclassic>SYSTEMEN - Gameplayvideo in de systeemweergave</opt_video4starclassic>
 		<opt_systviewselec>SYSTEMEN - Systeemafbeelding in het wiel</opt_systviewselec>
 		<opt_breadcrumbsonoff>SYSTEMEN - Verticaal menu links (klassieke systeemweergave)</opt_breadcrumbsonoff>
+		<arianeauto>Automatisch (volgt de systeemsortering)</arianeauto>
+		<arianecategories>Categorieën (sorteren op hardwaretype)</arianecategories>
+		<arianealpha>Letters A tot Z (alfabetisch sorteren)</arianealpha>
+		<arianealphavoisines>Letter en buren (alfabetisch sorteren)</arianealphavoisines>
+		<arianeconstructeur>Fabrikanten (sorteren op fabrikant)</arianeconstructeur>
+		<arianedecennie>Decennia (sorteren op jaar van uitgave)</arianedecennie>
+		<arianeautres>OVERIG</arianeautres>
 		<opt_metadataonoff>SYSTEMEN - Systeeminformatie (klassieke systeemweergave)</opt_metadataonoff>
 		<opt_systannonce>SPELLEN - Huidig systeem tonen bij openen</opt_systannonce>
 		<opt_infosmax>SPELLEN - Uitgebreide infoconsole tonen?</opt_infosmax>

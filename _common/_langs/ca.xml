@@ -162,6 +162,13 @@
 		<opt_video4starclassic>SISTEMES - Vídeo de joc a la vista de sistemes</opt_video4starclassic>
 		<opt_systviewselec>SISTEMES - Imatge del sistema a la roda</opt_systviewselec>
 		<opt_breadcrumbsonoff>SISTEMES - Menú vertical a l'esquerra (vista clàssica de sistemes)</opt_breadcrumbsonoff>
+		<arianeauto>Automàtic (segons l'ordre dels sistemes)</arianeauto>
+		<arianecategories>Categories (ordre per tipus de maquinari)</arianecategories>
+		<arianealpha>Lletres de la A a la Z (ordre alfabètic)</arianealpha>
+		<arianealphavoisines>Lletra i les seves veïnes (ordre alfabètic)</arianealphavoisines>
+		<arianeconstructeur>Fabricants (ordre per fabricant)</arianeconstructeur>
+		<arianedecennie>Dècades (ordre per any de llançament)</arianedecennie>
+		<arianeautres>ALTRES</arianeautres>
 		<opt_metadataonoff>SISTEMES - Informació del sistema (vista clàssica de sistemes)</opt_metadataonoff>
 		<opt_systannonce>JOCS - Mostrar el sistema actual en obrir</opt_systannonce>
 		<opt_infosmax>JOCS - Mostrar la consola d'informació màxima?</opt_infosmax>

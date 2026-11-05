@@ -162,6 +162,13 @@
 		<opt_video4starclassic>SYSTEMY - Wideo z rozgrywki w widoku systemów</opt_video4starclassic>
 		<opt_systviewselec>SYSTEMY - Obraz systemu w kole</opt_systviewselec>
 		<opt_breadcrumbsonoff>SYSTEMY - Pionowe menu po lewej (klasyczny widok systemów)</opt_breadcrumbsonoff>
+		<arianeauto>Automatycznie (wg sortowania systemów)</arianeauto>
+		<arianecategories>Kategorie (sortowanie wg typu sprzętu)</arianecategories>
+		<arianealpha>Litery od A do Z (sortowanie alfabetyczne)</arianealpha>
+		<arianealphavoisines>Litera i sąsiednie (sortowanie alfabetyczne)</arianealphavoisines>
+		<arianeconstructeur>Producenci (sortowanie wg producenta)</arianeconstructeur>
+		<arianedecennie>Dekady (sortowanie wg roku wydania)</arianedecennie>
+		<arianeautres>INNE</arianeautres>
 		<opt_metadataonoff>SYSTEMY - Informacje o systemie (klasyczny widok systemów)</opt_metadataonoff>
 		<opt_systannonce>GRY - Pokaż bieżący system przy otwarciu</opt_systannonce>
 		<opt_infosmax>GRY - Pokazać rozszerzoną konsolę informacji?</opt_infosmax>

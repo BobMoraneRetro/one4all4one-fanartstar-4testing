@@ -162,6 +162,13 @@
 		<opt_video4starclassic>SYSTEM - Spelvideo i systemvisinga</opt_video4starclassic>
 		<opt_systviewselec>SYSTEM - Systembilete i hjulet</opt_systviewselec>
 		<opt_breadcrumbsonoff>SYSTEM - Vertikal meny til venstre (klassisk systemvising)</opt_breadcrumbsonoff>
+		<arianeauto>Automatisk (følgjer systemsorteringa)</arianeauto>
+		<arianecategories>Kategoriar (sortering etter maskinvaretype)</arianecategories>
+		<arianealpha>Bokstavar A til Å (alfabetisk sortering)</arianealpha>
+		<arianealphavoisines>Bokstav og naboar (alfabetisk sortering)</arianealphavoisines>
+		<arianeconstructeur>Produsentar (sortering etter produsent)</arianeconstructeur>
+		<arianedecennie>Tiår (sortering etter utgjevingsår)</arianedecennie>
+		<arianeautres>ANDRE</arianeautres>
 		<opt_metadataonoff>SYSTEM - Systeminformasjon (klassisk systemvising)</opt_metadataonoff>
 		<opt_systannonce>SPEL - Vis gjeldande system ved opning</opt_systannonce>
 		<opt_infosmax>SPEL - Vise utvida infokonsoll?</opt_infosmax>

@@ -162,6 +162,13 @@
 		<opt_video4starclassic>SYSTEMS - Gameplay video on system view</opt_video4starclassic>
 		<opt_systviewselec>SYSTEMS - System image in the wheel</opt_systviewselec>
 		<opt_breadcrumbsonoff>SYSTEMS - Left vertical menu (classic system view)</opt_breadcrumbsonoff>
+		<arianeauto>Automatic (follows the system sort)</arianeauto>
+		<arianecategories>Categories (sort by hardware type)</arianecategories>
+		<arianealpha>Letters A to Z (alphabetical sort)</arianealpha>
+		<arianealphavoisines>Letter and its neighbours (alphabetical sort)</arianealphavoisines>
+		<arianeconstructeur>Manufacturers (sort by manufacturer)</arianeconstructeur>
+		<arianedecennie>Decades (sort by release year)</arianedecennie>
+		<arianeautres>OTHERS</arianeautres>
 		<opt_metadataonoff>SYSTEMS - System info: shown (classic view)</opt_metadataonoff>
 		<opt_systannonce>GAMES - Show current system on startup</opt_systannonce>
 		<opt_infosmax>GAMES - Show max info console?</opt_infosmax>

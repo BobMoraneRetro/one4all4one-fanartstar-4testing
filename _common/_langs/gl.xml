@@ -162,6 +162,13 @@
 		<opt_video4starclassic>SISTEMAS - Vídeo de xogo na vista de sistemas</opt_video4starclassic>
 		<opt_systviewselec>SISTEMAS - Imaxe do sistema na roda</opt_systviewselec>
 		<opt_breadcrumbsonoff>SISTEMAS - Menú vertical á esquerda (vista clásica de sistemas)</opt_breadcrumbsonoff>
+		<arianeauto>Automático (segundo a orde dos sistemas)</arianeauto>
+		<arianecategories>Categorías (orde por tipo de hardware)</arianecategories>
+		<arianealpha>Letras da A á Z (orde alfabética)</arianealpha>
+		<arianealphavoisines>Letra e as súas veciñas (orde alfabética)</arianealphavoisines>
+		<arianeconstructeur>Fabricantes (orde por fabricante)</arianeconstructeur>
+		<arianedecennie>Décadas (orde por ano de lanzamento)</arianedecennie>
+		<arianeautres>OUTROS</arianeautres>
 		<opt_metadataonoff>SISTEMAS - Información do sistema (vista clásica de sistemas)</opt_metadataonoff>
 		<opt_systannonce>XOGOS - Mostrar o sistema actual ao abrir</opt_systannonce>
 		<opt_infosmax>XOGOS - Mostrar a consola de información máxima?</opt_infosmax>

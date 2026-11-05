@@ -162,6 +162,13 @@
 		<opt_video4starclassic>الأنظمة - فيديو اللعب في عرض الأنظمة</opt_video4starclassic>
 		<opt_systviewselec>الأنظمة - صورة النظام في العجلة</opt_systviewselec>
 		<opt_breadcrumbsonoff>الأنظمة - قائمة عمودية على اليسار (عرض النظام الكلاسيكي)</opt_breadcrumbsonoff>
+		<arianeauto>تلقائي (حسب ترتيب الأنظمة)</arianeauto>
+		<arianecategories>الفئات (الترتيب حسب نوع الجهاز)</arianecategories>
+		<arianealpha>الحروف من A إلى Z (ترتيب أبجدي)</arianealpha>
+		<arianealphavoisines>الحرف وجيرانه (ترتيب أبجدي)</arianealphavoisines>
+		<arianeconstructeur>الشركات المصنعة (الترتيب حسب الشركة)</arianeconstructeur>
+		<arianedecennie>العقود (الترتيب حسب سنة الإصدار)</arianedecennie>
+		<arianeautres>أخرى</arianeautres>
 		<opt_metadataonoff>الأنظمة - معلومات النظام (عرض النظام الكلاسيكي)</opt_metadataonoff>
 		<opt_systannonce>الألعاب - عرض النظام الحالي عند الفتح</opt_systannonce>
 		<opt_infosmax>الألعاب - عرض لوحة المعلومات الكاملة؟</opt_infosmax>

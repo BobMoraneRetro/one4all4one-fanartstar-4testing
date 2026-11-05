@@ -162,6 +162,13 @@
 		<opt_video4starclassic>SYSTEME - Gameplay-Video in der Systemansicht</opt_video4starclassic>
 		<opt_systviewselec>SYSTEME - Systembild im Rad</opt_systviewselec>
 		<opt_breadcrumbsonoff>SYSTEME - Vertikales Menü links (klassische Systemansicht)</opt_breadcrumbsonoff>
+		<arianeauto>Automatisch (folgt der Systemsortierung)</arianeauto>
+		<arianecategories>Kategorien (Sortierung nach Hardwaretyp)</arianecategories>
+		<arianealpha>Buchstaben A bis Z (alphabetische Sortierung)</arianealpha>
+		<arianealphavoisines>Buchstabe und Nachbarn (alphabetische Sortierung)</arianealphavoisines>
+		<arianeconstructeur>Hersteller (Sortierung nach Hersteller)</arianeconstructeur>
+		<arianedecennie>Jahrzehnte (Sortierung nach Erscheinungsjahr)</arianedecennie>
+		<arianeautres>ANDERE</arianeautres>
 		<opt_metadataonoff>SYSTEME - Systeminfos: angezeigt (klassische Ansicht)</opt_metadataonoff>
 		<opt_systannonce>SPIELE - Aktuelles System beim Öffnen anzeigen</opt_systannonce>
 		<opt_infosmax>SPIELE - Maximale Infokonsole anzeigen?</opt_infosmax>

@@ -27,6 +27,8 @@ Sistemas
   cave.png       : CAVE (Sega New Astro City con pantalla vertical en una sala homenaje a los shoot'em up de CAVE: disparos de neón en el techo, avión DoDonPachi colgado, medallas de abeja, maquetas, chaqueta de piloto; perspectiva 4 esquinas)
   cave_ecran.png : capa scanlines VERTICALES de la pantalla cave (sentido tate como las máquinas originales), deformada con el vídeo
   dreamcast.png  : Dreamcast (habitación de fan, pantalla 4:3)
+  gamegear.png   : Game Gear (la consola en un soporte de metacrilato sobre cajas de cartón, habitación de 1992: peluche de Sonic y figura de Tails, pósteres Sonic 2, Streets of Rage y Mortal Kombat, Wide Gear, Master Gear Converter, TV Tuner, lámpara de escritorio); pantalla LCD arriba, estirada
+  gamegear_ecran.png : capa rejilla LCD de la pantalla Game Gear (rejilla oscura de 3 px, filas y columnas), colocada sobre el vídeo
   gb.png         : Game Boy (la consola de frente en una estantería de 1990, su pantalla LCD = pantalla del vídeo)
   gb.xml         : salon_couleur A9840C + salon_saturation 0 + capa gb_ecran.png = pantalla oliva estilo DMG
   gb_ecran.png   : capa de pantalla LCD de Game Boy (velo verde + rejilla clara de 3 px), colocada sobre el vídeo
@@ -43,8 +45,11 @@ Sistemas
   megaduck_ecran.png : capa de pantalla LCD de megaduck.png (262x245 px)
   mess.png       : MESS (taller de máquinas raras)
   neogeo.png     : Neo Geo (escritorio de fan de SNK: consola AES con cartucho The King of Fighters '94 y mando arcade, TV de frente, letrero Neo Geo, mini recreativa, figuras, pósteres, lámpara de lava); pantalla 4:3 arriba, estirada
+  ngp.png        : Neo Geo Pocket (la consola Platinum Silver en un soporte de metacrilato, estantería de fan de SNK de finales de los 90: caja de la consola, figuras de Terry y Kyo, revista japonesa, discman, mini recreativa, placa de logos SNK); pantalla LCD en el centro, estirada
+  ngpc.png       : Neo Geo Pocket Color (la consola azul transparente en una estantería de coleccionista de SNK: caja y manuales, figura de Mai Shiranui, Sonic Pocket Adventure, tanque Metal Slug, pins de Metal Slug, King of Fighters y Neo Geo, llaveros de Terry y Athena, discman y cámara NeoGeo Pocket); pantalla LCD en el centro, estirada
   openlara.png   : OpenLara (Tomb Raider: caverna-templo en la jungla, estatua gigante que sostiene la TV a la derecha, salto del ángel de Lara ante la cascada; sustituye a port.png para este sistema); pantalla a la derecha, perspectiva 4 esquinas (salon_perspective 2)
   ps2.png        : PlayStation 2 (TV de tubo Sony en un mueble de fan, PS2 y mandos, cajas de juegos, pantalla 4:3)
+  psp.png        : PSP (la PSP-1000 en un soporte de metacrilato sobre cajas UMD, escritorio de 2007 de noche: figuras Kratos y Patapon, peluches, pósteres God of War, Crisis Core y Metal Gear Solid Peace Walker, UMD, Memory Stick, auriculares); pantalla 16:9 arriba, estirada
   screenshots.png : Screenshots (marco de fotos digital 16:9)
   snes.png       : Super Nintendo (habitación de fan de los 90, lámpara Super Nintendo, pósteres, consola y mandos en el escritorio, pantalla 4:3)
   vectrex.png    : Vectrex (la consola de frente en un escritorio, su pantalla vertical = pantalla del vídeo, cajas y overlays de juegos)

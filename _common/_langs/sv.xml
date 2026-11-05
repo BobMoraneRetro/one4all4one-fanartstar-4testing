@@ -162,6 +162,13 @@
 		<opt_video4starclassic>SYSTEM - Gameplay-video i systemvyn</opt_video4starclassic>
 		<opt_systviewselec>SYSTEM - Systembild i hjulet</opt_systviewselec>
 		<opt_breadcrumbsonoff>SYSTEM - Vertikal meny till vänster (klassisk systemvy)</opt_breadcrumbsonoff>
+		<arianeauto>Automatiskt (följer systemsorteringen)</arianeauto>
+		<arianecategories>Kategorier (sortering efter hårdvarutyp)</arianecategories>
+		<arianealpha>Bokstäver A till Z (alfabetisk sortering)</arianealpha>
+		<arianealphavoisines>Bokstav och grannar (alfabetisk sortering)</arianealphavoisines>
+		<arianeconstructeur>Tillverkare (sortering efter tillverkare)</arianeconstructeur>
+		<arianedecennie>Decennier (sortering efter utgivningsår)</arianedecennie>
+		<arianeautres>ÖVRIGA</arianeautres>
 		<opt_metadataonoff>SYSTEM - Systeminformation (klassisk systemvy)</opt_metadataonoff>
 		<opt_systannonce>SPEL - Visa aktuellt system vid öppning</opt_systannonce>
 		<opt_infosmax>SPEL - Visa utökad infokonsol?</opt_infosmax>

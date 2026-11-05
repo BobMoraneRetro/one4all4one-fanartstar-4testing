@@ -162,6 +162,13 @@
 		<opt_video4starclassic>SYSTÈMES - Vidéo de gameplay sur la vue système</opt_video4starclassic>
 		<opt_systviewselec>SYSTÈMES - Image du système dans la wheel</opt_systviewselec>
 		<opt_breadcrumbsonoff>SYSTÈMES - Menu vertical à gauche (vue classique)</opt_breadcrumbsonoff>
+		<arianeauto>Automatique (selon le tri des systèmes)</arianeauto>
+		<arianecategories>Catégories (tri par type de matériel)</arianecategories>
+		<arianealpha>Lettres de A à Z (tri alphabétique)</arianealpha>
+		<arianealphavoisines>Lettre et ses voisines (tri alphabétique)</arianealphavoisines>
+		<arianeconstructeur>Constructeurs (tri par constructeur)</arianeconstructeur>
+		<arianedecennie>Décennies (tri par année de sortie)</arianedecennie>
+		<arianeautres>AUTRES</arianeautres>
 		<opt_metadataonoff>SYSTÈMES - Infos du système : affichées (vue classique)</opt_metadataonoff>
 		<opt_systannonce>JEUX - Afficher le système en cours à l'ouverture</opt_systannonce>
 		<opt_infosmax>JEUX - Afficher la console d'information max</opt_infosmax>

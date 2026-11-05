@@ -162,6 +162,13 @@
 		<opt_video4starclassic>HỆ MÁY - Video gameplay ở chế độ xem hệ máy</opt_video4starclassic>
 		<opt_systviewselec>HỆ MÁY - Hình hệ máy trên bánh xe</opt_systviewselec>
 		<opt_breadcrumbsonoff>HỆ MÁY - Menu dọc bên trái (chế độ xem hệ máy cổ điển)</opt_breadcrumbsonoff>
+		<arianeauto>Tự động (theo cách sắp xếp hệ thống)</arianeauto>
+		<arianecategories>Danh mục (sắp xếp theo loại phần cứng)</arianecategories>
+		<arianealpha>Chữ cái A đến Z (sắp xếp theo bảng chữ cái)</arianealpha>
+		<arianealphavoisines>Chữ cái và lân cận (sắp xếp theo bảng chữ cái)</arianealphavoisines>
+		<arianeconstructeur>Nhà sản xuất (sắp xếp theo nhà sản xuất)</arianeconstructeur>
+		<arianedecennie>Thập niên (sắp xếp theo năm phát hành)</arianedecennie>
+		<arianeautres>KHÁC</arianeautres>
 		<opt_metadataonoff>HỆ MÁY - Thông tin hệ máy (chế độ xem hệ máy cổ điển)</opt_metadataonoff>
 		<opt_systannonce>TRÒ CHƠI - Hiển thị hệ máy hiện tại khi mở</opt_systannonce>
 		<opt_infosmax>TRÒ CHƠI - Hiển thị bảng thông tin mở rộng?</opt_infosmax>

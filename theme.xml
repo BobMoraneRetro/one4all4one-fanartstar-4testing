@@ -5,7 +5,7 @@
 	${path_syst_bezel} : dossier des bezels des systèmes (définie dans ce fichier ; valeur selon l option « AVANCÉ - Emplacement des bezels des systèmes »)
 	${path_syst_fanart} : dossier des fanarts des systèmes (définie dans ce fichier ; valeur selon l option « AVANCÉ - Emplacement des fanarts des systèmes »)
 	${path_syst_logo} : dossier des logos des systèmes (définie dans ce fichier ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
-	Libellés traduits (_common/_langs/<langue>.xml) : ${active}, ${aqua}, ${bulle}, ${candy}, ${charsystem}, ${clic}, ${clicgrave}, ${couleur}, ${custorcolor}, ${default}, ${desactive}, ${extfolder}, ${fanartfreshone}, ${fanartmodern}, ${fanartmodern2}, ${fanartstarsyst}, ${fanartsystcustom}, ${figurines}, ${frottement}, ${green}, ${greenalt}, ${grey}, ${hardware}, ${horlogeblanc}, ${horlogegrande}, ${horlogenormale}, ${horlogepetite}, ${horlogetresgrande}, ${iconsetposition}, ${intheme}, ${lightgrey}, ${logosimple}, ${logosseuls}, ${metacompacte}, ${metastandard}, ${navy}, ${novideo}, ${opt_breadcrumbsonoff}, ${opt_choixbande}, ${opt_colorhelp}, ${opt_extfolderbezelsyst}, ${opt_extfolderfanart}, ${opt_extfolderlogosyst}, ${opt_extfoldermanufacturer}, ${opt_extfoldersalon}, ${opt_gamewheelsound}, ${opt_horlogecouleur}, ${opt_horlogetaille}, ${opt_iconset}, ${opt_imagefondcops1}, ${opt_lismoi}, ${opt_manetteflottante}, ${opt_metadataonoff}, ${opt_metasyst}, ${opt_systemview}, ${opt_systviewselec}, ${opt_video4starclassic}, ${opt_video4starmodern}, ${opt_zspinnav}, ${orange}, ${pink}, ${poc}, ${purple}, ${purplealt}, ${red}, ${redalt}, ${rondhursty}, ${skyblue}, ${systviewzspin}, ${tumasbienlu}, ${videoangled}, ${videoback}, ${violet}, ${wheelclic}, ${xbox360blade}, ${xbox360focus}, ${xbox360onglet}, ${xbox360retour}, ${xbox360selection}, ${xbox360touche}, ${yellow}, ${yellowalt}, ${zspinnavarc}
+	Libellés traduits (_common/_langs/<langue>.xml) : ${active}, ${aqua}, ${arianealpha}, ${arianealphavoisines}, ${arianeauto}, ${arianecategories}, ${arianeconstructeur}, ${arianedecennie}, ${bulle}, ${candy}, ${charsystem}, ${clic}, ${clicgrave}, ${couleur}, ${custorcolor}, ${default}, ${desactive}, ${extfolder}, ${fanartfreshone}, ${fanartmodern}, ${fanartmodern2}, ${fanartstarsyst}, ${fanartsystcustom}, ${figurines}, ${frottement}, ${green}, ${greenalt}, ${grey}, ${hardware}, ${horlogeblanc}, ${horlogegrande}, ${horlogenormale}, ${horlogepetite}, ${horlogetresgrande}, ${iconsetposition}, ${intheme}, ${lightgrey}, ${logosimple}, ${logosseuls}, ${metacompacte}, ${metastandard}, ${navy}, ${notemanette}, ${novideo}, ${opt_breadcrumbsonoff}, ${opt_choixbande}, ${opt_colorhelp}, ${opt_extfolderbezelsyst}, ${opt_extfolderfanart}, ${opt_extfolderlogosyst}, ${opt_extfoldermanufacturer}, ${opt_extfoldersalon}, ${opt_gamewheelsound}, ${opt_horlogecouleur}, ${opt_horlogetaille}, ${opt_iconset}, ${opt_imagefondcops1}, ${opt_lismoi}, ${opt_manetteflottante}, ${opt_metadataonoff}, ${opt_metasyst}, ${opt_perfmachine}, ${opt_systemview}, ${opt_systviewselec}, ${opt_video4starclassic}, ${opt_video4starmodern}, ${opt_zspinnav}, ${orange}, ${pink}, ${planche00}, ${planche01}, ${planche02}, ${planche03}, ${planche04}, ${planche05}, ${planche06}, ${planche07}, ${planche08}, ${planche09}, ${planche10}, ${planche11}, ${planche12}, ${planche13}, ${planche14}, ${planche15}, ${planche16}, ${planche17}, ${planche18}, ${planche19}, ${planche20}, ${planche21}, ${planche22}, ${planche23}, ${poc}, ${purple}, ${purplealt}, ${red}, ${redalt}, ${rondhursty}, ${skyblue}, ${systviewzspin}, ${videoangled}, ${videoback}, ${violet}, ${wheelclic}, ${xbox360blade}, ${xbox360focus}, ${xbox360onglet}, ${xbox360retour}, ${xbox360selection}, ${xbox360touche}, ${yellow}, ${yellowalt}, ${zspinnavarc}
 -->
 <theme defaultView="presetstarbox">
 	<formatVersion>7</formatVersion>
@@ -50,7 +50,6 @@
 	<include>${themePath}/screen.xml</include>
 	<include>${themePath}/help.xml</include>
 	<include>${themePath}/_common/_menu/menu.xml</include>
-	<!-- ancien message d accueil (subset lismoi) : <include name="tumasbienlu" displayName="${tumasbienlu}">${themePath}/_viewsystoption/sl-commun/splashounet.xml</include> -->
 	<subset name="lismoiv3" displayName="${opt_lismoi}">
 		<include name="planche00" displayName="${planche00}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
 		<include name="planche01" displayName="${planche01}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
@@ -171,7 +170,12 @@
 		<include name="rondhursty" displayName="${rondhursty}"/>
 	</subset>
 	<subset name="breadcrumbsonoff" ifSubset="systemview:fanartstarsyst" displayName="${opt_breadcrumbsonoff}">
-		<include name="active" displayName="${active}"/>
+		<include name="auto" displayName="${arianeauto}"/>
+		<include name="active" displayName="${arianecategories}"/>
+		<include name="alpha" displayName="${arianealpha}"/>
+		<include name="alphavoisines" displayName="${arianealphavoisines}"/>
+		<include name="constructeur" displayName="${arianeconstructeur}"/>
+		<include name="decennie" displayName="${arianedecennie}"/>
 		<include name="deactivate" displayName="${desactive}"/>
 	</subset>
 	<subset name="metadataonoff" ifSubset="systemview:fanartstarsyst" displayName="${opt_metadataonoff}">

@@ -162,6 +162,13 @@
 		<opt_video4starclassic>СИСТЕМИ - Відео геймплею у вигляді систем</opt_video4starclassic>
 		<opt_systviewselec>СИСТЕМИ - Зображення системи в колесі</opt_systviewselec>
 		<opt_breadcrumbsonoff>СИСТЕМИ - Вертикальне меню ліворуч (класичний вигляд систем)</opt_breadcrumbsonoff>
+		<arianeauto>Автоматично (за сортуванням систем)</arianeauto>
+		<arianecategories>Категорії (сортування за типом обладнання)</arianecategories>
+		<arianealpha>Літери від A до Z (за абеткою)</arianealpha>
+		<arianealphavoisines>Літера та сусідні (за абеткою)</arianealphavoisines>
+		<arianeconstructeur>Виробники (за виробником)</arianeconstructeur>
+		<arianedecennie>Десятиліття (за роком випуску)</arianedecennie>
+		<arianeautres>ІНШІ</arianeautres>
 		<opt_metadataonoff>СИСТЕМИ - Інформація про систему (класичний вигляд систем)</opt_metadataonoff>
 		<opt_systannonce>ІГРИ - Показувати поточну систему під час відкриття</opt_systannonce>
 		<opt_infosmax>ІГРИ - Показати розширену інфопанель?</opt_infosmax>

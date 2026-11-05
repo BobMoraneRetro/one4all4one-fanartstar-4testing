@@ -162,6 +162,13 @@
 		<opt_video4starclassic>JÄRJESTELMÄT - Pelivideo järjestelmänäkymässä</opt_video4starclassic>
 		<opt_systviewselec>JÄRJESTELMÄT - Järjestelmän kuva kiekossa</opt_systviewselec>
 		<opt_breadcrumbsonoff>JÄRJESTELMÄT - Pystyvalikko vasemmalla (klassinen järjestelmänäkymä)</opt_breadcrumbsonoff>
+		<arianeauto>Automaattinen (järjestelmien lajittelun mukaan)</arianeauto>
+		<arianecategories>Kategoriat (lajittelu laitetyypin mukaan)</arianecategories>
+		<arianealpha>Kirjaimet A–Z (aakkosjärjestys)</arianealpha>
+		<arianealphavoisines>Kirjain ja sen naapurit (aakkosjärjestys)</arianealphavoisines>
+		<arianeconstructeur>Valmistajat (lajittelu valmistajan mukaan)</arianeconstructeur>
+		<arianedecennie>Vuosikymmenet (lajittelu julkaisuvuoden mukaan)</arianedecennie>
+		<arianeautres>MUUT</arianeautres>
 		<opt_metadataonoff>JÄRJESTELMÄT - Järjestelmän tiedot (klassinen järjestelmänäkymä)</opt_metadataonoff>
 		<opt_systannonce>PELIT - Näytä nykyinen järjestelmä avattaessa</opt_systannonce>
 		<opt_infosmax>PELIT - Näytä laaja tietokonsoli?</opt_infosmax>

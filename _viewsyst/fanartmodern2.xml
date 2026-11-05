@@ -141,6 +141,9 @@
                     "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
 					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg",
 					"${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".png",
 					"${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".svg")</path>
 						<padding>3 3 -3 -3</padding>
@@ -163,6 +166,9 @@
                     "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
 					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg",
 					"${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".png",
 					"${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".svg")</path>
 						<zIndex>7</zIndex>
@@ -181,6 +187,9 @@
 							<visible>!exists("${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png") &amp;&amp;
 			!exists("${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png") &amp;&amp;
 			!exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".png") &amp;&amp;
+			!exists("${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg") &amp;&amp;
+			!exists("${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg") &amp;&amp;
+			!exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".svg") &amp;&amp;
 			!exists("${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".png") &amp;&amp;
 			!exists("${themePath}/../es-theme-carbon//art/logos/" + {system:theme} + ".svg")</visible>
 							<text>{system:name}</text>
@@ -268,7 +277,10 @@
 			<path>firstfile(
                     "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
-					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png")</path>
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
 			<zIndex>80</zIndex>
 			<horizontalAlignment>left</horizontalAlignment>
 		</image>
@@ -280,7 +292,10 @@
 			<path>firstfile(
                     "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
 					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
-					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png")</path>
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>80</zIndex>
 			<horizontalAlignment>left</horizontalAlignment>
@@ -447,7 +462,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 			<zIndex>900</zIndex>
 			<saturation>0</saturation>
 		</image>
-		<image name="arcade" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="arcade" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/arcade.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.2</pos>
@@ -457,7 +472,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'arcade'">ffffff</color>
 		</image>
-		<image name="computer" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="computer" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/ordi.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.242</pos>
@@ -467,7 +482,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'computer'">ffffff</color>
 		</image>
-		<image name="console" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="console" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/console.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.284</pos>
@@ -477,7 +492,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'console'">ffffff</color>
 		</image>
-		<image name="extension" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="extension" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/extension.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.326</pos>
@@ -487,7 +502,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'extension'">ffffff</color>
 		</image>
-		<image name="mess" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="mess" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/mess.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.368</pos>
@@ -496,7 +511,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'MESS'">ffffff</color>
 		</image>
-		<image name="pinball" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="pinball" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/pinball.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.41</pos>
@@ -505,7 +520,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'pinball'">ffffff</color>
 		</image>
-		<image name="port" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="port" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/port.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.452</pos>
@@ -514,7 +529,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'port'">ffffff</color>
 		</image>
-		<image name="portable" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="portable" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/portable.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.494</pos>
@@ -523,7 +538,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'portable'">ffffff</color>
 		</image>
-		<image name="system" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="system" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/system.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.536</pos>
@@ -532,7 +547,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'system'">ffffff</color>
 		</image>
-		<image name="autocollection" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="autocollection" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectionauto.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.578</pos>
@@ -541,7 +556,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'auto collection'">ffffff</color>
 		</image>
-		<image name="customcollection" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="customcollection" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectioncust.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.62</pos>
@@ -550,7 +565,7 @@ Cele mai jucate : {binding:mostPlayed} - Ultima rulare : {binding:lastPlayedDate
 			<color>7d7d7d</color>
 			<color if="{system.hardwareType} == 'custom collection'">ffffff</color>
 		</image>
-		<image name="retrobat" ifSubset="menuofficiel:menuteta" extra="static">
+		<image name="retrobat" extra="static">
 			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/option.png</path>
 			<origin>0 0</origin>
 			<pos>0.005 0.662</pos>

@@ -162,6 +162,13 @@
 		<opt_video4starclassic>시스템 - 시스템 보기의 게임플레이 영상</opt_video4starclassic>
 		<opt_systviewselec>시스템 - 휠의 시스템 이미지</opt_systviewselec>
 		<opt_breadcrumbsonoff>시스템 - 왼쪽 세로 메뉴 (클래식 시스템 보기)</opt_breadcrumbsonoff>
+		<arianeauto>자동 (시스템 정렬 방식에 따름)</arianeauto>
+		<arianecategories>카테고리 (하드웨어 종류순)</arianecategories>
+		<arianealpha>A부터 Z까지 글자 (알파벳순)</arianealpha>
+		<arianealphavoisines>글자와 앞뒤 글자 (알파벳순)</arianealphavoisines>
+		<arianeconstructeur>제조사 (제조사순)</arianeconstructeur>
+		<arianedecennie>연대 (출시 연도순)</arianedecennie>
+		<arianeautres>기타</arianeautres>
 		<opt_metadataonoff>시스템 - 시스템 정보 (클래식 시스템 보기)</opt_metadataonoff>
 		<opt_systannonce>게임 - 열 때 현재 시스템 표시</opt_systannonce>
 		<opt_infosmax>게임 - 최대 정보 콘솔을 표시할까요?</opt_infosmax>

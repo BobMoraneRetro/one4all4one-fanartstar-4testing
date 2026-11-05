@@ -162,6 +162,13 @@
 		<opt_video4starclassic>系统 - 系统视图中的游戏视频</opt_video4starclassic>
 		<opt_systviewselec>系统 - 轮盘中的系统图片</opt_systviewselec>
 		<opt_breadcrumbsonoff>系统 - 左侧竖向菜单（经典系统视图）</opt_breadcrumbsonoff>
+		<arianeauto>自动（跟随系统排序方式）</arianeauto>
+		<arianecategories>分类（按硬件类型排序）</arianecategories>
+		<arianealpha>字母 A 至 Z（按字母排序）</arianealpha>
+		<arianealphavoisines>字母及相邻字母（按字母排序）</arianealphavoisines>
+		<arianeconstructeur>制造商（按制造商排序）</arianeconstructeur>
+		<arianedecennie>年代（按发行年份排序）</arianedecennie>
+		<arianeautres>其他</arianeautres>
 		<opt_metadataonoff>系统 - 系统信息（经典系统视图）</opt_metadataonoff>
 		<opt_systannonce>游戏 - 打开时显示当前系统</opt_systannonce>
 		<opt_infosmax>游戏 - 显示完整信息面板？</opt_infosmax>

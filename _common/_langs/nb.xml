@@ -162,6 +162,13 @@
 		<opt_video4starclassic>SYSTEMER - Spillvideo i systemvisningen</opt_video4starclassic>
 		<opt_systviewselec>SYSTEMER - Systembilde i hjulet</opt_systviewselec>
 		<opt_breadcrumbsonoff>SYSTEMER - Vertikal meny til venstre (klassisk systemvisning)</opt_breadcrumbsonoff>
+		<arianeauto>Automatisk (følger systemsorteringen)</arianeauto>
+		<arianecategories>Kategorier (sortering etter maskinvaretype)</arianecategories>
+		<arianealpha>Bokstaver A til Å (alfabetisk sortering)</arianealpha>
+		<arianealphavoisines>Bokstav og naboer (alfabetisk sortering)</arianealphavoisines>
+		<arianeconstructeur>Produsenter (sortering etter produsent)</arianeconstructeur>
+		<arianedecennie>Tiår (sortering etter utgivelsesår)</arianedecennie>
+		<arianeautres>ANDRE</arianeautres>
 		<opt_metadataonoff>SYSTEMER - Systeminformasjon (klassisk systemvisning)</opt_metadataonoff>
 		<opt_systannonce>SPILL - Vis gjeldende system ved åpning</opt_systannonce>
 		<opt_infosmax>SPILL - Vise utvidet infokonsoll?</opt_infosmax>

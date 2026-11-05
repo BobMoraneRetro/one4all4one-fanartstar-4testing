@@ -27,6 +27,8 @@ Systems
   cave.png       : CAVE (Sega New Astro City with a vertical screen in a room dedicated to CAVE shoot'em ups: neon bullet patterns on the ceiling, hanging DoDonPachi jet, bee medals, models, pilot jacket; 4-corner perspective)
   cave_ecran.png : VERTICAL scanline overlay for the cave screen (tate direction like the original cabinets), warped with the video
   dreamcast.png  : Dreamcast (fan's bedroom, 4:3 screen)
+  gamegear.png   : Game Gear (the console on a clear acrylic stand on cardboard boxes, 1992 bedroom: Sonic plush and Tails figure, Sonic 2, Streets of Rage and Mortal Kombat posters, Wide Gear, Master Gear Converter, TV Tuner, desk lamp); LCD screen at the top, stretched
+  gamegear_ecran.png : Game Gear LCD grid overlay (dark 3 px grid, rows and columns), laid over the video
   gb.png         : Game Boy (the console standing on a 1990 shelf, its LCD screen = video screen)
   gb.xml         : salon_couleur A9840C + salon_saturation 0 + overlay gb_ecran.png = olive DMG-style screen
   gb_ecran.png   : Game Boy LCD overlay (green veil + light 3 px grid), laid over the video
@@ -43,8 +45,11 @@ Systems
   megaduck_ecran.png : LCD overlay of megaduck.png (262x245 px)
   mess.png       : MESS (workshop of rare machines)
   neogeo.png     : Neo Geo (SNK fan desk: AES console with The King of Fighters '94 cartridge and arcade stick, front-facing TV, Neo Geo sign, mini cabinet, figures, posters, lava lamp); 4:3 screen at the top, stretched
+  ngp.png        : Neo Geo Pocket (the Platinum Silver console on a clear acrylic stand, late-90s SNK fan shelf: console box, Terry and Kyo figures, Japanese magazine, CD player, mini cabinet, SNK logo plate); LCD screen in the center, stretched
+  ngpc.png       : Neo Geo Pocket Color (the clear blue console on an SNK collector's shelf: box and manuals, Mai Shiranui figure, Sonic Pocket Adventure, Metal Slug tank, Metal Slug, King of Fighters and Neo Geo pins, Terry and Athena keychains, NeoGeo Pocket CD player and camera); LCD screen in the center, stretched
   openlara.png   : OpenLara (Tomb Raider: jungle cave temple, giant statue holding the TV on the right, Lara's swan dive in front of the waterfall; replaces port.png for this system); screen on the right, 4-corner perspective (salon_perspective 2)
   ps2.png        : PlayStation 2 (Sony CRT TV on a fan's cabinet, PS2 and controllers, game boxes, 4:3 screen)
+  psp.png        : PSP (the PSP-1000 on a clear acrylic stand on UMD cases, 2007 desk at night: Kratos and Patapon figures, plush toys, God of War, Crisis Core and Metal Gear Solid Peace Walker posters, UMDs, Memory Stick, earphones); 16:9 screen at the top, stretched
   screenshots.png : Screenshots (16:9 digital photo frame)
   snes.png       : Super Nintendo (90s fan's bedroom, Super Nintendo lamp, posters, console and controllers on the desk, 4:3 screen)
   vectrex.png    : Vectrex (the console seen from the front on a desk, its vertical screen = video screen, game boxes and overlays)

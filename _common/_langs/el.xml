@@ -162,6 +162,13 @@
 		<opt_video4starclassic>ΣΥΣΤΗΜΑΤΑ - Βίντεο gameplay στην προβολή συστημάτων</opt_video4starclassic>
 		<opt_systviewselec>ΣΥΣΤΗΜΑΤΑ - Εικόνα συστήματος στον τροχό</opt_systviewselec>
 		<opt_breadcrumbsonoff>ΣΥΣΤΗΜΑΤΑ - Κάθετο μενού αριστερά (κλασική προβολή συστημάτων)</opt_breadcrumbsonoff>
+		<arianeauto>Αυτόματο (ανάλογα με την ταξινόμηση συστημάτων)</arianeauto>
+		<arianecategories>Κατηγορίες (ταξινόμηση κατά τύπο υλικού)</arianecategories>
+		<arianealpha>Γράμματα A έως Z (αλφαβητική ταξινόμηση)</arianealpha>
+		<arianealphavoisines>Γράμμα και γειτονικά (αλφαβητική ταξινόμηση)</arianealphavoisines>
+		<arianeconstructeur>Κατασκευαστές (ταξινόμηση κατά κατασκευαστή)</arianeconstructeur>
+		<arianedecennie>Δεκαετίες (ταξινόμηση κατά έτος κυκλοφορίας)</arianedecennie>
+		<arianeautres>ΑΛΛΟΙ</arianeautres>
 		<opt_metadataonoff>ΣΥΣΤΗΜΑΤΑ - Πληροφορίες συστήματος (κλασική προβολή συστημάτων)</opt_metadataonoff>
 		<opt_systannonce>ΠΑΙΧΝΙΔΙΑ - Εμφάνιση του τρέχοντος συστήματος στο άνοιγμα</opt_systannonce>
 		<opt_infosmax>ΠΑΙΧΝΙΔΙΑ - Εμφάνιση πλήρους κονσόλας πληροφοριών;</opt_infosmax>

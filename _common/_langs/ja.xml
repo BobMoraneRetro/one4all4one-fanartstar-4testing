@@ -162,6 +162,13 @@
 		<opt_video4starclassic>システム - システムビューのゲームプレイ動画</opt_video4starclassic>
 		<opt_systviewselec>システム - ホイールのシステム画像</opt_systviewselec>
 		<opt_breadcrumbsonoff>システム - 左側の縦メニュー（クラシックシステムビュー）</opt_breadcrumbsonoff>
+		<arianeauto>自動（システムの並び順に合わせる）</arianeauto>
+		<arianecategories>カテゴリー（ハードウェアの種類順）</arianecategories>
+		<arianealpha>A～Zの文字（アルファベット順）</arianealpha>
+		<arianealphavoisines>文字と前後の文字（アルファベット順）</arianealphavoisines>
+		<arianeconstructeur>メーカー（メーカー順）</arianeconstructeur>
+		<arianedecennie>年代（発売年順）</arianedecennie>
+		<arianeautres>その他</arianeautres>
 		<opt_metadataonoff>システム - システム情報（クラシックシステムビュー）</opt_metadataonoff>
 		<opt_systannonce>ゲーム - 起動時に現在のシステムを表示</opt_systannonce>
 		<opt_infosmax>ゲーム - 詳細情報コンソールを表示しますか？</opt_infosmax>

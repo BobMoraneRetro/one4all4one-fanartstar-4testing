@@ -162,6 +162,13 @@
 		<opt_video4starclassic>SISTEMI - Video di gameplay nella vista sistemi</opt_video4starclassic>
 		<opt_systviewselec>SISTEMI - Immagine del sistema nella ruota</opt_systviewselec>
 		<opt_breadcrumbsonoff>SISTEMI - Menu verticale a sinistra (vista sistemi classica)</opt_breadcrumbsonoff>
+		<arianeauto>Automatico (secondo l'ordine dei sistemi)</arianeauto>
+		<arianecategories>Categorie (ordine per tipo di hardware)</arianecategories>
+		<arianealpha>Lettere dalla A alla Z (ordine alfabetico)</arianealpha>
+		<arianealphavoisines>Lettera e le sue vicine (ordine alfabetico)</arianealphavoisines>
+		<arianeconstructeur>Produttori (ordine per produttore)</arianeconstructeur>
+		<arianedecennie>Decenni (ordine per anno di uscita)</arianedecennie>
+		<arianeautres>ALTRI</arianeautres>
 		<opt_metadataonoff>SISTEMI - Info sistema: visualizzate (vista classica)</opt_metadataonoff>
 		<opt_systannonce>GIOCHI - Mostra il sistema corrente all'apertura</opt_systannonce>
 		<opt_infosmax>GIOCHI - Mostrare la console informazioni completa?</opt_infosmax>

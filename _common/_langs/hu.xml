@@ -162,6 +162,13 @@
 		<opt_video4starclassic>RENDSZEREK - Játékvideó a rendszernézetben</opt_video4starclassic>
 		<opt_systviewselec>RENDSZEREK - Rendszerkép a kerékben</opt_systviewselec>
 		<opt_breadcrumbsonoff>RENDSZEREK - Függőleges menü balra (klasszikus rendszernézet)</opt_breadcrumbsonoff>
+		<arianeauto>Automatikus (a rendszerek rendezése szerint)</arianeauto>
+		<arianecategories>Kategóriák (rendezés hardvertípus szerint)</arianecategories>
+		<arianealpha>Betűk A-tól Z-ig (betűrendes rendezés)</arianealpha>
+		<arianealphavoisines>Betű és szomszédai (betűrendes rendezés)</arianealphavoisines>
+		<arianeconstructeur>Gyártók (rendezés gyártó szerint)</arianeconstructeur>
+		<arianedecennie>Évtizedek (rendezés megjelenési év szerint)</arianedecennie>
+		<arianeautres>EGYÉB</arianeautres>
 		<opt_metadataonoff>RENDSZEREK - Rendszerinformáció (klasszikus rendszernézet)</opt_metadataonoff>
 		<opt_systannonce>JÁTÉKOK - Aktuális rendszer megjelenítése megnyitáskor</opt_systannonce>
 		<opt_infosmax>JÁTÉKOK - Bővített információs konzol megjelenítése?</opt_infosmax>

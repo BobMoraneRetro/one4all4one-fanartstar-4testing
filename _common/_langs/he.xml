@@ -162,6 +162,13 @@
 		<opt_video4starclassic>מערכות - וידאו משחק בתצוגת המערכות</opt_video4starclassic>
 		<opt_systviewselec>מערכות - תמונת המערכת בגלגל</opt_systviewselec>
 		<opt_breadcrumbsonoff>מערכות - תפריט אנכי משמאל (תצוגת מערכות קלאסית)</opt_breadcrumbsonoff>
+		<arianeauto>אוטומטי (לפי מיון המערכות)</arianeauto>
+		<arianecategories>קטגוריות (מיון לפי סוג חומרה)</arianecategories>
+		<arianealpha>אותיות A עד Z (מיון אלפביתי)</arianealpha>
+		<arianealphavoisines>אות ושכנותיה (מיון אלפביתי)</arianealphavoisines>
+		<arianeconstructeur>יצרנים (מיון לפי יצרן)</arianeconstructeur>
+		<arianedecennie>עשורים (מיון לפי שנת יציאה)</arianedecennie>
+		<arianeautres>אחרים</arianeautres>
 		<opt_metadataonoff>מערכות - מידע על המערכת (תצוגת מערכות קלאסית)</opt_metadataonoff>
 		<opt_systannonce>משחקים - להציג את המערכת הנוכחית בפתיחה</opt_systannonce>
 		<opt_infosmax>משחקים - להציג את קונסולת המידע המלאה?</opt_infosmax>

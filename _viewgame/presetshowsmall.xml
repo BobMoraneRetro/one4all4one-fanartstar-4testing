@@ -1447,5 +1447,9 @@
 		<control name="base_retourfond, base_retourconsole, base_retourtexte">
 			<visible>false</visible>
 		</control>
+		<control name="boite3d_logotranche, boite3d_logotranche_jp, boite3d_face, boite3d_face_jp, boite3d_dos, boite3d_dos_jp, cartridge, cartridgerond">
+			<offsetY ifSubset="boite3d:boite3dactive,boite3dangle:b3ap15|b3am15">-0.03</offsetY>
+			<offsetY ifSubset="boite3d:boite3dactive,boite3dangle:b3ap30|b3am30">-0.05</offsetY>
+		</control>
 	</customView>
 </theme>

@@ -162,6 +162,13 @@
 		<opt_video4starclassic>SISTÈMAS - Vidèo de gameplay sus la vista sistèma</opt_video4starclassic>
 		<opt_systviewselec>SISTÈMAS - Imatge del sistèma dins la ròda</opt_systviewselec>
 		<opt_breadcrumbsonoff>SISTÈMAS - Menú vertical a esquèrra (vista sistèma classica)</opt_breadcrumbsonoff>
+		<arianeauto>Automatic (segon la tria dels sistèmas)</arianeauto>
+		<arianecategories>Categorias (tria per tipe de material)</arianecategories>
+		<arianealpha>Letras de A a Z (tria alfabetica)</arianealpha>
+		<arianealphavoisines>Letra e sas vesinas (tria alfabetica)</arianealphavoisines>
+		<arianeconstructeur>Fabricants (tria per fabricant)</arianeconstructeur>
+		<arianedecennie>Decennis (tria per annada de sortida)</arianedecennie>
+		<arianeautres>AUTRES</arianeautres>
 		<opt_metadataonoff>SISTÈMAS - Informacion sul sistèma (vista sistèma classica)</opt_metadataonoff>
 		<opt_systannonce>JÒCS - Afichar lo sistèma en cors a la dobertura</opt_systannonce>
 		<opt_infosmax>JÒCS - Afichar la consòla d'informacion maximala ?</opt_infosmax>

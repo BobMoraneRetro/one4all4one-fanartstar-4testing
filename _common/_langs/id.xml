@@ -162,6 +162,13 @@
 		<opt_video4starclassic>SISTEM - Video gameplay di tampilan sistem</opt_video4starclassic>
 		<opt_systviewselec>SISTEM - Gambar sistem di roda</opt_systviewselec>
 		<opt_breadcrumbsonoff>SISTEM - Menu vertikal di kiri (tampilan sistem klasik)</opt_breadcrumbsonoff>
+		<arianeauto>Otomatis (mengikuti urutan sistem)</arianeauto>
+		<arianecategories>Kategori (urut menurut jenis perangkat)</arianecategories>
+		<arianealpha>Huruf A sampai Z (urutan abjad)</arianealpha>
+		<arianealphavoisines>Huruf dan tetangganya (urutan abjad)</arianealphavoisines>
+		<arianeconstructeur>Produsen (urut menurut produsen)</arianeconstructeur>
+		<arianedecennie>Dekade (urut menurut tahun rilis)</arianedecennie>
+		<arianeautres>LAINNYA</arianeautres>
 		<opt_metadataonoff>SISTEM - Informasi sistem (tampilan sistem klasik)</opt_metadataonoff>
 		<opt_systannonce>GAME - Tampilkan sistem saat ini saat dibuka</opt_systannonce>
 		<opt_infosmax>GAME - Tampilkan konsol info maksimal?</opt_infosmax>

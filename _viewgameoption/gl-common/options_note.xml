@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 	Variables utilisées dans ce fichier :
-	Libellés traduits (_common/_langs/<langue>.xml) : ${notecoeur}, ${notecrane}, ${noteetoile}, ${notefantome}, ${notemanette}, ${notepouce}, ${notetrophee}, ${opt_iconenote}
+	Libellés traduits (_common/_langs/<langue>.xml) : ${notecoeur}, ${notecrane}, ${noteetoile}, ${notefantome}, ${notemanette}, ${notepouce}, ${notepourcent}, ${notesur100}, ${notetrophee}, ${opt_iconenote}
 -->
 <theme>
 	<formatVersion>7</formatVersion>
@@ -13,6 +13,8 @@
 		<include name="trophee" displayName="${notetrophee}"/>
 		<include name="fantome" displayName="${notefantome}"/>
 		<include name="crane" displayName="${notecrane}"/>
+		<include name="sur100" displayName="${notesur100}"/>
+		<include name="pourcent" displayName="${notepourcent}"/>
 	</subset>
 	<variables>
 		<noteicone ifSubset="iconenote:coeur">&#xf004;</noteicone>

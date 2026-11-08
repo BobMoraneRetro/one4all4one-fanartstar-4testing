@@ -91,6 +91,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (bucle)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -254,6 +255,9 @@
 		<b3ap30>Turned</b3ap30>
 		<b3am15>Slightly turned (other way)</b3am15>
 		<b3am30>Turned (other way)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - Lloms de la caixa que gira</opt_boite3dtranche>
+		<b3tcharniere>Logo a un costat, obertura a l'altre</b3tcharniere>
+		<b3tdeuxcotes>Logo als dos costats</b3tdeuxcotes>
 		<opt_gridcolor>16/9 · 4/3 - Color de la graella</opt_gridcolor>
 		<opt_squarecadre>QUADRAT - Estil dels quadrats que representen els jocs</opt_squarecadre>
 		<systviewzspin>Z-Spin</systviewzspin>

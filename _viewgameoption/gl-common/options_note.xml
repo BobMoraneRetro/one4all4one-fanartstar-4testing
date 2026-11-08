@@ -5,7 +5,7 @@
 -->
 <theme>
 	<formatVersion>7</formatVersion>
-	<subset name="iconenote" displayName="${opt_iconenote}" appliesTo="presetspotlight,presetshowbig,presetshowsmall,presetspeedbull,presetsquare,presetstar169,presetstar43,presetstarbox,presettraviolta_alt">
+	<subset name="iconenote" displayName="${opt_iconenote}" appliesTo="presetspotlight,presetshowbig,presetshowsmall,presetspeedbull,presetsquare,presetstar169,presetstar43,presetstarbox,presetstarboxloop,presettraviolta_alt">
 		<include name="etoile" displayName="${noteetoile}"/>
 		<include name="coeur" displayName="${notecoeur}"/>
 		<include name="manette" displayName="${notemanette}"/>

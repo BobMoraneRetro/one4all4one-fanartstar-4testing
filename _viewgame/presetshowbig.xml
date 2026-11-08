@@ -387,6 +387,8 @@
 			<linearSmooth>true</linearSmooth>
 			<shader>
 				<path>${themePath}/_common/shaders/boite3d_case.glsl</path>
+				<u_tranches ifSubset="boite3dtranche:deuxcotes">1</u_tranches>
+				<u_tranches ifSubset="boite3dtranche:charniere">0</u_tranches>
 				<u_mode>3.2</u_mode>
 				<u_logo_scale>0.8</u_logo_scale>
 				<u_thickness>0.14</u_thickness>
@@ -460,6 +462,8 @@
 			<linearSmooth>true</linearSmooth>
 			<shader>
 				<path>${themePath}/_common/shaders/boite3d_case.glsl</path>
+				<u_tranches ifSubset="boite3dtranche:deuxcotes">1</u_tranches>
+				<u_tranches ifSubset="boite3dtranche:charniere">0</u_tranches>
 				<u_mode>3.2</u_mode>
 				<u_logo_scale>0.8</u_logo_scale>
 				<u_thickness>0.14</u_thickness>
@@ -534,6 +538,8 @@
 			<linearSmooth>true</linearSmooth>
 			<shader>
 				<path>${themePath}/_common/shaders/boite3d_case.glsl</path>
+				<u_tranches ifSubset="boite3dtranche:deuxcotes">1</u_tranches>
+				<u_tranches ifSubset="boite3dtranche:charniere">0</u_tranches>
 				<u_mode>0.0</u_mode>
 				<u_thickness>0.14</u_thickness>
 				<u_pitch>-0.12</u_pitch>
@@ -606,6 +612,8 @@
 			<linearSmooth>true</linearSmooth>
 			<shader>
 				<path>${themePath}/_common/shaders/boite3d_case.glsl</path>
+				<u_tranches ifSubset="boite3dtranche:deuxcotes">1</u_tranches>
+				<u_tranches ifSubset="boite3dtranche:charniere">0</u_tranches>
 				<u_mode>0.0</u_mode>
 				<u_thickness>0.14</u_thickness>
 				<u_pitch>-0.12</u_pitch>
@@ -679,6 +687,8 @@
 			<linearSmooth>true</linearSmooth>
 			<shader>
 				<path>${themePath}/_common/shaders/boite3d_case.glsl</path>
+				<u_tranches ifSubset="boite3dtranche:deuxcotes">1</u_tranches>
+				<u_tranches ifSubset="boite3dtranche:charniere">0</u_tranches>
 				<u_mode>1.0</u_mode>
 				<u_thickness>0.14</u_thickness>
 				<u_pitch>-0.12</u_pitch>
@@ -751,6 +761,8 @@
 			<linearSmooth>true</linearSmooth>
 			<shader>
 				<path>${themePath}/_common/shaders/boite3d_case.glsl</path>
+				<u_tranches ifSubset="boite3dtranche:deuxcotes">1</u_tranches>
+				<u_tranches ifSubset="boite3dtranche:charniere">0</u_tranches>
 				<u_mode>1.0</u_mode>
 				<u_thickness>0.14</u_thickness>
 				<u_pitch>-0.12</u_pitch>

@@ -13,8 +13,10 @@
 	${media_box2d_missing} : vrai si le média « box2d » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_box3d} : boîte 3D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_box3d_missing} : vrai si le média « box3d » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_image} : capture du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_marquee} : logo du jeu (marquee) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_marquee_missing} : vrai si le média « marquee » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 -->
 <theme>
 	<formatVersion>7</formatVersion>
@@ -32,9 +34,9 @@
 	</variables>
 	<customView name="presettestcoverflowboitiergrid" displayName="TEST - Coverflow boîtiers (grille)" inherits="grid">
 		<image name="fanart_extra, defautfanartextra" extra="true">
-			<pos>0.5 0.5</pos>
-			<size>0 0</size>
-			<minSize>1 1</minSize>
+			<pos>0.5 0</pos>
+			<origin>0.5 0</origin>
+			<size>1 0</size>
 			<color>606060FF</color>
 			<colorEnd>606060FF</colorEnd>
 			<zIndex>4</zIndex>
@@ -248,7 +250,7 @@
 			<text>{game:name}</text>
 			<pos>0.5 0.86</pos>
 			<origin>0.5 0.5</origin>
-			<size>0.8 0.05</size>
+			<size>0.5 0.05</size>
 			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
 			<fontSize>0.04</fontSize>
 			<color>FFFFFF</color>
@@ -261,11 +263,102 @@
 			<text>{game:releaseyear}  •  {game:genre}  •  {game:publisher}</text>
 			<pos>0.5 0.91</pos>
 			<origin>0.5 0.5</origin>
-			<size>0.8 0.03</size>
+			<size>0.5 0.03</size>
 			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
 			<fontSize>0.022</fontSize>
 			<color>DDDDDD</color>
 			<alignment>center</alignment>
+			<zIndex>20</zIndex>
+		</text>
+		<image name="cf_capture" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_image}</path>
+			<pos>0.125 0.86</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.2 0.19</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<zIndex>19</zIndex>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
+				<cornerRadius>0.05</cornerRadius>
+				<borderSize>0.008</borderSize>
+				<borderColor>FFFFFF40</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<outerShadowSize>0.03</outerShadowSize>
+				<outerShadowColor>000000A0</outerShadowColor>
+			</shader>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" mode="easeIn"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="1000" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" mode="easeIn"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="1000" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" mode="easeIn"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="1000" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="60" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="60" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<video name="cf_video" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<path>${media_video}</path>
+			<delay>1</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<pos>0.125 0.86</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.2 0.19</maxSize>
+			<zIndex>20</zIndex>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
+				<cornerRadius>0.05</cornerRadius>
+				<borderSize>0.008</borderSize>
+				<borderColor>FFFFFF40</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<outerShadowSize>0.03</outerShadowSize>
+				<outerShadowColor>000000A0</outerShadowColor>
+			</shader>
+		</video>
+		<image name="cf_descfond" extra="true">
+			<visible>{game:rom} != '..' &amp;&amp; !empty({game:desc})</visible>
+			<path>${themePath}/_viewgame/deck/blanc.png</path>
+			<pos>0.975 0.955</pos>
+			<origin>1 1</origin>
+			<size>0.2 0.19</size>
+			<color>08080CB4</color>
+			<zIndex>19</zIndex>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
+				<cornerRadius>0.05</cornerRadius>
+				<borderSize>0.008</borderSize>
+				<borderColor>FFFFFF28</borderColor>
+				<innerShadowSize>0</innerShadowSize>
+				<outerShadowSize>0.03</outerShadowSize>
+				<outerShadowColor>000000A0</outerShadowColor>
+			</shader>
+		</image>
+		<text name="cf_description" extra="true">
+			<visible>{game:rom} != '..' &amp;&amp; !empty({game:desc})</visible>
+			<text>{game:desc}</text>
+			<pos>0.964 0.94</pos>
+			<origin>1 1</origin>
+			<size>0.178 0.16</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<fontSize>0.017</fontSize>
+			<lineSpacing>1.2</lineSpacing>
+			<color>E6E6E6</color>
+			<alignment>left</alignment>
+			<verticalAlignment>top</verticalAlignment>
+			<autoScroll>vertical</autoScroll>
 			<zIndex>20</zIndex>
 		</text>
 	</customView>

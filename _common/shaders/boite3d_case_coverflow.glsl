@@ -29,13 +29,16 @@
 //   u_mode 2     = inutilisé : la tranche est dessinée par les modes 0 et 1 (l élément peut rester dans le XML)
 //   u_mode 3.0 / 3.2 / 3.3 = logo sur la tranche visible (bande haute / couché au milieu / bande basse)
 // u_phase (animé par la vue, 0 -> 1 en boucle) : retournement face -> dos -> face ; 0 = angle fixe (u_angle).
-// caseType 7 = pas de boîtier : comportement de boite3d_retourne (tranche u_spine_color, couvercles u_cap_color).
+// caseType 7 = pas de boîtier : comportement de boite3d_retourne (tranche u_spine_color, couvercles u_cap_color ;
+//              sans ces couleurs : couleur du bord de l'image).
 // Plastique transparent : mélangé à la teinte de l intérieur du boîtier (INTERIOR_COLOR) ; sur la face, le décor
 // transparaît en partie (CLEAR_INTERIOR), seulement pour les types transparents et un borderColor semi-transparent.
 // Tranches et couvercles toujours opaques.
 // Patte d accroche Sega (types 2 et 4) : plaque plate à mi-épaisseur, derrière la boîte.
 // Pas d ombre portée en 3D (outerShadowSize ignoré).
 // Arêtes face / tranche arrondies selon le type (u_edge_round pour forcer : fraction de la demi-épaisseur, < 0 = vives).
+// u_tranches 0 = logo + fond de jaquette sur la tranche charnière, système d ouverture de l autre côté ;
+//            1 = logo + fond de jaquette sur les deux tranches (pas de clip ni de couvercle CD sur la tranche d ouverture).
 #if defined(VERTEX)
 
 #if __VERSION__ >= 130
@@ -173,6 +176,7 @@ uniform float assombrir;
 float gRefA;
 uniform float marge;
 uniform float u_edge_round;    // arrondi des arêtes face / tranche : 0 = selon le type, > 0 = fraction de la demi-épaisseur, < 0 = vives
+uniform float u_tranches;      // 0 = logo + fond sur la tranche charnière, ouverture de l autre côté ; 1 = logo + fond des deux côtés
 
 // ─────────────────────────────────────────────────────────────
 //  Disposition du boîtier (calculée par setupCase, identique pour tous les pixels de l'élément).
@@ -1270,6 +1274,11 @@ vec3 cartonSide(vec3 c, vec2 lpE, float zF, float t, bool vert, float nxT, float
     return max(c, 0.0);
 }
 
+// Boîtiers sans système d'ouverture sur la tranche : jaquette enroulée sur les deux tranches
+bool sansOuverture() { return (gType == 2 || gType == 3 || gType == 4 || gType == 12 || gType == 16 || gType == 18 || gType == 19 || gType == 20 || gType == 21); }
+// Jaquette qui fait le tour du dos (couleur du bord de la jaquette sur la tranche charnière)
+bool jaquetteEnroulee() { return gType == 0 || gType == 1 || gType == 13 || gType == 14 || sansOuverture(); }
+
 // Tranche, couvercles et arêtes arrondies : plastique du boîtier éclairé selon la normale
 //  texFlip : repère du dos alors que la texture est la jaquette de face (gauche / droite inversées)
 //  n3 : normale 3D dans le repère de la boîte (arêtes arrondies comprises)
@@ -1284,8 +1293,44 @@ vec3 sideShade(vec2 p, vec3 n3, float pz, float t, float c, float s, bool mirror
     float specK = glossK;
     aS = 1.0;
     if (gType == 7) {
-        vec3 sc = (u_spine_color.a > 0.0) ? u_spine_color.rgb : vec3(0.95);
-        vec3 cc = (u_cap_color.a > 0.0) ? u_cap_color.rgb : vec3(0.95);
+        // sans couleur imposée : couleur du bord de l'image de ce côté, en dégradé vertical doux (moyennes prises
+        // à des hauteurs fixes puis interpolées, comme les DVD) ; couvercles : moyenne du bord haut / bas
+        vec3 sc = u_spine_color.rgb, cc = u_cap_color.rgb;
+        if (u_spine_color.a <= 0.0) {
+            bool  leftE = (n.x < 0.0) != texFlip;
+            float uS  = leftE ? 0.015 : 0.985;
+            float uS2 = leftE ? 0.045 : 0.955;
+            float vS  = clamp(lpE.y / gSize.y, 0.0, 1.0);
+            if (gSign < 0.0) vS = 1.0 - vS;
+            float vN  = clamp(vS, 1.0 / 12.0, 11.0 / 12.0);
+            vec4  art = vec4(0.0);
+            float wSum = 0.0;
+            for (int i = 0; i < 6; i++) {
+                float vi = (float(i) + 0.5) / 6.0;
+                float wi = smoothstep(0.0, 1.0, max(1.0 - abs(vN - vi) * 6.0, 0.0));
+                vec4  ci = vec4(0.0);
+                for (int k = 0; k < 4; k++) {
+                    float vk = vi + (float(k) - 1.5) * 0.04;
+                    vec4 a1 = sampleTexture(u_tex, vec2(uS, vk)), a2 = sampleTexture(u_tex, vec2(uS2, vk));
+                    ci += vec4(a1.rgb * a1.a + a2.rgb * a2.a, a1.a + a2.a);
+                }
+                art  += wi * ci;
+                wSum += wi;
+            }
+            vec3 eS = art.rgb / max(art.a, 1e-4) * 0.95 + vec3(0.02);
+            sc = mix(vec3(0.95), eS, smoothstep(0.1, 0.5, art.a / max(8.0 * wSum, 1e-4)));
+        }
+        if (u_cap_color.a <= 0.0) {
+            float vC = (n.y < 0.0) ? 0.015 : 0.985;
+            if (gSign < 0.0) vC = 1.0 - vC;
+            vec4 cap = vec4(0.0);
+            for (int k = 0; k < 8; k++) {
+                vec4 a1 = sampleTexture(u_tex, vec2((float(k) + 0.5) / 8.0, vC));
+                cap += vec4(a1.rgb * a1.a, a1.a);
+            }
+            vec3 eC = cap.rgb / max(cap.a, 1e-4) * 0.95 + vec3(0.02);
+            cc = mix(vec3(0.95), eC, smoothstep(0.1, 0.5, cap.a / 8.0));
+        }
         base = mix(cc, sc, wV);
     } else if ((gType == 8 || gType == 9) && !gCut) {
         // carton : bord de l'image replié sur la tranche
@@ -1303,18 +1348,20 @@ vec3 sideShade(vec2 p, vec3 n3, float pz, float t, float c, float s, bool mirror
         // tranches opaques : vue de profil en fin de rotation, une paroi translucide laisse voir le décor
         base = mix(INTERIOR_COLOR, clearTint, milkA);
         // côté charnière d'un boîtier CD : le dos opaque se voit à travers
-        float hingeSide = mirror ? n.x : -n.x;
+        float hingeSide = (u_tranches > 0.5) ? abs(n.x) : (mirror ? n.x : -n.x);
         if (spineOpaque > 0.5) base = mix(base, plastic, smoothstep(0.5, 0.9, hingeSide));
     } else {
         base = mix(INTERIOR_COLOR, plastic, frameA0);
     }
 
-    // DVD, slim, PS3, DVD PC : la jaquette fait le tour du dos sous la pochette transparente. Sur la tranche charnière,
+    // DVD, slim, PS3, DVD PC (et boîtiers sans ouverture, sur les deux tranches) : la jaquette fait le tour du dos sous
+    // la pochette transparente. Sur la tranche charnière,
     // le dos (dessous) pose la couleur du bord de sa jaquette, la face pose la sienne par-dessus en fondu vers l'arrière
     bool backTex = (mirror != texFlip);
     if (backTex) aS = 0.0;
-    if ((gType == 0 || gType == 1 || gType == 13 || gType == 14) && !gCut) {
-        float hingeSide = mirror ? n.x : -n.x;
+    if (jaquetteEnroulee() && !gCut) {
+        bool  deux = u_tranches > 0.5 || sansOuverture();
+        float hingeSide = deux ? abs(n.x) : (mirror ? n.x : -n.x);
         float zF   = texFlip ? -pz : pz;
         float yIn  = smoothstep(winMin.y - 1.0, winMin.y + 1.0, lpE.y) * (1.0 - smoothstep(winMax.y - 1.0, winMax.y + 1.0, lpE.y));
         float wArt = smoothstep(0.5, 0.9, hingeSide) * yIn;
@@ -1324,6 +1371,8 @@ vec3 sideShade(vec2 p, vec3 n3, float pz, float t, float c, float s, bool mirror
         // (indépendantes du pixel, sinon un détail net du bord se répète en stries), interpolées entre elles
         float uS   = backTex ? 0.985 : 0.015;
         float uS2  = backTex ? 0.955 : 0.045;
+        // u_tranches 1, tranche d ouverture : bord de l image du côté de l ouverture
+        if (deux && (mirror ? -n.x : n.x) > 0.0) { uS = 1.0 - uS; uS2 = 1.0 - uS2; }
         float vN   = clamp(vS, 1.0 / 12.0, 11.0 / 12.0);
         vec3  art  = vec3(0.0);
         float wSum = 0.0;
@@ -1346,6 +1395,7 @@ vec3 sideShade(vec2 p, vec3 n3, float pz, float t, float c, float s, bool mirror
     // haut / bas et coins, jusqu'à la charnière) + encoche allongée du clip un peu sous le milieu de la tranche d'ouverture
     if ((gType == 0 || gType == 1 || gType == 10 || gType == 11 || gType == 13 || gType == 14) && !gCut) {
         float openSide = mirror ? -n.x : n.x;
+        if (u_tranches > 0.5) openSide = -abs(openSide);
         float yA    = lpE.y - caseMin.y;
         float H     = max(caseMax.y - caseMin.y, 1.0);
         float wOpen = smoothstep(0.5, 0.9, openSide) * smoothstep(gEdge, gEdge + 3.0, min(yA, H - yA));
@@ -1377,6 +1427,7 @@ vec3 sideShade(vec2 p, vec3 n3, float pz, float t, float c, float s, bool mirror
     // le plateau noir, jonction entre les deux
     if (gType == 5 || gType == 6 || gType == 15 || gType == 17) {
         float openSide = mirror ? -n.x : n.x;
+        if (u_tranches > 0.5) openSide = -abs(openSide);
         float yA    = lpE.y - caseMin.y;
         float H     = max(caseMax.y - caseMin.y, 1.0);
         float wOpen = smoothstep(0.5, 0.9, openSide) * smoothstep(gEdge, gEdge + 3.0, min(yA, H - yA));
@@ -1556,9 +1607,9 @@ void mainCase(void)
 
     // ── Logo sur la tranche visible (u_mode 3.x) ──
     if (isLogo) {
-        // logo uniquement sur la tranche charnière (à gauche en vue de face)
-        if (s < 1e-3) discard;
-        bool  leftSide = true;
+        // logo sur la tranche charnière (à gauche en vue de face) ; u_tranches 1 : aussi sur la tranche d ouverture
+        bool  leftSide = s > 0.0;
+        if (abs(s) < 1e-3 || (!leftSide && u_tranches < 0.5)) discard;
         float Xs = leftSide ? gBMin.x : gBMax.x;
         float Zs = (q.x - Xs * c) / s;
         float Ys = q.y - (-Xs * s + Zs * c) * Pd;
@@ -1596,7 +1647,7 @@ void mainCase(void)
     }
 
     // ── Face (mode 0) ou dos (mode 1) : visibles chacun sur une moitié du tour, sans recouvrement ──
-    if (backSides && !(gType == 0 || gType == 1 || gType == 13 || gType == 14)) discard;
+    if (backSides && !jaquetteEnroulee()) discard;
 
     // Point de la face (Z = +t) vu par ce pixel, en pixels « face »
     vec2 Dv  = vec2(-s, -Pd);
@@ -1634,7 +1685,10 @@ void mainCase(void)
     // de face, à plat, l'arête arrondie reste visible tout autour de la face
     bool  sidesVisible = abs(s) > 1e-5 || abs(Pd) > 1e-5 || gEdge > 0.0;
     if (sidesVisible) {
-        if (castBox(q, c, s, Pd, t, hxy, hn, hz) > 1.5) { haveSide = true; sideXY = hxy; sideN = hn; sideZ = hz; }
+        // point et normale de la tranche = moyenne des échantillons qui la touchent (arête arrondie de 1-2 px :
+        // éclairée en un seul point, son reflet sauterait d'un pixel à l'autre en pointillé)
+        vec2  sumXY = vec2(0.0); vec3 sumN = vec3(0.0); float sumZ = 0.0, nHit = 0.0;
+        if (castBox(q, c, s, Pd, t, hxy, hn, hz) > 1.5) { haveSide = true; sumXY += hxy; sumN += hn; sumZ += hz; nHit += 1.0; }
         for (int i = 0; i < AA_SAMPLES; i++) {
             float fi = float(i);
             vec2  o  = vec2((fi + 0.5) / float(AA_SAMPLES) - 0.5,
@@ -1642,10 +1696,14 @@ void mainCase(void)
             float h  = castBox(q + dqx * o.x + dqy * o.y, c, s, Pd, t, hxy, hn, hz);
             if (h > 1.5) {
                 ns += 1.0;
-                if (!haveSide) { haveSide = true; sideXY = hxy; sideN = hn; sideZ = hz; }
+                haveSide = true; sumXY += hxy; sumN += hn; sumZ += hz; nHit += 1.0;
             } else if (h > 0.5) {
                 nf += 1.0;
             }
+        }
+        if (nHit > 0.0) {
+            sideXY = sumXY / nHit; sideZ = sumZ / nHit;
+            sideN  = (dot(sumN, sumN) > 1e-8) ? normalize(sumN) : hn;
         }
     }
     float sideA;
@@ -1665,6 +1723,9 @@ void mainCase(void)
         // la face pose les tranches par-dessus (zIndex du dos plus bas que celui de la face)
         A   = aF + aS;
         rgb = (face.rgb * aF + sideCol * aS) / max(A, 1e-4);
+        // à cheval sur l'arête : couleurs pondérées par les échantillons (comme la couverture edgeA)
+        float wE = nf * face.a + ns * sideA;
+        if (edgeA > 0.0 && wE > 1e-4) rgb = (face.rgb * nf * face.a + sideCol * ns * sideA) / wE;
         A   = max(A, edgeA);
     }
     A = min(A, 1.0);

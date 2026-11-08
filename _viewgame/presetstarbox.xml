@@ -265,6 +265,8 @@
 		</video>
 		<control name="screenshotgames,screenshotgames_cadre,screenshotgames_fond,videogameplay" ifSubset="starvideo:starvideoang">
 			<offsetX>0.038</offsetX>
+			<offsetX ifSubset="perfmachine:perflow">-0.01</offsetX>
+			<offsetX ifSubset="perfmachine:perfnormal">0.038</offsetX>
 		</control>
 		<image name="marqueetitre" extra="true">
 			<autoFade>false</autoFade>

@@ -1,0 +1,1659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Variables utilisées dans ce fichier :
+	${extgamesyst} : Logo clair du système du jeu (collections : système d'origine du jeu) (définie dans theme.xml)
+	${extmanufacturer} : Logo de l'éditeur du jeu (définie dans theme.xml)
+	${firstsystemhardware} : Vue système classique, option Hardware : console, sinon personnage du système (définie dans theme.xml)
+	${intfanartfresh} : Fanart du système (dossier fresh) (définie dans theme.xml)
+	${media_fanart} : fanart du jeu (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_fanart_exists} : vrai si le média « fanart » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_fanart_missing} : vrai si le média « fanart » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/fanartinfanart.xml, _viewgameoption/gl-common/gamemedia/fanartinimage.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour le fanart » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_image} : capture du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_marquee} : logo du jeu (marquee) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${noteicone} : icône de notation (étoile, cœur, manette...) (définie dans _viewgameoption/gl-common/options_note.xml ; valeur selon l option « JEUX - Icône de notation »)
+	${path_syst_logo} : dossier des logos des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
+	Libellés traduits (_common/_langs/<langue>.xml) : ${favuniquement}, ${longselect}, ${nodates}, ${nogametime}, ${noplayerdata}, ${noratings}, ${playcount}, ${playcountone}, ${player}, ${playerss}, ${presetstarboxloop}, ${retourdossier}, ${tslesjeux}
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="presetstarboxloop" displayName="${presetstarboxloop}" inherits="grid">
+		<text name="md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate, md_lbl_rating, md_lbl_genre, md_developer, md_publisher, md_name, md_description, md_genre, md_players, md_playcount">
+			<visible>false</visible>
+		</text>
+		<datetime name="md_lastplayed, md_releasedate">
+			<visible>false</visible>
+		</datetime>
+		<rating name="md_rating">
+			<visible>false</visible>
+		</rating>
+		<image name="md_image, md_flag">
+			<visible>false</visible>
+		</image>
+		<gridtile name="default">
+			<padding>0</padding>
+			<backgroundColor>00000000</backgroundColor>
+			<backgroundCenterColor>00000000</backgroundCenterColor>
+			<backgroundEdgeColor>00000000</backgroundEdgeColor>
+		</gridtile>
+		<gridtile name="selected">
+			<padding>0</padding>
+			<backgroundColor>00000000</backgroundColor>
+			<backgroundCenterColor>00000000</backgroundCenterColor>
+			<backgroundEdgeColor>00000000</backgroundEdgeColor>
+		</gridtile>
+		<image name="gridtile.marquee, gridtile.marquee:selected, gridtile.favorite, gridtile.favorite:selected, gridtile.image">
+			<visible>false</visible>
+		</image>
+		<image name="grid_capture, defautfanartextra" extra="true">
+			<visible>false</visible>
+		</image>
+		<video name="grid_video" extra="true">
+			<visible>false</visible>
+		</video>
+		<text name="base_retourtexte" extra="true">
+			<visible>false</visible>
+		</text>
+		<image name="base_retourconsole" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<path>${firstsystemhardware}</path>
+			<pos>0.7 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.4 0.5</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>5</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<control name="fanart_extra,screenshot_extra,video_extra">
+			<visible>false</visible>
+		</control>
+		<image name="md_image">
+			<visible>false</visible>
+		</image>
+		<image name="defautfanart" extra="true">
+			<visible>(${media_fanart_missing}) &amp;&amp; {game:rom} != '..'</visible>
+			<path>${intfanartfresh}</path>
+			<autoFade>false</autoFade>
+			<pos>0.5 0.5</pos>
+			<size>0 1</size>
+			<opacity>0.5</opacity>
+			<saturation>1</saturation>
+			<origin>0.5 0.5</origin>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>2</zIndex>
+		</image>
+		<image name="fanart" extra="true">
+			<visible>${media_fanart_exists}</visible>
+			<path>${media_fanart}</path>
+			<autoFade>false</autoFade>
+			<pos>0 0</pos>
+			<pos ifSubset="perfmachine:perflow">0.5 0.5</pos>
+			<size>1 1</size>
+			<size ifSubset="perfmachine:perflow">0 1</size>
+			<origin>0 0</origin>
+			<origin ifSubset="perfmachine:perflow">0.5 0.5</origin>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>2</zIndex>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/fanart_bord_repete.glsl</path>
+				<hauteur>0.8</hauteur>
+				<decalageHaut>0</decalageHaut>
+				<bande>0.12</bande>
+				<flou>32</flou>
+				<assombrir>0.3</assombrir>
+				<distanceFond>350</distanceFond>
+				<saturationFond>0.8</saturationFond>
+				<transition>70</transition>
+				<vignettage>0.25</vignettage>
+			</shader>
+		</image>
+		<image name="overlayvignettage" extra="true">
+			<path>${themePath}/_viewgame/fanartstar/overlay.png</path>
+			<size>1 1</size>
+			<flipX>true</flipX>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<zIndex>30</zIndex>
+		</image>
+		<image name="overlayastro" extra="true">
+			<path>${themePath}/_viewgame/fanartstar/overlayAstro.png</path>
+			<size>1 1</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<zIndex>9</zIndex>
+			<opacity>0.8</opacity>
+		</image>
+		<image name="logosytemgamelistshadow" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.94 0.045</pos>
+			<path>firstfile("${path_syst_logo}/clearlogos/"  + ({game:system:theme}) + "-" + {game:region} + ".png",
+			"${path_syst_logo}/clearlogos/"  + ({game:system:theme}) + ".png")</path>
+			<maxSize>0.1 0.1</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<horizontalAlignment>left</horizontalAlignment>
+			<color>000000</color>
+			<zIndex>80</zIndex>
+		</image>
+		<image name="logosytemgamelist" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.94 0.045</pos>
+			<path>firstfile("${path_syst_logo}/clearlogos/"  + ({game:system:theme}) + "-" + {game:region} + ".png",
+			"${path_syst_logo}/clearlogos/"  + ({game:system:theme}) + ".png")</path>
+			<maxSize>0.1 0.1</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<horizontalAlignment>left</horizontalAlignment>
+			<zIndex>80</zIndex>
+		</image>
+		<image name="screenshotgames" ifSubset="starvideo:starvideobig|starvideodef" extra="true">
+			<path>${media_image}</path>
+			<pos>0.98 0.375</pos>
+			<maxSize ifSubset="starvideo:starvideobig">0.4 0.54</maxSize>
+			<maxSize ifSubset="starvideo:starvideodef">0.3 0.54</maxSize>
+			<origin>1 0.5</origin>
+			<zIndex>79</zIndex>
+			<scaleOrigin>0.15 0.15</scaleOrigin>
+			<autoFade>false</autoFade>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
+				<cornerRadius>0</cornerRadius>
+				<borderSize>0.01</borderSize>
+				<borderColor>000000</borderColor>
+				<innerShadowSize>0.05</innerShadowSize>
+				<innerShadowColor>00000010</innerShadowColor>
+				<outerShadowSize>0.02</outerShadowSize>
+				<outerShadowColor>00000090</outerShadowColor>
+			</shader>
+			<storyboard event="open">
+				<animation property="opacity" to="1" duration="20" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="1200" duration="300" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="1200" duration="300" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="50" duration="0" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="50" duration="0" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videogameplay" ifSubset="starvideo:starvideobig|starvideodef" extra="true">
+			<path>${media_video}</path>
+			<delay>1</delay>
+			<pos>0.98 0.375</pos>
+			<maxSize ifSubset="starvideo:starvideobig">0.4 0.54</maxSize>
+			<maxSize ifSubset="starvideo:starvideodef">0.3 0.54</maxSize>
+			<origin>1 0.5</origin>
+			<effect>none</effect>
+			<zIndex>80</zIndex>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/border_cadre.glsl</path>
+				<cornerRadius>0</cornerRadius>
+				<borderSize>0.01</borderSize>
+				<borderColor>000000</borderColor>
+				<innerShadowSize>0.05</innerShadowSize>
+				<innerShadowColor>00000010</innerShadowColor>
+				<outerShadowSize>0.02</outerShadowSize>
+				<outerShadowColor>00000090</outerShadowColor>
+			</shader>
+			<storyboard event="open">
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</video>
+		<image name="screenshotgames" ifSubset="starvideo:starvideoang" extra="true">
+			<path>${media_image}</path>
+			<pos>0.995 0.35</pos>
+			<size>0.38 0.47</size>
+			<origin>1 0.5</origin>
+			<zIndex>79</zIndex>
+			<scaleOrigin>0.15 0.15</scaleOrigin>
+			<autoFade>false</autoFade>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>0</tiltAngle>
+				<tiltAngleX>30</tiltAngleX>
+				<perspectiveDepth>0.8</perspectiveDepth>
+			</shader>
+			<storyboard event="open">
+				<animation property="opacity" to="1" duration="20" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="1200" duration="300" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="1200" duration="300" mode="easeIn"/>
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="50" duration="0" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="50" duration="0" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="screenshotgames_cadre" ifSubset="starvideo:starvideoang" extra="true">
+			<path>${themePath}/_viewgame/fanartstar/169alt1.png</path>
+			<pos>1 0.35</pos>
+			<size>0.39 0.505</size>
+			<origin>1 0.5</origin>
+			<effect>none</effect>
+			<zIndex>89</zIndex>
+			<scaleOrigin>0.15 0.15</scaleOrigin>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>0</tiltAngle>
+				<tiltAngleX>30</tiltAngleX>
+				<perspectiveDepth>0.8</perspectiveDepth>
+			</shader>
+		</image>
+		<image name="screenshotgames_fond" ifSubset="starvideo:starvideoang" extra="true">
+			<path>${themePath}/_viewgame/fanartstar/fiber.png</path>
+			<pos>0.995 0.35</pos>
+			<size>0.38 0.472</size>
+			<origin>1 0.5</origin>
+			<effect>none</effect>
+			<zIndex>55</zIndex>
+			<scaleOrigin>0.15 0.15</scaleOrigin>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>0</tiltAngle>
+				<tiltAngleX>30</tiltAngleX>
+				<perspectiveDepth>0.8</perspectiveDepth>
+			</shader>
+		</image>
+		<video name="videogameplay" ifSubset="starvideo:starvideoang" extra="true">
+			<path>${media_video}</path>
+			<delay>1</delay>
+			<pos>0.995 0.35</pos>
+			<size>0.38 0.47</size>
+			<origin>1 0.5</origin>
+			<effect>none</effect>
+			<zIndex>80</zIndex>
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/Angled_border_gradient.glsl</path>
+				<tiltAngle>0</tiltAngle>
+				<tiltAngleX>30</tiltAngleX>
+				<perspectiveDepth>0.8</perspectiveDepth>
+			</shader>
+			<storyboard event="open">
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="shader.time" from="0" to="3600" begin="0" duration="3600000" mode="linear"/>
+			</storyboard>
+		</video>
+		<control name="screenshotgames,screenshotgames_cadre,screenshotgames_fond,videogameplay" ifSubset="starvideo:starvideoang">
+			<offsetX>0.038</offsetX>
+			<offsetX ifSubset="perfmachine:perflow">-0.01</offsetX>
+			<offsetX ifSubset="perfmachine:perfnormal">0.038</offsetX>
+		</control>
+		<image name="marqueetitre" extra="true">
+			<autoFade>false</autoFade>
+			<pos>0.2 0.2</pos>
+			<origin>0.5 1</origin>
+			<maxSize>0.25 0.18</maxSize>
+			<path>${media_marquee}</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>80</zIndex>
+			<horizontalAlignment>left</horizontalAlignment>
+		</image>
+		<text name="gamename" extra="true">
+			<visible>{game:rom} != '..'</visible>
+			<text>{game:name} ( {game:lang} )</text>
+			<opacity>0.7</opacity>
+			<pos>0.253 0.238</pos>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.025</fontSize>
+			<color>ffffffff</color>
+			<origin>0.5 0.5</origin>
+			<size>0.4 0.02</size>
+			<alignment>left</alignment>
+			<glowColor>00000016</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>305</zIndex>
+		</text>
+		<image name="starretourfond" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<path>${themePath}/_viewgame/commun/retour/retour_fond.jpg</path>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<minSize>1 1</minSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>2</zIndex>
+		</image>
+		<image name="starretourconsole" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<path>${firstsystemhardware}</path>
+			<pos>0.80 0.36</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.32 0.42</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>80</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="400" mode="easeOut"/>
+				<animation property="x" from="0.83" to="0.80" duration="500" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="starretourfleche" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<path>${themePath}/_viewgame/commun/retour/retour.png</path>
+			<pos>0.053 0.238</pos>
+			<origin>0 0.5</origin>
+			<maxSize>0.012 0.022</maxSize>
+			<color>FFFFFFE6</color>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>305</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" duration="300" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="1" duration="300" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<text name="starretourtexte" extra="true">
+			<visible>{game:rom} == '..'</visible>
+			<text>${retourdossier}</text>
+			<opacity>0.9</opacity>
+			<pos>0.268 0.238</pos>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<fontSize>0.025</fontSize>
+			<color>ffffffff</color>
+			<origin>0.5 0.5</origin>
+			<size>0.4 0.02</size>
+			<alignment>left</alignment>
+			<glowColor>00000016</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>305</zIndex>
+		</text>
+		<text name="md_description">
+			<visible>false</visible>
+		</text>
+		<text name="stardescription" extra="true">
+			<text>{game:desc}</text>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<color>ffffffff</color>
+			<pos>0.0525 0.305</pos>
+			<size>0.3 0.14</size>
+			<alignment>left</alignment>
+			<fontSize>0.022</fontSize>
+			<glowColor>00000040</glowColor>
+			<glowOffset>0.8</glowOffset>
+			<glowSize>2</glowSize>
+			<lineSpacing>1.2</lineSpacing>
+			<visible>{game:rom} != '..'</visible>
+			<autoScroll>vertical</autoScroll>
+			<verticalAlignment>top</verticalAlignment>
+			<zIndex>305</zIndex>
+		</text>
+		<image name="manufacturer" extra="true">
+			<autoFade>false</autoFade>
+			<origin>0.5 0.5</origin>
+			<pos>0.06 0.54</pos>
+			<path>${extmanufacturer}</path>
+			<path if="${system.manufacturer} == 'Collections'">${extgamesyst}</path>
+			<maxSize>0.1 0.1</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<horizontalAlignment>right</horizontalAlignment>
+			<verticalAlignment>bottom</verticalAlignment>
+			<opacity>0</opacity>
+			<zIndex>305</zIndex>
+			<storyboard event="open">
+				<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="opacity" to="1" begin="300" duration="550" mode="Linear"/>
+				<animation property="offsetX" from="-0.1" begin="300" duration="350" mode="Linear"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="playblack" extra="true">
+			<tile>false</tile>
+			<origin>0.5 0.5</origin>
+			<pos>0.085 0.28</pos>
+			<maxSize>0.085 0.085</maxSize>
+			<zIndex>305</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<horizontalAlignment>left</horizontalAlignment>
+			<path>${themePath}/_viewgame/fanartstar/Bvierge.png</path>
+		</image>
+		<text name="binds_playcount_one" extra="true">
+			<visible>({game:playcount} == 1 ? 1 : 0) &amp;&amp; {game:rom} != '..'</visible>
+			<color>FFFFFF</color>
+			<text>{game:playcount} ${playcountone}</text>
+			<origin>0.5 0.5</origin>
+			<pos>0.085 0.279</pos>
+			<size>0.08 0.035</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>305</zIndex>
+		</text>
+		<text name="binds_playcount" extra="true">
+			<visible>({game:playcount} &gt; 1 ? 1 : 0) &amp;&amp; {game:rom} != '..'</visible>
+			<color>FFFFFF</color>
+			<text>{game:playcount} ${playcount}</text>
+			<origin>0.5 0.5</origin>
+			<pos>0.085 0.279</pos>
+			<size>0.08 0.035</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>305</zIndex>
+		</text>
+		<text name="binds_noplaycount" extra="true">
+			<visible>({game:playcount} &gt; 0 ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
+			<color>FFFFFF</color>
+			<text>${nogametime}</text>
+			<origin>0.5 0.5</origin>
+			<pos>0.085 0.279</pos>
+			<size>0.08 0.035</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>305</zIndex>
+		</text>
+		<image name="dateblack" extra="true">
+			<tile>false</tile>
+			<origin>0.5 0.5</origin>
+			<pos>0.16 0.28</pos>
+			<maxSize>0.085 0.085</maxSize>
+			<zIndex>300</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<horizontalAlignment>left</horizontalAlignment>
+			<path>${themePath}/_viewgame/fanartstar/Bvierge.png</path>
+		</image>
+		<text name="binds_releasedate" extra="true">
+			<visible>({game:releaseyear} &gt; 0 ? 1 : 0) &amp;&amp; {game:rom} != '..'</visible>
+			<color>FFFFFF</color>
+			<text>{game:releaseyear}</text>
+			<origin>0.5 0.5</origin>
+			<pos>0.16 0.279</pos>
+			<size>0.05 0.035</size>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>305</zIndex>
+		</text>
+		<text name="binds_noreleasedate" extra="true">
+			<visible>({game:releaseyear} &gt; 0 ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
+			<color>FFFFFF</color>
+			<text>${nodates}</text>
+			<origin>0.5 0.5</origin>
+			<pos>0.16 0.279</pos>
+			<size>0.1 0.035</size>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>305</zIndex>
+		</text>
+		<image name="playerblack" extra="true">
+			<tile>false</tile>
+			<origin>0.5 0.5</origin>
+			<pos>0.235 0.28</pos>
+			<maxSize>0.085 0.085</maxSize>
+			<zIndex>205</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<horizontalAlignment>left</horizontalAlignment>
+			<path>${themePath}/_viewgame/fanartstar/Bvierge.png</path>
+		</image>
+		<text name="binds_players" extra="true">
+			<visible>(!empty({game:players}) &amp;&amp; {game:playerCount} &gt; 1) &amp;&amp; {game:rom} != '..'</visible>
+			<text>{game:players} ${playerss}</text>
+			<color>FFFFFF</color>
+			<origin>0.5 0.5</origin>
+			<pos>0.235 0.279</pos>
+			<size>0.075 0.035</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>305</zIndex>
+		</text>
+		<text name="binds_player_one" extra="true">
+			<visible>(!empty({game:players}) &amp;&amp; {game:playerCount} == 1) &amp;&amp; {game:rom} != '..'</visible>
+			<text>{game:players} ${player}</text>
+			<color>FFFFFF</color>
+			<origin>0.5 0.5</origin>
+			<pos>0.235 0.279</pos>
+			<size>0.075 0.035</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>305</zIndex>
+		</text>
+		<text name="binds_noplayers" extra="true">
+			<visible>(empty({game:players})) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noplayerdata}</text>
+			<color>FFFFFF</color>
+			<origin>0.5 0.5</origin>
+			<pos>0.235 0.279</pos>
+			<size>0.075 0.035</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>305</zIndex>
+		</text>
+		<image name="notation" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.31 0.28</pos>
+			<maxSize>0.085 0.085</maxSize>
+			<zIndex>305</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<horizontalAlignment>left</horizontalAlignment>
+			<path>${themePath}/_viewgame/fanartstar/Bvierge.png</path>
+		</image>
+		<text name="binds_notefond" extra="true">
+			<visible>({game:rating} &gt; 0) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}${noteicone}${noteicone}${noteicone}${noteicone}</text>
+			<pos>0.2839 0.2791</pos>
+			<origin>0 0.5</origin>
+			<fontSize>0.016</fontSize>
+			<size>0.00 0.00</size>
+			<zIndex>305</zIndex>
+			<fontPath>${themePath}/_common/fonts/notes.ttf</fontPath>
+			<color>C8CCD038</color>
+		</text>
+		<text name="binds_note1, binds_note2, binds_note3, binds_note4, binds_note5" extra="true">
+			<pos>0.2839 0.2791</pos>
+			<origin>0 0.5</origin>
+			<fontSize>0.016</fontSize>
+			<size>0.00 0.00</size>
+			<zIndex>305</zIndex>
+			<fontPath>${themePath}/_common/fonts/notes.ttf</fontPath>
+			<color>C8CCD0</color>
+		</text>
+		<text name="binds_note1" extra="true">
+			<visible>({game:rating} &gt; 0 &amp;&amp; {game:rating} &lt; 0.3) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}</text>
+		</text>
+		<text name="binds_note2" extra="true">
+			<visible>({game:rating} &gt;= 0.3 &amp;&amp; {game:rating} &lt; 0.5) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}${noteicone}</text>
+		</text>
+		<text name="binds_note3" extra="true">
+			<visible>({game:rating} &gt;= 0.5 &amp;&amp; {game:rating} &lt; 0.7) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}${noteicone}${noteicone}</text>
+		</text>
+		<text name="binds_note4" extra="true">
+			<visible>({game:rating} &gt;= 0.7 &amp;&amp; {game:rating} &lt; 0.9) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}${noteicone}${noteicone}${noteicone}</text>
+		</text>
+		<text name="binds_note5" extra="true">
+			<visible>({game:rating} &gt;= 0.9) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noteicone}${noteicone}${noteicone}${noteicone}${noteicone}</text>
+		</text>
+		<text name="binds_norating" extra="true">
+			<visible>({game:rating} &gt; 0 ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
+			<text>${noratings}</text>
+			<origin>0.5 0.5</origin>
+			<pos>0.309 0.279</pos>
+			<fontSize>0.020</fontSize>
+			<alignment>center</alignment>
+			<size>0.075 0.035</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<zIndex>305</zIndex>
+			<color>FFFFFF</color>
+		</text>
+		<text name="binds_notechiffre0" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt; 0 &amp;&amp; {game:rating} &lt; 0.005 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">0/100</text>
+			<text ifSubset="iconenote:pourcent">0 %</text>
+		</text>
+		<text name="binds_notechiffre1" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.005 &amp;&amp; {game:rating} &lt; 0.015 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">1/100</text>
+			<text ifSubset="iconenote:pourcent">1 %</text>
+		</text>
+		<text name="binds_notechiffre2" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.015 &amp;&amp; {game:rating} &lt; 0.025 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">2/100</text>
+			<text ifSubset="iconenote:pourcent">2 %</text>
+		</text>
+		<text name="binds_notechiffre3" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.025 &amp;&amp; {game:rating} &lt; 0.035 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">3/100</text>
+			<text ifSubset="iconenote:pourcent">3 %</text>
+		</text>
+		<text name="binds_notechiffre4" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.035 &amp;&amp; {game:rating} &lt; 0.045 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">4/100</text>
+			<text ifSubset="iconenote:pourcent">4 %</text>
+		</text>
+		<text name="binds_notechiffre5" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.045 &amp;&amp; {game:rating} &lt; 0.055 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">5/100</text>
+			<text ifSubset="iconenote:pourcent">5 %</text>
+		</text>
+		<text name="binds_notechiffre6" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.055 &amp;&amp; {game:rating} &lt; 0.065 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">6/100</text>
+			<text ifSubset="iconenote:pourcent">6 %</text>
+		</text>
+		<text name="binds_notechiffre7" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.065 &amp;&amp; {game:rating} &lt; 0.075 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">7/100</text>
+			<text ifSubset="iconenote:pourcent">7 %</text>
+		</text>
+		<text name="binds_notechiffre8" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.075 &amp;&amp; {game:rating} &lt; 0.085 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">8/100</text>
+			<text ifSubset="iconenote:pourcent">8 %</text>
+		</text>
+		<text name="binds_notechiffre9" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.085 &amp;&amp; {game:rating} &lt; 0.095 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">9/100</text>
+			<text ifSubset="iconenote:pourcent">9 %</text>
+		</text>
+		<text name="binds_notechiffre10" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.095 &amp;&amp; {game:rating} &lt; 0.105 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">10/100</text>
+			<text ifSubset="iconenote:pourcent">10 %</text>
+		</text>
+		<text name="binds_notechiffre11" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.105 &amp;&amp; {game:rating} &lt; 0.115 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">11/100</text>
+			<text ifSubset="iconenote:pourcent">11 %</text>
+		</text>
+		<text name="binds_notechiffre12" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.115 &amp;&amp; {game:rating} &lt; 0.125 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">12/100</text>
+			<text ifSubset="iconenote:pourcent">12 %</text>
+		</text>
+		<text name="binds_notechiffre13" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.125 &amp;&amp; {game:rating} &lt; 0.135 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">13/100</text>
+			<text ifSubset="iconenote:pourcent">13 %</text>
+		</text>
+		<text name="binds_notechiffre14" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.135 &amp;&amp; {game:rating} &lt; 0.145 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">14/100</text>
+			<text ifSubset="iconenote:pourcent">14 %</text>
+		</text>
+		<text name="binds_notechiffre15" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.145 &amp;&amp; {game:rating} &lt; 0.155 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">15/100</text>
+			<text ifSubset="iconenote:pourcent">15 %</text>
+		</text>
+		<text name="binds_notechiffre16" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.155 &amp;&amp; {game:rating} &lt; 0.165 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">16/100</text>
+			<text ifSubset="iconenote:pourcent">16 %</text>
+		</text>
+		<text name="binds_notechiffre17" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.165 &amp;&amp; {game:rating} &lt; 0.175 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">17/100</text>
+			<text ifSubset="iconenote:pourcent">17 %</text>
+		</text>
+		<text name="binds_notechiffre18" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.175 &amp;&amp; {game:rating} &lt; 0.185 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">18/100</text>
+			<text ifSubset="iconenote:pourcent">18 %</text>
+		</text>
+		<text name="binds_notechiffre19" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.185 &amp;&amp; {game:rating} &lt; 0.195 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">19/100</text>
+			<text ifSubset="iconenote:pourcent">19 %</text>
+		</text>
+		<text name="binds_notechiffre20" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.195 &amp;&amp; {game:rating} &lt; 0.205 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">20/100</text>
+			<text ifSubset="iconenote:pourcent">20 %</text>
+		</text>
+		<text name="binds_notechiffre21" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.205 &amp;&amp; {game:rating} &lt; 0.215 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">21/100</text>
+			<text ifSubset="iconenote:pourcent">21 %</text>
+		</text>
+		<text name="binds_notechiffre22" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.215 &amp;&amp; {game:rating} &lt; 0.225 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">22/100</text>
+			<text ifSubset="iconenote:pourcent">22 %</text>
+		</text>
+		<text name="binds_notechiffre23" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.225 &amp;&amp; {game:rating} &lt; 0.235 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">23/100</text>
+			<text ifSubset="iconenote:pourcent">23 %</text>
+		</text>
+		<text name="binds_notechiffre24" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.235 &amp;&amp; {game:rating} &lt; 0.245 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">24/100</text>
+			<text ifSubset="iconenote:pourcent">24 %</text>
+		</text>
+		<text name="binds_notechiffre25" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.245 &amp;&amp; {game:rating} &lt; 0.255 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">25/100</text>
+			<text ifSubset="iconenote:pourcent">25 %</text>
+		</text>
+		<text name="binds_notechiffre26" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.255 &amp;&amp; {game:rating} &lt; 0.265 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">26/100</text>
+			<text ifSubset="iconenote:pourcent">26 %</text>
+		</text>
+		<text name="binds_notechiffre27" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.265 &amp;&amp; {game:rating} &lt; 0.275 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">27/100</text>
+			<text ifSubset="iconenote:pourcent">27 %</text>
+		</text>
+		<text name="binds_notechiffre28" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.275 &amp;&amp; {game:rating} &lt; 0.285 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">28/100</text>
+			<text ifSubset="iconenote:pourcent">28 %</text>
+		</text>
+		<text name="binds_notechiffre29" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.285 &amp;&amp; {game:rating} &lt; 0.295 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">29/100</text>
+			<text ifSubset="iconenote:pourcent">29 %</text>
+		</text>
+		<text name="binds_notechiffre30" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.295 &amp;&amp; {game:rating} &lt; 0.305 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">30/100</text>
+			<text ifSubset="iconenote:pourcent">30 %</text>
+		</text>
+		<text name="binds_notechiffre31" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.305 &amp;&amp; {game:rating} &lt; 0.315 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">31/100</text>
+			<text ifSubset="iconenote:pourcent">31 %</text>
+		</text>
+		<text name="binds_notechiffre32" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.315 &amp;&amp; {game:rating} &lt; 0.325 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">32/100</text>
+			<text ifSubset="iconenote:pourcent">32 %</text>
+		</text>
+		<text name="binds_notechiffre33" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.325 &amp;&amp; {game:rating} &lt; 0.335 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">33/100</text>
+			<text ifSubset="iconenote:pourcent">33 %</text>
+		</text>
+		<text name="binds_notechiffre34" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.335 &amp;&amp; {game:rating} &lt; 0.345 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">34/100</text>
+			<text ifSubset="iconenote:pourcent">34 %</text>
+		</text>
+		<text name="binds_notechiffre35" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.345 &amp;&amp; {game:rating} &lt; 0.355 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">35/100</text>
+			<text ifSubset="iconenote:pourcent">35 %</text>
+		</text>
+		<text name="binds_notechiffre36" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.355 &amp;&amp; {game:rating} &lt; 0.365 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">36/100</text>
+			<text ifSubset="iconenote:pourcent">36 %</text>
+		</text>
+		<text name="binds_notechiffre37" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.365 &amp;&amp; {game:rating} &lt; 0.375 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">37/100</text>
+			<text ifSubset="iconenote:pourcent">37 %</text>
+		</text>
+		<text name="binds_notechiffre38" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.375 &amp;&amp; {game:rating} &lt; 0.385 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">38/100</text>
+			<text ifSubset="iconenote:pourcent">38 %</text>
+		</text>
+		<text name="binds_notechiffre39" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.385 &amp;&amp; {game:rating} &lt; 0.395 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">39/100</text>
+			<text ifSubset="iconenote:pourcent">39 %</text>
+		</text>
+		<text name="binds_notechiffre40" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.395 &amp;&amp; {game:rating} &lt; 0.405 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">40/100</text>
+			<text ifSubset="iconenote:pourcent">40 %</text>
+		</text>
+		<text name="binds_notechiffre41" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.405 &amp;&amp; {game:rating} &lt; 0.415 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">41/100</text>
+			<text ifSubset="iconenote:pourcent">41 %</text>
+		</text>
+		<text name="binds_notechiffre42" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.415 &amp;&amp; {game:rating} &lt; 0.425 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">42/100</text>
+			<text ifSubset="iconenote:pourcent">42 %</text>
+		</text>
+		<text name="binds_notechiffre43" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.425 &amp;&amp; {game:rating} &lt; 0.435 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">43/100</text>
+			<text ifSubset="iconenote:pourcent">43 %</text>
+		</text>
+		<text name="binds_notechiffre44" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.435 &amp;&amp; {game:rating} &lt; 0.445 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">44/100</text>
+			<text ifSubset="iconenote:pourcent">44 %</text>
+		</text>
+		<text name="binds_notechiffre45" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.445 &amp;&amp; {game:rating} &lt; 0.455 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">45/100</text>
+			<text ifSubset="iconenote:pourcent">45 %</text>
+		</text>
+		<text name="binds_notechiffre46" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.455 &amp;&amp; {game:rating} &lt; 0.465 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">46/100</text>
+			<text ifSubset="iconenote:pourcent">46 %</text>
+		</text>
+		<text name="binds_notechiffre47" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.465 &amp;&amp; {game:rating} &lt; 0.475 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">47/100</text>
+			<text ifSubset="iconenote:pourcent">47 %</text>
+		</text>
+		<text name="binds_notechiffre48" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.475 &amp;&amp; {game:rating} &lt; 0.485 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">48/100</text>
+			<text ifSubset="iconenote:pourcent">48 %</text>
+		</text>
+		<text name="binds_notechiffre49" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.485 &amp;&amp; {game:rating} &lt; 0.495 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">49/100</text>
+			<text ifSubset="iconenote:pourcent">49 %</text>
+		</text>
+		<text name="binds_notechiffre50" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.495 &amp;&amp; {game:rating} &lt; 0.505 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">50/100</text>
+			<text ifSubset="iconenote:pourcent">50 %</text>
+		</text>
+		<text name="binds_notechiffre51" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.505 &amp;&amp; {game:rating} &lt; 0.515 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">51/100</text>
+			<text ifSubset="iconenote:pourcent">51 %</text>
+		</text>
+		<text name="binds_notechiffre52" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.515 &amp;&amp; {game:rating} &lt; 0.525 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">52/100</text>
+			<text ifSubset="iconenote:pourcent">52 %</text>
+		</text>
+		<text name="binds_notechiffre53" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.525 &amp;&amp; {game:rating} &lt; 0.535 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">53/100</text>
+			<text ifSubset="iconenote:pourcent">53 %</text>
+		</text>
+		<text name="binds_notechiffre54" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.535 &amp;&amp; {game:rating} &lt; 0.545 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">54/100</text>
+			<text ifSubset="iconenote:pourcent">54 %</text>
+		</text>
+		<text name="binds_notechiffre55" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.545 &amp;&amp; {game:rating} &lt; 0.555 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">55/100</text>
+			<text ifSubset="iconenote:pourcent">55 %</text>
+		</text>
+		<text name="binds_notechiffre56" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.555 &amp;&amp; {game:rating} &lt; 0.565 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">56/100</text>
+			<text ifSubset="iconenote:pourcent">56 %</text>
+		</text>
+		<text name="binds_notechiffre57" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.565 &amp;&amp; {game:rating} &lt; 0.575 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">57/100</text>
+			<text ifSubset="iconenote:pourcent">57 %</text>
+		</text>
+		<text name="binds_notechiffre58" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.575 &amp;&amp; {game:rating} &lt; 0.585 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">58/100</text>
+			<text ifSubset="iconenote:pourcent">58 %</text>
+		</text>
+		<text name="binds_notechiffre59" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.585 &amp;&amp; {game:rating} &lt; 0.595 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">59/100</text>
+			<text ifSubset="iconenote:pourcent">59 %</text>
+		</text>
+		<text name="binds_notechiffre60" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.595 &amp;&amp; {game:rating} &lt; 0.605 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">60/100</text>
+			<text ifSubset="iconenote:pourcent">60 %</text>
+		</text>
+		<text name="binds_notechiffre61" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.605 &amp;&amp; {game:rating} &lt; 0.615 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">61/100</text>
+			<text ifSubset="iconenote:pourcent">61 %</text>
+		</text>
+		<text name="binds_notechiffre62" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.615 &amp;&amp; {game:rating} &lt; 0.625 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">62/100</text>
+			<text ifSubset="iconenote:pourcent">62 %</text>
+		</text>
+		<text name="binds_notechiffre63" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.625 &amp;&amp; {game:rating} &lt; 0.635 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">63/100</text>
+			<text ifSubset="iconenote:pourcent">63 %</text>
+		</text>
+		<text name="binds_notechiffre64" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.635 &amp;&amp; {game:rating} &lt; 0.645 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">64/100</text>
+			<text ifSubset="iconenote:pourcent">64 %</text>
+		</text>
+		<text name="binds_notechiffre65" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.645 &amp;&amp; {game:rating} &lt; 0.655 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">65/100</text>
+			<text ifSubset="iconenote:pourcent">65 %</text>
+		</text>
+		<text name="binds_notechiffre66" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.655 &amp;&amp; {game:rating} &lt; 0.665 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">66/100</text>
+			<text ifSubset="iconenote:pourcent">66 %</text>
+		</text>
+		<text name="binds_notechiffre67" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.665 &amp;&amp; {game:rating} &lt; 0.675 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">67/100</text>
+			<text ifSubset="iconenote:pourcent">67 %</text>
+		</text>
+		<text name="binds_notechiffre68" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.675 &amp;&amp; {game:rating} &lt; 0.685 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">68/100</text>
+			<text ifSubset="iconenote:pourcent">68 %</text>
+		</text>
+		<text name="binds_notechiffre69" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.685 &amp;&amp; {game:rating} &lt; 0.695 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">69/100</text>
+			<text ifSubset="iconenote:pourcent">69 %</text>
+		</text>
+		<text name="binds_notechiffre70" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.695 &amp;&amp; {game:rating} &lt; 0.705 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">70/100</text>
+			<text ifSubset="iconenote:pourcent">70 %</text>
+		</text>
+		<text name="binds_notechiffre71" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.705 &amp;&amp; {game:rating} &lt; 0.715 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">71/100</text>
+			<text ifSubset="iconenote:pourcent">71 %</text>
+		</text>
+		<text name="binds_notechiffre72" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.715 &amp;&amp; {game:rating} &lt; 0.725 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">72/100</text>
+			<text ifSubset="iconenote:pourcent">72 %</text>
+		</text>
+		<text name="binds_notechiffre73" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.725 &amp;&amp; {game:rating} &lt; 0.735 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">73/100</text>
+			<text ifSubset="iconenote:pourcent">73 %</text>
+		</text>
+		<text name="binds_notechiffre74" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.735 &amp;&amp; {game:rating} &lt; 0.745 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">74/100</text>
+			<text ifSubset="iconenote:pourcent">74 %</text>
+		</text>
+		<text name="binds_notechiffre75" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.745 &amp;&amp; {game:rating} &lt; 0.755 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">75/100</text>
+			<text ifSubset="iconenote:pourcent">75 %</text>
+		</text>
+		<text name="binds_notechiffre76" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.755 &amp;&amp; {game:rating} &lt; 0.765 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">76/100</text>
+			<text ifSubset="iconenote:pourcent">76 %</text>
+		</text>
+		<text name="binds_notechiffre77" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.765 &amp;&amp; {game:rating} &lt; 0.775 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">77/100</text>
+			<text ifSubset="iconenote:pourcent">77 %</text>
+		</text>
+		<text name="binds_notechiffre78" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.775 &amp;&amp; {game:rating} &lt; 0.785 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">78/100</text>
+			<text ifSubset="iconenote:pourcent">78 %</text>
+		</text>
+		<text name="binds_notechiffre79" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.785 &amp;&amp; {game:rating} &lt; 0.795 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">79/100</text>
+			<text ifSubset="iconenote:pourcent">79 %</text>
+		</text>
+		<text name="binds_notechiffre80" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.795 &amp;&amp; {game:rating} &lt; 0.805 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">80/100</text>
+			<text ifSubset="iconenote:pourcent">80 %</text>
+		</text>
+		<text name="binds_notechiffre81" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.805 &amp;&amp; {game:rating} &lt; 0.815 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">81/100</text>
+			<text ifSubset="iconenote:pourcent">81 %</text>
+		</text>
+		<text name="binds_notechiffre82" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.815 &amp;&amp; {game:rating} &lt; 0.825 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">82/100</text>
+			<text ifSubset="iconenote:pourcent">82 %</text>
+		</text>
+		<text name="binds_notechiffre83" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.825 &amp;&amp; {game:rating} &lt; 0.835 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">83/100</text>
+			<text ifSubset="iconenote:pourcent">83 %</text>
+		</text>
+		<text name="binds_notechiffre84" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.835 &amp;&amp; {game:rating} &lt; 0.845 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">84/100</text>
+			<text ifSubset="iconenote:pourcent">84 %</text>
+		</text>
+		<text name="binds_notechiffre85" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.845 &amp;&amp; {game:rating} &lt; 0.855 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">85/100</text>
+			<text ifSubset="iconenote:pourcent">85 %</text>
+		</text>
+		<text name="binds_notechiffre86" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.855 &amp;&amp; {game:rating} &lt; 0.865 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">86/100</text>
+			<text ifSubset="iconenote:pourcent">86 %</text>
+		</text>
+		<text name="binds_notechiffre87" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.865 &amp;&amp; {game:rating} &lt; 0.875 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">87/100</text>
+			<text ifSubset="iconenote:pourcent">87 %</text>
+		</text>
+		<text name="binds_notechiffre88" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.875 &amp;&amp; {game:rating} &lt; 0.885 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">88/100</text>
+			<text ifSubset="iconenote:pourcent">88 %</text>
+		</text>
+		<text name="binds_notechiffre89" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.885 &amp;&amp; {game:rating} &lt; 0.895 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">89/100</text>
+			<text ifSubset="iconenote:pourcent">89 %</text>
+		</text>
+		<text name="binds_notechiffre90" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.895 &amp;&amp; {game:rating} &lt; 0.905 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">90/100</text>
+			<text ifSubset="iconenote:pourcent">90 %</text>
+		</text>
+		<text name="binds_notechiffre91" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.905 &amp;&amp; {game:rating} &lt; 0.915 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">91/100</text>
+			<text ifSubset="iconenote:pourcent">91 %</text>
+		</text>
+		<text name="binds_notechiffre92" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.915 &amp;&amp; {game:rating} &lt; 0.925 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">92/100</text>
+			<text ifSubset="iconenote:pourcent">92 %</text>
+		</text>
+		<text name="binds_notechiffre93" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.925 &amp;&amp; {game:rating} &lt; 0.935 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">93/100</text>
+			<text ifSubset="iconenote:pourcent">93 %</text>
+		</text>
+		<text name="binds_notechiffre94" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.935 &amp;&amp; {game:rating} &lt; 0.945 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">94/100</text>
+			<text ifSubset="iconenote:pourcent">94 %</text>
+		</text>
+		<text name="binds_notechiffre95" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.945 &amp;&amp; {game:rating} &lt; 0.955 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">95/100</text>
+			<text ifSubset="iconenote:pourcent">95 %</text>
+		</text>
+		<text name="binds_notechiffre96" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.955 &amp;&amp; {game:rating} &lt; 0.965 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">96/100</text>
+			<text ifSubset="iconenote:pourcent">96 %</text>
+		</text>
+		<text name="binds_notechiffre97" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.965 &amp;&amp; {game:rating} &lt; 0.975 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">97/100</text>
+			<text ifSubset="iconenote:pourcent">97 %</text>
+		</text>
+		<text name="binds_notechiffre98" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.975 &amp;&amp; {game:rating} &lt; 0.985 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">98/100</text>
+			<text ifSubset="iconenote:pourcent">98 %</text>
+		</text>
+		<text name="binds_notechiffre99" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.985 &amp;&amp; {game:rating} &lt; 0.995 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">99/100</text>
+			<text ifSubset="iconenote:pourcent">99 %</text>
+		</text>
+		<text name="binds_notechiffre100" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="iconenote:sur100|pourcent">{game:rating} &gt;= 0.995 &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">false</visible>
+			<text ifSubset="iconenote:sur100">100/100</text>
+			<text ifSubset="iconenote:pourcent">100 %</text>
+		</text>
+		<control name="binds_notechiffre0,binds_notechiffre1,binds_notechiffre2,binds_notechiffre3,binds_notechiffre4,binds_notechiffre5,binds_notechiffre6,binds_notechiffre7,binds_notechiffre8,binds_notechiffre9,binds_notechiffre10,binds_notechiffre11,binds_notechiffre12,binds_notechiffre13,binds_notechiffre14,binds_notechiffre15,binds_notechiffre16,binds_notechiffre17,binds_notechiffre18,binds_notechiffre19,binds_notechiffre20,binds_notechiffre21,binds_notechiffre22,binds_notechiffre23,binds_notechiffre24,binds_notechiffre25,binds_notechiffre26,binds_notechiffre27,binds_notechiffre28,binds_notechiffre29,binds_notechiffre30,binds_notechiffre31,binds_notechiffre32,binds_notechiffre33,binds_notechiffre34,binds_notechiffre35,binds_notechiffre36,binds_notechiffre37,binds_notechiffre38,binds_notechiffre39,binds_notechiffre40,binds_notechiffre41,binds_notechiffre42,binds_notechiffre43,binds_notechiffre44,binds_notechiffre45,binds_notechiffre46,binds_notechiffre47,binds_notechiffre48,binds_notechiffre49,binds_notechiffre50,binds_notechiffre51,binds_notechiffre52,binds_notechiffre53,binds_notechiffre54,binds_notechiffre55,binds_notechiffre56,binds_notechiffre57,binds_notechiffre58,binds_notechiffre59,binds_notechiffre60,binds_notechiffre61,binds_notechiffre62,binds_notechiffre63,binds_notechiffre64,binds_notechiffre65,binds_notechiffre66,binds_notechiffre67,binds_notechiffre68,binds_notechiffre69,binds_notechiffre70,binds_notechiffre71,binds_notechiffre72,binds_notechiffre73,binds_notechiffre74,binds_notechiffre75,binds_notechiffre76,binds_notechiffre77,binds_notechiffre78,binds_notechiffre79,binds_notechiffre80,binds_notechiffre81,binds_notechiffre82,binds_notechiffre83,binds_notechiffre84,binds_notechiffre85,binds_notechiffre86,binds_notechiffre87,binds_notechiffre88,binds_notechiffre89,binds_notechiffre90,binds_notechiffre91,binds_notechiffre92,binds_notechiffre93,binds_notechiffre94,binds_notechiffre95,binds_notechiffre96,binds_notechiffre97,binds_notechiffre98,binds_notechiffre99,binds_notechiffre100">
+			<origin>0.5 0.5</origin>
+			<pos>0.309 0.279</pos>
+			<fontSize>0.020</fontSize>
+			<alignment>center</alignment>
+			<size>0.075 0.035</size>
+			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
+			<zIndex>305</zIndex>
+			<color>FFFFFF</color>
+		</control>
+		<control name="binds_notefond">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt; 0) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
+		<control name="binds_note1">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt; 0 &amp;&amp; {game:rating} &lt; 0.3) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
+		<control name="binds_note2">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt;= 0.3 &amp;&amp; {game:rating} &lt; 0.5) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
+		<control name="binds_note3">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt;= 0.5 &amp;&amp; {game:rating} &lt; 0.7) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
+		<control name="binds_note4">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt;= 0.7 &amp;&amp; {game:rating} &lt; 0.9) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
+		<control name="binds_note5">
+			<visible ifSubset="iconenote:sur100|pourcent">false</visible>
+			<visible ifSubset="iconenote:etoile|coeur|manette|pouce|trophee|fantome|crane">({game:rating} &gt;= 0.9) &amp;&amp; {game:rom} != '..'</visible>
+		</control>
+		<control name="systblack,dateblack,playblack,notation">
+			<zIndex>205</zIndex>
+			<opacity>1</opacity>
+		</control>
+		<control name="binds_players,binds_player_one,binds_noplayers,binds_releasedate,binds_noreleasedate,binds_playcount,binds_playcount_one,binds_noplaycount,binds_rating,binds_norating,binds_notechiffre0,binds_notechiffre1,binds_notechiffre2,binds_notechiffre3,binds_notechiffre4,binds_notechiffre5,binds_notechiffre6,binds_notechiffre7,binds_notechiffre8,binds_notechiffre9,binds_notechiffre10,binds_notechiffre11,binds_notechiffre12,binds_notechiffre13,binds_notechiffre14,binds_notechiffre15,binds_notechiffre16,binds_notechiffre17,binds_notechiffre18,binds_notechiffre19,binds_notechiffre20,binds_notechiffre21,binds_notechiffre22,binds_notechiffre23,binds_notechiffre24,binds_notechiffre25,binds_notechiffre26,binds_notechiffre27,binds_notechiffre28,binds_notechiffre29,binds_notechiffre30,binds_notechiffre31,binds_notechiffre32,binds_notechiffre33,binds_notechiffre34,binds_notechiffre35,binds_notechiffre36,binds_notechiffre37,binds_notechiffre38,binds_notechiffre39,binds_notechiffre40,binds_notechiffre41,binds_notechiffre42,binds_notechiffre43,binds_notechiffre44,binds_notechiffre45,binds_notechiffre46,binds_notechiffre47,binds_notechiffre48,binds_notechiffre49,binds_notechiffre50,binds_notechiffre51,binds_notechiffre52,binds_notechiffre53,binds_notechiffre54,binds_notechiffre55,binds_notechiffre56,binds_notechiffre57,binds_notechiffre58,binds_notechiffre59,binds_notechiffre60,binds_notechiffre61,binds_notechiffre62,binds_notechiffre63,binds_notechiffre64,binds_notechiffre65,binds_notechiffre66,binds_notechiffre67,binds_notechiffre68,binds_notechiffre69,binds_notechiffre70,binds_notechiffre71,binds_notechiffre72,binds_notechiffre73,binds_notechiffre74,binds_notechiffre75,binds_notechiffre76,binds_notechiffre77,binds_notechiffre78,binds_notechiffre79,binds_notechiffre80,binds_notechiffre81,binds_notechiffre82,binds_notechiffre83,binds_notechiffre84,binds_notechiffre85,binds_notechiffre86,binds_notechiffre87,binds_notechiffre88,binds_notechiffre89,binds_notechiffre90,binds_notechiffre91,binds_notechiffre92,binds_notechiffre93,binds_notechiffre94,binds_notechiffre95,binds_notechiffre96,binds_notechiffre97,binds_notechiffre98,binds_notechiffre99,binds_notechiffre100">
+			<opacity>0.7</opacity>
+		</control>
+		<image name="favorite" extra="true">
+			<visible>{game:favorite}</visible>
+			<path>./_viewgameoption/gl-common/infoicone/yesfull.png</path>
+			<pos>0 0.178</pos>
+			<zIndex>100</zIndex>
+			<maxSize>0.05 0.05</maxSize>
+			<opacity>1</opacity>
+		</image>
+		<image name="rondregion" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.0325 0.238</pos>
+			<path>${themePath}/_common/flags/{game:region}.png</path>
+			<maxSize>0.036 0.036</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<horizontalAlignment>left</horizontalAlignment>
+			<zIndex>80</zIndex>
+		</image>
+		<image name="md_notkidgame" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.025 0.28</pos>
+			<path>./_viewgameoption/gl-common/infoicone/kid.png</path>
+			<maxSize>0.02 0.024</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>999999</color>
+			<zIndex>998</zIndex>
+		</image>
+		<image name="md_kidgame">
+			<origin>0.5 0.5</origin>
+			<pos>0.025 0.28</pos>
+			<path>./_viewgameoption/gl-common/infoicone/kid.png</path>
+			<maxSize>0.02 0.024</maxSize>
+			<color>ffffff</color>
+			<zIndex>999</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="pulse" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.024 0.28</pos>
+			<maxSize>0.039 0.039</maxSize>
+			<path>./_viewgameoption/gl-common/infoicone/pulse.png</path>
+			<zIndex>998</zIndex>
+		</image>
+		<image name="md_nomanual" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.025 0.32</pos>
+			<path>./_viewgameoption/gl-common/infoicone/book.png</path>
+			<maxSize>0.02 0.024</maxSize>
+			<color>999999</color>
+			<zIndex>998</zIndex>
+		</image>
+		<image name="md_manual">
+			<origin>0.5 0.5</origin>
+			<pos>0.025 0.32</pos>
+			<path>./_viewgameoption/gl-common/infoicone/book.png</path>
+			<maxSize>0.02 0.024</maxSize>
+			<color>ffffff</color>
+			<zIndex>999</zIndex>
+		</image>
+		<image name="pulse2" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.024 0.32</pos>
+			<maxSize>0.039 0.039</maxSize>
+			<path>./_viewgameoption/gl-common/infoicone/pulse.png</path>
+			<zIndex>998</zIndex>
+		</image>
+		<image name="md_nosavestate" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>./_viewgameoption/gl-common/infoicone/SaveState.png</path>
+			<pos>0.025 0.36</pos>
+			<maxSize>0.02 0.024</maxSize>
+			<color>999999</color>
+			<zIndex>998</zIndex>
+		</image>
+		<image name="md_savestate">
+			<origin>0.5 0.5</origin>
+			<path>./_viewgameoption/gl-common/infoicone/SaveState.png</path>
+			<pos>0.025 0.36</pos>
+			<maxSize>0.02 0.024</maxSize>
+			<color>ffffff</color>
+			<zIndex>999</zIndex>
+		</image>
+		<image name="pulse3" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.024 0.36</pos>
+			<maxSize>0.039 0.039</maxSize>
+			<path>./_viewgameoption/gl-common/infoicone/pulse.png</path>
+			<zIndex>998</zIndex>
+		</image>
+		<image name="md_notcheevos" extra="true">
+			<origin>0.5 0.5</origin>
+			<path>./_viewgameoption/gl-common/infoicone/Contest.png</path>
+			<pos>0.025 0.4</pos>
+			<maxSize>0.02 0.024</maxSize>
+			<color>999999</color>
+			<zIndex>998</zIndex>
+		</image>
+		<image name="md_cheevos">
+			<origin>0.5 0.5</origin>
+			<path>./_viewgameoption/gl-common/infoicone/Contest.png</path>
+			<pos>0.025 0.4</pos>
+			<maxSize>0.02 0.024</maxSize>
+			<color>ffffff</color>
+			<zIndex>999</zIndex>
+		</image>
+		<image name="pulse4" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.024 0.4</pos>
+			<maxSize>0.039 0.039</maxSize>
+			<path>./_viewgameoption/gl-common/infoicone/pulse.png</path>
+			<zIndex>998</zIndex>
+		</image>
+		<image name="controle_pistolet" extra="true">
+			<visible>({game:gunGame}) &amp;&amp; {game:rom} != '..'</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.0245 0.439</pos>
+			<path>./_viewgameoption/gl-common/infoicone/pistolet.png</path>
+			<maxSize>0.02 0.024</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>ffffff</color>
+			<zIndex>999</zIndex>
+		</image>
+		<image name="controle_volant" extra="true">
+			<visible>(!{game:gunGame} &amp;&amp; {game:wheelGame}) &amp;&amp; {game:rom} != '..'</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.0245 0.439</pos>
+			<path>./_viewgameoption/gl-common/infoicone/wheel.png</path>
+			<maxSize>0.02 0.024</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>ffffff</color>
+			<zIndex>999</zIndex>
+		</image>
+		<image name="controle_trackball" extra="true">
+			<visible>(!{game:gunGame} &amp;&amp; !{game:wheelGame} &amp;&amp; {game:trackballGame}) &amp;&amp; {game:rom} != '..'</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.0245 0.439</pos>
+			<path>./_viewgameoption/gl-common/infoicone/trackball.png</path>
+			<maxSize>0.02 0.024</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>ffffff</color>
+			<zIndex>999</zIndex>
+		</image>
+		<image name="controle_spinner" extra="true">
+			<visible>(!{game:gunGame} &amp;&amp; !{game:wheelGame} &amp;&amp; !{game:trackballGame} &amp;&amp; {game:spinnerGame}) &amp;&amp; {game:rom} != '..'</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.0245 0.439</pos>
+			<path>./_viewgameoption/gl-common/infoicone/spinner.png</path>
+			<maxSize>0.02 0.024</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>ffffff</color>
+			<zIndex>999</zIndex>
+		</image>
+		<image name="controle_defaut" extra="true">
+			<visible>(!{game:gunGame} &amp;&amp; !{game:wheelGame} &amp;&amp; !{game:trackballGame} &amp;&amp; !{game:spinnerGame}) &amp;&amp; {game:rom} != '..'</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.0245 0.439</pos>
+			<path>./_viewgameoption/gl-common/infoicone/manette.png</path>
+			<path if="{system.hardwareType} == 'arcade'">./_viewgameoption/gl-common/infoicone/stick.png</path>
+			<maxSize>0.02 0.024</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<color>ffffff</color>
+			<zIndex>999</zIndex>
+		</image>
+		<image name="md_hidden">
+			<visible>false</visible>
+		</image>
+		<image name="pulse5" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.024 0.44</pos>
+			<maxSize>0.039 0.039</maxSize>
+			<path>./_viewgameoption/gl-common/infoicone/pulse.png</path>
+			<zIndex>998</zIndex>
+		</image>
+		<text name="longpress" extra="true">
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<text>${longselect}</text>
+			<fontSize>0.02</fontSize>
+			<pos>0.053 0.45</pos>
+			<color>ffffffff</color>
+			<glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
+			<origin>0 0</origin>
+			<zIndex>510</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<opacity>0</opacity>
+		</text>
+		<text name="allgames_select" extra="true">
+			<visible>!startswith(lower({system:filter}), "fav")</visible>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<text>${tslesjeux}</text>
+			<fontSize>0.02</fontSize>
+			<pos>0.053 0.45</pos>
+			<color>ffea00</color>
+			<glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
+			<origin>0 0</origin>
+			<zIndex>510</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<opacity>0.8</opacity>
+		</text>
+		<text name="allgames_noselect" extra="true">
+			<visible>startswith(lower({system:filter}), "fav")</visible>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<text>${tslesjeux}</text>
+			<fontSize>0.02</fontSize>
+			<pos>0.053 0.45</pos>
+			<color>ffffffff</color>
+			<glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
+			<origin>0 0</origin>
+			<zIndex>510</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<opacity>0.8</opacity>
+		</text>
+		<text name="favoris_noselect" extra="true">
+			<visible>!startswith(lower({system:filter}), "fav")</visible>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<text>${favuniquement}</text>
+			<fontSize>0.02</fontSize>
+			<pos>0.12 0.45</pos>
+			<pos lang="es">0.14 0.45</pos>
+			<color>ffffffff</color>
+			<glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
+			<origin>0 0</origin>
+			<zIndex>510</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<opacity>0.8</opacity>
+		</text>
+		<text name="favoris_select" extra="true">
+			<visible>startswith(lower({system:filter}), "fav")</visible>
+			<fontPath>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontPath>
+			<text>${favuniquement}</text>
+			<fontSize>0.02</fontSize>
+			<pos>0.12 0.45</pos>
+			<pos lang="es">0.14 0.45</pos>
+			<color>ffea00</color>
+			<glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
+			<origin>0 0</origin>
+			<zIndex>510</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<opacity>0.8</opacity>
+		</text>
+		<control name="allgames_select,allgames_noselect,favoris_noselect,favoris_select">
+			<storyboard repeat="forever">
+				<animation property="opacity" to="0.8" begin="0" duration="1000" mode="linear" autoreverse="" repeat=""/>
+				<animation property="opacity" from="0.8" to="0" begin="1000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+				<animation property="opacity" to="0" begin="1500" duration="1000" mode="linear" autoreverse="" repeat=""/>
+				<animation property="opacity" from="0" to="0.8" begin="2500" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+				<animation property="opacity" to="0.8" begin="3000" duration="1500" mode="linear" autoreverse="" repeat=""/>
+			</storyboard>
+		</control>
+		<control name="longpress">
+			<storyboard repeat="forever">
+				<animation property="opacity" to="0" begin="0" duration="1000" mode="linear" autoreverse="" repeat=""/>
+				<animation property="opacity" from="0" to="0.8" begin="1000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+				<animation property="opacity" to="0.8" begin="1500" duration="1000" mode="linear" autoreverse="" repeat=""/>
+				<animation property="opacity" from="0.8" to="0" begin="2500" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+				<animation property="opacity" to="0" begin="3000" duration="1500" mode="linear" autoreverse="" repeat=""/>
+			</storyboard>
+		</control>
+		<control name="systblack,dateblack,playblack,playerblack,notation,screenshotgames,screenshotgames_cadre,screenshotgames_fond,videogameplay">
+			<visible>{game:rom} != '..'</visible>
+		</control>
+		<control name="base_retourfond, base_retourconsole, base_retourtexte">
+			<visible>false</visible>
+		</control>
+	</customView>
+</theme>

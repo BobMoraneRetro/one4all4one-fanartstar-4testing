@@ -8,6 +8,7 @@
 	<include>${themePath}/_viewgame/presetstar169.xml</include>
 	<include>${themePath}/_viewgame/presetstar43.xml</include>
 	<include>${themePath}/_viewgame/presetstarbox.xml</include>
+	<include>${themePath}/_viewgame/presetstarboxloop.xml</include>
 	<include>${themePath}/_viewgame/presetdeck.xml</include>
 	<include>${themePath}/_viewgame/presetspotlight.xml</include>
 	<include>${themePath}/_viewgame/presetsalon.xml</include>

@@ -91,6 +91,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (bucle)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -254,6 +255,9 @@
 		<b3ap30>Turned</b3ap30>
 		<b3am15>Slightly turned (other way)</b3am15>
 		<b3am30>Turned (other way)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - Lombos da caixa que xira</opt_boite3dtranche>
+		<b3tcharniere>Logo nun lado, apertura no outro</b3tcharniere>
+		<b3tdeuxcotes>Logo nos dous lados</b3tdeuxcotes>
 		<opt_gridcolor>16/9 · 4/3 - Cor da grella</opt_gridcolor>
 		<opt_squarecadre>CADRADO - Estilo dos cadrados que representan os xogos</opt_squarecadre>
 		<systviewzspin>Z-Spin</systviewzspin>

@@ -91,6 +91,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
+		<presetstarboxloop>FanartStar Boxart (ciclo)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -254,6 +255,9 @@
 		<b3ap30>Girata</b3ap30>
 		<b3am15>Leggermente girata (altro verso)</b3am15>
 		<b3am30>Girata (altro verso)</b3am30>
+		<opt_boite3dtranche>SHOW BIG · SMALL - Dorsi della scatola che si gira</opt_boite3dtranche>
+		<b3tcharniere>Logo da un lato, apertura dall'altro</b3tcharniere>
+		<b3tdeuxcotes>Logo su entrambi i lati</b3tdeuxcotes>
 		<opt_gridcolor>16/9 · 4/3 - Colore della griglia</opt_gridcolor>
 		<opt_squarecadre>QUADRATO - Aspetto dei quadrati che rappresentano i giochi</opt_squarecadre>
 		<systviewzspin>Z-Spin</systviewzspin>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 	Variables utilisées dans ce fichier :
-	Libellés traduits (_common/_langs/<langue>.xml) : ${presetstarbox}
+	Libellés traduits (_common/_langs/<langue>.xml) : ${presetstarbox}, ${presetstarboxloop}
 -->
 <theme>
 	<formatVersion>7</formatVersion>
@@ -9,5 +9,14 @@
 		<gamecarousel name="gamecarousel">
 			<maxLogoCount ifSubset="deckespace:e20,fanartstarrotated:nostarrotate">9</maxLogoCount>
 		</gamecarousel>
+	</customView>
+	<customView name="presetstarboxloop" displayName="${presetstarboxloop}">
+		<imagegrid name="gamegrid">
+			<pos ifSubset="deckespace:e20,fanartstarrotated:nostarrotate">-1.02438 0</pos>
+			<pos ifHelpPrompts="true" ifSubset="deckespace:e20,fanartstarrotated:nostarrotate">-1.02438 -0.02</pos>
+			<size ifSubset="deckespace:e20,fanartstarrotated:nostarrotate">2.79125 1.1</size>
+			<margin ifSubset="deckespace:e20,fanartstarrotated:nostarrotate">-0.59208 0</margin>
+			<autoLayout ifSubset="deckespace:e20,fanartstarrotated:nostarrotate">13 1</autoLayout>
+		</imagegrid>
 	</customView>
 </theme>

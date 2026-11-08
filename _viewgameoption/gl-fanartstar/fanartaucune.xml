@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
+	Variables utilisées dans ce fichier :
 	Libellés traduits (_common/_langs/<langue>.xml) : ${presetdeck}, ${presetspotlight}
 -->
 <theme>

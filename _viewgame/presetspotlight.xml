@@ -47,11 +47,15 @@
 	${sv_separateurnote_visible} : Spotlight : point de séparation après la note (masqué quand la note a sa propre ligne) (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
 	${sv_video_delay} : Spotlight : réglage « video_delay » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
 	${sv_video_maxsize} : Spotlight : réglage « video_maxsize » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
+	${sv_video_maxsize_bas} : Spotlight : réglage « video_maxsize_bas » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
 	${sv_video_origin} : Spotlight : réglage « video_origin » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
 	${sv_video_pos} : Spotlight : réglage « video_pos » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
+	${sv_video_pos_bas} : Spotlight : réglage « video_pos_bas » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
 	${sv_video_visible} : Spotlight : réglage « video_visible » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
 	${sv_videogauche_pos} : Spotlight : réglage « videogauche_pos » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
+	${sv_videogauche_pos_bas} : Spotlight : réglage « videogauche_pos_bas » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
 	${sv_videogauche_size} : Spotlight : réglage « videogauche_size » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
+	${sv_videogauche_size_bas} : Spotlight : réglage « videogauche_size_bas » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
 	${sv_videogauche_visible} : Spotlight : réglage « videogauche_visible » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
 	${sv_voilevideo_visible} : Spotlight : réglage « voilevideo_visible » selon l option vidéo (définie dans ce fichier ; valeur selon l option « SPOTLIGHT - Vidéo »)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${gametimelabel}, ${lastgamelabel}, ${noplaycount}, ${playcount}, ${playcountone}, ${presetspotlight}, ${retourdossier}
@@ -206,6 +210,22 @@
 		<sv_piedgauche_visible ifSubset="spotvideo:aucune">false</sv_piedgauche_visible>
 		<sv_piedgauche_visible ifSubset="spotvideo:droite">false</sv_piedgauche_visible>
 		<sv_piedgauche_visible ifSubset="spotvideo:gauchehaut">false</sv_piedgauche_visible>
+		<sv_videogauche_pos_bas ifSubset="spotvideo:gauche">0.0200 0.4500</sv_videogauche_pos_bas>
+		<sv_videogauche_pos_bas ifSubset="spotvideo:aucune">0.0200 0.4500</sv_videogauche_pos_bas>
+		<sv_videogauche_pos_bas ifSubset="spotvideo:droite">0.0200 0.4500</sv_videogauche_pos_bas>
+		<sv_videogauche_pos_bas ifSubset="spotvideo:gauchehaut">0.0163 0.5351</sv_videogauche_pos_bas>
+		<sv_videogauche_size_bas ifSubset="spotvideo:gauche">0.2700 0.3599</sv_videogauche_size_bas>
+		<sv_videogauche_size_bas ifSubset="spotvideo:aucune">0.2700 0.3599</sv_videogauche_size_bas>
+		<sv_videogauche_size_bas ifSubset="spotvideo:droite">0.2700 0.3599</sv_videogauche_size_bas>
+		<sv_videogauche_size_bas ifSubset="spotvideo:gauchehaut">0.2034 0.2622</sv_videogauche_size_bas>
+		<sv_video_pos_bas ifSubset="spotvideo:gauche">0.0062 0.4945</sv_video_pos_bas>
+		<sv_video_pos_bas ifSubset="spotvideo:aucune">0.9800 0.73</sv_video_pos_bas>
+		<sv_video_pos_bas ifSubset="spotvideo:droite">0.9800 0.73</sv_video_pos_bas>
+		<sv_video_pos_bas ifSubset="spotvideo:gauchehaut">0.0062 0.4945</sv_video_pos_bas>
+		<sv_video_maxsize_bas ifSubset="spotvideo:gauche">0.2976 0.409</sv_video_maxsize_bas>
+		<sv_video_maxsize_bas ifSubset="spotvideo:aucune">0.2270 0.2262</sv_video_maxsize_bas>
+		<sv_video_maxsize_bas ifSubset="spotvideo:droite">0.2270 0.2262</sv_video_maxsize_bas>
+		<sv_video_maxsize_bas ifSubset="spotvideo:gauchehaut">0.2976 0.409</sv_video_maxsize_bas>
 	</variables>
 	<customView name="presetspotlight" displayName="${presetspotlight}" inherits="grid">
 		<imagegrid name="gamegrid">
@@ -2003,8 +2023,12 @@
 			<visible>${sv_video_visible}</visible>
 			<path>${media_video}</path>
 			<pos>${sv_video_pos}</pos>
+			<pos ifSubset="perfmachine:perflow">${sv_video_pos_bas}</pos>
+			<pos ifSubset="perfmachine:perfnormal">${sv_video_pos}</pos>
 			<origin>${sv_video_origin}</origin>
 			<maxSize>${sv_video_maxsize}</maxSize>
+			<maxSize ifSubset="perfmachine:perflow">${sv_video_maxsize_bas}</maxSize>
+			<maxSize ifSubset="perfmachine:perfnormal">${sv_video_maxsize}</maxSize>
 			<delay>${sv_video_delay}</delay>
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
@@ -2038,7 +2062,11 @@
 			<visible>${sv_piedgauche_visible}</visible>
 			<path>${themePath}/_viewgame/deck/blanc.png</path>
 			<pos>0.00646 0.43153</pos>
+			<pos ifSubset="perfmachine:perflow">0.02000 0.45560</pos>
+			<pos ifSubset="perfmachine:perfnormal">0.00646 0.43153</pos>
 			<size>0.29708 0.08315</size>
+			<size ifSubset="perfmachine:perflow">0.27000 0.03500</size>
+			<size ifSubset="perfmachine:perfnormal">0.29708 0.08315</size>
 			<color>0E1115EB</color>
 			<zIndex>70.8</zIndex>
 			<shader ifSubset="perfmachine:perfnormal">
@@ -2058,8 +2086,12 @@
 			<visible>${sv_videogauche_visible}</visible>
 			<path>${media_video}</path>
 			<pos>${sv_videogauche_pos}</pos>
+			<pos ifSubset="perfmachine:perflow">${sv_videogauche_pos_bas}</pos>
+			<pos ifSubset="perfmachine:perfnormal">${sv_videogauche_pos}</pos>
 			<origin>0 1</origin>
 			<size>${sv_videogauche_size}</size>
+			<size ifSubset="perfmachine:perflow">${sv_videogauche_size_bas}</size>
+			<size ifSubset="perfmachine:perfnormal">${sv_videogauche_size}</size>
 			<delay>1.0</delay>
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
@@ -2083,6 +2115,19 @@
 				<animation property="opacity" to="0" duration="80"/>
 			</storyboard>
 		</video>
+		<image name="spot_ombretextevideo" extra="true">
+			<visible>false</visible>
+			<visible ifSubset="perfmachine:perflow,spotvideo:gauchehaut">(${media_video_exists}) &amp;&amp; {game:rom} != '..'</visible>
+			<visible ifSubset="perfmachine:perfnormal">false</visible>
+			<path>${themePath}/_viewgame/deck/blanc.png</path>
+			<pos>0.0163 0.5351</pos>
+			<origin>0 1</origin>
+			<size>0.2034 0.0901</size>
+			<color>00000000</color>
+			<colorEnd>000000B4</colorEnd>
+			<gradientType>vertical</gradientType>
+			<zIndex>72</zIndex>
+		</image>
 		<image name="spot_voileaide" extra="true" ifHelpPrompts="true">
 			<path>${themePath}/_viewgame/deck/bandeau_video.png</path>
 			<pos>0 0.935</pos>

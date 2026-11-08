@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Libellés traduits (_common/_langs/<langue>.xml) : ${presetdeck}, ${presetspotlight}, ${presetsquare}, ${presetstar169}, ${presetstar43}, ${presetstarbox}, ${presettraviolta_alt}
+	Variables utilisées dans ce fichier :
+	Libellés traduits (_common/_langs/<langue>.xml) : ${presetdeck}, ${presetspotlight}, ${presetsquare}, ${presetstar169}, ${presetstar43}, ${presetstarbox}, ${presetstarboxloop}, ${presettraviolta_alt}
 -->
 <theme>
 	<formatVersion>7</formatVersion>
 	<customView name="presetstarbox" displayName="${presetstarbox}" inherits="gamecarousel">
+		<image name="fanart" extra="true">
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/fanart_bord_repete.glsl</path>
+				<hauteur>0.8</hauteur>
+				<decalageHaut>0</decalageHaut>
+				<bande>0.12</bande>
+				<flou>32</flou>
+				<assombrir>0.3</assombrir>
+				<distanceFond>350</distanceFond>
+				<saturationFond>0.8</saturationFond>
+				<transition>70</transition>
+				<vignettage>0.25</vignettage>
+				<flouCentre>14</flouCentre>
+			</shader>
+		</image>
+		<image name="defautfanart" extra="true">
+			<shader ifSubset="perfmachine:perfnormal">
+				<path>${themePath}/_common/shaders/flou_image.glsl</path>
+				<flou>14</flou>
+			</shader>
+		</image>
+	</customView>
+	<customView name="presetstarboxloop" displayName="${presetstarboxloop}" inherits="grid">
 		<image name="fanart" extra="true">
 			<shader ifSubset="perfmachine:perfnormal">
 				<path>${themePath}/_common/shaders/fanart_bord_repete.glsl</path>

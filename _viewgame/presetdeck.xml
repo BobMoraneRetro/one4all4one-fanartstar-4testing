@@ -53,7 +53,7 @@
 		<decktailleinfo>0.0155</decktailleinfo>
 		<deckor>FFD24AFF</deckor>
 	</variables>
-	<subset name="deckespace" displayName="${opt_deckespace}" appliesTo="presetdeck, presetspotlight, presetstarbox,presetsalon">
+	<subset name="deckespace" displayName="${opt_deckespace}" appliesTo="presetdeck, presetspotlight, presetstarbox, presetstarboxloop,presetsalon">
 		<include name="e20" displayName="0 (${decknormal})">${themePath}/_viewgame/deck/espacement/e20.xml</include>
 		<include name="e-60" displayName="-20">${themePath}/_viewgame/deck/espacement/e-60.xml</include>
 		<include name="e-56" displayName="-19">${themePath}/_viewgame/deck/espacement/e-56.xml</include>

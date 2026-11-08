@@ -2,7 +2,7 @@
 <!--
 	Variables utilisées dans ce fichier :
 	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
-	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
 	${cfg_hauteur} : vue de test Coverflow RFE (grille) : hauteur de l élément boîte dans sa case de grille (plus petite pour les systèmes à boîte large) (définie dans ce fichier)
 	${cfr_ratio} : vues de test Coverflow : format (largeur / hauteur) de la boîte de remplacement d un jeu sans jaquette (fanart du système), plus carré pour les systèmes à CD comme dans la vue Boxart (définie dans ce fichier)
 	${cfs_angle} : vue de test Coverflow RFE : angle des boîtes de côté, en degrés (définie dans ce fichier)
@@ -19,27 +19,27 @@
 	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${path_salon} : vue RFE Retrofist Nostalgia : dossier _salon (décors et réglages par système), dans le thème ou dans _bobmedia/_gamemedia (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des décors de la vue RFE Retrofist Nostalgia »)
-	${salon_calque} : vue Salon : image posée sur l écran (vitre, quadrillage LCD...), vide = aucune ; réglable par <système>.xml (définie dans _gamemedia/_salon/gb.xml, _gamemedia/_salon/megaduck.xml, _viewgame/presetsalon.xml)
-	${salon_capture_pos} : vue Salon : centre de la capture d écran du jeu ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (40 fichiers))
-	${salon_capture_taille} : vue Salon : largeur hauteur de la capture d écran du jeu ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (40 fichiers))
-	${salon_coin_bd} : vue Salon : perspective 4 coins, coin bas-droit de l écran du décor (x y en pixels du PNG 1920x1080) ; réglable par <système>.xml (définie dans _viewgame/presetsalon.xml)
-	${salon_coin_bg} : vue Salon : perspective 4 coins, coin bas-gauche de l écran du décor (x y en pixels du PNG 1920x1080) ; réglable par <système>.xml (définie dans _viewgame/presetsalon.xml)
-	${salon_coin_hd} : vue Salon : perspective 4 coins, coin haut-droit de l écran du décor (x y en pixels du PNG 1920x1080) ; réglable par <système>.xml (définie dans _viewgame/presetsalon.xml)
-	${salon_coin_hg} : vue Salon : perspective 4 coins, coin haut-gauche de l écran du décor (x y en pixels du PNG 1920x1080) ; réglable par <système>.xml (définie dans _viewgame/presetsalon.xml)
-	${salon_coins_proportions} : vue Salon : perspective 4 coins, 0 = l image remplit l écran, 1 = proportions gardées (bandes noires) ; réglable par <système>.xml (définie dans _viewgame/presetsalon.xml)
-	${salon_couleur} : vue Salon : couleur multipliée sur la vidéo et la capture (FFFFFFFF = aucune ; ex. 8BAC0F pour la Game Boy) ; réglable par <système>.xml (définie dans _gamemedia/_salon/gb.xml, _gamemedia/_salon/megaduck.xml, _viewgame/presetsalon.xml)
+	${salon_calque} : vue Salon : image posée sur l écran (vitre, quadrillage LCD...), vide = aucune ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/ (7 fichiers))
+	${salon_capture_pos} : vue Salon : centre de la capture d écran du jeu ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (51 fichiers))
+	${salon_capture_taille} : vue Salon : largeur hauteur de la capture d écran du jeu ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (51 fichiers))
+	${salon_coin_bd} : vue Salon : perspective 4 coins, coin bas-droit de l écran du décor (x y en pixels du PNG 1920x1080) ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (8 fichiers))
+	${salon_coin_bg} : vue Salon : perspective 4 coins, coin bas-gauche de l écran du décor (x y en pixels du PNG 1920x1080) ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (8 fichiers))
+	${salon_coin_hd} : vue Salon : perspective 4 coins, coin haut-droit de l écran du décor (x y en pixels du PNG 1920x1080) ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (8 fichiers))
+	${salon_coin_hg} : vue Salon : perspective 4 coins, coin haut-gauche de l écran du décor (x y en pixels du PNG 1920x1080) ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (8 fichiers))
+	${salon_coins_proportions} : vue Salon : perspective 4 coins, 0 = l image remplit l écran, 1 = proportions gardées (bandes noires) ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (8 fichiers))
+	${salon_couleur} : vue Salon : couleur multipliée sur la vidéo et la capture (FFFFFFFF = aucune ; ex. 8BAC0F pour la Game Boy) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/ (4 fichiers))
 	${salon_defaut} : vue Salon : décor et réglages par défaut, _default (systèmes 4:3), _default16 (systèmes 16:9 listés), ou selon le type du système : arcade, computers (computer), extension, pinball, port, portable, auto-collection, custom-collection, retrobat (type vide : retrobat, kodi, screenshots) (définie dans _viewgame/presetsalon.xml)
-	${salon_ecran2} : vue Salon : true = 2e écran (2 consoles reliées, ex. gbc2players), même vidéo, capture, couleur et calque que le 1er ; réglable par <système>.xml (définie dans _gamemedia/_salon/gbc2players.xml, _viewgame/presetsalon.xml)
-	${salon_persp_angle_x} : vue Salon : perspective par angles, rotation autour de l axe vertical en degrés (shader Angled_border_gradient, tiltAngleX) ; réglable par <système>.xml (définie dans _viewgame/presetsalon.xml)
-	${salon_persp_angle_y} : vue Salon : perspective par angles, rotation autour de l axe horizontal en degrés (tiltAngle) ; réglable par <système>.xml (définie dans _viewgame/presetsalon.xml)
-	${salon_persp_profondeur} : vue Salon : perspective par angles, profondeur (1 = normale, plus petit = plus marquée) ; réglable par <système>.xml (définie dans _viewgame/presetsalon.xml)
-	${salon_perspective} : vue Salon : perspective de l écran du décor (0 = aucune, 1 = angles, 2 = 4 coins) ; réglable par <système>.xml (définie dans _viewgame/presetsalon.xml)
-	${salon_saturation} : vue Salon : saturation de la vidéo et de la capture (1 = normale, 0 = noir et blanc, à combiner avec salon_couleur) ; réglable par <système>.xml (définie dans _gamemedia/_salon/gb.xml, _gamemedia/_salon/megaduck.xml, _viewgame/presetsalon.xml)
-	${salon_video2_pos} : vue Salon : centre du 2e écran (si salon_ecran2) ; réglable par <système>.xml (définie dans _gamemedia/_salon/gbc2players.xml, _viewgame/presetsalon.xml)
-	${salon_video2_taille} : vue Salon : largeur hauteur du 2e écran (si salon_ecran2) ; réglable par <système>.xml (définie dans _gamemedia/_salon/gbc2players.xml, _viewgame/presetsalon.xml)
-	${salon_video_etiree} : vue Salon : true = vidéo étirée à la taille de l écran de la TV (size), false = proportions gardées (maxSize) ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (34 fichiers))
-	${salon_video_pos} : vue Salon : centre de l écran de la TV (vidéo sous le décor) (définie dans _gamemedia/_salon/ (40 fichiers))
-	${salon_video_taille} : vue Salon : largeur hauteur de l écran de la TV (définie dans _gamemedia/_salon/ (40 fichiers))
+	${salon_ecran2} : vue Salon : true = 2e écran (2 consoles reliées, ex. gbc2players), même vidéo, capture, couleur et calque que le 1er ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _gamemedia/_salon/gbc2players.xml, _viewgame/presetsalon.xml)
+	${salon_persp_angle_x} : vue Salon : perspective par angles, rotation autour de l axe vertical en degrés (shader Angled_border_gradient, tiltAngleX) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _viewgame/presetsalon.xml)
+	${salon_persp_angle_y} : vue Salon : perspective par angles, rotation autour de l axe horizontal en degrés (tiltAngle) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _viewgame/presetsalon.xml)
+	${salon_persp_profondeur} : vue Salon : perspective par angles, profondeur (1 = normale, plus petit = plus marquée) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _viewgame/presetsalon.xml)
+	${salon_perspective} : vue Salon : perspective de l écran du décor (0 = aucune, 1 = angles, 2 = 4 coins) ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (8 fichiers))
+	${salon_saturation} : vue Salon : saturation de la vidéo et de la capture (1 = normale, 0 = noir et blanc, à combiner avec salon_couleur) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/ (4 fichiers))
+	${salon_video2_pos} : vue Salon : centre du 2e écran (si salon_ecran2) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _gamemedia/_salon/gbc2players.xml, _viewgame/presetsalon.xml)
+	${salon_video2_taille} : vue Salon : largeur hauteur du 2e écran (si salon_ecran2) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _gamemedia/_salon/gbc2players.xml, _viewgame/presetsalon.xml)
+	${salon_video_etiree} : vue Salon : true = vidéo étirée à la taille de l écran de la TV (size), false = proportions gardées (maxSize) ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (45 fichiers))
+	${salon_video_pos} : vue Salon : centre de l écran de la TV (vidéo sous le décor) (définie dans _gamemedia/_salon/ (51 fichiers))
+	${salon_video_taille} : vue Salon : largeur hauteur de l écran de la TV (définie dans _gamemedia/_salon/ (51 fichiers))
 -->
 <theme>
 	<formatVersion>7</formatVersion>
@@ -571,28 +571,6 @@
 							<innerShadowSize>0</innerShadowSize>
 							<outerShadowSize>0.02</outerShadowSize>
 							<saturation>1</saturation>
-							<caseType ifSubset="typeboite:t0">0</caseType>
-							<caseType ifSubset="typeboite:t1">1</caseType>
-							<caseType ifSubset="typeboite:t2">2</caseType>
-							<caseType ifSubset="typeboite:t3">3</caseType>
-							<caseType ifSubset="typeboite:t4">4</caseType>
-							<caseType ifSubset="typeboite:t5">5</caseType>
-							<caseType ifSubset="typeboite:t6">6</caseType>
-							<caseType ifSubset="typeboite:t7">7</caseType>
-							<caseType ifSubset="typeboite:t8">8</caseType>
-							<caseType ifSubset="typeboite:t9">9</caseType>
-							<caseType ifSubset="typeboite:t10">10</caseType>
-							<caseType ifSubset="typeboite:t11">11</caseType>
-							<caseType ifSubset="typeboite:t12">12</caseType>
-							<caseType ifSubset="typeboite:t13">13</caseType>
-							<caseType ifSubset="typeboite:t14">14</caseType>
-							<caseType ifSubset="typeboite:t15">15</caseType>
-							<caseType ifSubset="typeboite:t16">16</caseType>
-							<caseType ifSubset="typeboite:t17">17</caseType>
-							<caseType ifSubset="typeboite:t18">18</caseType>
-							<caseType ifSubset="typeboite:t19">19</caseType>
-							<caseType ifSubset="typeboite:t20">20</caseType>
-							<caseType ifSubset="typeboite:t21">21</caseType>
 							<maxAngle>${cfs_angle}</maxAngle>
 							<spread>0.22</spread>
 							<recul>2.2</recul>
@@ -624,28 +602,6 @@
 							<innerShadowSize>0</innerShadowSize>
 							<outerShadowSize>0.02</outerShadowSize>
 							<saturation>1</saturation>
-							<caseType ifSubset="typeboite:t0">0</caseType>
-							<caseType ifSubset="typeboite:t1">1</caseType>
-							<caseType ifSubset="typeboite:t2">2</caseType>
-							<caseType ifSubset="typeboite:t3">3</caseType>
-							<caseType ifSubset="typeboite:t4">4</caseType>
-							<caseType ifSubset="typeboite:t5">5</caseType>
-							<caseType ifSubset="typeboite:t6">6</caseType>
-							<caseType ifSubset="typeboite:t7">7</caseType>
-							<caseType ifSubset="typeboite:t8">8</caseType>
-							<caseType ifSubset="typeboite:t9">9</caseType>
-							<caseType ifSubset="typeboite:t10">10</caseType>
-							<caseType ifSubset="typeboite:t11">11</caseType>
-							<caseType ifSubset="typeboite:t12">12</caseType>
-							<caseType ifSubset="typeboite:t13">13</caseType>
-							<caseType ifSubset="typeboite:t14">14</caseType>
-							<caseType ifSubset="typeboite:t15">15</caseType>
-							<caseType ifSubset="typeboite:t16">16</caseType>
-							<caseType ifSubset="typeboite:t17">17</caseType>
-							<caseType ifSubset="typeboite:t18">18</caseType>
-							<caseType ifSubset="typeboite:t19">19</caseType>
-							<caseType ifSubset="typeboite:t20">20</caseType>
-							<caseType ifSubset="typeboite:t21">21</caseType>
 							<maxAngle>${cfs_angle}</maxAngle>
 							<spread>0.22</spread>
 							<recul>2.2</recul>

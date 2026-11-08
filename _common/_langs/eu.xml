@@ -18,6 +18,7 @@
 		<nogametime>Inoiz jokatu gabea</nogametime>
 		<noplayerdata>Ezezaguna</noplayerdata>
 		<noratings>Baloraziorik ez</noratings>
+		<notesur100>/ 100</notesur100>
 		<presgame1>Mota honetako jokoa da:</presgame1>
 		<presgame2>garatzailea:</presgame2>
 		<presgame3>plataforma:</presgame3>
@@ -91,7 +92,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetstarboxloop>FanartStar Boxart (begizta)</presetstarboxloop>
+		<presetstarboxloop>FanartStar Boxart (Nabigazio azkarragoa)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -135,7 +136,6 @@
 		<notetrophee>Garaikurra</notetrophee>
 		<notefantome>Mamua</notefantome>
 		<notecrane>Garezurra</notecrane>
-		<notesur100>100etik</notesur100>
 		<notepourcent>%-tan</notepourcent>
 		<wheelclic>Hyperspin estiloko klika</wheelclic>
 		<bulle>Burbuila</bulle>

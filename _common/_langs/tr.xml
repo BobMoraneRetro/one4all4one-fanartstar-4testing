@@ -18,6 +18,7 @@
 		<nogametime>Hiç oynanmadı</nogametime>
 		<noplayerdata>Bilinmiyor</noplayerdata>
 		<noratings>Puan yok</noratings>
+		<notesur100>/ 100</notesur100>
 		<presgame1>Bu oyunun türü</presgame1>
 		<presgame2>geliştiren</presgame2>
 		<presgame3>platform</presgame3>
@@ -91,7 +92,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetstarboxloop>FanartStar Boxart (döngü)</presetstarboxloop>
+		<presetstarboxloop>FanartStar Boxart (Daha hızlı gezinme)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -135,7 +136,6 @@
 		<notetrophee>Kupa</notetrophee>
 		<notefantome>Hayalet</notefantome>
 		<notecrane>Kafatası</notecrane>
-		<notesur100>100 üzerinden</notesur100>
 		<notepourcent>% olarak</notepourcent>
 		<wheelclic>Hyperspin tarzı tık</wheelclic>
 		<bulle>Baloncuk</bulle>

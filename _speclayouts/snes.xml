@@ -12,11 +12,11 @@
 	</customView>
 	<customView name="presetstarboxloop" displayName="${presetstarboxloop}">
 		<imagegrid name="gamegrid">
-			<pos ifSubset="deckespace:e20,fanartstarrotated:nostarrotate">-1.02438 0</pos>
-			<pos ifHelpPrompts="true" ifSubset="deckespace:e20,fanartstarrotated:nostarrotate">-1.02438 -0.02</pos>
-			<size ifSubset="deckespace:e20,fanartstarrotated:nostarrotate">2.79125 1.1</size>
-			<margin ifSubset="deckespace:e20,fanartstarrotated:nostarrotate">-0.59208 0</margin>
-			<autoLayout ifSubset="deckespace:e20,fanartstarrotated:nostarrotate">13 1</autoLayout>
+			<pos ifSubset="deckespace:e20,fanartstarrotated:nostarrotate">-1.32639 0</pos>
+			<pos ifHelpPrompts="true" ifSubset="deckespace:e20,fanartstarrotated:nostarrotate">-1.32639 -0.02</pos>
+			<size ifSubset="deckespace:e20,fanartstarrotated:nostarrotate">3.10278 1.1</size>
+			<margin ifSubset="deckespace:e20,fanartstarrotated:nostarrotate">-0.36389 0</margin>
+			<autoLayout ifSubset="deckespace:e20,fanartstarrotated:nostarrotate">17 1</autoLayout>
 		</imagegrid>
 	</customView>
 </theme>

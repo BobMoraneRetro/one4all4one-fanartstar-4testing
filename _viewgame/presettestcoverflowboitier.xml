@@ -2,7 +2,7 @@
 <!--
 	Variables utilisées dans ce fichier :
 	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
-	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
 	${cf_angle} : vues de test Coverflow : angle des boîtes de côté, en degrés (définie dans ce fichier)
 	${cf_ecart} : vues de test Coverflow : décalage des boîtes de côté vers l extérieur (shader boite_coverflow, en largeur de boîtier DVD) (définie dans ce fichier)
 	${cf_hauteur} : vues de test Coverflow : hauteur de l élément boîte dans sa case du carrousel ou de la grille (plus petite pour les systèmes à boîte large) (définie dans ce fichier)
@@ -84,28 +84,6 @@
 							<innerShadowSize>0</innerShadowSize>
 							<outerShadowSize>0.02</outerShadowSize>
 							<saturation>1</saturation>
-							<caseType ifSubset="typeboite:t0">0</caseType>
-							<caseType ifSubset="typeboite:t1">1</caseType>
-							<caseType ifSubset="typeboite:t2">2</caseType>
-							<caseType ifSubset="typeboite:t3">3</caseType>
-							<caseType ifSubset="typeboite:t4">4</caseType>
-							<caseType ifSubset="typeboite:t5">5</caseType>
-							<caseType ifSubset="typeboite:t6">6</caseType>
-							<caseType ifSubset="typeboite:t7">7</caseType>
-							<caseType ifSubset="typeboite:t8">8</caseType>
-							<caseType ifSubset="typeboite:t9">9</caseType>
-							<caseType ifSubset="typeboite:t10">10</caseType>
-							<caseType ifSubset="typeboite:t11">11</caseType>
-							<caseType ifSubset="typeboite:t12">12</caseType>
-							<caseType ifSubset="typeboite:t13">13</caseType>
-							<caseType ifSubset="typeboite:t14">14</caseType>
-							<caseType ifSubset="typeboite:t15">15</caseType>
-							<caseType ifSubset="typeboite:t16">16</caseType>
-							<caseType ifSubset="typeboite:t17">17</caseType>
-							<caseType ifSubset="typeboite:t18">18</caseType>
-							<caseType ifSubset="typeboite:t19">19</caseType>
-							<caseType ifSubset="typeboite:t20">20</caseType>
-							<caseType ifSubset="typeboite:t21">21</caseType>
 							<maxAngle>${cf_angle}</maxAngle>
 							<spread>0.22</spread>
 							<recul>2.2</recul>
@@ -135,28 +113,6 @@
 							<innerShadowSize>0</innerShadowSize>
 							<outerShadowSize>0.02</outerShadowSize>
 							<saturation>1</saturation>
-							<caseType ifSubset="typeboite:t0">0</caseType>
-							<caseType ifSubset="typeboite:t1">1</caseType>
-							<caseType ifSubset="typeboite:t2">2</caseType>
-							<caseType ifSubset="typeboite:t3">3</caseType>
-							<caseType ifSubset="typeboite:t4">4</caseType>
-							<caseType ifSubset="typeboite:t5">5</caseType>
-							<caseType ifSubset="typeboite:t6">6</caseType>
-							<caseType ifSubset="typeboite:t7">7</caseType>
-							<caseType ifSubset="typeboite:t8">8</caseType>
-							<caseType ifSubset="typeboite:t9">9</caseType>
-							<caseType ifSubset="typeboite:t10">10</caseType>
-							<caseType ifSubset="typeboite:t11">11</caseType>
-							<caseType ifSubset="typeboite:t12">12</caseType>
-							<caseType ifSubset="typeboite:t13">13</caseType>
-							<caseType ifSubset="typeboite:t14">14</caseType>
-							<caseType ifSubset="typeboite:t15">15</caseType>
-							<caseType ifSubset="typeboite:t16">16</caseType>
-							<caseType ifSubset="typeboite:t17">17</caseType>
-							<caseType ifSubset="typeboite:t18">18</caseType>
-							<caseType ifSubset="typeboite:t19">19</caseType>
-							<caseType ifSubset="typeboite:t20">20</caseType>
-							<caseType ifSubset="typeboite:t21">21</caseType>
 							<maxAngle>${cf_angle}</maxAngle>
 							<spread>0.22</spread>
 							<recul>2.2</recul>

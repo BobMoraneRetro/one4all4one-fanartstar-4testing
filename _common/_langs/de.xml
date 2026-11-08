@@ -18,6 +18,7 @@
 		<nogametime>Nie gespielt</nogametime>
 		<noplayerdata>Unbekannt</noplayerdata>
 		<noratings>Keine Bewertung</noratings>
+		<notesur100>von 100</notesur100>
 		<presgame1>Dies ist ein Spiel vom Typ</presgame1>
 		<presgame2>entwickelt von</presgame2>
 		<presgame3>spielbar auf</presgame3>
@@ -91,7 +92,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetstarboxloop>FanartStar Boxart (Schleife)</presetstarboxloop>
+		<presetstarboxloop>FanartStar Boxart (Schnellere Navigation)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -135,7 +136,6 @@
 		<notetrophee>Pokal</notetrophee>
 		<notefantome>Geist</notefantome>
 		<notecrane>Totenkopf</notecrane>
-		<notesur100>Von 100</notesur100>
 		<notepourcent>In %</notepourcent>
 		<wheelclic>Klick im Hyperspin-Stil</wheelclic>
 		<bulle>Blase</bulle>

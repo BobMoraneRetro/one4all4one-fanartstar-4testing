@@ -18,6 +18,7 @@
 		<nogametime>Belum pernah dimainkan</nogametime>
 		<noplayerdata>Tidak diketahui</noplayerdata>
 		<noratings>Tanpa nilai</noratings>
+		<notesur100>dari 100</notesur100>
 		<presgame1>Ini adalah game bertipe</presgame1>
 		<presgame2>dikembangkan oleh</presgame2>
 		<presgame3>dapat dimainkan di</presgame3>
@@ -91,7 +92,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetstarboxloop>FanartStar Boxart (putaran)</presetstarboxloop>
+		<presetstarboxloop>FanartStar Boxart (Navigasi lebih cepat)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -135,7 +136,6 @@
 		<notetrophee>Trofi</notetrophee>
 		<notefantome>Hantu</notefantome>
 		<notecrane>Tengkorak</notecrane>
-		<notesur100>Dari 100</notesur100>
 		<notepourcent>Dalam %</notepourcent>
 		<wheelclic>Klik gaya Hyperspin</wheelclic>
 		<bulle>Gelembung</bulle>

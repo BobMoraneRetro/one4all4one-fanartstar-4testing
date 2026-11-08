@@ -2,7 +2,7 @@
 <!--
 	Variables utilisées dans ce fichier :
 	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
-	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
 	${cf_angle} : vues de test Coverflow : angle des boîtes de côté, en degrés (définie dans ce fichier)
 	${cf_ecart} : vues de test Coverflow : décalage des boîtes de côté vers l extérieur (shader boite_coverflow, en largeur de boîtier DVD) (définie dans ce fichier)
 	${cf_hauteur} : vues de test Coverflow : hauteur de l élément boîte dans sa case du carrousel ou de la grille (plus petite pour les systèmes à boîte large) (définie dans ce fichier)
@@ -17,6 +17,7 @@
 	${media_marquee} : logo du jeu (marquee) (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_marquee_missing} : vrai si le média « marquee » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 -->
 <theme>
 	<formatVersion>7</formatVersion>
@@ -86,28 +87,6 @@
 							<innerShadowSize>0</innerShadowSize>
 							<outerShadowSize>0.02</outerShadowSize>
 							<saturation>1</saturation>
-							<caseType ifSubset="typeboite:t0">0</caseType>
-							<caseType ifSubset="typeboite:t1">1</caseType>
-							<caseType ifSubset="typeboite:t2">2</caseType>
-							<caseType ifSubset="typeboite:t3">3</caseType>
-							<caseType ifSubset="typeboite:t4">4</caseType>
-							<caseType ifSubset="typeboite:t5">5</caseType>
-							<caseType ifSubset="typeboite:t6">6</caseType>
-							<caseType ifSubset="typeboite:t7">7</caseType>
-							<caseType ifSubset="typeboite:t8">8</caseType>
-							<caseType ifSubset="typeboite:t9">9</caseType>
-							<caseType ifSubset="typeboite:t10">10</caseType>
-							<caseType ifSubset="typeboite:t11">11</caseType>
-							<caseType ifSubset="typeboite:t12">12</caseType>
-							<caseType ifSubset="typeboite:t13">13</caseType>
-							<caseType ifSubset="typeboite:t14">14</caseType>
-							<caseType ifSubset="typeboite:t15">15</caseType>
-							<caseType ifSubset="typeboite:t16">16</caseType>
-							<caseType ifSubset="typeboite:t17">17</caseType>
-							<caseType ifSubset="typeboite:t18">18</caseType>
-							<caseType ifSubset="typeboite:t19">19</caseType>
-							<caseType ifSubset="typeboite:t20">20</caseType>
-							<caseType ifSubset="typeboite:t21">21</caseType>
 							<maxAngle>${cf_angle}</maxAngle>
 							<spread>0.22</spread>
 							<recul>2.2</recul>
@@ -137,28 +116,6 @@
 							<innerShadowSize>0</innerShadowSize>
 							<outerShadowSize>0.02</outerShadowSize>
 							<saturation>1</saturation>
-							<caseType ifSubset="typeboite:t0">0</caseType>
-							<caseType ifSubset="typeboite:t1">1</caseType>
-							<caseType ifSubset="typeboite:t2">2</caseType>
-							<caseType ifSubset="typeboite:t3">3</caseType>
-							<caseType ifSubset="typeboite:t4">4</caseType>
-							<caseType ifSubset="typeboite:t5">5</caseType>
-							<caseType ifSubset="typeboite:t6">6</caseType>
-							<caseType ifSubset="typeboite:t7">7</caseType>
-							<caseType ifSubset="typeboite:t8">8</caseType>
-							<caseType ifSubset="typeboite:t9">9</caseType>
-							<caseType ifSubset="typeboite:t10">10</caseType>
-							<caseType ifSubset="typeboite:t11">11</caseType>
-							<caseType ifSubset="typeboite:t12">12</caseType>
-							<caseType ifSubset="typeboite:t13">13</caseType>
-							<caseType ifSubset="typeboite:t14">14</caseType>
-							<caseType ifSubset="typeboite:t15">15</caseType>
-							<caseType ifSubset="typeboite:t16">16</caseType>
-							<caseType ifSubset="typeboite:t17">17</caseType>
-							<caseType ifSubset="typeboite:t18">18</caseType>
-							<caseType ifSubset="typeboite:t19">19</caseType>
-							<caseType ifSubset="typeboite:t20">20</caseType>
-							<caseType ifSubset="typeboite:t21">21</caseType>
 							<maxAngle>${cf_angle}</maxAngle>
 							<spread>0.22</spread>
 							<recul>2.2</recul>
@@ -270,8 +227,7 @@
 			<alignment>center</alignment>
 			<zIndex>20</zIndex>
 		</text>
-		<image name="cf_capture" extra="true">
-			<visible>{game:rom} != '..'</visible>
+		<image name="cf_capture, cf_capturefixe" extra="true">
 			<path>${media_image}</path>
 			<pos>0.125 0.86</pos>
 			<origin>0.5 0.5</origin>
@@ -288,17 +244,20 @@
 				<outerShadowSize>0.03</outerShadowSize>
 				<outerShadowColor>000000A0</outerShadowColor>
 			</shader>
+		</image>
+		<image name="cf_capture" extra="true">
+			<visible>{game:rom} != '..' &amp;&amp; ${media_video_exists}</visible>
 			<storyboard event="open">
 				<animation property="opacity" from="0" to="1" mode="easeIn"/>
-				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="1000" duration="300" mode="easeIn"/>
+				<animation property="opacity" from="1" to="0" begin="1000" duration="300" mode="easeIn"/>
 			</storyboard>
 			<storyboard event="activateNext">
 				<animation property="opacity" from="0" to="1" mode="easeIn"/>
-				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="1000" duration="300" mode="easeIn"/>
+				<animation property="opacity" from="1" to="0" begin="1000" duration="300" mode="easeIn"/>
 			</storyboard>
 			<storyboard event="activatePrev">
 				<animation property="opacity" from="0" to="1" mode="easeIn"/>
-				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="1000" duration="300" mode="easeIn"/>
+				<animation property="opacity" from="1" to="0" begin="1000" duration="300" mode="easeIn"/>
 			</storyboard>
 			<storyboard event="deactivateNext">
 				<animation property="opacity" to="0" begin="60" mode="easeIn"/>
@@ -306,6 +265,9 @@
 			<storyboard event="deactivatePrev">
 				<animation property="opacity" to="0" begin="60" mode="easeIn"/>
 			</storyboard>
+		</image>
+		<image name="cf_capturefixe" extra="true">
+			<visible>{game:rom} != '..' &amp;&amp; !${media_video_exists}</visible>
 		</image>
 		<video name="cf_video" extra="true">
 			<visible>{game:rom} != '..'</visible>

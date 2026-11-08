@@ -18,6 +18,7 @@
 		<nogametime>从未玩过</nogametime>
 		<noplayerdata>未知</noplayerdata>
 		<noratings>无评分</noratings>
+		<notesur100>/ 100</notesur100>
 		<presgame1>这是一款类型为</presgame1>
 		<presgame2>开发商：</presgame2>
 		<presgame3>可游玩平台：</presgame3>
@@ -91,7 +92,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetstarboxloop>FanartStar Boxart (循环)</presetstarboxloop>
+		<presetstarboxloop>FanartStar Boxart (更快导航)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -135,7 +136,6 @@
 		<notetrophee>奖杯</notetrophee>
 		<notefantome>幽灵</notefantome>
 		<notecrane>骷髅</notecrane>
-		<notesur100>百分制</notesur100>
 		<notepourcent>百分比</notepourcent>
 		<wheelclic>Hyperspin 风格咔嗒声</wheelclic>
 		<bulle>气泡</bulle>

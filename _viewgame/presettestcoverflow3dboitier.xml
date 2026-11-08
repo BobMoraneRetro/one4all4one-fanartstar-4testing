@@ -2,7 +2,7 @@
 <!--
 	Variables utilisées dans ce fichier :
 	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
-	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
 	${cfb_angle} : vue de test Coverflow 3D boîtiers : angle des boîtes de côté, en degrés (shader boite3d_case_coverflow) (définie dans ce fichier)
 	${cfb_ecart} : vue de test Coverflow 3D boîtiers : décalage minimal des boîtes de côté vers l extérieur, en largeur de boîte (définie dans ce fichier)
 	${cfb_taille} : vue de test Coverflow 3D boîtiers : taille des éléments de la boîte 3D dans leur case du carrousel ou de la grille, selon le format de boîte du système (la boîte occupe 60 % de l élément) (définie dans ce fichier)
@@ -76,28 +76,6 @@
 							<u_shiny>0.35</u_shiny>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
-							<caseType ifSubset="typeboite:t0">0</caseType>
-							<caseType ifSubset="typeboite:t1">1</caseType>
-							<caseType ifSubset="typeboite:t2">2</caseType>
-							<caseType ifSubset="typeboite:t3">3</caseType>
-							<caseType ifSubset="typeboite:t4">4</caseType>
-							<caseType ifSubset="typeboite:t5">5</caseType>
-							<caseType ifSubset="typeboite:t6">6</caseType>
-							<caseType ifSubset="typeboite:t7">7</caseType>
-							<caseType ifSubset="typeboite:t8">8</caseType>
-							<caseType ifSubset="typeboite:t9">9</caseType>
-							<caseType ifSubset="typeboite:t10">10</caseType>
-							<caseType ifSubset="typeboite:t11">11</caseType>
-							<caseType ifSubset="typeboite:t12">12</caseType>
-							<caseType ifSubset="typeboite:t13">13</caseType>
-							<caseType ifSubset="typeboite:t14">14</caseType>
-							<caseType ifSubset="typeboite:t15">15</caseType>
-							<caseType ifSubset="typeboite:t16">16</caseType>
-							<caseType ifSubset="typeboite:t17">17</caseType>
-							<caseType ifSubset="typeboite:t18">18</caseType>
-							<caseType ifSubset="typeboite:t19">19</caseType>
-							<caseType ifSubset="typeboite:t20">20</caseType>
-							<caseType ifSubset="typeboite:t21">21</caseType>
 							<caseType ifSubset="contourboite:non">7</caseType>
 							<saturation>1</saturation>
 							<ecart>${cfb_ecart}</ecart>
@@ -124,28 +102,6 @@
 							<u_shiny>0.35</u_shiny>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
-							<caseType ifSubset="typeboite:t0">0</caseType>
-							<caseType ifSubset="typeboite:t1">1</caseType>
-							<caseType ifSubset="typeboite:t2">2</caseType>
-							<caseType ifSubset="typeboite:t3">3</caseType>
-							<caseType ifSubset="typeboite:t4">4</caseType>
-							<caseType ifSubset="typeboite:t5">5</caseType>
-							<caseType ifSubset="typeboite:t6">6</caseType>
-							<caseType ifSubset="typeboite:t7">7</caseType>
-							<caseType ifSubset="typeboite:t8">8</caseType>
-							<caseType ifSubset="typeboite:t9">9</caseType>
-							<caseType ifSubset="typeboite:t10">10</caseType>
-							<caseType ifSubset="typeboite:t11">11</caseType>
-							<caseType ifSubset="typeboite:t12">12</caseType>
-							<caseType ifSubset="typeboite:t13">13</caseType>
-							<caseType ifSubset="typeboite:t14">14</caseType>
-							<caseType ifSubset="typeboite:t15">15</caseType>
-							<caseType ifSubset="typeboite:t16">16</caseType>
-							<caseType ifSubset="typeboite:t17">17</caseType>
-							<caseType ifSubset="typeboite:t18">18</caseType>
-							<caseType ifSubset="typeboite:t19">19</caseType>
-							<caseType ifSubset="typeboite:t20">20</caseType>
-							<caseType ifSubset="typeboite:t21">21</caseType>
 							<caseType ifSubset="contourboite:non">7</caseType>
 							<saturation>1</saturation>
 							<ecart>${cfb_ecart}</ecart>
@@ -173,28 +129,6 @@
 							<u_shiny>0.35</u_shiny>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
-							<caseType ifSubset="typeboite:t0">0</caseType>
-							<caseType ifSubset="typeboite:t1">1</caseType>
-							<caseType ifSubset="typeboite:t2">2</caseType>
-							<caseType ifSubset="typeboite:t3">3</caseType>
-							<caseType ifSubset="typeboite:t4">4</caseType>
-							<caseType ifSubset="typeboite:t5">5</caseType>
-							<caseType ifSubset="typeboite:t6">6</caseType>
-							<caseType ifSubset="typeboite:t7">7</caseType>
-							<caseType ifSubset="typeboite:t8">8</caseType>
-							<caseType ifSubset="typeboite:t9">9</caseType>
-							<caseType ifSubset="typeboite:t10">10</caseType>
-							<caseType ifSubset="typeboite:t11">11</caseType>
-							<caseType ifSubset="typeboite:t12">12</caseType>
-							<caseType ifSubset="typeboite:t13">13</caseType>
-							<caseType ifSubset="typeboite:t14">14</caseType>
-							<caseType ifSubset="typeboite:t15">15</caseType>
-							<caseType ifSubset="typeboite:t16">16</caseType>
-							<caseType ifSubset="typeboite:t17">17</caseType>
-							<caseType ifSubset="typeboite:t18">18</caseType>
-							<caseType ifSubset="typeboite:t19">19</caseType>
-							<caseType ifSubset="typeboite:t20">20</caseType>
-							<caseType ifSubset="typeboite:t21">21</caseType>
 							<caseType ifSubset="contourboite:non">7</caseType>
 							<saturation>1</saturation>
 							<ecart>${cfb_ecart}</ecart>

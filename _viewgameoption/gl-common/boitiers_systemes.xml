@@ -40,5 +40,27 @@
 		<boitiercouleur if="{system.theme} == 'ps2'|| {system.theme} == 'ps3'|| {system.theme} == 'gc'">0D0D10FF</boitiercouleur>
 		<boitiercouleur if="{system.theme} == 'wiiu'">2DA8E0FF</boitiercouleur>
 		<boitiercouleur if="{system.theme} == 'psvita'">1E5BAAB3</boitiercouleur>
+		<boitiertype ifSubset="typeboite:t0">0</boitiertype>
+		<boitiertype ifSubset="typeboite:t1">1</boitiertype>
+		<boitiertype ifSubset="typeboite:t2">2</boitiertype>
+		<boitiertype ifSubset="typeboite:t3">3</boitiertype>
+		<boitiertype ifSubset="typeboite:t4">4</boitiertype>
+		<boitiertype ifSubset="typeboite:t5">5</boitiertype>
+		<boitiertype ifSubset="typeboite:t6">6</boitiertype>
+		<boitiertype ifSubset="typeboite:t7">7</boitiertype>
+		<boitiertype ifSubset="typeboite:t8">8</boitiertype>
+		<boitiertype ifSubset="typeboite:t9">9</boitiertype>
+		<boitiertype ifSubset="typeboite:t10">10</boitiertype>
+		<boitiertype ifSubset="typeboite:t11">11</boitiertype>
+		<boitiertype ifSubset="typeboite:t12">12</boitiertype>
+		<boitiertype ifSubset="typeboite:t13">13</boitiertype>
+		<boitiertype ifSubset="typeboite:t14">14</boitiertype>
+		<boitiertype ifSubset="typeboite:t15">15</boitiertype>
+		<boitiertype ifSubset="typeboite:t16">16</boitiertype>
+		<boitiertype ifSubset="typeboite:t17">17</boitiertype>
+		<boitiertype ifSubset="typeboite:t18">18</boitiertype>
+		<boitiertype ifSubset="typeboite:t19">19</boitiertype>
+		<boitiertype ifSubset="typeboite:t20">20</boitiertype>
+		<boitiertype ifSubset="typeboite:t21">21</boitiertype>
 	</variables>
 </theme>

@@ -18,6 +18,7 @@
 		<nogametime>Jamais joué</nogametime>
 		<noplayerdata>Inconnu</noplayerdata>
 		<noratings>Pas de note</noratings>
+		<notesur100>sur 100</notesur100>
 		<presgame1>C'est un Jeu de type</presgame1>
 		<presgame2>développé par</presgame2>
 		<presgame3>jouable sur</presgame3>
@@ -91,7 +92,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetstarboxloop>FanartStar Boxart (boucle)</presetstarboxloop>
+		<presetstarboxloop>FanartStar Boxart (Navigation plus rapide)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -135,7 +136,6 @@
 		<notetrophee>Trophée</notetrophee>
 		<notefantome>Fantôme</notefantome>
 		<notecrane>Crâne</notecrane>
-		<notesur100>Sur 100</notesur100>
 		<notepourcent>En %</notepourcent>
 		<wheelclic>Clic façon Hyperspin</wheelclic>
 		<bulle>Bulle</bulle>

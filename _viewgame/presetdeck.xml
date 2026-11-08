@@ -18,7 +18,7 @@
 	${bigart_taille_gauche_2d} : valeur : 1.73442 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
 	${bigart_taille_gauche_3d} : valeur : 1.46020 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
 	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
-	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
 	${deckgrisinfo} : Big Art : couleur grise des infos (définie dans ce fichier)
 	${deckor} : Big Art : couleur dorée (note, favori) (définie dans ce fichier)
 	${deckpolice} : Big Art : police des textes (définie dans ce fichier)
@@ -144,28 +144,6 @@
 							<outerShadowColor ifSubset="deckselection:centre">00000073</outerShadowColor>
 							<saturation>1</saturation>
 							<enabled ifSubset="contourboite:non">false</enabled>
-							<caseType ifSubset="typeboite:t0">0</caseType>
-							<caseType ifSubset="typeboite:t1">1</caseType>
-							<caseType ifSubset="typeboite:t2">2</caseType>
-							<caseType ifSubset="typeboite:t3">3</caseType>
-							<caseType ifSubset="typeboite:t4">4</caseType>
-							<caseType ifSubset="typeboite:t5">5</caseType>
-							<caseType ifSubset="typeboite:t6">6</caseType>
-							<caseType ifSubset="typeboite:t7">7</caseType>
-							<caseType ifSubset="typeboite:t8">8</caseType>
-							<caseType ifSubset="typeboite:t9">9</caseType>
-							<caseType ifSubset="typeboite:t10">10</caseType>
-							<caseType ifSubset="typeboite:t11">11</caseType>
-							<caseType ifSubset="typeboite:t12">12</caseType>
-							<caseType ifSubset="typeboite:t13">13</caseType>
-							<caseType ifSubset="typeboite:t14">14</caseType>
-							<caseType ifSubset="typeboite:t15">15</caseType>
-							<caseType ifSubset="typeboite:t16">16</caseType>
-							<caseType ifSubset="typeboite:t17">17</caseType>
-							<caseType ifSubset="typeboite:t18">18</caseType>
-							<caseType ifSubset="typeboite:t19">19</caseType>
-							<caseType ifSubset="typeboite:t20">20</caseType>
-							<caseType ifSubset="typeboite:t21">21</caseType>
 							<haloEteint>1</haloEteint>
 							<refletPilote>1</refletPilote>
 							<refletPhase>0</refletPhase>
@@ -256,28 +234,6 @@
 							<outerShadowColor ifSubset="deckselection:centre">00000073</outerShadowColor>
 							<saturation>1</saturation>
 							<enabled ifSubset="contourboite:non">false</enabled>
-							<caseType ifSubset="typeboite:t0">0</caseType>
-							<caseType ifSubset="typeboite:t1">1</caseType>
-							<caseType ifSubset="typeboite:t2">2</caseType>
-							<caseType ifSubset="typeboite:t3">3</caseType>
-							<caseType ifSubset="typeboite:t4">4</caseType>
-							<caseType ifSubset="typeboite:t5">5</caseType>
-							<caseType ifSubset="typeboite:t6">6</caseType>
-							<caseType ifSubset="typeboite:t7">7</caseType>
-							<caseType ifSubset="typeboite:t8">8</caseType>
-							<caseType ifSubset="typeboite:t9">9</caseType>
-							<caseType ifSubset="typeboite:t10">10</caseType>
-							<caseType ifSubset="typeboite:t11">11</caseType>
-							<caseType ifSubset="typeboite:t12">12</caseType>
-							<caseType ifSubset="typeboite:t13">13</caseType>
-							<caseType ifSubset="typeboite:t14">14</caseType>
-							<caseType ifSubset="typeboite:t15">15</caseType>
-							<caseType ifSubset="typeboite:t16">16</caseType>
-							<caseType ifSubset="typeboite:t17">17</caseType>
-							<caseType ifSubset="typeboite:t18">18</caseType>
-							<caseType ifSubset="typeboite:t19">19</caseType>
-							<caseType ifSubset="typeboite:t20">20</caseType>
-							<caseType ifSubset="typeboite:t21">21</caseType>
 							<haloEteint>1</haloEteint>
 							<refletPilote>1</refletPilote>
 							<refletPhase>0</refletPhase>
@@ -355,28 +311,6 @@
 							<outerShadowColor ifSubset="deckselection:centre">00000073</outerShadowColor>
 							<saturation>1</saturation>
 							<enabled ifSubset="contourboite:non">false</enabled>
-							<caseType ifSubset="typeboite:t0">0</caseType>
-							<caseType ifSubset="typeboite:t1">1</caseType>
-							<caseType ifSubset="typeboite:t2">2</caseType>
-							<caseType ifSubset="typeboite:t3">3</caseType>
-							<caseType ifSubset="typeboite:t4">4</caseType>
-							<caseType ifSubset="typeboite:t5">5</caseType>
-							<caseType ifSubset="typeboite:t6">6</caseType>
-							<caseType ifSubset="typeboite:t7">7</caseType>
-							<caseType ifSubset="typeboite:t8">8</caseType>
-							<caseType ifSubset="typeboite:t9">9</caseType>
-							<caseType ifSubset="typeboite:t10">10</caseType>
-							<caseType ifSubset="typeboite:t11">11</caseType>
-							<caseType ifSubset="typeboite:t12">12</caseType>
-							<caseType ifSubset="typeboite:t13">13</caseType>
-							<caseType ifSubset="typeboite:t14">14</caseType>
-							<caseType ifSubset="typeboite:t15">15</caseType>
-							<caseType ifSubset="typeboite:t16">16</caseType>
-							<caseType ifSubset="typeboite:t17">17</caseType>
-							<caseType ifSubset="typeboite:t18">18</caseType>
-							<caseType ifSubset="typeboite:t19">19</caseType>
-							<caseType ifSubset="typeboite:t20">20</caseType>
-							<caseType ifSubset="typeboite:t21">21</caseType>
 						</shader>
 						<storyboard event="activate" ifSubset="deckselection:centre">
 							<animation property="opacity" from="1" to="0" duration="0"/>
@@ -405,28 +339,6 @@
 							<outerShadowColor>00000001</outerShadowColor>
 							<saturation>1</saturation>
 							<enabled ifSubset="contourboite:non">false</enabled>
-							<caseType ifSubset="typeboite:t0">0</caseType>
-							<caseType ifSubset="typeboite:t1">1</caseType>
-							<caseType ifSubset="typeboite:t2">2</caseType>
-							<caseType ifSubset="typeboite:t3">3</caseType>
-							<caseType ifSubset="typeboite:t4">4</caseType>
-							<caseType ifSubset="typeboite:t5">5</caseType>
-							<caseType ifSubset="typeboite:t6">6</caseType>
-							<caseType ifSubset="typeboite:t7">7</caseType>
-							<caseType ifSubset="typeboite:t8">8</caseType>
-							<caseType ifSubset="typeboite:t9">9</caseType>
-							<caseType ifSubset="typeboite:t10">10</caseType>
-							<caseType ifSubset="typeboite:t11">11</caseType>
-							<caseType ifSubset="typeboite:t12">12</caseType>
-							<caseType ifSubset="typeboite:t13">13</caseType>
-							<caseType ifSubset="typeboite:t14">14</caseType>
-							<caseType ifSubset="typeboite:t15">15</caseType>
-							<caseType ifSubset="typeboite:t16">16</caseType>
-							<caseType ifSubset="typeboite:t17">17</caseType>
-							<caseType ifSubset="typeboite:t18">18</caseType>
-							<caseType ifSubset="typeboite:t19">19</caseType>
-							<caseType ifSubset="typeboite:t20">20</caseType>
-							<caseType ifSubset="typeboite:t21">21</caseType>
 							<haloEteint>0</haloEteint>
 							<refletPilote>1</refletPilote>
 							<refletPhase>0</refletPhase>

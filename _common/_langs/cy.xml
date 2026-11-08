@@ -18,6 +18,7 @@
 		<nogametime>Heb ei chwarae erioed</nogametime>
 		<noplayerdata>Anhysbys</noplayerdata>
 		<noratings>Dim sgôr</noratings>
+		<notesur100>o 100</notesur100>
 		<presgame1>Mae hon yn gêm o fath</presgame1>
 		<presgame2>datblygwyd gan</presgame2>
 		<presgame3>chwaraeadwy ar</presgame3>
@@ -91,7 +92,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetstarboxloop>FanartStar Boxart (dolen)</presetstarboxloop>
+		<presetstarboxloop>FanartStar Boxart (Llywio cyflymach)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -135,7 +136,6 @@
 		<notetrophee>Tlws</notetrophee>
 		<notefantome>Ysbryd</notefantome>
 		<notecrane>Penglog</notecrane>
-		<notesur100>Allan o 100</notesur100>
 		<notepourcent>Fel %</notepourcent>
 		<wheelclic>Clic arddull Hyperspin</wheelclic>
 		<bulle>Swigen</bulle>

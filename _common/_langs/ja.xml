@@ -18,6 +18,7 @@
 		<nogametime>未プレイ</nogametime>
 		<noplayerdata>不明</noplayerdata>
 		<noratings>評価なし</noratings>
+		<notesur100>/ 100</notesur100>
 		<presgame1>ジャンル：</presgame1>
 		<presgame2>開発：</presgame2>
 		<presgame3>対応機種：</presgame3>
@@ -91,7 +92,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetstarboxloop>FanartStar Boxart (ループ)</presetstarboxloop>
+		<presetstarboxloop>FanartStar Boxart (高速ナビゲーション)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -135,7 +136,6 @@
 		<notetrophee>トロフィー</notetrophee>
 		<notefantome>おばけ</notefantome>
 		<notecrane>ドクロ</notecrane>
-		<notesur100>100点満点</notesur100>
 		<notepourcent>％表示</notepourcent>
 		<wheelclic>Hyperspin風クリック</wheelclic>
 		<bulle>泡</bulle>

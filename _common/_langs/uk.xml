@@ -18,6 +18,7 @@
 		<nogametime>Жодного разу не грали</nogametime>
 		<noplayerdata>Невідомо</noplayerdata>
 		<noratings>Немає оцінки</noratings>
+		<notesur100>із 100</notesur100>
 		<presgame1>Це гра жанру</presgame1>
 		<presgame2>розробник</presgame2>
 		<presgame3>платформа</presgame3>
@@ -91,7 +92,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetstarboxloop>FanartStar Boxart (цикл)</presetstarboxloop>
+		<presetstarboxloop>FanartStar Boxart (Швидша навігація)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -135,7 +136,6 @@
 		<notetrophee>Кубок</notetrophee>
 		<notefantome>Привид</notefantome>
 		<notecrane>Череп</notecrane>
-		<notesur100>Зі 100</notesur100>
 		<notepourcent>У %</notepourcent>
 		<wheelclic>Клацання в стилі Hyperspin</wheelclic>
 		<bulle>Бульбашка</bulle>

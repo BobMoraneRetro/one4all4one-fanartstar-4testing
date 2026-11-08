@@ -18,6 +18,7 @@
 		<nogametime>لم تُلعب قط</nogametime>
 		<noplayerdata>غير معروف</noplayerdata>
 		<noratings>لا يوجد تقييم</noratings>
+		<notesur100>/ 100</notesur100>
 		<presgame1>هذه لعبة من نوع</presgame1>
 		<presgame2>من تطوير</presgame2>
 		<presgame3>قابلة للعب على</presgame3>
@@ -91,7 +92,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetstarboxloop>FanartStar Boxart (حلقة)</presetstarboxloop>
+		<presetstarboxloop>FanartStar Boxart (تنقل أسرع)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -135,7 +136,6 @@
 		<notetrophee>كأس</notetrophee>
 		<notefantome>شبح</notefantome>
 		<notecrane>جمجمة</notecrane>
-		<notesur100>من 100</notesur100>
 		<notepourcent>بالنسبة المئوية</notepourcent>
 		<wheelclic>نقرة بأسلوب Hyperspin</wheelclic>
 		<bulle>فقاعة</bulle>

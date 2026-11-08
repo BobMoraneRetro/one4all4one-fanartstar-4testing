@@ -18,6 +18,7 @@
 		<nogametime>Δεν παίχτηκε ποτέ</nogametime>
 		<noplayerdata>Άγνωστο</noplayerdata>
 		<noratings>Χωρίς βαθμολογία</noratings>
+		<notesur100>στα 100</notesur100>
 		<presgame1>Αυτό είναι ένα παιχνίδι τύπου</presgame1>
 		<presgame2>αναπτύχθηκε από</presgame2>
 		<presgame3>παίζεται σε</presgame3>
@@ -91,7 +92,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetstarboxloop>FanartStar Boxart (βρόχος)</presetstarboxloop>
+		<presetstarboxloop>FanartStar Boxart (Ταχύτερη πλοήγηση)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -135,7 +136,6 @@
 		<notetrophee>Τρόπαιο</notetrophee>
 		<notefantome>Φάντασμα</notefantome>
 		<notecrane>Κρανίο</notecrane>
-		<notesur100>Στα 100</notesur100>
 		<notepourcent>Σε %</notepourcent>
 		<wheelclic>Κλικ σε στυλ Hyperspin</wheelclic>
 		<bulle>Φούσκα</bulle>

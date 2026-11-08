@@ -18,6 +18,7 @@
 		<nogametime>Aldri spela</nogametime>
 		<noplayerdata>Ukjend</noplayerdata>
 		<noratings>Inga vurdering</noratings>
+		<notesur100>av 100</notesur100>
 		<presgame1>Dette er eit spel av typen</presgame1>
 		<presgame2>utvikla av</presgame2>
 		<presgame3>spelbart på</presgame3>
@@ -91,7 +92,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetstarboxloop>FanartStar Boxart (løkke)</presetstarboxloop>
+		<presetstarboxloop>FanartStar Boxart (Raskare navigering)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -135,7 +136,6 @@
 		<notetrophee>Pokal</notetrophee>
 		<notefantome>Spøkjelse</notefantome>
 		<notecrane>Hovudskalle</notecrane>
-		<notesur100>Av 100</notesur100>
 		<notepourcent>I %</notepourcent>
 		<wheelclic>Klikk i Hyperspin-stil</wheelclic>
 		<bulle>Boble</bulle>

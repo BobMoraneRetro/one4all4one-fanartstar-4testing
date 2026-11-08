@@ -18,6 +18,7 @@
 		<nogametime>Ei koskaan pelattu</nogametime>
 		<noplayerdata>Tuntematon</noplayerdata>
 		<noratings>Ei arvosanaa</noratings>
+		<notesur100>/ 100</notesur100>
 		<presgame1>Tämä on peli tyyppiä</presgame1>
 		<presgame2>kehittäjä</presgame2>
 		<presgame3>pelattavissa alustalla</presgame3>
@@ -91,7 +92,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetstarboxloop>FanartStar Boxart (silmukka)</presetstarboxloop>
+		<presetstarboxloop>FanartStar Boxart (Nopeampi selaus)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -135,7 +136,6 @@
 		<notetrophee>Pokaali</notetrophee>
 		<notefantome>Haamu</notefantome>
 		<notecrane>Pääkallo</notecrane>
-		<notesur100>100:sta</notesur100>
 		<notepourcent>Prosentteina</notepourcent>
 		<wheelclic>Hyperspin-tyylinen napsahdus</wheelclic>
 		<bulle>Kupla</bulle>

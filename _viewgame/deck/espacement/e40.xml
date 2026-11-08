@@ -7,7 +7,7 @@
 	${spotlight_position} ${spotlight_taille} ${spotlight_ecart} ${spotlight_marges} ${spotlight_colonnes} : Spotlight (presetspotlight), géométrie de la grille
 	${boxart_nb_boites_2d|3d} ${boxart_ecart_selection_2d|3d} : Boxart (presetstarbox), nombre de boîtes du carrousel et écart autour de la boîte sélectionnée
 	${boxart_nb_boites_2d_horizontales} : vue RFE Retrofist Nostalgia, boîtes horizontales non pivotées (snes, n64...)
-	${boxart_boucle_<2d|3d>_<position|position_aide|taille|ecart|colonnes>} : Boxart (boucle) (presetstarboxloop), grille qui reproduit la roue de Boxart
+	${boxart_boucle_<2d|3d>_<position|position_aide|taille|ecart|colonnes>} : Boxart (Navigation plus rapide) (presetstarboxloop), grille qui reproduit la roue de Boxart
 	Explications : LISEZMOI.txt de ce dossier.
 -->
 <theme>
@@ -107,15 +107,15 @@
 		<boxart_nb_boites_3d>16</boxart_nb_boites_3d>
 		<boxart_ecart_selection_3d>0.00</boxart_ecart_selection_3d>
 		<boxart_nb_boites_2d_horizontales>6.8</boxart_nb_boites_2d_horizontales>
-		<boxart_boucle_2d_position>-0.97604 0</boxart_boucle_2d_position>
-		<boxart_boucle_2d_position_aide>-0.97604 -0.02</boxart_boucle_2d_position_aide>
-		<boxart_boucle_2d_taille>2.69458 1.1</boxart_boucle_2d_taille>
-		<boxart_boucle_2d_ecart>-0.60014 0</boxart_boucle_2d_ecart>
-		<boxart_boucle_2d_colonnes>13 1</boxart_boucle_2d_colonnes>
-		<boxart_boucle_3d_position>-0.91563 0</boxart_boucle_3d_position>
-		<boxart_boucle_3d_position_aide>-0.91563 -0.02</boxart_boucle_3d_position_aide>
-		<boxart_boucle_3d_taille>2.57375 1.1</boxart_boucle_3d_taille>
-		<boxart_boucle_3d_ecart>-0.67063 0</boxart_boucle_3d_ecart>
-		<boxart_boucle_3d_colonnes>21 1</boxart_boucle_3d_colonnes>
+		<boxart_boucle_2d_position>-1.32639 0</boxart_boucle_2d_position>
+		<boxart_boucle_2d_position_aide>-1.32639 -0.02</boxart_boucle_2d_position_aide>
+		<boxart_boucle_2d_taille>3.10278 1.1</boxart_boucle_2d_taille>
+		<boxart_boucle_2d_ecart>-0.36389 0</boxart_boucle_2d_ecart>
+		<boxart_boucle_2d_colonnes>17 1</boxart_boucle_2d_colonnes>
+		<boxart_boucle_3d_position>-1.21562 0</boxart_boucle_3d_position>
+		<boxart_boucle_3d_position_aide>-1.21562 -0.02</boxart_boucle_3d_position_aide>
+		<boxart_boucle_3d_taille>2.88125 1.1</boxart_boucle_3d_taille>
+		<boxart_boucle_3d_ecart>-0.43437 0</boxart_boucle_3d_ecart>
+		<boxart_boucle_3d_colonnes>27 1</boxart_boucle_3d_colonnes>
 	</variables>
 </theme>

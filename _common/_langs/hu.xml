@@ -18,6 +18,7 @@
 		<nogametime>Soha nem játszott</nogametime>
 		<noplayerdata>Ismeretlen</noplayerdata>
 		<noratings>Nincs értékelés</noratings>
+		<notesur100>/ 100</notesur100>
 		<presgame1>Ez egy ilyen típusú játék:</presgame1>
 		<presgame2>fejlesztő:</presgame2>
 		<presgame3>játszható ezen:</presgame3>
@@ -91,7 +92,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetstarboxloop>FanartStar Boxart (hurok)</presetstarboxloop>
+		<presetstarboxloop>FanartStar Boxart (Gyorsabb navigáció)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -135,7 +136,6 @@
 		<notetrophee>Trófea</notetrophee>
 		<notefantome>Szellem</notefantome>
 		<notecrane>Koponya</notecrane>
-		<notesur100>100-ból</notesur100>
 		<notepourcent>%-ban</notepourcent>
 		<wheelclic>Hyperspin stílusú kattanás</wheelclic>
 		<bulle>Buborék</bulle>

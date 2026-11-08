@@ -18,6 +18,7 @@
 		<nogametime>Pas jamai jogat</nogametime>
 		<noplayerdata>Desconegut</noplayerdata>
 		<noratings>Pas de nòta</noratings>
+		<notesur100>sus 100</notesur100>
 		<presgame1>Es un jòc de tipe</presgame1>
 		<presgame2>desvolopat per</presgame2>
 		<presgame3>jogable sus</presgame3>
@@ -91,7 +92,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetstarboxloop>FanartStar Boxart (bocla)</presetstarboxloop>
+		<presetstarboxloop>FanartStar Boxart (Navigacion mai rapida)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -135,7 +136,6 @@
 		<notetrophee>Trofèu</notetrophee>
 		<notefantome>Fantauma</notefantome>
 		<notecrane>Cran</notecrane>
-		<notesur100>Sus 100</notesur100>
 		<notepourcent>En %</notepourcent>
 		<wheelclic>Clic a la faiçon Hyperspin</wheelclic>
 		<bulle>Bomborla</bulle>

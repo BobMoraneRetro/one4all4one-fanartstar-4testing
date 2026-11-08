@@ -18,6 +18,7 @@
 		<nogametime>플레이한 적 없음</nogametime>
 		<noplayerdata>알 수 없음</noplayerdata>
 		<noratings>평점 없음</noratings>
+		<notesur100>/ 100</notesur100>
 		<presgame1>이 게임의 장르:</presgame1>
 		<presgame2>개발사:</presgame2>
 		<presgame3>플레이 가능 기종:</presgame3>
@@ -91,7 +92,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetstarboxloop>FanartStar Boxart (루프)</presetstarboxloop>
+		<presetstarboxloop>FanartStar Boxart (더 빠른 탐색)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -135,7 +136,6 @@
 		<notetrophee>트로피</notetrophee>
 		<notefantome>유령</notefantome>
 		<notecrane>해골</notecrane>
-		<notesur100>100점 만점</notesur100>
 		<notepourcent>% 표시</notepourcent>
 		<wheelclic>Hyperspin 스타일 클릭</wheelclic>
 		<bulle>거품</bulle>

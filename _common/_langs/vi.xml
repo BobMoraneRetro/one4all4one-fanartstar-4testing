@@ -18,6 +18,7 @@
 		<nogametime>Chưa từng chơi</nogametime>
 		<noplayerdata>Không rõ</noplayerdata>
 		<noratings>Chưa có điểm</noratings>
+		<notesur100>/ 100</notesur100>
 		<presgame1>Đây là trò chơi thể loại</presgame1>
 		<presgame2>phát triển bởi</presgame2>
 		<presgame3>chơi được trên</presgame3>
@@ -91,7 +92,7 @@
 		<presetstar169>FanartStar 16/9</presetstar169>
 		<presetstar43>FanartStar 4/3</presetstar43>
 		<presetstarbox>FanartStar Boxart</presetstarbox>
-		<presetstarboxloop>FanartStar Boxart (vòng lặp)</presetstarboxloop>
+		<presetstarboxloop>FanartStar Boxart (Điều hướng nhanh hơn)</presetstarboxloop>
 		<presettraviolta_alt>RFE traviolta</presettraviolta_alt>
 		<presetdeck>Fanartstar Big Art</presetdeck>
 		<presetspotlight>Fanartstar Spotlight</presetspotlight>
@@ -135,7 +136,6 @@
 		<notetrophee>Cúp</notetrophee>
 		<notefantome>Bóng ma</notefantome>
 		<notecrane>Đầu lâu</notecrane>
-		<notesur100>Trên 100</notesur100>
 		<notepourcent>Theo %</notepourcent>
 		<wheelclic>Tiếng click kiểu Hyperspin</wheelclic>
 		<bulle>Bong bóng</bulle>

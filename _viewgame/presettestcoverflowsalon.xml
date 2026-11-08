@@ -2,6 +2,7 @@
 <!--
 	Variables utilisées dans ce fichier :
 	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiercouleurjeu} : valeur : 0 (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
 	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
 	${cfr_ratio} : vues de test Coverflow : format (largeur / hauteur) de la boîte de remplacement d un jeu sans jaquette (fanart du système), plus carré pour les systèmes à CD comme dans la vue Boxart (définie dans ce fichier)
 	${cfs_angle} : vue de test Coverflow RFE : angle des boîtes de côté, en degrés (définie dans ce fichier)
@@ -334,6 +335,7 @@
 							<path>${themePath}/_common/shaders/boite_coverflow_boitier.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -365,6 +367,7 @@
 							<path>${themePath}/_common/shaders/boite_coverflow_boitier.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>

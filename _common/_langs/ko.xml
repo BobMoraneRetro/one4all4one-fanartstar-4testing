@@ -19,6 +19,9 @@
 		<noplayerdata>알 수 없음</noplayerdata>
 		<noratings>평점 없음</noratings>
 		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>게임 - 게임 이름</opt_nomjeu>
+		<nomjeucomplet>전체</nomjeucomplet>
+		<nomjeucourt>괄호 없이</nomjeucourt>
 		<presgame1>이 게임의 장르:</presgame1>
 		<presgame2>개발사:</presgame2>
 		<presgame3>플레이 가능 기종:</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>언어 :</langlabel>
 		<gametimelabel>플레이 시간 :</gametimelabel>
 		<lastgamelabel>마지막 플레이:</lastgamelabel>
-		<logosimple>단순 로고 (전체 + 지역)</logosimple>
 		<viewbasicgrid>Basic: 기본 그리드 보기</viewbasicgrid>
 		<jeux>게임</jeux>
 		<longselect>"select" 길게 누르기</longselect>
 		<favuniquement>즐겨찾기만</favuniquement>
 		<tslesjeux>모든 게임</tslesjeux>
-		<tumasbienlu>환영 및 크레딧</tumasbienlu>
 		<fanartstarsyst>클래식</fanartstarsyst>
 		<fanartmodern>모던 1 (이동 경로 미호환)</fanartmodern>
 		<fanartmodern2>모던 2 (이동 경로 호환)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>이전 폴더로 돌아가기</retourdossier>
+		<ra_moncompte>내 계정</ra_moncompte>
+		<ra_succesjeu>게임 업적</ra_succesjeu>
+		<opt_raaffichage>게임 - RetroAchievements (외부 도구)</opt_raaffichage>
+		<raaffichagepermanent>항상 표시</raaffichagepermanent>
+		<raaffichagetemporaire>몇 초간</raaffichagetemporaire>
 		<noteetoile>별</noteetoile>
 		<notecoeur>하트</notecoeur>
 		<notemanette>게임패드</notemanette>

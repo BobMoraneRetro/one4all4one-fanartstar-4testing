@@ -19,6 +19,9 @@
 		<noplayerdata>Bilinmiyor</noplayerdata>
 		<noratings>Puan yok</noratings>
 		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>OYUNLAR - Oyun adı</opt_nomjeu>
+		<nomjeucomplet>Tam</nomjeucomplet>
+		<nomjeucourt>Parantezsiz</nomjeucourt>
 		<presgame1>Bu oyunun türü</presgame1>
 		<presgame2>geliştiren</presgame2>
 		<presgame3>platform</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Diller :</langlabel>
 		<gametimelabel>Oynama süresi :</gametimelabel>
 		<lastgamelabel>Son oynama:</lastgamelabel>
-		<logosimple>Basit logo (Tam + Bölge)</logosimple>
 		<viewbasicgrid>Basic: Temel ızgara görünümü</viewbasicgrid>
 		<jeux>oyun</jeux>
 		<longselect>"select"e uzun basma</longselect>
 		<favuniquement>Yalnızca favoriler</favuniquement>
 		<tslesjeux>Tüm oyunlar</tslesjeux>
-		<tumasbienlu>Karşılama ve teşekkürler</tumasbienlu>
 		<fanartstarsyst>Klasik</fanartstarsyst>
 		<fanartmodern>Modern 1 (içerik yolu ile uyumsuz)</fanartmodern>
 		<fanartmodern2>Modern 2 (içerik yolu ile uyumlu)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Önceki klasöre dön</retourdossier>
+		<ra_moncompte>Hesabım</ra_moncompte>
+		<ra_succesjeu>Oyun başarımları</ra_succesjeu>
+		<opt_raaffichage>OYUNLAR - RetroAchievements (harici araç)</opt_raaffichage>
+		<raaffichagepermanent>Sürekli görünür</raaffichagepermanent>
+		<raaffichagetemporaire>Birkaç saniye</raaffichagetemporaire>
 		<noteetoile>Yıldız</noteetoile>
 		<notecoeur>Kalp</notecoeur>
 		<notemanette>Oyun kolu</notemanette>

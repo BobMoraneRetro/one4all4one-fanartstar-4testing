@@ -4,7 +4,6 @@
 	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${salon_ecran2} : vue Salon : true = 2e écran (2 consoles reliées, ex. gbc2players), même vidéo, capture, couleur et calque que le 1er ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _gamemedia/_salon/gbc2players.xml, _viewgame/presetsalon.xml)
 	${salon_video_etiree} : vue Salon : true = vidéo étirée à la taille de l écran de la TV (size), false = proportions gardées (maxSize) ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (45 fichiers))
-	${sv_capturegauche_visible} : Spotlight : réglage « capturegauche_visible » selon l option vidéo (définie dans _viewgame/presetspotlight.xml ; valeur selon l option « SPOTLIGHT - Vidéo »)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${presetdeck}, ${presetsalon}, ${presetshowbig}, ${presetshowsmall}, ${presetspeedbull}, ${presetspotlight}, ${presetsquare}, ${presetstarbox}, ${presetstarboxloop}
 -->
 <theme>
@@ -125,9 +124,6 @@
 			<delay>0</delay>
 			<effect>none</effect>
 		</video>
-		<image name="spot_capturegauche" extra="true">
-			<visible>${sv_capturegauche_visible} &amp;&amp; !(${media_video_exists})</visible>
-		</image>
 	</customView>
 	<customView name="presetsquare" displayName="${presetsquare}" inherits="grid">
 		<video name="grid_video" extra="true">

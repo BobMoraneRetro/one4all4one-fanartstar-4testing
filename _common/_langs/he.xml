@@ -19,6 +19,9 @@
 		<noplayerdata>לא ידוע</noplayerdata>
 		<noratings>אין דירוג</noratings>
 		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>משחקים - שם המשחק</opt_nomjeu>
+		<nomjeucomplet>מלא</nomjeucomplet>
+		<nomjeucourt>ללא סוגריים</nomjeucourt>
 		<presgame1>זהו משחק מסוג</presgame1>
 		<presgame2>פותח על ידי</presgame2>
 		<presgame3>ניתן לשחק ב-</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>שפות :</langlabel>
 		<gametimelabel>זמן משחק :</gametimelabel>
 		<lastgamelabel>שוחק לאחרונה:</lastgamelabel>
-		<logosimple>לוגו פשוט (מלא + אזור)</logosimple>
 		<viewbasicgrid>Basic: תצוגת רשת בסיסית</viewbasicgrid>
 		<jeux>משחקים</jeux>
 		<longselect>לחיצה ארוכה על "select"</longselect>
 		<favuniquement>מועדפים בלבד</favuniquement>
 		<tslesjeux>כל המשחקים</tslesjeux>
-		<tumasbienlu>ברוכים הבאים ותודות</tumasbienlu>
 		<fanartstarsyst>קלאסי</fanartstarsyst>
 		<fanartmodern>מודרני 1 (לא תואם לפירורי לחם)</fanartmodern>
 		<fanartmodern2>מודרני 2 (תואם לפירורי לחם)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>חזרה לתיקייה הקודמת</retourdossier>
+		<ra_moncompte>החשבון שלי</ra_moncompte>
+		<ra_succesjeu>הישגי המשחק</ra_succesjeu>
+		<opt_raaffichage>משחקים - RetroAchievements (כלי חיצוני)</opt_raaffichage>
+		<raaffichagepermanent>תצוגה קבועה</raaffichagepermanent>
+		<raaffichagetemporaire>כמה שניות</raaffichagetemporaire>
 		<noteetoile>כוכב</noteetoile>
 		<notecoeur>לב</notecoeur>
 		<notemanette>בקר</notemanette>

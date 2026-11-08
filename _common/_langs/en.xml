@@ -19,6 +19,9 @@
 		<noplayerdata>Unknown</noplayerdata>
 		<noratings>No rating</noratings>
 		<notesur100>of 100</notesur100>
+		<opt_nomjeu>GAMES - Game name</opt_nomjeu>
+		<nomjeucomplet>Full</nomjeucomplet>
+		<nomjeucourt>Without parentheses</nomjeucourt>
 		<presgame1>This is a game of type</presgame1>
 		<presgame2>developed by</presgame2>
 		<presgame3>playable on</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Languages :</langlabel>
 		<gametimelabel>Play time :</gametimelabel>
 		<lastgamelabel>Last played :</lastgamelabel>
-		<logosimple>Simple logo (Full + Region)</logosimple>
 		<viewbasicgrid>Basic : Simple grid view</viewbasicgrid>
 		<jeux>games</jeux>
 		<longselect>Long press on "select"</longselect>
 		<favuniquement>Favorites only</favuniquement>
 		<tslesjeux>All games</tslesjeux>
-		<tumasbienlu>Home and Credits</tumasbienlu>
 		<fanartstarsyst>Classic</fanartstarsyst>
 		<fanartmodern>Modern 1 (breadcrumb incompatible)</fanartmodern>
 		<fanartmodern2>Modern 2 (breadcrumb compatible)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Back to previous folder</retourdossier>
+		<ra_moncompte>My account</ra_moncompte>
+		<ra_succesjeu>Game achievements</ra_succesjeu>
+		<opt_raaffichage>GAMES - RetroAchievements (external tool)</opt_raaffichage>
+		<raaffichagepermanent>Always visible</raaffichagepermanent>
+		<raaffichagetemporaire>A few seconds</raaffichagetemporaire>
 		<noteetoile>Star</noteetoile>
 		<notecoeur>Heart</notecoeur>
 		<notemanette>Gamepad</notemanette>

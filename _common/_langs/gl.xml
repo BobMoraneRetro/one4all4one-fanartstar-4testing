@@ -19,6 +19,9 @@
 		<noplayerdata>Descoñecido</noplayerdata>
 		<noratings>Sen nota</noratings>
 		<notesur100>de 100</notesur100>
+		<opt_nomjeu>XOGOS - Nome do xogo</opt_nomjeu>
+		<nomjeucomplet>Completo</nomjeucomplet>
+		<nomjeucourt>Sen parénteses</nomjeucourt>
 		<presgame1>Este é un xogo de tipo</presgame1>
 		<presgame2>desenvolvido por</presgame2>
 		<presgame3>xogable en</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Idiomas :</langlabel>
 		<gametimelabel>Tempo de xogo :</gametimelabel>
 		<lastgamelabel>Última partida:</lastgamelabel>
-		<logosimple>Logo simple (Completo + Rexión)</logosimple>
 		<viewbasicgrid>Basic: Vista de grade básica</viewbasicgrid>
 		<jeux>xogos</jeux>
 		<longselect>Pulsación longa en "select"</longselect>
 		<favuniquement>Só favoritos</favuniquement>
 		<tslesjeux>Todos os xogos</tslesjeux>
-		<tumasbienlu>Benvida e créditos</tumasbienlu>
 		<fanartstarsyst>Clásico</fanartstarsyst>
 		<fanartmodern>Moderno 1 (non compatible co fío de Ariadna)</fanartmodern>
 		<fanartmodern2>Moderno 2 (compatible co fío de Ariadna)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Volver ao cartafol anterior</retourdossier>
+		<ra_moncompte>A miña conta</ra_moncompte>
+		<ra_succesjeu>Logros do xogo</ra_succesjeu>
+		<opt_raaffichage>XOGOS - RetroAchievements (ferramenta externa)</opt_raaffichage>
+		<raaffichagepermanent>Visualización permanente</raaffichagepermanent>
+		<raaffichagetemporaire>Uns segundos</raaffichagetemporaire>
 		<noteetoile>Estrela</noteetoile>
 		<notecoeur>Corazón</notecoeur>
 		<notemanette>Mando</notemanette>

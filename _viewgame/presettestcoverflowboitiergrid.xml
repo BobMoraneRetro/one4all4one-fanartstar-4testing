@@ -2,6 +2,7 @@
 <!--
 	Variables utilisées dans ce fichier :
 	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiercouleurjeu} : valeur : 0 (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
 	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
 	${cf_angle} : vues de test Coverflow : angle des boîtes de côté, en degrés (définie dans ce fichier)
 	${cf_ecart} : vues de test Coverflow : décalage des boîtes de côté vers l extérieur (shader boite_coverflow, en largeur de boîtier DVD) (définie dans ce fichier)
@@ -18,6 +19,7 @@
 	${media_marquee_missing} : vrai si le média « marquee » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${titrejeu} : valeur : {game:name} (définie dans _viewgameoption/gl-common/options_nom.xml ; valeur selon l option « JEUX - Nom du jeu »)
 -->
 <theme>
 	<formatVersion>7</formatVersion>
@@ -82,6 +84,7 @@
 							<path>${themePath}/_common/shaders/boite_coverflow_boitier.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -111,6 +114,7 @@
 							<path>${themePath}/_common/shaders/boite_coverflow_boitier.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -154,7 +158,7 @@
 					<text name="nomjeu">
 						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing} &amp;&amp; ${media_marquee_missing}</visible>
 						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing} &amp;&amp; ${media_marquee_missing}</visible>
-						<text>{game:name}</text>
+						<text>${titrejeu}</text>
 						<pos>0.5 0.5</pos>
 						<origin>0.5 0.5</origin>
 						<size>1 0.6</size>
@@ -204,7 +208,7 @@
 			<visible>false</visible>
 		</image>
 		<text name="cf_titre" extra="true">
-			<text>{game:name}</text>
+			<text>${titrejeu}</text>
 			<pos>0.5 0.86</pos>
 			<origin>0.5 0.5</origin>
 			<size>0.5 0.05</size>

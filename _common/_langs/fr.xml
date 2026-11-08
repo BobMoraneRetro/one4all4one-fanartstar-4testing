@@ -19,6 +19,9 @@
 		<noplayerdata>Inconnu</noplayerdata>
 		<noratings>Pas de note</noratings>
 		<notesur100>sur 100</notesur100>
+		<opt_nomjeu>JEUX - Nom du jeu</opt_nomjeu>
+		<nomjeucomplet>Complet</nomjeucomplet>
+		<nomjeucourt>Sans les parenthèses</nomjeucourt>
 		<presgame1>C'est un Jeu de type</presgame1>
 		<presgame2>développé par</presgame2>
 		<presgame3>jouable sur</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Langues :</langlabel>
 		<gametimelabel>Temps de jeu :</gametimelabel>
 		<lastgamelabel>Dernière partie :</lastgamelabel>
-		<logosimple>Logo simple (Complet + Région)</logosimple>
 		<viewbasicgrid>Basic : Vue grille basique</viewbasicgrid>
 		<jeux>jeux</jeux>
 		<longselect>Appuie long sur "select"</longselect>
 		<favuniquement>Favoris uniquement</favuniquement>
 		<tslesjeux>Tous les jeux</tslesjeux>
-		<tumasbienlu>Accueil et Crédits</tumasbienlu>
 		<fanartstarsyst>Classique</fanartstarsyst>
 		<fanartmodern>Modern 1 (non compatible fil d'arianne)</fanartmodern>
 		<fanartmodern2>Modern 2 (compatible avec fil d'arianne)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>Boîtier blanc chromé</boxtype20>
 		<boxtype21>Boîtier blanc chromé sans reflet</boxtype21>
 		<retourdossier>Retour au dossier précédent</retourdossier>
+		<ra_moncompte>Mon compte</ra_moncompte>
+		<ra_succesjeu>Succès du jeu</ra_succesjeu>
+		<opt_raaffichage>JEUX - RetroAchievements (outil externe)</opt_raaffichage>
+		<raaffichagepermanent>Affichage permanent</raaffichagepermanent>
+		<raaffichagetemporaire>Quelques secondes</raaffichagetemporaire>
 		<noteetoile>Étoile</noteetoile>
 		<notecoeur>Cœur</notecoeur>
 		<notemanette>Manette</notemanette>

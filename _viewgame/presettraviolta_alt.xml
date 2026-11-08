@@ -19,6 +19,7 @@
 	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${noteicone} : icône de notation (étoile, cœur, manette...) (définie dans _viewgameoption/gl-common/options_note.xml ; valeur selon l option « JEUX - Icône de notation »)
 	${path_syst_logo} : dossier des logos des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
+	${titrejeu} : valeur : {game:name} (définie dans _viewgameoption/gl-common/options_nom.xml ; valeur selon l option « JEUX - Nom du jeu »)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${lastgamelabel}, ${noplaycount}, ${noplayerdata}, ${notesur100}, ${playcount}, ${playcountone}, ${player}, ${playerss}, ${presettraviolta_alt}, ${retourdossier}
 -->
 <theme>
@@ -143,7 +144,7 @@
 					</image>
 					<text name="ifnologojeux">
 						<visible>${media_marquee_missing}</visible>
-						<text>{game:name}</text>
+						<text>${titrejeu}</text>
 						<fontPath>${themePath}/_viewgame/traviolta/impact.ttf</fontPath>
 						<color>ffffff</color>
 						<alignment>center</alignment>
@@ -787,7 +788,7 @@
 		</image>
 		<text name="gamename" extra="true">
 			<visible>{game:rom} != '..'</visible>
-			<text>{game:name}</text>
+			<text>${titrejeu}</text>
 			<fontPath>${themePath}/_viewgame/traviolta/impact.ttf</fontPath>
 			<color>ffffff</color>
 			<alignment>left</alignment>

@@ -19,6 +19,9 @@
 		<noplayerdata>Ezezaguna</noplayerdata>
 		<noratings>Baloraziorik ez</noratings>
 		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>JOKOAK - Jokoaren izena</opt_nomjeu>
+		<nomjeucomplet>Osoa</nomjeucomplet>
+		<nomjeucourt>Parentesirik gabe</nomjeucourt>
 		<presgame1>Mota honetako jokoa da:</presgame1>
 		<presgame2>garatzailea:</presgame2>
 		<presgame3>plataforma:</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Hizkuntzak :</langlabel>
 		<gametimelabel>Joko-denbora :</gametimelabel>
 		<lastgamelabel>Azken partida:</lastgamelabel>
-		<logosimple>Logo sinplea (Osoa + Eskualdea)</logosimple>
 		<viewbasicgrid>Basic: Sareta ikuspegi oinarrizkoa</viewbasicgrid>
 		<jeux>jokoak</jeux>
 		<longselect>Sakatze luzea "select"-en</longselect>
 		<favuniquement>Gogokoak soilik</favuniquement>
 		<tslesjeux>Joko guztiak</tslesjeux>
-		<tumasbienlu>Ongietorria eta kredituak</tumasbienlu>
 		<fanartstarsyst>Klasikoa</fanartstarsyst>
 		<fanartmodern>Modernoa 1 (ogi-apurren nabigazioarekin bateraezina)</fanartmodern>
 		<fanartmodern2>Modernoa 2 (ogi-apurren nabigazioarekin bateragarria)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Itzuli aurreko karpetara</retourdossier>
+		<ra_moncompte>Nire kontua</ra_moncompte>
+		<ra_succesjeu>Jokoaren lorpenak</ra_succesjeu>
+		<opt_raaffichage>JOKOAK - RetroAchievements (kanpoko tresna)</opt_raaffichage>
+		<raaffichagepermanent>Bistaratze iraunkorra</raaffichagepermanent>
+		<raaffichagetemporaire>Segundo batzuk</raaffichagetemporaire>
 		<noteetoile>Izarra</noteetoile>
 		<notecoeur>Bihotza</notecoeur>
 		<notemanette>Kontrolagailua</notemanette>

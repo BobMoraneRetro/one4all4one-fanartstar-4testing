@@ -19,6 +19,9 @@
 		<noplayerdata>Okänt</noplayerdata>
 		<noratings>Inget betyg</noratings>
 		<notesur100>av 100</notesur100>
+		<opt_nomjeu>SPEL - Spelets namn</opt_nomjeu>
+		<nomjeucomplet>Fullständigt</nomjeucomplet>
+		<nomjeucourt>Utan parenteser</nomjeucourt>
 		<presgame1>Detta är ett spel av typen</presgame1>
 		<presgame2>utvecklat av</presgame2>
 		<presgame3>spelbart på</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Språk :</langlabel>
 		<gametimelabel>Speltid :</gametimelabel>
 		<lastgamelabel>Senast spelat:</lastgamelabel>
-		<logosimple>Enkel logotyp (Fullständig + Region)</logosimple>
 		<viewbasicgrid>Basic: Enkel rutnätsvy</viewbasicgrid>
 		<jeux>spel</jeux>
 		<longselect>Långt tryck på "select"</longselect>
 		<favuniquement>Endast favoriter</favuniquement>
 		<tslesjeux>Alla spel</tslesjeux>
-		<tumasbienlu>Välkommen och tack</tumasbienlu>
 		<fanartstarsyst>Klassisk</fanartstarsyst>
 		<fanartmodern>Modern 1 (ej kompatibel med brödsmulor)</fanartmodern>
 		<fanartmodern2>Modern 2 (kompatibel med brödsmulor)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Tillbaka till föregående mapp</retourdossier>
+		<ra_moncompte>Mitt konto</ra_moncompte>
+		<ra_succesjeu>Spelprestationer</ra_succesjeu>
+		<opt_raaffichage>SPEL - RetroAchievements (externt verktyg)</opt_raaffichage>
+		<raaffichagepermanent>Alltid synlig</raaffichagepermanent>
+		<raaffichagetemporaire>Några sekunder</raaffichagetemporaire>
 		<noteetoile>Stjärna</noteetoile>
 		<notecoeur>Hjärta</notecoeur>
 		<notemanette>Handkontroll</notemanette>

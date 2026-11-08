@@ -19,6 +19,9 @@
 		<noplayerdata>Necunoscut</noplayerdata>
 		<noratings>Fără notă</noratings>
 		<notesur100>din 100</notesur100>
+		<opt_nomjeu>JOCURI - Numele jocului</opt_nomjeu>
+		<nomjeucomplet>Complet</nomjeucomplet>
+		<nomjeucourt>Fără paranteze</nomjeucourt>
 		<presgame1>Acesta este un joc de tipul</presgame1>
 		<presgame2>dezvoltat de</presgame2>
 		<presgame3>jucabil pe</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Limbi :</langlabel>
 		<gametimelabel>Timp de joc :</gametimelabel>
 		<lastgamelabel>Ultima partidă:</lastgamelabel>
-		<logosimple>Logo simplu (Complet + Regiune)</logosimple>
 		<viewbasicgrid>Basic: Vizualizare grilă de bază</viewbasicgrid>
 		<jeux>jocuri</jeux>
 		<longselect>Apăsare lungă pe "select"</longselect>
 		<favuniquement>Doar favorite</favuniquement>
 		<tslesjeux>Toate jocurile</tslesjeux>
-		<tumasbienlu>Bun venit și credite</tumasbienlu>
 		<fanartstarsyst>Clasic</fanartstarsyst>
 		<fanartmodern>Modern 1 (incompatibil cu calea de navigare)</fanartmodern>
 		<fanartmodern2>Modern 2 (compatibil cu calea de navigare)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Înapoi la dosarul anterior</retourdossier>
+		<ra_moncompte>Contul meu</ra_moncompte>
+		<ra_succesjeu>Realizările jocului</ra_succesjeu>
+		<opt_raaffichage>JOCURI - RetroAchievements (instrument extern)</opt_raaffichage>
+		<raaffichagepermanent>Afișare permanentă</raaffichagepermanent>
+		<raaffichagetemporaire>Câteva secunde</raaffichagetemporaire>
 		<noteetoile>Stea</noteetoile>
 		<notecoeur>Inimă</notecoeur>
 		<notemanette>Controler</notemanette>

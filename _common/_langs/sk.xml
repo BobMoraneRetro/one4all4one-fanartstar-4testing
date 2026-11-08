@@ -19,6 +19,9 @@
 		<noplayerdata>Neznáme</noplayerdata>
 		<noratings>Bez hodnotenia</noratings>
 		<notesur100>zo 100</notesur100>
+		<opt_nomjeu>HRY - Názov hry</opt_nomjeu>
+		<nomjeucomplet>Úplný</nomjeucomplet>
+		<nomjeucourt>Bez zátvoriek</nomjeucourt>
 		<presgame1>Toto je hra typu</presgame1>
 		<presgame2>vyvinutá spoločnosťou</presgame2>
 		<presgame3>hrateľná na</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Jazyky :</langlabel>
 		<gametimelabel>Čas hrania :</gametimelabel>
 		<lastgamelabel>Naposledy hrané:</lastgamelabel>
-		<logosimple>Jednoduché logo (Celé + Región)</logosimple>
 		<viewbasicgrid>Basic: Základná mriežka</viewbasicgrid>
 		<jeux>hry</jeux>
 		<longselect>Dlhé stlačenie "select"</longselect>
 		<favuniquement>Iba obľúbené</favuniquement>
 		<tslesjeux>Všetky hry</tslesjeux>
-		<tumasbienlu>Uvítanie a poďakovanie</tumasbienlu>
 		<fanartstarsyst>Klasické</fanartstarsyst>
 		<fanartmodern>Moderné 1 (nekompatibilné s navigačnou cestou)</fanartmodern>
 		<fanartmodern2>Moderné 2 (kompatibilné s navigačnou cestou)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Späť do predchádzajúceho priečinka</retourdossier>
+		<ra_moncompte>Môj účet</ra_moncompte>
+		<ra_succesjeu>Úspechy hry</ra_succesjeu>
+		<opt_raaffichage>HRY - RetroAchievements (externý nástroj)</opt_raaffichage>
+		<raaffichagepermanent>Trvalé zobrazenie</raaffichagepermanent>
+		<raaffichagetemporaire>Niekoľko sekúnd</raaffichagetemporaire>
 		<noteetoile>Hviezda</noteetoile>
 		<notecoeur>Srdce</notecoeur>
 		<notemanette>Ovládač</notemanette>

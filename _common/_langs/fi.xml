@@ -19,6 +19,9 @@
 		<noplayerdata>Tuntematon</noplayerdata>
 		<noratings>Ei arvosanaa</noratings>
 		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>PELIT - Pelin nimi</opt_nomjeu>
+		<nomjeucomplet>Koko nimi</nomjeucomplet>
+		<nomjeucourt>Ilman sulkeita</nomjeucourt>
 		<presgame1>Tämä on peli tyyppiä</presgame1>
 		<presgame2>kehittäjä</presgame2>
 		<presgame3>pelattavissa alustalla</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Kielet :</langlabel>
 		<gametimelabel>Peliaika :</gametimelabel>
 		<lastgamelabel>Viimeksi pelattu:</lastgamelabel>
-		<logosimple>Yksinkertainen logo (Täysi + Alue)</logosimple>
 		<viewbasicgrid>Basic: Perusruudukkonäkymä</viewbasicgrid>
 		<jeux>peliä</jeux>
 		<longselect>Pitkä painallus "select"</longselect>
 		<favuniquement>Vain suosikit</favuniquement>
 		<tslesjeux>Kaikki pelit</tslesjeux>
-		<tumasbienlu>Tervetuloa ja kiitokset</tumasbienlu>
 		<fanartstarsyst>Klassinen</fanartstarsyst>
 		<fanartmodern>Moderni 1 (ei yhteensopiva murupolun kanssa)</fanartmodern>
 		<fanartmodern2>Moderni 2 (yhteensopiva murupolun kanssa)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Takaisin edelliseen kansioon</retourdossier>
+		<ra_moncompte>Oma tili</ra_moncompte>
+		<ra_succesjeu>Pelin saavutukset</ra_succesjeu>
+		<opt_raaffichage>PELIT - RetroAchievements (ulkoinen työkalu)</opt_raaffichage>
+		<raaffichagepermanent>Aina näkyvissä</raaffichagepermanent>
+		<raaffichagetemporaire>Muutama sekunti</raaffichagetemporaire>
 		<noteetoile>Tähti</noteetoile>
 		<notecoeur>Sydän</notecoeur>
 		<notemanette>Peliohjain</notemanette>

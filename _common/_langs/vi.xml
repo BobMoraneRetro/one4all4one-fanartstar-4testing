@@ -19,6 +19,9 @@
 		<noplayerdata>Không rõ</noplayerdata>
 		<noratings>Chưa có điểm</noratings>
 		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>TRÒ CHƠI - Tên trò chơi</opt_nomjeu>
+		<nomjeucomplet>Đầy đủ</nomjeucomplet>
+		<nomjeucourt>Không có ngoặc</nomjeucourt>
 		<presgame1>Đây là trò chơi thể loại</presgame1>
 		<presgame2>phát triển bởi</presgame2>
 		<presgame3>chơi được trên</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Ngôn ngữ :</langlabel>
 		<gametimelabel>Thời gian chơi :</gametimelabel>
 		<lastgamelabel>Chơi lần cuối:</lastgamelabel>
-		<logosimple>Logo đơn giản (Đầy đủ + Khu vực)</logosimple>
 		<viewbasicgrid>Basic: Dạng lưới cơ bản</viewbasicgrid>
 		<jeux>trò chơi</jeux>
 		<longselect>Nhấn giữ "select"</longselect>
 		<favuniquement>Chỉ mục yêu thích</favuniquement>
 		<tslesjeux>Tất cả trò chơi</tslesjeux>
-		<tumasbienlu>Chào mừng và ghi công</tumasbienlu>
 		<fanartstarsyst>Cổ điển</fanartstarsyst>
 		<fanartmodern>Hiện đại 1 (không tương thích thanh điều hướng)</fanartmodern>
 		<fanartmodern2>Hiện đại 2 (tương thích thanh điều hướng)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Quay lại thư mục trước</retourdossier>
+		<ra_moncompte>Tài khoản</ra_moncompte>
+		<ra_succesjeu>Thành tích trò chơi</ra_succesjeu>
+		<opt_raaffichage>TRÒ CHƠI - RetroAchievements (công cụ ngoài)</opt_raaffichage>
+		<raaffichagepermanent>Luôn hiển thị</raaffichagepermanent>
+		<raaffichagetemporaire>Vài giây</raaffichagetemporaire>
 		<noteetoile>Ngôi sao</noteetoile>
 		<notecoeur>Trái tim</notecoeur>
 		<notemanette>Tay cầm</notemanette>

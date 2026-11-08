@@ -19,6 +19,9 @@
 		<noplayerdata>Ismeretlen</noplayerdata>
 		<noratings>Nincs értékelés</noratings>
 		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>JÁTÉKOK - A játék neve</opt_nomjeu>
+		<nomjeucomplet>Teljes</nomjeucomplet>
+		<nomjeucourt>Zárójelek nélkül</nomjeucourt>
 		<presgame1>Ez egy ilyen típusú játék:</presgame1>
 		<presgame2>fejlesztő:</presgame2>
 		<presgame3>játszható ezen:</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Nyelvek :</langlabel>
 		<gametimelabel>Játékidő :</gametimelabel>
 		<lastgamelabel>Utoljára játszva:</lastgamelabel>
-		<logosimple>Egyszerű logó (Teljes + Régió)</logosimple>
 		<viewbasicgrid>Basic: Egyszerű rácsnézet</viewbasicgrid>
 		<jeux>játék</jeux>
 		<longselect>Hosszú nyomás a "select" gombon</longselect>
 		<favuniquement>Csak kedvencek</favuniquement>
 		<tslesjeux>Összes játék</tslesjeux>
-		<tumasbienlu>Üdvözlés és köszönetnyilvánítás</tumasbienlu>
 		<fanartstarsyst>Klasszikus</fanartstarsyst>
 		<fanartmodern>Modern 1 (nem kompatibilis a morzsamenüvel)</fanartmodern>
 		<fanartmodern2>Modern 2 (kompatibilis a morzsamenüvel)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Vissza az előző mappába</retourdossier>
+		<ra_moncompte>Fiókom</ra_moncompte>
+		<ra_succesjeu>Játék teljesítményei</ra_succesjeu>
+		<opt_raaffichage>JÁTÉKOK - RetroAchievements (külső eszköz)</opt_raaffichage>
+		<raaffichagepermanent>Állandó megjelenítés</raaffichagepermanent>
+		<raaffichagetemporaire>Néhány másodperc</raaffichagetemporaire>
 		<noteetoile>Csillag</noteetoile>
 		<notecoeur>Szív</notecoeur>
 		<notemanette>Kontroller</notemanette>

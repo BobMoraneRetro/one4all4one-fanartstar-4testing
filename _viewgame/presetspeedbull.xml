@@ -16,6 +16,7 @@
 	${noteicone} : icône de notation (étoile, cœur, manette...) (définie dans _viewgameoption/gl-common/options_note.xml ; valeur selon l option « JEUX - Icône de notation »)
 	${path_syst_logo} : dossier des logos des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
 	${selopacite} : opacité des jeux non sélectionnés dans les grilles (1, 0.7 ou 0.45) (définie dans ce fichier ; valeur selon l option « JEUX - Mise en valeur du jeu sélectionné »)
+	${titrejeu} : valeur : {game:name} (définie dans _viewgameoption/gl-common/options_nom.xml ; valeur selon l option « JEUX - Nom du jeu »)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${devlabel}, ${gametimelabel}, ${genrelabel}, ${lastgamelabel}, ${nodates}, ${nogametime}, ${nomjeulabel}, ${noplayerdata}, ${noratings}, ${notesur100}, ${playcount}, ${playcountone}, ${player}, ${playerss}, ${presetspeedbull}, ${retourdossier}
 -->
 <theme>
@@ -68,7 +69,7 @@
 						<storyboard event="deactivate">
 							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
 						</storyboard>
-						<text>{game:name}</text>
+						<text>${titrejeu}</text>
 						<pos>0.5 0.5</pos>
 						<origin>0.5 0.5</origin>
 						<size>1 1</size>
@@ -815,7 +816,7 @@
 			</storyboard>
 		</control>
 		<text name="gamename" extra="true">
-			<text>${nomjeulabel} {game:name}</text>
+			<text>${nomjeulabel} ${titrejeu}</text>
 			<visible>{game:rom} != '..'</visible>
 			<pos>-0.19 0.78</pos>
 			<size>0.3 0.05</size>

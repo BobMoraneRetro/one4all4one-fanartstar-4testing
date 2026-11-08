@@ -2,6 +2,7 @@
 <!--
 	Variables utilisées dans ce fichier :
 	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiercouleurjeu} : valeur : 0 (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
 	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
 	${cfb_angle} : vue de test Coverflow 3D boîtiers : angle des boîtes de côté, en degrés (shader boite3d_case_coverflow) (définie dans ce fichier)
 	${cfb_ecart} : vue de test Coverflow 3D boîtiers : décalage minimal des boîtes de côté vers l extérieur, en largeur de boîte (définie dans ce fichier)
@@ -16,6 +17,7 @@
 	${media_marquee_missing} : vrai si le média « marquee » du jeu manque (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
+	${titrejeu} : valeur : {game:name} (définie dans _viewgameoption/gl-common/options_nom.xml ; valeur selon l option « JEUX - Nom du jeu »)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${jeux}
 -->
 <theme>
@@ -90,6 +92,7 @@
 							<u_shiny>0.35</u_shiny>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<caseType ifSubset="contourboite:non">7</caseType>
 							<saturation>1</saturation>
 							<ecart>${cfb_ecart}</ecart>
@@ -123,6 +126,7 @@
 							<u_shiny>0.35</u_shiny>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<caseType ifSubset="contourboite:non">7</caseType>
 							<saturation>0.7</saturation>
 							<ecart>${cfb_ecart}</ecart>
@@ -155,6 +159,7 @@
 							<u_shiny>0.35</u_shiny>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<caseType ifSubset="contourboite:non">7</caseType>
 							<saturation>1</saturation>
 							<ecart>${cfb_ecart}</ecart>
@@ -187,6 +192,7 @@
 							<u_shiny>0.35</u_shiny>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<caseType ifSubset="contourboite:non">7</caseType>
 							<saturation>0.7</saturation>
 							<ecart>${cfb_ecart}</ecart>
@@ -218,6 +224,7 @@
 							<u_shiny>0.35</u_shiny>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<caseType ifSubset="contourboite:non">7</caseType>
 							<saturation>1</saturation>
 							<ecart>${cfb_ecart}</ecart>
@@ -248,6 +255,7 @@
 							<u_shiny>0.35</u_shiny>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<caseType ifSubset="contourboite:non">7</caseType>
 							<saturation>1</saturation>
 							<ecart>${cfb_ecart}</ecart>
@@ -279,6 +287,7 @@
 							<u_shiny>0.35</u_shiny>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<caseType ifSubset="contourboite:non">7</caseType>
 							<saturation>0.7</saturation>
 							<ecart>${cfb_ecart}</ecart>
@@ -310,6 +319,7 @@
 							<u_shiny>0.35</u_shiny>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<caseType ifSubset="contourboite:non">7</caseType>
 							<saturation>1</saturation>
 							<ecart>${cfb_ecart}</ecart>
@@ -341,6 +351,7 @@
 							<u_shiny>0.35</u_shiny>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<caseType ifSubset="contourboite:non">7</caseType>
 							<saturation>1</saturation>
 							<ecart>${cfb_ecart}</ecart>
@@ -354,7 +365,7 @@
 					</image>
 					<text name="nomjeu">
 						<visible>${media_box2d_missing} &amp;&amp; ${media_marquee_missing}</visible>
-						<text>{game:name}</text>
+						<text>${titrejeu}</text>
 						<pos>0.5 0.5</pos>
 						<origin>0.5 0.5</origin>
 						<size>1 0.3818</size>
@@ -404,7 +415,7 @@
 			<visible>false</visible>
 		</image>
 		<text name="cf_titre" extra="true">
-			<text>{game:name}</text>
+			<text>${titrejeu}</text>
 			<pos>0.5 0.86</pos>
 			<origin>0.5 0.5</origin>
 			<size>0.5 0.05</size>

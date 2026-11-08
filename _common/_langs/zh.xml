@@ -19,6 +19,9 @@
 		<noplayerdata>未知</noplayerdata>
 		<noratings>无评分</noratings>
 		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>游戏 - 游戏名称</opt_nomjeu>
+		<nomjeucomplet>完整</nomjeucomplet>
+		<nomjeucourt>不含括号</nomjeucourt>
 		<presgame1>这是一款类型为</presgame1>
 		<presgame2>开发商：</presgame2>
 		<presgame3>可游玩平台：</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>语言 :</langlabel>
 		<gametimelabel>游戏时长 :</gametimelabel>
 		<lastgamelabel>上次游玩:</lastgamelabel>
-		<logosimple>简单标志(完整 + 地区)</logosimple>
 		<viewbasicgrid>Basic:基础网格视图</viewbasicgrid>
 		<jeux>款游戏</jeux>
 		<longselect>长按 "select"</longselect>
 		<favuniquement>仅收藏</favuniquement>
 		<tslesjeux>所有游戏</tslesjeux>
-		<tumasbienlu>欢迎与致谢</tumasbienlu>
 		<fanartstarsyst>经典</fanartstarsyst>
 		<fanartmodern>现代 1（不兼容导航路径）</fanartmodern>
 		<fanartmodern2>现代 2（兼容导航路径）</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>返回上一个文件夹</retourdossier>
+		<ra_moncompte>我的账户</ra_moncompte>
+		<ra_succesjeu>游戏成就</ra_succesjeu>
+		<opt_raaffichage>游戏 - RetroAchievements (外部工具)</opt_raaffichage>
+		<raaffichagepermanent>始终显示</raaffichagepermanent>
+		<raaffichagetemporaire>几秒钟</raaffichagetemporaire>
 		<noteetoile>星星</noteetoile>
 		<notecoeur>爱心</notecoeur>
 		<notemanette>手柄</notemanette>

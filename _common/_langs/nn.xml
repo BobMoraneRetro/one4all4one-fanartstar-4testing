@@ -19,6 +19,9 @@
 		<noplayerdata>Ukjend</noplayerdata>
 		<noratings>Inga vurdering</noratings>
 		<notesur100>av 100</notesur100>
+		<opt_nomjeu>SPEL - Spelnamn</opt_nomjeu>
+		<nomjeucomplet>Fullt</nomjeucomplet>
+		<nomjeucourt>Utan parentesar</nomjeucourt>
 		<presgame1>Dette er eit spel av typen</presgame1>
 		<presgame2>utvikla av</presgame2>
 		<presgame3>spelbart på</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Språk :</langlabel>
 		<gametimelabel>Speletid :</gametimelabel>
 		<lastgamelabel>Sist spela:</lastgamelabel>
-		<logosimple>Enkel logo (Fullstendig + Region)</logosimple>
 		<viewbasicgrid>Basic: Enkel rutenettvising</viewbasicgrid>
 		<jeux>spel</jeux>
 		<longselect>Langt trykk på "select"</longselect>
 		<favuniquement>Berre favorittar</favuniquement>
 		<tslesjeux>Alle spel</tslesjeux>
-		<tumasbienlu>Velkomen og takk</tumasbienlu>
 		<fanartstarsyst>Klassisk</fanartstarsyst>
 		<fanartmodern>Moderne 1 (ikkje kompatibel med brødsmulesti)</fanartmodern>
 		<fanartmodern2>Moderne 2 (kompatibel med brødsmulesti)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Tilbake til førre mappe</retourdossier>
+		<ra_moncompte>Kontoen min</ra_moncompte>
+		<ra_succesjeu>Spelprestasjonar</ra_succesjeu>
+		<opt_raaffichage>SPEL - RetroAchievements (eksternt verktøy)</opt_raaffichage>
+		<raaffichagepermanent>Alltid synleg</raaffichagepermanent>
+		<raaffichagetemporaire>Nokre sekund</raaffichagetemporaire>
 		<noteetoile>Stjerne</noteetoile>
 		<notecoeur>Hjarte</notecoeur>
 		<notemanette>Handkontroll</notemanette>

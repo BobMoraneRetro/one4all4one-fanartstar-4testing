@@ -141,6 +141,12 @@ uniform vec2 outputSize;
 // ── Boîtier (mêmes réglages que border_dvd_case.glsl) ──
 uniform float borderSize;           // 0 = automatique ; < 1 : fraction de la hauteur, >= 1 : pixels
 uniform vec4  borderColor;          // seulement si USE_BORDER_COLOR = 1
+uniform float couleurBoiteJeu;      // 0 = borderColor du XML ; sinon couleur du jeu (collections), 6 bits par canal RVBA
+vec4 couleurBoite() {
+    if (couleurBoiteJeu < 0.5) return borderColor;
+    float v = couleurBoiteJeu;
+    return vec4(floor(v / 262144.0), mod(floor(v / 4096.0), 64.0), mod(floor(v / 64.0), 64.0), mod(v, 64.0)) / 63.0;
+}
 uniform float cornerRadius;         // 0 = automatique
 uniform float innerShadowSize;      // ombre portée par le rebord sur l'image, 0 = automatique
 uniform vec4  innerShadowColor;     // alpha 0 = noir 55%
@@ -300,7 +306,7 @@ void setupCase(vec2 size) {
     plastic = caseBase;
     frameA0 = 1.0;
 #if USE_BORDER_COLOR
-    if (borderColor.a > 0.0) plastic = borderColor.rgb;
+    if (couleurBoite().a > 0.0) plastic = couleurBoite().rgb;
 #endif
 
     gEdgeK = 0.0; gEdgeMax = 0.0;
@@ -452,11 +458,11 @@ void setupCase(vec2 size) {
 
     plastic = caseBase;
 #if USE_BORDER_COLOR
-    if (borderColor.a > 0.0)
-        plastic = borderColor.rgb;
+    if (couleurBoite().a > 0.0)
+        plastic = couleurBoite().rgb;
     // alpha de borderColor = opacité du cadre ; sans effet pour les types qui dessinent leur propre cadre (14, 20, 21)
-    if (borderColor.a > 0.0 && gType != 14 && gType != 20 && gType != 21)
-        frameA0 = borderColor.a;
+    if (couleurBoite().a > 0.0 && gType != 14 && gType != 20 && gType != 21)
+        frameA0 = couleurBoite().a;
 #endif
 
     rim   = min(getComputedValue(borderSize, rimAuto * gMinSide), 0.15 * gMinSide);

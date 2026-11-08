@@ -19,6 +19,9 @@
 		<noplayerdata>Άγνωστο</noplayerdata>
 		<noratings>Χωρίς βαθμολογία</noratings>
 		<notesur100>στα 100</notesur100>
+		<opt_nomjeu>ΠΑΙΧΝΙΔΙΑ - Όνομα παιχνιδιού</opt_nomjeu>
+		<nomjeucomplet>Πλήρες</nomjeucomplet>
+		<nomjeucourt>Χωρίς παρενθέσεις</nomjeucourt>
 		<presgame1>Αυτό είναι ένα παιχνίδι τύπου</presgame1>
 		<presgame2>αναπτύχθηκε από</presgame2>
 		<presgame3>παίζεται σε</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Γλώσσες :</langlabel>
 		<gametimelabel>Χρόνος παιχνιδιού :</gametimelabel>
 		<lastgamelabel>Τελευταίο παιχνίδι:</lastgamelabel>
-		<logosimple>Απλό λογότυπο (Πλήρες + Περιοχή)</logosimple>
 		<viewbasicgrid>Basic: Βασική προβολή πλέγματος</viewbasicgrid>
 		<jeux>παιχνίδια</jeux>
 		<longselect>Παρατεταμένο πάτημα "select"</longselect>
 		<favuniquement>Μόνο αγαπημένα</favuniquement>
 		<tslesjeux>Όλα τα παιχνίδια</tslesjeux>
-		<tumasbienlu>Καλωσόρισμα και ευχαριστίες</tumasbienlu>
 		<fanartstarsyst>Κλασική</fanartstarsyst>
 		<fanartmodern>Μοντέρνα 1 (μη συμβατή με τη διαδρομή πλοήγησης)</fanartmodern>
 		<fanartmodern2>Μοντέρνα 2 (συμβατή με τη διαδρομή πλοήγησης)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Επιστροφή στον προηγούμενο φάκελο</retourdossier>
+		<ra_moncompte>Λογαριασμός</ra_moncompte>
+		<ra_succesjeu>Επιτεύγματα παιχνιδιού</ra_succesjeu>
+		<opt_raaffichage>ΠΑΙΧΝΙΔΙΑ - RetroAchievements (εξωτερικό εργαλείο)</opt_raaffichage>
+		<raaffichagepermanent>Μόνιμη εμφάνιση</raaffichagepermanent>
+		<raaffichagetemporaire>Λίγα δευτερόλεπτα</raaffichagetemporaire>
 		<noteetoile>Αστέρι</noteetoile>
 		<notecoeur>Καρδιά</notecoeur>
 		<notemanette>Χειριστήριο</notemanette>

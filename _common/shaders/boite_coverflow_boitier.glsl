@@ -138,6 +138,12 @@ uniform vec2 outputOffset;
 // < 1 : fraction de la hauteur, >= 1 : pixels (comme avant).
 uniform float borderSize;
 uniform vec4  borderColor;          // seulement si USE_BORDER_COLOR = 1
+uniform float couleurBoiteJeu;      // 0 = borderColor du XML ; sinon couleur du jeu (collections), 6 bits par canal RVBA
+vec4 couleurBoite() {
+    if (couleurBoiteJeu < 0.5) return borderColor;
+    float v = couleurBoiteJeu;
+    return vec4(floor(v / 262144.0), mod(floor(v / 4096.0), 64.0), mod(floor(v / 64.0), 64.0), mod(v, 64.0)) / 63.0;
+}
 
 uniform float cornerRadius;         // 0 = automatique
 uniform float innerShadowSize;      // ombre portée par le rebord sur l'image, 0 = automatique
@@ -779,16 +785,16 @@ void caseMain(void)
     // ── Plastique du boîtier ────────────────────────────────────
     vec3 plastic = caseBase;
 #if USE_BORDER_COLOR
-    if (borderColor.a > 0.0)
-        plastic = borderColor.rgb;
+    if (couleurBoite().a > 0.0)
+        plastic = couleurBoite().rgb;
 #endif
     vec3  fcol   = vec3(0.0);
     float frameA = 1.0;
 #if USE_BORDER_COLOR
     // alpha de borderColor = opacité du cadre (FF = opaque, ex. B3 = plastique translucide comme les boîtes Xbox 360) ;
     // sans effet pour les types qui dessinent leur propre cadre (14, 20, 21) ou transparents (clearOn, alpha recalculé plus bas)
-    if (borderColor.a > 0.0 && caseType != 14 && caseType != 20 && caseType != 21)
-        frameA = borderColor.a;
+    if (couleurBoite().a > 0.0 && caseType != 14 && caseType != 20 && caseType != 21)
+        frameA = couleurBoite().a;
 #endif
     vec2  nWin   = rrNormal(lp, winCenter, winHalf, rW);   // sert aussi à l'ombre sur l'image
     float sh     = np.x * 0.85 + np.y * 0.65;               // sert aussi aux reflets du film

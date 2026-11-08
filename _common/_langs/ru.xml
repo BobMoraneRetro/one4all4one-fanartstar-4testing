@@ -19,6 +19,9 @@
 		<noplayerdata>Неизвестно</noplayerdata>
 		<noratings>Нет оценки</noratings>
 		<notesur100>из 100</notesur100>
+		<opt_nomjeu>ИГРЫ - Название игры</opt_nomjeu>
+		<nomjeucomplet>Полное</nomjeucomplet>
+		<nomjeucourt>Без скобок</nomjeucourt>
 		<presgame1>Это игра жанра</presgame1>
 		<presgame2>разработчик</presgame2>
 		<presgame3>платформа</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Языки :</langlabel>
 		<gametimelabel>Время игры :</gametimelabel>
 		<lastgamelabel>Последняя игра:</lastgamelabel>
-		<logosimple>Простой логотип (Полный + Регион)</logosimple>
 		<viewbasicgrid>Basic: Простая сетка</viewbasicgrid>
 		<jeux>игр</jeux>
 		<longselect>Долгое нажатие "select"</longselect>
 		<favuniquement>Только избранное</favuniquement>
 		<tslesjeux>Все игры</tslesjeux>
-		<tumasbienlu>Приветствие и благодарности</tumasbienlu>
 		<fanartstarsyst>Классический</fanartstarsyst>
 		<fanartmodern>Современный 1 (несовместим с навигационной цепочкой)</fanartmodern>
 		<fanartmodern2>Современный 2 (совместим с навигационной цепочкой)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Назад к предыдущей папке</retourdossier>
+		<ra_moncompte>Мой аккаунт</ra_moncompte>
+		<ra_succesjeu>Достижения игры</ra_succesjeu>
+		<opt_raaffichage>ИГРЫ - RetroAchievements (внешний инструмент)</opt_raaffichage>
+		<raaffichagepermanent>Постоянный показ</raaffichagepermanent>
+		<raaffichagetemporaire>Несколько секунд</raaffichagetemporaire>
 		<noteetoile>Звезда</noteetoile>
 		<notecoeur>Сердце</notecoeur>
 		<notemanette>Геймпад</notemanette>

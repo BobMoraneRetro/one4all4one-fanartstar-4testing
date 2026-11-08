@@ -19,6 +19,9 @@
 		<noplayerdata>Anhysbys</noplayerdata>
 		<noratings>Dim sgôr</noratings>
 		<notesur100>o 100</notesur100>
+		<opt_nomjeu>GEMAU - Enw'r gêm</opt_nomjeu>
+		<nomjeucomplet>Llawn</nomjeucomplet>
+		<nomjeucourt>Heb gromfachau</nomjeucourt>
 		<presgame1>Mae hon yn gêm o fath</presgame1>
 		<presgame2>datblygwyd gan</presgame2>
 		<presgame3>chwaraeadwy ar</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Ieithoedd :</langlabel>
 		<gametimelabel>Amser chwarae :</gametimelabel>
 		<lastgamelabel>Chwaraewyd ddiwethaf:</lastgamelabel>
-		<logosimple>Logo syml (Llawn + Rhanbarth)</logosimple>
 		<viewbasicgrid>Basic: Golwg grid sylfaenol</viewbasicgrid>
 		<jeux>gemau</jeux>
 		<longselect>Pwyso'n hir ar "select"</longselect>
 		<favuniquement>Ffefrynnau yn unig</favuniquement>
 		<tslesjeux>Pob gêm</tslesjeux>
-		<tumasbienlu>Croeso a chydnabyddiaethau</tumasbienlu>
 		<fanartstarsyst>Clasurol</fanartstarsyst>
 		<fanartmodern>Modern 1 (ddim yn gydnaws â'r llwybr briwsion)</fanartmodern>
 		<fanartmodern2>Modern 2 (yn gydnaws â'r llwybr briwsion)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Yn ôl i'r ffolder blaenorol</retourdossier>
+		<ra_moncompte>Fy nghyfrif</ra_moncompte>
+		<ra_succesjeu>Cyflawniadau'r gêm</ra_succesjeu>
+		<opt_raaffichage>GEMAU - RetroAchievements (offeryn allanol)</opt_raaffichage>
+		<raaffichagepermanent>Arddangosiad parhaol</raaffichagepermanent>
+		<raaffichagetemporaire>Ychydig eiliadau</raaffichagetemporaire>
 		<noteetoile>Seren</noteetoile>
 		<notecoeur>Calon</notecoeur>
 		<notemanette>Rheolydd</notemanette>

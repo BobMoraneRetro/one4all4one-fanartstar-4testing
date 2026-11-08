@@ -2,6 +2,7 @@
 <!--
 	Variables utilisées dans ce fichier :
 	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiercouleurjeu} : valeur : 0 (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
 	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
 	${intfanartfresh} : Fanart du système (dossier fresh) (définie dans theme.xml)
 	${media_box2d} : boîte 2D du jeu (gamelist ou média perso selon l option) (définie dans _viewgameoption/gl-common/gamemedia/3dinboxart.xml, _viewgameoption/gl-common/gamemedia/3dinthumbnail.xml ; fichier choisi par l option « AVANCÉ - Champ du gamelist utilisé pour la boîte 3D » ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
@@ -23,6 +24,7 @@
 	${salon_umd_cy} : vue Salon : UMD : centre vertical du disque dans l image du support (fraction de la hauteur) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _viewgame/presetsalon.xml)
 	${salon_umd_rayon} : vue Salon : UMD : rayon du disque qui tourne (fraction de la largeur de l image) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _viewgame/presetsalon.xml)
 	${salon_umd_rayon_centre} : vue Salon : UMD : rayon du centre fixe (moyeu « UMD ») qui ne tourne pas (fraction de la largeur de l image) ; réglable par <système>.xml (définie dans _gamemedia/_salon/_documentation/exemple_complet.xml, _viewgame/presetsalon.xml)
+	${titrejeu} : valeur : {game:name} (définie dans _viewgameoption/gl-common/options_nom.xml ; valeur selon l option « JEUX - Nom du jeu »)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${presetstarbox}, ${presetstarboxloop}
 -->
 <theme>
@@ -325,6 +327,7 @@
 							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -382,6 +385,7 @@
 							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -462,6 +466,7 @@
 							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -497,6 +502,7 @@
 							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -588,6 +594,7 @@
 							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -666,6 +673,7 @@
 							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -814,7 +822,7 @@
 						<storyboard ifSubset="selectionvaleur:marquee" event="deactivate">
 							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
 						</storyboard>
-						<text>{game:name}</text>
+						<text>${titrejeu}</text>
 						<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
 						<color>FFFFFF</color>
 						<alignment>center</alignment>
@@ -864,7 +872,7 @@
 						<storyboard ifSubset="selectionvaleur:marquee" event="deactivate">
 							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
 						</storyboard>
-						<text>{game:name}</text>
+						<text>${titrejeu}</text>
 						<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
 						<color>FFFFFF</color>
 						<alignment>center</alignment>
@@ -1211,6 +1219,7 @@
 							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -1277,6 +1286,7 @@
 							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -1378,6 +1388,7 @@
 							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -1415,6 +1426,7 @@
 							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -1527,6 +1539,7 @@
 							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -1626,6 +1639,7 @@
 							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -1822,7 +1836,7 @@
 							<animation property="y" to="0.7333" duration="250" mode="easeOut"/>
 							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
 						</storyboard>
-						<text>{game:name}</text>
+						<text>${titrejeu}</text>
 						<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
 						<color>FFFFFF</color>
 						<alignment>center</alignment>
@@ -1889,7 +1903,7 @@
 							<animation property="y" to="0.7333" duration="250" mode="easeOut"/>
 							<animation property="opacity" to="0.45" duration="200" mode="easeOut"/>
 						</storyboard>
-						<text>{game:name}</text>
+						<text>${titrejeu}</text>
 						<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>
 						<color>FFFFFF</color>
 						<alignment>center</alignment>

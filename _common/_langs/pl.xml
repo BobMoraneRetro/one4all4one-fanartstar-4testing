@@ -19,6 +19,9 @@
 		<noplayerdata>Nieznane</noplayerdata>
 		<noratings>Brak oceny</noratings>
 		<notesur100>na 100</notesur100>
+		<opt_nomjeu>GRY - Nazwa gry</opt_nomjeu>
+		<nomjeucomplet>Pełna</nomjeucomplet>
+		<nomjeucourt>Bez nawiasów</nomjeucourt>
 		<presgame1>To jest gra typu</presgame1>
 		<presgame2>stworzona przez</presgame2>
 		<presgame3>grywalna na</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Języki :</langlabel>
 		<gametimelabel>Czas gry :</gametimelabel>
 		<lastgamelabel>Ostatnia gra:</lastgamelabel>
-		<logosimple>Proste logo (Pełne + Region)</logosimple>
 		<viewbasicgrid>Basic: Podstawowy widok siatki</viewbasicgrid>
 		<jeux>gry</jeux>
 		<longselect>Długie naciśnięcie "select"</longselect>
 		<favuniquement>Tylko ulubione</favuniquement>
 		<tslesjeux>Wszystkie gry</tslesjeux>
-		<tumasbienlu>Powitanie i podziękowania</tumasbienlu>
 		<fanartstarsyst>Klasyczny</fanartstarsyst>
 		<fanartmodern>Nowoczesny 1 (niezgodny ze ścieżką nawigacji)</fanartmodern>
 		<fanartmodern2>Nowoczesny 2 (zgodny ze ścieżką nawigacji)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Powrót do poprzedniego folderu</retourdossier>
+		<ra_moncompte>Moje konto</ra_moncompte>
+		<ra_succesjeu>Osiągnięcia gry</ra_succesjeu>
+		<opt_raaffichage>GRY - RetroAchievements (narzędzie zewnętrzne)</opt_raaffichage>
+		<raaffichagepermanent>Stałe wyświetlanie</raaffichagepermanent>
+		<raaffichagetemporaire>Kilka sekund</raaffichagetemporaire>
 		<noteetoile>Gwiazdka</noteetoile>
 		<notecoeur>Serce</notecoeur>
 		<notemanette>Pad</notemanette>

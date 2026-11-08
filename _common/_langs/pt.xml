@@ -19,6 +19,9 @@
 		<noplayerdata>Desconhecido</noplayerdata>
 		<noratings>Sem nota</noratings>
 		<notesur100>de 100</notesur100>
+		<opt_nomjeu>JOGOS - Nome do jogo</opt_nomjeu>
+		<nomjeucomplet>Completo</nomjeucomplet>
+		<nomjeucourt>Sem parênteses</nomjeucourt>
 		<presgame1>Este é um jogo do tipo</presgame1>
 		<presgame2>desenvolvido por</presgame2>
 		<presgame3>jogável em</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Idiomas :</langlabel>
 		<gametimelabel>Tempo de jogo :</gametimelabel>
 		<lastgamelabel>Última partida:</lastgamelabel>
-		<logosimple>Logo simples (Completo + Região)</logosimple>
 		<viewbasicgrid>Basic: Vista em grade básica</viewbasicgrid>
 		<jeux>jogos</jeux>
 		<longselect>Pressão longa em "select"</longselect>
 		<favuniquement>Apenas favoritos</favuniquement>
 		<tslesjeux>Todos os jogos</tslesjeux>
-		<tumasbienlu>Boas-vindas e créditos</tumasbienlu>
 		<fanartstarsyst>Clássico</fanartstarsyst>
 		<fanartmodern>Moderno 1 (incompatível com a trilha de navegação)</fanartmodern>
 		<fanartmodern2>Moderno 2 (compatível com a trilha de navegação)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Voltar à pasta anterior</retourdossier>
+		<ra_moncompte>Minha conta</ra_moncompte>
+		<ra_succesjeu>Conquistas do jogo</ra_succesjeu>
+		<opt_raaffichage>JOGOS - RetroAchievements (ferramenta externa)</opt_raaffichage>
+		<raaffichagepermanent>Exibição permanente</raaffichagepermanent>
+		<raaffichagetemporaire>Alguns segundos</raaffichagetemporaire>
 		<noteetoile>Estrela</noteetoile>
 		<notecoeur>Coração</notecoeur>
 		<notemanette>Comando</notemanette>

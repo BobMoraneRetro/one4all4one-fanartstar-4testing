@@ -19,6 +19,9 @@
 		<noplayerdata>Tidak diketahui</noplayerdata>
 		<noratings>Tanpa nilai</noratings>
 		<notesur100>dari 100</notesur100>
+		<opt_nomjeu>GAME - Nama game</opt_nomjeu>
+		<nomjeucomplet>Lengkap</nomjeucomplet>
+		<nomjeucourt>Tanpa tanda kurung</nomjeucourt>
 		<presgame1>Ini adalah game bertipe</presgame1>
 		<presgame2>dikembangkan oleh</presgame2>
 		<presgame3>dapat dimainkan di</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Bahasa :</langlabel>
 		<gametimelabel>Waktu bermain :</gametimelabel>
 		<lastgamelabel>Terakhir dimainkan:</lastgamelabel>
-		<logosimple>Logo sederhana (Lengkap + Wilayah)</logosimple>
 		<viewbasicgrid>Basic: Tampilan kisi dasar</viewbasicgrid>
 		<jeux>game</jeux>
 		<longselect>Tekan lama "select"</longselect>
 		<favuniquement>Hanya favorit</favuniquement>
 		<tslesjeux>Semua game</tslesjeux>
-		<tumasbienlu>Sambutan dan kredit</tumasbienlu>
 		<fanartstarsyst>Klasik</fanartstarsyst>
 		<fanartmodern>Modern 1 (tidak kompatibel dengan breadcrumb)</fanartmodern>
 		<fanartmodern2>Modern 2 (kompatibel dengan breadcrumb)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Kembali ke folder sebelumnya</retourdossier>
+		<ra_moncompte>Akun saya</ra_moncompte>
+		<ra_succesjeu>Pencapaian game</ra_succesjeu>
+		<opt_raaffichage>GAME - RetroAchievements (alat eksternal)</opt_raaffichage>
+		<raaffichagepermanent>Selalu tampil</raaffichagepermanent>
+		<raaffichagetemporaire>Beberapa detik</raaffichagetemporaire>
 		<noteetoile>Bintang</noteetoile>
 		<notecoeur>Hati</notecoeur>
 		<notemanette>Gamepad</notemanette>

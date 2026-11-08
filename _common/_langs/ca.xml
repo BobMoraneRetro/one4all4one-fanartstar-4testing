@@ -19,6 +19,9 @@
 		<noplayerdata>Desconegut</noplayerdata>
 		<noratings>Sense nota</noratings>
 		<notesur100>de 100</notesur100>
+		<opt_nomjeu>JOCS - Nom del joc</opt_nomjeu>
+		<nomjeucomplet>Complet</nomjeucomplet>
+		<nomjeucourt>Sense parèntesis</nomjeucourt>
 		<presgame1>Aquest és un joc de tipus</presgame1>
 		<presgame2>desenvolupat per</presgame2>
 		<presgame3>jugable a</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Idiomes :</langlabel>
 		<gametimelabel>Temps de joc :</gametimelabel>
 		<lastgamelabel>Darrera partida:</lastgamelabel>
-		<logosimple>Logo simple (Complet + Regió)</logosimple>
 		<viewbasicgrid>Basic: Vista de graella bàsica</viewbasicgrid>
 		<jeux>jocs</jeux>
 		<longselect>Pulsació llarga a "select"</longselect>
 		<favuniquement>Només preferits</favuniquement>
 		<tslesjeux>Tots els jocs</tslesjeux>
-		<tumasbienlu>Benvinguda i crèdits</tumasbienlu>
 		<fanartstarsyst>Clàssic</fanartstarsyst>
 		<fanartmodern>Modern 1 (no compatible amb el fil d'Ariadna)</fanartmodern>
 		<fanartmodern2>Modern 2 (compatible amb el fil d'Ariadna)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Tornar a la carpeta anterior</retourdossier>
+		<ra_moncompte>El meu compte</ra_moncompte>
+		<ra_succesjeu>Assoliments del joc</ra_succesjeu>
+		<opt_raaffichage>JOCS - RetroAchievements (eina externa)</opt_raaffichage>
+		<raaffichagepermanent>Visualització permanent</raaffichagepermanent>
+		<raaffichagetemporaire>Uns segons</raaffichagetemporaire>
 		<noteetoile>Estrella</noteetoile>
 		<notecoeur>Cor</notecoeur>
 		<notemanette>Comandament</notemanette>

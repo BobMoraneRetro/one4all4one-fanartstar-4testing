@@ -13,6 +13,7 @@
 	${media_video} : vidéo du jeu (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${noteicone} : icône de notation (étoile, cœur, manette...) (définie dans _viewgameoption/gl-common/options_note.xml ; valeur selon l option « JEUX - Icône de notation »)
 	${path_syst_logo} : dossier des logos des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
+	${titrejeulangue} : valeur : {game:name} ( {game:lang} ) (définie dans _viewgameoption/gl-common/options_nom.xml ; valeur selon l option « JEUX - Nom du jeu »)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${favuniquement}, ${longselect}, ${nodates}, ${nogametime}, ${noplayerdata}, ${noratings}, ${notesur100}, ${playcount}, ${playcountone}, ${player}, ${playerss}, ${presetstarboxloop}, ${retourdossier}, ${tslesjeux}
 -->
 <theme>
@@ -328,7 +329,7 @@
 		</image>
 		<text name="gamename" extra="true">
 			<visible>{game:rom} != '..'</visible>
-			<text>{game:name} ( {game:lang} )</text>
+			<text>${titrejeulangue}</text>
 			<opacity>0.7</opacity>
 			<pos>0.253 0.238</pos>
 			<fontPath>${themePath}/_viewgame/fanartstar/impact.ttf</fontPath>

@@ -19,6 +19,9 @@
 		<noplayerdata>不明</noplayerdata>
 		<noratings>評価なし</noratings>
 		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>ゲーム - ゲーム名</opt_nomjeu>
+		<nomjeucomplet>完全</nomjeucomplet>
+		<nomjeucourt>括弧なし</nomjeucourt>
 		<presgame1>ジャンル：</presgame1>
 		<presgame2>開発：</presgame2>
 		<presgame3>対応機種：</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>言語 :</langlabel>
 		<gametimelabel>プレイ時間 :</gametimelabel>
 		<lastgamelabel>最終プレイ:</lastgamelabel>
-		<logosimple>シンプルロゴ(フル + 地域)</logosimple>
 		<viewbasicgrid>Basic: 基本グリッド表示</viewbasicgrid>
 		<jeux>ゲーム</jeux>
 		<longselect>"select" 長押し</longselect>
 		<favuniquement>お気に入りのみ</favuniquement>
 		<tslesjeux>すべてのゲーム</tslesjeux>
-		<tumasbienlu>ようこそとクレジット</tumasbienlu>
 		<fanartstarsyst>クラシック</fanartstarsyst>
 		<fanartmodern>モダン1（パンくずリスト非対応）</fanartmodern>
 		<fanartmodern2>モダン2（パンくずリスト対応）</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>前のフォルダに戻る</retourdossier>
+		<ra_moncompte>マイアカウント</ra_moncompte>
+		<ra_succesjeu>ゲームの実績</ra_succesjeu>
+		<opt_raaffichage>ゲーム - RetroAchievements (外部ツール)</opt_raaffichage>
+		<raaffichagepermanent>常に表示</raaffichagepermanent>
+		<raaffichagetemporaire>数秒間</raaffichagetemporaire>
 		<noteetoile>星</noteetoile>
 		<notecoeur>ハート</notecoeur>
 		<notemanette>ゲームパッド</notemanette>

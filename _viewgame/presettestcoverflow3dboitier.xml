@@ -2,6 +2,7 @@
 <!--
 	Variables utilisées dans ce fichier :
 	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiercouleurjeu} : valeur : 0 (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
 	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
 	${cfb_angle} : vue de test Coverflow 3D boîtiers : angle des boîtes de côté, en degrés (shader boite3d_case_coverflow) (définie dans ce fichier)
 	${cfb_ecart} : vue de test Coverflow 3D boîtiers : décalage minimal des boîtes de côté vers l extérieur, en largeur de boîte (définie dans ce fichier)
@@ -76,6 +77,7 @@
 							<u_shiny>0.35</u_shiny>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<caseType ifSubset="contourboite:non">7</caseType>
 							<saturation>1</saturation>
 							<ecart>${cfb_ecart}</ecart>
@@ -102,6 +104,7 @@
 							<u_shiny>0.35</u_shiny>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<caseType ifSubset="contourboite:non">7</caseType>
 							<saturation>1</saturation>
 							<ecart>${cfb_ecart}</ecart>
@@ -129,6 +132,7 @@
 							<u_shiny>0.35</u_shiny>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<caseType ifSubset="contourboite:non">7</caseType>
 							<saturation>1</saturation>
 							<ecart>${cfb_ecart}</ecart>

@@ -18,6 +18,7 @@
 	${bigart_taille_gauche_2d} : valeur : 1.73442 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
 	${bigart_taille_gauche_3d} : valeur : 1.46020 (définie dans _viewgame/deck/espacement/ : un fichier par choix de l option « JEUX - Espacement des boîtes »)
 	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiercouleurjeu} : valeur : 0 (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
 	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
 	${deckgrisinfo} : Big Art : couleur grise des infos (définie dans ce fichier)
 	${deckor} : Big Art : couleur dorée (note, favori) (définie dans ce fichier)
@@ -39,6 +40,7 @@
 	${media_video_exists} : vrai si le média « video » du jeu existe (définie dans _viewgameoption/gl-common/gamemedia/medias.xml ; valeur selon l option « AVANCÉ - Médias perso des jeux »)
 	${noteicone} : icône de notation (étoile, cœur, manette...) (définie dans _viewgameoption/gl-common/options_note.xml ; valeur selon l option « JEUX - Icône de notation »)
 	${selopacite} : opacité des jeux non sélectionnés dans les grilles (1, 0.7 ou 0.45) (définie dans ce fichier ; valeur selon l option « JEUX - Mise en valeur du jeu sélectionné »)
+	${titrejeu} : valeur : {game:name} (définie dans _viewgameoption/gl-common/options_nom.xml ; valeur selon l option « JEUX - Nom du jeu »)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${decknormal}, ${gametimelabel}, ${lastgamelabel}, ${noplaycount}, ${noplayerdata}, ${opt_deckespace}, ${presetdeck}, ${retourdossier}
 -->
 <theme>
@@ -136,6 +138,7 @@
 							<path>${themePath}/_common/shaders/border_dvd_case_deck.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -193,7 +196,7 @@
 						<storyboard event="deactivate">
 							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
 						</storyboard>
-						<text>{game:name}</text>
+						<text>${titrejeu}</text>
 						<pos>0.5 0.5</pos>
 						<origin>0.5 0.5</origin>
 						<size>0.86 0.6</size>
@@ -226,6 +229,7 @@
 							<path>${themePath}/_common/shaders/border_dvd_case_deck.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -303,6 +307,7 @@
 							<path>${themePath}/_common/shaders/border_dvd_case.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -332,6 +337,7 @@
 							<path>${themePath}/_common/shaders/border_dvd_case_deck.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -876,13 +882,13 @@
 			<zIndex>80</zIndex>
 		</text>
 		<text name="deck_nom" extra="true">
-			<text>{game:name}</text>
+			<text>${titrejeu}</text>
 			<pos>0.0185 0.917</pos>
 			<size>0.62 0.035</size>
 			<visible>({game:favorite} ? 0 : 1) &amp;&amp; {game:rom} != '..'</visible>
 		</text>
 		<text name="deck_nomfavori" extra="true">
-			<text>{game:name}</text>
+			<text>${titrejeu}</text>
 			<pos>0.0365 0.917</pos>
 			<size>0.60 0.035</size>
 			<visible>{game:favorite} &amp;&amp; {game:rom} != '..'</visible>

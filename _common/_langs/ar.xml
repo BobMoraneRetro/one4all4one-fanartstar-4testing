@@ -19,6 +19,9 @@
 		<noplayerdata>غير معروف</noplayerdata>
 		<noratings>لا يوجد تقييم</noratings>
 		<notesur100>/ 100</notesur100>
+		<opt_nomjeu>الألعاب - اسم اللعبة</opt_nomjeu>
+		<nomjeucomplet>كامل</nomjeucomplet>
+		<nomjeucourt>بدون أقواس</nomjeucourt>
 		<presgame1>هذه لعبة من نوع</presgame1>
 		<presgame2>من تطوير</presgame2>
 		<presgame3>قابلة للعب على</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>اللغات :</langlabel>
 		<gametimelabel>مدة اللعب :</gametimelabel>
 		<lastgamelabel>آخر لعب:</lastgamelabel>
-		<logosimple>شعار بسيط (كامل + المنطقة)</logosimple>
 		<viewbasicgrid>Basic: عرض شبكي بسيط</viewbasicgrid>
 		<jeux>ألعاب</jeux>
 		<longselect>ضغطة طويلة على "select"</longselect>
 		<favuniquement>المفضلة فقط</favuniquement>
 		<tslesjeux>كل الألعاب</tslesjeux>
-		<tumasbienlu>الترحيب والشكر</tumasbienlu>
 		<fanartstarsyst>كلاسيكي</fanartstarsyst>
 		<fanartmodern>حديث 1 (غير متوافق مع مسار التنقل)</fanartmodern>
 		<fanartmodern2>حديث 2 (متوافق مع مسار التنقل)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>العودة إلى المجلد السابق</retourdossier>
+		<ra_moncompte>حسابي</ra_moncompte>
+		<ra_succesjeu>إنجازات اللعبة</ra_succesjeu>
+		<opt_raaffichage>الألعاب - RetroAchievements (أداة خارجية)</opt_raaffichage>
+		<raaffichagepermanent>عرض دائم</raaffichagepermanent>
+		<raaffichagetemporaire>بضع ثوانٍ</raaffichagetemporaire>
 		<noteetoile>نجمة</noteetoile>
 		<notecoeur>قلب</notecoeur>
 		<notemanette>يد تحكم</notemanette>

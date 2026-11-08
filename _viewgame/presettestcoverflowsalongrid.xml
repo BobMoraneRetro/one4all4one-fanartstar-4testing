@@ -2,6 +2,7 @@
 <!--
 	Variables utilisées dans ce fichier :
 	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiercouleurjeu} : valeur : 0 (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
 	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
 	${cfg_hauteur} : vue de test Coverflow RFE (grille) : hauteur de l élément boîte dans sa case de grille (plus petite pour les systèmes à boîte large) (définie dans ce fichier)
 	${cfr_ratio} : vues de test Coverflow : format (largeur / hauteur) de la boîte de remplacement d un jeu sans jaquette (fanart du système), plus carré pour les systèmes à CD comme dans la vue Boxart (définie dans ce fichier)
@@ -40,6 +41,7 @@
 	${salon_video_etiree} : vue Salon : true = vidéo étirée à la taille de l écran de la TV (size), false = proportions gardées (maxSize) ; réglable par <système>.xml (définie dans _gamemedia/_salon/ (45 fichiers))
 	${salon_video_pos} : vue Salon : centre de l écran de la TV (vidéo sous le décor) (définie dans _gamemedia/_salon/ (51 fichiers))
 	${salon_video_taille} : vue Salon : largeur hauteur de l écran de la TV (définie dans _gamemedia/_salon/ (51 fichiers))
+	${titrejeu} : valeur : {game:name} (définie dans _viewgameoption/gl-common/options_nom.xml ; valeur selon l option « JEUX - Nom du jeu »)
 -->
 <theme>
 	<formatVersion>7</formatVersion>
@@ -566,6 +568,7 @@
 							<path>${themePath}/_common/shaders/boite_coverflow_boitier.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -597,6 +600,7 @@
 							<path>${themePath}/_common/shaders/boite_coverflow_boitier.glsl</path>
 							<caseType>${boitiertype}</caseType>
 							<borderColor>${boitiercouleur}</borderColor>
+							<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 							<borderSize>0</borderSize>
 							<cornerRadius>0</cornerRadius>
 							<innerShadowSize>0</innerShadowSize>
@@ -644,7 +648,7 @@
 					<text name="nomjeu">
 						<visible ifSubset="boxorthumb:boxart">${media_box3d_missing} &amp;&amp; ${media_marquee_missing}</visible>
 						<visible ifSubset="boxorthumb:thumb">${media_box2d_missing} &amp;&amp; ${media_marquee_missing}</visible>
-						<text>{game:name}</text>
+						<text>${titrejeu}</text>
 						<pos>0.5 0.5</pos>
 						<origin>0.5 0.5</origin>
 						<size>1.4 0.6</size>
@@ -694,7 +698,7 @@
 			<visible>false</visible>
 		</image>
 		<text name="cf_titre" extra="true">
-			<text>{game:name}</text>
+			<text>${titrejeu}</text>
 			<pos>0.015 0.025</pos>
 			<origin>0 0</origin>
 			<size>0.3 0.04</size>

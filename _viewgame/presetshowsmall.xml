@@ -7,6 +7,7 @@
 	${boite3dvisible} : boîte 3D qui se retourne affichée (boîte 2D choisie, option activée et dos scrapé présent) (définie dans ce fichier ; valeur selon l option « SHOW BIG · SMALL - Boîte qui se retourne (dos scrapé) », « JEUX - Boîte de jeu à afficher », « AVANCÉ - Mode machine peu puissante »)
 	${boitejeuvisible} : boîte habituelle affichée (boîte 3D choisie, option désactivée ou pas de dos scrapé) (définie dans ce fichier ; valeur selon l option « SHOW BIG · SMALL - Boîte qui se retourne (dos scrapé) », « JEUX - Boîte de jeu à afficher », « AVANCÉ - Mode machine peu puissante »)
 	${boitiercouleur} : couleur du boîtier selon le système (shader border_dvd_case) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
+	${boitiercouleurjeu} : valeur : 0 (définie dans _viewgameoption/gl-common/boitiers_systemes.xml)
 	${boitiertype} : type de boîtier selon le système (shader border_dvd_case : DVD, CD, cartouche...) (définie dans _viewgameoption/gl-common/boitiers_systemes.xml ; valeur selon l option « JEUX - Type de boîte »)
 	${firstsystemhardware} : Vue système classique, option Hardware : console, sinon personnage du système (définie dans theme.xml)
 	${intbezelgame} : Bezel du système du jeu (collections : système d'origine du jeu) (définie dans theme.xml)
@@ -21,6 +22,7 @@
 	${noteicone} : icône de notation (étoile, cœur, manette...) (définie dans _viewgameoption/gl-common/options_note.xml ; valeur selon l option « JEUX - Icône de notation »)
 	${path_syst_logo} : dossier des logos des systèmes (définie dans theme.xml ; valeur selon l option « AVANCÉ - Emplacement des logos des systèmes »)
 	${selopacite} : opacité des jeux non sélectionnés dans les grilles (1, 0.7 ou 0.45) (définie dans ce fichier ; valeur selon l option « JEUX - Mise en valeur du jeu sélectionné »)
+	${titrejeu} : valeur : {game:name} (définie dans _viewgameoption/gl-common/options_nom.xml ; valeur selon l option « JEUX - Nom du jeu »)
 	Libellés traduits (_common/_langs/<langue>.xml) : ${nodates}, ${noplaycount}, ${noplayerdata}, ${noratings}, ${notesur100}, ${playcount}, ${playcountone}, ${player}, ${playerss}, ${presetshowsmall}, ${retourdossier}
 -->
 <theme>
@@ -129,7 +131,7 @@
 						<storyboard event="deactivate">
 							<animation property="opacity" to="${selopacite}" duration="200" mode="easeOut"/>
 						</storyboard>
-						<text>{game:name}</text>
+						<text>${titrejeu}</text>
 						<fontPath>${themePath}/_viewgame/show/impact.ttf</fontPath>
 						<color>FFFFFF</color>
 						<alignment>center</alignment>
@@ -377,6 +379,7 @@
 				<u_shiny>0.35</u_shiny>
 				<caseType>${boitiertype}</caseType>
 				<borderColor>${boitiercouleur}</borderColor>
+				<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 				<caseType ifSubset="contourboite:non">7</caseType>
 				<saturation>1</saturation>
 			</shader>
@@ -430,6 +433,7 @@
 				<u_shiny>0.35</u_shiny>
 				<caseType>${boitiertype}</caseType>
 				<borderColor>${boitiercouleur}</borderColor>
+				<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 				<caseType ifSubset="contourboite:non">7</caseType>
 				<saturation>1</saturation>
 			</shader>
@@ -483,6 +487,7 @@
 				<u_shiny>0.35</u_shiny>
 				<caseType>${boitiertype}</caseType>
 				<borderColor>${boitiercouleur}</borderColor>
+				<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 				<caseType ifSubset="contourboite:non">7</caseType>
 				<saturation>1</saturation>
 			</shader>
@@ -535,6 +540,7 @@
 				<u_shiny>0.35</u_shiny>
 				<caseType>${boitiertype}</caseType>
 				<borderColor>${boitiercouleur}</borderColor>
+				<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 				<caseType ifSubset="contourboite:non">7</caseType>
 				<saturation>1</saturation>
 			</shader>
@@ -588,6 +594,7 @@
 				<u_shiny>0.35</u_shiny>
 				<caseType>${boitiertype}</caseType>
 				<borderColor>${boitiercouleur}</borderColor>
+				<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 				<caseType ifSubset="contourboite:non">7</caseType>
 				<saturation>1</saturation>
 			</shader>
@@ -640,6 +647,7 @@
 				<u_shiny>0.35</u_shiny>
 				<caseType>${boitiertype}</caseType>
 				<borderColor>${boitiercouleur}</borderColor>
+				<couleurBoiteJeu>${boitiercouleurjeu}</couleurBoiteJeu>
 				<caseType ifSubset="contourboite:non">7</caseType>
 				<saturation>1</saturation>
 			</shader>
@@ -1013,7 +1021,7 @@
 		</control>
 		<text name="namegame" extra="true">
 			<visible>{game:rom} != '..'</visible>
-			<text>{game:name}</text>
+			<text>${titrejeu}</text>
 			<fontPath>${themePath}/_viewgame/show/Titan.ttf</fontPath>
 			<color>a8a8a8</color>
 			<alignment>right</alignment>

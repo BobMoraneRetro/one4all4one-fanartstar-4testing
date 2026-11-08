@@ -19,6 +19,9 @@
 		<noplayerdata>Невідомо</noplayerdata>
 		<noratings>Немає оцінки</noratings>
 		<notesur100>із 100</notesur100>
+		<opt_nomjeu>ІГРИ - Назва гри</opt_nomjeu>
+		<nomjeucomplet>Повна</nomjeucomplet>
+		<nomjeucourt>Без дужок</nomjeucourt>
 		<presgame1>Це гра жанру</presgame1>
 		<presgame2>розробник</presgame2>
 		<presgame3>платформа</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Мови :</langlabel>
 		<gametimelabel>Час гри :</gametimelabel>
 		<lastgamelabel>Остання гра:</lastgamelabel>
-		<logosimple>Простий логотип (Повний + Регіон)</logosimple>
 		<viewbasicgrid>Basic: Проста сітка</viewbasicgrid>
 		<jeux>ігор</jeux>
 		<longselect>Довге натискання "select"</longselect>
 		<favuniquement>Лише обране</favuniquement>
 		<tslesjeux>Усі ігри</tslesjeux>
-		<tumasbienlu>Вітання та подяки</tumasbienlu>
 		<fanartstarsyst>Класичний</fanartstarsyst>
 		<fanartmodern>Сучасний 1 (несумісний з навігаційним ланцюжком)</fanartmodern>
 		<fanartmodern2>Сучасний 2 (сумісний з навігаційним ланцюжком)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Назад до попередньої теки</retourdossier>
+		<ra_moncompte>Мій акаунт</ra_moncompte>
+		<ra_succesjeu>Досягнення гри</ra_succesjeu>
+		<opt_raaffichage>ІГРИ - RetroAchievements (зовнішній інструмент)</opt_raaffichage>
+		<raaffichagepermanent>Постійний показ</raaffichagepermanent>
+		<raaffichagetemporaire>Кілька секунд</raaffichagetemporaire>
 		<noteetoile>Зірка</noteetoile>
 		<notecoeur>Серце</notecoeur>
 		<notemanette>Геймпад</notemanette>

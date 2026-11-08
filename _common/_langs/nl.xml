@@ -19,6 +19,9 @@
 		<noplayerdata>Onbekend</noplayerdata>
 		<noratings>Geen beoordeling</noratings>
 		<notesur100>van 100</notesur100>
+		<opt_nomjeu>SPELLEN - Naam van het spel</opt_nomjeu>
+		<nomjeucomplet>Volledig</nomjeucomplet>
+		<nomjeucourt>Zonder haakjes</nomjeucourt>
 		<presgame1>Dit is een spel van het type</presgame1>
 		<presgame2>ontwikkeld door</presgame2>
 		<presgame3>speelbaar op</presgame3>
@@ -29,13 +32,11 @@
 		<langlabel>Talen :</langlabel>
 		<gametimelabel>Speeltijd :</gametimelabel>
 		<lastgamelabel>Laatst gespeeld:</lastgamelabel>
-		<logosimple>Eenvoudig logo (Volledig + Regio)</logosimple>
 		<viewbasicgrid>Basic: Eenvoudige rasterweergave</viewbasicgrid>
 		<jeux>spellen</jeux>
 		<longselect>Lang drukken op "select"</longselect>
 		<favuniquement>Alleen favorieten</favuniquement>
 		<tslesjeux>Alle spellen</tslesjeux>
-		<tumasbienlu>Welkom en credits</tumasbienlu>
 		<fanartstarsyst>Klassiek</fanartstarsyst>
 		<fanartmodern>Modern 1 (niet compatibel met kruimelpad)</fanartmodern>
 		<fanartmodern2>Modern 2 (compatibel met kruimelpad)</fanartmodern2>
@@ -129,6 +130,11 @@
 		<boxtype20>White chrome case</boxtype20>
 		<boxtype21>White chrome case, no reflection</boxtype21>
 		<retourdossier>Terug naar vorige map</retourdossier>
+		<ra_moncompte>Mijn account</ra_moncompte>
+		<ra_succesjeu>Spelprestaties</ra_succesjeu>
+		<opt_raaffichage>SPELLEN - RetroAchievements (externe tool)</opt_raaffichage>
+		<raaffichagepermanent>Altijd zichtbaar</raaffichagepermanent>
+		<raaffichagetemporaire>Enkele seconden</raaffichagetemporaire>
 		<noteetoile>Ster</noteetoile>
 		<notecoeur>Hart</notecoeur>
 		<notemanette>Controller</notemanette>
